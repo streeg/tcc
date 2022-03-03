@@ -1,0 +1,47 @@
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+% Classe do documento
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+% Opções:
+%  - Graduação: bacharelado|engenharia|licenciatura
+%  - Pós-graduação: [qualificacao], mestrado|doutorado, ppca|ppginf
+
+% \documentclass[engenharia]{UnB-CIC}%
+\documentclass[bacharelado]{UnB-CIC}%
+
+\usepackage{pdfpages}% incluir PDFs, usado no apêndice
+
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+% Informações do Trabalho
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\orientador{\prof \dr Rodrigo Bonifacio de Almeida}{CIC/UnB}%
+%\coorientador{\prof \dr José Ralha}{CIC/UnB}
+\coordenador{\prof \dr Marcelo Grandi Mandelli}{CIC/UnB}%
+\diamesano{10}{março}{2022}%
+
+\membrobanca{\prof \dr Donald Knuth}{Stanford University}%
+\membrobanca{\dr Leslie Lamport}{Microsoft Research}%
+
+\autor{Guilherme Andreúce S.}{Monteiro}%
+
+\titulo{Percepção dos desenvolvedores quanto a segurança de seus códigos: análise de falsos-positivos reportados pelo CogniCrypt-Eclipse }%
+
+\palavraschave{CogniCrypt, Eclipse, Segurança do código, Análise}%
+\keywords{CogniCrypt, Eclipse, Code Security, Analisys}%
+
+\newcommand{\unbcic}{\texttt{UnB-CIC}}%
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+% Texto
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\begin{document}%
+    %capitulo{1_Introducao}{Introdução}%
+    %\capitulo{2_UnB-CIC}{A Classe \unbcic}%
+    \capitulo{2_Fundamentacao_Teorica}{Fundamentação Teórica}%
+    %\capitulo{3_TCC}{Trabalho de Conclusão de Curso}%
+    %\capitulo{4_Apresentacao}{Apresentações}%
+
+    \apendice{Apendice_Fichamento}{Fichamento de Artigo Científico}%
+    \anexo{Anexo1}{Documentação Original \unbcic\ (parcial)}%
+\end{document}%
