@@ -1,0 +1,44 @@
+{
+  "sarifVersion" : "2.0.0",
+  "runs" : [ {
+    "files" : {
+      "com/android/volley/InternalUtils.java" : {
+        "mimeType" : "text/java"
+      }
+    },
+    "resources" : {
+      "rules" : {
+        "ConstraintError" : {
+          "id" : "ConstraintError",
+          "fullDescription" : {
+            "text" : "A constraint of a CrySL rule is violated, e.g., a key is generated with the wrong key size."
+          }
+        }
+      }
+    },
+    "results" : [ {
+      "locations" : [ {
+        "physicalLocation" : {
+          "fileLocation" : {
+            "uri" : "com/android/volley/InternalUtils.java"
+          },
+          "region" : {
+            "startLine" : 30
+          }
+        },
+        "fullyQualifiedLogicalName" : "com::android::volley::InternalUtils::sha1Hash"
+      } ],
+      "ruleId" : "ConstraintError",
+      "message" : {
+        "text" : "First parameter (with value \"SHA-1\") should be any of {SHA-256, SHA-384, SHA-512}.",
+        "richText" : "ConstraintError violating CrySL rule for java.security.MessageDigest."
+      }
+    } ],
+    "tool" : {
+      "name" : "CryptoAnalysis",
+      "semanticVersion" : null,
+      "language" : "en-US",
+      "version" : null
+    }
+  } ]
+}

@@ -1,0 +1,165 @@
+{
+  "sarifVersion" : "2.0.0",
+  "runs" : [ {
+    "files" : {
+      "c/b/c/b.java" : {
+        "mimeType" : "text/java"
+      },
+      "c/b/c/e.java" : {
+        "mimeType" : "text/java"
+      },
+      "org/apache/sshd/common/util/buffer/Buffer.java" : {
+        "mimeType" : "text/java"
+      }
+    },
+    "resources" : {
+      "rules" : {
+        "RequiredPredicateError" : {
+          "id" : "RequiredPredicateError",
+          "fullDescription" : {
+            "text" : "An object A expects an object B to have been used correctly (CrySL blocks REQUIRES and ENSURES). For example a Cipher object requires a SecretKey object to be correctly and securely generated."
+          }
+        },
+        "RequiredPredicateError-4" : {
+          "id" : "RequiredPredicateError",
+          "fullDescription" : {
+            "text" : "An object A expects an object B to have been used correctly (CrySL blocks REQUIRES and ENSURES). For example a Cipher object requires a SecretKey object to be correctly and securely generated."
+          }
+        },
+        "RequiredPredicateError-3" : {
+          "id" : "RequiredPredicateError",
+          "fullDescription" : {
+            "text" : "An object A expects an object B to have been used correctly (CrySL blocks REQUIRES and ENSURES). For example a Cipher object requires a SecretKey object to be correctly and securely generated."
+          }
+        },
+        "ConstraintError" : {
+          "id" : "ConstraintError",
+          "fullDescription" : {
+            "text" : "A constraint of a CrySL rule is violated, e.g., a key is generated with the wrong key size."
+          }
+        },
+        "RequiredPredicateError-2" : {
+          "id" : "RequiredPredicateError",
+          "fullDescription" : {
+            "text" : "An object A expects an object B to have been used correctly (CrySL blocks REQUIRES and ENSURES). For example a Cipher object requires a SecretKey object to be correctly and securely generated."
+          }
+        },
+        "RequiredPredicateError-1" : {
+          "id" : "RequiredPredicateError",
+          "fullDescription" : {
+            "text" : "An object A expects an object B to have been used correctly (CrySL blocks REQUIRES and ENSURES). For example a Cipher object requires a SecretKey object to be correctly and securely generated."
+          }
+        }
+      }
+    },
+    "results" : [ {
+      "locations" : [ {
+        "physicalLocation" : {
+          "fileLocation" : {
+            "uri" : "c/b/c/b.java"
+          },
+          "region" : {
+            "startLine" : -1
+          }
+        },
+        "fullyQualifiedLogicalName" : "c::b::c::b::b"
+      } ],
+      "ruleId" : "ConstraintError",
+      "message" : {
+        "text" : "First parameter (with value \"MD5\") should be any of {SHA-256, SHA-384, SHA-512}.",
+        "richText" : "ConstraintError violating CrySL rule for java.security.MessageDigest."
+      }
+    }, {
+      "locations" : [ {
+        "physicalLocation" : {
+          "fileLocation" : {
+            "uri" : "c/b/c/e.java"
+          },
+          "region" : {
+            "startLine" : -1
+          }
+        },
+        "fullyQualifiedLogicalName" : "c::b::c::e::d"
+      } ],
+      "ruleId" : "RequiredPredicateError",
+      "message" : {
+        "text" : "First parameter was not properly generated as specced Key.",
+        "richText" : "RequiredPredicateError violating CrySL rule for java.security.KeyFactory."
+      }
+    }, {
+      "locations" : [ {
+        "physicalLocation" : {
+          "fileLocation" : {
+            "uri" : "org/apache/sshd/common/util/buffer/Buffer.java"
+          },
+          "region" : {
+            "startLine" : -1
+          }
+        },
+        "fullyQualifiedLogicalName" : "org::apache::sshd::common::util::buffer::Buffer::extractEC"
+      } ],
+      "ruleId" : "RequiredPredicateError-1",
+      "message" : {
+        "text" : "First parameter was not properly generated as generated Pubkey.",
+        "richText" : "RequiredPredicateError violating CrySL rule for java.security.KeyPair."
+      }
+    }, {
+      "locations" : [ {
+        "physicalLocation" : {
+          "fileLocation" : {
+            "uri" : "org/apache/sshd/common/util/buffer/Buffer.java"
+          },
+          "region" : {
+            "startLine" : -1
+          }
+        },
+        "fullyQualifiedLogicalName" : "org::apache::sshd::common::util::buffer::Buffer::extractEC"
+      } ],
+      "ruleId" : "RequiredPredicateError-2",
+      "message" : {
+        "text" : "Second parameter was not properly generated as generated Privkey.",
+        "richText" : "RequiredPredicateError violating CrySL rule for java.security.KeyPair."
+      }
+    }, {
+      "locations" : [ {
+        "physicalLocation" : {
+          "fileLocation" : {
+            "uri" : "org/apache/sshd/common/util/buffer/Buffer.java"
+          },
+          "region" : {
+            "startLine" : -1
+          }
+        },
+        "fullyQualifiedLogicalName" : "org::apache::sshd::common::util::buffer::Buffer::getKeyPair"
+      } ],
+      "ruleId" : "RequiredPredicateError-3",
+      "message" : {
+        "text" : "Second parameter was not properly generated as generated Privkey.",
+        "richText" : "RequiredPredicateError violating CrySL rule for java.security.KeyPair."
+      }
+    }, {
+      "locations" : [ {
+        "physicalLocation" : {
+          "fileLocation" : {
+            "uri" : "org/apache/sshd/common/util/buffer/Buffer.java"
+          },
+          "region" : {
+            "startLine" : -1
+          }
+        },
+        "fullyQualifiedLogicalName" : "org::apache::sshd::common::util::buffer::Buffer::getKeyPair"
+      } ],
+      "ruleId" : "RequiredPredicateError-4",
+      "message" : {
+        "text" : "First parameter was not properly generated as generated Pubkey.",
+        "richText" : "RequiredPredicateError violating CrySL rule for java.security.KeyPair."
+      }
+    } ],
+    "tool" : {
+      "name" : "CryptoAnalysis",
+      "semanticVersion" : null,
+      "language" : "en-US",
+      "version" : null
+    }
+  } ]
+}

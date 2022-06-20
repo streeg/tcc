@@ -1,0 +1,96 @@
+{
+  "sarifVersion" : "2.0.0",
+  "runs" : [ {
+    "files" : {
+      "org/strongswan/android/ui/TrustedCertificatesActivity.java" : {
+        "mimeType" : "text/java"
+      },
+      "org/strongswan/android/ui/VpnProfileImportActivity.java" : {
+        "mimeType" : "text/java"
+      },
+      "org/strongswan/android/ui/TrustedCertificateImportActivity.java" : {
+        "mimeType" : "text/java"
+      }
+    },
+    "resources" : {
+      "rules" : {
+        "ConstraintError-2" : {
+          "id" : "ConstraintError",
+          "fullDescription" : {
+            "text" : "A constraint of a CrySL rule is violated, e.g., a key is generated with the wrong key size."
+          }
+        },
+        "ConstraintError" : {
+          "id" : "ConstraintError",
+          "fullDescription" : {
+            "text" : "A constraint of a CrySL rule is violated, e.g., a key is generated with the wrong key size."
+          }
+        },
+        "ConstraintError-1" : {
+          "id" : "ConstraintError",
+          "fullDescription" : {
+            "text" : "A constraint of a CrySL rule is violated, e.g., a key is generated with the wrong key size."
+          }
+        }
+      }
+    },
+    "results" : [ {
+      "locations" : [ {
+        "physicalLocation" : {
+          "fileLocation" : {
+            "uri" : "org/strongswan/android/ui/TrustedCertificatesActivity.java"
+          },
+          "region" : {
+            "startLine" : 148
+          }
+        },
+        "fullyQualifiedLogicalName" : "org::strongswan::android::ui::TrustedCertificatesActivity::onDelete"
+      } ],
+      "ruleId" : "ConstraintError",
+      "message" : {
+        "text" : "First parameter (with value \"LocalCertificateStore\") should be any of {JCEKS, JKS, DKS, PKCS11, PKCS12}.",
+        "richText" : "ConstraintError violating CrySL rule for java.security.KeyStore."
+      }
+    }, {
+      "locations" : [ {
+        "physicalLocation" : {
+          "fileLocation" : {
+            "uri" : "org/strongswan/android/ui/TrustedCertificateImportActivity.java"
+          },
+          "region" : {
+            "startLine" : 173
+          }
+        },
+        "fullyQualifiedLogicalName" : "org::strongswan::android::ui::TrustedCertificateImportActivity::storeCertificate"
+      } ],
+      "ruleId" : "ConstraintError-1",
+      "message" : {
+        "text" : "First parameter (with value \"LocalCertificateStore\") should be any of {JCEKS, JKS, DKS, PKCS11, PKCS12}.",
+        "richText" : "ConstraintError violating CrySL rule for java.security.KeyStore."
+      }
+    }, {
+      "locations" : [ {
+        "physicalLocation" : {
+          "fileLocation" : {
+            "uri" : "org/strongswan/android/ui/VpnProfileImportActivity.java"
+          },
+          "region" : {
+            "startLine" : 413
+          }
+        },
+        "fullyQualifiedLogicalName" : "org::strongswan::android::ui::VpnProfileImportActivity::handleProfile"
+      } ],
+      "ruleId" : "ConstraintError-2",
+      "message" : {
+        "text" : "First parameter (with value \"LocalCertificateStore\") should be any of {JCEKS, JKS, DKS, PKCS11, PKCS12}.",
+        "richText" : "ConstraintError violating CrySL rule for java.security.KeyStore."
+      }
+    } ],
+    "tool" : {
+      "name" : "CryptoAnalysis",
+      "semanticVersion" : null,
+      "language" : "en-US",
+      "version" : null
+    }
+  } ]
+}
