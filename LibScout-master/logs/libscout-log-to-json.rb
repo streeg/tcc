@@ -18,7 +18,10 @@ log_files.each do |log_file|
       log_to_json.write("    \"Category\": \"#{line.split[line.split.index('category:') + 1]}\",\n")
     end
     if line.split.include?('version:')
-      log_to_json.write("    \"Version\": \"#{line.split[line.split.index('version:') + 1]}\"\n  },\n")
+      log_to_json.write("    \"Version\": \"#{line.split[line.split.index('version:') + 1]}\",\n")
+    end
+    if line.split.include?('package:')
+      log_to_json.write("    \"Package\": #{line.split[line.split.index('package:') + 1]}\n  },\n")
     end
   end
   log.close
