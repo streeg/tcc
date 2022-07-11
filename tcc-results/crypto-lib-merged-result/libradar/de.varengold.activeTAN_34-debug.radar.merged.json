@@ -1,0 +1,715 @@
+{
+  "sarifVersion": "2.0.0",
+  "runs": [
+    {
+      "files": {
+        "de/efdis/tangenerator/api/SecuredRestApiEndpoint.java": {
+          "mimeType": "text/java"
+        },
+        "de/efdis/tangenerator/persistence/keystore/BankingKeyRepository.java": {
+          "mimeType": "text/java"
+        },
+        "de/efdis/tangenerator/persistence/database/BankingTokenRepository.java": {
+          "mimeType": "text/java"
+        },
+        "de/efdis/tangenerator/activetan/AesCbcMac.java": {
+          "mimeType": "text/java"
+        },
+        "androidx/biometric/CryptoObjectUtils.java": {
+          "mimeType": "text/java"
+        },
+        "de/efdis/tangenerator/activetan/TanGenerator.java": {
+          "mimeType": "text/java"
+        }
+      },
+      "resources": {
+        "rules": {
+          "TypestateError-1": {
+            "id": "TypestateError",
+            "fullDescription": {
+              "text": "The ORDER block of CrySL is violated, i.e., the expected method sequence call to be made is incorrect. For example, a Signature object expects a call to initSign(key) prior to update(data)."
+            }
+          },
+          "TypestateError-2": {
+            "id": "TypestateError",
+            "fullDescription": {
+              "text": "The ORDER block of CrySL is violated, i.e., the expected method sequence call to be made is incorrect. For example, a Signature object expects a call to initSign(key) prior to update(data)."
+            }
+          },
+          "ConstraintError-1": {
+            "id": "ConstraintError",
+            "fullDescription": {
+              "text": "A constraint of a CrySL rule is violated, e.g., a key is generated with the wrong key size."
+            }
+          },
+          "ConstraintError-2": {
+            "id": "ConstraintError",
+            "fullDescription": {
+              "text": "A constraint of a CrySL rule is violated, e.g., a key is generated with the wrong key size."
+            }
+          },
+          "ConstraintError-3": {
+            "id": "ConstraintError",
+            "fullDescription": {
+              "text": "A constraint of a CrySL rule is violated, e.g., a key is generated with the wrong key size."
+            }
+          },
+          "ConstraintError-4": {
+            "id": "ConstraintError",
+            "fullDescription": {
+              "text": "A constraint of a CrySL rule is violated, e.g., a key is generated with the wrong key size."
+            }
+          },
+          "ConstraintError-5": {
+            "id": "ConstraintError",
+            "fullDescription": {
+              "text": "A constraint of a CrySL rule is violated, e.g., a key is generated with the wrong key size."
+            }
+          },
+          "RequiredPredicateError": {
+            "id": "RequiredPredicateError",
+            "fullDescription": {
+              "text": "An object A expects an object B to have been used correctly (CrySL blocks REQUIRES and ENSURES). For example a Cipher object requires a SecretKey object to be correctly and securely generated."
+            }
+          },
+          "ConstraintError-6": {
+            "id": "ConstraintError",
+            "fullDescription": {
+              "text": "A constraint of a CrySL rule is violated, e.g., a key is generated with the wrong key size."
+            }
+          },
+          "RequiredPredicateError-10": {
+            "id": "RequiredPredicateError",
+            "fullDescription": {
+              "text": "An object A expects an object B to have been used correctly (CrySL blocks REQUIRES and ENSURES). For example a Cipher object requires a SecretKey object to be correctly and securely generated."
+            }
+          },
+          "ConstraintError-7": {
+            "id": "ConstraintError",
+            "fullDescription": {
+              "text": "A constraint of a CrySL rule is violated, e.g., a key is generated with the wrong key size."
+            }
+          },
+          "IncompleteOperationError": {
+            "id": "IncompleteOperationError",
+            "fullDescription": {
+              "text": "The usage of an object may be incomplete: For example a Cipherobject may be initialized but never used for en- or decryption, this may render the code dead. This error heavily depends on the computed call graph (CHA by default)"
+            }
+          },
+          "IncompleteOperationError-1": {
+            "id": "IncompleteOperationError",
+            "fullDescription": {
+              "text": "The usage of an object may be incomplete: For example a Cipherobject may be initialized but never used for en- or decryption, this may render the code dead. This error heavily depends on the computed call graph (CHA by default)"
+            }
+          },
+          "IncompleteOperationError-3": {
+            "id": "IncompleteOperationError",
+            "fullDescription": {
+              "text": "The usage of an object may be incomplete: For example a Cipherobject may be initialized but never used for en- or decryption, this may render the code dead. This error heavily depends on the computed call graph (CHA by default)"
+            }
+          },
+          "IncompleteOperationError-2": {
+            "id": "IncompleteOperationError",
+            "fullDescription": {
+              "text": "The usage of an object may be incomplete: For example a Cipherobject may be initialized but never used for en- or decryption, this may render the code dead. This error heavily depends on the computed call graph (CHA by default)"
+            }
+          },
+          "RequiredPredicateError-9": {
+            "id": "RequiredPredicateError",
+            "fullDescription": {
+              "text": "An object A expects an object B to have been used correctly (CrySL blocks REQUIRES and ENSURES). For example a Cipher object requires a SecretKey object to be correctly and securely generated."
+            }
+          },
+          "RequiredPredicateError-8": {
+            "id": "RequiredPredicateError",
+            "fullDescription": {
+              "text": "An object A expects an object B to have been used correctly (CrySL blocks REQUIRES and ENSURES). For example a Cipher object requires a SecretKey object to be correctly and securely generated."
+            }
+          },
+          "RequiredPredicateError-7": {
+            "id": "RequiredPredicateError",
+            "fullDescription": {
+              "text": "An object A expects an object B to have been used correctly (CrySL blocks REQUIRES and ENSURES). For example a Cipher object requires a SecretKey object to be correctly and securely generated."
+            }
+          },
+          "TypestateError": {
+            "id": "TypestateError",
+            "fullDescription": {
+              "text": "The ORDER block of CrySL is violated, i.e., the expected method sequence call to be made is incorrect. For example, a Signature object expects a call to initSign(key) prior to update(data)."
+            }
+          },
+          "RequiredPredicateError-6": {
+            "id": "RequiredPredicateError",
+            "fullDescription": {
+              "text": "An object A expects an object B to have been used correctly (CrySL blocks REQUIRES and ENSURES). For example a Cipher object requires a SecretKey object to be correctly and securely generated."
+            }
+          },
+          "RequiredPredicateError-5": {
+            "id": "RequiredPredicateError",
+            "fullDescription": {
+              "text": "An object A expects an object B to have been used correctly (CrySL blocks REQUIRES and ENSURES). For example a Cipher object requires a SecretKey object to be correctly and securely generated."
+            }
+          },
+          "RequiredPredicateError-4": {
+            "id": "RequiredPredicateError",
+            "fullDescription": {
+              "text": "An object A expects an object B to have been used correctly (CrySL blocks REQUIRES and ENSURES). For example a Cipher object requires a SecretKey object to be correctly and securely generated."
+            }
+          },
+          "RequiredPredicateError-3": {
+            "id": "RequiredPredicateError",
+            "fullDescription": {
+              "text": "An object A expects an object B to have been used correctly (CrySL blocks REQUIRES and ENSURES). For example a Cipher object requires a SecretKey object to be correctly and securely generated."
+            }
+          },
+          "ConstraintError": {
+            "id": "ConstraintError",
+            "fullDescription": {
+              "text": "A constraint of a CrySL rule is violated, e.g., a key is generated with the wrong key size."
+            }
+          },
+          "RequiredPredicateError-2": {
+            "id": "RequiredPredicateError",
+            "fullDescription": {
+              "text": "An object A expects an object B to have been used correctly (CrySL blocks REQUIRES and ENSURES). For example a Cipher object requires a SecretKey object to be correctly and securely generated."
+            }
+          },
+          "RequiredPredicateError-1": {
+            "id": "RequiredPredicateError",
+            "fullDescription": {
+              "text": "An object A expects an object B to have been used correctly (CrySL blocks REQUIRES and ENSURES). For example a Cipher object requires a SecretKey object to be correctly and securely generated."
+            }
+          }
+        }
+      },
+      "results": [
+        {
+          "locations": [
+            {
+              "physicalLocation": {
+                "fileLocation": {
+                  "uri": "de.efdis.tangenerator.persistence.keystore.BankingKeyRepository.java"
+                },
+                "region": {
+                  "startLine": 172
+                }
+              },
+              "fullyQualifiedLogicalName": "de::efdis::tangenerator::persistence::keystore::BankingKeyRepository::getKey"
+            }
+          ],
+          "ruleId": "ConstraintError",
+          "message": {
+            "text": "First parameter (with value \"AES/CBC/NoPadding\") should be any of AES/CBC/{PKCS5Padding, ISO10126Padding}.",
+            "richText": "ConstraintError violating CrySL rule for javax.crypto.Cipher."
+          }
+        },
+        {
+          "locations": [
+            {
+              "physicalLocation": {
+                "fileLocation": {
+                  "uri": "de.efdis.tangenerator.persistence.keystore.BankingKeyRepository.java"
+                },
+                "region": {
+                  "startLine": 174
+                }
+              },
+              "fullyQualifiedLogicalName": "de::efdis::tangenerator::persistence::keystore::BankingKeyRepository::getKey"
+            }
+          ],
+          "ruleId": "RequiredPredicateError",
+          "message": {
+            "text": "Second parameter was not properly generated as generated Key.",
+            "richText": "RequiredPredicateError violating CrySL rule for javax.crypto.Cipher."
+          }
+        },
+        {
+          "locations": [
+            {
+              "physicalLocation": {
+                "fileLocation": {
+                  "uri": "de.efdis.tangenerator.persistence.keystore.BankingKeyRepository.java"
+                },
+                "region": {
+                  "startLine": 115
+                }
+              },
+              "fullyQualifiedLogicalName": "de::efdis::tangenerator::persistence::keystore::BankingKeyRepository::getKeyStore"
+            }
+          ],
+          "ruleId": "ConstraintError-1",
+          "message": {
+            "text": "First parameter (with value \"AndroidKeyStore\") should be any of {JCEKS, JKS, DKS, PKCS11, PKCS12}.",
+            "richText": "ConstraintError violating CrySL rule for java.security.KeyStore."
+          }
+        },
+        {
+          "locations": [
+            {
+              "physicalLocation": {
+                "fileLocation": {
+                  "uri": "de.efdis.tangenerator.persistence.keystore.BankingKeyRepository.java"
+                },
+                "region": {
+                  "startLine": 266
+                }
+              },
+              "fullyQualifiedLogicalName": "de::efdis::tangenerator::persistence::keystore::BankingKeyRepository::getProbeKey"
+            }
+          ],
+          "ruleId": "IncompleteOperationError",
+          "message": {
+            "text": "Operation on object of type java.security.KeyStore object not completed. Expected call to store.",
+            "richText": "IncompleteOperationError violating CrySL rule for java.security.KeyStore."
+          }
+        },
+        {
+          "locations": [
+            {
+              "physicalLocation": {
+                "fileLocation": {
+                  "uri": "de.efdis.tangenerator.persistence.keystore.BankingKeyRepository.java"
+                },
+                "region": {
+                  "startLine": 263
+                }
+              },
+              "fullyQualifiedLogicalName": "de::efdis::tangenerator::persistence::keystore::BankingKeyRepository::getProbeKey"
+            }
+          ],
+          "ruleId": "RequiredPredicateError-1",
+          "message": {
+            "text": "First parameter was not properly generated as prepared Key Material.",
+            "richText": "RequiredPredicateError violating CrySL rule for javax.crypto.spec.SecretKeySpec."
+          }
+        },
+        {
+          "locations": [
+            {
+              "physicalLocation": {
+                "fileLocation": {
+                  "uri": "de.efdis.tangenerator.persistence.keystore.BankingKeyRepository.java"
+                },
+                "region": {
+                  "startLine": 414
+                }
+              },
+              "fullyQualifiedLogicalName": "de::efdis::tangenerator::persistence::keystore::BankingKeyRepository::insertNewBankingKey"
+            }
+          ],
+          "ruleId": "RequiredPredicateError-2",
+          "message": {
+            "text": "First parameter was not properly generated as prepared Key Material.",
+            "richText": "RequiredPredicateError violating CrySL rule for javax.crypto.spec.SecretKeySpec."
+          }
+        },
+        {
+          "locations": [
+            {
+              "physicalLocation": {
+                "fileLocation": {
+                  "uri": "de.efdis.tangenerator.persistence.keystore.BankingKeyRepository.java"
+                },
+                "region": {
+                  "startLine": 415
+                }
+              },
+              "fullyQualifiedLogicalName": "de::efdis::tangenerator::persistence::keystore::BankingKeyRepository::insertNewBankingKey"
+            }
+          ],
+          "ruleId": "IncompleteOperationError-1",
+          "message": {
+            "text": "Operation on object of type java.security.KeyStore object not completed. Expected call to store.",
+            "richText": "IncompleteOperationError violating CrySL rule for java.security.KeyStore."
+          }
+        },
+        {
+          "locations": [
+            {
+              "physicalLocation": {
+                "fileLocation": {
+                  "uri": "de.efdis.tangenerator.persistence.keystore.BankingKeyRepository.java"
+                },
+                "region": {
+                  "startLine": 302
+                }
+              },
+              "fullyQualifiedLogicalName": "de::efdis::tangenerator::persistence::keystore::BankingKeyRepository::isSupportedByDevice"
+            }
+          ],
+          "ruleId": "ConstraintError-2",
+          "message": {
+            "text": "First parameter (with value \"AES/CBC/NoPadding\") should be any of AES/CBC/{PKCS5Padding, ISO10126Padding}.",
+            "richText": "ConstraintError violating CrySL rule for javax.crypto.Cipher."
+          }
+        },
+        {
+          "locations": [
+            {
+              "physicalLocation": {
+                "fileLocation": {
+                  "uri": "de.efdis.tangenerator.persistence.keystore.BankingKeyRepository.java"
+                },
+                "region": {
+                  "startLine": 309
+                }
+              },
+              "fullyQualifiedLogicalName": "de::efdis::tangenerator::persistence::keystore::BankingKeyRepository::isSupportedByDevice"
+            }
+          ],
+          "ruleId": "RequiredPredicateError-3",
+          "message": {
+            "text": "Third parameter was not properly generated as prepared I V.",
+            "richText": "RequiredPredicateError violating CrySL rule for javax.crypto.Cipher."
+          }
+        },
+        {
+          "locations": [
+            {
+              "physicalLocation": {
+                "fileLocation": {
+                  "uri": "de.efdis.tangenerator.persistence.keystore.BankingKeyRepository.java"
+                },
+                "region": {
+                  "startLine": 310
+                }
+              },
+              "fullyQualifiedLogicalName": "de::efdis::tangenerator::persistence::keystore::BankingKeyRepository::isSupportedByDevice"
+            }
+          ],
+          "ruleId": "RequiredPredicateError-4",
+          "message": {
+            "text": "First parameter was not properly generated as randomized.",
+            "richText": "RequiredPredicateError violating CrySL rule for javax.crypto.spec.IvParameterSpec."
+          }
+        },
+        {
+          "locations": [
+            {
+              "physicalLocation": {
+                "fileLocation": {
+                  "uri": "de.efdis.tangenerator.persistence.keystore.BankingKeyRepository.java"
+                },
+                "region": {
+                  "startLine": 309
+                }
+              },
+              "fullyQualifiedLogicalName": "de::efdis::tangenerator::persistence::keystore::BankingKeyRepository::isSupportedByDevice"
+            }
+          ],
+          "ruleId": "RequiredPredicateError-5",
+          "message": {
+            "text": "Second parameter was not properly generated as generated Key.",
+            "richText": "RequiredPredicateError violating CrySL rule for javax.crypto.Cipher."
+          }
+        },
+        {
+          "locations": [
+            {
+              "physicalLocation": {
+                "fileLocation": {
+                  "uri": "de.efdis.tangenerator.activetan.AesCbcMac.java"
+                },
+                "region": {
+                  "startLine": 59
+                }
+              },
+              "fullyQualifiedLogicalName": "de::efdis::tangenerator::activetan::AesCbcMac::getInstance"
+            }
+          ],
+          "ruleId": "ConstraintError-3",
+          "message": {
+            "text": "First parameter (with value \"AESMAC\") should be any of {HmacSHA256, HmacSHA384, HmacSHA512, HmacPBESHA1, PBEWithHmacSHA1, PBEWithHmacSHA224, PBEWithHmacSHA256, PBEWithHmacSHA384, PBEWithHmacSHA512}.",
+            "richText": "ConstraintError violating CrySL rule for javax.crypto.Mac."
+          }
+        },
+        {
+          "locations": [
+            {
+              "physicalLocation": {
+                "fileLocation": {
+                  "uri": "de.efdis.tangenerator.activetan.TanGenerator.java"
+                },
+                "region": {
+                  "startLine": 140
+                }
+              },
+              "fullyQualifiedLogicalName": "de::efdis::tangenerator::activetan::TanGenerator::computeApplicationAuthenticationCryptogram"
+            }
+          ],
+          "ruleId": "TypestateError",
+          "message": {
+            "text": "Unexpected call to method <javax.crypto.Mac: byte[] doFinal(byte[])> on object of type javax.crypto.Mac. Expect a call to one of the following methods javax.crypto.Mac: void doFinal(byte[],int),javax.crypto.Mac: void update(byte[]),javax.crypto.Mac: void update(byte),javax.crypto.Mac: byte[] doFinal(),javax.crypto.Mac: void update(byte[],int,int).",
+            "richText": "TypestateError violating CrySL rule for javax.crypto.Mac."
+          }
+        },
+        {
+          "locations": [
+            {
+              "physicalLocation": {
+                "fileLocation": {
+                  "uri": "de.efdis.tangenerator.activetan.TanGenerator.java"
+                },
+                "region": {
+                  "startLine": 139
+                }
+              },
+              "fullyQualifiedLogicalName": "de::efdis::tangenerator::activetan::TanGenerator::computeApplicationAuthenticationCryptogram"
+            }
+          ],
+          "ruleId": "TypestateError-1",
+          "message": {
+            "text": "Unexpected call to method init on object of type javax.crypto.Mac..",
+            "richText": "TypestateError violating CrySL rule for javax.crypto.Mac."
+          }
+        },
+        {
+          "locations": [
+            {
+              "physicalLocation": {
+                "fileLocation": {
+                  "uri": "de.efdis.tangenerator.persistence.database.BankingTokenRepository.java"
+                },
+                "region": {
+                  "startLine": 100
+                }
+              },
+              "fullyQualifiedLogicalName": "de::efdis::tangenerator::persistence::database::BankingTokenRepository::userMustAuthenticateToUse"
+            }
+          ],
+          "ruleId": "RequiredPredicateError-6",
+          "message": {
+            "text": "Second parameter was not properly generated as generated Key.",
+            "richText": "RequiredPredicateError violating CrySL rule for javax.crypto.Cipher."
+          }
+        },
+        {
+          "locations": [
+            {
+              "physicalLocation": {
+                "fileLocation": {
+                  "uri": "de.efdis.tangenerator.persistence.database.BankingTokenRepository.java"
+                },
+                "region": {
+                  "startLine": 99
+                }
+              },
+              "fullyQualifiedLogicalName": "de::efdis::tangenerator::persistence::database::BankingTokenRepository::userMustAuthenticateToUse"
+            }
+          ],
+          "ruleId": "ConstraintError-4",
+          "message": {
+            "text": "First parameter (with value \"AES/CBC/NoPadding\") should be any of AES/CBC/{PKCS5Padding, ISO10126Padding}.",
+            "richText": "ConstraintError violating CrySL rule for javax.crypto.Cipher."
+          }
+        },
+        {
+          "locations": [
+            {
+              "physicalLocation": {
+                "fileLocation": {
+                  "uri": "de.efdis.tangenerator.api.SecuredRestApiEndpoint.java"
+                },
+                "region": {
+                  "startLine": 183
+                }
+              },
+              "fullyQualifiedLogicalName": "de::efdis::tangenerator::api::SecuredRestApiEndpoint::prepareCrypto"
+            }
+          ],
+          "ruleId": "RequiredPredicateError-7",
+          "message": {
+            "text": "Second parameter was not properly generated as generated Key.",
+            "richText": "RequiredPredicateError violating CrySL rule for javax.crypto.Cipher."
+          }
+        },
+        {
+          "locations": [
+            {
+              "physicalLocation": {
+                "fileLocation": {
+                  "uri": "de.efdis.tangenerator.api.SecuredRestApiEndpoint.java"
+                },
+                "region": {
+                  "startLine": 178
+                }
+              },
+              "fullyQualifiedLogicalName": "de::efdis::tangenerator::api::SecuredRestApiEndpoint::prepareCrypto"
+            }
+          ],
+          "ruleId": "ConstraintError-5",
+          "message": {
+            "text": "First parameter (with value \"RSA/ECB/OAEPPadding\") should be any of RSA/ECB/{NoPadding, PKCS1Padding, OAEPWithMD5AndMGF1Padding, OAEPWithSHA-224AndMGF1Padding, OAEPWithSHA-256AndMGF1Padding, OAEPWithSHA-384AndMGF1Padding, OAEPWithSHA-512AndMGF1Padding}.",
+            "richText": "ConstraintError violating CrySL rule for javax.crypto.Cipher."
+          }
+        },
+        {
+          "locations": [
+            {
+              "physicalLocation": {
+                "fileLocation": {
+                  "uri": "de.efdis.tangenerator.api.SecuredRestApiEndpoint.java"
+                },
+                "region": {
+                  "startLine": 194
+                }
+              },
+              "fullyQualifiedLogicalName": "de::efdis::tangenerator::api::SecuredRestApiEndpoint::prepareCrypto"
+            }
+          ],
+          "ruleId": "RequiredPredicateError-8",
+          "message": {
+            "text": "First parameter was not properly generated as generated Pubkey.",
+            "richText": "RequiredPredicateError violating CrySL rule for java.security.Signature."
+          }
+        },
+        {
+          "locations": [
+            {
+              "physicalLocation": {
+                "fileLocation": {
+                  "uri": "de.efdis.tangenerator.api.SecuredRestApiEndpoint.java"
+                },
+                "region": {
+                  "startLine": 260
+                }
+              },
+              "fullyQualifiedLogicalName": "de::efdis::tangenerator::api::SecuredRestApiEndpoint::performRequest"
+            }
+          ],
+          "ruleId": "IncompleteOperationError-2",
+          "message": {
+            "text": "Operation on object of type java.security.Signature object not completed. Expected call to verify.",
+            "richText": "IncompleteOperationError violating CrySL rule for java.security.Signature."
+          }
+        },
+        {
+          "locations": [
+            {
+              "physicalLocation": {
+                "fileLocation": {
+                  "uri": "de.efdis.tangenerator.api.SecuredRestApiEndpoint.java"
+                },
+                "region": {
+                  "startLine": 258
+                }
+              },
+              "fullyQualifiedLogicalName": "de::efdis::tangenerator::api::SecuredRestApiEndpoint::performRequest"
+            }
+          ],
+          "ruleId": "TypestateError-2",
+          "message": {
+            "text": "Unexpected call to method doFinal on object of type javax.crypto.Cipher. Expect a call to one of the following methods init,updateAAD.",
+            "richText": "TypestateError violating CrySL rule for javax.crypto.Cipher."
+          }
+        },
+        {
+          "locations": [
+            {
+              "physicalLocation": {
+                "fileLocation": {
+                  "uri": "de.efdis.tangenerator.api.SecuredRestApiEndpoint.java"
+                },
+                "region": {
+                  "startLine": 221
+                }
+              },
+              "fullyQualifiedLogicalName": "de::efdis::tangenerator::api::SecuredRestApiEndpoint::prepareAndOpenConnection"
+            }
+          ],
+          "ruleId": "IncompleteOperationError-3",
+          "message": {
+            "text": "Operation on object of type java.security.Signature object not completed. Expected call to verify, update.",
+            "richText": "IncompleteOperationError violating CrySL rule for java.security.Signature."
+          }
+        },
+        {
+          "locations": [
+            {
+              "physicalLocation": {
+                "fileLocation": {
+                  "uri": "de.efdis.tangenerator.api.SecuredRestApiEndpoint.java"
+                },
+                "region": {
+                  "startLine": 130
+                }
+              },
+              "fullyQualifiedLogicalName": "de::efdis::tangenerator::api::SecuredRestApiEndpoint::loadApiKey"
+            }
+          ],
+          "ruleId": "RequiredPredicateError-9",
+          "message": {
+            "text": "First parameter was not properly generated as specced Key.",
+            "richText": "RequiredPredicateError violating CrySL rule for java.security.KeyFactory."
+          }
+        },
+        {
+          "locations": [
+            {
+              "physicalLocation": {
+                "fileLocation": {
+                  "uri": "androidx.biometric.CryptoObjectUtils.java"
+                },
+                "region": {
+                  "startLine": 242
+                }
+              },
+              "fullyQualifiedLogicalName": "androidx::biometric::CryptoObjectUtils::createFakeCryptoObject"
+            }
+          ],
+          "ruleId": "ConstraintError-6",
+          "message": {
+            "text": "First parameter (with value \"AndroidKeyStore\") should be any of {JCEKS, JKS, DKS, PKCS11, PKCS12}.",
+            "richText": "ConstraintError violating CrySL rule for java.security.KeyStore."
+          }
+        },
+        {
+          "locations": [
+            {
+              "physicalLocation": {
+                "fileLocation": {
+                  "uri": "androidx.biometric.CryptoObjectUtils.java"
+                },
+                "region": {
+                  "startLine": 263
+                }
+              },
+              "fullyQualifiedLogicalName": "androidx::biometric::CryptoObjectUtils::createFakeCryptoObject"
+            }
+          ],
+          "ruleId": "RequiredPredicateError-10",
+          "message": {
+            "text": "Second parameter was not properly generated as generated Key.",
+            "richText": "RequiredPredicateError violating CrySL rule for javax.crypto.Cipher."
+          }
+        },
+        {
+          "locations": [
+            {
+              "physicalLocation": {
+                "fileLocation": {
+                  "uri": "androidx.biometric.CryptoObjectUtils.java"
+                },
+                "region": {
+                  "startLine": 260
+                }
+              },
+              "fullyQualifiedLogicalName": "androidx::biometric::CryptoObjectUtils::createFakeCryptoObject"
+            }
+          ],
+          "ruleId": "ConstraintError-7",
+          "message": {
+            "text": "First parameter (with value \"AES/CBC/PKCS7Padding\") should be any of AES/CBC/{PKCS5Padding, ISO10126Padding}.",
+            "richText": "ConstraintError violating CrySL rule for javax.crypto.Cipher."
+          }
+        }
+      ],
+      "tool": {
+        "name": "CryptoAnalysis",
+        "semanticVersion": null,
+        "language": "en-US",
+        "version": null
+      }
+    }
+  ]
+}
