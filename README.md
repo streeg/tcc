@@ -10,10 +10,16 @@ note: -a,--android-sdk | -d,--log-dir directory to store the logfile(s), to "./l
 
 # Run libradar 
 inside libradar/ (python2)
+
 inside tool/ 
+
 you must set the path of redis.conf around line 246 to your libradar path:  "/home/guileb/tcc/LibRadar/"
+
 make sure redis is not running with: /etc/init.d/redis-server stop
+
 run command: redis-server redis.conf
+
 inside libradar/
+
 python libradar.py ../../LibRadar/test-apks/esv-v0.8.1-beta1.apk > ../../../test-apks/libradar-result/esv.json
 
