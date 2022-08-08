@@ -39,8 +39,9 @@ subprocess.call(['ruby', 'libscout-log-to-json.rb'])
 os.chdir(libScoutJsonLogsPath)
 json_filenames = [i for i in glob.glob('*.{}'.format('json'))]
 for json_file in json_filenames:
-    subprocess.call(['mv', json_file, tccResults + libScoutResultsJson])
+    subprocess.call(['cp', json_file, tccResults + libScoutResultsJson])
 
 
 os.chdir(tccResults)
 subprocess.call(['ruby', 'crypto_lib_merger.rb', 'scout'])
+print("Finished in: " + start_time)
