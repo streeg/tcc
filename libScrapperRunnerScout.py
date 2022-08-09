@@ -44,4 +44,3 @@ for json_file in json_filenames:
 
 os.chdir(tccResults)
 subprocess.call(['ruby', 'crypto_lib_merger.rb', 'scout'])
-print("Finished in: " + start_time)
