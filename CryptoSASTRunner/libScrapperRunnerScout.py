@@ -4,13 +4,14 @@ import subprocess
 import time
 
 user = 'guileb'
-apksPath = '/home/' + user + '/tcc/Apks/'
-libScoutPath = '/home/' + user + '/tcc/LibScout/'
-libScoutlLogsPath = '/home/' + user + '/tcc/LibScout/logs/'
-libScoutJsonLogsPath = '/home/' + user + '/tcc/LibScout/jsonlogs/'
-tccResults = '/home/' + user + '/tcc/Tcc-results/'
+customPath = '/tcc/CryptoSASTRunner/'
+apksPath = '/home/' + user + customPath + '/cryptoRunner/projects/apks/'
+libScoutPath = '/home/' + user + customPath + '/libScout/'
+libScoutlLogsPath = '/home/' + user + customPath + '/libScout/logs/'
+libScoutJsonLogsPath = '/home/' + user + customPath + '/libScout/jsonlogs/'
+tccResults = '/home/' + user + customPath + '/tccResults/'
 libScoutResultsJson = 'libscout-result/json'
-cryptoSASTRunnerPath = '/home/' + user + '/tcc/CryptoSASTRunner/'
+cryptoSASTRunnerPath = '/home/' + user + customPath
 sarifOutput = cryptoSASTRunnerPath + 'cryptoRunner/results/cryptoSarifOutput'
 cryptoguardSarifResults = 'cryptoguard-sarif'
 extension = 'apk'
@@ -44,3 +45,7 @@ for json_file in json_filenames:
 
 os.chdir(tccResults)
 subprocess.call(['ruby', 'crypto_lib_merger.rb', 'scout'])
+
+print("Analysis finished for: ")
+print(all_filenames)
+print("--- %s seconds ---" % (time.time() - start_time))

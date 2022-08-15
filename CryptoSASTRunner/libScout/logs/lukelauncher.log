@@ -1,0 +1,411 @@
+19:32:33 INFO  LibraryIdentifier         : Process app: lukelauncher.apk
+19:32:33 INFO  LibraryIdentifier         : = Manifest Parser =
+19:32:33 INFO  LibraryIdentifier         :         Package name: luke.launcher
+19:32:33 INFO  LibraryIdentifier         :         Version code: 20004
+19:32:33 INFO  LibraryIdentifier         :        minSdkVersion: 21
+19:32:33 INFO  LibraryIdentifier         :     targetSdkVersion: 28
+19:32:33 INFO  LibraryIdentifier         :         SharedUserId:  - none -
+19:32:33 INFO  LibraryIdentifier         :     Library dependencies:  - none -
+19:32:33 INFO  LibraryIdentifier         : 
+19:32:33 INFO  LibraryIdentifier         : Found 402 unique libraries in 12405 library profiles
+19:32:33 INFO  LibraryIdentifier         : Multi-dex apk detected - Code is merged to single class hierarchy!
+19:32:34 INFO  LibraryIdentifier         : Generated class hierarchy (in 841 ms)
+19:32:34 INFO  WalaUtils                 : 
+19:32:34 INFO  WalaUtils                 : = ClassHierarchy Stats =
+19:32:34 INFO  WalaUtils                 :     # of classes: 1589
+19:32:34 INFO  WalaUtils                 :     # thereof inner classes: 977
+19:32:34 INFO  WalaUtils                 :     # thereof public classes: 768
+19:32:34 INFO  WalaUtils                 :         Activity : 5
+19:32:34 INFO  WalaUtils                 :         Application : 0
+19:32:34 INFO  WalaUtils                 :         AsyncTask : 4
+19:32:34 INFO  WalaUtils                 :         BroadcastReceiver : 8
+19:32:34 INFO  WalaUtils                 :         ContentProvider : 3
+19:32:34 INFO  WalaUtils                 :         Fragment : 5
+19:32:34 INFO  WalaUtils                 :         Handler : 10
+19:32:34 INFO  WalaUtils                 :         LayoutContainer : 35
+19:32:34 INFO  WalaUtils                 :         Plain : 1489
+19:32:34 INFO  WalaUtils                 :         Runnable : 0
+19:32:34 INFO  WalaUtils                 :         Service : 7
+19:32:34 INFO  WalaUtils                 :         Thread : 1
+19:32:34 INFO  WalaUtils                 :         View : 22
+19:32:34 INFO  WalaUtils                 :     # methods: 12802
+19:32:34 INFO  WalaUtils                 :         # of publicly accessible methods: 9367
+19:32:34 INFO  WalaUtils                 :         # of non-accessible methods: 3435
+19:32:34 INFO  WalaUtils                 : 
+19:32:34 INFO  Profile                   : = PackageTree =
+19:32:34 INFO  PackageTree               : Root Package: android
+19:32:34 INFO  PackageTree               : └── Root (17)
+19:32:34 INFO  PackageTree               :     ├── android
+19:32:34 INFO  PackageTree               :     │   ├── arch
+19:32:34 INFO  PackageTree               :     │   │   ├── lifecycle (48)
+19:32:34 INFO  PackageTree               :     │   │   └── core
+19:32:34 INFO  PackageTree               :     │   │       ├── internal (8)
+19:32:34 INFO  PackageTree               :     │   │       ├── executor (5)
+19:32:34 INFO  PackageTree               :     │   │       └── util (1)
+19:32:34 INFO  PackageTree               :     │   └── support
+19:32:34 INFO  PackageTree               :     │       ├── v4
+19:32:34 INFO  PackageTree               :     │       │   ├── media (150)
+19:32:34 INFO  PackageTree               :     │       │   │   ├── session (94)
+19:32:34 INFO  PackageTree               :     │       │   │   └── app (3)
+19:32:34 INFO  PackageTree               :     │       │   ├── os (26)
+19:32:34 INFO  PackageTree               :     │       │   ├── widget (88)
+19:32:34 INFO  PackageTree               :     │       │   ├── net (5)
+19:32:34 INFO  PackageTree               :     │       │   ├── content (33)
+19:32:34 INFO  PackageTree               :     │       │   │   ├── res (17)
+19:32:34 INFO  PackageTree               :     │       │   │   └── pm (9)
+19:32:34 INFO  PackageTree               :     │       │   ├── graphics (18)
+19:32:34 INFO  PackageTree               :     │       │   │   └── drawable (15)
+19:32:34 INFO  PackageTree               :     │       │   ├── text (19)
+19:32:34 INFO  PackageTree               :     │       │   │   └── util (6)
+19:32:34 INFO  PackageTree               :     │       │   ├── app (175)
+19:32:34 INFO  PackageTree               :     │       │   ├── provider (33)
+19:32:34 INFO  PackageTree               :     │       │   ├── view (92)
+19:32:34 INFO  PackageTree               :     │       │   │   ├── accessibility (17)
+19:32:34 INFO  PackageTree               :     │       │   │   └── animation (6)
+19:32:34 INFO  PackageTree               :     │       │   ├── util (30)
+19:32:34 INFO  PackageTree               :     │       │   ├── hardware
+19:32:34 INFO  PackageTree               :     │       │   │   ├── fingerprint (5)
+19:32:34 INFO  PackageTree               :     │       │   │   └── display (1)
+19:32:34 INFO  PackageTree               :     │       │   ├── print (7)
+19:32:34 INFO  PackageTree               :     │       │   ├── math (1)
+19:32:34 INFO  PackageTree               :     │       │   ├── internal
+19:32:34 INFO  PackageTree               :     │       │   │   └── view (3)
+19:32:34 INFO  PackageTree               :     │       │   ├── database (2)
+19:32:34 INFO  PackageTree               :     │       │   │   └── sqlite (1)
+19:32:34 INFO  PackageTree               :     │       │   └── accessibilityservice (1)
+19:32:34 INFO  PackageTree               :     │       ├── v7
+19:32:34 INFO  PackageTree               :     │       │   ├── widget (187)
+19:32:34 INFO  PackageTree               :     │       │   ├── app (80)
+19:32:34 INFO  PackageTree               :     │       │   ├── view (14)
+19:32:34 INFO  PackageTree               :     │       │   │   └── menu (48)
+19:32:34 INFO  PackageTree               :     │       │   ├── content
+19:32:34 INFO  PackageTree               :     │       │   │   └── res (2)
+19:32:34 INFO  PackageTree               :     │       │   ├── graphics
+19:32:34 INFO  PackageTree               :     │       │   │   └── drawable (16)
+19:32:34 INFO  PackageTree               :     │       │   └── text (1)
+19:32:34 INFO  PackageTree               :     │       ├── annotation (54)
+19:32:34 INFO  PackageTree               :     │       ├── v13
+19:32:34 INFO  PackageTree               :     │       │   └── view (5)
+19:32:34 INFO  PackageTree               :     │       │       └── inputmethod (9)
+19:32:34 INFO  PackageTree               :     │       ├── design
+19:32:34 INFO  PackageTree               :     │       │   └── widget (12)
+19:32:34 INFO  PackageTree               :     │       └── graphics
+19:32:34 INFO  PackageTree               :     │           └── drawable (24)
+19:32:34 INFO  PackageTree               :     ├── org
+19:32:34 INFO  PackageTree               :     │   └── apache
+19:32:34 INFO  PackageTree               :     │       └── cordova (76)
+19:32:34 INFO  PackageTree               :     │           ├── engine (13)
+19:32:34 INFO  PackageTree               :     │           ├── statusbar (10)
+19:32:34 INFO  PackageTree               :     │           ├── splashscreen (11)
+19:32:34 INFO  PackageTree               :     │           ├── camera (6)
+19:32:34 INFO  PackageTree               :     │           ├── device (1)
+19:32:34 INFO  PackageTree               :     │           └── whitelist (2)
+19:32:34 INFO  PackageTree               :     ├── cordova
+19:32:34 INFO  PackageTree               :     │   └── plugins (4)
+19:32:34 INFO  PackageTree               :     │       └── screenorientation (1)
+19:32:34 INFO  PackageTree               :     ├── com
+19:32:34 INFO  PackageTree               :     │   ├── luke
+19:32:34 INFO  PackageTree               :     │   │   └── widget (33)
+19:32:34 INFO  PackageTree               :     │   ├── lampa
+19:32:34 INFO  PackageTree               :     │   │   └── startapp (4)
+19:32:34 INFO  PackageTree               :     │   ├── viniciusfagundes
+19:32:34 INFO  PackageTree               :     │   │   └── cordova
+19:32:34 INFO  PackageTree               :     │   │       └── plugin
+19:32:34 INFO  PackageTree               :     │   │           └── navigationbar (7)
+19:32:34 INFO  PackageTree               :     │   ├── bar
+19:32:34 INFO  PackageTree               :     │   │   └── info (1)
+19:32:34 INFO  PackageTree               :     │   ├── darryncampbell
+19:32:34 INFO  PackageTree               :     │   │   └── cordova
+19:32:34 INFO  PackageTree               :     │   │       └── plugin
+19:32:34 INFO  PackageTree               :     │   │           └── intent (3)
+19:32:34 INFO  PackageTree               :     │   └── phonegap
+19:32:34 INFO  PackageTree               :     │       └── plugins
+19:32:34 INFO  PackageTree               :     │           └── nativesettings (1)
+19:32:34 INFO  PackageTree               :     ├── androidx
+19:32:34 INFO  PackageTree               :     │   ├── versionedparcelable (15)
+19:32:34 INFO  PackageTree               :     │   ├── core
+19:32:34 INFO  PackageTree               :     │   │   └── graphics
+19:32:34 INFO  PackageTree               :     │   │       └── drawable (1)
+19:32:34 INFO  PackageTree               :     │   └── media (3)
+19:32:34 INFO  PackageTree               :     ├── luke
+19:32:34 INFO  PackageTree               :     │   └── launcher (1)
+19:32:34 INFO  PackageTree               :     ├── nl
+19:32:34 INFO  PackageTree               :     │   └── xservices
+19:32:34 INFO  PackageTree               :     │       └── plugins (5)
+19:32:34 INFO  PackageTree               :     ├── net
+19:32:34 INFO  PackageTree               :     │   └── coconauts
+19:32:34 INFO  PackageTree               :     │       └── notificationListener (2)
+19:32:34 INFO  PackageTree               :     └── uk
+19:32:34 INFO  PackageTree               :         └── co
+19:32:34 INFO  PackageTree               :             └── whiteoctober
+19:32:34 INFO  PackageTree               :                 └── cordova (1)
+19:32:34 INFO  Profile                   : 
+19:32:34 INFO  AppProfile                : - generated app package tree (in 40 ms)
+19:32:34 INFO  AppProfile                : 
+19:32:34 DEBUG HashTree                  : Generate hash tree..
+19:32:34 DEBUG HashTree                  :     - generated 66 package hashes.
+19:32:34 DEBUG HashTree                  :     - generated 1498 clazz hashes.
+19:32:34 DEBUG HashTree                  :     - generated 12802 method hashes.
+19:32:34 DEBUG HashTree                  :     => Library Hash: 8c307dd77752efba7283c509739b425f
+19:32:34 INFO  AppProfile                : - generated app hash trees (in 338 ms)
+19:32:34 INFO  AppProfile                : 
+19:32:34 INFO  LibraryIdentifier         : = Scan for library root packages (heuristic) =
+19:32:34 INFO  LibraryIdentifier         :     - Found lib root package android.arch.core.internal  (android.arch.core::common)
+19:32:34 INFO  LibraryIdentifier         :     - Found lib root package android.arch.core  (android.arch.core::runtime)
+19:32:34 INFO  LibraryIdentifier         :     - Found lib root package android.arch.lifecycle  (android.arch.lifecycle::common)
+19:32:34 INFO  LibraryIdentifier         :     - Found lib root package android.arch.lifecycle  (android.arch.lifecycle::common-java8)
+19:32:34 INFO  LibraryIdentifier         :     - Found lib root package android.arch.lifecycle  (android.arch.lifecycle::compiler)
+19:32:34 INFO  LibraryIdentifier         :     - Found lib root package android.arch.lifecycle  (android.arch.lifecycle::extensions)
+19:32:34 INFO  LibraryIdentifier         :     - Found lib root package android.arch.lifecycle  (android.arch.lifecycle::livedata)
+19:32:34 INFO  LibraryIdentifier         :     - Found lib root package android.arch.lifecycle  (android.arch.lifecycle::livedata-core)
+19:32:34 INFO  LibraryIdentifier         :     - Found lib root package android.arch.lifecycle  (android.arch.lifecycle::reactivestreams)
+19:32:34 INFO  LibraryIdentifier         :     - Found lib root package android.arch.lifecycle  (android.arch.lifecycle::runtime)
+19:32:34 INFO  LibraryIdentifier         :     - Found lib root package android.arch.lifecycle  (android.arch.lifecycle::viewmodel)
+19:32:34 INFO  LibraryIdentifier         :     - Found lib root package androidx.core  (androidx.core::core)
+19:32:34 INFO  LibraryIdentifier         :     - Found lib root package androidx  (androidx.core::core-ktx)
+19:32:34 INFO  LibraryIdentifier         :     - Found lib root package android.support.v4.media  (androidx.media::media)
+19:32:34 INFO  LibraryIdentifier         :     - Found lib root package androidx.versionedparcelable  (androidx.versionedparcelable::versionedparcelable)
+19:32:34 INFO  LibraryIdentifier         :     - Found lib root package android.support.graphics.drawable  (com.android.support::animated-vector-drawable)
+19:32:34 INFO  LibraryIdentifier         :     - Found lib root package android.support.v7  (com.android.support::appcompat-v7)
+19:32:34 INFO  LibraryIdentifier         :     - Found lib root package android.support.v4.view  (com.android.support::asynclayoutinflater)
+19:32:34 INFO  LibraryIdentifier         :     - Found lib root package android.support.v7.widget  (com.android.support::cardview-v7)
+19:32:34 INFO  LibraryIdentifier         :     - Found lib root package android.support.v4.util  (com.android.support::collections)
+19:32:34 INFO  LibraryIdentifier         :     - Found lib root package android.support.v4.widget  (com.android.support::cursoradapter)
+19:32:34 INFO  LibraryIdentifier         :     - Found lib root package android.support.v4  (com.android.support::customview)
+19:32:34 INFO  LibraryIdentifier         :     - Found lib root package android.support.design  (com.android.support::design)
+19:32:34 INFO  LibraryIdentifier         :     - Found lib root package android.support.v4.provider  (com.android.support::documentfile)
+19:32:34 INFO  LibraryIdentifier         :     - Found lib root package android.support.v4.widget  (com.android.support::drawerlayout)
+19:32:34 INFO  LibraryIdentifier         :     - Found lib root package android.support.v7.widget  (com.android.support::gridlayout-v7)
+19:32:34 INFO  LibraryIdentifier         :     - Found lib root package android.support.v4.view.animation  (com.android.support::interpolator)
+19:32:34 INFO  LibraryIdentifier         :     - Found lib root package android.support.v4  (com.android.support::loader)
+19:32:34 INFO  LibraryIdentifier         :     - Found lib root package android.support.v4.content  (com.android.support::localbroadcastmanager)
+19:32:34 INFO  LibraryIdentifier         :     - Found lib root package android.support.v7  (com.android.support::mediarouter-v7)
+19:32:34 INFO  LibraryIdentifier         :     - Found lib root package android.support.v7.graphics  (com.android.support::palette-v7)
+19:32:34 INFO  LibraryIdentifier         :     - Found lib root package android.support.v7  (com.android.support::preference-v7)
+19:32:34 INFO  LibraryIdentifier         :     - Found lib root package android.support.v4.print  (com.android.support::print)
+19:32:34 INFO  LibraryIdentifier         :     - Found lib root package android.support.v7.widget  (com.android.support::recyclerview-v7)
+19:32:34 INFO  LibraryIdentifier         :     - Found lib root package android.support.v4.widget  (com.android.support::slidingpanelayout)
+19:32:34 INFO  LibraryIdentifier         :     - Found lib root package android.support.annotation  (com.android.support::support-annotations)
+19:32:34 INFO  LibraryIdentifier         :     - Found lib root package android.support.v4  (com.android.support::support-compat)
+19:32:34 INFO  LibraryIdentifier         :     - Found lib root package android.support.v4  (com.android.support::support-core-ui)
+19:32:34 INFO  LibraryIdentifier         :     - Found lib root package android.support.v4  (com.android.support::support-core-utils)
+19:32:34 INFO  LibraryIdentifier         :     - Found lib root package android.support.v4.app  (com.android.support::support-fragment)
+19:32:34 INFO  LibraryIdentifier         :     - Found lib root package android.support.v4.media  (com.android.support::support-media-compat)
+19:32:34 INFO  LibraryIdentifier         :     - Found lib root package android.support.v13  (com.android.support::support-v13)
+19:32:34 INFO  LibraryIdentifier         :     - Found lib root package android.support.v4  (com.android.support::support-v4)
+19:32:34 INFO  LibraryIdentifier         :     - Found lib root package android.support.graphics.drawable  (com.android.support::support-vector-drawable)
+19:32:34 INFO  LibraryIdentifier         :     - Found lib root package android.support.v4.widget  (com.android.support::swiperefreshlayout)
+19:32:34 INFO  LibraryIdentifier         :     - Found lib root package androidx.versionedparcelable  (com.android.support::versionedparcelable)
+19:32:34 INFO  LibraryIdentifier         :     - Found lib root package android.support.v4.view  (com.android.support::viewpager)
+19:32:34 INFO  LibraryIdentifier         : 
+19:32:34 INFO  LibraryIdentifier         : = Match profiles =
+19:32:51 INFO  LibraryIdentifier         :     >> profile matching done (16 sec, 388 ms)
+19:32:51 INFO  LibraryIdentifier         : 
+19:32:51 INFO  LibraryIdentifier         : == Report ==
+19:32:51 INFO  LibraryIdentifier         : - Full library matches:
+19:32:51 INFO  ProfileMatch              :                 name: androidx.appcompat::appcompat
+19:32:51 INFO  ProfileMatch              :             category: Android
+19:32:51 INFO  ProfileMatch              :              version: 1.0.0  [OLD VERSION]
+19:32:51 INFO  ProfileMatch              :         release-date:  --
+19:32:51 INFO  ProfileMatch              :     lib root package: "androidx.appcompat"  (in app: "android.support.v7")
+19:32:51 INFO  ProfileMatch              : 
+19:32:51 INFO  ProfileMatch              :                 name: androidx.appcompat::appcompat
+19:32:51 INFO  ProfileMatch              :             category: Android
+19:32:51 INFO  ProfileMatch              :              version: 1.0.1  [OLD VERSION]
+19:32:51 INFO  ProfileMatch              :         release-date:  --
+19:32:51 INFO  ProfileMatch              :     lib root package: "androidx.appcompat"  (in app: "android.support.v7")
+19:32:51 INFO  ProfileMatch              : 
+19:32:51 INFO  ProfileMatch              :                 name: androidx.appcompat::appcompat
+19:32:51 INFO  ProfileMatch              :             category: Android
+19:32:51 INFO  ProfileMatch              :              version: 1.0.2  [OLD VERSION]
+19:32:51 INFO  ProfileMatch              :         release-date:  --
+19:32:51 INFO  ProfileMatch              :     lib root package: "androidx.appcompat"  (in app: "android.support.v7")
+19:32:51 INFO  ProfileMatch              : 
+19:32:51 INFO  ProfileMatch              :                 name: com.android.support::loader
+19:32:51 INFO  ProfileMatch              :             category: Android
+19:32:51 INFO  ProfileMatch              :              version: 28.0.0
+19:32:51 INFO  ProfileMatch              :         release-date:  --
+19:32:51 INFO  ProfileMatch              :     lib root package: "android.support.v4"
+19:32:51 INFO  ProfileMatch              : 
+19:32:51 INFO  ProfileMatch              :                 name: androidx.annotation::annotation
+19:32:51 INFO  ProfileMatch              :             category: Android
+19:32:51 INFO  ProfileMatch              :              version: 1.0.0  [OLD VERSION]
+19:32:51 INFO  ProfileMatch              :         release-date:  --
+19:32:51 INFO  ProfileMatch              :     lib root package: "androidx.annotation"  (in app: "android.support.annotation")
+19:32:51 INFO  ProfileMatch              : 
+19:32:51 INFO  ProfileMatch              :                 name: com.android.support::coordinatorlayout
+19:32:51 INFO  ProfileMatch              :             category: Android
+19:32:51 INFO  ProfileMatch              :              version: 28.0.0
+19:32:51 INFO  ProfileMatch              :         release-date:  --
+19:32:51 INFO  ProfileMatch              :     lib root package: "android.support"
+19:32:51 INFO  ProfileMatch              : 
+19:32:51 INFO  ProfileMatch              :                 name: com.android.support::localbroadcastmanager
+19:32:51 INFO  ProfileMatch              :             category: Android
+19:32:51 INFO  ProfileMatch              :              version: 28.0.0
+19:32:51 INFO  ProfileMatch              :         release-date:  --
+19:32:51 INFO  ProfileMatch              :     lib root package: "android.support.v4.content"
+19:32:51 INFO  ProfileMatch              : 
+19:32:51 INFO  ProfileMatch              :                 name: com.android.support::versionedparcelable
+19:32:51 INFO  ProfileMatch              :             category: Android
+19:32:51 INFO  ProfileMatch              :              version: 28.0.0
+19:32:51 INFO  ProfileMatch              :         release-date:  --
+19:32:51 INFO  ProfileMatch              :     lib root package: "androidx.versionedparcelable"
+19:32:51 INFO  ProfileMatch              : 
+19:32:51 INFO  ProfileMatch              :                 name: com.android.support::appcompat-v7
+19:32:51 INFO  ProfileMatch              :             category: Android
+19:32:51 INFO  ProfileMatch              :              version: 28.0.0
+19:32:51 INFO  ProfileMatch              :         release-date:  --
+19:32:51 INFO  ProfileMatch              :     lib root package: "android.support.v7"
+19:32:51 INFO  ProfileMatch              : 
+19:32:51 INFO  ProfileMatch              :                 name: com.android.support::customview
+19:32:51 INFO  ProfileMatch              :             category: Android
+19:32:51 INFO  ProfileMatch              :              version: 28.0.0
+19:32:51 INFO  ProfileMatch              :         release-date:  --
+19:32:51 INFO  ProfileMatch              :     lib root package: "android.support.v4"
+19:32:51 INFO  ProfileMatch              : 
+19:32:51 INFO  ProfileMatch              :                 name: androidx.print::print
+19:32:51 INFO  ProfileMatch              :             category: Android
+19:32:51 INFO  ProfileMatch              :              version: 1.0.0
+19:32:51 INFO  ProfileMatch              :         release-date:  --
+19:32:51 INFO  ProfileMatch              :     lib root package: "androidx.print"  (in app: "android.support.v4.print")
+19:32:51 INFO  ProfileMatch              : 
+19:32:51 INFO  ProfileMatch              :                 name: com.android.support::support-core-utils
+19:32:51 INFO  ProfileMatch              :             category: Android
+19:32:51 INFO  ProfileMatch              :              version: 28.0.0
+19:32:51 INFO  ProfileMatch              :         release-date:  --
+19:32:51 INFO  ProfileMatch              :     lib root package: "android.support.v4.content"
+19:32:51 INFO  ProfileMatch              : 
+19:32:51 INFO  ProfileMatch              :                 name: com.android.support::support-annotations
+19:32:51 INFO  ProfileMatch              :             category: Android
+19:32:51 INFO  ProfileMatch              :              version: 28.0.0
+19:32:51 INFO  ProfileMatch              :         release-date:  --
+19:32:51 INFO  ProfileMatch              :     lib root package: "android.support.annotation"
+19:32:51 INFO  ProfileMatch              : 
+19:32:51 INFO  ProfileMatch              :                 name: com.android.support::print
+19:32:51 INFO  ProfileMatch              :             category: Android
+19:32:51 INFO  ProfileMatch              :              version: 28.0.0
+19:32:51 INFO  ProfileMatch              :         release-date:  --
+19:32:51 INFO  ProfileMatch              :     lib root package: "android.support.v4.print"
+19:32:51 INFO  ProfileMatch              : 
+19:32:51 INFO  ProfileMatch              :                 name: com.android.support::support-compat
+19:32:51 INFO  ProfileMatch              :             category: Android
+19:32:51 INFO  ProfileMatch              :              version: 28.0.0
+19:32:51 INFO  ProfileMatch              :         release-date:  --
+19:32:51 INFO  ProfileMatch              :     lib root package: "android.support"
+19:32:51 INFO  ProfileMatch              : 
+19:32:51 INFO  ProfileMatch              :                 name: com.android.support::support-media-compat
+19:32:51 INFO  ProfileMatch              :             category: Android
+19:32:51 INFO  ProfileMatch              :              version: 28.0.0
+19:32:51 INFO  ProfileMatch              :         release-date:  --
+19:32:51 INFO  ProfileMatch              :     lib root package: "android.support.v4.media"
+19:32:51 INFO  ProfileMatch              : 
+19:32:51 INFO  ProfileMatch              :                 name: com.android.support::multidex-instrumentation
+19:32:51 INFO  ProfileMatch              :             category: Android
+19:32:51 INFO  ProfileMatch              :              version: 1.0.0  [OLD VERSION]
+19:32:51 INFO  ProfileMatch              :         release-date:  --
+19:32:51 INFO  ProfileMatch              :     lib root package: "com.android.test.runner"  (in app: "luke.launcher")
+19:32:51 INFO  ProfileMatch              : 
+19:32:51 INFO  ProfileMatch              :                 name: com.android.support::multidex-instrumentation
+19:32:51 INFO  ProfileMatch              :             category: Android
+19:32:51 INFO  ProfileMatch              :              version: 1.0.1  [OLD VERSION]
+19:32:51 INFO  ProfileMatch              :         release-date:  --
+19:32:51 INFO  ProfileMatch              :     lib root package: "com.android.test.runner"  (in app: "luke.launcher")
+19:32:51 INFO  ProfileMatch              : 
+19:32:51 INFO  ProfileMatch              :                 name: com.android.support::multidex-instrumentation
+19:32:51 INFO  ProfileMatch              :             category: Android
+19:32:51 INFO  ProfileMatch              :              version: 1.0.2  [OLD VERSION]
+19:32:51 INFO  ProfileMatch              :         release-date:  --
+19:32:51 INFO  ProfileMatch              :     lib root package: "com.android.test.runner"  (in app: "luke.launcher")
+19:32:51 INFO  ProfileMatch              : 
+19:32:51 INFO  ProfileMatch              :                 name: com.android.support::multidex-instrumentation
+19:32:51 INFO  ProfileMatch              :             category: Android
+19:32:51 INFO  ProfileMatch              :              version: 1.0.3
+19:32:51 INFO  ProfileMatch              :         release-date:  --
+19:32:51 INFO  ProfileMatch              :     lib root package: "com.android.test.runner"  (in app: "luke.launcher")
+19:32:51 INFO  ProfileMatch              : 
+19:32:51 INFO  ProfileMatch              :                 name: android.arch.core::common
+19:32:51 INFO  ProfileMatch              :             category: Android
+19:32:51 INFO  ProfileMatch              :              version: 1.0.0  [OLD VERSION]
+19:32:51 INFO  ProfileMatch              :         release-date:  --
+19:32:51 INFO  ProfileMatch              :     lib root package: "android.arch.core.internal"
+19:32:51 INFO  ProfileMatch              : 
+19:32:51 INFO  ProfileMatch              :                 name: android.arch.core::common
+19:32:51 INFO  ProfileMatch              :             category: Android
+19:32:51 INFO  ProfileMatch              :              version: 1.1.0  [OLD VERSION]
+19:32:51 INFO  ProfileMatch              :         release-date:  --
+19:32:51 INFO  ProfileMatch              :     lib root package: "android.arch.core.internal"
+19:32:51 INFO  ProfileMatch              : 
+19:32:51 INFO  ProfileMatch              :                 name: android.arch.core::common
+19:32:51 INFO  ProfileMatch              :             category: Android
+19:32:51 INFO  ProfileMatch              :              version: 1.1.1
+19:32:51 INFO  ProfileMatch              :         release-date:  --
+19:32:51 INFO  ProfileMatch              :     lib root package: "android.arch.core"
+19:32:51 INFO  ProfileMatch              : 
+19:32:51 INFO  ProfileMatch              :                 name: com.android.support::asynclayoutinflater
+19:32:51 INFO  ProfileMatch              :             category: Android
+19:32:51 INFO  ProfileMatch              :              version: 28.0.0
+19:32:51 INFO  ProfileMatch              :         release-date:  --
+19:32:51 INFO  ProfileMatch              :     lib root package: "android.support.v4.view"
+19:32:51 INFO  ProfileMatch              : 
+19:32:51 INFO  ProfileMatch              :                 name: androidx.versionedparcelable::versionedparcelable  [OLD VERSION]
+19:32:51 INFO  ProfileMatch              :             category: Android
+19:32:51 INFO  ProfileMatch              :              version: 1.0.0  [OLD VERSION]
+19:32:51 INFO  ProfileMatch              :         release-date:  --
+19:32:51 INFO  ProfileMatch              :     lib root package: "androidx.versionedparcelable"
+19:32:51 INFO  ProfileMatch              : 
+19:32:51 INFO  ProfileMatch              :                 name: android.arch.core::runtime
+19:32:51 INFO  ProfileMatch              :             category: Android
+19:32:51 INFO  ProfileMatch              :              version: 1.0.0  [OLD VERSION]
+19:32:51 INFO  ProfileMatch              :         release-date:  --
+19:32:51 INFO  ProfileMatch              :     lib root package: "android.arch.core"
+19:32:51 INFO  ProfileMatch              : 
+19:32:51 INFO  ProfileMatch              :                 name: android.arch.core::runtime
+19:32:51 INFO  ProfileMatch              :             category: Android
+19:32:51 INFO  ProfileMatch              :              version: 1.1.0  [OLD VERSION]
+19:32:51 INFO  ProfileMatch              :         release-date:  --
+19:32:51 INFO  ProfileMatch              :     lib root package: "android.arch.core"
+19:32:51 INFO  ProfileMatch              : 
+19:32:51 INFO  ProfileMatch              :                 name: android.arch.core::runtime
+19:32:51 INFO  ProfileMatch              :             category: Android
+19:32:51 INFO  ProfileMatch              :              version: 1.1.1
+19:32:51 INFO  ProfileMatch              :         release-date:  --
+19:32:51 INFO  ProfileMatch              :     lib root package: "android.arch.core.executor"
+19:32:51 INFO  ProfileMatch              : 
+19:32:51 INFO  ProfileMatch              :                 name: androidx.multidex::multidex-instrumentation
+19:32:51 INFO  ProfileMatch              :             category: Android
+19:32:51 INFO  ProfileMatch              :              version: 2.0.0
+19:32:51 INFO  ProfileMatch              :         release-date:  --
+19:32:51 INFO  ProfileMatch              :     lib root package: "com.android.test.runner"  (in app: "luke.launcher")
+19:32:51 INFO  ProfileMatch              : 
+19:32:51 INFO  ProfileMatch              :                 name: com.android.support::support-core-ui
+19:32:51 INFO  ProfileMatch              :             category: Android
+19:32:51 INFO  ProfileMatch              :              version: 28.0.0
+19:32:51 INFO  ProfileMatch              :         release-date:  --
+19:32:51 INFO  ProfileMatch              :     lib root package: "android.support.v4"
+19:32:51 INFO  ProfileMatch              : 
+19:32:51 INFO  ProfileMatch              :                 name: com.android.support::viewpager
+19:32:51 INFO  ProfileMatch              :             category: Android
+19:32:51 INFO  ProfileMatch              :              version: 28.0.0
+19:32:51 INFO  ProfileMatch              :         release-date:  --
+19:32:51 INFO  ProfileMatch              :     lib root package: "android.support.v4.view"
+19:32:51 INFO  ProfileMatch              : 
+19:32:52 INFO  LibraryIdentifier         : 
+19:32:52 INFO  LibraryIdentifier         : - Partial library matches:
+19:32:52 INFO  LibraryIdentifier         :                 name: androidx.arch.core::core-common
+19:32:52 INFO  LibraryIdentifier         :             category: Android
+19:32:52 INFO  LibraryIdentifier         :              version: 2.1.0
+19:32:52 INFO  LibraryIdentifier         :         release-date:  --
+19:32:52 INFO  LibraryIdentifier         :     lib root package: "androidx.arch.core"
+19:32:52 INFO  LibraryIdentifier         :         Partial matching results:
+19:32:52 INFO  LibraryIdentifier         :              - config: Hashing.md5() | Flags: no-flag | Keep: PN | Prune: MSIG   score: 0.875
+19:32:52 INFO  LibraryIdentifier         : 
+19:32:52 INFO  LibraryIdentifier         :                 name: androidx.interpolator::interpolator
+19:32:52 INFO  LibraryIdentifier         :             category: Android
+19:32:52 INFO  LibraryIdentifier         :              version: 1.0.0
+19:32:52 INFO  LibraryIdentifier         :         release-date:  --
+19:32:52 INFO  LibraryIdentifier         :     lib root package: "androidx.interpolator.view.animation"
+19:32:52 INFO  LibraryIdentifier         :         Partial matching results:
+19:32:52 INFO  LibraryIdentifier         :              - config: Hashing.md5() | Flags: no-flag | Keep: PN | Prune: MSIG   score: 0.75
+19:32:52 INFO  LibraryIdentifier         : 
+19:32:52 INFO  LibraryIdentifier         : 
+19:32:52 INFO  LibraryIdentifier         : App processing time: 19 sec, 243 ms
