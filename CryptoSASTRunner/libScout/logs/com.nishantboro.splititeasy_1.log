@@ -1,0 +1,1183 @@
+17:19:18 INFO  LibraryIdentifier         : Process app: com.nishantboro.splititeasy_1.apk
+17:19:18 INFO  LibraryIdentifier         : = Manifest Parser =
+17:19:18 INFO  LibraryIdentifier         :         Package name: com.nishantboro.splititeasy
+17:19:18 INFO  LibraryIdentifier         :         Version code: 1
+17:19:18 INFO  LibraryIdentifier         :        minSdkVersion: 15
+17:19:18 INFO  LibraryIdentifier         :     targetSdkVersion: 29
+17:19:18 INFO  LibraryIdentifier         :         SharedUserId:  - none -
+17:19:18 INFO  LibraryIdentifier         :     Library dependencies:  - none -
+17:19:18 INFO  LibraryIdentifier         : 
+17:19:18 INFO  LibraryIdentifier         : Found 402 unique libraries in 12405 library profiles
+17:19:18 INFO  LibraryIdentifier         : Generated class hierarchy (in 649 ms)
+17:19:19 INFO  WalaUtils                 : 
+17:19:19 INFO  WalaUtils                 : = ClassHierarchy Stats =
+17:19:19 INFO  WalaUtils                 :     # of classes: 3986
+17:19:19 INFO  WalaUtils                 :     # thereof inner classes: 2476
+17:19:19 INFO  WalaUtils                 :     # thereof public classes: 1578
+17:19:19 INFO  WalaUtils                 :         Activity : 10
+17:19:19 INFO  WalaUtils                 :         Application : 0
+17:19:19 INFO  WalaUtils                 :         AsyncTask : 21
+17:19:19 INFO  WalaUtils                 :         BroadcastReceiver : 3
+17:19:19 INFO  WalaUtils                 :         ContentProvider : 2
+17:19:19 INFO  WalaUtils                 :         Fragment : 1
+17:19:19 INFO  WalaUtils                 :         Handler : 4
+17:19:19 INFO  WalaUtils                 :         LayoutContainer : 69
+17:19:19 INFO  WalaUtils                 :         Plain : 3835
+17:19:19 INFO  WalaUtils                 :         Runnable : 0
+17:19:19 INFO  WalaUtils                 :         Service : 4
+17:19:19 INFO  WalaUtils                 :         Thread : 1
+17:19:19 INFO  WalaUtils                 :         View : 36
+17:19:19 INFO  WalaUtils                 :     # methods: 30648
+17:19:19 INFO  WalaUtils                 :         # of publicly accessible methods: 20162
+17:19:19 INFO  WalaUtils                 :         # of non-accessible methods: 10486
+17:19:19 INFO  WalaUtils                 : 
+17:19:19 INFO  Profile                   : = PackageTree =
+17:19:19 INFO  PackageTree               : Root Package: androidx
+17:19:19 INFO  PackageTree               : └── Root
+17:19:19 INFO  PackageTree               :     ├── androidx
+17:19:19 INFO  PackageTree               :     │   ├── slidingpanelayout
+17:19:19 INFO  PackageTree               :     │   │   └── widget (9)
+17:19:19 INFO  PackageTree               :     │   ├── core
+17:19:19 INFO  PackageTree               :     │   │   ├── view (72)
+17:19:19 INFO  PackageTree               :     │   │   │   ├── accessibility (27)
+17:19:19 INFO  PackageTree               :     │   │   │   ├── inputmethod (9)
+17:19:19 INFO  PackageTree               :     │   │   │   └── animation (2)
+17:19:19 INFO  PackageTree               :     │   │   ├── provider (28)
+17:19:19 INFO  PackageTree               :     │   │   ├── app (97)
+17:19:19 INFO  PackageTree               :     │   │   ├── os (21)
+17:19:19 INFO  PackageTree               :     │   │   ├── hardware
+17:19:19 INFO  PackageTree               :     │   │   │   ├── fingerprint (5)
+17:19:19 INFO  PackageTree               :     │   │   │   └── display (1)
+17:19:19 INFO  PackageTree               :     │   │   ├── content (14)
+17:19:19 INFO  PackageTree               :     │   │   │   ├── res (17)
+17:19:19 INFO  PackageTree               :     │   │   │   └── pm (11)
+17:19:19 INFO  PackageTree               :     │   │   ├── telephony
+17:19:19 INFO  PackageTree               :     │   │   │   └── mbms (1)
+17:19:19 INFO  PackageTree               :     │   │   ├── graphics (18)
+17:19:19 INFO  PackageTree               :     │   │   │   └── drawable (13)
+17:19:19 INFO  PackageTree               :     │   │   ├── widget (27)
+17:19:19 INFO  PackageTree               :     │   │   ├── util (14)
+17:19:19 INFO  PackageTree               :     │   │   ├── internal
+17:19:19 INFO  PackageTree               :     │   │   │   └── view (3)
+17:19:19 INFO  PackageTree               :     │   │   ├── text (19)
+17:19:19 INFO  PackageTree               :     │   │   │   └── util (6)
+17:19:19 INFO  PackageTree               :     │   │   ├── location (1)
+17:19:19 INFO  PackageTree               :     │   │   ├── accessibilityservice (1)
+17:19:19 INFO  PackageTree               :     │   │   ├── database (2)
+17:19:19 INFO  PackageTree               :     │   │   │   └── sqlite (1)
+17:19:19 INFO  PackageTree               :     │   │   ├── math (1)
+17:19:19 INFO  PackageTree               :     │   │   └── net (5)
+17:19:19 INFO  PackageTree               :     │   ├── documentfile
+17:19:19 INFO  PackageTree               :     │   │   └── provider (5)
+17:19:19 INFO  PackageTree               :     │   ├── fragment
+17:19:19 INFO  PackageTree               :     │   │   └── app (76)
+17:19:19 INFO  PackageTree               :     │   ├── annotation (59)
+17:19:19 INFO  PackageTree               :     │   ├── appcompat
+17:19:19 INFO  PackageTree               :     │   │   ├── widget (198)
+17:19:19 INFO  PackageTree               :     │   │   ├── graphics
+17:19:19 INFO  PackageTree               :     │   │   │   └── drawable (16)
+17:19:19 INFO  PackageTree               :     │   │   ├── app (82)
+17:19:19 INFO  PackageTree               :     │   │   ├── view (14)
+17:19:19 INFO  PackageTree               :     │   │   │   └── menu (45)
+17:19:19 INFO  PackageTree               :     │   │   ├── content
+17:19:19 INFO  PackageTree               :     │   │   │   └── res (2)
+17:19:19 INFO  PackageTree               :     │   │   └── text (1)
+17:19:19 INFO  PackageTree               :     │   ├── recyclerview
+17:19:19 INFO  PackageTree               :     │   │   └── widget (173)
+17:19:19 INFO  PackageTree               :     │   ├── legacy
+17:19:19 INFO  PackageTree               :     │   │   ├── app (5)
+17:19:19 INFO  PackageTree               :     │   │   ├── widget (1)
+17:19:19 INFO  PackageTree               :     │   │   └── content (1)
+17:19:19 INFO  PackageTree               :     │   ├── room (79)
+17:19:19 INFO  PackageTree               :     │   │   ├── util (13)
+17:19:19 INFO  PackageTree               :     │   │   ├── migration (1)
+17:19:19 INFO  PackageTree               :     │   │   └── paging (2)
+17:19:19 INFO  PackageTree               :     │   ├── transition (132)
+17:19:19 INFO  PackageTree               :     │   ├── viewpager
+17:19:19 INFO  PackageTree               :     │   │   └── widget (24)
+17:19:19 INFO  PackageTree               :     │   ├── cursoradapter
+17:19:19 INFO  PackageTree               :     │   │   └── widget (9)
+17:19:19 INFO  PackageTree               :     │   ├── swiperefreshlayout
+17:19:19 INFO  PackageTree               :     │   │   └── widget (18)
+17:19:19 INFO  PackageTree               :     │   ├── coordinatorlayout
+17:19:19 INFO  PackageTree               :     │   │   └── widget (14)
+17:19:19 INFO  PackageTree               :     │   ├── loader
+17:19:19 INFO  PackageTree               :     │   │   ├── app (7)
+17:19:19 INFO  PackageTree               :     │   │   └── content (15)
+17:19:19 INFO  PackageTree               :     │   ├── savedstate (8)
+17:19:19 INFO  PackageTree               :     │   ├── constraintlayout
+17:19:19 INFO  PackageTree               :     │   │   ├── solver (12)
+17:19:19 INFO  PackageTree               :     │   │   │   └── widgets (28)
+17:19:19 INFO  PackageTree               :     │   │   └── widget (12)
+17:19:19 INFO  PackageTree               :     │   ├── arch
+17:19:19 INFO  PackageTree               :     │   │   └── core
+17:19:19 INFO  PackageTree               :     │   │       ├── executor (6)
+17:19:19 INFO  PackageTree               :     │   │       ├── internal (8)
+17:19:19 INFO  PackageTree               :     │   │       └── util (1)
+17:19:19 INFO  PackageTree               :     │   ├── vectordrawable
+17:19:19 INFO  PackageTree               :     │   │   └── graphics
+17:19:19 INFO  PackageTree               :     │   │       └── drawable (24)
+17:19:19 INFO  PackageTree               :     │   ├── lifecycle (66)
+17:19:19 INFO  PackageTree               :     │   ├── customview
+17:19:19 INFO  PackageTree               :     │   │   ├── widget (12)
+17:19:19 INFO  PackageTree               :     │   │   └── view (3)
+17:19:19 INFO  PackageTree               :     │   ├── cardview
+17:19:19 INFO  PackageTree               :     │   │   └── widget (12)
+17:19:19 INFO  PackageTree               :     │   ├── activity (12)
+17:19:19 INFO  PackageTree               :     │   ├── versionedparcelable (15)
+17:19:19 INFO  PackageTree               :     │   ├── print (7)
+17:19:19 INFO  PackageTree               :     │   ├── sqlite
+17:19:19 INFO  PackageTree               :     │   │   └── db (11)
+17:19:19 INFO  PackageTree               :     │   │       └── framework (9)
+17:19:19 INFO  PackageTree               :     │   ├── collection (17)
+17:19:19 INFO  PackageTree               :     │   ├── drawerlayout
+17:19:19 INFO  PackageTree               :     │   │   └── widget (11)
+17:19:19 INFO  PackageTree               :     │   ├── asynclayoutinflater
+17:19:19 INFO  PackageTree               :     │   │   └── view (6)
+17:19:19 INFO  PackageTree               :     │   ├── localbroadcastmanager
+17:19:19 INFO  PackageTree               :     │   │   └── content (4)
+17:19:19 INFO  PackageTree               :     │   └── interpolator
+17:19:19 INFO  PackageTree               :     │       └── view
+17:19:19 INFO  PackageTree               :     │           └── animation (4)
+17:19:19 INFO  PackageTree               :     ├── com
+17:19:19 INFO  PackageTree               :     │   ├── google
+17:19:19 INFO  PackageTree               :     │   │   ├── common
+17:19:19 INFO  PackageTree               :     │   │   │   ├── graph (107)
+17:19:19 INFO  PackageTree               :     │   │   │   ├── collect (808)
+17:19:19 INFO  PackageTree               :     │   │   │   ├── cache (118)
+17:19:19 INFO  PackageTree               :     │   │   │   ├── util
+17:19:19 INFO  PackageTree               :     │   │   │   │   └── concurrent (252)
+17:19:19 INFO  PackageTree               :     │   │   │   │       └── internal (2)
+17:19:19 INFO  PackageTree               :     │   │   │   ├── io (77)
+17:19:19 INFO  PackageTree               :     │   │   │   ├── reflect (72)
+17:19:19 INFO  PackageTree               :     │   │   │   ├── net (13)
+17:19:19 INFO  PackageTree               :     │   │   │   ├── base (151)
+17:19:19 INFO  PackageTree               :     │   │   │   │   └── internal (1)
+17:19:19 INFO  PackageTree               :     │   │   │   ├── hash (80)
+17:19:19 INFO  PackageTree               :     │   │   │   ├── eventbus (23)
+17:19:19 INFO  PackageTree               :     │   │   │   ├── annotations (4)
+17:19:19 INFO  PackageTree               :     │   │   │   ├── escape (16)
+17:19:19 INFO  PackageTree               :     │   │   │   ├── primitives (56)
+17:19:19 INFO  PackageTree               :     │   │   │   ├── math (22)
+17:19:19 INFO  PackageTree               :     │   │   │   ├── html (1)
+17:19:19 INFO  PackageTree               :     │   │   │   └── xml (1)
+17:19:19 INFO  PackageTree               :     │   │   ├── android
+17:19:19 INFO  PackageTree               :     │   │   │   └── material
+17:19:19 INFO  PackageTree               :     │   │   │       ├── snackbar (34)
+17:19:19 INFO  PackageTree               :     │   │   │       ├── internal (41)
+17:19:19 INFO  PackageTree               :     │   │   │       ├── bottomnavigation (14)
+17:19:19 INFO  PackageTree               :     │   │   │       ├── appbar (25)
+17:19:19 INFO  PackageTree               :     │   │   │       ├── tabs (17)
+17:19:19 INFO  PackageTree               :     │   │   │       ├── behavior (6)
+17:19:19 INFO  PackageTree               :     │   │   │       ├── transformation (15)
+17:19:19 INFO  PackageTree               :     │   │   │       ├── bottomappbar (13)
+17:19:19 INFO  PackageTree               :     │   │   │       ├── floatingactionbutton (19)
+17:19:19 INFO  PackageTree               :     │   │   │       ├── chip (12)
+17:19:19 INFO  PackageTree               :     │   │   │       ├── bottomsheet (14)
+17:19:19 INFO  PackageTree               :     │   │   │       ├── shape (14)
+17:19:19 INFO  PackageTree               :     │   │   │       ├── textfield (12)
+17:19:19 INFO  PackageTree               :     │   │   │       ├── shadow (2)
+17:19:19 INFO  PackageTree               :     │   │   │       ├── resources (4)
+17:19:19 INFO  PackageTree               :     │   │   │       ├── animation (10)
+17:19:19 INFO  PackageTree               :     │   │   │       ├── circularreveal (14)
+17:19:19 INFO  PackageTree               :     │   │   │       │   ├── coordinatorlayout (1)
+17:19:19 INFO  PackageTree               :     │   │   │       │   └── cardview (1)
+17:19:19 INFO  PackageTree               :     │   │   │       ├── expandable (3)
+17:19:19 INFO  PackageTree               :     │   │   │       ├── math (1)
+17:19:19 INFO  PackageTree               :     │   │   │       ├── theme (1)
+17:19:19 INFO  PackageTree               :     │   │   │       ├── navigation (5)
+17:19:19 INFO  PackageTree               :     │   │   │       ├── stateful (2)
+17:19:19 INFO  PackageTree               :     │   │   │       ├── drawable (1)
+17:19:19 INFO  PackageTree               :     │   │   │       ├── button (4)
+17:19:19 INFO  PackageTree               :     │   │   │       ├── card (2)
+17:19:19 INFO  PackageTree               :     │   │   │       ├── ripple (1)
+17:19:19 INFO  PackageTree               :     │   │   │       └── canvas (1)
+17:19:19 INFO  PackageTree               :     │   │   ├── j2objc
+17:19:19 INFO  PackageTree               :     │   │   │   └── annotations (12)
+17:19:19 INFO  PackageTree               :     │   │   ├── errorprone
+17:19:19 INFO  PackageTree               :     │   │   │   └── annotations (17)
+17:19:19 INFO  PackageTree               :     │   │   │       └── concurrent (4)
+17:19:19 INFO  PackageTree               :     │   │   └── thirdparty
+17:19:19 INFO  PackageTree               :     │   │       └── publicsuffix (3)
+17:19:19 INFO  PackageTree               :     │   └── nishantboro
+17:19:19 INFO  PackageTree               :     │       └── splititeasy (100)
+17:19:19 INFO  PackageTree               :     ├── javax
+17:19:19 INFO  PackageTree               :     │   └── annotation (24)
+17:19:19 INFO  PackageTree               :     │       ├── concurrent (4)
+17:19:19 INFO  PackageTree               :     │       └── meta (7)
+17:19:19 INFO  PackageTree               :     ├── android
+17:19:19 INFO  PackageTree               :     │   └── support
+17:19:19 INFO  PackageTree               :     │       └── v4
+17:19:19 INFO  PackageTree               :     │           ├── os (4)
+17:19:19 INFO  PackageTree               :     │           ├── graphics
+17:19:19 INFO  PackageTree               :     │           │   └── drawable (1)
+17:19:19 INFO  PackageTree               :     │           └── app (1)
+17:19:19 INFO  PackageTree               :     └── org
+17:19:19 INFO  PackageTree               :         ├── checkerframework
+17:19:19 INFO  PackageTree               :         │   └── checker
+17:19:19 INFO  PackageTree               :         │       └── nullness
+17:19:19 INFO  PackageTree               :         │           └── compatqual (10)
+17:19:19 INFO  PackageTree               :         └── codehaus
+17:19:19 INFO  PackageTree               :             └── mojo
+17:19:19 INFO  PackageTree               :                 └── animal_sniffer (1)
+17:19:19 INFO  Profile                   : 
+17:19:19 INFO  AppProfile                : - generated app package tree (in 46 ms)
+17:19:19 INFO  AppProfile                : 
+17:19:19 DEBUG HashTree                  : Generate hash tree..
+17:19:19 DEBUG HashTree                  :     - generated 133 package hashes.
+17:19:19 DEBUG HashTree                  :     - generated 3809 clazz hashes.
+17:19:19 DEBUG HashTree                  :     - generated 30648 method hashes.
+17:19:19 DEBUG HashTree                  :     => Library Hash: a9473cdb018a59222ff25b1581929986
+17:19:19 INFO  AppProfile                : - generated app hash trees (in 484 ms)
+17:19:19 INFO  AppProfile                : 
+17:19:19 INFO  LibraryIdentifier         : = Scan for library root packages (heuristic) =
+17:19:19 INFO  LibraryIdentifier         :     - Found lib root package com.google.common  (Guava)
+17:19:19 INFO  LibraryIdentifier         :     - Found lib root package androidx.annotation  (androidx.annotation::annotation)
+17:19:19 INFO  LibraryIdentifier         :     - Found lib root package androidx.appcompat  (androidx.appcompat::appcompat)
+17:19:19 INFO  LibraryIdentifier         :     - Found lib root package androidx.arch.core  (androidx.arch.core::core-common)
+17:19:19 INFO  LibraryIdentifier         :     - Found lib root package androidx.arch.core.executor  (androidx.arch.core::core-runtime)
+17:19:19 INFO  LibraryIdentifier         :     - Found lib root package androidx.asynclayoutinflater.view  (androidx.asynclayoutinflater::asynclayoutinflater)
+17:19:19 INFO  LibraryIdentifier         :     - Found lib root package androidx.cardview.widget  (androidx.cardview::cardview)
+17:19:19 INFO  LibraryIdentifier         :     - Found lib root package androidx.collection  (androidx.collection::collection)
+17:19:19 INFO  LibraryIdentifier         :     - Found lib root package androidx.collection  (androidx.collection::collection-ktx)
+17:19:19 INFO  LibraryIdentifier         :     - Found lib root package androidx.constraintlayout.widget  (androidx.constraintlayout::constraintlayout)
+17:19:19 INFO  LibraryIdentifier         :     - Found lib root package androidx.constraintlayout.solver  (androidx.constraintlayout::constraintlayout-solver)
+17:19:19 INFO  LibraryIdentifier         :     - Found lib root package androidx.coordinatorlayout.widget  (androidx.coordinatorlayout::coordinatorlayout)
+17:19:19 INFO  LibraryIdentifier         :     - Found lib root package androidx.core  (androidx.core::core)
+17:19:19 INFO  LibraryIdentifier         :     - Found lib root package androidx  (androidx.core::core-ktx)
+17:19:19 INFO  LibraryIdentifier         :     - Found lib root package androidx.cursoradapter.widget  (androidx.cursoradapter::cursoradapter)
+17:19:19 INFO  LibraryIdentifier         :     - Found lib root package androidx.customview  (androidx.customview::customview)
+17:19:19 INFO  LibraryIdentifier         :     - Found lib root package androidx.documentfile.provider  (androidx.documentfile::documentfile)
+17:19:19 INFO  LibraryIdentifier         :     - Found lib root package androidx.drawerlayout.widget  (androidx.drawerlayout::drawerlayout)
+17:19:19 INFO  LibraryIdentifier         :     - Found lib root package androidx.fragment.app  (androidx.fragment::fragment)
+17:19:19 INFO  LibraryIdentifier         :     - Found lib root package androidx.fragment.app  (androidx.fragment::fragment-ktx)
+17:19:19 INFO  LibraryIdentifier         :     - Found lib root package androidx.interpolator.view.animation  (androidx.interpolator::interpolator)
+17:19:19 INFO  LibraryIdentifier         :     - Found lib root package androidx.legacy  (androidx.legacy::legacy-support-core-ui)
+17:19:19 INFO  LibraryIdentifier         :     - Found lib root package androidx.legacy.content  (androidx.legacy::legacy-support-core-utils)
+17:19:19 INFO  LibraryIdentifier         :     - Found lib root package androidx.legacy  (androidx.legacy::legacy-support-v13)
+17:19:19 INFO  LibraryIdentifier         :     - Found lib root package androidx.lifecycle  (androidx.lifecycle::lifecycle-common)
+17:19:19 INFO  LibraryIdentifier         :     - Found lib root package androidx.lifecycle  (androidx.lifecycle::lifecycle-common-java8)
+17:19:19 INFO  LibraryIdentifier         :     - Found lib root package androidx.lifecycle  (androidx.lifecycle::lifecycle-compiler)
+17:19:19 INFO  LibraryIdentifier         :     - Found lib root package androidx.lifecycle  (androidx.lifecycle::lifecycle-extensions)
+17:19:19 INFO  LibraryIdentifier         :     - Found lib root package androidx.lifecycle  (androidx.lifecycle::lifecycle-livedata)
+17:19:19 INFO  LibraryIdentifier         :     - Found lib root package androidx.lifecycle  (androidx.lifecycle::lifecycle-livedata-core)
+17:19:19 INFO  LibraryIdentifier         :     - Found lib root package androidx.lifecycle  (androidx.lifecycle::lifecycle-process)
+17:19:19 INFO  LibraryIdentifier         :     - Found lib root package androidx.lifecycle  (androidx.lifecycle::lifecycle-reactivestreams)
+17:19:19 INFO  LibraryIdentifier         :     - Found lib root package androidx.lifecycle  (androidx.lifecycle::lifecycle-reactivestreams-ktx)
+17:19:19 INFO  LibraryIdentifier         :     - Found lib root package androidx.lifecycle  (androidx.lifecycle::lifecycle-runtime)
+17:19:19 INFO  LibraryIdentifier         :     - Found lib root package androidx.lifecycle  (androidx.lifecycle::lifecycle-service)
+17:19:19 INFO  LibraryIdentifier         :     - Found lib root package androidx.lifecycle  (androidx.lifecycle::lifecycle-viewmodel)
+17:19:19 INFO  LibraryIdentifier         :     - Found lib root package androidx.lifecycle  (androidx.lifecycle::lifecycle-viewmodel-ktx)
+17:19:19 INFO  LibraryIdentifier         :     - Found lib root package androidx.loader  (androidx.loader::loader)
+17:19:19 INFO  LibraryIdentifier         :     - Found lib root package androidx.localbroadcastmanager.content  (androidx.localbroadcastmanager::localbroadcastmanager)
+17:19:19 INFO  LibraryIdentifier         :     - Found lib root package androidx.print  (androidx.print::print)
+17:19:19 INFO  LibraryIdentifier         :     - Found lib root package androidx.recyclerview.widget  (androidx.recyclerview::recyclerview)
+17:19:19 INFO  LibraryIdentifier         :     - Found lib root package androidx.room  (androidx.room::room-common)
+17:19:19 INFO  LibraryIdentifier         :     - Found lib root package androidx.room  (androidx.room::room-compiler)
+17:19:19 INFO  LibraryIdentifier         :     - Found lib root package androidx.room  (androidx.room::room-runtime)
+17:19:19 INFO  LibraryIdentifier         :     - Found lib root package androidx.room  (androidx.room::room-rxjava2)
+17:19:19 INFO  LibraryIdentifier         :     - Found lib root package androidx.slidingpanelayout.widget  (androidx.slidingpanelayout::slidingpanelayout)
+17:19:19 INFO  LibraryIdentifier         :     - Found lib root package androidx.sqlite.db  (androidx.sqlite::sqlite)
+17:19:19 INFO  LibraryIdentifier         :     - Found lib root package androidx.sqlite.db.framework  (androidx.sqlite::sqlite-framework)
+17:19:19 INFO  LibraryIdentifier         :     - Found lib root package androidx.sqlite.db  (androidx.sqlite::sqlite-ktx)
+17:19:19 INFO  LibraryIdentifier         :     - Found lib root package androidx.swiperefreshlayout.widget  (androidx.swiperefreshlayout::swiperefreshlayout)
+17:19:19 INFO  LibraryIdentifier         :     - Found lib root package androidx.transition  (androidx.transition::transition)
+17:19:19 INFO  LibraryIdentifier         :     - Found lib root package androidx.vectordrawable.graphics.drawable  (androidx.vectordrawable::vectordrawable)
+17:19:19 INFO  LibraryIdentifier         :     - Found lib root package androidx.vectordrawable.graphics.drawable  (androidx.vectordrawable::vectordrawable-animated)
+17:19:19 INFO  LibraryIdentifier         :     - Found lib root package androidx.versionedparcelable  (androidx.versionedparcelable::versionedparcelable)
+17:19:19 INFO  LibraryIdentifier         :     - Found lib root package androidx.viewpager.widget  (androidx.viewpager::viewpager)
+17:19:19 INFO  LibraryIdentifier         :     - Found lib root package android.support.v4  (com.android.support::customview)
+17:19:19 INFO  LibraryIdentifier         :     - Found lib root package android.support.v4  (com.android.support::loader)
+17:19:19 INFO  LibraryIdentifier         :     - Found lib root package android.support.v4  (com.android.support::support-compat)
+17:19:19 INFO  LibraryIdentifier         :     - Found lib root package android.support.v4  (com.android.support::support-core-ui)
+17:19:19 INFO  LibraryIdentifier         :     - Found lib root package android.support.v4  (com.android.support::support-core-utils)
+17:19:19 INFO  LibraryIdentifier         :     - Found lib root package android.support.v4.app  (com.android.support::support-fragment)
+17:19:19 INFO  LibraryIdentifier         :     - Found lib root package android.support.v4  (com.android.support::support-v4)
+17:19:19 INFO  LibraryIdentifier         :     - Found lib root package androidx.versionedparcelable  (com.android.support::versionedparcelable)
+17:19:19 INFO  LibraryIdentifier         :     - Found lib root package com.google.android.material  (com.google.android.material::material)
+17:19:19 INFO  LibraryIdentifier         : 
+17:19:19 INFO  LibraryIdentifier         : = Match profiles =
+17:20:10 INFO  LibraryIdentifier         :     >> profile matching done (51 sec, 13 ms)
+17:20:10 INFO  LibraryIdentifier         : 
+17:20:10 INFO  LibraryIdentifier         : == Report ==
+17:20:10 INFO  LibraryIdentifier         : - Full library matches:
+17:20:10 INFO  ProfileMatch              :                 name: androidx.customview::customview
+17:20:10 INFO  ProfileMatch              :             category: Android
+17:20:10 INFO  ProfileMatch              :              version: 1.0.0  [OLD VERSION]
+17:20:10 INFO  ProfileMatch              :         release-date:  --
+17:20:10 INFO  ProfileMatch              :     lib root package: "androidx.customview"
+17:20:10 INFO  ProfileMatch              : 
+17:20:10 INFO  ProfileMatch              :                 name: androidx.appcompat::appcompat
+17:20:10 INFO  ProfileMatch              :             category: Android
+17:20:10 INFO  ProfileMatch              :              version: 1.1.0  [OLD VERSION]
+17:20:10 INFO  ProfileMatch              :         release-date:  --
+17:20:10 INFO  ProfileMatch              :     lib root package: "androidx.appcompat"
+17:20:10 INFO  ProfileMatch              : 
+17:20:10 INFO  ProfileMatch              :                 name: androidx.cursoradapter::cursoradapter
+17:20:10 INFO  ProfileMatch              :             category: Android
+17:20:10 INFO  ProfileMatch              :              version: 1.0.0
+17:20:10 INFO  ProfileMatch              :         release-date:  --
+17:20:10 INFO  ProfileMatch              :     lib root package: "androidx.cursoradapter.widget"
+17:20:10 INFO  ProfileMatch              : 
+17:20:10 INFO  ProfileMatch              :                 name: androidx.room::room-common
+17:20:10 INFO  ProfileMatch              :             category: Android
+17:20:10 INFO  ProfileMatch              :              version: 2.2.0  [OLD VERSION]
+17:20:10 INFO  ProfileMatch              :         release-date:  --
+17:20:10 INFO  ProfileMatch              :     lib root package: "androidx.room"
+17:20:10 INFO  ProfileMatch              : 
+17:20:10 INFO  ProfileMatch              :                 name: androidx.room::room-common
+17:20:10 INFO  ProfileMatch              :             category: Android
+17:20:10 INFO  ProfileMatch              :              version: 2.2.1  [OLD VERSION]
+17:20:10 INFO  ProfileMatch              :         release-date:  --
+17:20:10 INFO  ProfileMatch              :     lib root package: "androidx.room"
+17:20:10 INFO  ProfileMatch              : 
+17:20:10 INFO  ProfileMatch              :                 name: androidx.room::room-common
+17:20:10 INFO  ProfileMatch              :             category: Android
+17:20:10 INFO  ProfileMatch              :              version: 2.2.2  [OLD VERSION]
+17:20:10 INFO  ProfileMatch              :         release-date:  --
+17:20:10 INFO  ProfileMatch              :     lib root package: "androidx.room"
+17:20:10 INFO  ProfileMatch              : 
+17:20:10 INFO  ProfileMatch              :                 name: androidx.room::room-common
+17:20:10 INFO  ProfileMatch              :             category: Android
+17:20:10 INFO  ProfileMatch              :              version: 2.2.3  [OLD VERSION]
+17:20:10 INFO  ProfileMatch              :         release-date:  --
+17:20:10 INFO  ProfileMatch              :     lib root package: "androidx.room"
+17:20:10 INFO  ProfileMatch              : 
+17:20:10 INFO  ProfileMatch              :                 name: androidx.room::room-common
+17:20:10 INFO  ProfileMatch              :             category: Android
+17:20:10 INFO  ProfileMatch              :              version: 2.2.4  [OLD VERSION]
+17:20:10 INFO  ProfileMatch              :         release-date:  --
+17:20:10 INFO  ProfileMatch              :     lib root package: "androidx.room"
+17:20:10 INFO  ProfileMatch              : 
+17:20:10 INFO  ProfileMatch              :                 name: androidx.room::room-common
+17:20:10 INFO  ProfileMatch              :             category: Android
+17:20:10 INFO  ProfileMatch              :              version: 2.2.5  [OLD VERSION]
+17:20:10 INFO  ProfileMatch              :         release-date:  --
+17:20:10 INFO  ProfileMatch              :     lib root package: "androidx.room"
+17:20:10 INFO  ProfileMatch              : 
+17:20:10 INFO  ProfileMatch              :                 name: androidx.room::room-common
+17:20:10 INFO  ProfileMatch              :             category: Android
+17:20:10 INFO  ProfileMatch              :              version: 2.2.6  [OLD VERSION]
+17:20:10 INFO  ProfileMatch              :         release-date:  --
+17:20:10 INFO  ProfileMatch              :     lib root package: "androidx.room"
+17:20:10 INFO  ProfileMatch              : 
+17:20:10 INFO  ProfileMatch              :                 name: androidx.recyclerview::recyclerview
+17:20:10 INFO  ProfileMatch              :             category: Android
+17:20:10 INFO  ProfileMatch              :              version: 1.0.0  [OLD VERSION]
+17:20:10 INFO  ProfileMatch              :         release-date:  --
+17:20:10 INFO  ProfileMatch              :     lib root package: "androidx.recyclerview.widget"
+17:20:10 INFO  ProfileMatch              : 
+17:20:10 INFO  ProfileMatch              :                 name: com.android.support::loader
+17:20:10 INFO  ProfileMatch              :             category: Android
+17:20:10 INFO  ProfileMatch              :              version: 28.0.0
+17:20:10 INFO  ProfileMatch              :         release-date:  --
+17:20:10 INFO  ProfileMatch              :     lib root package: "android.support.v4"  (in app: "androidx.loader")
+17:20:10 INFO  ProfileMatch              : 
+17:20:10 INFO  ProfileMatch              :                 name: androidx.constraintlayout::constraintlayout-solver
+17:20:10 INFO  ProfileMatch              :             category: Android
+17:20:10 INFO  ProfileMatch              :              version: 1.1.3  [OLD VERSION]
+17:20:10 INFO  ProfileMatch              :         release-date:  --
+17:20:10 INFO  ProfileMatch              :     lib root package: "androidx.constraintlayout.solver"
+17:20:10 INFO  ProfileMatch              : 
+17:20:10 INFO  ProfileMatch              :                 name: androidx.annotation::annotation
+17:20:10 INFO  ProfileMatch              :             category: Android
+17:20:10 INFO  ProfileMatch              :              version: 1.1.0  [OLD VERSION]
+17:20:10 INFO  ProfileMatch              :         release-date:  --
+17:20:10 INFO  ProfileMatch              :     lib root package: "androidx.annotation"
+17:20:10 INFO  ProfileMatch              : 
+17:20:10 INFO  ProfileMatch              :                 name: androidx.coordinatorlayout::coordinatorlayout
+17:20:10 INFO  ProfileMatch              :             category: Android
+17:20:10 INFO  ProfileMatch              :              version: 1.0.0  [OLD VERSION]
+17:20:10 INFO  ProfileMatch              :         release-date:  --
+17:20:10 INFO  ProfileMatch              :     lib root package: "androidx.coordinatorlayout.widget"
+17:20:10 INFO  ProfileMatch              : 
+17:20:10 INFO  ProfileMatch              :                 name: androidx.swiperefreshlayout::swiperefreshlayout
+17:20:10 INFO  ProfileMatch              :             category: Android
+17:20:10 INFO  ProfileMatch              :              version: 1.0.0  [OLD VERSION]
+17:20:10 INFO  ProfileMatch              :         release-date:  --
+17:20:10 INFO  ProfileMatch              :     lib root package: "androidx.swiperefreshlayout.widget"
+17:20:10 INFO  ProfileMatch              : 
+17:20:11 INFO  ProfileMatch              :                 name: com.android.support::localbroadcastmanager
+17:20:11 INFO  ProfileMatch              :             category: Android
+17:20:11 INFO  ProfileMatch              :              version: 28.0.0
+17:20:11 INFO  ProfileMatch              :         release-date:  --
+17:20:11 INFO  ProfileMatch              :     lib root package: "android.support.v4.content"  (in app: "androidx.localbroadcastmanager.content")
+17:20:11 INFO  ProfileMatch              : 
+17:20:11 INFO  ProfileMatch              :                 name: android.arch.persistence::db
+17:20:11 INFO  ProfileMatch              :             category: Android
+17:20:11 INFO  ProfileMatch              :              version: 1.1.0  [OLD VERSION]
+17:20:11 INFO  ProfileMatch              :         release-date:  --
+17:20:11 INFO  ProfileMatch              :     lib root package: "android.arch.persistence.db"  (in app: "androidx.sqlite.db")
+17:20:11 INFO  ProfileMatch              : 
+17:20:11 INFO  ProfileMatch              :                 name: android.arch.persistence::db
+17:20:11 INFO  ProfileMatch              :             category: Android
+17:20:11 INFO  ProfileMatch              :              version: 1.1.1
+17:20:11 INFO  ProfileMatch              :         release-date:  --
+17:20:11 INFO  ProfileMatch              :     lib root package: "android.arch.persistence.db"  (in app: "androidx.sqlite.db")
+17:20:11 INFO  ProfileMatch              : 
+17:20:11 INFO  ProfileMatch              :                 name: androidx.constraintlayout::constraintlayout
+17:20:11 INFO  ProfileMatch              :             category: Android
+17:20:11 INFO  ProfileMatch              :              version: 1.1.3  [OLD VERSION]
+17:20:11 INFO  ProfileMatch              :         release-date:  --
+17:20:11 INFO  ProfileMatch              :     lib root package: "androidx.constraintlayout.widget"
+17:20:11 INFO  ProfileMatch              : 
+17:20:11 INFO  ProfileMatch              :                 name: com.android.support.constraint::constraint-layout
+17:20:11 INFO  ProfileMatch              :             category: Android
+17:20:11 INFO  ProfileMatch              :              version: 1.1.3  [OLD VERSION]
+17:20:11 INFO  ProfileMatch              :         release-date:  --
+17:20:11 INFO  ProfileMatch              :     lib root package: "android.support.constraint"  (in app: "androidx.constraintlayout.widget")
+17:20:11 INFO  ProfileMatch              : 
+17:20:11 INFO  ProfileMatch              :                 name: com.android.support::customview
+17:20:11 INFO  ProfileMatch              :             category: Android
+17:20:11 INFO  ProfileMatch              :              version: 28.0.0
+17:20:11 INFO  ProfileMatch              :         release-date:  --
+17:20:11 INFO  ProfileMatch              :     lib root package: "android.support.v4"  (in app: "androidx.customview")
+17:20:11 INFO  ProfileMatch              : 
+17:20:11 INFO  ProfileMatch              :                 name: com.android.support::drawerlayout
+17:20:11 INFO  ProfileMatch              :             category: Android
+17:20:11 INFO  ProfileMatch              :              version: 28.0.0
+17:20:11 INFO  ProfileMatch              :         release-date:  --
+17:20:11 INFO  ProfileMatch              :     lib root package: "android.support.v4.widget"  (in app: "androidx.drawerlayout.widget")
+17:20:11 INFO  ProfileMatch              : 
+17:20:11 INFO  ProfileMatch              :                 name: androidx.loader::loader
+17:20:11 INFO  ProfileMatch              :             category: Android
+17:20:11 INFO  ProfileMatch              :              version: 1.0.0  [OLD VERSION]
+17:20:11 INFO  ProfileMatch              :         release-date:  --
+17:20:11 INFO  ProfileMatch              :     lib root package: "androidx.loader"
+17:20:11 INFO  ProfileMatch              : 
+17:20:11 INFO  ProfileMatch              :                 name: androidx.cardview::cardview
+17:20:11 INFO  ProfileMatch              :             category: Android
+17:20:11 INFO  ProfileMatch              :              version: 1.0.0
+17:20:11 INFO  ProfileMatch              :         release-date:  --
+17:20:11 INFO  ProfileMatch              :     lib root package: "androidx.cardview.widget"
+17:20:11 INFO  ProfileMatch              : 
+17:20:11 INFO  ProfileMatch              :                 name: androidx.print::print
+17:20:11 INFO  ProfileMatch              :             category: Android
+17:20:11 INFO  ProfileMatch              :              version: 1.0.0
+17:20:11 INFO  ProfileMatch              :         release-date:  --
+17:20:11 INFO  ProfileMatch              :     lib root package: "androidx.print"
+17:20:11 INFO  ProfileMatch              : 
+17:20:11 INFO  ProfileMatch              :                 name: androidx.drawerlayout::drawerlayout
+17:20:11 INFO  ProfileMatch              :             category: Android
+17:20:11 INFO  ProfileMatch              :              version: 1.0.0  [OLD VERSION]
+17:20:11 INFO  ProfileMatch              :         release-date:  --
+17:20:11 INFO  ProfileMatch              :     lib root package: "androidx.drawerlayout.widget"
+17:20:11 INFO  ProfileMatch              : 
+17:20:11 INFO  ProfileMatch              :                 name: com.android.support::support-core-utils
+17:20:11 INFO  ProfileMatch              :             category: Android
+17:20:11 INFO  ProfileMatch              :              version: 28.0.0
+17:20:11 INFO  ProfileMatch              :         release-date:  --
+17:20:11 INFO  ProfileMatch              :     lib root package: "android.support.v4.content"  (in app: "androidx.legacy.content")
+17:20:11 INFO  ProfileMatch              : 
+17:20:11 INFO  ProfileMatch              :                 name: com.android.support::swiperefreshlayout
+17:20:11 INFO  ProfileMatch              :             category: Android
+17:20:11 INFO  ProfileMatch              :              version: 28.0.0
+17:20:11 INFO  ProfileMatch              :         release-date:  --
+17:20:11 INFO  ProfileMatch              :     lib root package: "android.support.v4.widget"  (in app: "androidx.swiperefreshlayout.widget")
+17:20:11 INFO  ProfileMatch              : 
+17:20:11 INFO  ProfileMatch              :                 name: com.android.support::print
+17:20:11 INFO  ProfileMatch              :             category: Android
+17:20:11 INFO  ProfileMatch              :              version: 28.0.0
+17:20:11 INFO  ProfileMatch              :         release-date:  --
+17:20:11 INFO  ProfileMatch              :     lib root package: "android.support.v4.print"  (in app: "androidx.print")
+17:20:11 INFO  ProfileMatch              : 
+17:20:11 INFO  ProfileMatch              :                 name: androidx.sqlite::sqlite-framework
+17:20:11 INFO  ProfileMatch              :             category: Android
+17:20:11 INFO  ProfileMatch              :              version: 2.0.1  [OLD VERSION]
+17:20:11 INFO  ProfileMatch              :         release-date:  --
+17:20:11 INFO  ProfileMatch              :     lib root package: "androidx.sqlite.db.framework"
+17:20:11 INFO  ProfileMatch              : 
+17:20:11 INFO  ProfileMatch              :                 name: com.google.android.material::material
+17:20:11 INFO  ProfileMatch              :             category: Android
+17:20:11 INFO  ProfileMatch              :              version: 1.0.0  [OLD VERSION]
+17:20:11 INFO  ProfileMatch              :         release-date:  --
+17:20:11 INFO  ProfileMatch              :     lib root package: "com.google.android.material"
+17:20:11 INFO  ProfileMatch              : 
+17:20:11 INFO  ProfileMatch              :                 name: androidx.arch.core::core-runtime
+17:20:11 INFO  ProfileMatch              :             category: Android
+17:20:11 INFO  ProfileMatch              :              version: 2.1.0
+17:20:11 INFO  ProfileMatch              :         release-date:  --
+17:20:11 INFO  ProfileMatch              :     lib root package: "androidx.arch.core.executor"
+17:20:11 INFO  ProfileMatch              : 
+17:20:11 INFO  ProfileMatch              :                 name: com.android.support.constraint::constraint-layout-solver
+17:20:11 INFO  ProfileMatch              :             category: Android
+17:20:11 INFO  ProfileMatch              :              version: 1.1.3  [OLD VERSION]
+17:20:11 INFO  ProfileMatch              :         release-date:  --
+17:20:11 INFO  ProfileMatch              :     lib root package: "android.support.constraint.solver"  (in app: "androidx.constraintlayout.solver")
+17:20:11 INFO  ProfileMatch              : 
+17:20:11 INFO  ProfileMatch              :                 name: com.android.support::asynclayoutinflater
+17:20:11 INFO  ProfileMatch              :             category: Android
+17:20:11 INFO  ProfileMatch              :              version: 28.0.0
+17:20:11 INFO  ProfileMatch              :         release-date:  --
+17:20:11 INFO  ProfileMatch              :     lib root package: "android.support.v4.view"  (in app: "androidx.asynclayoutinflater.view")
+17:20:11 INFO  ProfileMatch              : 
+17:20:11 INFO  ProfileMatch              :                 name: androidx.arch.core::core-common
+17:20:11 INFO  ProfileMatch              :             category: Android
+17:20:11 INFO  ProfileMatch              :              version: 2.0.0  [OLD VERSION]
+17:20:11 INFO  ProfileMatch              :         release-date:  --
+17:20:11 INFO  ProfileMatch              :     lib root package: "androidx.arch.core"
+17:20:11 INFO  ProfileMatch              : 
+17:20:11 INFO  ProfileMatch              :                 name: androidx.arch.core::core-common
+17:20:11 INFO  ProfileMatch              :             category: Android
+17:20:11 INFO  ProfileMatch              :              version: 2.0.1  [OLD VERSION]
+17:20:11 INFO  ProfileMatch              :         release-date:  --
+17:20:11 INFO  ProfileMatch              :     lib root package: "androidx.arch.core"
+17:20:11 INFO  ProfileMatch              : 
+17:20:11 INFO  ProfileMatch              :                 name: androidx.arch.core::core-common
+17:20:11 INFO  ProfileMatch              :             category: Android
+17:20:11 INFO  ProfileMatch              :              version: 2.1.0
+17:20:11 INFO  ProfileMatch              :         release-date:  --
+17:20:11 INFO  ProfileMatch              :     lib root package: "androidx.arch.core"
+17:20:11 INFO  ProfileMatch              : 
+17:20:11 INFO  ProfileMatch              :                 name: com.android.support::slidingpanelayout
+17:20:11 INFO  ProfileMatch              :             category: Android
+17:20:11 INFO  ProfileMatch              :              version: 28.0.0
+17:20:11 INFO  ProfileMatch              :         release-date:  --
+17:20:11 INFO  ProfileMatch              :     lib root package: "android.support.v4.widget"  (in app: "androidx.slidingpanelayout.widget")
+17:20:11 INFO  ProfileMatch              : 
+17:20:11 INFO  ProfileMatch              :                 name: androidx.versionedparcelable::versionedparcelable  [OLD VERSION]
+17:20:11 INFO  ProfileMatch              :             category: Android
+17:20:11 INFO  ProfileMatch              :              version: 1.1.0  [OLD VERSION]
+17:20:11 INFO  ProfileMatch              :         release-date:  --
+17:20:11 INFO  ProfileMatch              :     lib root package: "androidx.versionedparcelable"
+17:20:11 INFO  ProfileMatch              : 
+17:20:11 INFO  ProfileMatch              :                 name: androidx.versionedparcelable::versionedparcelable
+17:20:11 INFO  ProfileMatch              :             category: Android
+17:20:11 INFO  ProfileMatch              :              version: 1.1.1
+17:20:11 INFO  ProfileMatch              :         release-date:  --
+17:20:11 INFO  ProfileMatch              :     lib root package: "androidx.versionedparcelable"
+17:20:11 INFO  ProfileMatch              : 
+17:20:11 INFO  ProfileMatch              :                 name: Guava
+17:20:11 INFO  ProfileMatch              :             category: Utilities
+17:20:11 INFO  ProfileMatch              :              version: 28.1-android  [OLD VERSION]
+17:20:11 INFO  ProfileMatch              :         release-date: 28.08.2019
+17:20:11 INFO  ProfileMatch              :     lib root package: "com.google"
+17:20:11 INFO  ProfileMatch              : 
+17:20:11 INFO  ProfileMatch              :                 name: androidx.collection::collection
+17:20:11 INFO  ProfileMatch              :             category: Android
+17:20:11 INFO  ProfileMatch              :              version: 1.1.0  [OLD VERSION]
+17:20:11 INFO  ProfileMatch              :         release-date:  --
+17:20:11 INFO  ProfileMatch              :     lib root package: "androidx.collection"
+17:20:11 INFO  ProfileMatch              : 
+17:20:11 INFO  ProfileMatch              :                 name: com.android.support::cursoradapter
+17:20:11 INFO  ProfileMatch              :             category: Android
+17:20:11 INFO  ProfileMatch              :              version: 28.0.0
+17:20:11 INFO  ProfileMatch              :         release-date:  --
+17:20:11 INFO  ProfileMatch              :     lib root package: "android.support.v4.widget"  (in app: "androidx.cursoradapter.widget")
+17:20:11 INFO  ProfileMatch              : 
+17:20:11 INFO  ProfileMatch              :                 name: androidx.slidingpanelayout::slidingpanelayout
+17:20:11 INFO  ProfileMatch              :             category: Android
+17:20:11 INFO  ProfileMatch              :              version: 1.0.0  [OLD VERSION]
+17:20:11 INFO  ProfileMatch              :         release-date:  --
+17:20:11 INFO  ProfileMatch              :     lib root package: "androidx.slidingpanelayout.widget"
+17:20:11 INFO  ProfileMatch              : 
+17:20:11 INFO  ProfileMatch              :                 name: androidx.legacy::legacy-support-core-ui
+17:20:11 INFO  ProfileMatch              :             category: Android
+17:20:11 INFO  ProfileMatch              :              version: 1.0.0
+17:20:11 INFO  ProfileMatch              :         release-date:  --
+17:20:11 INFO  ProfileMatch              :     lib root package: "androidx.legacy"
+17:20:11 INFO  ProfileMatch              : 
+17:20:11 INFO  ProfileMatch              :                 name: androidx.room::room-runtime
+17:20:11 INFO  ProfileMatch              :             category: Android
+17:20:11 INFO  ProfileMatch              :              version: 2.2.0  [OLD VERSION]
+17:20:11 INFO  ProfileMatch              :         release-date:  --
+17:20:11 INFO  ProfileMatch              :     lib root package: "androidx.room"
+17:20:11 INFO  ProfileMatch              : 
+17:20:11 INFO  ProfileMatch              :                 name: androidx.room::room-runtime
+17:20:11 INFO  ProfileMatch              :             category: Android
+17:20:11 INFO  ProfileMatch              :              version: 2.2.1  [OLD VERSION]
+17:20:11 INFO  ProfileMatch              :         release-date:  --
+17:20:11 INFO  ProfileMatch              :     lib root package: "androidx.room"
+17:20:11 INFO  ProfileMatch              : 
+17:20:11 INFO  ProfileMatch              :                 name: androidx.room::room-runtime
+17:20:11 INFO  ProfileMatch              :             category: Android
+17:20:11 INFO  ProfileMatch              :              version: 2.2.2  [OLD VERSION]
+17:20:11 INFO  ProfileMatch              :         release-date:  --
+17:20:11 INFO  ProfileMatch              :     lib root package: "androidx.room"
+17:20:11 INFO  ProfileMatch              : 
+17:20:11 INFO  ProfileMatch              :                 name: androidx.room::room-runtime
+17:20:11 INFO  ProfileMatch              :             category: Android
+17:20:11 INFO  ProfileMatch              :              version: 2.2.3  [OLD VERSION]
+17:20:11 INFO  ProfileMatch              :         release-date:  --
+17:20:11 INFO  ProfileMatch              :     lib root package: "androidx.room"
+17:20:11 INFO  ProfileMatch              : 
+17:20:11 INFO  ProfileMatch              :                 name: androidx.room::room-runtime
+17:20:11 INFO  ProfileMatch              :             category: Android
+17:20:11 INFO  ProfileMatch              :              version: 2.2.4  [OLD VERSION]
+17:20:11 INFO  ProfileMatch              :         release-date:  --
+17:20:11 INFO  ProfileMatch              :     lib root package: "androidx.room"
+17:20:11 INFO  ProfileMatch              : 
+17:20:11 INFO  ProfileMatch              :                 name: androidx.room::room-runtime
+17:20:11 INFO  ProfileMatch              :             category: Android
+17:20:11 INFO  ProfileMatch              :              version: 2.2.5  [OLD VERSION]
+17:20:11 INFO  ProfileMatch              :         release-date:  --
+17:20:11 INFO  ProfileMatch              :     lib root package: "androidx.room"
+17:20:11 INFO  ProfileMatch              : 
+17:20:11 INFO  ProfileMatch              :                 name: androidx.room::room-runtime
+17:20:11 INFO  ProfileMatch              :             category: Android
+17:20:11 INFO  ProfileMatch              :              version: 2.2.6  [OLD VERSION]
+17:20:11 INFO  ProfileMatch              :         release-date:  --
+17:20:11 INFO  ProfileMatch              :     lib root package: "androidx.room"
+17:20:11 INFO  ProfileMatch              : 
+17:20:11 INFO  ProfileMatch              :                 name: com.android.support::interpolator
+17:20:11 INFO  ProfileMatch              :             category: Android
+17:20:11 INFO  ProfileMatch              :              version: 28.0.0
+17:20:11 INFO  ProfileMatch              :         release-date:  --
+17:20:11 INFO  ProfileMatch              :     lib root package: "android.support.v4.view.animation"  (in app: "androidx.interpolator.view.animation")
+17:20:11 INFO  ProfileMatch              : 
+17:20:11 INFO  ProfileMatch              :                 name: androidx.interpolator::interpolator
+17:20:11 INFO  ProfileMatch              :             category: Android
+17:20:11 INFO  ProfileMatch              :              version: 1.0.0
+17:20:11 INFO  ProfileMatch              :         release-date:  --
+17:20:11 INFO  ProfileMatch              :     lib root package: "androidx.interpolator.view.animation"
+17:20:11 INFO  ProfileMatch              : 
+17:20:11 INFO  ProfileMatch              :                 name: androidx.fragment::fragment
+17:20:11 INFO  ProfileMatch              :             category: Android
+17:20:11 INFO  ProfileMatch              :              version: 1.1.0  [OLD VERSION]
+17:20:11 INFO  ProfileMatch              :         release-date:  --
+17:20:11 INFO  ProfileMatch              :     lib root package: "androidx.fragment.app"
+17:20:11 INFO  ProfileMatch              : 
+17:20:11 INFO  ProfileMatch              :                 name: androidx.documentfile::documentfile
+17:20:11 INFO  ProfileMatch              :             category: Android
+17:20:11 INFO  ProfileMatch              :              version: 1.0.0  [OLD VERSION]
+17:20:11 INFO  ProfileMatch              :         release-date:  --
+17:20:11 INFO  ProfileMatch              :     lib root package: "androidx.documentfile.provider"
+17:20:11 INFO  ProfileMatch              : 
+17:20:11 INFO  ProfileMatch              :                 name: androidx.documentfile::documentfile
+17:20:11 INFO  ProfileMatch              :             category: Android
+17:20:11 INFO  ProfileMatch              :              version: 1.0.1
+17:20:11 INFO  ProfileMatch              :         release-date:  --
+17:20:11 INFO  ProfileMatch              :     lib root package: "androidx.documentfile.provider"
+17:20:11 INFO  ProfileMatch              : 
+17:20:11 INFO  ProfileMatch              :                 name: androidx.asynclayoutinflater::asynclayoutinflater
+17:20:11 INFO  ProfileMatch              :             category: Android
+17:20:11 INFO  ProfileMatch              :              version: 1.0.0
+17:20:11 INFO  ProfileMatch              :         release-date:  --
+17:20:11 INFO  ProfileMatch              :     lib root package: "androidx.asynclayoutinflater.view"
+17:20:11 INFO  ProfileMatch              : 
+17:20:11 INFO  ProfileMatch              :                 name: com.android.support::support-core-ui
+17:20:11 INFO  ProfileMatch              :             category: Android
+17:20:11 INFO  ProfileMatch              :              version: 28.0.0
+17:20:11 INFO  ProfileMatch              :         release-date:  --
+17:20:11 INFO  ProfileMatch              :     lib root package: "android.support.v4"  (in app: "androidx.legacy")
+17:20:11 INFO  ProfileMatch              : 
+17:20:11 INFO  ProfileMatch              :                 name: Facebook
+17:20:11 INFO  ProfileMatch              :             category: SocialMedia
+17:20:11 INFO  ProfileMatch              :              version: 4.27.0  [OLD VERSION]
+17:20:11 INFO  ProfileMatch              :         release-date: 26.09.2017
+17:20:11 INFO  ProfileMatch              :     lib root package: "com.facebook.all"  (in app: "androidx.core.view")
+17:20:11 INFO  ProfileMatch              : 
+17:20:11 INFO  ProfileMatch              :                 name: Facebook
+17:20:11 INFO  ProfileMatch              :             category: SocialMedia
+17:20:11 INFO  ProfileMatch              :              version: 4.28.0  [OLD VERSION]
+17:20:11 INFO  ProfileMatch              :         release-date: 07.11.2017
+17:20:11 INFO  ProfileMatch              :     lib root package: "com.facebook.all"  (in app: "androidx.core.view")
+17:20:11 INFO  ProfileMatch              : 
+17:20:11 INFO  ProfileMatch              :                 name: Facebook
+17:20:11 INFO  ProfileMatch              :             category: SocialMedia
+17:20:11 INFO  ProfileMatch              :              version: 4.29.0  [OLD VERSION]
+17:20:11 INFO  ProfileMatch              :         release-date: 05.12.2017
+17:20:11 INFO  ProfileMatch              :     lib root package: "com.facebook.all"  (in app: "androidx.core.view")
+17:20:11 INFO  ProfileMatch              : 
+17:20:11 INFO  ProfileMatch              :                 name: Facebook
+17:20:11 INFO  ProfileMatch              :             category: SocialMedia
+17:20:11 INFO  ProfileMatch              :              version: 4.30.0  [OLD VERSION]
+17:20:11 INFO  ProfileMatch              :         release-date: 24.01.2018
+17:20:11 INFO  ProfileMatch              :     lib root package: "com.facebook.all"  (in app: "androidx.core.view")
+17:20:11 INFO  ProfileMatch              : 
+17:20:11 INFO  ProfileMatch              :                 name: Facebook
+17:20:11 INFO  ProfileMatch              :             category: SocialMedia
+17:20:11 INFO  ProfileMatch              :              version: 4.31.0  [OLD VERSION]
+17:20:11 INFO  ProfileMatch              :         release-date: 28.02.2018
+17:20:11 INFO  ProfileMatch              :     lib root package: "com.facebook.all"  (in app: "androidx.core.view")
+17:20:11 INFO  ProfileMatch              : 
+17:20:11 INFO  ProfileMatch              :                 name: Facebook
+17:20:11 INFO  ProfileMatch              :             category: SocialMedia
+17:20:11 INFO  ProfileMatch              :              version: 4.32.0  [OLD VERSION]
+17:20:11 INFO  ProfileMatch              :         release-date: 11.04.2018
+17:20:11 INFO  ProfileMatch              :     lib root package: "com.facebook.all"  (in app: "androidx.core.view")
+17:20:11 INFO  ProfileMatch              : 
+17:20:11 INFO  ProfileMatch              :                 name: Facebook
+17:20:11 INFO  ProfileMatch              :             category: SocialMedia
+17:20:11 INFO  ProfileMatch              :              version: 4.33.0  [OLD VERSION]
+17:20:11 INFO  ProfileMatch              :         release-date: 01.05.2018
+17:20:11 INFO  ProfileMatch              :     lib root package: "com.facebook.all"  (in app: "androidx.core.view")
+17:20:11 INFO  ProfileMatch              : 
+17:20:11 INFO  ProfileMatch              :                 name: Facebook
+17:20:11 INFO  ProfileMatch              :             category: SocialMedia
+17:20:11 INFO  ProfileMatch              :              version: 4.34.0  [OLD VERSION]
+17:20:11 INFO  ProfileMatch              :         release-date: 19.06.2018
+17:20:11 INFO  ProfileMatch              :     lib root package: "com.facebook.all"  (in app: "androidx.core.view")
+17:20:11 INFO  ProfileMatch              : 
+17:20:11 INFO  ProfileMatch              :                 name: Facebook
+17:20:11 INFO  ProfileMatch              :             category: SocialMedia
+17:20:11 INFO  ProfileMatch              :              version: 4.35.0  [OLD VERSION]
+17:20:11 INFO  ProfileMatch              :         release-date: 26.07.2018
+17:20:11 INFO  ProfileMatch              :     lib root package: "com.facebook.all"  (in app: "androidx.core.view")
+17:20:11 INFO  ProfileMatch              : 
+17:20:11 INFO  ProfileMatch              :                 name: Facebook
+17:20:11 INFO  ProfileMatch              :             category: SocialMedia
+17:20:11 INFO  ProfileMatch              :              version: 4.36.0  [OLD VERSION]
+17:20:11 INFO  ProfileMatch              :         release-date: 29.08.2018
+17:20:11 INFO  ProfileMatch              :     lib root package: "com.facebook.all"  (in app: "androidx.core.view")
+17:20:11 INFO  ProfileMatch              : 
+17:20:11 INFO  ProfileMatch              :                 name: Facebook
+17:20:11 INFO  ProfileMatch              :             category: SocialMedia
+17:20:11 INFO  ProfileMatch              :              version: 4.36.1  [OLD VERSION]
+17:20:11 INFO  ProfileMatch              :         release-date: 15.09.2018
+17:20:11 INFO  ProfileMatch              :     lib root package: "com.facebook.all"  (in app: "androidx.core.view")
+17:20:11 INFO  ProfileMatch              : 
+17:20:11 INFO  ProfileMatch              :                 name: Facebook
+17:20:11 INFO  ProfileMatch              :             category: SocialMedia
+17:20:11 INFO  ProfileMatch              :              version: 4.37.0  [OLD VERSION]
+17:20:11 INFO  ProfileMatch              :         release-date: 27.09.2018
+17:20:11 INFO  ProfileMatch              :     lib root package: "com.facebook.all"  (in app: "androidx.core.view")
+17:20:11 INFO  ProfileMatch              : 
+17:20:11 INFO  ProfileMatch              :                 name: Facebook
+17:20:11 INFO  ProfileMatch              :             category: SocialMedia
+17:20:11 INFO  ProfileMatch              :              version: 4.38.0  [OLD VERSION]
+17:20:11 INFO  ProfileMatch              :         release-date: 23.10.2018
+17:20:11 INFO  ProfileMatch              :     lib root package: "com.facebook.all"  (in app: "androidx.core.view")
+17:20:11 INFO  ProfileMatch              : 
+17:20:11 INFO  ProfileMatch              :                 name: Facebook
+17:20:11 INFO  ProfileMatch              :             category: SocialMedia
+17:20:11 INFO  ProfileMatch              :              version: 4.38.1  [OLD VERSION]
+17:20:11 INFO  ProfileMatch              :         release-date: 31.10.2018
+17:20:11 INFO  ProfileMatch              :     lib root package: "com.facebook.all"  (in app: "androidx.core.view")
+17:20:11 INFO  ProfileMatch              : 
+17:20:11 INFO  ProfileMatch              :                 name: Facebook
+17:20:11 INFO  ProfileMatch              :             category: SocialMedia
+17:20:11 INFO  ProfileMatch              :              version: 4.39.0  [OLD VERSION]
+17:20:11 INFO  ProfileMatch              :         release-date: 05.12.2018
+17:20:11 INFO  ProfileMatch              :     lib root package: "com.facebook.all"  (in app: "androidx.core.view")
+17:20:11 INFO  ProfileMatch              : 
+17:20:11 INFO  ProfileMatch              :                 name: Facebook
+17:20:11 INFO  ProfileMatch              :             category: SocialMedia
+17:20:11 INFO  ProfileMatch              :              version: 4.40.0  [OLD VERSION]
+17:20:11 INFO  ProfileMatch              :         release-date: 22.01.2019
+17:20:11 INFO  ProfileMatch              :     lib root package: "com.facebook.all"  (in app: "androidx.core.view")
+17:20:11 INFO  ProfileMatch              : 
+17:20:11 INFO  ProfileMatch              :                 name: Facebook
+17:20:11 INFO  ProfileMatch              :             category: SocialMedia
+17:20:11 INFO  ProfileMatch              :              version: 4.41.0  [OLD VERSION]
+17:20:11 INFO  ProfileMatch              :         release-date: 08.03.2019
+17:20:11 INFO  ProfileMatch              :     lib root package: "com.facebook.all"  (in app: "androidx.core.view")
+17:20:11 INFO  ProfileMatch              : 
+17:20:11 INFO  ProfileMatch              :                 name: Facebook
+17:20:11 INFO  ProfileMatch              :             category: SocialMedia
+17:20:11 INFO  ProfileMatch              :              version: 4.42.0  [OLD VERSION]
+17:20:11 INFO  ProfileMatch              :         release-date: 08.04.2019
+17:20:11 INFO  ProfileMatch              :     lib root package: "com.facebook.all"  (in app: "androidx.core.view")
+17:20:11 INFO  ProfileMatch              : 
+17:20:11 INFO  ProfileMatch              :                 name: Facebook
+17:20:11 INFO  ProfileMatch              :             category: SocialMedia
+17:20:11 INFO  ProfileMatch              :              version: 5.0.0  [OLD VERSION]
+17:20:11 INFO  ProfileMatch              :         release-date: 30.04.2019
+17:20:11 INFO  ProfileMatch              :     lib root package: "com.facebook.all"  (in app: "androidx.core.view")
+17:20:11 INFO  ProfileMatch              : 
+17:20:11 INFO  ProfileMatch              :                 name: Facebook
+17:20:11 INFO  ProfileMatch              :             category: SocialMedia
+17:20:11 INFO  ProfileMatch              :              version: 5.0.1  [OLD VERSION]
+17:20:11 INFO  ProfileMatch              :         release-date: 17.05.2019
+17:20:11 INFO  ProfileMatch              :     lib root package: "com.facebook.all"  (in app: "androidx.core.view")
+17:20:11 INFO  ProfileMatch              : 
+17:20:11 INFO  ProfileMatch              :                 name: Facebook
+17:20:11 INFO  ProfileMatch              :             category: SocialMedia
+17:20:11 INFO  ProfileMatch              :              version: 5.0.2  [OLD VERSION]
+17:20:11 INFO  ProfileMatch              :         release-date: 09.06.2019
+17:20:11 INFO  ProfileMatch              :     lib root package: "com.facebook.all"  (in app: "androidx.core.view")
+17:20:11 INFO  ProfileMatch              : 
+17:20:11 INFO  ProfileMatch              :                 name: Facebook
+17:20:11 INFO  ProfileMatch              :             category: SocialMedia
+17:20:11 INFO  ProfileMatch              :              version: 5.0.3  [OLD VERSION]
+17:20:11 INFO  ProfileMatch              :         release-date: 14.06.2019
+17:20:11 INFO  ProfileMatch              :     lib root package: "com.facebook.all"  (in app: "androidx.core.view")
+17:20:11 INFO  ProfileMatch              : 
+17:20:11 INFO  ProfileMatch              :                 name: Facebook
+17:20:11 INFO  ProfileMatch              :             category: SocialMedia
+17:20:11 INFO  ProfileMatch              :              version: 5.1.0  [OLD VERSION]
+17:20:11 INFO  ProfileMatch              :         release-date: 21.06.2019
+17:20:11 INFO  ProfileMatch              :     lib root package: "com.facebook.all"  (in app: "androidx.core.view")
+17:20:11 INFO  ProfileMatch              : 
+17:20:11 INFO  ProfileMatch              :                 name: Facebook
+17:20:11 INFO  ProfileMatch              :             category: SocialMedia
+17:20:11 INFO  ProfileMatch              :              version: 5.1.1  [OLD VERSION]
+17:20:11 INFO  ProfileMatch              :         release-date: 02.07.2019
+17:20:11 INFO  ProfileMatch              :     lib root package: "com.facebook.all"  (in app: "androidx.core.view")
+17:20:11 INFO  ProfileMatch              : 
+17:20:11 INFO  ProfileMatch              :                 name: Facebook
+17:20:11 INFO  ProfileMatch              :             category: SocialMedia
+17:20:11 INFO  ProfileMatch              :              version: 5.2.0  [OLD VERSION]
+17:20:11 INFO  ProfileMatch              :         release-date: 29.07.2019
+17:20:11 INFO  ProfileMatch              :     lib root package: "com.facebook.all"  (in app: "androidx.core.view")
+17:20:11 INFO  ProfileMatch              : 
+17:20:11 INFO  ProfileMatch              :                 name: Facebook
+17:20:11 INFO  ProfileMatch              :             category: SocialMedia
+17:20:11 INFO  ProfileMatch              :              version: 5.4.0  [OLD VERSION]
+17:20:11 INFO  ProfileMatch              :         release-date: 16.08.2019
+17:20:11 INFO  ProfileMatch              :     lib root package: "com.facebook.all"  (in app: "androidx.core.view")
+17:20:11 INFO  ProfileMatch              : 
+17:20:11 INFO  ProfileMatch              :                 name: Facebook
+17:20:11 INFO  ProfileMatch              :             category: SocialMedia
+17:20:11 INFO  ProfileMatch              :              version: 5.5.0  [OLD VERSION]
+17:20:11 INFO  ProfileMatch              :         release-date: 31.08.2019
+17:20:11 INFO  ProfileMatch              :     lib root package: "com.facebook.all"  (in app: "androidx.core.view")
+17:20:11 INFO  ProfileMatch              : 
+17:20:11 INFO  ProfileMatch              :                 name: Facebook
+17:20:11 INFO  ProfileMatch              :             category: SocialMedia
+17:20:11 INFO  ProfileMatch              :              version: 5.5.1  [OLD VERSION]
+17:20:11 INFO  ProfileMatch              :         release-date: 06.09.2019
+17:20:11 INFO  ProfileMatch              :     lib root package: "com.facebook.all"  (in app: "androidx.core.view")
+17:20:11 INFO  ProfileMatch              : 
+17:20:11 INFO  ProfileMatch              :                 name: Facebook
+17:20:11 INFO  ProfileMatch              :             category: SocialMedia
+17:20:11 INFO  ProfileMatch              :              version: 5.5.2  [OLD VERSION]
+17:20:11 INFO  ProfileMatch              :         release-date: 05.10.2019
+17:20:11 INFO  ProfileMatch              :     lib root package: "com.facebook.all"  (in app: "androidx.core.view")
+17:20:11 INFO  ProfileMatch              : 
+17:20:11 INFO  ProfileMatch              :                 name: Facebook
+17:20:11 INFO  ProfileMatch              :             category: SocialMedia
+17:20:11 INFO  ProfileMatch              :              version: 5.8.0  [OLD VERSION]
+17:20:11 INFO  ProfileMatch              :         release-date: 08.10.2019
+17:20:11 INFO  ProfileMatch              :     lib root package: "com.facebook.all"  (in app: "androidx.core.view")
+17:20:11 INFO  ProfileMatch              : 
+17:20:11 INFO  ProfileMatch              :                 name: Facebook
+17:20:11 INFO  ProfileMatch              :             category: SocialMedia
+17:20:11 INFO  ProfileMatch              :              version: 5.9.0  [OLD VERSION]
+17:20:11 INFO  ProfileMatch              :         release-date: 29.10.2019
+17:20:11 INFO  ProfileMatch              :     lib root package: "com.facebook.all"  (in app: "androidx.core.view")
+17:20:11 INFO  ProfileMatch              : 
+17:20:11 INFO  ProfileMatch              :                 name: Facebook
+17:20:11 INFO  ProfileMatch              :             category: SocialMedia
+17:20:11 INFO  ProfileMatch              :              version: 5.11.0  [OLD VERSION]
+17:20:11 INFO  ProfileMatch              :         release-date: 15.11.2019
+17:20:11 INFO  ProfileMatch              :     lib root package: "com.facebook.all"  (in app: "androidx.core.view")
+17:20:11 INFO  ProfileMatch              : 
+17:20:11 INFO  ProfileMatch              :                 name: Facebook
+17:20:11 INFO  ProfileMatch              :             category: SocialMedia
+17:20:11 INFO  ProfileMatch              :              version: 5.11.1  [OLD VERSION]
+17:20:11 INFO  ProfileMatch              :         release-date: 21.11.2019
+17:20:11 INFO  ProfileMatch              :     lib root package: "com.facebook.all"  (in app: "androidx.core.view")
+17:20:11 INFO  ProfileMatch              : 
+17:20:11 INFO  ProfileMatch              :                 name: Facebook
+17:20:11 INFO  ProfileMatch              :             category: SocialMedia
+17:20:11 INFO  ProfileMatch              :              version: 5.11.2  [OLD VERSION]
+17:20:11 INFO  ProfileMatch              :         release-date: 22.11.2019
+17:20:11 INFO  ProfileMatch              :     lib root package: "com.facebook.all"  (in app: "androidx.core.view")
+17:20:11 INFO  ProfileMatch              : 
+17:20:11 INFO  ProfileMatch              :                 name: Facebook
+17:20:11 INFO  ProfileMatch              :             category: SocialMedia
+17:20:11 INFO  ProfileMatch              :              version: 5.12.0  [OLD VERSION]
+17:20:11 INFO  ProfileMatch              :         release-date: 04.12.2019
+17:20:11 INFO  ProfileMatch              :     lib root package: "com.facebook.all"  (in app: "androidx.core.view")
+17:20:11 INFO  ProfileMatch              : 
+17:20:11 INFO  ProfileMatch              :                 name: Facebook
+17:20:11 INFO  ProfileMatch              :             category: SocialMedia
+17:20:11 INFO  ProfileMatch              :              version: 5.12.1  [OLD VERSION]
+17:20:11 INFO  ProfileMatch              :         release-date: 09.12.2019
+17:20:11 INFO  ProfileMatch              :     lib root package: "com.facebook.all"  (in app: "androidx.core.view")
+17:20:11 INFO  ProfileMatch              : 
+17:20:11 INFO  ProfileMatch              :                 name: Facebook
+17:20:11 INFO  ProfileMatch              :             category: SocialMedia
+17:20:11 INFO  ProfileMatch              :              version: 5.13.0  [OLD VERSION]
+17:20:11 INFO  ProfileMatch              :         release-date: 12.12.2019
+17:20:11 INFO  ProfileMatch              :     lib root package: "com.facebook.all"  (in app: "androidx.core.view")
+17:20:11 INFO  ProfileMatch              : 
+17:20:11 INFO  ProfileMatch              :                 name: Facebook
+17:20:11 INFO  ProfileMatch              :             category: SocialMedia
+17:20:11 INFO  ProfileMatch              :              version: 5.15.0  [OLD VERSION]
+17:20:11 INFO  ProfileMatch              :         release-date: 21.01.2020
+17:20:11 INFO  ProfileMatch              :     lib root package: "com.facebook.all"  (in app: "androidx.core.view")
+17:20:11 INFO  ProfileMatch              : 
+17:20:11 INFO  ProfileMatch              :                 name: Facebook
+17:20:11 INFO  ProfileMatch              :             category: SocialMedia
+17:20:11 INFO  ProfileMatch              :              version: 5.15.1  [OLD VERSION]
+17:20:11 INFO  ProfileMatch              :         release-date: 29.01.2020
+17:20:11 INFO  ProfileMatch              :     lib root package: "com.facebook.all"  (in app: "androidx.core.view")
+17:20:11 INFO  ProfileMatch              : 
+17:20:11 INFO  ProfileMatch              :                 name: Facebook
+17:20:11 INFO  ProfileMatch              :             category: SocialMedia
+17:20:11 INFO  ProfileMatch              :              version: 5.15.2  [OLD VERSION]
+17:20:11 INFO  ProfileMatch              :         release-date: 03.02.2020
+17:20:11 INFO  ProfileMatch              :     lib root package: "com.facebook.all"  (in app: "androidx.core.view")
+17:20:11 INFO  ProfileMatch              : 
+17:20:11 INFO  ProfileMatch              :                 name: Facebook
+17:20:11 INFO  ProfileMatch              :             category: SocialMedia
+17:20:11 INFO  ProfileMatch              :              version: 5.15.3  [OLD VERSION]
+17:20:11 INFO  ProfileMatch              :         release-date: 03.02.2020
+17:20:11 INFO  ProfileMatch              :     lib root package: "com.facebook.all"  (in app: "androidx.core.view")
+17:20:11 INFO  ProfileMatch              : 
+17:20:11 INFO  ProfileMatch              :                 name: Facebook
+17:20:11 INFO  ProfileMatch              :             category: SocialMedia
+17:20:11 INFO  ProfileMatch              :              version: 6.0.0  [OLD VERSION]
+17:20:11 INFO  ProfileMatch              :         release-date: 03.02.2020
+17:20:11 INFO  ProfileMatch              :     lib root package: "com.facebook.all"  (in app: "androidx.core.view")
+17:20:11 INFO  ProfileMatch              : 
+17:20:11 INFO  ProfileMatch              :                 name: Facebook
+17:20:11 INFO  ProfileMatch              :             category: SocialMedia
+17:20:11 INFO  ProfileMatch              :              version: 6.1.0  [OLD VERSION]
+17:20:11 INFO  ProfileMatch              :         release-date: 14.02.2020
+17:20:11 INFO  ProfileMatch              :     lib root package: "com.facebook.all"  (in app: "androidx.core.view")
+17:20:11 INFO  ProfileMatch              : 
+17:20:11 INFO  ProfileMatch              :                 name: Facebook
+17:20:11 INFO  ProfileMatch              :             category: SocialMedia
+17:20:11 INFO  ProfileMatch              :              version: 6.2.0  [OLD VERSION]
+17:20:11 INFO  ProfileMatch              :         release-date: 09.03.2020
+17:20:11 INFO  ProfileMatch              :     lib root package: "com.facebook.all"  (in app: "androidx.core.view")
+17:20:11 INFO  ProfileMatch              : 
+17:20:11 INFO  ProfileMatch              :                 name: Facebook
+17:20:11 INFO  ProfileMatch              :             category: SocialMedia
+17:20:11 INFO  ProfileMatch              :              version: 6.3.0  [OLD VERSION]
+17:20:11 INFO  ProfileMatch              :         release-date: 25.03.2020
+17:20:11 INFO  ProfileMatch              :     lib root package: "com.facebook.all"  (in app: "androidx.core.view")
+17:20:11 INFO  ProfileMatch              : 
+17:20:11 INFO  ProfileMatch              :                 name: Facebook
+17:20:11 INFO  ProfileMatch              :             category: SocialMedia
+17:20:11 INFO  ProfileMatch              :              version: 6.4.0  [OLD VERSION]
+17:20:11 INFO  ProfileMatch              :         release-date: 15.04.2020
+17:20:11 INFO  ProfileMatch              :     lib root package: "com.facebook.all"  (in app: "androidx.core.view")
+17:20:11 INFO  ProfileMatch              : 
+17:20:11 INFO  ProfileMatch              :                 name: Facebook
+17:20:11 INFO  ProfileMatch              :             category: SocialMedia
+17:20:11 INFO  ProfileMatch              :              version: 6.5.0  [OLD VERSION]
+17:20:11 INFO  ProfileMatch              :         release-date: 20.04.2020
+17:20:11 INFO  ProfileMatch              :     lib root package: "com.facebook.all"  (in app: "androidx.core.view")
+17:20:11 INFO  ProfileMatch              : 
+17:20:11 INFO  ProfileMatch              :                 name: Facebook
+17:20:11 INFO  ProfileMatch              :             category: SocialMedia
+17:20:11 INFO  ProfileMatch              :              version: 6.5.1  [OLD VERSION]
+17:20:11 INFO  ProfileMatch              :         release-date: 23.04.2020
+17:20:11 INFO  ProfileMatch              :     lib root package: "com.facebook.all"  (in app: "androidx.core.view")
+17:20:11 INFO  ProfileMatch              : 
+17:20:11 INFO  ProfileMatch              :                 name: Facebook
+17:20:11 INFO  ProfileMatch              :             category: SocialMedia
+17:20:11 INFO  ProfileMatch              :              version: 7.0.0  [OLD VERSION]
+17:20:11 INFO  ProfileMatch              :         release-date: 05.05.2020
+17:20:11 INFO  ProfileMatch              :     lib root package: "com.facebook.all"  (in app: "androidx.core.view")
+17:20:11 INFO  ProfileMatch              : 
+17:20:11 INFO  ProfileMatch              :                 name: Facebook
+17:20:11 INFO  ProfileMatch              :             category: SocialMedia
+17:20:11 INFO  ProfileMatch              :              version: 7.0.1  [OLD VERSION]
+17:20:11 INFO  ProfileMatch              :         release-date: 09.06.2020
+17:20:11 INFO  ProfileMatch              :     lib root package: "com.facebook.all"  (in app: "androidx.core.view")
+17:20:11 INFO  ProfileMatch              : 
+17:20:11 INFO  ProfileMatch              :                 name: Facebook
+17:20:11 INFO  ProfileMatch              :             category: SocialMedia
+17:20:11 INFO  ProfileMatch              :              version: 7.1.0  [OLD VERSION]
+17:20:11 INFO  ProfileMatch              :         release-date: 23.06.2020
+17:20:11 INFO  ProfileMatch              :     lib root package: "com.facebook.all"  (in app: "androidx.core.view")
+17:20:11 INFO  ProfileMatch              : 
+17:20:11 INFO  ProfileMatch              :                 name: Facebook
+17:20:11 INFO  ProfileMatch              :             category: SocialMedia
+17:20:11 INFO  ProfileMatch              :              version: 8.0.0  [OLD VERSION]
+17:20:11 INFO  ProfileMatch              :         release-date: 28.09.2020
+17:20:11 INFO  ProfileMatch              :     lib root package: "com.facebook.all"  (in app: "androidx.core.view")
+17:20:11 INFO  ProfileMatch              : 
+17:20:11 INFO  ProfileMatch              :                 name: Facebook
+17:20:11 INFO  ProfileMatch              :             category: SocialMedia
+17:20:11 INFO  ProfileMatch              :              version: 8.1.0  [OLD VERSION]
+17:20:11 INFO  ProfileMatch              :         release-date: 14.10.2020
+17:20:11 INFO  ProfileMatch              :     lib root package: "com.facebook.all"  (in app: "androidx.core.view")
+17:20:11 INFO  ProfileMatch              : 
+17:20:11 INFO  ProfileMatch              :                 name: Facebook
+17:20:11 INFO  ProfileMatch              :             category: SocialMedia
+17:20:11 INFO  ProfileMatch              :              version: 8.2.0  [OLD VERSION]
+17:20:11 INFO  ProfileMatch              :         release-date: 18.12.2020
+17:20:11 INFO  ProfileMatch              :     lib root package: "com.facebook.all"  (in app: "androidx.core.view")
+17:20:11 INFO  ProfileMatch              : 
+17:20:11 INFO  ProfileMatch              :                 name: Facebook
+17:20:11 INFO  ProfileMatch              :             category: SocialMedia
+17:20:11 INFO  ProfileMatch              :              version: 9.0.0  [OLD VERSION]
+17:20:11 INFO  ProfileMatch              :         release-date: 19.01.2021
+17:20:11 INFO  ProfileMatch              :     lib root package: "com.facebook.all"  (in app: "androidx.core.view")
+17:20:11 INFO  ProfileMatch              : 
+17:20:11 INFO  ProfileMatch              :                 name: Facebook
+17:20:11 INFO  ProfileMatch              :             category: SocialMedia
+17:20:11 INFO  ProfileMatch              :              version: 9.1.0  [OLD VERSION]
+17:20:11 INFO  ProfileMatch              :         release-date: 15.03.2021
+17:20:11 INFO  ProfileMatch              :     lib root package: "com.facebook.all"  (in app: "androidx.core.view")
+17:20:11 INFO  ProfileMatch              : 
+17:20:11 INFO  ProfileMatch              :                 name: Facebook
+17:20:11 INFO  ProfileMatch              :             category: SocialMedia
+17:20:11 INFO  ProfileMatch              :              version: 9.1.1  [OLD VERSION]
+17:20:11 INFO  ProfileMatch              :         release-date: 12.04.2021
+17:20:11 INFO  ProfileMatch              :     lib root package: "com.facebook.all"  (in app: "androidx.core.view")
+17:20:11 INFO  ProfileMatch              : 
+17:20:11 INFO  ProfileMatch              :                 name: Facebook
+17:20:11 INFO  ProfileMatch              :             category: SocialMedia
+17:20:11 INFO  ProfileMatch              :              version: 11.0.0  [OLD VERSION]
+17:20:11 INFO  ProfileMatch              :         release-date: 08.06.2021
+17:20:11 INFO  ProfileMatch              :     lib root package: "com.facebook.all"  (in app: "androidx.core.view")
+17:20:11 INFO  ProfileMatch              : 
+17:20:11 INFO  ProfileMatch              :                 name: Facebook
+17:20:11 INFO  ProfileMatch              :             category: SocialMedia
+17:20:11 INFO  ProfileMatch              :              version: 11.1.0  [OLD VERSION]
+17:20:11 INFO  ProfileMatch              :         release-date: 06.07.2021
+17:20:11 INFO  ProfileMatch              :     lib root package: "com.facebook.all"  (in app: "androidx.core.view")
+17:20:11 INFO  ProfileMatch              : 
+17:20:11 INFO  ProfileMatch              :                 name: Facebook
+17:20:11 INFO  ProfileMatch              :             category: SocialMedia
+17:20:11 INFO  ProfileMatch              :              version: 11.1.1  [OLD VERSION]
+17:20:11 INFO  ProfileMatch              :         release-date: 19.07.2021
+17:20:11 INFO  ProfileMatch              :     lib root package: "com.facebook.all"  (in app: "androidx.core.view")
+17:20:11 INFO  ProfileMatch              : 
+17:20:11 INFO  ProfileMatch              :                 name: Facebook
+17:20:11 INFO  ProfileMatch              :             category: SocialMedia
+17:20:11 INFO  ProfileMatch              :              version: 11.2.0  [OLD VERSION]
+17:20:11 INFO  ProfileMatch              :         release-date: 03.08.2021
+17:20:11 INFO  ProfileMatch              :     lib root package: "com.facebook.all"  (in app: "androidx.core.view")
+17:20:11 INFO  ProfileMatch              : 
+17:20:11 INFO  ProfileMatch              :                 name: Facebook
+17:20:11 INFO  ProfileMatch              :             category: SocialMedia
+17:20:11 INFO  ProfileMatch              :              version: 11.3.0  [OLD VERSION]
+17:20:11 INFO  ProfileMatch              :         release-date: 07.09.2021
+17:20:11 INFO  ProfileMatch              :     lib root package: "com.facebook.all"  (in app: "androidx.core.view")
+17:20:11 INFO  ProfileMatch              : 
+17:20:11 INFO  ProfileMatch              :                 name: Facebook
+17:20:11 INFO  ProfileMatch              :             category: SocialMedia
+17:20:11 INFO  ProfileMatch              :              version: 12.0.0  [OLD VERSION]
+17:20:11 INFO  ProfileMatch              :         release-date: 05.10.2021
+17:20:11 INFO  ProfileMatch              :     lib root package: "com.facebook.all"  (in app: "androidx.core.view")
+17:20:11 INFO  ProfileMatch              : 
+17:20:11 INFO  ProfileMatch              :                 name: Facebook
+17:20:11 INFO  ProfileMatch              :             category: SocialMedia
+17:20:11 INFO  ProfileMatch              :              version: 12.0.1  [OLD VERSION]
+17:20:11 INFO  ProfileMatch              :         release-date: 13.10.2021
+17:20:11 INFO  ProfileMatch              :     lib root package: "com.facebook.all"  (in app: "androidx.core.view")
+17:20:11 INFO  ProfileMatch              : 
+17:20:11 INFO  ProfileMatch              :                 name: Facebook
+17:20:11 INFO  ProfileMatch              :             category: SocialMedia
+17:20:11 INFO  ProfileMatch              :              version: 12.1.0  [OLD VERSION]
+17:20:11 INFO  ProfileMatch              :         release-date: 01.11.2021
+17:20:11 INFO  ProfileMatch              :     lib root package: "com.facebook.all"  (in app: "androidx.core.view")
+17:20:11 INFO  ProfileMatch              : 
+17:20:11 INFO  ProfileMatch              :                 name: Facebook
+17:20:11 INFO  ProfileMatch              :             category: SocialMedia
+17:20:11 INFO  ProfileMatch              :              version: 12.2.0  [OLD VERSION]
+17:20:11 INFO  ProfileMatch              :         release-date: 06.12.2021
+17:20:11 INFO  ProfileMatch              :     lib root package: "com.facebook.all"  (in app: "androidx.core.view")
+17:20:11 INFO  ProfileMatch              : 
+17:20:11 INFO  ProfileMatch              :                 name: Facebook
+17:20:11 INFO  ProfileMatch              :             category: SocialMedia
+17:20:11 INFO  ProfileMatch              :              version: 12.3.0  [OLD VERSION]
+17:20:11 INFO  ProfileMatch              :         release-date: 10.01.2022
+17:20:11 INFO  ProfileMatch              :     lib root package: "com.facebook.all"  (in app: "androidx.core.view")
+17:20:11 INFO  ProfileMatch              : 
+17:20:11 INFO  ProfileMatch              :                 name: Facebook
+17:20:11 INFO  ProfileMatch              :             category: SocialMedia
+17:20:11 INFO  ProfileMatch              :              version: 13.0.0  [OLD VERSION]
+17:20:11 INFO  ProfileMatch              :         release-date: 23.02.2022
+17:20:11 INFO  ProfileMatch              :     lib root package: "com.facebook.all"  (in app: "androidx.core.view")
+17:20:11 INFO  ProfileMatch              : 
+17:20:11 INFO  ProfileMatch              :                 name: Facebook
+17:20:11 INFO  ProfileMatch              :             category: SocialMedia
+17:20:11 INFO  ProfileMatch              :              version: 13.1.0  [OLD VERSION]
+17:20:11 INFO  ProfileMatch              :         release-date: 21.03.2022
+17:20:11 INFO  ProfileMatch              :     lib root package: "com.facebook.all"  (in app: "androidx.core.view")
+17:20:11 INFO  ProfileMatch              : 
+17:20:11 INFO  ProfileMatch              :                 name: Facebook
+17:20:11 INFO  ProfileMatch              :             category: SocialMedia
+17:20:11 INFO  ProfileMatch              :              version: 13.2.0  [OLD VERSION]
+17:20:11 INFO  ProfileMatch              :         release-date: 22.04.2022
+17:20:11 INFO  ProfileMatch              :     lib root package: "com.facebook.all"  (in app: "androidx.core.view")
+17:20:11 INFO  ProfileMatch              : 
+17:20:11 INFO  ProfileMatch              :                 name: Facebook
+17:20:11 INFO  ProfileMatch              :             category: SocialMedia
+17:20:11 INFO  ProfileMatch              :              version: 14.0.0
+17:20:11 INFO  ProfileMatch              :         release-date: 14.06.2022
+17:20:11 INFO  ProfileMatch              :     lib root package: "com.facebook.all"  (in app: "androidx.core.view")
+17:20:11 INFO  ProfileMatch              : 
+17:20:11 INFO  ProfileMatch              :                 name: androidx.sqlite::sqlite
+17:20:11 INFO  ProfileMatch              :             category: Android
+17:20:11 INFO  ProfileMatch              :              version: 2.0.0  [OLD VERSION]
+17:20:11 INFO  ProfileMatch              :         release-date:  --
+17:20:11 INFO  ProfileMatch              :     lib root package: "androidx.sqlite.db"
+17:20:11 INFO  ProfileMatch              : 
+17:20:11 INFO  ProfileMatch              :                 name: androidx.sqlite::sqlite
+17:20:11 INFO  ProfileMatch              :             category: Android
+17:20:11 INFO  ProfileMatch              :              version: 2.0.1  [OLD VERSION]
+17:20:11 INFO  ProfileMatch              :         release-date:  --
+17:20:11 INFO  ProfileMatch              :     lib root package: "androidx.sqlite.db"
+17:20:11 INFO  ProfileMatch              : 
+17:20:11 INFO  ProfileMatch              :                 name: androidx.legacy::legacy-support-core-utils
+17:20:11 INFO  ProfileMatch              :             category: Android
+17:20:11 INFO  ProfileMatch              :              version: 1.0.0
+17:20:11 INFO  ProfileMatch              :         release-date:  --
+17:20:11 INFO  ProfileMatch              :     lib root package: "androidx.legacy.content"
+17:20:11 INFO  ProfileMatch              : 
+17:20:11 INFO  ProfileMatch              :                 name: com.android.support::documentfile
+17:20:11 INFO  ProfileMatch              :             category: Android
+17:20:11 INFO  ProfileMatch              :              version: 28.0.0
+17:20:11 INFO  ProfileMatch              :         release-date:  --
+17:20:11 INFO  ProfileMatch              :     lib root package: "android.support.v4.provider"  (in app: "androidx.documentfile.provider")
+17:20:11 INFO  ProfileMatch              : 
+17:20:11 INFO  ProfileMatch              :                 name: com.android.support::viewpager
+17:20:11 INFO  ProfileMatch              :             category: Android
+17:20:11 INFO  ProfileMatch              :              version: 28.0.0
+17:20:11 INFO  ProfileMatch              :         release-date:  --
+17:20:11 INFO  ProfileMatch              :     lib root package: "android.support.v4.view"  (in app: "androidx.viewpager.widget")
+17:20:11 INFO  ProfileMatch              : 
+17:20:11 INFO  ProfileMatch              :                 name: com.android.support::cardview-v7
+17:20:11 INFO  ProfileMatch              :             category: Android
+17:20:11 INFO  ProfileMatch              :              version: 27.1.0  [OLD VERSION]
+17:20:11 INFO  ProfileMatch              :         release-date:  --
+17:20:11 INFO  ProfileMatch              :     lib root package: "android.support.v7.widget"  (in app: "androidx.cardview.widget")
+17:20:11 INFO  ProfileMatch              : 
+17:20:11 INFO  ProfileMatch              :                 name: com.android.support::cardview-v7
+17:20:11 INFO  ProfileMatch              :             category: Android
+17:20:11 INFO  ProfileMatch              :              version: 27.1.1  [OLD VERSION]
+17:20:11 INFO  ProfileMatch              :         release-date:  --
+17:20:11 INFO  ProfileMatch              :     lib root package: "android.support.v7.widget"  (in app: "androidx.cardview.widget")
+17:20:11 INFO  ProfileMatch              : 
+17:20:11 INFO  ProfileMatch              :                 name: com.android.support::cardview-v7
+17:20:11 INFO  ProfileMatch              :             category: Android
+17:20:11 INFO  ProfileMatch              :              version: 28.0.0
+17:20:11 INFO  ProfileMatch              :         release-date:  --
+17:20:11 INFO  ProfileMatch              :     lib root package: "android.support.v7.widget"  (in app: "androidx.cardview.widget")
+17:20:11 INFO  ProfileMatch              : 
+17:20:11 INFO  ProfileMatch              :                 name: androidx.localbroadcastmanager::localbroadcastmanager
+17:20:11 INFO  ProfileMatch              :             category: Android
+17:20:11 INFO  ProfileMatch              :              version: 1.0.0  [OLD VERSION]
+17:20:11 INFO  ProfileMatch              :         release-date:  --
+17:20:11 INFO  ProfileMatch              :     lib root package: "androidx.localbroadcastmanager.content"
+17:20:11 INFO  ProfileMatch              : 
+17:20:11 INFO  ProfileMatch              :                 name: androidx.localbroadcastmanager::localbroadcastmanager
+17:20:11 INFO  ProfileMatch              :             category: Android
+17:20:11 INFO  ProfileMatch              :              version: 1.1.0
+17:20:11 INFO  ProfileMatch              :         release-date:  --
+17:20:11 INFO  ProfileMatch              :     lib root package: "androidx.localbroadcastmanager.content"
+17:20:11 INFO  ProfileMatch              : 
+17:20:11 INFO  ProfileMatch              :                 name: androidx.viewpager::viewpager
+17:20:11 INFO  ProfileMatch              :             category: Android
+17:20:11 INFO  ProfileMatch              :              version: 1.0.0
+17:20:11 INFO  ProfileMatch              :         release-date:  --
+17:20:11 INFO  ProfileMatch              :     lib root package: "androidx.viewpager.widget"
+17:20:11 INFO  ProfileMatch              : 
+17:20:11 INFO  LibraryIdentifier         : 
+17:20:11 INFO  LibraryIdentifier         : - Partial library matches:
+17:20:11 INFO  LibraryIdentifier         :                 name: android.arch.core::common
+17:20:11 INFO  LibraryIdentifier         :             category: Android
+17:20:11 INFO  LibraryIdentifier         :              version: 1.1.1
+17:20:11 INFO  LibraryIdentifier         :         release-date:  --
+17:20:11 INFO  LibraryIdentifier         :     lib root package: "android.arch.core"
+17:20:11 INFO  LibraryIdentifier         :         Partial matching results:
+17:20:11 INFO  LibraryIdentifier         :              - config: Hashing.md5() | Flags: no-flag | Keep: PN | Prune: MSIG   score: 0.875
+17:20:11 INFO  LibraryIdentifier         : 
+17:20:11 INFO  LibraryIdentifier         :                 name: androidx.core::core
+17:20:11 INFO  LibraryIdentifier         :             category: Android
+17:20:11 INFO  LibraryIdentifier         :              version: 1.1.0  [OLD VERSION]
+17:20:11 INFO  LibraryIdentifier         :         release-date:  --
+17:20:11 INFO  LibraryIdentifier         :     lib root package: "androidx.core"
+17:20:11 INFO  LibraryIdentifier         :         Partial matching results:
+17:20:11 INFO  LibraryIdentifier         :              - config: Hashing.md5() | Flags: no-flag | Keep: PN | Prune: MSIG   score: 0.9259259
+17:20:11 INFO  LibraryIdentifier         : 
+17:20:11 INFO  LibraryIdentifier         :                 name: android.arch.core::runtime
+17:20:11 INFO  LibraryIdentifier         :             category: Android
+17:20:11 INFO  LibraryIdentifier         :              version: 1.1.0  [OLD VERSION]
+17:20:11 INFO  LibraryIdentifier         :         release-date:  --
+17:20:11 INFO  LibraryIdentifier         :     lib root package: "android.arch.core"
+17:20:11 INFO  LibraryIdentifier         :         Partial matching results:
+17:20:11 INFO  LibraryIdentifier         :              - config: Hashing.md5() | Flags: no-flag | Keep: PN | Prune: MSIG   score: 0.9
+17:20:11 INFO  LibraryIdentifier         : 
+17:20:11 INFO  LibraryIdentifier         : 
+17:20:11 INFO  LibraryIdentifier         : App processing time: 53 sec, 331 ms

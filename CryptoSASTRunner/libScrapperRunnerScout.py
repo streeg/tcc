@@ -3,8 +3,8 @@ import glob
 import subprocess
 import time
 
-user = 'guileb'
-customPath = '/tcc/CryptoSASTRunner/'
+user = 'lables/'
+customPath = 'guilherme-andreuce-tcc/tcc/CryptoSASTRunner/'
 apksPath = '/home/' + user + customPath + '/cryptoRunner/projects/apks/'
 libScoutPath = '/home/' + user + customPath + '/libScout/'
 libScoutlLogsPath = '/home/' + user + customPath + '/libScout/logs/'

@@ -1,0 +1,200 @@
+{
+  "sarifVersion" : "2.0.0",
+  "runs" : [ {
+    "files" : {
+      "d/e/a/i/g$a.java" : {
+        "mimeType" : "text/java"
+      },
+      "d/e/a/j/i$b$a.java" : {
+        "mimeType" : "text/java"
+      },
+      "f/n/c/n.java" : {
+        "mimeType" : "text/java"
+      },
+      "com/tnibler/cryptocam/video/RecordingService.java" : {
+        "mimeType" : "text/java"
+      },
+      "d/e/a/k/i$f.java" : {
+        "mimeType" : "text/java"
+      },
+      "d/e/a/i/h/c.java" : {
+        "mimeType" : "text/java"
+      },
+      "com/tnibler/cryptocam/MainActivity.java" : {
+        "mimeType" : "text/java"
+      }
+    },
+    "resources" : {
+      "rules" : {
+        "ConstraintError" : {
+          "id" : "ConstraintError",
+          "fullDescription" : {
+            "text" : "A constraint of a CrySL rule is violated, e.g., a key is generated with the wrong key size."
+          }
+        },
+        "IncompleteOperationError" : {
+          "id" : "IncompleteOperationError",
+          "fullDescription" : {
+            "text" : "The usage of an object may be incomplete: For example a Cipherobject may be initialized but never used for en- or decryption, this may render the code dead. This error heavily depends on the computed call graph (CHA by default)"
+          }
+        },
+        "IncompleteOperationError-1" : {
+          "id" : "IncompleteOperationError",
+          "fullDescription" : {
+            "text" : "The usage of an object may be incomplete: For example a Cipherobject may be initialized but never used for en- or decryption, this may render the code dead. This error heavily depends on the computed call graph (CHA by default)"
+          }
+        },
+        "IncompleteOperationError-3" : {
+          "id" : "IncompleteOperationError",
+          "fullDescription" : {
+            "text" : "The usage of an object may be incomplete: For example a Cipherobject may be initialized but never used for en- or decryption, this may render the code dead. This error heavily depends on the computed call graph (CHA by default)"
+          }
+        },
+        "IncompleteOperationError-2" : {
+          "id" : "IncompleteOperationError",
+          "fullDescription" : {
+            "text" : "The usage of an object may be incomplete: For example a Cipherobject may be initialized but never used for en- or decryption, this may render the code dead. This error heavily depends on the computed call graph (CHA by default)"
+          }
+        },
+        "IncompleteOperationError-5" : {
+          "id" : "IncompleteOperationError",
+          "fullDescription" : {
+            "text" : "The usage of an object may be incomplete: For example a Cipherobject may be initialized but never used for en- or decryption, this may render the code dead. This error heavily depends on the computed call graph (CHA by default)"
+          }
+        },
+        "IncompleteOperationError-4" : {
+          "id" : "IncompleteOperationError",
+          "fullDescription" : {
+            "text" : "The usage of an object may be incomplete: For example a Cipherobject may be initialized but never used for en- or decryption, this may render the code dead. This error heavily depends on the computed call graph (CHA by default)"
+          }
+        }
+      }
+    },
+    "results" : [ {
+      "locations" : [ {
+        "physicalLocation" : {
+          "fileLocation" : {
+            "uri" : "d/e/a/i/g$a.java"
+          },
+          "region" : {
+            "startLine" : 1
+          }
+        },
+        "fullyQualifiedLogicalName" : "d::e::a::i::g$a::a"
+      } ],
+      "ruleId" : "ConstraintError",
+      "message" : {
+        "text" : "First parameter (with value \"SHA256\") should be any of {SHA-256, SHA-384, SHA-512}.",
+        "richText" : "ConstraintError violating CrySL rule for java.security.MessageDigest."
+      }
+    }, {
+      "locations" : [ {
+        "physicalLocation" : {
+          "fileLocation" : {
+            "uri" : "f/n/c/n.java"
+          },
+          "region" : {
+            "startLine" : -1
+          }
+        },
+        "fullyQualifiedLogicalName" : "f::n::c::n::equals"
+      } ],
+      "ruleId" : "IncompleteOperationError",
+      "message" : {
+        "text" : "Operation on object of type java.security.MessageDigest object not completed. Expected call to digest, update.",
+        "richText" : "IncompleteOperationError violating CrySL rule for java.security.MessageDigest."
+      }
+    }, {
+      "locations" : [ {
+        "physicalLocation" : {
+          "fileLocation" : {
+            "uri" : "d/e/a/i/h/c.java"
+          },
+          "region" : {
+            "startLine" : 3
+          }
+        },
+        "fullyQualifiedLogicalName" : "d::e::a::i::h::c::run"
+      } ],
+      "ruleId" : "IncompleteOperationError-1",
+      "message" : {
+        "text" : "Operation on object of type java.security.MessageDigest object not completed. Expected call to digest, update.",
+        "richText" : "IncompleteOperationError violating CrySL rule for java.security.MessageDigest."
+      }
+    }, {
+      "locations" : [ {
+        "physicalLocation" : {
+          "fileLocation" : {
+            "uri" : "com/tnibler/cryptocam/MainActivity.java"
+          },
+          "region" : {
+            "startLine" : 12
+          }
+        },
+        "fullyQualifiedLogicalName" : "com::tnibler::cryptocam::MainActivity::z"
+      } ],
+      "ruleId" : "IncompleteOperationError-2",
+      "message" : {
+        "text" : "Operation on object of type java.security.MessageDigest object not completed. Expected call to digest, update.",
+        "richText" : "IncompleteOperationError violating CrySL rule for java.security.MessageDigest."
+      }
+    }, {
+      "locations" : [ {
+        "physicalLocation" : {
+          "fileLocation" : {
+            "uri" : "d/e/a/j/i$b$a.java"
+          },
+          "region" : {
+            "startLine" : 4
+          }
+        },
+        "fullyQualifiedLogicalName" : "d::e::a::j::i$b$a::h"
+      } ],
+      "ruleId" : "IncompleteOperationError-3",
+      "message" : {
+        "text" : "Operation on object of type java.security.MessageDigest object not completed. Expected call to digest, update.",
+        "richText" : "IncompleteOperationError violating CrySL rule for java.security.MessageDigest."
+      }
+    }, {
+      "locations" : [ {
+        "physicalLocation" : {
+          "fileLocation" : {
+            "uri" : "com/tnibler/cryptocam/video/RecordingService.java"
+          },
+          "region" : {
+            "startLine" : 11
+          }
+        },
+        "fullyQualifiedLogicalName" : "com::tnibler::cryptocam::video::RecordingService::onCreate"
+      } ],
+      "ruleId" : "IncompleteOperationError-4",
+      "message" : {
+        "text" : "Operation on object of type java.security.MessageDigest object not completed. Expected call to digest, update.",
+        "richText" : "IncompleteOperationError violating CrySL rule for java.security.MessageDigest."
+      }
+    }, {
+      "locations" : [ {
+        "physicalLocation" : {
+          "fileLocation" : {
+            "uri" : "d/e/a/k/i$f.java"
+          },
+          "region" : {
+            "startLine" : 4
+          }
+        },
+        "fullyQualifiedLogicalName" : "d::e::a::k::i$f::a"
+      } ],
+      "ruleId" : "IncompleteOperationError-5",
+      "message" : {
+        "text" : "Operation on object of type java.security.MessageDigest object not completed. Expected call to digest, update.",
+        "richText" : "IncompleteOperationError violating CrySL rule for java.security.MessageDigest."
+      }
+    } ],
+    "tool" : {
+      "name" : "CryptoAnalysis",
+      "semanticVersion" : null,
+      "language" : "en-US",
+      "version" : null
+    }
+  } ]
+}

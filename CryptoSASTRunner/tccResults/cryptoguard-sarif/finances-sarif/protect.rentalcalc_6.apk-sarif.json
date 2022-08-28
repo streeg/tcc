@@ -1,0 +1,93 @@
+{
+  "sarifVersion" : "2.0.0",
+  "runs" : [ {
+    "files" : {
+      "com/bumptech/glide/load/engine/cache/SafeKeyGenerator.java" : {
+        "mimeType" : "text/java"
+      },
+      "com/x5/template/filters/MD5HexFilter.java" : {
+        "mimeType" : "text/java"
+      }
+    },
+    "resources" : {
+      "rules" : {
+        "TypestateError" : {
+          "id" : "TypestateError",
+          "fullDescription" : {
+            "text" : "The ORDER block of CrySL is violated, i.e., the expected method sequence call to be made is incorrect. For example, a Signature object expects a call to initSign(key) prior to update(data)."
+          }
+        },
+        "ConstraintError" : {
+          "id" : "ConstraintError",
+          "fullDescription" : {
+            "text" : "A constraint of a CrySL rule is violated, e.g., a key is generated with the wrong key size."
+          }
+        },
+        "ConstraintError-1" : {
+          "id" : "ConstraintError",
+          "fullDescription" : {
+            "text" : "A constraint of a CrySL rule is violated, e.g., a key is generated with the wrong key size."
+          }
+        }
+      }
+    },
+    "results" : [ {
+      "locations" : [ {
+        "physicalLocation" : {
+          "fileLocation" : {
+            "uri" : "com/x5/template/filters/MD5HexFilter.java"
+          },
+          "region" : {
+            "startLine" : 50
+          }
+        },
+        "fullyQualifiedLogicalName" : "com::x5::template::filters::MD5HexFilter::hashCrypt"
+      } ],
+      "ruleId" : "ConstraintError",
+      "message" : {
+        "text" : "First parameter (with value \"SHA-1\") should be any of {SHA-256, SHA-384, SHA-512}.",
+        "richText" : "ConstraintError violating CrySL rule for java.security.MessageDigest."
+      }
+    }, {
+      "locations" : [ {
+        "physicalLocation" : {
+          "fileLocation" : {
+            "uri" : "com/x5/template/filters/MD5HexFilter.java"
+          },
+          "region" : {
+            "startLine" : 50
+          }
+        },
+        "fullyQualifiedLogicalName" : "com::x5::template::filters::MD5HexFilter::hashCrypt"
+      } ],
+      "ruleId" : "ConstraintError-1",
+      "message" : {
+        "text" : "First parameter (with value \"MD5\") should be any of {SHA-256, SHA-384, SHA-512}.",
+        "richText" : "ConstraintError violating CrySL rule for java.security.MessageDigest."
+      }
+    }, {
+      "locations" : [ {
+        "physicalLocation" : {
+          "fileLocation" : {
+            "uri" : "com/bumptech/glide/load/engine/cache/SafeKeyGenerator.java"
+          },
+          "region" : {
+            "startLine" : 26
+          }
+        },
+        "fullyQualifiedLogicalName" : "com::bumptech::glide::load::engine::cache::SafeKeyGenerator::getSafeKey"
+      } ],
+      "ruleId" : "TypestateError",
+      "message" : {
+        "text" : "Unexpected call to method <java.security.MessageDigest: byte[] digest()> on object of type java.security.MessageDigest. Expect a call to one of the following methods java.security.MessageDigest: void update(byte[],int,int),java.security.MessageDigest: void update(java.nio.ByteBuffer),java.security.MessageDigest: byte[] digest(byte[]),java.security.MessageDigest: void update(byte[]),java.security.MessageDigest: void update(byte).",
+        "richText" : "TypestateError violating CrySL rule for java.security.MessageDigest."
+      }
+    } ],
+    "tool" : {
+      "name" : "CryptoAnalysis",
+      "semanticVersion" : null,
+      "language" : "en-US",
+      "version" : null
+    }
+  } ]
+}
