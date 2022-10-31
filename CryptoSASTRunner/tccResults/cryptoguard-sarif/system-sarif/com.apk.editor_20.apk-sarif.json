@@ -1,0 +1,528 @@
+{
+  "sarifVersion" : "2.0.0",
+  "runs" : [ {
+    "files" : {
+      "androidx/appcompat/widget/u.java" : {
+        "mimeType" : "text/java"
+      },
+      "t2/a.java" : {
+        "mimeType" : "text/java"
+      },
+      "f2/a.java" : {
+        "mimeType" : "text/java"
+      },
+      "c3/b.java" : {
+        "mimeType" : "text/java"
+      },
+      "o4/f.java" : {
+        "mimeType" : "text/java"
+      },
+      "y2/k.java" : {
+        "mimeType" : "text/java"
+      },
+      "w0/b.java" : {
+        "mimeType" : "text/java"
+      },
+      "h2/a.java" : {
+        "mimeType" : "text/java"
+      },
+      "w0/a.java" : {
+        "mimeType" : "text/java"
+      }
+    },
+    "resources" : {
+      "rules" : {
+        "TypestateError-1" : {
+          "id" : "TypestateError",
+          "fullDescription" : {
+            "text" : "The ORDER block of CrySL is violated, i.e., the expected method sequence call to be made is incorrect. For example, a Signature object expects a call to initSign(key) prior to update(data)."
+          }
+        },
+        "TypestateError-2" : {
+          "id" : "TypestateError",
+          "fullDescription" : {
+            "text" : "The ORDER block of CrySL is violated, i.e., the expected method sequence call to be made is incorrect. For example, a Signature object expects a call to initSign(key) prior to update(data)."
+          }
+        },
+        "ConstraintError-1" : {
+          "id" : "ConstraintError",
+          "fullDescription" : {
+            "text" : "A constraint of a CrySL rule is violated, e.g., a key is generated with the wrong key size."
+          }
+        },
+        "ConstraintError-2" : {
+          "id" : "ConstraintError",
+          "fullDescription" : {
+            "text" : "A constraint of a CrySL rule is violated, e.g., a key is generated with the wrong key size."
+          }
+        },
+        "ConstraintError-3" : {
+          "id" : "ConstraintError",
+          "fullDescription" : {
+            "text" : "A constraint of a CrySL rule is violated, e.g., a key is generated with the wrong key size."
+          }
+        },
+        "IncompleteOperationError-6" : {
+          "id" : "IncompleteOperationError",
+          "fullDescription" : {
+            "text" : "The usage of an object may be incomplete: For example a Cipherobject may be initialized but never used for en- or decryption, this may render the code dead. This error heavily depends on the computed call graph (CHA by default)"
+          }
+        },
+        "ConstraintError-4" : {
+          "id" : "ConstraintError",
+          "fullDescription" : {
+            "text" : "A constraint of a CrySL rule is violated, e.g., a key is generated with the wrong key size."
+          }
+        },
+        "ConstraintError-5" : {
+          "id" : "ConstraintError",
+          "fullDescription" : {
+            "text" : "A constraint of a CrySL rule is violated, e.g., a key is generated with the wrong key size."
+          }
+        },
+        "RequiredPredicateError" : {
+          "id" : "RequiredPredicateError",
+          "fullDescription" : {
+            "text" : "An object A expects an object B to have been used correctly (CrySL blocks REQUIRES and ENSURES). For example a Cipher object requires a SecretKey object to be correctly and securely generated."
+          }
+        },
+        "ConstraintError-6" : {
+          "id" : "ConstraintError",
+          "fullDescription" : {
+            "text" : "A constraint of a CrySL rule is violated, e.g., a key is generated with the wrong key size."
+          }
+        },
+        "ConstraintError-7" : {
+          "id" : "ConstraintError",
+          "fullDescription" : {
+            "text" : "A constraint of a CrySL rule is violated, e.g., a key is generated with the wrong key size."
+          }
+        },
+        "TypestateError" : {
+          "id" : "TypestateError",
+          "fullDescription" : {
+            "text" : "The ORDER block of CrySL is violated, i.e., the expected method sequence call to be made is incorrect. For example, a Signature object expects a call to initSign(key) prior to update(data)."
+          }
+        },
+        "ConstraintError" : {
+          "id" : "ConstraintError",
+          "fullDescription" : {
+            "text" : "A constraint of a CrySL rule is violated, e.g., a key is generated with the wrong key size."
+          }
+        },
+        "RequiredPredicateError-2" : {
+          "id" : "RequiredPredicateError",
+          "fullDescription" : {
+            "text" : "An object A expects an object B to have been used correctly (CrySL blocks REQUIRES and ENSURES). For example a Cipher object requires a SecretKey object to be correctly and securely generated."
+          }
+        },
+        "IncompleteOperationError" : {
+          "id" : "IncompleteOperationError",
+          "fullDescription" : {
+            "text" : "The usage of an object may be incomplete: For example a Cipherobject may be initialized but never used for en- or decryption, this may render the code dead. This error heavily depends on the computed call graph (CHA by default)"
+          }
+        },
+        "IncompleteOperationError-1" : {
+          "id" : "IncompleteOperationError",
+          "fullDescription" : {
+            "text" : "The usage of an object may be incomplete: For example a Cipherobject may be initialized but never used for en- or decryption, this may render the code dead. This error heavily depends on the computed call graph (CHA by default)"
+          }
+        },
+        "RequiredPredicateError-1" : {
+          "id" : "RequiredPredicateError",
+          "fullDescription" : {
+            "text" : "An object A expects an object B to have been used correctly (CrySL blocks REQUIRES and ENSURES). For example a Cipher object requires a SecretKey object to be correctly and securely generated."
+          }
+        },
+        "IncompleteOperationError-3" : {
+          "id" : "IncompleteOperationError",
+          "fullDescription" : {
+            "text" : "The usage of an object may be incomplete: For example a Cipherobject may be initialized but never used for en- or decryption, this may render the code dead. This error heavily depends on the computed call graph (CHA by default)"
+          }
+        },
+        "IncompleteOperationError-2" : {
+          "id" : "IncompleteOperationError",
+          "fullDescription" : {
+            "text" : "The usage of an object may be incomplete: For example a Cipherobject may be initialized but never used for en- or decryption, this may render the code dead. This error heavily depends on the computed call graph (CHA by default)"
+          }
+        },
+        "IncompleteOperationError-5" : {
+          "id" : "IncompleteOperationError",
+          "fullDescription" : {
+            "text" : "The usage of an object may be incomplete: For example a Cipherobject may be initialized but never used for en- or decryption, this may render the code dead. This error heavily depends on the computed call graph (CHA by default)"
+          }
+        },
+        "IncompleteOperationError-4" : {
+          "id" : "IncompleteOperationError",
+          "fullDescription" : {
+            "text" : "The usage of an object may be incomplete: For example a Cipherobject may be initialized but never used for en- or decryption, this may render the code dead. This error heavily depends on the computed call graph (CHA by default)"
+          }
+        }
+      }
+    },
+    "results" : [ {
+      "locations" : [ {
+        "physicalLocation" : {
+          "fileLocation" : {
+            "uri" : "o4/f.java"
+          },
+          "region" : {
+            "startLine" : 2
+          }
+        },
+        "fullyQualifiedLogicalName" : "o4::f::f"
+      } ],
+      "ruleId" : "TypestateError",
+      "message" : {
+        "text" : "Unexpected call to method <java.security.MessageDigest: byte[] digest()> on object of type java.security.MessageDigest. Expect a call to one of the following methods java.security.MessageDigest: void update(byte[],int,int),java.security.MessageDigest: void update(java.nio.ByteBuffer),java.security.MessageDigest: byte[] digest(byte[]),java.security.MessageDigest: void update(byte),java.security.MessageDigest: void update(byte[]).",
+        "richText" : "TypestateError violating CrySL rule for java.security.MessageDigest."
+      }
+    }, {
+      "locations" : [ {
+        "physicalLocation" : {
+          "fileLocation" : {
+            "uri" : "o4/f.java"
+          },
+          "region" : {
+            "startLine" : -1
+          }
+        },
+        "fullyQualifiedLogicalName" : "o4::f::f"
+      } ],
+      "ruleId" : "ConstraintError",
+      "message" : {
+        "text" : "First parameter (with value \"SHA-1\") should be any of {SHA-256, SHA-384, SHA-512}.",
+        "richText" : "ConstraintError violating CrySL rule for java.security.MessageDigest."
+      }
+    }, {
+      "locations" : [ {
+        "physicalLocation" : {
+          "fileLocation" : {
+            "uri" : "h2/a.java"
+          },
+          "region" : {
+            "startLine" : -1
+          }
+        },
+        "fullyQualifiedLogicalName" : "h2::a::b"
+      } ],
+      "ruleId" : "ConstraintError-1",
+      "message" : {
+        "text" : "First parameter (with value \"MD5\") should be any of {SHA-256, SHA-384, SHA-512}.",
+        "richText" : "ConstraintError violating CrySL rule for java.security.MessageDigest."
+      }
+    }, {
+      "locations" : [ {
+        "physicalLocation" : {
+          "fileLocation" : {
+            "uri" : "h2/a.java"
+          },
+          "region" : {
+            "startLine" : -1
+          }
+        },
+        "fullyQualifiedLogicalName" : "h2::a::b"
+      } ],
+      "ruleId" : "ConstraintError-2",
+      "message" : {
+        "text" : "First parameter (with value \"SHA1\") should be any of {SHA-256, SHA-384, SHA-512}.",
+        "richText" : "ConstraintError violating CrySL rule for java.security.MessageDigest."
+      }
+    }, {
+      "locations" : [ {
+        "physicalLocation" : {
+          "fileLocation" : {
+            "uri" : "w0/a.java"
+          },
+          "region" : {
+            "startLine" : 4
+          }
+        },
+        "fullyQualifiedLogicalName" : "w0::a::a"
+      } ],
+      "ruleId" : "TypestateError-1",
+      "message" : {
+        "text" : "Unexpected call to method <java.security.MessageDigest: byte[] digest()> on object of type java.security.MessageDigest. Expect a call to one of the following methods java.security.MessageDigest: void update(byte[],int,int),java.security.MessageDigest: void update(java.nio.ByteBuffer),java.security.MessageDigest: byte[] digest(byte[]),java.security.MessageDigest: void update(byte),java.security.MessageDigest: void update(byte[]).",
+        "richText" : "TypestateError violating CrySL rule for java.security.MessageDigest."
+      }
+    }, {
+      "locations" : [ {
+        "physicalLocation" : {
+          "fileLocation" : {
+            "uri" : "w0/a.java"
+          },
+          "region" : {
+            "startLine" : 4
+          }
+        },
+        "fullyQualifiedLogicalName" : "w0::a::a"
+      } ],
+      "ruleId" : "ConstraintError-3",
+      "message" : {
+        "text" : "First parameter (with value \"SHA1\") should be any of {SHA-256, SHA-384, SHA-512}.",
+        "richText" : "ConstraintError violating CrySL rule for java.security.MessageDigest."
+      }
+    }, {
+      "locations" : [ {
+        "physicalLocation" : {
+          "fileLocation" : {
+            "uri" : "w0/b.java"
+          },
+          "region" : {
+            "startLine" : 17
+          }
+        },
+        "fullyQualifiedLogicalName" : "w0::b::a"
+      } ],
+      "ruleId" : "ConstraintError-4",
+      "message" : {
+        "text" : "First parameter (with value \"SHA1\") should be any of {SHA-256, SHA-384, SHA-512}.",
+        "richText" : "ConstraintError violating CrySL rule for java.security.MessageDigest."
+      }
+    }, {
+      "locations" : [ {
+        "physicalLocation" : {
+          "fileLocation" : {
+            "uri" : "androidx/appcompat/widget/u.java"
+          },
+          "region" : {
+            "startLine" : -1
+          }
+        },
+        "fullyQualifiedLogicalName" : "androidx::appcompat::widget::u::h"
+      } ],
+      "ruleId" : "ConstraintError-5",
+      "message" : {
+        "text" : "First parameter (with value \"SHA1withRSA\") should be any of {SHA256withRSA, SHA256withECDSA, SHA256withDSA, SHA384withRSA, SHA512withRSA, SHA384withECDSA, SHA512withECDSA}.",
+        "richText" : "ConstraintError violating CrySL rule for java.security.Signature."
+      }
+    }, {
+      "locations" : [ {
+        "physicalLocation" : {
+          "fileLocation" : {
+            "uri" : "androidx/appcompat/widget/u.java"
+          },
+          "region" : {
+            "startLine" : -1
+          }
+        },
+        "fullyQualifiedLogicalName" : "androidx::appcompat::widget::u::h"
+      } ],
+      "ruleId" : "RequiredPredicateError",
+      "message" : {
+        "text" : "First parameter was not properly generated as generated Privkey.",
+        "richText" : "RequiredPredicateError violating CrySL rule for java.security.Signature."
+      }
+    }, {
+      "locations" : [ {
+        "physicalLocation" : {
+          "fileLocation" : {
+            "uri" : "androidx/appcompat/widget/u.java"
+          },
+          "region" : {
+            "startLine" : -1
+          }
+        },
+        "fullyQualifiedLogicalName" : "androidx::appcompat::widget::u::f"
+      } ],
+      "ruleId" : "RequiredPredicateError-1",
+      "message" : {
+        "text" : "First parameter was not properly generated as specced Key.",
+        "richText" : "RequiredPredicateError violating CrySL rule for java.security.KeyFactory."
+      }
+    }, {
+      "locations" : [ {
+        "physicalLocation" : {
+          "fileLocation" : {
+            "uri" : "t2/a.java"
+          },
+          "region" : {
+            "startLine" : 2
+          }
+        },
+        "fullyQualifiedLogicalName" : "t2::a::<init>"
+      } ],
+      "ruleId" : "ConstraintError-6",
+      "message" : {
+        "text" : "First parameter (with value \"HmacSHA1\") should be any of {HmacSHA256, HmacSHA384, HmacSHA512, HmacPBESHA1, PBEWithHmacSHA1, PBEWithHmacSHA224, PBEWithHmacSHA256, PBEWithHmacSHA384, PBEWithHmacSHA512}.",
+        "richText" : "ConstraintError violating CrySL rule for javax.crypto.Mac."
+      }
+    }, {
+      "locations" : [ {
+        "physicalLocation" : {
+          "fileLocation" : {
+            "uri" : "t2/a.java"
+          },
+          "region" : {
+            "startLine" : -1
+          }
+        },
+        "fullyQualifiedLogicalName" : "t2::a::d"
+      } ],
+      "ruleId" : "RequiredPredicateError-2",
+      "message" : {
+        "text" : "First parameter was not properly generated as prepared Key Material.",
+        "richText" : "RequiredPredicateError violating CrySL rule for javax.crypto.spec.SecretKeySpec."
+      }
+    }, {
+      "locations" : [ {
+        "physicalLocation" : {
+          "fileLocation" : {
+            "uri" : "t2/a.java"
+          },
+          "region" : {
+            "startLine" : -1
+          }
+        },
+        "fullyQualifiedLogicalName" : "t2::a::d"
+      } ],
+      "ruleId" : "ConstraintError-7",
+      "message" : {
+        "text" : "Second parameter (with value \"HmacSHA1\") should be any of {AES, HmacSHA224, HmacSHA256, HmacSHA384, HmacSHA512}.",
+        "richText" : "ConstraintError violating CrySL rule for javax.crypto.spec.SecretKeySpec."
+      }
+    }, {
+      "locations" : [ {
+        "physicalLocation" : {
+          "fileLocation" : {
+            "uri" : "f2/a.java"
+          },
+          "region" : {
+            "startLine" : 12
+          }
+        },
+        "fullyQualifiedLogicalName" : "f2::a::d"
+      } ],
+      "ruleId" : "TypestateError-2",
+      "message" : {
+        "text" : "Unexpected call to method <javax.crypto.Mac: byte[] doFinal(byte[])> on object of type javax.crypto.Mac. Expect a call to one of the following methods javax.crypto.Mac: void update(byte[]),javax.crypto.Mac: void doFinal(byte[],int),javax.crypto.Mac: void update(byte),javax.crypto.Mac: byte[] doFinal(),javax.crypto.Mac: void update(byte[],int,int).",
+        "richText" : "TypestateError violating CrySL rule for javax.crypto.Mac."
+      }
+    }, {
+      "locations" : [ {
+        "physicalLocation" : {
+          "fileLocation" : {
+            "uri" : "f2/a.java"
+          },
+          "region" : {
+            "startLine" : 4
+          }
+        },
+        "fullyQualifiedLogicalName" : "f2::a::d"
+      } ],
+      "ruleId" : "IncompleteOperationError",
+      "message" : {
+        "text" : "Operation on object of type javax.crypto.Mac object not completed. Expected call to update, doFinal.",
+        "richText" : "IncompleteOperationError violating CrySL rule for javax.crypto.Mac."
+      }
+    }, {
+      "locations" : [ {
+        "physicalLocation" : {
+          "fileLocation" : {
+            "uri" : "c3/b.java"
+          },
+          "region" : {
+            "startLine" : 96
+          }
+        },
+        "fullyQualifiedLogicalName" : "c3::b::f"
+      } ],
+      "ruleId" : "IncompleteOperationError-1",
+      "message" : {
+        "text" : "Operation on object of type javax.crypto.Mac object not completed. Expected call to update, doFinal.",
+        "richText" : "IncompleteOperationError violating CrySL rule for javax.crypto.Mac."
+      }
+    }, {
+      "locations" : [ {
+        "physicalLocation" : {
+          "fileLocation" : {
+            "uri" : "c3/b.java"
+          },
+          "region" : {
+            "startLine" : 94
+          }
+        },
+        "fullyQualifiedLogicalName" : "c3::b::f"
+      } ],
+      "ruleId" : "IncompleteOperationError-2",
+      "message" : {
+        "text" : "Operation on object of type javax.crypto.Mac object not completed. Expected call to update, doFinal.",
+        "richText" : "IncompleteOperationError violating CrySL rule for javax.crypto.Mac."
+      }
+    }, {
+      "locations" : [ {
+        "physicalLocation" : {
+          "fileLocation" : {
+            "uri" : "c3/b.java"
+          },
+          "region" : {
+            "startLine" : 90
+          }
+        },
+        "fullyQualifiedLogicalName" : "c3::b::f"
+      } ],
+      "ruleId" : "IncompleteOperationError-3",
+      "message" : {
+        "text" : "Operation on object of type javax.crypto.Mac object not completed. Expected call to update, doFinal.",
+        "richText" : "IncompleteOperationError violating CrySL rule for javax.crypto.Mac."
+      }
+    }, {
+      "locations" : [ {
+        "physicalLocation" : {
+          "fileLocation" : {
+            "uri" : "y2/k.java"
+          },
+          "region" : {
+            "startLine" : 159
+          }
+        },
+        "fullyQualifiedLogicalName" : "y2::k::b"
+      } ],
+      "ruleId" : "IncompleteOperationError-4",
+      "message" : {
+        "text" : "Operation on object of type javax.crypto.Mac object not completed. Expected call to update, doFinal.",
+        "richText" : "IncompleteOperationError violating CrySL rule for javax.crypto.Mac."
+      }
+    }, {
+      "locations" : [ {
+        "physicalLocation" : {
+          "fileLocation" : {
+            "uri" : "y2/k.java"
+          },
+          "region" : {
+            "startLine" : 157
+          }
+        },
+        "fullyQualifiedLogicalName" : "y2::k::b"
+      } ],
+      "ruleId" : "IncompleteOperationError-5",
+      "message" : {
+        "text" : "Operation on object of type javax.crypto.Mac object not completed. Expected call to update, doFinal.",
+        "richText" : "IncompleteOperationError violating CrySL rule for javax.crypto.Mac."
+      }
+    }, {
+      "locations" : [ {
+        "physicalLocation" : {
+          "fileLocation" : {
+            "uri" : "y2/k.java"
+          },
+          "region" : {
+            "startLine" : 159
+          }
+        },
+        "fullyQualifiedLogicalName" : "y2::k::b"
+      } ],
+      "ruleId" : "IncompleteOperationError-6",
+      "message" : {
+        "text" : "Operation on object of type javax.crypto.Mac object not completed. Expected call to update, doFinal.",
+        "richText" : "IncompleteOperationError violating CrySL rule for javax.crypto.Mac."
+      }
+    } ],
+    "tool" : {
+      "name" : "CryptoAnalysis",
+      "semanticVersion" : null,
+      "language" : "en-US",
+      "version" : null
+    }
+  } ]
+}

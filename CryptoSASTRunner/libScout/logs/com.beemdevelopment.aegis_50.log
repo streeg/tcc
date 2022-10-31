@@ -1,0 +1,868 @@
+23:21:57 INFO  LibraryIdentifier         : Process app: com.beemdevelopment.aegis_50.apk
+23:21:57 INFO  LibraryIdentifier         : = Manifest Parser =
+23:21:57 INFO  LibraryIdentifier         :         Package name: com.beemdevelopment.aegis
+23:21:57 INFO  LibraryIdentifier         :         Version code: 50
+23:21:57 INFO  LibraryIdentifier         :        minSdkVersion: 21
+23:21:57 INFO  LibraryIdentifier         :     targetSdkVersion: 30
+23:21:57 INFO  LibraryIdentifier         :         SharedUserId:  - none -
+23:21:57 INFO  LibraryIdentifier         :     Library dependencies:  - none -
+23:21:57 INFO  LibraryIdentifier         : 
+23:21:57 INFO  LibraryIdentifier         : Found 402 unique libraries in 12405 library profiles
+23:21:57 INFO  LibraryIdentifier         : Multi-dex apk detected - Code is merged to single class hierarchy!
+23:21:58 INFO  LibraryIdentifier         : Generated class hierarchy (in 1 sec, 53 ms)
+23:21:59 INFO  WalaUtils                 : 
+23:21:59 INFO  WalaUtils                 : = ClassHierarchy Stats =
+23:21:59 INFO  WalaUtils                 :     # of classes: 3778
+23:21:59 INFO  WalaUtils                 :     # thereof inner classes: 2047
+23:21:59 INFO  WalaUtils                 :     # thereof public classes: 3467
+23:21:59 INFO  WalaUtils                 :         Activity : 19
+23:21:59 INFO  WalaUtils                 :         Application : 1
+23:21:59 INFO  WalaUtils                 :         AsyncTask : 7
+23:21:59 INFO  WalaUtils                 :         BroadcastReceiver : 3
+23:21:59 INFO  WalaUtils                 :         ContentProvider : 2
+23:21:59 INFO  WalaUtils                 :         Fragment : 2
+23:21:59 INFO  WalaUtils                 :         Handler : 2
+23:21:59 INFO  WalaUtils                 :         LayoutContainer : 61
+23:21:59 INFO  WalaUtils                 :         Plain : 3636
+23:21:59 INFO  WalaUtils                 :         Runnable : 0
+23:21:59 INFO  WalaUtils                 :         Service : 1
+23:21:59 INFO  WalaUtils                 :         Thread : 2
+23:21:59 INFO  WalaUtils                 :         View : 42
+23:21:59 INFO  WalaUtils                 :     # methods: 19843
+23:21:59 INFO  WalaUtils                 :         # of publicly accessible methods: 18705
+23:21:59 INFO  WalaUtils                 :         # of non-accessible methods: 1138
+23:21:59 INFO  WalaUtils                 : 
+23:21:59 INFO  Profile                   : = PackageTree =
+23:22:00 INFO  PackageTree               : Root Package:  - none -
+23:22:00 INFO  PackageTree               : └── Root
+23:22:00 INFO  PackageTree               :     ├── com
+23:22:00 INFO  PackageTree               :     │   ├── beemdevelopment
+23:22:00 INFO  PackageTree               :     │   │   └── aegis (18)
+23:22:00 INFO  PackageTree               :     │   │       ├── importers (44)
+23:22:00 INFO  PackageTree               :     │   │       ├── helpers (15)
+23:22:00 INFO  PackageTree               :     │   │       │   └── comparators (3)
+23:22:00 INFO  PackageTree               :     │   │       ├── ui (30)
+23:22:00 INFO  PackageTree               :     │   │       │   ├── dialogs (13)
+23:22:00 INFO  PackageTree               :     │   │       │   ├── views (33)
+23:22:00 INFO  PackageTree               :     │   │       │   ├── slides (7)
+23:22:00 INFO  PackageTree               :     │   │       │   ├── tasks (21)
+23:22:00 INFO  PackageTree               :     │   │       │   ├── fragments (17)
+23:22:00 INFO  PackageTree               :     │   │       │   ├── glide (11)
+23:22:00 INFO  PackageTree               :     │   │       │   ├── preferences (1)
+23:22:00 INFO  PackageTree               :     │   │       │   ├── intro (5)
+23:22:00 INFO  PackageTree               :     │   │       │   └── models (2)
+23:22:00 INFO  PackageTree               :     │   │       ├── otp (7)
+23:22:00 INFO  PackageTree               :     │   │       ├── vault (15)
+23:22:00 INFO  PackageTree               :     │   │       │   └── slots (8)
+23:22:00 INFO  PackageTree               :     │   │       ├── crypto (7)
+23:22:00 INFO  PackageTree               :     │   │       │   ├── otp (2)
+23:22:00 INFO  PackageTree               :     │   │       │   └── pins (1)
+23:22:00 INFO  PackageTree               :     │   │       ├── licenses (2)
+23:22:00 INFO  PackageTree               :     │   │       ├── icons (6)
+23:22:00 INFO  PackageTree               :     │   │       ├── services (1)
+23:22:00 INFO  PackageTree               :     │   │       ├── util (3)
+23:22:00 INFO  PackageTree               :     │   │       └── encoding (1)
+23:22:00 INFO  PackageTree               :     │   ├── mikepenz
+23:22:00 INFO  PackageTree               :     │   │   ├── iconics (3)
+23:22:00 INFO  PackageTree               :     │   │   │   ├── context (4)
+23:22:00 INFO  PackageTree               :     │   │   │   ├── animation (5)
+23:22:00 INFO  PackageTree               :     │   │   │   ├── typeface (2)
+23:22:00 INFO  PackageTree               :     │   │   │   └── utils (3)
+23:22:00 INFO  PackageTree               :     │   │   └── material_design_iconic_typeface_library (2)
+23:22:00 INFO  PackageTree               :     │   ├── bumptech
+23:22:00 INFO  PackageTree               :     │   │   └── glide (31)
+23:22:00 INFO  PackageTree               :     │   │       ├── util (17)
+23:22:00 INFO  PackageTree               :     │   │       │   └── pool (10)
+23:22:00 INFO  PackageTree               :     │   │       ├── load (23)
+23:22:00 INFO  PackageTree               :     │   │       │   ├── model (73)
+23:22:00 INFO  PackageTree               :     │   │       │   │   └── stream (13)
+23:22:00 INFO  PackageTree               :     │   │       │   ├── resource (5)
+23:22:00 INFO  PackageTree               :     │   │       │   │   ├── bitmap (55)
+23:22:00 INFO  PackageTree               :     │   │       │   │   ├── gif (16)
+23:22:00 INFO  PackageTree               :     │   │       │   │   ├── drawable (5)
+23:22:00 INFO  PackageTree               :     │   │       │   │   ├── bytes (3)
+23:22:00 INFO  PackageTree               :     │   │       │   │   ├── transcode (8)
+23:22:00 INFO  PackageTree               :     │   │       │   │   └── file (2)
+23:22:00 INFO  PackageTree               :     │   │       │   ├── engine (58)
+23:22:00 INFO  PackageTree               :     │   │       │   │   ├── cache (22)
+23:22:00 INFO  PackageTree               :     │   │       │   │   ├── bitmap_recycle (20)
+23:22:00 INFO  PackageTree               :     │   │       │   │   └── executor (5)
+23:22:00 INFO  PackageTree               :     │   │       │   └── data (24)
+23:22:00 INFO  PackageTree               :     │   │       │       └── mediastore (6)
+23:22:00 INFO  PackageTree               :     │   │       ├── manager (26)
+23:22:00 INFO  PackageTree               :     │   │       ├── provider (9)
+23:22:00 INFO  PackageTree               :     │   │       ├── request (9)
+23:22:00 INFO  PackageTree               :     │   │       │   ├── target (14)
+23:22:00 INFO  PackageTree               :     │   │       │   └── transition (4)
+23:22:00 INFO  PackageTree               :     │   │       ├── gifdecoder (6)
+23:22:00 INFO  PackageTree               :     │   │       ├── module (6)
+23:22:00 INFO  PackageTree               :     │   │       ├── disklrucache (9)
+23:22:00 INFO  PackageTree               :     │   │       ├── signature (2)
+23:22:00 INFO  PackageTree               :     │   │       └── integration
+23:22:00 INFO  PackageTree               :     │   │           └── recyclerview (2)
+23:22:00 INFO  PackageTree               :     │   ├── nulabinc
+23:22:00 INFO  PackageTree               :     │   │   └── zxcvbn (9)
+23:22:00 INFO  PackageTree               :     │   │       ├── matchers (31)
+23:22:00 INFO  PackageTree               :     │   │       └── guesses (9)
+23:22:00 INFO  PackageTree               :     │   ├── google
+23:22:00 INFO  PackageTree               :     │   │   ├── protobuf (207)
+23:22:00 INFO  PackageTree               :     │   │   ├── android
+23:22:00 INFO  PackageTree               :     │   │   │   └── material
+23:22:00 INFO  PackageTree               :     │   │   │       ├── textfield (49)
+23:22:00 INFO  PackageTree               :     │   │   │       ├── appbar (19)
+23:22:00 INFO  PackageTree               :     │   │   │       ├── datepicker (47)
+23:22:00 INFO  PackageTree               :     │   │   │       ├── behavior (6)
+23:22:00 INFO  PackageTree               :     │   │   │       ├── transformation (15)
+23:22:00 INFO  PackageTree               :     │   │   │       ├── timepicker (16)
+23:22:00 INFO  PackageTree               :     │   │   │       ├── shape (25)
+23:22:00 INFO  PackageTree               :     │   │   │       ├── internal (28)
+23:22:00 INFO  PackageTree               :     │   │   │       ├── floatingactionbutton (31)
+23:22:00 INFO  PackageTree               :     │   │   │       ├── button (13)
+23:22:00 INFO  PackageTree               :     │   │   │       ├── dialog (1)
+23:22:00 INFO  PackageTree               :     │   │   │       ├── bottomappbar (13)
+23:22:00 INFO  PackageTree               :     │   │   │       ├── card (2)
+23:22:00 INFO  PackageTree               :     │   │   │       ├── chip (11)
+23:22:00 INFO  PackageTree               :     │   │   │       ├── bottomsheet (18)
+23:22:00 INFO  PackageTree               :     │   │   │       ├── elevation (1)
+23:22:00 INFO  PackageTree               :     │   │   │       ├── shadow (2)
+23:22:00 INFO  PackageTree               :     │   │   │       ├── animation (10)
+23:22:00 INFO  PackageTree               :     │   │   │       ├── resources (6)
+23:22:00 INFO  PackageTree               :     │   │   │       ├── theme (1)
+23:22:00 INFO  PackageTree               :     │   │   │       │   └── overlay (1)
+23:22:00 INFO  PackageTree               :     │   │   │       ├── circularreveal (7)
+23:22:00 INFO  PackageTree               :     │   │   │       │   └── cardview (1)
+23:22:00 INFO  PackageTree               :     │   │   │       ├── snackbar (11)
+23:22:00 INFO  PackageTree               :     │   │   │       ├── stateful (2)
+23:22:00 INFO  PackageTree               :     │   │   │       ├── expandable (2)
+23:22:00 INFO  PackageTree               :     │   │   │       ├── radiobutton (1)
+23:22:00 INFO  PackageTree               :     │   │   │       ├── textview (1)
+23:22:00 INFO  PackageTree               :     │   │   │       ├── ripple (1)
+23:22:00 INFO  PackageTree               :     │   │   │       └── checkbox (1)
+23:22:00 INFO  PackageTree               :     │   │   ├── zxing (15)
+23:22:00 INFO  PackageTree               :     │   │   │   ├── qrcode (2)
+23:22:00 INFO  PackageTree               :     │   │   │   │   ├── detector (7)
+23:22:00 INFO  PackageTree               :     │   │   │   │   ├── decoder (20)
+23:22:00 INFO  PackageTree               :     │   │   │   │   └── encoder (4)
+23:22:00 INFO  PackageTree               :     │   │   │   └── common (8)
+23:22:00 INFO  PackageTree               :     │   │   │       └── reedsolomon (5)
+23:22:00 INFO  PackageTree               :     │   │   └── common
+23:22:00 INFO  PackageTree               :     │   │       ├── collect (14)
+23:22:00 INFO  PackageTree               :     │   │       ├── io (6)
+23:22:00 INFO  PackageTree               :     │   │       ├── math (1)
+23:22:00 INFO  PackageTree               :     │   │       ├── util
+23:22:00 INFO  PackageTree               :     │   │       │   └── concurrent (1)
+23:22:00 INFO  PackageTree               :     │   │       └── base (1)
+23:22:00 INFO  PackageTree               :     │   ├── avito
+23:22:00 INFO  PackageTree               :     │   │   └── android
+23:22:00 INFO  PackageTree               :     │   │       └── krop (20)
+23:22:00 INFO  PackageTree               :     │   ├── caverock
+23:22:00 INFO  PackageTree               :     │   │   └── androidsvg (106)
+23:22:00 INFO  PackageTree               :     │   ├── topjohnwu
+23:22:00 INFO  PackageTree               :     │   │   └── superuser (6)
+23:22:00 INFO  PackageTree               :     │   │       ├── internal (24)
+23:22:00 INFO  PackageTree               :     │   │       └── io (2)
+23:22:00 INFO  PackageTree               :     │   ├── android
+23:22:00 INFO  PackageTree               :     │   │   └── tools
+23:22:00 INFO  PackageTree               :     │   │       └── r8 (1)
+23:22:00 INFO  PackageTree               :     │   └── amulyakhare
+23:22:00 INFO  PackageTree               :     │       └── textdrawable (2)
+23:22:00 INFO  PackageTree               :     │           └── util (1)
+23:22:00 INFO  PackageTree               :     ├── androidx
+23:22:00 INFO  PackageTree               :     │   ├── camera
+23:22:00 INFO  PackageTree               :     │   │   ├── camera2 (1)
+23:22:00 INFO  PackageTree               :     │   │   │   ├── internal (69)
+23:22:00 INFO  PackageTree               :     │   │   │   │   └── compat (45)
+23:22:00 INFO  PackageTree               :     │   │   │   │       ├── params (16)
+23:22:00 INFO  PackageTree               :     │   │   │   │       ├── quirk (11)
+23:22:00 INFO  PackageTree               :     │   │   │   │       └── workaround (5)
+23:22:00 INFO  PackageTree               :     │   │   │   ├── interop (3)
+23:22:00 INFO  PackageTree               :     │   │   │   └── impl (5)
+23:22:00 INFO  PackageTree               :     │   │   ├── core (68)
+23:22:00 INFO  PackageTree               :     │   │   │   ├── impl (88)
+23:22:00 INFO  PackageTree               :     │   │   │   │   └── utils (1)
+23:22:00 INFO  PackageTree               :     │   │   │   │       ├── futures (20)
+23:22:00 INFO  PackageTree               :     │   │   │   │       └── executor (13)
+23:22:00 INFO  PackageTree               :     │   │   │   └── internal (10)
+23:22:00 INFO  PackageTree               :     │   │   │       └── compat
+23:22:00 INFO  PackageTree               :     │   │   │           └── quirk (4)
+23:22:00 INFO  PackageTree               :     │   │   ├── view (21)
+23:22:00 INFO  PackageTree               :     │   │   │   ├── internal
+23:22:00 INFO  PackageTree               :     │   │   │   │   └── compat
+23:22:00 INFO  PackageTree               :     │   │   │   │       └── quirk (4)
+23:22:00 INFO  PackageTree               :     │   │   │   └── transform (1)
+23:22:00 INFO  PackageTree               :     │   │   └── lifecycle (6)
+23:22:00 INFO  PackageTree               :     │   ├── fragment
+23:22:00 INFO  PackageTree               :     │   │   └── app (113)
+23:22:00 INFO  PackageTree               :     │   ├── constraintlayout
+23:22:00 INFO  PackageTree               :     │   │   ├── solver (11)
+23:22:00 INFO  PackageTree               :     │   │   │   └── widgets (12)
+23:22:00 INFO  PackageTree               :     │   │   │       └── analyzer (19)
+23:22:00 INFO  PackageTree               :     │   │   ├── widget (22)
+23:22:00 INFO  PackageTree               :     │   │   └── motion
+23:22:00 INFO  PackageTree               :     │   │       └── utils (1)
+23:22:00 INFO  PackageTree               :     │   ├── appcompat
+23:22:00 INFO  PackageTree               :     │   │   ├── widget (165)
+23:22:00 INFO  PackageTree               :     │   │   ├── graphics
+23:22:00 INFO  PackageTree               :     │   │   │   └── drawable (14)
+23:22:00 INFO  PackageTree               :     │   │   ├── app (60)
+23:22:00 INFO  PackageTree               :     │   │   ├── view (13)
+23:22:00 INFO  PackageTree               :     │   │   │   └── menu (43)
+23:22:00 INFO  PackageTree               :     │   │   ├── content
+23:22:00 INFO  PackageTree               :     │   │   │   └── res (2)
+23:22:00 INFO  PackageTree               :     │   │   └── text (1)
+23:22:00 INFO  PackageTree               :     │   ├── core
+23:22:00 INFO  PackageTree               :     │   │   ├── view (53)
+23:22:00 INFO  PackageTree               :     │   │   │   ├── accessibility (11)
+23:22:00 INFO  PackageTree               :     │   │   │   └── inputmethod (8)
+23:22:00 INFO  PackageTree               :     │   │   ├── app (27)
+23:22:00 INFO  PackageTree               :     │   │   ├── provider (19)
+23:22:00 INFO  PackageTree               :     │   │   ├── hardware
+23:22:00 INFO  PackageTree               :     │   │   │   └── fingerprint (4)
+23:22:00 INFO  PackageTree               :     │   │   ├── content (5)
+23:22:00 INFO  PackageTree               :     │   │   │   └── res (11)
+23:22:00 INFO  PackageTree               :     │   │   ├── graphics (13)
+23:22:00 INFO  PackageTree               :     │   │   │   └── drawable (7)
+23:22:00 INFO  PackageTree               :     │   │   ├── widget (13)
+23:22:00 INFO  PackageTree               :     │   │   ├── internal
+23:22:00 INFO  PackageTree               :     │   │   │   └── view (3)
+23:22:00 INFO  PackageTree               :     │   │   ├── util (6)
+23:22:00 INFO  PackageTree               :     │   │   ├── text (11)
+23:22:00 INFO  PackageTree               :     │   │   └── os (4)
+23:22:00 INFO  PackageTree               :     │   ├── recyclerview
+23:22:00 INFO  PackageTree               :     │   │   └── widget (121)
+23:22:00 INFO  PackageTree               :     │   ├── webkit
+23:22:00 INFO  PackageTree               :     │   │   └── internal (9)
+23:22:00 INFO  PackageTree               :     │   ├── transition (56)
+23:22:00 INFO  PackageTree               :     │   ├── cursoradapter
+23:22:00 INFO  PackageTree               :     │   │   └── widget (6)
+23:22:00 INFO  PackageTree               :     │   ├── biometric (60)
+23:22:00 INFO  PackageTree               :     │   ├── activity (18)
+23:22:00 INFO  PackageTree               :     │   │   ├── result (12)
+23:22:00 INFO  PackageTree               :     │   │   │   └── contract (4)
+23:22:00 INFO  PackageTree               :     │   │   └── contextaware (2)
+23:22:00 INFO  PackageTree               :     │   ├── preference (73)
+23:22:00 INFO  PackageTree               :     │   │   └── internal (1)
+23:22:00 INFO  PackageTree               :     │   ├── coordinatorlayout
+23:22:00 INFO  PackageTree               :     │   │   └── widget (13)
+23:22:00 INFO  PackageTree               :     │   ├── viewpager2
+23:22:00 INFO  PackageTree               :     │   │   ├── adapter (13)
+23:22:00 INFO  PackageTree               :     │   │   └── widget (26)
+23:22:00 INFO  PackageTree               :     │   ├── savedstate (8)
+23:22:00 INFO  PackageTree               :     │   ├── vectordrawable
+23:22:00 INFO  PackageTree               :     │   │   └── graphics
+23:22:00 INFO  PackageTree               :     │   │       └── drawable (18)
+23:22:00 INFO  PackageTree               :     │   ├── loader
+23:22:00 INFO  PackageTree               :     │   │   └── app (5)
+23:22:00 INFO  PackageTree               :     │   ├── lifecycle (58)
+23:22:00 INFO  PackageTree               :     │   ├── customview
+23:22:00 INFO  PackageTree               :     │   │   ├── widget (11)
+23:22:00 INFO  PackageTree               :     │   │   └── view (3)
+23:22:00 INFO  PackageTree               :     │   ├── arch
+23:22:00 INFO  PackageTree               :     │   │   └── core
+23:22:00 INFO  PackageTree               :     │   │       ├── internal (8)
+23:22:00 INFO  PackageTree               :     │   │       ├── util (1)
+23:22:00 INFO  PackageTree               :     │   │       └── executor (4)
+23:22:00 INFO  PackageTree               :     │   ├── exifinterface
+23:22:00 INFO  PackageTree               :     │   │   └── media (6)
+23:22:00 INFO  PackageTree               :     │   ├── annotation (1)
+23:22:00 INFO  PackageTree               :     │   ├── cardview
+23:22:00 INFO  PackageTree               :     │   │   └── widget (7)
+23:22:00 INFO  PackageTree               :     │   ├── concurrent
+23:22:00 INFO  PackageTree               :     │   │   └── futures (16)
+23:22:00 INFO  PackageTree               :     │   ├── versionedparcelable (6)
+23:22:00 INFO  PackageTree               :     │   ├── collection (15)
+23:22:00 INFO  PackageTree               :     │   ├── documentfile
+23:22:00 INFO  PackageTree               :     │   │   └── provider (2)
+23:22:00 INFO  PackageTree               :     │   └── interpolator
+23:22:00 INFO  PackageTree               :     │       └── view
+23:22:00 INFO  PackageTree               :     │           └── animation (4)
+23:22:00 INFO  PackageTree               :     ├── j$
+23:22:00 INFO  PackageTree               :     │   ├── util (46)
+23:22:00 INFO  PackageTree               :     │   │   ├── stream (290)
+23:22:00 INFO  PackageTree               :     │   │   ├── concurrent (30)
+23:22:00 INFO  PackageTree               :     │   │   └── function (32)
+23:22:00 INFO  PackageTree               :     │   └── lang (1)
+23:22:00 INFO  PackageTree               :     ├── net
+23:22:00 INFO  PackageTree               :     │   └── lingala
+23:22:00 INFO  PackageTree               :     │       └── zip4j (1)
+23:22:00 INFO  PackageTree               :     │           ├── crypto (3)
+23:22:00 INFO  PackageTree               :     │           │   ├── engine (2)
+23:22:00 INFO  PackageTree               :     │           │   └── PBKDF2 (1)
+23:22:00 INFO  PackageTree               :     │           ├── headers (1)
+23:22:00 INFO  PackageTree               :     │           ├── exception (1)
+23:22:00 INFO  PackageTree               :     │           ├── model (12)
+23:22:00 INFO  PackageTree               :     │           ├── io
+23:22:00 INFO  PackageTree               :     │           │   └── inputstream (14)
+23:22:00 INFO  PackageTree               :     │           └── util (2)
+23:22:00 INFO  PackageTree               :     ├── de
+23:22:00 INFO  PackageTree               :     │   ├── hdodenhof
+23:22:00 INFO  PackageTree               :     │   │   └── circleimageview (2)
+23:22:00 INFO  PackageTree               :     │   └── psdev
+23:22:00 INFO  PackageTree               :     │       └── licensesdialog (5)
+23:22:00 INFO  PackageTree               :     │           ├── licenses (16)
+23:22:00 INFO  PackageTree               :     │           └── model (4)
+23:22:00 INFO  PackageTree               :     ├── org
+23:22:00 INFO  PackageTree               :     │   ├── chromium
+23:22:00 INFO  PackageTree               :     │   │   └── support_lib_boundary (26)
+23:22:00 INFO  PackageTree               :     │   │       └── util (1)
+23:22:00 INFO  PackageTree               :     │   └── bouncycastle
+23:22:00 INFO  PackageTree               :     │       ├── util (3)
+23:22:00 INFO  PackageTree               :     │       └── crypto (2)
+23:22:00 INFO  PackageTree               :     │           ├── engines (1)
+23:22:00 INFO  PackageTree               :     │           ├── digests (2)
+23:22:00 INFO  PackageTree               :     │           └── macs (1)
+23:22:00 INFO  PackageTree               :     ├── info
+23:22:00 INFO  PackageTree               :     │   └── guardianproject (1)
+23:22:00 INFO  PackageTree               :     │       └── trustedintents (2)
+23:22:00 INFO  PackageTree               :     ├── kotlin (1)
+23:22:00 INFO  PackageTree               :     │   └── jvm
+23:22:00 INFO  PackageTree               :     │       └── internal (2)
+23:22:00 INFO  PackageTree               :     └── android
+23:22:00 INFO  PackageTree               :         └── support
+23:22:00 INFO  PackageTree               :             └── v4
+23:22:00 INFO  PackageTree               :                 ├── app (4)
+23:22:00 INFO  PackageTree               :                 └── graphics
+23:22:00 INFO  PackageTree               :                     └── drawable (1)
+23:22:00 INFO  Profile                   : 
+23:22:00 INFO  AppProfile                : - generated app package tree (in 111 ms)
+23:22:00 INFO  AppProfile                : 
+23:22:00 DEBUG HashTree                  : Generate hash tree..
+23:22:00 DEBUG HashTree                  :     - generated 222 package hashes.
+23:22:00 DEBUG HashTree                  :     - generated 3617 clazz hashes.
+23:22:00 DEBUG HashTree                  :     - generated 19843 method hashes.
+23:22:00 DEBUG HashTree                  :     => Library Hash: 3c8d662d7569d68ff7f141601178980b
+23:22:00 INFO  AppProfile                : - generated app hash trees (in 459 ms)
+23:22:00 INFO  AppProfile                : 
+23:22:00 INFO  LibraryIdentifier         : = Scan for library root packages (heuristic) =
+23:22:00 INFO  LibraryIdentifier         :     - Found lib root package com.google.common  (Guava)
+23:22:00 INFO  LibraryIdentifier         :     - Found lib root package androidx.annotation  (androidx.annotation::annotation)
+23:22:00 INFO  LibraryIdentifier         :     - Found lib root package androidx.appcompat  (androidx.appcompat::appcompat)
+23:22:00 INFO  LibraryIdentifier         :     - Found lib root package androidx.arch.core  (androidx.arch.core::core-common)
+23:22:00 INFO  LibraryIdentifier         :     - Found lib root package androidx.arch.core.executor  (androidx.arch.core::core-runtime)
+23:22:00 INFO  LibraryIdentifier         :     - Found lib root package androidx.cardview.widget  (androidx.cardview::cardview)
+23:22:00 INFO  LibraryIdentifier         :     - Found lib root package androidx.collection  (androidx.collection::collection)
+23:22:00 INFO  LibraryIdentifier         :     - Found lib root package androidx.collection  (androidx.collection::collection-ktx)
+23:22:00 INFO  LibraryIdentifier         :     - Found lib root package androidx.constraintlayout.widget  (androidx.constraintlayout::constraintlayout)
+23:22:00 INFO  LibraryIdentifier         :     - Found lib root package androidx.constraintlayout.solver  (androidx.constraintlayout::constraintlayout-solver)
+23:22:00 INFO  LibraryIdentifier         :     - Found lib root package androidx.coordinatorlayout.widget  (androidx.coordinatorlayout::coordinatorlayout)
+23:22:00 INFO  LibraryIdentifier         :     - Found lib root package androidx.core  (androidx.core::core)
+23:22:00 INFO  LibraryIdentifier         :     - Found lib root package androidx  (androidx.core::core-ktx)
+23:22:00 INFO  LibraryIdentifier         :     - Found lib root package androidx.cursoradapter.widget  (androidx.cursoradapter::cursoradapter)
+23:22:00 INFO  LibraryIdentifier         :     - Found lib root package androidx.customview  (androidx.customview::customview)
+23:22:00 INFO  LibraryIdentifier         :     - Found lib root package androidx.documentfile.provider  (androidx.documentfile::documentfile)
+23:22:00 INFO  LibraryIdentifier         :     - Found lib root package androidx.exifinterface.media  (androidx.exifinterface::exifinterface)
+23:22:00 INFO  LibraryIdentifier         :     - Found lib root package androidx.fragment.app  (androidx.fragment::fragment)
+23:22:00 INFO  LibraryIdentifier         :     - Found lib root package androidx.fragment.app  (androidx.fragment::fragment-ktx)
+23:22:00 INFO  LibraryIdentifier         :     - Found lib root package androidx.interpolator.view.animation  (androidx.interpolator::interpolator)
+23:22:00 INFO  LibraryIdentifier         :     - Found lib root package androidx.lifecycle  (androidx.lifecycle::lifecycle-common)
+23:22:00 INFO  LibraryIdentifier         :     - Found lib root package androidx.lifecycle  (androidx.lifecycle::lifecycle-common-java8)
+23:22:00 INFO  LibraryIdentifier         :     - Found lib root package androidx.lifecycle  (androidx.lifecycle::lifecycle-compiler)
+23:22:00 INFO  LibraryIdentifier         :     - Found lib root package androidx.lifecycle  (androidx.lifecycle::lifecycle-extensions)
+23:22:00 INFO  LibraryIdentifier         :     - Found lib root package androidx.lifecycle  (androidx.lifecycle::lifecycle-livedata)
+23:22:00 INFO  LibraryIdentifier         :     - Found lib root package androidx.lifecycle  (androidx.lifecycle::lifecycle-livedata-core)
+23:22:00 INFO  LibraryIdentifier         :     - Found lib root package androidx.lifecycle  (androidx.lifecycle::lifecycle-process)
+23:22:00 INFO  LibraryIdentifier         :     - Found lib root package androidx.lifecycle  (androidx.lifecycle::lifecycle-reactivestreams)
+23:22:00 INFO  LibraryIdentifier         :     - Found lib root package androidx.lifecycle  (androidx.lifecycle::lifecycle-reactivestreams-ktx)
+23:22:00 INFO  LibraryIdentifier         :     - Found lib root package androidx.lifecycle  (androidx.lifecycle::lifecycle-runtime)
+23:22:00 INFO  LibraryIdentifier         :     - Found lib root package androidx.lifecycle  (androidx.lifecycle::lifecycle-service)
+23:22:00 INFO  LibraryIdentifier         :     - Found lib root package androidx.lifecycle  (androidx.lifecycle::lifecycle-viewmodel)
+23:22:00 INFO  LibraryIdentifier         :     - Found lib root package androidx.lifecycle  (androidx.lifecycle::lifecycle-viewmodel-ktx)
+23:22:00 INFO  LibraryIdentifier         :     - Found lib root package androidx.loader  (androidx.loader::loader)
+23:22:00 INFO  LibraryIdentifier         :     - Found lib root package androidx.preference  (androidx.preference::preference)
+23:22:00 INFO  LibraryIdentifier         :     - Found lib root package androidx.preference  (androidx.preference::preference-ktx)
+23:22:00 INFO  LibraryIdentifier         :     - Found lib root package androidx.recyclerview.widget  (androidx.recyclerview::recyclerview)
+23:22:00 INFO  LibraryIdentifier         :     - Found lib root package androidx.transition  (androidx.transition::transition)
+23:22:00 INFO  LibraryIdentifier         :     - Found lib root package androidx.vectordrawable.graphics.drawable  (androidx.vectordrawable::vectordrawable)
+23:22:00 INFO  LibraryIdentifier         :     - Found lib root package androidx.vectordrawable.graphics.drawable  (androidx.vectordrawable::vectordrawable-animated)
+23:22:00 INFO  LibraryIdentifier         :     - Found lib root package androidx.versionedparcelable  (androidx.versionedparcelable::versionedparcelable)
+23:22:00 INFO  LibraryIdentifier         :     - Found lib root package org.chromium.support_lib_boundary  (androidx.webkit::webkit)
+23:22:00 INFO  LibraryIdentifier         :     - Found lib root package android.support.v4  (com.android.support::customview)
+23:22:00 INFO  LibraryIdentifier         :     - Found lib root package android.support.v4  (com.android.support::loader)
+23:22:00 INFO  LibraryIdentifier         :     - Found lib root package android.support.v4  (com.android.support::support-compat)
+23:22:00 INFO  LibraryIdentifier         :     - Found lib root package android.support.v4  (com.android.support::support-core-ui)
+23:22:00 INFO  LibraryIdentifier         :     - Found lib root package android.support.v4  (com.android.support::support-core-utils)
+23:22:00 INFO  LibraryIdentifier         :     - Found lib root package android.support.v4.app  (com.android.support::support-fragment)
+23:22:00 INFO  LibraryIdentifier         :     - Found lib root package android.support.v4  (com.android.support::support-v4)
+23:22:00 INFO  LibraryIdentifier         :     - Found lib root package androidx.versionedparcelable  (com.android.support::versionedparcelable)
+23:22:00 INFO  LibraryIdentifier         :     - Found lib root package org.chromium.support_lib_boundary  (com.android.support::webkit)
+23:22:00 INFO  LibraryIdentifier         :     - Found lib root package com.android  (com.android.tools::common)
+23:22:00 INFO  LibraryIdentifier         :     - Found lib root package com.android.tools.r8  (com.android.tools::r8)
+23:22:00 INFO  LibraryIdentifier         :     - Found lib root package com.android  (com.android.tools::sdk-common)
+23:22:00 INFO  LibraryIdentifier         :     - Found lib root package com.google.android.material  (com.google.android.material::material)
+23:22:00 INFO  LibraryIdentifier         :     - Found lib root package com.google.protobuf  (com.google.firebase::protolite-well-known-types)
+23:22:00 INFO  LibraryIdentifier         :     - Found lib root package com.bumptech.glide  (glide)
+23:22:00 INFO  LibraryIdentifier         : 
+23:22:00 INFO  LibraryIdentifier         : = Match profiles =
+23:22:54 INFO  LibraryIdentifier         :     >> profile matching done (54 sec, 64 ms)
+23:22:54 INFO  LibraryIdentifier         : 
+23:22:54 INFO  LibraryIdentifier         : == Report ==
+23:22:54 INFO  LibraryIdentifier         : - Full library matches:
+23:22:54 INFO  ProfileMatch              :                 name: com.google.firebase::firebase-ml-vision-image-label-model
+23:22:54 INFO  ProfileMatch              :             category: Android
+23:22:54 INFO  ProfileMatch              :              version: 20.0.0  [OLD VERSION]
+23:22:54 INFO  ProfileMatch              :         release-date:  --
+23:22:54 INFO  ProfileMatch              :     lib root package: "com.google.firebase.ml.vision.imagelabel"  (in app: "com.beemdevelopment.aegis.crypto.pins")
+23:22:54 INFO  ProfileMatch              : 
+23:22:54 INFO  ProfileMatch              :                 name: com.google.firebase::firebase-ml-vision-image-label-model
+23:22:54 INFO  ProfileMatch              :             category: Android
+23:22:54 INFO  ProfileMatch              :              version: 20.0.1  [OLD VERSION]
+23:22:54 INFO  ProfileMatch              :         release-date:  --
+23:22:54 INFO  ProfileMatch              :     lib root package: "com.google.firebase.ml.vision.imagelabel"  (in app: "com.beemdevelopment.aegis.crypto.pins")
+23:22:54 INFO  ProfileMatch              : 
+23:22:54 INFO  ProfileMatch              :                 name: com.google.firebase::firebase-ml-vision-image-label-model
+23:22:54 INFO  ProfileMatch              :             category: Android
+23:22:54 INFO  ProfileMatch              :              version: 20.0.2
+23:22:54 INFO  ProfileMatch              :         release-date:  --
+23:22:54 INFO  ProfileMatch              :     lib root package: "com.google.firebase.ml.vision.imagelabel"  (in app: "com.beemdevelopment.aegis.crypto.pins")
+23:22:54 INFO  ProfileMatch              : 
+23:22:54 INFO  ProfileMatch              :                 name: com.android.support::interpolator
+23:22:54 INFO  ProfileMatch              :             category: Android
+23:22:54 INFO  ProfileMatch              :              version: 28.0.0
+23:22:54 INFO  ProfileMatch              :         release-date:  --
+23:22:54 INFO  ProfileMatch              :     lib root package: "android.support.v4.view.animation"  (in app: "androidx.interpolator.view.animation")
+23:22:54 INFO  ProfileMatch              : 
+23:22:54 INFO  ProfileMatch              :                 name: androidx.interpolator::interpolator
+23:22:54 INFO  ProfileMatch              :             category: Android
+23:22:54 INFO  ProfileMatch              :              version: 1.0.0
+23:22:54 INFO  ProfileMatch              :         release-date:  --
+23:22:54 INFO  ProfileMatch              :     lib root package: "androidx.interpolator.view.animation"
+23:22:54 INFO  ProfileMatch              : 
+23:22:54 INFO  ProfileMatch              :                 name: Facebook
+23:22:54 INFO  ProfileMatch              :             category: SocialMedia
+23:22:54 INFO  ProfileMatch              :              version: 4.27.0  [OLD VERSION]
+23:22:54 INFO  ProfileMatch              :         release-date: 26.09.2017
+23:22:54 INFO  ProfileMatch              :     lib root package: "com.facebook.all"  (in app: "com.beemdevelopment.aegis.crypto.pins")
+23:22:54 INFO  ProfileMatch              : 
+23:22:54 INFO  ProfileMatch              :                 name: Facebook
+23:22:54 INFO  ProfileMatch              :             category: SocialMedia
+23:22:54 INFO  ProfileMatch              :              version: 4.28.0  [OLD VERSION]
+23:22:54 INFO  ProfileMatch              :         release-date: 07.11.2017
+23:22:54 INFO  ProfileMatch              :     lib root package: "com.facebook.all"  (in app: "com.beemdevelopment.aegis.crypto.pins")
+23:22:54 INFO  ProfileMatch              : 
+23:22:54 INFO  ProfileMatch              :                 name: Facebook
+23:22:54 INFO  ProfileMatch              :             category: SocialMedia
+23:22:54 INFO  ProfileMatch              :              version: 4.29.0  [OLD VERSION]
+23:22:54 INFO  ProfileMatch              :         release-date: 05.12.2017
+23:22:54 INFO  ProfileMatch              :     lib root package: "com.facebook.all"  (in app: "com.beemdevelopment.aegis.crypto.pins")
+23:22:54 INFO  ProfileMatch              : 
+23:22:54 INFO  ProfileMatch              :                 name: Facebook
+23:22:54 INFO  ProfileMatch              :             category: SocialMedia
+23:22:54 INFO  ProfileMatch              :              version: 4.30.0  [OLD VERSION]
+23:22:54 INFO  ProfileMatch              :         release-date: 24.01.2018
+23:22:54 INFO  ProfileMatch              :     lib root package: "com.facebook.all"  (in app: "com.beemdevelopment.aegis.crypto.pins")
+23:22:54 INFO  ProfileMatch              : 
+23:22:54 INFO  ProfileMatch              :                 name: Facebook
+23:22:54 INFO  ProfileMatch              :             category: SocialMedia
+23:22:54 INFO  ProfileMatch              :              version: 4.31.0  [OLD VERSION]
+23:22:54 INFO  ProfileMatch              :         release-date: 28.02.2018
+23:22:54 INFO  ProfileMatch              :     lib root package: "com.facebook.all"  (in app: "com.beemdevelopment.aegis.crypto.pins")
+23:22:54 INFO  ProfileMatch              : 
+23:22:54 INFO  ProfileMatch              :                 name: Facebook
+23:22:54 INFO  ProfileMatch              :             category: SocialMedia
+23:22:54 INFO  ProfileMatch              :              version: 4.32.0  [OLD VERSION]
+23:22:54 INFO  ProfileMatch              :         release-date: 11.04.2018
+23:22:54 INFO  ProfileMatch              :     lib root package: "com.facebook.all"  (in app: "com.beemdevelopment.aegis.crypto.pins")
+23:22:54 INFO  ProfileMatch              : 
+23:22:54 INFO  ProfileMatch              :                 name: Facebook
+23:22:54 INFO  ProfileMatch              :             category: SocialMedia
+23:22:54 INFO  ProfileMatch              :              version: 4.33.0  [OLD VERSION]
+23:22:54 INFO  ProfileMatch              :         release-date: 01.05.2018
+23:22:54 INFO  ProfileMatch              :     lib root package: "com.facebook.all"  (in app: "com.beemdevelopment.aegis.crypto.pins")
+23:22:54 INFO  ProfileMatch              : 
+23:22:54 INFO  ProfileMatch              :                 name: Facebook
+23:22:54 INFO  ProfileMatch              :             category: SocialMedia
+23:22:54 INFO  ProfileMatch              :              version: 4.34.0  [OLD VERSION]
+23:22:54 INFO  ProfileMatch              :         release-date: 19.06.2018
+23:22:54 INFO  ProfileMatch              :     lib root package: "com.facebook.all"  (in app: "com.beemdevelopment.aegis.crypto.pins")
+23:22:54 INFO  ProfileMatch              : 
+23:22:54 INFO  ProfileMatch              :                 name: Facebook
+23:22:54 INFO  ProfileMatch              :             category: SocialMedia
+23:22:54 INFO  ProfileMatch              :              version: 4.35.0  [OLD VERSION]
+23:22:54 INFO  ProfileMatch              :         release-date: 26.07.2018
+23:22:54 INFO  ProfileMatch              :     lib root package: "com.facebook.all"  (in app: "com.beemdevelopment.aegis.crypto.pins")
+23:22:54 INFO  ProfileMatch              : 
+23:22:54 INFO  ProfileMatch              :                 name: Facebook
+23:22:54 INFO  ProfileMatch              :             category: SocialMedia
+23:22:54 INFO  ProfileMatch              :              version: 4.36.0  [OLD VERSION]
+23:22:54 INFO  ProfileMatch              :         release-date: 29.08.2018
+23:22:54 INFO  ProfileMatch              :     lib root package: "com.facebook.all"  (in app: "com.beemdevelopment.aegis.crypto.pins")
+23:22:54 INFO  ProfileMatch              : 
+23:22:54 INFO  ProfileMatch              :                 name: Facebook
+23:22:54 INFO  ProfileMatch              :             category: SocialMedia
+23:22:54 INFO  ProfileMatch              :              version: 4.36.1  [OLD VERSION]
+23:22:54 INFO  ProfileMatch              :         release-date: 15.09.2018
+23:22:54 INFO  ProfileMatch              :     lib root package: "com.facebook.all"  (in app: "com.beemdevelopment.aegis.crypto.pins")
+23:22:54 INFO  ProfileMatch              : 
+23:22:54 INFO  ProfileMatch              :                 name: Facebook
+23:22:54 INFO  ProfileMatch              :             category: SocialMedia
+23:22:54 INFO  ProfileMatch              :              version: 4.37.0  [OLD VERSION]
+23:22:54 INFO  ProfileMatch              :         release-date: 27.09.2018
+23:22:54 INFO  ProfileMatch              :     lib root package: "com.facebook.all"  (in app: "com.beemdevelopment.aegis.crypto.pins")
+23:22:54 INFO  ProfileMatch              : 
+23:22:54 INFO  ProfileMatch              :                 name: Facebook
+23:22:54 INFO  ProfileMatch              :             category: SocialMedia
+23:22:54 INFO  ProfileMatch              :              version: 4.38.0  [OLD VERSION]
+23:22:54 INFO  ProfileMatch              :         release-date: 23.10.2018
+23:22:54 INFO  ProfileMatch              :     lib root package: "com.facebook.all"  (in app: "com.beemdevelopment.aegis.crypto.pins")
+23:22:54 INFO  ProfileMatch              : 
+23:22:54 INFO  ProfileMatch              :                 name: Facebook
+23:22:54 INFO  ProfileMatch              :             category: SocialMedia
+23:22:54 INFO  ProfileMatch              :              version: 4.38.1  [OLD VERSION]
+23:22:54 INFO  ProfileMatch              :         release-date: 31.10.2018
+23:22:54 INFO  ProfileMatch              :     lib root package: "com.facebook.all"  (in app: "com.beemdevelopment.aegis.crypto.pins")
+23:22:54 INFO  ProfileMatch              : 
+23:22:54 INFO  ProfileMatch              :                 name: Facebook
+23:22:54 INFO  ProfileMatch              :             category: SocialMedia
+23:22:54 INFO  ProfileMatch              :              version: 4.39.0  [OLD VERSION]
+23:22:54 INFO  ProfileMatch              :         release-date: 05.12.2018
+23:22:54 INFO  ProfileMatch              :     lib root package: "com.facebook.all"  (in app: "com.beemdevelopment.aegis.crypto.pins")
+23:22:54 INFO  ProfileMatch              : 
+23:22:54 INFO  ProfileMatch              :                 name: Facebook
+23:22:54 INFO  ProfileMatch              :             category: SocialMedia
+23:22:54 INFO  ProfileMatch              :              version: 4.40.0  [OLD VERSION]
+23:22:54 INFO  ProfileMatch              :         release-date: 22.01.2019
+23:22:54 INFO  ProfileMatch              :     lib root package: "com.facebook.all"  (in app: "com.beemdevelopment.aegis.crypto.pins")
+23:22:54 INFO  ProfileMatch              : 
+23:22:54 INFO  ProfileMatch              :                 name: Facebook
+23:22:54 INFO  ProfileMatch              :             category: SocialMedia
+23:22:54 INFO  ProfileMatch              :              version: 4.41.0  [OLD VERSION]
+23:22:54 INFO  ProfileMatch              :         release-date: 08.03.2019
+23:22:54 INFO  ProfileMatch              :     lib root package: "com.facebook.all"  (in app: "com.beemdevelopment.aegis.crypto.pins")
+23:22:54 INFO  ProfileMatch              : 
+23:22:54 INFO  ProfileMatch              :                 name: Facebook
+23:22:54 INFO  ProfileMatch              :             category: SocialMedia
+23:22:54 INFO  ProfileMatch              :              version: 4.42.0  [OLD VERSION]
+23:22:54 INFO  ProfileMatch              :         release-date: 08.04.2019
+23:22:54 INFO  ProfileMatch              :     lib root package: "com.facebook.all"  (in app: "com.beemdevelopment.aegis.crypto.pins")
+23:22:54 INFO  ProfileMatch              : 
+23:22:54 INFO  ProfileMatch              :                 name: Facebook
+23:22:54 INFO  ProfileMatch              :             category: SocialMedia
+23:22:54 INFO  ProfileMatch              :              version: 5.0.0  [OLD VERSION]
+23:22:54 INFO  ProfileMatch              :         release-date: 30.04.2019
+23:22:54 INFO  ProfileMatch              :     lib root package: "com.facebook.all"  (in app: "com.beemdevelopment.aegis.crypto.pins")
+23:22:54 INFO  ProfileMatch              : 
+23:22:54 INFO  ProfileMatch              :                 name: Facebook
+23:22:54 INFO  ProfileMatch              :             category: SocialMedia
+23:22:54 INFO  ProfileMatch              :              version: 5.0.1  [OLD VERSION]
+23:22:54 INFO  ProfileMatch              :         release-date: 17.05.2019
+23:22:54 INFO  ProfileMatch              :     lib root package: "com.facebook.all"  (in app: "com.beemdevelopment.aegis.crypto.pins")
+23:22:54 INFO  ProfileMatch              : 
+23:22:54 INFO  ProfileMatch              :                 name: Facebook
+23:22:54 INFO  ProfileMatch              :             category: SocialMedia
+23:22:54 INFO  ProfileMatch              :              version: 5.0.2  [OLD VERSION]
+23:22:54 INFO  ProfileMatch              :         release-date: 09.06.2019
+23:22:54 INFO  ProfileMatch              :     lib root package: "com.facebook.all"  (in app: "com.beemdevelopment.aegis.crypto.pins")
+23:22:54 INFO  ProfileMatch              : 
+23:22:54 INFO  ProfileMatch              :                 name: Facebook
+23:22:54 INFO  ProfileMatch              :             category: SocialMedia
+23:22:54 INFO  ProfileMatch              :              version: 5.0.3  [OLD VERSION]
+23:22:54 INFO  ProfileMatch              :         release-date: 14.06.2019
+23:22:54 INFO  ProfileMatch              :     lib root package: "com.facebook.all"  (in app: "com.beemdevelopment.aegis.crypto.pins")
+23:22:54 INFO  ProfileMatch              : 
+23:22:54 INFO  ProfileMatch              :                 name: Facebook
+23:22:54 INFO  ProfileMatch              :             category: SocialMedia
+23:22:54 INFO  ProfileMatch              :              version: 5.1.0  [OLD VERSION]
+23:22:54 INFO  ProfileMatch              :         release-date: 21.06.2019
+23:22:54 INFO  ProfileMatch              :     lib root package: "com.facebook.all"  (in app: "com.beemdevelopment.aegis.crypto.pins")
+23:22:54 INFO  ProfileMatch              : 
+23:22:54 INFO  ProfileMatch              :                 name: Facebook
+23:22:54 INFO  ProfileMatch              :             category: SocialMedia
+23:22:54 INFO  ProfileMatch              :              version: 5.1.1  [OLD VERSION]
+23:22:54 INFO  ProfileMatch              :         release-date: 02.07.2019
+23:22:54 INFO  ProfileMatch              :     lib root package: "com.facebook.all"  (in app: "com.beemdevelopment.aegis.crypto.pins")
+23:22:54 INFO  ProfileMatch              : 
+23:22:54 INFO  ProfileMatch              :                 name: Facebook
+23:22:54 INFO  ProfileMatch              :             category: SocialMedia
+23:22:54 INFO  ProfileMatch              :              version: 5.2.0  [OLD VERSION]
+23:22:54 INFO  ProfileMatch              :         release-date: 29.07.2019
+23:22:54 INFO  ProfileMatch              :     lib root package: "com.facebook.all"  (in app: "com.beemdevelopment.aegis.crypto.pins")
+23:22:54 INFO  ProfileMatch              : 
+23:22:54 INFO  ProfileMatch              :                 name: Facebook
+23:22:54 INFO  ProfileMatch              :             category: SocialMedia
+23:22:54 INFO  ProfileMatch              :              version: 5.4.0  [OLD VERSION]
+23:22:54 INFO  ProfileMatch              :         release-date: 16.08.2019
+23:22:54 INFO  ProfileMatch              :     lib root package: "com.facebook.all"  (in app: "com.beemdevelopment.aegis.crypto.pins")
+23:22:54 INFO  ProfileMatch              : 
+23:22:54 INFO  ProfileMatch              :                 name: Facebook
+23:22:54 INFO  ProfileMatch              :             category: SocialMedia
+23:22:54 INFO  ProfileMatch              :              version: 5.5.0  [OLD VERSION]
+23:22:54 INFO  ProfileMatch              :         release-date: 31.08.2019
+23:22:54 INFO  ProfileMatch              :     lib root package: "com.facebook.all"  (in app: "com.beemdevelopment.aegis.crypto.pins")
+23:22:54 INFO  ProfileMatch              : 
+23:22:54 INFO  ProfileMatch              :                 name: Facebook
+23:22:54 INFO  ProfileMatch              :             category: SocialMedia
+23:22:54 INFO  ProfileMatch              :              version: 5.5.1  [OLD VERSION]
+23:22:54 INFO  ProfileMatch              :         release-date: 06.09.2019
+23:22:54 INFO  ProfileMatch              :     lib root package: "com.facebook.all"  (in app: "com.beemdevelopment.aegis.crypto.pins")
+23:22:54 INFO  ProfileMatch              : 
+23:22:54 INFO  ProfileMatch              :                 name: Facebook
+23:22:54 INFO  ProfileMatch              :             category: SocialMedia
+23:22:54 INFO  ProfileMatch              :              version: 5.5.2  [OLD VERSION]
+23:22:54 INFO  ProfileMatch              :         release-date: 05.10.2019
+23:22:54 INFO  ProfileMatch              :     lib root package: "com.facebook.all"  (in app: "com.beemdevelopment.aegis.crypto.pins")
+23:22:54 INFO  ProfileMatch              : 
+23:22:54 INFO  ProfileMatch              :                 name: Facebook
+23:22:54 INFO  ProfileMatch              :             category: SocialMedia
+23:22:54 INFO  ProfileMatch              :              version: 5.8.0  [OLD VERSION]
+23:22:54 INFO  ProfileMatch              :         release-date: 08.10.2019
+23:22:54 INFO  ProfileMatch              :     lib root package: "com.facebook.all"  (in app: "com.beemdevelopment.aegis.crypto.pins")
+23:22:54 INFO  ProfileMatch              : 
+23:22:54 INFO  ProfileMatch              :                 name: Facebook
+23:22:54 INFO  ProfileMatch              :             category: SocialMedia
+23:22:54 INFO  ProfileMatch              :              version: 5.9.0  [OLD VERSION]
+23:22:54 INFO  ProfileMatch              :         release-date: 29.10.2019
+23:22:54 INFO  ProfileMatch              :     lib root package: "com.facebook.all"  (in app: "com.beemdevelopment.aegis.crypto.pins")
+23:22:54 INFO  ProfileMatch              : 
+23:22:54 INFO  ProfileMatch              :                 name: Facebook
+23:22:54 INFO  ProfileMatch              :             category: SocialMedia
+23:22:54 INFO  ProfileMatch              :              version: 5.11.0  [OLD VERSION]
+23:22:54 INFO  ProfileMatch              :         release-date: 15.11.2019
+23:22:54 INFO  ProfileMatch              :     lib root package: "com.facebook.all"  (in app: "com.beemdevelopment.aegis.crypto.pins")
+23:22:54 INFO  ProfileMatch              : 
+23:22:54 INFO  ProfileMatch              :                 name: Facebook
+23:22:54 INFO  ProfileMatch              :             category: SocialMedia
+23:22:54 INFO  ProfileMatch              :              version: 5.11.1  [OLD VERSION]
+23:22:54 INFO  ProfileMatch              :         release-date: 21.11.2019
+23:22:54 INFO  ProfileMatch              :     lib root package: "com.facebook.all"  (in app: "com.beemdevelopment.aegis.crypto.pins")
+23:22:54 INFO  ProfileMatch              : 
+23:22:54 INFO  ProfileMatch              :                 name: Facebook
+23:22:54 INFO  ProfileMatch              :             category: SocialMedia
+23:22:54 INFO  ProfileMatch              :              version: 5.11.2  [OLD VERSION]
+23:22:54 INFO  ProfileMatch              :         release-date: 22.11.2019
+23:22:54 INFO  ProfileMatch              :     lib root package: "com.facebook.all"  (in app: "com.beemdevelopment.aegis.crypto.pins")
+23:22:54 INFO  ProfileMatch              : 
+23:22:54 INFO  ProfileMatch              :                 name: Facebook
+23:22:54 INFO  ProfileMatch              :             category: SocialMedia
+23:22:54 INFO  ProfileMatch              :              version: 5.12.0  [OLD VERSION]
+23:22:54 INFO  ProfileMatch              :         release-date: 04.12.2019
+23:22:54 INFO  ProfileMatch              :     lib root package: "com.facebook.all"  (in app: "com.beemdevelopment.aegis.crypto.pins")
+23:22:54 INFO  ProfileMatch              : 
+23:22:54 INFO  ProfileMatch              :                 name: Facebook
+23:22:54 INFO  ProfileMatch              :             category: SocialMedia
+23:22:54 INFO  ProfileMatch              :              version: 5.12.1  [OLD VERSION]
+23:22:54 INFO  ProfileMatch              :         release-date: 09.12.2019
+23:22:54 INFO  ProfileMatch              :     lib root package: "com.facebook.all"  (in app: "com.beemdevelopment.aegis.crypto.pins")
+23:22:54 INFO  ProfileMatch              : 
+23:22:54 INFO  ProfileMatch              :                 name: Facebook
+23:22:54 INFO  ProfileMatch              :             category: SocialMedia
+23:22:54 INFO  ProfileMatch              :              version: 5.13.0  [OLD VERSION]
+23:22:54 INFO  ProfileMatch              :         release-date: 12.12.2019
+23:22:54 INFO  ProfileMatch              :     lib root package: "com.facebook.all"  (in app: "com.beemdevelopment.aegis.crypto.pins")
+23:22:54 INFO  ProfileMatch              : 
+23:22:54 INFO  ProfileMatch              :                 name: Facebook
+23:22:54 INFO  ProfileMatch              :             category: SocialMedia
+23:22:54 INFO  ProfileMatch              :              version: 5.15.0  [OLD VERSION]
+23:22:54 INFO  ProfileMatch              :         release-date: 21.01.2020
+23:22:54 INFO  ProfileMatch              :     lib root package: "com.facebook.all"  (in app: "com.beemdevelopment.aegis.crypto.pins")
+23:22:54 INFO  ProfileMatch              : 
+23:22:54 INFO  ProfileMatch              :                 name: Facebook
+23:22:54 INFO  ProfileMatch              :             category: SocialMedia
+23:22:54 INFO  ProfileMatch              :              version: 5.15.1  [OLD VERSION]
+23:22:54 INFO  ProfileMatch              :         release-date: 29.01.2020
+23:22:54 INFO  ProfileMatch              :     lib root package: "com.facebook.all"  (in app: "com.beemdevelopment.aegis.crypto.pins")
+23:22:54 INFO  ProfileMatch              : 
+23:22:54 INFO  ProfileMatch              :                 name: Facebook
+23:22:54 INFO  ProfileMatch              :             category: SocialMedia
+23:22:54 INFO  ProfileMatch              :              version: 5.15.2  [OLD VERSION]
+23:22:54 INFO  ProfileMatch              :         release-date: 03.02.2020
+23:22:54 INFO  ProfileMatch              :     lib root package: "com.facebook.all"  (in app: "com.beemdevelopment.aegis.crypto.pins")
+23:22:54 INFO  ProfileMatch              : 
+23:22:54 INFO  ProfileMatch              :                 name: Facebook
+23:22:54 INFO  ProfileMatch              :             category: SocialMedia
+23:22:54 INFO  ProfileMatch              :              version: 5.15.3  [OLD VERSION]
+23:22:54 INFO  ProfileMatch              :         release-date: 03.02.2020
+23:22:54 INFO  ProfileMatch              :     lib root package: "com.facebook.all"  (in app: "com.beemdevelopment.aegis.crypto.pins")
+23:22:54 INFO  ProfileMatch              : 
+23:22:54 INFO  ProfileMatch              :                 name: Facebook
+23:22:54 INFO  ProfileMatch              :             category: SocialMedia
+23:22:54 INFO  ProfileMatch              :              version: 6.0.0  [OLD VERSION]
+23:22:54 INFO  ProfileMatch              :         release-date: 03.02.2020
+23:22:54 INFO  ProfileMatch              :     lib root package: "com.facebook.all"  (in app: "com.beemdevelopment.aegis.crypto.pins")
+23:22:54 INFO  ProfileMatch              : 
+23:22:54 INFO  ProfileMatch              :                 name: Facebook
+23:22:54 INFO  ProfileMatch              :             category: SocialMedia
+23:22:54 INFO  ProfileMatch              :              version: 6.1.0  [OLD VERSION]
+23:22:54 INFO  ProfileMatch              :         release-date: 14.02.2020
+23:22:54 INFO  ProfileMatch              :     lib root package: "com.facebook.all"  (in app: "com.beemdevelopment.aegis.crypto.pins")
+23:22:54 INFO  ProfileMatch              : 
+23:22:54 INFO  ProfileMatch              :                 name: Facebook
+23:22:54 INFO  ProfileMatch              :             category: SocialMedia
+23:22:54 INFO  ProfileMatch              :              version: 6.2.0  [OLD VERSION]
+23:22:54 INFO  ProfileMatch              :         release-date: 09.03.2020
+23:22:54 INFO  ProfileMatch              :     lib root package: "com.facebook.all"  (in app: "com.beemdevelopment.aegis.crypto.pins")
+23:22:54 INFO  ProfileMatch              : 
+23:22:54 INFO  ProfileMatch              :                 name: Facebook
+23:22:54 INFO  ProfileMatch              :             category: SocialMedia
+23:22:54 INFO  ProfileMatch              :              version: 6.3.0  [OLD VERSION]
+23:22:54 INFO  ProfileMatch              :         release-date: 25.03.2020
+23:22:54 INFO  ProfileMatch              :     lib root package: "com.facebook.all"  (in app: "com.beemdevelopment.aegis.crypto.pins")
+23:22:54 INFO  ProfileMatch              : 
+23:22:54 INFO  ProfileMatch              :                 name: Facebook
+23:22:54 INFO  ProfileMatch              :             category: SocialMedia
+23:22:54 INFO  ProfileMatch              :              version: 6.4.0  [OLD VERSION]
+23:22:54 INFO  ProfileMatch              :         release-date: 15.04.2020
+23:22:54 INFO  ProfileMatch              :     lib root package: "com.facebook.all"  (in app: "com.beemdevelopment.aegis.crypto.pins")
+23:22:54 INFO  ProfileMatch              : 
+23:22:54 INFO  ProfileMatch              :                 name: Facebook
+23:22:54 INFO  ProfileMatch              :             category: SocialMedia
+23:22:54 INFO  ProfileMatch              :              version: 6.5.0  [OLD VERSION]
+23:22:54 INFO  ProfileMatch              :         release-date: 20.04.2020
+23:22:54 INFO  ProfileMatch              :     lib root package: "com.facebook.all"  (in app: "com.beemdevelopment.aegis.crypto.pins")
+23:22:54 INFO  ProfileMatch              : 
+23:22:54 INFO  ProfileMatch              :                 name: Facebook
+23:22:54 INFO  ProfileMatch              :             category: SocialMedia
+23:22:54 INFO  ProfileMatch              :              version: 6.5.1  [OLD VERSION]
+23:22:54 INFO  ProfileMatch              :         release-date: 23.04.2020
+23:22:54 INFO  ProfileMatch              :     lib root package: "com.facebook.all"  (in app: "com.beemdevelopment.aegis.crypto.pins")
+23:22:54 INFO  ProfileMatch              : 
+23:22:54 INFO  ProfileMatch              :                 name: Facebook
+23:22:54 INFO  ProfileMatch              :             category: SocialMedia
+23:22:54 INFO  ProfileMatch              :              version: 7.0.0  [OLD VERSION]
+23:22:54 INFO  ProfileMatch              :         release-date: 05.05.2020
+23:22:54 INFO  ProfileMatch              :     lib root package: "com.facebook.all"  (in app: "com.beemdevelopment.aegis.crypto.pins")
+23:22:54 INFO  ProfileMatch              : 
+23:22:54 INFO  ProfileMatch              :                 name: Facebook
+23:22:54 INFO  ProfileMatch              :             category: SocialMedia
+23:22:54 INFO  ProfileMatch              :              version: 7.0.1  [OLD VERSION]
+23:22:54 INFO  ProfileMatch              :         release-date: 09.06.2020
+23:22:54 INFO  ProfileMatch              :     lib root package: "com.facebook.all"  (in app: "com.beemdevelopment.aegis.crypto.pins")
+23:22:54 INFO  ProfileMatch              : 
+23:22:54 INFO  ProfileMatch              :                 name: Facebook
+23:22:54 INFO  ProfileMatch              :             category: SocialMedia
+23:22:54 INFO  ProfileMatch              :              version: 7.1.0  [OLD VERSION]
+23:22:54 INFO  ProfileMatch              :         release-date: 23.06.2020
+23:22:54 INFO  ProfileMatch              :     lib root package: "com.facebook.all"  (in app: "com.beemdevelopment.aegis.crypto.pins")
+23:22:54 INFO  ProfileMatch              : 
+23:22:54 INFO  ProfileMatch              :                 name: Facebook
+23:22:54 INFO  ProfileMatch              :             category: SocialMedia
+23:22:54 INFO  ProfileMatch              :              version: 8.0.0  [OLD VERSION]
+23:22:54 INFO  ProfileMatch              :         release-date: 28.09.2020
+23:22:54 INFO  ProfileMatch              :     lib root package: "com.facebook.all"  (in app: "com.beemdevelopment.aegis.crypto.pins")
+23:22:54 INFO  ProfileMatch              : 
+23:22:54 INFO  ProfileMatch              :                 name: Facebook
+23:22:54 INFO  ProfileMatch              :             category: SocialMedia
+23:22:54 INFO  ProfileMatch              :              version: 8.1.0  [OLD VERSION]
+23:22:54 INFO  ProfileMatch              :         release-date: 14.10.2020
+23:22:54 INFO  ProfileMatch              :     lib root package: "com.facebook.all"  (in app: "com.beemdevelopment.aegis.crypto.pins")
+23:22:54 INFO  ProfileMatch              : 
+23:22:54 INFO  ProfileMatch              :                 name: Facebook
+23:22:54 INFO  ProfileMatch              :             category: SocialMedia
+23:22:54 INFO  ProfileMatch              :              version: 8.2.0  [OLD VERSION]
+23:22:54 INFO  ProfileMatch              :         release-date: 18.12.2020
+23:22:54 INFO  ProfileMatch              :     lib root package: "com.facebook.all"  (in app: "com.beemdevelopment.aegis.crypto.pins")
+23:22:54 INFO  ProfileMatch              : 
+23:22:54 INFO  ProfileMatch              :                 name: Facebook
+23:22:54 INFO  ProfileMatch              :             category: SocialMedia
+23:22:54 INFO  ProfileMatch              :              version: 9.0.0  [OLD VERSION]
+23:22:54 INFO  ProfileMatch              :         release-date: 19.01.2021
+23:22:54 INFO  ProfileMatch              :     lib root package: "com.facebook.all"  (in app: "com.beemdevelopment.aegis.crypto.pins")
+23:22:54 INFO  ProfileMatch              : 
+23:22:54 INFO  ProfileMatch              :                 name: Facebook
+23:22:54 INFO  ProfileMatch              :             category: SocialMedia
+23:22:54 INFO  ProfileMatch              :              version: 9.1.0  [OLD VERSION]
+23:22:54 INFO  ProfileMatch              :         release-date: 15.03.2021
+23:22:54 INFO  ProfileMatch              :     lib root package: "com.facebook.all"  (in app: "com.beemdevelopment.aegis.crypto.pins")
+23:22:54 INFO  ProfileMatch              : 
+23:22:54 INFO  ProfileMatch              :                 name: Facebook
+23:22:54 INFO  ProfileMatch              :             category: SocialMedia
+23:22:54 INFO  ProfileMatch              :              version: 9.1.1  [OLD VERSION]
+23:22:54 INFO  ProfileMatch              :         release-date: 12.04.2021
+23:22:54 INFO  ProfileMatch              :     lib root package: "com.facebook.all"  (in app: "com.beemdevelopment.aegis.crypto.pins")
+23:22:54 INFO  ProfileMatch              : 
+23:22:54 INFO  ProfileMatch              :                 name: Facebook
+23:22:54 INFO  ProfileMatch              :             category: SocialMedia
+23:22:54 INFO  ProfileMatch              :              version: 11.0.0  [OLD VERSION]
+23:22:54 INFO  ProfileMatch              :         release-date: 08.06.2021
+23:22:54 INFO  ProfileMatch              :     lib root package: "com.facebook.all"  (in app: "com.beemdevelopment.aegis.crypto.pins")
+23:22:54 INFO  ProfileMatch              : 
+23:22:54 INFO  ProfileMatch              :                 name: Facebook
+23:22:54 INFO  ProfileMatch              :             category: SocialMedia
+23:22:54 INFO  ProfileMatch              :              version: 11.1.0  [OLD VERSION]
+23:22:54 INFO  ProfileMatch              :         release-date: 06.07.2021
+23:22:54 INFO  ProfileMatch              :     lib root package: "com.facebook.all"  (in app: "com.beemdevelopment.aegis.crypto.pins")
+23:22:54 INFO  ProfileMatch              : 
+23:22:54 INFO  ProfileMatch              :                 name: Facebook
+23:22:54 INFO  ProfileMatch              :             category: SocialMedia
+23:22:54 INFO  ProfileMatch              :              version: 11.1.1  [OLD VERSION]
+23:22:54 INFO  ProfileMatch              :         release-date: 19.07.2021
+23:22:54 INFO  ProfileMatch              :     lib root package: "com.facebook.all"  (in app: "com.beemdevelopment.aegis.crypto.pins")
+23:22:54 INFO  ProfileMatch              : 
+23:22:54 INFO  ProfileMatch              :                 name: Facebook
+23:22:54 INFO  ProfileMatch              :             category: SocialMedia
+23:22:54 INFO  ProfileMatch              :              version: 11.2.0  [OLD VERSION]
+23:22:54 INFO  ProfileMatch              :         release-date: 03.08.2021
+23:22:54 INFO  ProfileMatch              :     lib root package: "com.facebook.all"  (in app: "com.beemdevelopment.aegis.crypto.pins")
+23:22:54 INFO  ProfileMatch              : 
+23:22:54 INFO  ProfileMatch              :                 name: Facebook
+23:22:54 INFO  ProfileMatch              :             category: SocialMedia
+23:22:54 INFO  ProfileMatch              :              version: 11.3.0  [OLD VERSION]
+23:22:54 INFO  ProfileMatch              :         release-date: 07.09.2021
+23:22:54 INFO  ProfileMatch              :     lib root package: "com.facebook.all"  (in app: "com.beemdevelopment.aegis.crypto.pins")
+23:22:54 INFO  ProfileMatch              : 
+23:22:54 INFO  ProfileMatch              :                 name: Facebook
+23:22:54 INFO  ProfileMatch              :             category: SocialMedia
+23:22:54 INFO  ProfileMatch              :              version: 12.0.0  [OLD VERSION]
+23:22:54 INFO  ProfileMatch              :         release-date: 05.10.2021
+23:22:54 INFO  ProfileMatch              :     lib root package: "com.facebook.all"  (in app: "com.beemdevelopment.aegis.crypto.pins")
+23:22:54 INFO  ProfileMatch              : 
+23:22:54 INFO  ProfileMatch              :                 name: Facebook
+23:22:54 INFO  ProfileMatch              :             category: SocialMedia
+23:22:54 INFO  ProfileMatch              :              version: 12.0.1  [OLD VERSION]
+23:22:54 INFO  ProfileMatch              :         release-date: 13.10.2021
+23:22:54 INFO  ProfileMatch              :     lib root package: "com.facebook.all"  (in app: "com.beemdevelopment.aegis.crypto.pins")
+23:22:54 INFO  ProfileMatch              : 
+23:22:54 INFO  ProfileMatch              :                 name: Facebook
+23:22:54 INFO  ProfileMatch              :             category: SocialMedia
+23:22:54 INFO  ProfileMatch              :              version: 12.1.0  [OLD VERSION]
+23:22:54 INFO  ProfileMatch              :         release-date: 01.11.2021
+23:22:54 INFO  ProfileMatch              :     lib root package: "com.facebook.all"  (in app: "com.beemdevelopment.aegis.crypto.pins")
+23:22:54 INFO  ProfileMatch              : 
+23:22:54 INFO  ProfileMatch              :                 name: Facebook
+23:22:54 INFO  ProfileMatch              :             category: SocialMedia
+23:22:54 INFO  ProfileMatch              :              version: 12.2.0  [OLD VERSION]
+23:22:54 INFO  ProfileMatch              :         release-date: 06.12.2021
+23:22:54 INFO  ProfileMatch              :     lib root package: "com.facebook.all"  (in app: "com.beemdevelopment.aegis.crypto.pins")
+23:22:54 INFO  ProfileMatch              : 
+23:22:55 INFO  ProfileMatch              :                 name: Facebook
+23:22:55 INFO  ProfileMatch              :             category: SocialMedia
+23:22:55 INFO  ProfileMatch              :              version: 12.3.0  [OLD VERSION]
+23:22:55 INFO  ProfileMatch              :         release-date: 10.01.2022
+23:22:55 INFO  ProfileMatch              :     lib root package: "com.facebook.all"  (in app: "com.beemdevelopment.aegis.crypto.pins")
+23:22:55 INFO  ProfileMatch              : 
+23:22:55 INFO  ProfileMatch              :                 name: Facebook
+23:22:55 INFO  ProfileMatch              :             category: SocialMedia
+23:22:55 INFO  ProfileMatch              :              version: 13.0.0  [OLD VERSION]
+23:22:55 INFO  ProfileMatch              :         release-date: 23.02.2022
+23:22:55 INFO  ProfileMatch              :     lib root package: "com.facebook.all"  (in app: "com.beemdevelopment.aegis.crypto.pins")
+23:22:55 INFO  ProfileMatch              : 
+23:22:55 INFO  ProfileMatch              :                 name: Facebook
+23:22:55 INFO  ProfileMatch              :             category: SocialMedia
+23:22:55 INFO  ProfileMatch              :              version: 13.1.0  [OLD VERSION]
+23:22:55 INFO  ProfileMatch              :         release-date: 21.03.2022
+23:22:55 INFO  ProfileMatch              :     lib root package: "com.facebook.all"  (in app: "com.beemdevelopment.aegis.crypto.pins")
+23:22:55 INFO  ProfileMatch              : 
+23:22:55 INFO  ProfileMatch              :                 name: Facebook
+23:22:55 INFO  ProfileMatch              :             category: SocialMedia
+23:22:55 INFO  ProfileMatch              :              version: 13.2.0  [OLD VERSION]
+23:22:55 INFO  ProfileMatch              :         release-date: 22.04.2022
+23:22:55 INFO  ProfileMatch              :     lib root package: "com.facebook.all"  (in app: "com.beemdevelopment.aegis.crypto.pins")
+23:22:55 INFO  ProfileMatch              : 
+23:22:55 INFO  ProfileMatch              :                 name: Facebook
+23:22:55 INFO  ProfileMatch              :             category: SocialMedia
+23:22:55 INFO  ProfileMatch              :              version: 14.0.0
+23:22:55 INFO  ProfileMatch              :         release-date: 14.06.2022
+23:22:55 INFO  ProfileMatch              :     lib root package: "com.facebook.all"  (in app: "com.beemdevelopment.aegis.crypto.pins")
+23:22:55 INFO  ProfileMatch              : 
+23:22:55 INFO  LibraryIdentifier         : 
+23:22:55 INFO  LibraryIdentifier         : - Partial library matches:
+23:22:55 INFO  LibraryIdentifier         :                 name: androidx.arch.core::core-common
+23:22:55 INFO  LibraryIdentifier         :             category: Android
+23:22:55 INFO  LibraryIdentifier         :              version: 2.1.0
+23:22:55 INFO  LibraryIdentifier         :         release-date:  --
+23:22:55 INFO  LibraryIdentifier         :     lib root package: "androidx.arch.core"
+23:22:55 INFO  LibraryIdentifier         :         Partial matching results:
+23:22:55 INFO  LibraryIdentifier         :              - config: Hashing.md5() | Flags: no-flag | Keep: PN | Prune: MSIG   score: 0.75
+23:22:55 INFO  LibraryIdentifier         : 
+23:22:55 INFO  LibraryIdentifier         : 
+23:22:55 INFO  LibraryIdentifier         : App processing time: 57 sec, 809 ms
+

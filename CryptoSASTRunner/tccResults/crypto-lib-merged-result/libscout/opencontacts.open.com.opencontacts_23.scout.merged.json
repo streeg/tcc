@@ -1,0 +1,871 @@
+{
+  "sarifVersion": "2.0.0",
+  "runs": [
+    {
+      "files": {
+        "k/i0/j/h.java": {
+          "mimeType": "text/java"
+        },
+        "h/c/e/a$b.java": {
+          "mimeType": "text/java"
+        },
+        "j/a/a/h/f.java": {
+          "mimeType": "text/java"
+        },
+        "ezvcard/b/h/c.java": {
+          "mimeType": "text/java"
+        },
+        "j/a/a/b/c.java": {
+          "mimeType": "text/java"
+        },
+        "k/i0/j/g.java": {
+          "mimeType": "text/java"
+        },
+        "opencontacts/open/com/opencontacts/data/datastore/VCardImporterAsyncTask.java": {
+          "mimeType": "text/java"
+        },
+        "k/i0/j/d.java": {
+          "mimeType": "text/java"
+        },
+        "l/x.java": {
+          "mimeType": "text/java"
+        },
+        "k/i0/j/c.java": {
+          "mimeType": "text/java"
+        },
+        "j/a/a/b/f/a.java": {
+          "mimeType": "text/java"
+        },
+        "l/h.java": {
+          "mimeType": "text/java"
+        },
+        "opencontacts/open/com/opencontacts/utils/NetworkUtils.java": {
+          "mimeType": "text/java"
+        }
+      },
+      "resources": {
+        "rules": {
+          "TypestateError-1": {
+            "id": "TypestateError",
+            "fullDescription": {
+              "text": "The ORDER block of CrySL is violated, i.e., the expected method sequence call to be made is incorrect. For example, a Signature object expects a call to initSign(key) prior to update(data)."
+            }
+          },
+          "ConstraintError-1": {
+            "id": "ConstraintError",
+            "fullDescription": {
+              "text": "A constraint of a CrySL rule is violated, e.g., a key is generated with the wrong key size."
+            }
+          },
+          "ConstraintError-2": {
+            "id": "ConstraintError",
+            "fullDescription": {
+              "text": "A constraint of a CrySL rule is violated, e.g., a key is generated with the wrong key size."
+            }
+          },
+          "ConstraintError-3": {
+            "id": "ConstraintError",
+            "fullDescription": {
+              "text": "A constraint of a CrySL rule is violated, e.g., a key is generated with the wrong key size."
+            }
+          },
+          "ConstraintError-4": {
+            "id": "ConstraintError",
+            "fullDescription": {
+              "text": "A constraint of a CrySL rule is violated, e.g., a key is generated with the wrong key size."
+            }
+          },
+          "ConstraintError-5": {
+            "id": "ConstraintError",
+            "fullDescription": {
+              "text": "A constraint of a CrySL rule is violated, e.g., a key is generated with the wrong key size."
+            }
+          },
+          "RequiredPredicateError": {
+            "id": "RequiredPredicateError",
+            "fullDescription": {
+              "text": "An object A expects an object B to have been used correctly (CrySL blocks REQUIRES and ENSURES). For example a Cipher object requires a SecretKey object to be correctly and securely generated."
+            }
+          },
+          "RequiredPredicateError-11": {
+            "id": "RequiredPredicateError",
+            "fullDescription": {
+              "text": "An object A expects an object B to have been used correctly (CrySL blocks REQUIRES and ENSURES). For example a Cipher object requires a SecretKey object to be correctly and securely generated."
+            }
+          },
+          "ConstraintError-6": {
+            "id": "ConstraintError",
+            "fullDescription": {
+              "text": "A constraint of a CrySL rule is violated, e.g., a key is generated with the wrong key size."
+            }
+          },
+          "RequiredPredicateError-10": {
+            "id": "RequiredPredicateError",
+            "fullDescription": {
+              "text": "An object A expects an object B to have been used correctly (CrySL blocks REQUIRES and ENSURES). For example a Cipher object requires a SecretKey object to be correctly and securely generated."
+            }
+          },
+          "ConstraintError-7": {
+            "id": "ConstraintError",
+            "fullDescription": {
+              "text": "A constraint of a CrySL rule is violated, e.g., a key is generated with the wrong key size."
+            }
+          },
+          "RequiredPredicateError-13": {
+            "id": "RequiredPredicateError",
+            "fullDescription": {
+              "text": "An object A expects an object B to have been used correctly (CrySL blocks REQUIRES and ENSURES). For example a Cipher object requires a SecretKey object to be correctly and securely generated."
+            }
+          },
+          "ConstraintError-8": {
+            "id": "ConstraintError",
+            "fullDescription": {
+              "text": "A constraint of a CrySL rule is violated, e.g., a key is generated with the wrong key size."
+            }
+          },
+          "RequiredPredicateError-12": {
+            "id": "RequiredPredicateError",
+            "fullDescription": {
+              "text": "An object A expects an object B to have been used correctly (CrySL blocks REQUIRES and ENSURES). For example a Cipher object requires a SecretKey object to be correctly and securely generated."
+            }
+          },
+          "IncompleteOperationError": {
+            "id": "IncompleteOperationError",
+            "fullDescription": {
+              "text": "The usage of an object may be incomplete: For example a Cipherobject may be initialized but never used for en- or decryption, this may render the code dead. This error heavily depends on the computed call graph (CHA by default)"
+            }
+          },
+          "IncompleteOperationError-1": {
+            "id": "IncompleteOperationError",
+            "fullDescription": {
+              "text": "The usage of an object may be incomplete: For example a Cipherobject may be initialized but never used for en- or decryption, this may render the code dead. This error heavily depends on the computed call graph (CHA by default)"
+            }
+          },
+          "IncompleteOperationError-3": {
+            "id": "IncompleteOperationError",
+            "fullDescription": {
+              "text": "The usage of an object may be incomplete: For example a Cipherobject may be initialized but never used for en- or decryption, this may render the code dead. This error heavily depends on the computed call graph (CHA by default)"
+            }
+          },
+          "IncompleteOperationError-2": {
+            "id": "IncompleteOperationError",
+            "fullDescription": {
+              "text": "The usage of an object may be incomplete: For example a Cipherobject may be initialized but never used for en- or decryption, this may render the code dead. This error heavily depends on the computed call graph (CHA by default)"
+            }
+          },
+          "IncompleteOperationError-4": {
+            "id": "IncompleteOperationError",
+            "fullDescription": {
+              "text": "The usage of an object may be incomplete: For example a Cipherobject may be initialized but never used for en- or decryption, this may render the code dead. This error heavily depends on the computed call graph (CHA by default)"
+            }
+          },
+          "RequiredPredicateError-14": {
+            "id": "RequiredPredicateError",
+            "fullDescription": {
+              "text": "An object A expects an object B to have been used correctly (CrySL blocks REQUIRES and ENSURES). For example a Cipher object requires a SecretKey object to be correctly and securely generated."
+            }
+          },
+          "RequiredPredicateError-9": {
+            "id": "RequiredPredicateError",
+            "fullDescription": {
+              "text": "An object A expects an object B to have been used correctly (CrySL blocks REQUIRES and ENSURES). For example a Cipher object requires a SecretKey object to be correctly and securely generated."
+            }
+          },
+          "RequiredPredicateError-8": {
+            "id": "RequiredPredicateError",
+            "fullDescription": {
+              "text": "An object A expects an object B to have been used correctly (CrySL blocks REQUIRES and ENSURES). For example a Cipher object requires a SecretKey object to be correctly and securely generated."
+            }
+          },
+          "RequiredPredicateError-7": {
+            "id": "RequiredPredicateError",
+            "fullDescription": {
+              "text": "An object A expects an object B to have been used correctly (CrySL blocks REQUIRES and ENSURES). For example a Cipher object requires a SecretKey object to be correctly and securely generated."
+            }
+          },
+          "RequiredPredicateError-6": {
+            "id": "RequiredPredicateError",
+            "fullDescription": {
+              "text": "An object A expects an object B to have been used correctly (CrySL blocks REQUIRES and ENSURES). For example a Cipher object requires a SecretKey object to be correctly and securely generated."
+            }
+          },
+          "TypestateError": {
+            "id": "TypestateError",
+            "fullDescription": {
+              "text": "The ORDER block of CrySL is violated, i.e., the expected method sequence call to be made is incorrect. For example, a Signature object expects a call to initSign(key) prior to update(data)."
+            }
+          },
+          "RequiredPredicateError-5": {
+            "id": "RequiredPredicateError",
+            "fullDescription": {
+              "text": "An object A expects an object B to have been used correctly (CrySL blocks REQUIRES and ENSURES). For example a Cipher object requires a SecretKey object to be correctly and securely generated."
+            }
+          },
+          "RequiredPredicateError-4": {
+            "id": "RequiredPredicateError",
+            "fullDescription": {
+              "text": "An object A expects an object B to have been used correctly (CrySL blocks REQUIRES and ENSURES). For example a Cipher object requires a SecretKey object to be correctly and securely generated."
+            }
+          },
+          "RequiredPredicateError-3": {
+            "id": "RequiredPredicateError",
+            "fullDescription": {
+              "text": "An object A expects an object B to have been used correctly (CrySL blocks REQUIRES and ENSURES). For example a Cipher object requires a SecretKey object to be correctly and securely generated."
+            }
+          },
+          "ConstraintError": {
+            "id": "ConstraintError",
+            "fullDescription": {
+              "text": "A constraint of a CrySL rule is violated, e.g., a key is generated with the wrong key size."
+            }
+          },
+          "RequiredPredicateError-2": {
+            "id": "RequiredPredicateError",
+            "fullDescription": {
+              "text": "An object A expects an object B to have been used correctly (CrySL blocks REQUIRES and ENSURES). For example a Cipher object requires a SecretKey object to be correctly and securely generated."
+            }
+          },
+          "RequiredPredicateError-1": {
+            "id": "RequiredPredicateError",
+            "fullDescription": {
+              "text": "An object A expects an object B to have been used correctly (CrySL blocks REQUIRES and ENSURES). For example a Cipher object requires a SecretKey object to be correctly and securely generated."
+            }
+          }
+        }
+      },
+      "results": [
+        {
+          "locations": [
+            {
+              "physicalLocation": {
+                "fileLocation": {
+                  "uri": "h.c.e.a$b.java"
+                },
+                "region": {
+                  "startLine": -1
+                }
+              },
+              "fullyQualifiedLogicalName": "h::c::e::a$b::run"
+            }
+          ],
+          "ruleId": "ConstraintError",
+          "message": {
+            "text": "First parameter (with value \"SHA\") should be any of {SHA-256, SHA-384, SHA-512}.",
+            "richText": "ConstraintError violating CrySL rule for java.security.MessageDigest."
+          }
+        },
+        {
+          "locations": [
+            {
+              "physicalLocation": {
+                "fileLocation": {
+                  "uri": "opencontacts.open.com.opencontacts.utils.NetworkUtils.java",
+                  "externalLibrary": true
+                },
+                "region": {
+                  "startLine": -1
+                }
+              },
+              "fullyQualifiedLogicalName": "opencontacts::open::com::opencontacts::utils::NetworkUtils::getUnsafeOkHttpClientBuilder"
+            }
+          ],
+          "ruleId": "ConstraintError-1",
+          "message": {
+            "text": "First parameter (with value \"SSL\") should be any of {TLSv1.2, TLSv1.3}.",
+            "richText": "ConstraintError violating CrySL rule for javax.net.ssl.SSLContext."
+          }
+        },
+        {
+          "locations": [
+            {
+              "physicalLocation": {
+                "fileLocation": {
+                  "uri": "opencontacts.open.com.opencontacts.utils.NetworkUtils.java",
+                  "externalLibrary": true
+                },
+                "region": {
+                  "startLine": -1
+                }
+              },
+              "fullyQualifiedLogicalName": "opencontacts::open::com::opencontacts::utils::NetworkUtils::getUnsafeOkHttpClientBuilder"
+            }
+          ],
+          "ruleId": "RequiredPredicateError",
+          "message": {
+            "text": "Third parameter was not properly generated as randomized.",
+            "richText": "RequiredPredicateError violating CrySL rule for javax.net.ssl.SSLContext."
+          }
+        },
+        {
+          "locations": [
+            {
+              "physicalLocation": {
+                "fileLocation": {
+                  "uri": "opencontacts.open.com.opencontacts.utils.NetworkUtils.java",
+                  "externalLibrary": true
+                },
+                "region": {
+                  "startLine": -1
+                }
+              },
+              "fullyQualifiedLogicalName": "opencontacts::open::com::opencontacts::utils::NetworkUtils::getUnsafeOkHttpClientBuilder"
+            }
+          ],
+          "ruleId": "RequiredPredicateError-1",
+          "message": {
+            "text": "Second parameter was not properly generated as generated Trust Managers.",
+            "richText": "RequiredPredicateError violating CrySL rule for javax.net.ssl.SSLContext."
+          }
+        },
+        {
+          "locations": [
+            {
+              "physicalLocation": {
+                "fileLocation": {
+                  "uri": "opencontacts.open.com.opencontacts.utils.NetworkUtils.java",
+                  "externalLibrary": true
+                },
+                "region": {
+                  "startLine": -1
+                }
+              },
+              "fullyQualifiedLogicalName": "opencontacts::open::com::opencontacts::utils::NetworkUtils::getUnsafeOkHttpClientBuilder"
+            }
+          ],
+          "ruleId": "RequiredPredicateError-2",
+          "message": {
+            "text": "First parameter was not properly generated as generated Key Managers.",
+            "richText": "RequiredPredicateError violating CrySL rule for javax.net.ssl.SSLContext."
+          }
+        },
+        {
+          "locations": [
+            {
+              "physicalLocation": {
+                "fileLocation": {
+                  "uri": "k.i0.j.h.java"
+                },
+                "region": {
+                  "startLine": -1
+                }
+              },
+              "fullyQualifiedLogicalName": "k::i0::j::h::m"
+            }
+          ],
+          "ruleId": "ConstraintError-2",
+          "message": {
+            "text": "First parameter (with value \"TLS\") should be any of {TLSv1.2, TLSv1.3}.",
+            "richText": "ConstraintError violating CrySL rule for javax.net.ssl.SSLContext."
+          }
+        },
+        {
+          "locations": [
+            {
+              "physicalLocation": {
+                "fileLocation": {
+                  "uri": "k.i0.j.h.java"
+                },
+                "region": {
+                  "startLine": -1
+                }
+              },
+              "fullyQualifiedLogicalName": "k::i0::j::h::n"
+            }
+          ],
+          "ruleId": "RequiredPredicateError-3",
+          "message": {
+            "text": "Second parameter was not properly generated as generated Trust Managers.",
+            "richText": "RequiredPredicateError violating CrySL rule for javax.net.ssl.SSLContext."
+          }
+        },
+        {
+          "locations": [
+            {
+              "physicalLocation": {
+                "fileLocation": {
+                  "uri": "k.i0.j.h.java"
+                },
+                "region": {
+                  "startLine": -1
+                }
+              },
+              "fullyQualifiedLogicalName": "k::i0::j::h::n"
+            }
+          ],
+          "ruleId": "RequiredPredicateError-4",
+          "message": {
+            "text": "Third parameter was not properly generated as randomized.",
+            "richText": "RequiredPredicateError violating CrySL rule for javax.net.ssl.SSLContext."
+          }
+        },
+        {
+          "locations": [
+            {
+              "physicalLocation": {
+                "fileLocation": {
+                  "uri": "k.i0.j.h.java"
+                },
+                "region": {
+                  "startLine": -1
+                }
+              },
+              "fullyQualifiedLogicalName": "k::i0::j::h::n"
+            }
+          ],
+          "ruleId": "RequiredPredicateError-5",
+          "message": {
+            "text": "First parameter was not properly generated as generated Key Managers.",
+            "richText": "RequiredPredicateError violating CrySL rule for javax.net.ssl.SSLContext."
+          }
+        },
+        {
+          "locations": [
+            {
+              "physicalLocation": {
+                "fileLocation": {
+                  "uri": "k.i0.j.h.java"
+                },
+                "region": {
+                  "startLine": -1
+                }
+              },
+              "fullyQualifiedLogicalName": "k::i0::j::h::o"
+            }
+          ],
+          "ruleId": "RequiredPredicateError-6",
+          "message": {
+            "text": "First parameter was not properly generated as generated Key Store.",
+            "richText": "RequiredPredicateError violating CrySL rule for javax.net.ssl.TrustManagerFactory."
+          }
+        },
+        {
+          "locations": [
+            {
+              "physicalLocation": {
+                "fileLocation": {
+                  "uri": "k.i0.j.d.java"
+                },
+                "region": {
+                  "startLine": -1
+                }
+              },
+              "fullyQualifiedLogicalName": "k::i0::j::d::m"
+            }
+          ],
+          "ruleId": "ConstraintError-3",
+          "message": {
+            "text": "First parameter (with value \"TLS\") should be any of {TLSv1.2, TLSv1.3}.",
+            "richText": "ConstraintError violating CrySL rule for javax.net.ssl.SSLContext."
+          }
+        },
+        {
+          "locations": [
+            {
+              "physicalLocation": {
+                "fileLocation": {
+                  "uri": "k.i0.j.d.java"
+                },
+                "region": {
+                  "startLine": -1
+                }
+              },
+              "fullyQualifiedLogicalName": "k::i0::j::d::n"
+            }
+          ],
+          "ruleId": "RequiredPredicateError-7",
+          "message": {
+            "text": "First parameter was not properly generated as generated Key Managers.",
+            "richText": "RequiredPredicateError violating CrySL rule for javax.net.ssl.SSLContext."
+          }
+        },
+        {
+          "locations": [
+            {
+              "physicalLocation": {
+                "fileLocation": {
+                  "uri": "k.i0.j.d.java"
+                },
+                "region": {
+                  "startLine": -1
+                }
+              },
+              "fullyQualifiedLogicalName": "k::i0::j::d::n"
+            }
+          ],
+          "ruleId": "RequiredPredicateError-8",
+          "message": {
+            "text": "Second parameter was not properly generated as generated Trust Managers.",
+            "richText": "RequiredPredicateError violating CrySL rule for javax.net.ssl.SSLContext."
+          }
+        },
+        {
+          "locations": [
+            {
+              "physicalLocation": {
+                "fileLocation": {
+                  "uri": "k.i0.j.d.java"
+                },
+                "region": {
+                  "startLine": -1
+                }
+              },
+              "fullyQualifiedLogicalName": "k::i0::j::d::n"
+            }
+          ],
+          "ruleId": "RequiredPredicateError-9",
+          "message": {
+            "text": "Third parameter was not properly generated as randomized.",
+            "richText": "RequiredPredicateError violating CrySL rule for javax.net.ssl.SSLContext."
+          }
+        },
+        {
+          "locations": [
+            {
+              "physicalLocation": {
+                "fileLocation": {
+                  "uri": "k.i0.j.d.java"
+                },
+                "region": {
+                  "startLine": -1
+                }
+              },
+              "fullyQualifiedLogicalName": "k::i0::j::d::o"
+            }
+          ],
+          "ruleId": "RequiredPredicateError-10",
+          "message": {
+            "text": "First parameter was not properly generated as generated Key Store.",
+            "richText": "RequiredPredicateError violating CrySL rule for javax.net.ssl.TrustManagerFactory."
+          }
+        },
+        {
+          "locations": [
+            {
+              "physicalLocation": {
+                "fileLocation": {
+                  "uri": "k.i0.j.c.java"
+                },
+                "region": {
+                  "startLine": -1
+                }
+              },
+              "fullyQualifiedLogicalName": "k::i0::j::c::m"
+            }
+          ],
+          "ruleId": "ConstraintError-4",
+          "message": {
+            "text": "First parameter (with value \"TLS\") should be any of {TLSv1.2, TLSv1.3}.",
+            "richText": "ConstraintError violating CrySL rule for javax.net.ssl.SSLContext."
+          }
+        },
+        {
+          "locations": [
+            {
+              "physicalLocation": {
+                "fileLocation": {
+                  "uri": "k.i0.j.c.java"
+                },
+                "region": {
+                  "startLine": -1
+                }
+              },
+              "fullyQualifiedLogicalName": "k::i0::j::c::o"
+            }
+          ],
+          "ruleId": "RequiredPredicateError-11",
+          "message": {
+            "text": "First parameter was not properly generated as generated Key Store.",
+            "richText": "RequiredPredicateError violating CrySL rule for javax.net.ssl.TrustManagerFactory."
+          }
+        },
+        {
+          "locations": [
+            {
+              "physicalLocation": {
+                "fileLocation": {
+                  "uri": "l.h.java"
+                },
+                "region": {
+                  "startLine": -1
+                }
+              },
+              "fullyQualifiedLogicalName": "l::h::c"
+            }
+          ],
+          "ruleId": "ConstraintError-5",
+          "message": {
+            "text": "First parameter (with value \"SHA-1\") should be any of {SHA-256, SHA-384, SHA-512}.",
+            "richText": "ConstraintError violating CrySL rule for java.security.MessageDigest."
+          }
+        },
+        {
+          "locations": [
+            {
+              "physicalLocation": {
+                "fileLocation": {
+                  "uri": "l.x.java"
+                },
+                "region": {
+                  "startLine": -1
+                }
+              },
+              "fullyQualifiedLogicalName": "l::x::c"
+            }
+          ],
+          "ruleId": "ConstraintError-6",
+          "message": {
+            "text": "First parameter (with value \"SHA-1\") should be any of {SHA-256, SHA-384, SHA-512}.",
+            "richText": "ConstraintError violating CrySL rule for java.security.MessageDigest."
+          }
+        },
+        {
+          "locations": [
+            {
+              "physicalLocation": {
+                "fileLocation": {
+                  "uri": "l.x.java"
+                },
+                "region": {
+                  "startLine": -1
+                }
+              },
+              "fullyQualifiedLogicalName": "l::x::c"
+            }
+          ],
+          "ruleId": "TypestateError",
+          "message": {
+            "text": "Unexpected call to method <java.security.MessageDigest: byte[] digest()> on object of type java.security.MessageDigest. Expect a call to one of the following methods java.security.MessageDigest: void update(byte[],int,int),java.security.MessageDigest: void update(java.nio.ByteBuffer),java.security.MessageDigest: byte[] digest(byte[]),java.security.MessageDigest: void update(byte),java.security.MessageDigest: void update(byte[]).",
+            "richText": "TypestateError violating CrySL rule for java.security.MessageDigest."
+          }
+        },
+        {
+          "locations": [
+            {
+              "physicalLocation": {
+                "fileLocation": {
+                  "uri": "j.a.a.b.f.a.java"
+                },
+                "region": {
+                  "startLine": -1
+                }
+              },
+              "fullyQualifiedLogicalName": "j::a::a::b::f::a::<init>"
+            }
+          ],
+          "ruleId": "ConstraintError-7",
+          "message": {
+            "text": "First parameter (with value \"HmacSHA1\") should be any of {HmacSHA256, HmacSHA384, HmacSHA512, HmacPBESHA1, PBEWithHmacSHA1, PBEWithHmacSHA224, PBEWithHmacSHA256, PBEWithHmacSHA384, PBEWithHmacSHA512}.",
+            "richText": "ConstraintError violating CrySL rule for javax.crypto.Mac."
+          }
+        },
+        {
+          "locations": [
+            {
+              "physicalLocation": {
+                "fileLocation": {
+                  "uri": "j.a.a.b.f.a.java"
+                },
+                "region": {
+                  "startLine": -1
+                }
+              },
+              "fullyQualifiedLogicalName": "j::a::a::b::f::a::a"
+            }
+          ],
+          "ruleId": "TypestateError-1",
+          "message": {
+            "text": "Unexpected call to method <javax.crypto.Mac: byte[] doFinal(byte[])> on object of type javax.crypto.Mac. Expect a call to one of the following methods javax.crypto.Mac: void update(byte[]),javax.crypto.Mac: void doFinal(byte[],int),javax.crypto.Mac: byte[] doFinal(),javax.crypto.Mac: void update(byte),javax.crypto.Mac: void update(byte[],int,int).",
+            "richText": "TypestateError violating CrySL rule for javax.crypto.Mac."
+          }
+        },
+        {
+          "locations": [
+            {
+              "physicalLocation": {
+                "fileLocation": {
+                  "uri": "j.a.a.b.f.a.java"
+                },
+                "region": {
+                  "startLine": -1
+                }
+              },
+              "fullyQualifiedLogicalName": "j::a::a::b::f::a::c"
+            }
+          ],
+          "ruleId": "RequiredPredicateError-12",
+          "message": {
+            "text": "First parameter was not properly generated as generated Key.",
+            "richText": "RequiredPredicateError violating CrySL rule for javax.crypto.Mac."
+          }
+        },
+        {
+          "locations": [
+            {
+              "physicalLocation": {
+                "fileLocation": {
+                  "uri": "j.a.a.b.f.a.java"
+                },
+                "region": {
+                  "startLine": -1
+                }
+              },
+              "fullyQualifiedLogicalName": "j::a::a::b::f::a::c"
+            }
+          ],
+          "ruleId": "RequiredPredicateError-13",
+          "message": {
+            "text": "First parameter was not properly generated as prepared Key Material.",
+            "richText": "RequiredPredicateError violating CrySL rule for javax.crypto.spec.SecretKeySpec."
+          }
+        },
+        {
+          "locations": [
+            {
+              "physicalLocation": {
+                "fileLocation": {
+                  "uri": "j.a.a.b.f.a.java"
+                },
+                "region": {
+                  "startLine": -1
+                }
+              },
+              "fullyQualifiedLogicalName": "j::a::a::b::f::a::c"
+            }
+          ],
+          "ruleId": "ConstraintError-8",
+          "message": {
+            "text": "Second parameter (with value \"HmacSHA1\") should be any of {AES, HmacSHA224, HmacSHA256, HmacSHA384, HmacSHA512}.",
+            "richText": "ConstraintError violating CrySL rule for javax.crypto.spec.SecretKeySpec."
+          }
+        },
+        {
+          "locations": [
+            {
+              "physicalLocation": {
+                "fileLocation": {
+                  "uri": "ezvcard.b.h.c.java"
+                },
+                "region": {
+                  "startLine": -1
+                }
+              },
+              "fullyQualifiedLogicalName": "ezvcard::b::h::c::a"
+            }
+          ],
+          "ruleId": "IncompleteOperationError",
+          "message": {
+            "text": "Operation on object of type javax.crypto.Mac object not completed. Expected call to update, doFinal.",
+            "richText": "IncompleteOperationError violating CrySL rule for javax.crypto.Mac."
+          }
+        },
+        {
+          "locations": [
+            {
+              "physicalLocation": {
+                "fileLocation": {
+                  "uri": "j.a.a.h.f.java"
+                },
+                "region": {
+                  "startLine": -1
+                }
+              },
+              "fullyQualifiedLogicalName": "j::a::a::h::f::o"
+            }
+          ],
+          "ruleId": "IncompleteOperationError-1",
+          "message": {
+            "text": "Operation on object of type javax.crypto.Mac object not completed. Expected call to update, doFinal.",
+            "richText": "IncompleteOperationError violating CrySL rule for javax.crypto.Mac."
+          }
+        },
+        {
+          "locations": [
+            {
+              "physicalLocation": {
+                "fileLocation": {
+                  "uri": "j.a.a.h.f.java"
+                },
+                "region": {
+                  "startLine": -1
+                }
+              },
+              "fullyQualifiedLogicalName": "j::a::a::h::f::o"
+            }
+          ],
+          "ruleId": "IncompleteOperationError-2",
+          "message": {
+            "text": "Operation on object of type javax.crypto.Mac object not completed. Expected call to update, doFinal.",
+            "richText": "IncompleteOperationError violating CrySL rule for javax.crypto.Mac."
+          }
+        },
+        {
+          "locations": [
+            {
+              "physicalLocation": {
+                "fileLocation": {
+                  "uri": "j.a.a.b.c.java"
+                },
+                "region": {
+                  "startLine": -1
+                }
+              },
+              "fullyQualifiedLogicalName": "j::a::a::b::c::a"
+            }
+          ],
+          "ruleId": "IncompleteOperationError-3",
+          "message": {
+            "text": "Operation on object of type javax.crypto.Mac object not completed. Expected call to update, doFinal.",
+            "richText": "IncompleteOperationError violating CrySL rule for javax.crypto.Mac."
+          }
+        },
+        {
+          "locations": [
+            {
+              "physicalLocation": {
+                "fileLocation": {
+                  "uri": "opencontacts.open.com.opencontacts.data.datastore.VCardImporterAsyncTask.java",
+                  "externalLibrary": true
+                },
+                "region": {
+                  "startLine": -1
+                }
+              },
+              "fullyQualifiedLogicalName": "opencontacts::open::com::opencontacts::data::datastore::VCardImporterAsyncTask::doInBackground"
+            }
+          ],
+          "ruleId": "IncompleteOperationError-4",
+          "message": {
+            "text": "Operation on object of type javax.crypto.Mac object not completed. Expected call to update, doFinal.",
+            "richText": "IncompleteOperationError violating CrySL rule for javax.crypto.Mac."
+          }
+        },
+        {
+          "locations": [
+            {
+              "physicalLocation": {
+                "fileLocation": {
+                  "uri": "k.i0.j.g.java"
+                },
+                "region": {
+                  "startLine": -1
+                }
+              },
+              "fullyQualifiedLogicalName": "k::i0::j::g::o"
+            }
+          ],
+          "ruleId": "RequiredPredicateError-14",
+          "message": {
+            "text": "First parameter was not properly generated as generated Key Store.",
+            "richText": "RequiredPredicateError violating CrySL rule for javax.net.ssl.TrustManagerFactory."
+          }
+        }
+      ],
+      "tool": {
+        "name": "CryptoAnalysis",
+        "semanticVersion": null,
+        "language": "en-US",
+        "version": null
+      }
+    }
+  ]
+}
