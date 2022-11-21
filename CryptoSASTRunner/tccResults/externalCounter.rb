@@ -4,20 +4,32 @@ require 'byebug'
 ###### Constants ######
 
 PILOT_PATH = '/home/guileb/tcc/CryptoSASTRunner/tccResults/crypto-lib-merged-result/libscout/piloto-1-merged-results'
+PILOT_NAME_PATH = 'pilot_external_counter_report.csv'
+CONNECTIVITY_PATH = '/home/guileb/tcc/CryptoSASTRunner/tccResults/crypto-lib-merged-result/libscout/connectivity-merged-results'
+CONNECTIVITY_NAME_PATH = 'connectivity_external_counter_report.csv'
+FINANCES_PATH = '/home/guileb/tcc/CryptoSASTRunner/tccResults/crypto-lib-merged-result/libscout/finances-merged-results'
+FINANCES_NAME_PATH = 'finances_external_counter_report.csv'
+SECURITY_PATH = '/home/guileb/tcc/CryptoSASTRunner/tccResults/crypto-lib-merged-result/libscout/security-merged-results'
+SECURITY_NAME_PATH = 'security_external_counter_report.csv'
+SMS_PATH = '/home/guileb/tcc/CryptoSASTRunner/tccResults/crypto-lib-merged-result/libscout/sms-merged-results'
+SMS_NAME_PATH = 'sms_external_counter_report.csv'
+
+LOADED_PATH = PILOT_PATH
+LOADED_NAME_PATH = PILOT_NAME_PATH
 
 ###### Main ######
 p 'This script count number of external libraries and number of native and print in a csv'
 p 'It should report apk name, number of external libraries, number of native libraries'
 
-pilot_path = Dir[PILOT_PATH + '/*.json']
-files_count = pilot_path.size
+loaded_path = Dir[LOADED_PATH + '/*.json']
+files_count = loaded_path.size
 p "There is #{files_count} files in this directory"
 counter = 0
 failed_files = []
 successed_files = []
-csv_file = File.new('pilot_external_counter_report.csv', 'w')
+csv_file = File.new(LOADED_NAME_PATH, 'w')
 csv_file.write("apk_name,external_libs_count,native_libs_count\n")
-pilot_path.each do |lib_file_name|
+loaded_path.each do |lib_file_name|
   counter += 1
   external_libs_count = 0
 
