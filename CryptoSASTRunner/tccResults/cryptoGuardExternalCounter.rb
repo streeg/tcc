@@ -3,16 +3,16 @@ require 'byebug'
 
 ###### Constants ######
 
-PILOT_PATH = '/home/guileb/tcc/CryptoSASTRunner/tccResults/crypto-lib-merged-result/libscout/piloto-1-merged-results'
-PILOT_NAME_PATH = 'pilot_external_counter_report.csv'
-CONNECTIVITY_PATH = '/home/guileb/tcc/CryptoSASTRunner/tccResults/crypto-lib-merged-result/libscout/connectivity-merged-results'
-CONNECTIVITY_NAME_PATH = 'connectivity_external_counter_report.csv'
-FINANCES_PATH = '/home/guileb/tcc/CryptoSASTRunner/tccResults/crypto-lib-merged-result/libscout/finances-merged-results'
-FINANCES_NAME_PATH = 'finances_external_counter_report.csv'
-SECURITY_PATH = '/home/guileb/tcc/CryptoSASTRunner/tccResults/crypto-lib-merged-result/libscout/security-merged-results'
-SECURITY_NAME_PATH = 'security_external_counter_report.csv'
-SMS_PATH = '/home/guileb/tcc/CryptoSASTRunner/tccResults/crypto-lib-merged-result/libscout/sms-merged-results'
-SMS_NAME_PATH = 'sms_external_counter_report.csv'
+PILOT_PATH = '/home/guileb/tcc/CryptoSASTRunner/tccResults/crypto-lib-merged-result/libscout-cryptoguard/piloto-2'
+PILOT_NAME_PATH = 'cryptoguard_pilot_external_counter_report.csv'
+CONNECTIVITY_PATH = '/home/guileb/tcc/CryptoSASTRunner/tccResults/crypto-lib-merged-result/libscout-cryptoguard/connectivity-merged-results'
+CONNECTIVITY_NAME_PATH = 'cryptoguard_connectivity_external_counter_report.csv'
+FINANCES_PATH = '/home/guileb/tcc/CryptoSASTRunner/tccResults/crypto-lib-merged-result/libscout-cryptoguard/finances-merged-results'
+FINANCES_NAME_PATH = 'cryptoguard_finances_external_counter_report.csv'
+SECURITY_PATH = '/home/guileb/tcc/CryptoSASTRunner/tccResults/crypto-lib-merged-result/libscout-cryptoguard/security-merged-results'
+SECURITY_NAME_PATH = 'cryptoguard_security_external_counter_report.csv'
+SMS_PATH = '/home/guileb/tcc/CryptoSASTRunner/tccResults/crypto-lib-merged-result/libscout-cryptoguard/sms-merged-results'
+SMS_NAME_PATH = 'cryptoguard_sms_external_counter_report.csv'
 
 LOADED_PATH = PILOT_PATH
 LOADED_NAME_PATH = PILOT_NAME_PATH
@@ -37,9 +37,9 @@ loaded_path.each do |lib_file_name|
   lib_file = File.open(lib_file_name, 'r')
   apk_name = File.basename(lib_file_name)
   lib_file_data = JSON.load(lib_file)
-  libs_count = lib_file_data['runs'][0]['results'].count
-  lib_file_data['runs'][0]['results'].each do |lib|
-    external_libs_count += 1 if lib['locations'][0]['physicalLocation']['fileLocation'].include?('externalLibrary')
+  libs_count = lib_file_data['Issues'].count
+  lib_file_data['Issues'].each do |lib|
+    external_libs_count += 1 if lib.include?('externalLibrary')
   end
   native_libs_count = libs_count - external_libs_count
   csv_file.write("#{apk_name},#{external_libs_count},#{native_libs_count}\n")
