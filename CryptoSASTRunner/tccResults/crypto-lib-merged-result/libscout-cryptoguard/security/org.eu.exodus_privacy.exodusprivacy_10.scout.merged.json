@@ -1,0 +1,62 @@
+{
+  "projectName": "CryptoGuard",
+  "ProjectVersion": "04.05.03",
+  "Target": {
+    "RawCommand": "-in apk -s /home/lables/CryptoAnalysis/apks/Security/org.eu.exodus_privacy.exodusprivacy_10.apk -m D",
+    "FullPath": "org.eu.exodus_privacy.exodusprivacy_10.apk/",
+    "Type": "APK",
+    "TargetSources": [
+      "/home/lables/CryptoAnalysis/apks/Security/org.eu.exodus_privacy.exodusprivacy_10.apk"
+    ],
+    "_PropertiesFilePath": "gradle.properties",
+    "_ComputerOS": "Linux_4.15.0-163-generic",
+    "_JVMVersion": "1.8.0_312-8u312-b07-0ubuntu1~18.04-b07",
+    "_ProjectName": "org"
+  },
+  "Issues": [
+    {
+      "Message": "Found: Untrused PRNG (java.util.Random)",
+      "Description": "Used untrusted PRNG",
+      "RuleNumber": 13,
+      "RuleDesc": "Used untrusted PRNG",
+      "CWEId": 338,
+      "Severity": "1",
+      "_FullPath": "org.eu.exodus_privacy.exodusprivacy_10.apk.androidx.transition.Explode.class",
+      "_Id": "0",
+      "externalLibrary": true
+    },
+    {
+      "Message": "Found: Untrused PRNG (java.util.Random)",
+      "Description": "Used untrusted PRNG",
+      "RuleNumber": 13,
+      "RuleDesc": "Used untrusted PRNG",
+      "CWEId": 338,
+      "Severity": "1",
+      "_FullPath": "org.eu.exodus_privacy.exodusprivacy_10.apk.org.eu.exodus_privacy.exodusprivacy.manager.NetworkManager$NetworkProcessingThread.class",
+      "_Id": "1"
+    },
+    {
+      "Message": "Found: \"SHA1\"",
+      "Description": "Found broken hash functions",
+      "RuleNumber": 2,
+      "RuleDesc": "Found broken hash functions",
+      "CWEId": 759,
+      "Severity": "1",
+      "_FullPath": "org.eu.exodus_privacy.exodusprivacy_10.apk.org.eu.exodus_privacy.exodusprivacy.Utils.class",
+      "_Id": "2"
+    },
+    {
+      "Message": "Found: \"SHA1\"",
+      "Description": "Found broken hash functions",
+      "RuleNumber": 2,
+      "RuleDesc": "Found broken hash functions",
+      "CWEId": 759,
+      "Severity": "1",
+      "_FullPath": "org.eu.exodus_privacy.exodusprivacy_10.apk.org.eu.exodus_privacy.exodusprivacy.Utils.class",
+      "_Id": "3"
+    }
+  ],
+  "_SchemaVersion": 3,
+  "_DateTime": "2022-01-14_23:15:27",
+  "_UUID": "83bbb4d1-d069-45b2-9699-fc981f7f5f94"
+}

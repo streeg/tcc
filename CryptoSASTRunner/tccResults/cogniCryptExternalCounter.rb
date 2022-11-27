@@ -11,11 +11,13 @@ FINANCES_PATH = '/home/guileb/tcc/CryptoSASTRunner/tccResults/crypto-lib-merged-
 FINANCES_NAME_PATH = 'cognicrypt_finances_external_counter_report.csv'
 SECURITY_PATH = '/home/guileb/tcc/CryptoSASTRunner/tccResults/crypto-lib-merged-result/libscout-cognicrypt/security-merged-results'
 SECURITY_NAME_PATH = 'cognicrypt_security_external_counter_report.csv'
-SMS_PATH = '/home/guileb/tcc/CryptoSASTRunner/tccResults/crypto-lib-merged-result/libscout-cognicrypt/sms-merged-results'
-SMS_NAME_PATH = 'cognicrypt_sms_external_counter_report.csv'
+SMS_PATH = '/home/guileb/tcc/CryptoSASTRunner/tccResults/crypto-lib-merged-result/libscout-cognicrypt/system-merged-results'
+SMS_NAME_PATH = 'cognicrypt_system_external_counter_report.csv'
+SYSTEM_PATH = '/home/guileb/tcc/CryptoSASTRunner/tccResults/crypto-lib-merged-result/libscout-cognicrypt/system-merged-results'
+SYSTEM_NAME_PATH = 'cognicrypt_system_external_counter_report.csv'
 
-LOADED_PATH = PILOT_PATH
-LOADED_NAME_PATH = PILOT_NAME_PATH
+LOADED_PATH = SYSTEM_PATH
+LOADED_NAME_PATH = SYSTEM_NAME_PATH
 
 ###### Main ######
 p 'This script count number of external libraries and number of native and print in a csv'

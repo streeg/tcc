@@ -1,0 +1,64 @@
+{
+  "projectName": "CryptoGuard",
+  "ProjectVersion": "04.05.03",
+  "Target": {
+    "RawCommand": "-in apk -s /home/lables/CryptoAnalysis/Finances/com.greenaddress.greenbits_android_wallet_22000376.apk -m D",
+    "FullPath": "com.greenaddress.greenbits_android_wallet_22000376.apk/",
+    "Type": "APK",
+    "TargetSources": [
+      "/home/lables/CryptoAnalysis/Finances/com.greenaddress.greenbits_android_wallet_22000376.apk"
+    ],
+    "_PropertiesFilePath": "gradle.properties",
+    "_ComputerOS": "Linux_4.15.0-162-generic",
+    "_JVMVersion": "1.8.0_292-8u292-b10-0ubuntu1~18.04-b10",
+    "_ProjectName": "com"
+  },
+  "Issues": [
+    {
+      "Message": "Found: Untrused PRNG (java.util.Random)",
+      "Description": "Used untrusted PRNG",
+      "RuleNumber": 13,
+      "RuleDesc": "Used untrusted PRNG",
+      "CWEId": 338,
+      "Severity": "1",
+      "_FullPath": "com.greenaddress.greenbits_android_wallet_22000376.apk.com.greenaddress.jade.JadeAPI.class",
+      "_Id": "0",
+      "externalLibrary": true
+    },
+    {
+      "Message": "Found: Untrused PRNG (java.util.Random)",
+      "Description": "Used untrusted PRNG",
+      "RuleNumber": 13,
+      "RuleDesc": "Used untrusted PRNG",
+      "CWEId": 338,
+      "Severity": "1",
+      "_FullPath": "com.greenaddress.greenbits_android_wallet_22000376.apk.kotlin.random.FallbackThreadLocalRandom$implStorage$1.class",
+      "_Id": "1"
+    },
+    {
+      "Message": "Found: Untrused PRNG (java.util.Random)",
+      "Description": "Used untrusted PRNG",
+      "RuleNumber": 13,
+      "RuleDesc": "Used untrusted PRNG",
+      "CWEId": 338,
+      "Severity": "1",
+      "_FullPath": "com.greenaddress.greenbits_android_wallet_22000376.apk.androidx.activity.result.ActivityResultRegistry.class",
+      "_Id": "2",
+      "externalLibrary": true
+    },
+    {
+      "Message": "Found: \"http://vgza7wu4h7osixmrx6e4op5r72okqpagr3w6oupgsvmim4cz3wzdgrad.onion\"",
+      "Description": "Used HTTP Protocol",
+      "RuleNumber": 7,
+      "RuleDesc": "Used HTTP Protocol",
+      "CWEId": 650,
+      "Severity": "1",
+      "_FullPath": "com.greenaddress.greenbits_android_wallet_22000376.apk.com.greenaddress.greenbits.wallets.JadeFirmwareManager.class",
+      "_Id": "3",
+      "externalLibrary": true
+    }
+  ],
+  "_SchemaVersion": 3,
+  "_DateTime": "2021-11-28_01:27:16",
+  "_UUID": "9cfc73c3-2674-4a47-9359-abb2282f23d2"
+}

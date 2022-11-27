@@ -1,0 +1,387 @@
+{
+  "projectName": "CryptoGuard",
+  "ProjectVersion": "04.05.03",
+  "Target": {
+    "RawCommand": "-in apk -s /home/lables/CryptoAnalysis/Finances/io.bluewallet.bluewallet_60205.apk -m D",
+    "FullPath": "io.bluewallet.bluewallet_60205.apk/",
+    "Type": "APK",
+    "TargetSources": [
+      "/home/lables/CryptoAnalysis/Finances/io.bluewallet.bluewallet_60205.apk"
+    ],
+    "_PropertiesFilePath": "gradle.properties",
+    "_ComputerOS": "Linux_4.15.0-162-generic",
+    "_JVMVersion": "1.8.0_292-8u292-b10-0ubuntu1~18.04-b10",
+    "_ProjectName": "io"
+  },
+  "Issues": [
+    {
+      "Message": "Found: \"AES/ECB/PKCS5Padding\"",
+      "Description": "Found broken crypto schemes",
+      "RuleNumber": 1,
+      "RuleDesc": "Found broken crypto schemes",
+      "CWEId": 256,
+      "Severity": "1",
+      "_FullPath": "io.bluewallet.bluewallet_60205.apk.com.reactlibrary.securekeystore.RNSecureKeyStoreModule.class",
+      "_Id": "0",
+      "externalLibrary": true
+    },
+    {
+      "Message": "Found: \"AES/ECB/PKCS5Padding\"",
+      "Description": "Found broken crypto schemes",
+      "RuleNumber": 1,
+      "RuleDesc": "Found broken crypto schemes",
+      "CWEId": 256,
+      "Severity": "1",
+      "_FullPath": "io.bluewallet.bluewallet_60205.apk.com.reactlibrary.securekeystore.RNSecureKeyStoreModule.class",
+      "_Id": "1",
+      "externalLibrary": true
+    },
+    {
+      "Message": "Found: Untrused PRNG (java.util.Random)",
+      "Description": "Used untrusted PRNG",
+      "RuleNumber": 13,
+      "RuleDesc": "Used untrusted PRNG",
+      "CWEId": 338,
+      "Severity": "1",
+      "_FullPath": "io.bluewallet.bluewallet_60205.apk.androidx.transition.Explode.class",
+      "_Id": "2",
+      "externalLibrary": true
+    },
+    {
+      "Message": "Found: Untrused PRNG (java.util.Random)",
+      "Description": "Used untrusted PRNG",
+      "RuleNumber": 13,
+      "RuleDesc": "Used untrusted PRNG",
+      "CWEId": 338,
+      "Severity": "1",
+      "_FullPath": "io.bluewallet.bluewallet_60205.apk.kotlin.random.FallbackThreadLocalRandom$implStorage$1.class",
+      "_Id": "3"
+    },
+    {
+      "Message": "Found: Untrused PRNG (java.util.Random)",
+      "Description": "Used untrusted PRNG",
+      "RuleNumber": 13,
+      "RuleDesc": "Used untrusted PRNG",
+      "CWEId": 338,
+      "Severity": "1",
+      "_FullPath": "io.bluewallet.bluewallet_60205.apk.okhttp3.OkHttpClient.class",
+      "_Id": "4",
+      "externalLibrary": true
+    },
+    {
+      "Message": "Found: Untrused PRNG (java.util.Random)",
+      "Description": "Used untrusted PRNG",
+      "RuleNumber": 13,
+      "RuleDesc": "Used untrusted PRNG",
+      "CWEId": 338,
+      "Severity": "1",
+      "_FullPath": "io.bluewallet.bluewallet_60205.apk.androidx.activity.result.ActivityResultRegistry.class",
+      "_Id": "5",
+      "externalLibrary": true
+    },
+    {
+      "Message": "Found: Untrused PRNG (java.util.Random)",
+      "Description": "Used untrusted PRNG",
+      "RuleNumber": 13,
+      "RuleDesc": "Used untrusted PRNG",
+      "CWEId": 338,
+      "Severity": "1",
+      "_FullPath": "io.bluewallet.bluewallet_60205.apk.kotlin.random.KotlinRandom.class",
+      "_Id": "6"
+    },
+    {
+      "Message": "Should at least get One accepted Issuer from Other Sources in getAcceptedIssuers method of UNKNOWN",
+      "Description": "Uses untrusted TrustManager",
+      "RuleNumber": 4,
+      "RuleDesc": "Uses untrusted TrustManager",
+      "CWEId": 349,
+      "Severity": "1",
+      "_FullPath": "io.bluewallet.bluewallet_60205.apk.UNKNOWN.class",
+      "_Id": "7"
+    },
+    {
+      "Message": "Should throw java.security.cert.CertificateException in check(Client|Server)Trusted method of UNKNOWN",
+      "Description": "Uses untrusted TrustManager",
+      "RuleNumber": 4,
+      "RuleDesc": "Uses untrusted TrustManager",
+      "CWEId": 349,
+      "Severity": "1",
+      "_FullPath": "io.bluewallet.bluewallet_60205.apk.UNKNOWN.class",
+      "_Id": "8"
+    },
+    {
+      "Message": "Should at least get One accepted Issuer from Other Sources in getAcceptedIssuers method of UNKNOWN",
+      "Description": "Uses untrusted TrustManager",
+      "RuleNumber": 4,
+      "RuleDesc": "Uses untrusted TrustManager",
+      "CWEId": 349,
+      "Severity": "1",
+      "_FullPath": "io.bluewallet.bluewallet_60205.apk.UNKNOWN.class",
+      "_Id": "9"
+    },
+    {
+      "Message": "Should throw java.security.cert.CertificateException in check(Client|Server)Trusted method of UNKNOWN",
+      "Description": "Uses untrusted TrustManager",
+      "RuleNumber": 4,
+      "RuleDesc": "Uses untrusted TrustManager",
+      "CWEId": 349,
+      "Severity": "1",
+      "_FullPath": "io.bluewallet.bluewallet_60205.apk.UNKNOWN.class",
+      "_Id": "10"
+    },
+    {
+      "Message": "Cause: Fixed \"[1]\"",
+      "Description": "Used untrusted HostNameVerifier",
+      "RuleNumber": 6,
+      "RuleDesc": "Used untrusted HostNameVerifier",
+      "CWEId": 601,
+      "Severity": "1",
+      "_FullPath": "io.bluewallet.bluewallet_60205.apk.UNKNOWN.class",
+      "_Id": "11"
+    },
+    {
+      "Message": "Found: \"MD5\"",
+      "Description": "Found broken hash functions",
+      "RuleNumber": 2,
+      "RuleDesc": "Found broken hash functions",
+      "CWEId": 759,
+      "Severity": "1",
+      "_FullPath": "io.bluewallet.bluewallet_60205.apk.okio.HashingSink.class",
+      "_Id": "12",
+      "externalLibrary": true
+    },
+    {
+      "Message": "Found: \"MD5\"",
+      "Description": "Found broken hash functions",
+      "RuleNumber": 2,
+      "RuleDesc": "Found broken hash functions",
+      "CWEId": 759,
+      "Severity": "1",
+      "_FullPath": "io.bluewallet.bluewallet_60205.apk.okio.Buffer.class",
+      "_Id": "13",
+      "externalLibrary": true
+    },
+    {
+      "Message": "Found: \"MD5\"",
+      "Description": "Found broken hash functions",
+      "RuleNumber": 2,
+      "RuleDesc": "Found broken hash functions",
+      "CWEId": 759,
+      "Severity": "1",
+      "_FullPath": "io.bluewallet.bluewallet_60205.apk.okio.HashingSource.class",
+      "_Id": "14",
+      "externalLibrary": true
+    },
+    {
+      "Message": "Found: \"SHA-1\"",
+      "Description": "Found broken hash functions",
+      "RuleNumber": 2,
+      "RuleDesc": "Found broken hash functions",
+      "CWEId": 759,
+      "Severity": "1",
+      "_FullPath": "io.bluewallet.bluewallet_60205.apk.com.facebook.common.util.SecureHashUtil.class",
+      "_Id": "15",
+      "externalLibrary": true
+    },
+    {
+      "Message": "Found: \"SHA-1\"",
+      "Description": "Found broken hash functions",
+      "RuleNumber": 2,
+      "RuleDesc": "Found broken hash functions",
+      "CWEId": 759,
+      "Severity": "1",
+      "_FullPath": "io.bluewallet.bluewallet_60205.apk.okio.HashingSink.class",
+      "_Id": "16",
+      "externalLibrary": true
+    },
+    {
+      "Message": "Found: \"SHA-1\"",
+      "Description": "Found broken hash functions",
+      "RuleNumber": 2,
+      "RuleDesc": "Found broken hash functions",
+      "CWEId": 759,
+      "Severity": "1",
+      "_FullPath": "io.bluewallet.bluewallet_60205.apk.okio.ByteString.class",
+      "_Id": "17",
+      "externalLibrary": true
+    },
+    {
+      "Message": "Found: \"MD5\"",
+      "Description": "Found broken hash functions",
+      "RuleNumber": 2,
+      "RuleDesc": "Found broken hash functions",
+      "CWEId": 759,
+      "Severity": "1",
+      "_FullPath": "io.bluewallet.bluewallet_60205.apk.soloader.SoLoader.class",
+      "_Id": "18"
+    },
+    {
+      "Message": "Found: \"SHA-1\"",
+      "Description": "Found broken hash functions",
+      "RuleNumber": 2,
+      "RuleDesc": "Found broken hash functions",
+      "CWEId": 759,
+      "Severity": "1",
+      "_FullPath": "io.bluewallet.bluewallet_60205.apk.com.facebook.common.util.SecureHashUtil.class",
+      "_Id": "19",
+      "externalLibrary": true
+    },
+    {
+      "Message": "Found: \"SHA-1\"",
+      "Description": "Found broken hash functions",
+      "RuleNumber": 2,
+      "RuleDesc": "Found broken hash functions",
+      "CWEId": 759,
+      "Severity": "1",
+      "_FullPath": "io.bluewallet.bluewallet_60205.apk.okio.Buffer.class",
+      "_Id": "20",
+      "externalLibrary": true
+    },
+    {
+      "Message": "Found: \"MD5\"",
+      "Description": "Found broken hash functions",
+      "RuleNumber": 2,
+      "RuleDesc": "Found broken hash functions",
+      "CWEId": 759,
+      "Severity": "1",
+      "_FullPath": "io.bluewallet.bluewallet_60205.apk.okio.ByteString.class",
+      "_Id": "21",
+      "externalLibrary": true
+    },
+    {
+      "Message": "Found: \"MD5\"",
+      "Description": "Found broken hash functions",
+      "RuleNumber": 2,
+      "RuleDesc": "Found broken hash functions",
+      "CWEId": 759,
+      "Severity": "1",
+      "_FullPath": "io.bluewallet.bluewallet_60205.apk.com.facebook.common.util.SecureHashUtil.class",
+      "_Id": "22",
+      "externalLibrary": true
+    },
+    {
+      "Message": "Found: \"sha1\"",
+      "Description": "Found broken hash functions",
+      "RuleNumber": 2,
+      "RuleDesc": "Found broken hash functions",
+      "CWEId": 759,
+      "Severity": "1",
+      "_FullPath": "io.bluewallet.bluewallet_60205.apk.com.rnfs.RNFSManager.class",
+      "_Id": "23",
+      "externalLibrary": true
+    },
+    {
+      "Message": "Found: \"SHA-1\"",
+      "Description": "Found broken hash functions",
+      "RuleNumber": 2,
+      "RuleDesc": "Found broken hash functions",
+      "CWEId": 759,
+      "Severity": "1",
+      "_FullPath": "io.bluewallet.bluewallet_60205.apk.com.rnfs.RNFSManager.class",
+      "_Id": "24",
+      "externalLibrary": true
+    },
+    {
+      "Message": "Found: \"md5\"",
+      "Description": "Found broken hash functions",
+      "RuleNumber": 2,
+      "RuleDesc": "Found broken hash functions",
+      "CWEId": 759,
+      "Severity": "1",
+      "_FullPath": "io.bluewallet.bluewallet_60205.apk.com.rnfs.RNFSManager.class",
+      "_Id": "25",
+      "externalLibrary": true
+    },
+    {
+      "Message": "Found: \"MD5\"",
+      "Description": "Found broken hash functions",
+      "RuleNumber": 2,
+      "RuleDesc": "Found broken hash functions",
+      "CWEId": 759,
+      "Severity": "1",
+      "_FullPath": "io.bluewallet.bluewallet_60205.apk.com.rnfs.RNFSManager.class",
+      "_Id": "26",
+      "externalLibrary": true
+    },
+    {
+      "Message": "Found: \"SHA-1\"",
+      "Description": "Found broken hash functions",
+      "RuleNumber": 2,
+      "RuleDesc": "Found broken hash functions",
+      "CWEId": 759,
+      "Severity": "1",
+      "_FullPath": "io.bluewallet.bluewallet_60205.apk.okio.HashingSource.class",
+      "_Id": "27",
+      "externalLibrary": true
+    },
+    {
+      "Message": "Found: \"MD5\"",
+      "Description": "Found broken hash functions",
+      "RuleNumber": 2,
+      "RuleDesc": "Found broken hash functions",
+      "CWEId": 759,
+      "Severity": "1",
+      "_FullPath": "io.bluewallet.bluewallet_60205.apk.com.facebook.common.util.SecureHashUtil.class",
+      "_Id": "28",
+      "externalLibrary": true
+    },
+    {
+      "Message": "Found: \"http://%s/%s\"",
+      "Description": "Used HTTP Protocol",
+      "RuleNumber": 7,
+      "RuleDesc": "Used HTTP Protocol",
+      "CWEId": 650,
+      "Severity": "1",
+      "_FullPath": "io.bluewallet.bluewallet_60205.apk.com.facebook.react.devsupport.DevServerHelper.class",
+      "_Id": "29",
+      "externalLibrary": true
+    },
+    {
+      "Message": "Found: \"http://%s/status\"",
+      "Description": "Used HTTP Protocol",
+      "RuleNumber": 7,
+      "RuleDesc": "Used HTTP Protocol",
+      "CWEId": 650,
+      "Severity": "1",
+      "_FullPath": "io.bluewallet.bluewallet_60205.apk.com.facebook.react.devsupport.DevServerHelper.class",
+      "_Id": "30",
+      "externalLibrary": true
+    },
+    {
+      "Message": "Found: \"http://%s/open-stack-frame\"",
+      "Description": "Used HTTP Protocol",
+      "RuleNumber": 7,
+      "RuleDesc": "Used HTTP Protocol",
+      "CWEId": 650,
+      "Severity": "1",
+      "_FullPath": "io.bluewallet.bluewallet_60205.apk.com.facebook.react.devsupport.DevServerHelper.class",
+      "_Id": "31",
+      "externalLibrary": true
+    },
+    {
+      "Message": "Found: \"http://%s/launch-js-devtools\"",
+      "Description": "Used HTTP Protocol",
+      "RuleNumber": 7,
+      "RuleDesc": "Used HTTP Protocol",
+      "CWEId": 650,
+      "Severity": "1",
+      "_FullPath": "io.bluewallet.bluewallet_60205.apk.com.facebook.react.devsupport.DevServerHelper.class",
+      "_Id": "32",
+      "externalLibrary": true
+    },
+    {
+      "Message": "Found: \"http://%s/symbolicate\"",
+      "Description": "Used HTTP Protocol",
+      "RuleNumber": 7,
+      "RuleDesc": "Used HTTP Protocol",
+      "CWEId": 650,
+      "Severity": "1",
+      "_FullPath": "io.bluewallet.bluewallet_60205.apk.com.facebook.react.devsupport.DevServerHelper.class",
+      "_Id": "33",
+      "externalLibrary": true
+    }
+  ],
+  "_SchemaVersion": 3,
+  "_DateTime": "2021-11-28_02:06:59",
+  "_UUID": "12f4c1bc-a0d8-4ef6-8943-af44d0357955"
+}

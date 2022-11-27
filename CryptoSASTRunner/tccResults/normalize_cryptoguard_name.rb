@@ -3,8 +3,8 @@ require 'byebug'
 
 ###### Constants ######
 
-CRYPTOGUARD_PATH = '/home/guileb/tcc/CryptoSASTRunner/tccResults/cryptoguard/piloto-2/'.freeze # remove piloto-2
-CRYPTOGUARD_PILOTO_PATH = '/home/guileb/tcc/CryptoSASTRunner/tccResults/cryptoguard/piloto-2/*.json'.freeze # remove piloto-2
+CRYPTOGUARD_PATH = '/home/guileb/tcc/CryptoSASTRunner/tccResults/cryptoguard/connectivity/'.freeze # change_path_as_needed
+CRYPTOGUARD_PILOTO_PATH = '/home/guileb/tcc/CryptoSASTRunner/tccResults/cryptoguard/connectivity/*.json'.freeze # change_path_as_needed
 
 ###### Main ######
 

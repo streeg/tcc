@@ -4,18 +4,20 @@ require 'byebug'
 ###### Constants ######
 
 PILOT_PATH = '/home/guileb/tcc/CryptoSASTRunner/tccResults/crypto-lib-merged-result/libscout-cryptoguard/piloto-2'
-PILOT_NAME_PATH = 'cryptoguard_pilot_external_counter_report.csv'
-CONNECTIVITY_PATH = '/home/guileb/tcc/CryptoSASTRunner/tccResults/crypto-lib-merged-result/libscout-cryptoguard/connectivity-merged-results'
-CONNECTIVITY_NAME_PATH = 'cryptoguard_connectivity_external_counter_report.csv'
-FINANCES_PATH = '/home/guileb/tcc/CryptoSASTRunner/tccResults/crypto-lib-merged-result/libscout-cryptoguard/finances-merged-results'
-FINANCES_NAME_PATH = 'cryptoguard_finances_external_counter_report.csv'
-SECURITY_PATH = '/home/guileb/tcc/CryptoSASTRunner/tccResults/crypto-lib-merged-result/libscout-cryptoguard/security-merged-results'
-SECURITY_NAME_PATH = 'cryptoguard_security_external_counter_report.csv'
-SMS_PATH = '/home/guileb/tcc/CryptoSASTRunner/tccResults/crypto-lib-merged-result/libscout-cryptoguard/sms-merged-results'
-SMS_NAME_PATH = 'cryptoguard_sms_external_counter_report.csv'
+PILOT_NAME_PATH = 'cryptoGuard_pilot_external_counter_report.csv'
+CONNECTIVITY_PATH = '/home/guileb/tcc/CryptoSASTRunner/tccResults/crypto-lib-merged-result/libscout-cryptoguard/connectivity'
+CONNECTIVITY_NAME_PATH = 'cryptoGuard_connectivity_external_counter_report.csv'
+FINANCES_PATH = '/home/guileb/tcc/CryptoSASTRunner/tccResults/crypto-lib-merged-result/libscout-cryptoguard/finances'
+FINANCES_NAME_PATH = 'cryptoGuard_finances_external_counter_report.csv'
+SECURITY_PATH = '/home/guileb/tcc/CryptoSASTRunner/tccResults/crypto-lib-merged-result/libscout-cryptoguard/security'
+SECURITY_NAME_PATH = 'cryptoGuard_security_external_counter_report.csv'
+SMS_PATH = '/home/guileb/tcc/CryptoSASTRunner/tccResults/crypto-lib-merged-result/libscout-cryptoguard/sms'
+SMS_NAME_PATH = 'cryptoGuard_sms_external_counter_report.csv'
+SYSTEM_PATH = '/home/guileb/tcc/CryptoSASTRunner/tccResults/crypto-lib-merged-result/libscout-cryptoguard/system'
+SYSTEM_NAME_PATH = 'cryptoGuard_system_external_counter_report.csv'
 
-LOADED_PATH = PILOT_PATH
-LOADED_NAME_PATH = PILOT_NAME_PATH
+LOADED_PATH = SMS_PATH
+LOADED_NAME_PATH = SMS_NAME_PATH
 
 ###### Main ######
 p 'This script count number of external libraries and number of native and print in a csv'

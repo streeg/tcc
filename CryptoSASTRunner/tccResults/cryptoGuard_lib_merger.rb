@@ -7,9 +7,9 @@ LIBSCOUT_PATH = 'libscout-result/json/'.freeze
 LIBRADAR_PATH = 'libradar-result/'.freeze
 CRYPTO_LIB_MERGED_LIBSCOUT_PATH = 'crypto-lib-merged-result/libscout-cryptoguard/'.freeze
 CRYPTO_LIB_MERGED_LIBRADAR_PATH = 'crypto-lib-merged-result/libradar/'.freeze
-LIBSCOUT_LOG_JSON_PATH = 'libscout-result/json/piloto-2/*.log.json'.freeze # remove piloto-2
+LIBSCOUT_LOG_JSON_PATH = 'libscout-result/json/system/*.log.json'.freeze # change_as_needed
 LIBRADAR_JSON_PATH = 'libradar-result/*.json'.freeze
-CRYPTOGUARD_PATH = 'cryptoguard/'.freeze # remove piloto-2
+CRYPTOGUARD_PATH = 'cryptoguard/'.freeze # change_as_needed
 
 ###### Methods ######
 
@@ -68,7 +68,6 @@ failed_files = []
 successed_files = []
 lib_files.each do |lib_file_name|
   counter += 1
-
   # Open lib file
   lib_file = File.open(lib_file_name, 'r')
   lib_file_data = JSON.load(lib_file)
@@ -110,5 +109,5 @@ rescue StandardError
   failed_files << lib_file_name
 end
 p "There was #{failed_files.length} errors out of #{files_count} files."
-p "Files without sarif: #{failed_files}!"
+p "Files with problem: #{failed_files}!"
 p "Files merged successfully: #{successed_files}."
