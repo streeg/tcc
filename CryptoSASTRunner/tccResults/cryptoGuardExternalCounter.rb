@@ -16,8 +16,8 @@ SMS_NAME_PATH = 'cryptoGuard_sms_external_counter_report.csv'
 SYSTEM_PATH = '/home/guileb/tcc/CryptoSASTRunner/tccResults/crypto-lib-merged-result/libscout-cryptoguard/system'
 SYSTEM_NAME_PATH = 'cryptoGuard_system_external_counter_report.csv'
 
-LOADED_PATH = SMS_PATH
-LOADED_NAME_PATH = SMS_NAME_PATH
+LOADED_PATH = FINANCES_PATH
+LOADED_NAME_PATH = FINANCES_NAME_PATH
 
 ###### Main ######
 p 'This script count number of external libraries and number of native and print in a csv'
