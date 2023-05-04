@@ -75,7 +75,7 @@ public class LibCodeUsage {
 			String rootPckg = pm.getMatchedPackageTree().getRootPackage();
 			
 			// TODO: currently exclude libs with ambiguous root packages
-			if (!LibraryIdentifier.ambiguousRootPackages.contains(rootPckg) && !rootPckg2Lib.containsKey(rootPckg)) {
+			if (rootPckg != null && !LibraryIdentifier.ambiguousRootPackages.contains(rootPckg) && !rootPckg2Lib.containsKey(rootPckg)) {
 				rootPckg2Lib.put(rootPckg, libName);
 
 			}

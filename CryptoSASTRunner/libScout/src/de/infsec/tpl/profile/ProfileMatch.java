@@ -38,10 +38,10 @@ public class ProfileMatch implements Exportable, Serializable {
 	private static final long serialVersionUID = 62089083096037815L;
 	private static final Logger logger = LoggerFactory.getLogger(de.infsec.tpl.profile.ProfileMatch.class);
 
-	public static final float MIN_PARTIAL_MATCHING_SCORE = .7f;
-	public static final float MIN_PCKG_SCORE = .3f; 
-	public static final float MIN_CLAZZ_SCORE = .33f;
-	public static final float MIN_CLAZZ_APP_SCORE = .2f;
+	public static final float MIN_PARTIAL_MATCHING_SCORE = .5f;
+	public static final float MIN_PCKG_SCORE = .15f; 
+	public static final float MIN_CLAZZ_SCORE = .15f;
+	public static final float MIN_CLAZZ_APP_SCORE = .1f;
 
 	public enum MatchLevel {PACKAGE, CLASS, METHOD};
 
