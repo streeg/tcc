@@ -5,10 +5,16 @@ p "There is #{files_count} log files to convert"
 counter = 0
 log_files.each do |log_file|
   counter += 1
-  log_to_json = File.open("../jsonlogs/#{log_file}.json", 'w')
+  log_to_json = File.open("json_with_libraries/#{log_file}.json", 'w')
   log_to_json.write("[\n")
   log = File.open(log_file, 'r')
+  log_to_json.write("[\n")
   log.each_line do |line|
+    if line.include?('LibraryIdentifier') && line.split.include?('package')
+      log_to_json.write("  {\n    \"Library indentified\": \"#{line.split[line.split.index('package') + 1]}\",\n")
+      log_to_json.write("    \"sub library\": \"#{line.split[line.split.index('package') + 2]}\"\n  },\n")
+    end
+    log_to_json.write("{}],\n[") if line.include?('Full library matches:')
     next unless line.include?('ProfileMatch')
 
     if line.split.include?('name:')
@@ -25,7 +31,7 @@ log_files.each do |log_file|
     end
   end
   log.close
-  log_to_json.write('{}]')
+  log_to_json.write('{}]]')
   log_to_json.close
   p "Converted #{log_file} to json"
   p "Converted #{counter} of #{files_count} log files"
