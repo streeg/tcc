@@ -42,7 +42,6 @@ loaded_path.each do |lib_file_name|
   lib_file = File.open(lib_file_name, 'r')
   apk_name = File.basename(lib_file_name)
   lib_file_data = JSON.load(lib_file)
-  byebug
   libs_count = lib_file_data['runs'][0]['results'].count
   lib_file_data['runs'][0]['results'].each do |lib|
     external_libs_count += 1 if lib['locations'][0]['physicalLocation']['fileLocation'].include?('externalLibrary')

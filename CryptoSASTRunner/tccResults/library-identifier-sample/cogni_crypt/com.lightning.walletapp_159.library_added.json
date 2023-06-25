@@ -1,0 +1,1136 @@
+{
+  "sarifVersion": "2.0.0",
+  "runs": [
+    {
+      "files": {
+        "org/bitcoinj/script/Script.java": {
+          "mimeType": "text/java"
+        },
+        "org/bitcoinj/crypto/PBKDF2SHA512.java": {
+          "mimeType": "text/java"
+        },
+        "org/bitcoinj/core/CheckpointManager.java": {
+          "mimeType": "text/java"
+        },
+        "okhttp3/OkHttpClient.java": {
+          "mimeType": "text/java"
+        },
+        "okio/ByteString.java": {
+          "mimeType": "text/java"
+        },
+        "com/lightning/walletapp/ln/Tools$.java": {
+          "mimeType": "text/java"
+        },
+        "co/infinum/goldfinger/Goldfinger$Builder.java": {
+          "mimeType": "text/java"
+        },
+        "com/google/common/hash/MessageDigestHashFunction$MessageDigestHasher.java": {
+          "mimeType": "text/java"
+        },
+        "com/lightning/walletapp/helper/AES$.java": {
+          "mimeType": "text/java"
+        },
+        "co/infinum/goldfinger/CryptoFactory$Default.java": {
+          "mimeType": "text/java"
+        },
+        "com/github/kevinsawicki/http/HttpRequest.java": {
+          "mimeType": "text/java"
+        }
+      },
+      "resources": {
+        "rules": {
+          "TypestateError-4": {
+            "id": "TypestateError",
+            "fullDescription": {
+              "text": "The ORDER block of CrySL is violated, i.e., the expected method sequence call to be made is incorrect. For example, a Signature object expects a call to initSign(key) prior to update(data)."
+            }
+          },
+          "TypestateError-5": {
+            "id": "TypestateError",
+            "fullDescription": {
+              "text": "The ORDER block of CrySL is violated, i.e., the expected method sequence call to be made is incorrect. For example, a Signature object expects a call to initSign(key) prior to update(data)."
+            }
+          },
+          "TypestateError-6": {
+            "id": "TypestateError",
+            "fullDescription": {
+              "text": "The ORDER block of CrySL is violated, i.e., the expected method sequence call to be made is incorrect. For example, a Signature object expects a call to initSign(key) prior to update(data)."
+            }
+          },
+          "ForbiddenMethodError": {
+            "id": "ForbiddenMethodError",
+            "fullDescription": {
+              "text": "A method that is forbidden (CrySL block FORBIDDEN) to be called under some circumstances was found."
+            }
+          },
+          "TypestateError-1": {
+            "id": "TypestateError",
+            "fullDescription": {
+              "text": "The ORDER block of CrySL is violated, i.e., the expected method sequence call to be made is incorrect. For example, a Signature object expects a call to initSign(key) prior to update(data)."
+            }
+          },
+          "TypestateError-2": {
+            "id": "TypestateError",
+            "fullDescription": {
+              "text": "The ORDER block of CrySL is violated, i.e., the expected method sequence call to be made is incorrect. For example, a Signature object expects a call to initSign(key) prior to update(data)."
+            }
+          },
+          "ConstraintError-1": {
+            "id": "ConstraintError",
+            "fullDescription": {
+              "text": "A constraint of a CrySL rule is violated, e.g., a key is generated with the wrong key size."
+            }
+          },
+          "TypestateError-3": {
+            "id": "TypestateError",
+            "fullDescription": {
+              "text": "The ORDER block of CrySL is violated, i.e., the expected method sequence call to be made is incorrect. For example, a Signature object expects a call to initSign(key) prior to update(data)."
+            }
+          },
+          "ConstraintError-2": {
+            "id": "ConstraintError",
+            "fullDescription": {
+              "text": "A constraint of a CrySL rule is violated, e.g., a key is generated with the wrong key size."
+            }
+          },
+          "IncompleteOperationError-7": {
+            "id": "IncompleteOperationError",
+            "fullDescription": {
+              "text": "The usage of an object may be incomplete: For example a Cipherobject may be initialized but never used for en- or decryption, this may render the code dead. This error heavily depends on the computed call graph (CHA by default)"
+            }
+          },
+          "IncompleteOperationError-6": {
+            "id": "IncompleteOperationError",
+            "fullDescription": {
+              "text": "The usage of an object may be incomplete: For example a Cipherobject may be initialized but never used for en- or decryption, this may render the code dead. This error heavily depends on the computed call graph (CHA by default)"
+            }
+          },
+          "ConstraintError-3": {
+            "id": "ConstraintError",
+            "fullDescription": {
+              "text": "A constraint of a CrySL rule is violated, e.g., a key is generated with the wrong key size."
+            }
+          },
+          "IncompleteOperationError-9": {
+            "id": "IncompleteOperationError",
+            "fullDescription": {
+              "text": "The usage of an object may be incomplete: For example a Cipherobject may be initialized but never used for en- or decryption, this may render the code dead. This error heavily depends on the computed call graph (CHA by default)"
+            }
+          },
+          "ConstraintError-4": {
+            "id": "ConstraintError",
+            "fullDescription": {
+              "text": "A constraint of a CrySL rule is violated, e.g., a key is generated with the wrong key size."
+            }
+          },
+          "IncompleteOperationError-8": {
+            "id": "IncompleteOperationError",
+            "fullDescription": {
+              "text": "The usage of an object may be incomplete: For example a Cipherobject may be initialized but never used for en- or decryption, this may render the code dead. This error heavily depends on the computed call graph (CHA by default)"
+            }
+          },
+          "RequiredPredicateError": {
+            "id": "RequiredPredicateError",
+            "fullDescription": {
+              "text": "An object A expects an object B to have been used correctly (CrySL blocks REQUIRES and ENSURES). For example a Cipher object requires a SecretKey object to be correctly and securely generated."
+            }
+          },
+          "RequiredPredicateError-11": {
+            "id": "RequiredPredicateError",
+            "fullDescription": {
+              "text": "An object A expects an object B to have been used correctly (CrySL blocks REQUIRES and ENSURES). For example a Cipher object requires a SecretKey object to be correctly and securely generated."
+            }
+          },
+          "RequiredPredicateError-10": {
+            "id": "RequiredPredicateError",
+            "fullDescription": {
+              "text": "An object A expects an object B to have been used correctly (CrySL blocks REQUIRES and ENSURES). For example a Cipher object requires a SecretKey object to be correctly and securely generated."
+            }
+          },
+          "RequiredPredicateError-13": {
+            "id": "RequiredPredicateError",
+            "fullDescription": {
+              "text": "An object A expects an object B to have been used correctly (CrySL blocks REQUIRES and ENSURES). For example a Cipher object requires a SecretKey object to be correctly and securely generated."
+            }
+          },
+          "RequiredPredicateError-12": {
+            "id": "RequiredPredicateError",
+            "fullDescription": {
+              "text": "An object A expects an object B to have been used correctly (CrySL blocks REQUIRES and ENSURES). For example a Cipher object requires a SecretKey object to be correctly and securely generated."
+            }
+          },
+          "IncompleteOperationError": {
+            "id": "IncompleteOperationError",
+            "fullDescription": {
+              "text": "The usage of an object may be incomplete: For example a Cipherobject may be initialized but never used for en- or decryption, this may render the code dead. This error heavily depends on the computed call graph (CHA by default)"
+            }
+          },
+          "IncompleteOperationError-1": {
+            "id": "IncompleteOperationError",
+            "fullDescription": {
+              "text": "The usage of an object may be incomplete: For example a Cipherobject may be initialized but never used for en- or decryption, this may render the code dead. This error heavily depends on the computed call graph (CHA by default)"
+            }
+          },
+          "IncompleteOperationError-3": {
+            "id": "IncompleteOperationError",
+            "fullDescription": {
+              "text": "The usage of an object may be incomplete: For example a Cipherobject may be initialized but never used for en- or decryption, this may render the code dead. This error heavily depends on the computed call graph (CHA by default)"
+            }
+          },
+          "IncompleteOperationError-2": {
+            "id": "IncompleteOperationError",
+            "fullDescription": {
+              "text": "The usage of an object may be incomplete: For example a Cipherobject may be initialized but never used for en- or decryption, this may render the code dead. This error heavily depends on the computed call graph (CHA by default)"
+            }
+          },
+          "IncompleteOperationError-5": {
+            "id": "IncompleteOperationError",
+            "fullDescription": {
+              "text": "The usage of an object may be incomplete: For example a Cipherobject may be initialized but never used for en- or decryption, this may render the code dead. This error heavily depends on the computed call graph (CHA by default)"
+            }
+          },
+          "IncompleteOperationError-4": {
+            "id": "IncompleteOperationError",
+            "fullDescription": {
+              "text": "The usage of an object may be incomplete: For example a Cipherobject may be initialized but never used for en- or decryption, this may render the code dead. This error heavily depends on the computed call graph (CHA by default)"
+            }
+          },
+          "RequiredPredicateError-15": {
+            "id": "RequiredPredicateError",
+            "fullDescription": {
+              "text": "An object A expects an object B to have been used correctly (CrySL blocks REQUIRES and ENSURES). For example a Cipher object requires a SecretKey object to be correctly and securely generated."
+            }
+          },
+          "RequiredPredicateError-14": {
+            "id": "RequiredPredicateError",
+            "fullDescription": {
+              "text": "An object A expects an object B to have been used correctly (CrySL blocks REQUIRES and ENSURES). For example a Cipher object requires a SecretKey object to be correctly and securely generated."
+            }
+          },
+          "ForbiddenMethodError-1": {
+            "id": "ForbiddenMethodError",
+            "fullDescription": {
+              "text": "A method that is forbidden (CrySL block FORBIDDEN) to be called under some circumstances was found."
+            }
+          },
+          "RequiredPredicateError-9": {
+            "id": "RequiredPredicateError",
+            "fullDescription": {
+              "text": "An object A expects an object B to have been used correctly (CrySL blocks REQUIRES and ENSURES). For example a Cipher object requires a SecretKey object to be correctly and securely generated."
+            }
+          },
+          "RequiredPredicateError-8": {
+            "id": "RequiredPredicateError",
+            "fullDescription": {
+              "text": "An object A expects an object B to have been used correctly (CrySL blocks REQUIRES and ENSURES). For example a Cipher object requires a SecretKey object to be correctly and securely generated."
+            }
+          },
+          "RequiredPredicateError-7": {
+            "id": "RequiredPredicateError",
+            "fullDescription": {
+              "text": "An object A expects an object B to have been used correctly (CrySL blocks REQUIRES and ENSURES). For example a Cipher object requires a SecretKey object to be correctly and securely generated."
+            }
+          },
+          "TypestateError": {
+            "id": "TypestateError",
+            "fullDescription": {
+              "text": "The ORDER block of CrySL is violated, i.e., the expected method sequence call to be made is incorrect. For example, a Signature object expects a call to initSign(key) prior to update(data)."
+            }
+          },
+          "RequiredPredicateError-6": {
+            "id": "RequiredPredicateError",
+            "fullDescription": {
+              "text": "An object A expects an object B to have been used correctly (CrySL blocks REQUIRES and ENSURES). For example a Cipher object requires a SecretKey object to be correctly and securely generated."
+            }
+          },
+          "RequiredPredicateError-5": {
+            "id": "RequiredPredicateError",
+            "fullDescription": {
+              "text": "An object A expects an object B to have been used correctly (CrySL blocks REQUIRES and ENSURES). For example a Cipher object requires a SecretKey object to be correctly and securely generated."
+            }
+          },
+          "RequiredPredicateError-4": {
+            "id": "RequiredPredicateError",
+            "fullDescription": {
+              "text": "An object A expects an object B to have been used correctly (CrySL blocks REQUIRES and ENSURES). For example a Cipher object requires a SecretKey object to be correctly and securely generated."
+            }
+          },
+          "RequiredPredicateError-3": {
+            "id": "RequiredPredicateError",
+            "fullDescription": {
+              "text": "An object A expects an object B to have been used correctly (CrySL blocks REQUIRES and ENSURES). For example a Cipher object requires a SecretKey object to be correctly and securely generated."
+            }
+          },
+          "ConstraintError": {
+            "id": "ConstraintError",
+            "fullDescription": {
+              "text": "A constraint of a CrySL rule is violated, e.g., a key is generated with the wrong key size."
+            }
+          },
+          "RequiredPredicateError-2": {
+            "id": "RequiredPredicateError",
+            "fullDescription": {
+              "text": "An object A expects an object B to have been used correctly (CrySL blocks REQUIRES and ENSURES). For example a Cipher object requires a SecretKey object to be correctly and securely generated."
+            }
+          },
+          "RequiredPredicateError-1": {
+            "id": "RequiredPredicateError",
+            "fullDescription": {
+              "text": "An object A expects an object B to have been used correctly (CrySL blocks REQUIRES and ENSURES). For example a Cipher object requires a SecretKey object to be correctly and securely generated."
+            }
+          }
+        }
+      },
+      "results": [
+        {
+          "locations": [
+            {
+              "physicalLocation": {
+                "fileLocation": {
+                  "uri": "org.bitcoinj.core.CheckpointManager.java",
+                  "externalLibrary": true,
+                  "PossibleExternalLibrary": true
+                },
+                "region": {
+                  "startLine": 119
+                }
+              },
+              "fullyQualifiedLogicalName": "org::bitcoinj::core::CheckpointManager::readBinary"
+            }
+          ],
+          "ruleId": "IncompleteOperationError",
+          "message": {
+            "text": "Operation on object of type java.security.MessageDigest object not completed. Expected call to digest, update.",
+            "richText": "IncompleteOperationError violating CrySL rule for java.security.MessageDigest."
+          }
+        },
+        {
+          "locations": [
+            {
+              "physicalLocation": {
+                "fileLocation": {
+                  "uri": "org.bitcoinj.core.CheckpointManager.java",
+                  "externalLibrary": true,
+                  "PossibleExternalLibrary": true
+                },
+                "region": {
+                  "startLine": 121
+                }
+              },
+              "fullyQualifiedLogicalName": "org::bitcoinj::core::CheckpointManager::readBinary"
+            }
+          ],
+          "ruleId": "ForbiddenMethodError",
+          "message": {
+            "text": "Detected call to forbidden method void on(boolean) of class java.security.DigestInputStream.",
+            "richText": "ForbiddenMethodError violating CrySL rule for java.security.DigestInputStream."
+          }
+        },
+        {
+          "locations": [
+            {
+              "physicalLocation": {
+                "fileLocation": {
+                  "uri": "org.bitcoinj.core.CheckpointManager.java",
+                  "externalLibrary": true,
+                  "PossibleExternalLibrary": true
+                },
+                "region": {
+                  "startLine": 121
+                }
+              },
+              "fullyQualifiedLogicalName": "org::bitcoinj::core::CheckpointManager::readBinary"
+            }
+          ],
+          "ruleId": "IncompleteOperationError-1",
+          "message": {
+            "text": "Operation on object of type java.security.DigestInputStream object not completed. Expected call to read.",
+            "richText": "IncompleteOperationError violating CrySL rule for java.security.DigestInputStream."
+          }
+        },
+        {
+          "locations": [
+            {
+              "physicalLocation": {
+                "fileLocation": {
+                  "uri": "org.bitcoinj.core.CheckpointManager.java",
+                  "externalLibrary": true,
+                  "PossibleExternalLibrary": true
+                },
+                "region": {
+                  "startLine": 132
+                }
+              },
+              "fullyQualifiedLogicalName": "org::bitcoinj::core::CheckpointManager::readBinary"
+            }
+          ],
+          "ruleId": "IncompleteOperationError-2",
+          "message": {
+            "text": "Operation on object of type java.security.DigestInputStream object not completed. Expected call to read.",
+            "richText": "IncompleteOperationError violating CrySL rule for java.security.DigestInputStream."
+          }
+        },
+        {
+          "locations": [
+            {
+              "physicalLocation": {
+                "fileLocation": {
+                  "uri": "org.bitcoinj.core.CheckpointManager.java",
+                  "externalLibrary": true,
+                  "PossibleExternalLibrary": true
+                },
+                "region": {
+                  "startLine": 144
+                }
+              },
+              "fullyQualifiedLogicalName": "org::bitcoinj::core::CheckpointManager::readBinary"
+            }
+          ],
+          "ruleId": "TypestateError",
+          "message": {
+            "text": "Unexpected call to method <java.security.MessageDigest: byte[] digest()> on object of type java.security.MessageDigest. Expect a call to one of the following methods java.security.MessageDigest: void update(byte[],int,int),java.security.MessageDigest: void update(java.nio.ByteBuffer),java.security.MessageDigest: byte[] digest(byte[]),java.security.MessageDigest: void update(byte[]),java.security.MessageDigest: void update(byte).",
+            "richText": "TypestateError violating CrySL rule for java.security.MessageDigest."
+          }
+        },
+        {
+          "locations": [
+            {
+              "physicalLocation": {
+                "fileLocation": {
+                  "uri": "org.bitcoinj.core.CheckpointManager.java",
+                  "externalLibrary": true,
+                  "PossibleExternalLibrary": true
+                },
+                "region": {
+                  "startLine": 156
+                }
+              },
+              "fullyQualifiedLogicalName": "org::bitcoinj::core::CheckpointManager::readTextual"
+            }
+          ],
+          "ruleId": "IncompleteOperationError-3",
+          "message": {
+            "text": "Operation on object of type java.security.MessageDigest object not completed. Expected call to digest, update.",
+            "richText": "IncompleteOperationError violating CrySL rule for java.security.MessageDigest."
+          }
+        },
+        {
+          "locations": [
+            {
+              "physicalLocation": {
+                "fileLocation": {
+                  "uri": "com.lightning.walletapp.ln.Tools$.java",
+                  "externalLibrary": true,
+                  "PossibleExternalLibrary": true
+                },
+                "region": {
+                  "startLine": -1
+                }
+              },
+              "fullyQualifiedLogicalName": "com::lightning::walletapp::ln::Tools$::<clinit>"
+            }
+          ],
+          "ruleId": "IncompleteOperationError-4",
+          "message": {
+            "text": "Operation on object of type com.lightning.walletapp.ln.crypto.RandomGenerator object not completed. Expected call to getInstanceStrong, java.security.SecureRandom: void init(byte[]), java.security.SecureRandom: void init(), getInstance.",
+            "richText": "IncompleteOperationError violating CrySL rule for java.security.SecureRandom."
+          }
+        },
+        {
+          "locations": [
+            {
+              "physicalLocation": {
+                "fileLocation": {
+                  "uri": "okhttp3.OkHttpClient.java",
+                  "PossibleExternalLibrary": true
+                },
+                "region": {
+                  "startLine": 298
+                }
+              },
+              "fullyQualifiedLogicalName": "okhttp3::OkHttpClient::systemDefaultSslSocketFactory"
+            }
+          ],
+          "ruleId": "ConstraintError",
+          "message": {
+            "text": "First parameter (with value \"TLS\") should be any of {TLSv1.2, TLSv1.3}.",
+            "richText": "ConstraintError violating CrySL rule for javax.net.ssl.SSLContext."
+          }
+        },
+        {
+          "locations": [
+            {
+              "physicalLocation": {
+                "fileLocation": {
+                  "uri": "okhttp3.OkHttpClient.java",
+                  "PossibleExternalLibrary": true
+                },
+                "region": {
+                  "startLine": 299
+                }
+              },
+              "fullyQualifiedLogicalName": "okhttp3::OkHttpClient::systemDefaultSslSocketFactory"
+            }
+          ],
+          "ruleId": "RequiredPredicateError",
+          "message": {
+            "text": "Second parameter was not properly generated as generated Trust Managers.",
+            "richText": "RequiredPredicateError violating CrySL rule for javax.net.ssl.SSLContext."
+          }
+        },
+        {
+          "locations": [
+            {
+              "physicalLocation": {
+                "fileLocation": {
+                  "uri": "okhttp3.OkHttpClient.java",
+                  "PossibleExternalLibrary": true
+                },
+                "region": {
+                  "startLine": 299
+                }
+              },
+              "fullyQualifiedLogicalName": "okhttp3::OkHttpClient::systemDefaultSslSocketFactory"
+            }
+          ],
+          "ruleId": "RequiredPredicateError-1",
+          "message": {
+            "text": "First parameter was not properly generated as generated Key Managers.",
+            "richText": "RequiredPredicateError violating CrySL rule for javax.net.ssl.SSLContext."
+          }
+        },
+        {
+          "locations": [
+            {
+              "physicalLocation": {
+                "fileLocation": {
+                  "uri": "okhttp3.OkHttpClient.java",
+                  "PossibleExternalLibrary": true
+                },
+                "region": {
+                  "startLine": 299
+                }
+              },
+              "fullyQualifiedLogicalName": "okhttp3::OkHttpClient::systemDefaultSslSocketFactory"
+            }
+          ],
+          "ruleId": "RequiredPredicateError-2",
+          "message": {
+            "text": "Third parameter was not properly generated as randomized.",
+            "richText": "RequiredPredicateError violating CrySL rule for javax.net.ssl.SSLContext."
+          }
+        },
+        {
+          "locations": [
+            {
+              "physicalLocation": {
+                "fileLocation": {
+                  "uri": "okhttp3.OkHttpClient.java",
+                  "PossibleExternalLibrary": true
+                },
+                "region": {
+                  "startLine": 284
+                }
+              },
+              "fullyQualifiedLogicalName": "okhttp3::OkHttpClient::systemDefaultTrustManager"
+            }
+          ],
+          "ruleId": "RequiredPredicateError-3",
+          "message": {
+            "text": "First parameter was not properly generated as generated Key Store.",
+            "richText": "RequiredPredicateError violating CrySL rule for javax.net.ssl.TrustManagerFactory."
+          }
+        },
+        {
+          "locations": [
+            {
+              "physicalLocation": {
+                "fileLocation": {
+                  "uri": "com.github.kevinsawicki.http.HttpRequest.java",
+                  "externalLibrary": true,
+                  "PossibleExternalLibrary": true
+                },
+                "region": {
+                  "startLine": 290
+                }
+              },
+              "fullyQualifiedLogicalName": "com::github::kevinsawicki::http::HttpRequest::getTrustedFactory"
+            }
+          ],
+          "ruleId": "RequiredPredicateError-4",
+          "message": {
+            "text": "Second parameter was not properly generated as generated Trust Managers.",
+            "richText": "RequiredPredicateError violating CrySL rule for javax.net.ssl.SSLContext."
+          }
+        },
+        {
+          "locations": [
+            {
+              "physicalLocation": {
+                "fileLocation": {
+                  "uri": "com.github.kevinsawicki.http.HttpRequest.java",
+                  "externalLibrary": true,
+                  "PossibleExternalLibrary": true
+                },
+                "region": {
+                  "startLine": 290
+                }
+              },
+              "fullyQualifiedLogicalName": "com::github::kevinsawicki::http::HttpRequest::getTrustedFactory"
+            }
+          ],
+          "ruleId": "RequiredPredicateError-5",
+          "message": {
+            "text": "Third parameter was not properly generated as randomized.",
+            "richText": "RequiredPredicateError violating CrySL rule for javax.net.ssl.SSLContext."
+          }
+        },
+        {
+          "locations": [
+            {
+              "physicalLocation": {
+                "fileLocation": {
+                  "uri": "com.github.kevinsawicki.http.HttpRequest.java",
+                  "externalLibrary": true,
+                  "PossibleExternalLibrary": true
+                },
+                "region": {
+                  "startLine": 289
+                }
+              },
+              "fullyQualifiedLogicalName": "com::github::kevinsawicki::http::HttpRequest::getTrustedFactory"
+            }
+          ],
+          "ruleId": "ConstraintError-1",
+          "message": {
+            "text": "First parameter (with value \"TLS\") should be any of {TLSv1.2, TLSv1.3}.",
+            "richText": "ConstraintError violating CrySL rule for javax.net.ssl.SSLContext."
+          }
+        },
+        {
+          "locations": [
+            {
+              "physicalLocation": {
+                "fileLocation": {
+                  "uri": "com.github.kevinsawicki.http.HttpRequest.java",
+                  "externalLibrary": true,
+                  "PossibleExternalLibrary": true
+                },
+                "region": {
+                  "startLine": 290
+                }
+              },
+              "fullyQualifiedLogicalName": "com::github::kevinsawicki::http::HttpRequest::getTrustedFactory"
+            }
+          ],
+          "ruleId": "RequiredPredicateError-6",
+          "message": {
+            "text": "First parameter was not properly generated as generated Key Managers.",
+            "richText": "RequiredPredicateError violating CrySL rule for javax.net.ssl.SSLContext."
+          }
+        },
+        {
+          "locations": [
+            {
+              "physicalLocation": {
+                "fileLocation": {
+                  "uri": "co.infinum.goldfinger.CryptoFactory$Default.java"
+                },
+                "region": {
+                  "startLine": 96
+                }
+              },
+              "fullyQualifiedLogicalName": "co::infinum::goldfinger::CryptoFactory$Default::createCipher"
+            }
+          ],
+          "ruleId": "RequiredPredicateError-7",
+          "message": {
+            "text": "First parameter was not properly generated as randomized.",
+            "richText": "RequiredPredicateError violating CrySL rule for javax.crypto.spec.IvParameterSpec."
+          }
+        },
+        {
+          "locations": [
+            {
+              "physicalLocation": {
+                "fileLocation": {
+                  "uri": "co.infinum.goldfinger.CryptoFactory$Default.java"
+                },
+                "region": {
+                  "startLine": 96
+                }
+              },
+              "fullyQualifiedLogicalName": "co::infinum::goldfinger::CryptoFactory$Default::createCipher"
+            }
+          ],
+          "ruleId": "RequiredPredicateError-8",
+          "message": {
+            "text": "Second parameter was not properly generated as generated Key.",
+            "richText": "RequiredPredicateError violating CrySL rule for javax.crypto.Cipher."
+          }
+        },
+        {
+          "locations": [
+            {
+              "physicalLocation": {
+                "fileLocation": {
+                  "uri": "co.infinum.goldfinger.CryptoFactory$Default.java"
+                },
+                "region": {
+                  "startLine": 96
+                }
+              },
+              "fullyQualifiedLogicalName": "co::infinum::goldfinger::CryptoFactory$Default::createCipher"
+            }
+          ],
+          "ruleId": "RequiredPredicateError-9",
+          "message": {
+            "text": "Third parameter was not properly generated as prepared I V.",
+            "richText": "RequiredPredicateError violating CrySL rule for javax.crypto.Cipher."
+          }
+        },
+        {
+          "locations": [
+            {
+              "physicalLocation": {
+                "fileLocation": {
+                  "uri": "co.infinum.goldfinger.CryptoFactory$Default.java"
+                },
+                "region": {
+                  "startLine": 98
+                }
+              },
+              "fullyQualifiedLogicalName": "co::infinum::goldfinger::CryptoFactory$Default::createCipher"
+            }
+          ],
+          "ruleId": "ForbiddenMethodError-1",
+          "message": {
+            "text": "Detected call to forbidden method void init(int,java.security.Key) of class javax.crypto.Cipher. Instead, call method <javax.crypto.Cipher: void init(int,java.security.Key)>..",
+            "richText": "ForbiddenMethodError violating CrySL rule for javax.crypto.Cipher."
+          }
+        },
+        {
+          "locations": [
+            {
+              "physicalLocation": {
+                "fileLocation": {
+                  "uri": "co.infinum.goldfinger.CryptoFactory$Default.java"
+                },
+                "region": {
+                  "startLine": 96
+                }
+              },
+              "fullyQualifiedLogicalName": "co::infinum::goldfinger::CryptoFactory$Default::createCipher"
+            }
+          ],
+          "ruleId": "RequiredPredicateError-10",
+          "message": {
+            "text": "Third parameter was not properly generated as prepared G C M.",
+            "richText": "RequiredPredicateError violating CrySL rule for javax.crypto.Cipher."
+          }
+        },
+        {
+          "locations": [
+            {
+              "physicalLocation": {
+                "fileLocation": {
+                  "uri": "co.infinum.goldfinger.CryptoFactory$Default.java"
+                },
+                "region": {
+                  "startLine": 96
+                }
+              },
+              "fullyQualifiedLogicalName": "co::infinum::goldfinger::CryptoFactory$Default::createCipher"
+            }
+          ],
+          "ruleId": "RequiredPredicateError-11",
+          "message": {
+            "text": "Third parameter was not properly generated as prepared O A E P.",
+            "richText": "RequiredPredicateError violating CrySL rule for javax.crypto.Cipher."
+          }
+        },
+        {
+          "locations": [
+            {
+              "physicalLocation": {
+                "fileLocation": {
+                  "uri": "co.infinum.goldfinger.CryptoFactory$Default.java"
+                },
+                "region": {
+                  "startLine": 61
+                }
+              },
+              "fullyQualifiedLogicalName": "co::infinum::goldfinger::CryptoFactory$Default::<init>"
+            }
+          ],
+          "ruleId": "ConstraintError-2",
+          "message": {
+            "text": "First parameter (with value \"AndroidKeyStore\") should be any of {JCEKS, JKS, DKS, PKCS11, PKCS12}.",
+            "richText": "ConstraintError violating CrySL rule for java.security.KeyStore."
+          }
+        },
+        {
+          "locations": [
+            {
+              "physicalLocation": {
+                "fileLocation": {
+                  "uri": "org.bitcoinj.crypto.PBKDF2SHA512.java"
+                },
+                "region": {
+                  "startLine": 76
+                }
+              },
+              "fullyQualifiedLogicalName": "org::bitcoinj::crypto::PBKDF2SHA512::F"
+            }
+          ],
+          "ruleId": "RequiredPredicateError-12",
+          "message": {
+            "text": "First parameter was not properly generated as prepared Key Material.",
+            "richText": "RequiredPredicateError violating CrySL rule for javax.crypto.spec.SecretKeySpec."
+          }
+        },
+        {
+          "locations": [
+            {
+              "physicalLocation": {
+                "fileLocation": {
+                  "uri": "org.bitcoinj.crypto.PBKDF2SHA512.java"
+                },
+                "region": {
+                  "startLine": 78
+                }
+              },
+              "fullyQualifiedLogicalName": "org::bitcoinj::crypto::PBKDF2SHA512::F"
+            }
+          ],
+          "ruleId": "IncompleteOperationError-5",
+          "message": {
+            "text": "Operation on object of type javax.crypto.Mac object not completed. Expected call to update, doFinal.",
+            "richText": "IncompleteOperationError violating CrySL rule for javax.crypto.Mac."
+          }
+        },
+        {
+          "locations": [
+            {
+              "physicalLocation": {
+                "fileLocation": {
+                  "uri": "org.bitcoinj.crypto.PBKDF2SHA512.java"
+                },
+                "region": {
+                  "startLine": 93
+                }
+              },
+              "fullyQualifiedLogicalName": "org::bitcoinj::crypto::PBKDF2SHA512::F"
+            }
+          ],
+          "ruleId": "TypestateError-1",
+          "message": {
+            "text": "Unexpected call to method <javax.crypto.Mac: byte[] doFinal(byte[])> on object of type javax.crypto.Mac. Expect a call to one of the following methods javax.crypto.Mac: void doFinal(byte[],int),javax.crypto.Mac: void update(byte[]),javax.crypto.Mac: void update(byte),javax.crypto.Mac: byte[] doFinal(),javax.crypto.Mac: void update(byte[],int,int).",
+            "richText": "TypestateError violating CrySL rule for javax.crypto.Mac."
+          }
+        },
+        {
+          "locations": [
+            {
+              "physicalLocation": {
+                "fileLocation": {
+                  "uri": "org.bitcoinj.crypto.PBKDF2SHA512.java"
+                },
+                "region": {
+                  "startLine": 89
+                }
+              },
+              "fullyQualifiedLogicalName": "org::bitcoinj::crypto::PBKDF2SHA512::F"
+            }
+          ],
+          "ruleId": "TypestateError-2",
+          "message": {
+            "text": "Unexpected call to method <javax.crypto.Mac: byte[] doFinal(byte[])> on object of type javax.crypto.Mac. Expect a call to one of the following methods javax.crypto.Mac: void doFinal(byte[],int),javax.crypto.Mac: void update(byte[]),javax.crypto.Mac: void update(byte),javax.crypto.Mac: byte[] doFinal(),javax.crypto.Mac: void update(byte[],int,int).",
+            "richText": "TypestateError violating CrySL rule for javax.crypto.Mac."
+          }
+        },
+        {
+          "locations": [
+            {
+              "physicalLocation": {
+                "fileLocation": {
+                  "uri": "org.bitcoinj.crypto.PBKDF2SHA512.java"
+                },
+                "region": {
+                  "startLine": 91
+                }
+              },
+              "fullyQualifiedLogicalName": "org::bitcoinj::crypto::PBKDF2SHA512::F"
+            }
+          ],
+          "ruleId": "IncompleteOperationError-6",
+          "message": {
+            "text": "Operation on object of type javax.crypto.Mac object not completed. Expected call to update, doFinal.",
+            "richText": "IncompleteOperationError violating CrySL rule for javax.crypto.Mac."
+          }
+        },
+        {
+          "locations": [
+            {
+              "physicalLocation": {
+                "fileLocation": {
+                  "uri": "org.bitcoinj.crypto.PBKDF2SHA512.java"
+                },
+                "region": {
+                  "startLine": 94
+                }
+              },
+              "fullyQualifiedLogicalName": "org::bitcoinj::crypto::PBKDF2SHA512::F"
+            }
+          ],
+          "ruleId": "IncompleteOperationError-7",
+          "message": {
+            "text": "Operation on object of type javax.crypto.Mac object not completed. Expected call to update, doFinal.",
+            "richText": "IncompleteOperationError violating CrySL rule for javax.crypto.Mac."
+          }
+        },
+        {
+          "locations": [
+            {
+              "physicalLocation": {
+                "fileLocation": {
+                  "uri": "com.lightning.walletapp.helper.AES$.java",
+                  "externalLibrary": true,
+                  "PossibleExternalLibrary": true
+                },
+                "region": {
+                  "startLine": 21
+                }
+              },
+              "fullyQualifiedLogicalName": "com::lightning::walletapp::helper::AES$::dec"
+            }
+          ],
+          "ruleId": "TypestateError-3",
+          "message": {
+            "text": "Unexpected call to method doFinal on object of type javax.crypto.Cipher. Expect a call to one of the following methods init,updateAAD.",
+            "richText": "TypestateError violating CrySL rule for javax.crypto.Cipher."
+          }
+        },
+        {
+          "locations": [
+            {
+              "physicalLocation": {
+                "fileLocation": {
+                  "uri": "com.lightning.walletapp.helper.AES$.java",
+                  "externalLibrary": true,
+                  "PossibleExternalLibrary": true
+                },
+                "region": {
+                  "startLine": 22
+                }
+              },
+              "fullyQualifiedLogicalName": "com::lightning::walletapp::helper::AES$::enc"
+            }
+          ],
+          "ruleId": "TypestateError-4",
+          "message": {
+            "text": "Unexpected call to method doFinal on object of type javax.crypto.Cipher. Expect a call to one of the following methods init,updateAAD.",
+            "richText": "TypestateError violating CrySL rule for javax.crypto.Cipher."
+          }
+        },
+        {
+          "locations": [
+            {
+              "physicalLocation": {
+                "fileLocation": {
+                  "uri": "com.lightning.walletapp.helper.AES$.java",
+                  "externalLibrary": true,
+                  "PossibleExternalLibrary": true
+                },
+                "region": {
+                  "startLine": 15
+                }
+              },
+              "fullyQualifiedLogicalName": "com::lightning::walletapp::helper::AES$::cipher"
+            }
+          ],
+          "ruleId": "RequiredPredicateError-13",
+          "message": {
+            "text": "First parameter was not properly generated as randomized.",
+            "richText": "RequiredPredicateError violating CrySL rule for javax.crypto.spec.IvParameterSpec."
+          }
+        },
+        {
+          "locations": [
+            {
+              "physicalLocation": {
+                "fileLocation": {
+                  "uri": "com.lightning.walletapp.helper.AES$.java",
+                  "externalLibrary": true,
+                  "PossibleExternalLibrary": true
+                },
+                "region": {
+                  "startLine": 16
+                }
+              },
+              "fullyQualifiedLogicalName": "com::lightning::walletapp::helper::AES$::cipher"
+            }
+          ],
+          "ruleId": "RequiredPredicateError-14",
+          "message": {
+            "text": "First parameter was not properly generated as prepared Key Material.",
+            "richText": "RequiredPredicateError violating CrySL rule for javax.crypto.spec.SecretKeySpec."
+          }
+        },
+        {
+          "locations": [
+            {
+              "physicalLocation": {
+                "fileLocation": {
+                  "uri": "com.lightning.walletapp.helper.AES$.java",
+                  "externalLibrary": true,
+                  "PossibleExternalLibrary": true
+                },
+                "region": {
+                  "startLine": 16
+                }
+              },
+              "fullyQualifiedLogicalName": "com::lightning::walletapp::helper::AES$::cipher"
+            }
+          ],
+          "ruleId": "RequiredPredicateError-15",
+          "message": {
+            "text": "Second parameter was not properly generated as generated Key.",
+            "richText": "RequiredPredicateError violating CrySL rule for javax.crypto.Cipher."
+          }
+        },
+        {
+          "locations": [
+            {
+              "physicalLocation": {
+                "fileLocation": {
+                  "uri": "com.google.common.hash.MessageDigestHashFunction$MessageDigestHasher.java",
+                  "externalLibrary": true,
+                  "PossibleExternalLibrary": true
+                },
+                "region": {
+                  "startLine": 160
+                }
+              },
+              "fullyQualifiedLogicalName": "com::google::common::hash::MessageDigestHashFunction$MessageDigestHasher::hash"
+            }
+          ],
+          "ruleId": "TypestateError-5",
+          "message": {
+            "text": "Unexpected call to method <java.security.MessageDigest: byte[] digest()> on object of type java.security.MessageDigest. Expect a call to one of the following methods java.security.MessageDigest: void update(byte[],int,int),java.security.MessageDigest: void update(java.nio.ByteBuffer),java.security.MessageDigest: byte[] digest(byte[]),java.security.MessageDigest: void update(byte[]),java.security.MessageDigest: void update(byte).",
+            "richText": "TypestateError violating CrySL rule for java.security.MessageDigest."
+          }
+        },
+        {
+          "locations": [
+            {
+              "physicalLocation": {
+                "fileLocation": {
+                  "uri": "com.google.common.hash.MessageDigestHashFunction$MessageDigestHasher.java",
+                  "externalLibrary": true,
+                  "PossibleExternalLibrary": true
+                },
+                "region": {
+                  "startLine": 159
+                }
+              },
+              "fullyQualifiedLogicalName": "com::google::common::hash::MessageDigestHashFunction$MessageDigestHasher::hash"
+            }
+          ],
+          "ruleId": "TypestateError-6",
+          "message": {
+            "text": "Unexpected call to method <java.security.MessageDigest: byte[] digest()> on object of type java.security.MessageDigest. Expect a call to one of the following methods java.security.MessageDigest: void update(byte[],int,int),java.security.MessageDigest: void update(java.nio.ByteBuffer),java.security.MessageDigest: byte[] digest(byte[]),java.security.MessageDigest: void update(byte[]),java.security.MessageDigest: void update(byte).",
+            "richText": "TypestateError violating CrySL rule for java.security.MessageDigest."
+          }
+        },
+        {
+          "locations": [
+            {
+              "physicalLocation": {
+                "fileLocation": {
+                  "uri": "co.infinum.goldfinger.Goldfinger$Builder.java"
+                },
+                "region": {
+                  "startLine": 95
+                }
+              },
+              "fullyQualifiedLogicalName": "co::infinum::goldfinger::Goldfinger$Builder::buildMarshmallowInstance"
+            }
+          ],
+          "ruleId": "IncompleteOperationError-8",
+          "message": {
+            "text": "Operation on object of type java.security.KeyStore object not completed. Expected call to load.",
+            "richText": "IncompleteOperationError violating CrySL rule for java.security.KeyStore."
+          }
+        },
+        {
+          "locations": [
+            {
+              "physicalLocation": {
+                "fileLocation": {
+                  "uri": "co.infinum.goldfinger.Goldfinger$Builder.java"
+                },
+                "region": {
+                  "startLine": 95
+                }
+              },
+              "fullyQualifiedLogicalName": "co::infinum::goldfinger::Goldfinger$Builder::buildMarshmallowInstance"
+            }
+          ],
+          "ruleId": "IncompleteOperationError-9",
+          "message": {
+            "text": "Operation on object of type javax.crypto.KeyGenerator object not completed. Expected call to generateKey, init.",
+            "richText": "IncompleteOperationError violating CrySL rule for javax.crypto.KeyGenerator."
+          }
+        },
+        {
+          "locations": [
+            {
+              "physicalLocation": {
+                "fileLocation": {
+                  "uri": "org.bitcoinj.script.Script.java"
+                },
+                "region": {
+                  "startLine": 1273
+                }
+              },
+              "fullyQualifiedLogicalName": "org::bitcoinj::script::Script::executeScript"
+            }
+          ],
+          "ruleId": "ConstraintError-3",
+          "message": {
+            "text": "First parameter (with value \"SHA-1\") should be any of {SHA-256, SHA-384, SHA-512}.",
+            "richText": "ConstraintError violating CrySL rule for java.security.MessageDigest."
+          }
+        },
+        {
+          "locations": [
+            {
+              "physicalLocation": {
+                "fileLocation": {
+                  "uri": "okio.ByteString.java",
+                  "PossibleExternalLibrary": true
+                },
+                "region": {
+                  "startLine": 156
+                }
+              },
+              "fullyQualifiedLogicalName": "okio::ByteString::digest"
+            }
+          ],
+          "ruleId": "ConstraintError-4",
+          "message": {
+            "text": "First parameter (with value \"SHA-1\") should be any of {SHA-256, SHA-384, SHA-512}.",
+            "richText": "ConstraintError violating CrySL rule for java.security.MessageDigest."
+          }
+        }
+      ],
+      "tool": {
+        "name": "CryptoAnalysis",
+        "semanticVersion": null,
+        "language": "en-US",
+        "version": null
+      }
+    }
+  ]
+}

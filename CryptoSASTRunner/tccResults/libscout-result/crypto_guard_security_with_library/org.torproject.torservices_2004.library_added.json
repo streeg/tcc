@@ -1,31 +1,22 @@
 {
-  "projectName": "CryptoGuard",
-  "ProjectVersion": "04.05.03",
-  "Target": {
-    "RawCommand": "-in apk -s /home/lables/CryptoAnalysis/apks/Security/org.torproject.torservices_2004.apk -m D",
-    "FullPath": "org.torproject.torservices_2004.apk/",
-    "Type": "APK",
-    "TargetSources": [
-      "/home/lables/CryptoAnalysis/apks/Security/org.torproject.torservices_2004.apk"
-    ],
-    "_PropertiesFilePath": "gradle.properties",
-    "_ComputerOS": "Linux_4.15.0-163-generic",
-    "_JVMVersion": "1.8.0_312-8u312-b07-0ubuntu1~18.04-b07",
-    "_ProjectName": "org"
-  },
-  "Issues": [
+  "sarifVersion": "2.0.0",
+  "runs": [
     {
-      "Message": "Found: \"SHA-1\"",
-      "Description": "Found broken hash functions",
-      "RuleNumber": 2,
-      "RuleDesc": "Found broken hash functions",
-      "CWEId": 759,
-      "Severity": "1",
-      "_FullPath": "org.torproject.torservices_2004.apk.net.freehaven.tor.control.PasswordDigest.class",
-      "_Id": "0"
+      "files": {
+      },
+      "resources": {
+        "rules": {
+        }
+      },
+      "results": [
+
+      ],
+      "tool": {
+        "name": "CryptoAnalysis",
+        "semanticVersion": null,
+        "language": "en-US",
+        "version": null
+      }
     }
-  ],
-  "_SchemaVersion": 3,
-  "_DateTime": "2022-01-14_23:40:35",
-  "_UUID": "a7f8bae0-a220-4237-9cca-71ae38b5bbbc"
+  ]
 }

@@ -1,62 +1,131 @@
 {
-  "projectName": "CryptoGuard",
-  "ProjectVersion": "04.05.03",
-  "Target": {
-    "RawCommand": "-in apk -s /home/lables/CryptoAnalysis/apks/Security/eu.faircode.netguard_2021111301.apk -m D",
-    "FullPath": "eu.faircode.netguard_2021111301.apk/",
-    "Type": "APK",
-    "TargetSources": [
-      "/home/lables/CryptoAnalysis/apks/Security/eu.faircode.netguard_2021111301.apk"
-    ],
-    "_PropertiesFilePath": "gradle.properties",
-    "_ComputerOS": "Linux_4.15.0-163-generic",
-    "_JVMVersion": "1.8.0_312-8u312-b07-0ubuntu1~18.04-b07",
-    "_ProjectName": "eu"
-  },
-  "Issues": [
+  "sarifVersion": "2.0.0",
+  "runs": [
     {
-      "Message": "Found: Untrused PRNG (java.util.Random)",
-      "Description": "Used untrusted PRNG",
-      "RuleNumber": 13,
-      "RuleDesc": "Used untrusted PRNG",
-      "CWEId": 338,
-      "Severity": "1",
-      "_FullPath": "eu.faircode.netguard_2021111301.apk.androidx.activity.result.i.class",
-      "_Id": "0",
-      "PossibleExternalLibrary": true
-    },
-    {
-      "Message": "Found: Untrused PRNG (java.util.Random)",
-      "Description": "Used untrusted PRNG",
-      "RuleNumber": 13,
-      "RuleDesc": "Used untrusted PRNG",
-      "CWEId": 338,
-      "Severity": "1",
-      "_FullPath": "eu.faircode.netguard_2021111301.apk.Y.l.class",
-      "_Id": "1"
-    },
-    {
-      "Message": "Found: \"SHA1\"",
-      "Description": "Found broken hash functions",
-      "RuleNumber": 2,
-      "RuleDesc": "Found broken hash functions",
-      "CWEId": 759,
-      "Severity": "1",
-      "_FullPath": "eu.faircode.netguard_2021111301.apk.eu.faircode.netguard.Util.class",
-      "_Id": "2"
-    },
-    {
-      "Message": "Found: \"MD5\"",
-      "Description": "Found broken hash functions",
-      "RuleNumber": 2,
-      "RuleDesc": "Found broken hash functions",
-      "CWEId": 759,
-      "Severity": "1",
-      "_FullPath": "eu.faircode.netguard_2021111301.apk.eu.faircode.netguard.Util.class",
-      "_Id": "3"
+      "files": {
+        "eu/faircode/netguard/Util.java": {
+          "mimeType": "text/java"
+        },
+        "P/r.java": {
+          "mimeType": "text/java"
+        }
+      },
+      "resources": {
+        "rules": {
+          "TypestateError": {
+            "id": "TypestateError",
+            "fullDescription": {
+              "text": "The ORDER block of CrySL is violated, i.e., the expected method sequence call to be made is incorrect. For example, a Signature object expects a call to initSign(key) prior to update(data)."
+            }
+          },
+          "ConstraintError": {
+            "id": "ConstraintError",
+            "fullDescription": {
+              "text": "A constraint of a CrySL rule is violated, e.g., a key is generated with the wrong key size."
+            }
+          },
+          "IncompleteOperationError": {
+            "id": "IncompleteOperationError",
+            "fullDescription": {
+              "text": "The usage of an object may be incomplete: For example a Cipherobject may be initialized but never used for en- or decryption, this may render the code dead. This error heavily depends on the computed call graph (CHA by default)"
+            }
+          },
+          "IncompleteOperationError-1": {
+            "id": "IncompleteOperationError",
+            "fullDescription": {
+              "text": "The usage of an object may be incomplete: For example a Cipherobject may be initialized but never used for en- or decryption, this may render the code dead. This error heavily depends on the computed call graph (CHA by default)"
+            }
+          }
+        }
+      },
+      "results": [
+        {
+          "locations": [
+            {
+              "physicalLocation": {
+                "fileLocation": {
+                  "uri": "eu.faircode.netguard.Util.java"
+                },
+                "region": {
+                  "startLine": 5
+                }
+              },
+              "fullyQualifiedLogicalName": "eu::faircode::netguard::Util::getFingerprint"
+            }
+          ],
+          "ruleId": "ConstraintError",
+          "message": {
+            "text": "First parameter (with value \"SHA1\") should be any of {SHA-256, SHA-384, SHA-512}.",
+            "richText": "ConstraintError violating CrySL rule for java.security.MessageDigest."
+          }
+        },
+        {
+          "locations": [
+            {
+              "physicalLocation": {
+                "fileLocation": {
+                  "uri": "P.r.java"
+                },
+                "region": {
+                  "startLine": 8
+                }
+              },
+              "fullyQualifiedLogicalName": "P::r::a"
+            }
+          ],
+          "ruleId": "TypestateError",
+          "message": {
+            "text": "Unexpected call to method <java.security.MessageDigest: byte[] digest()> on object of type java.security.MessageDigest. Expect a call to one of the following methods java.security.MessageDigest: void update(byte[],int,int),java.security.MessageDigest: void update(java.nio.ByteBuffer),java.security.MessageDigest: byte[] digest(byte[]),java.security.MessageDigest: void update(byte),java.security.MessageDigest: void update(byte[]).",
+            "richText": "TypestateError violating CrySL rule for java.security.MessageDigest."
+          }
+        },
+        {
+          "locations": [
+            {
+              "physicalLocation": {
+                "fileLocation": {
+                  "uri": "P.r.java"
+                },
+                "region": {
+                  "startLine": 9
+                }
+              },
+              "fullyQualifiedLogicalName": "P::r::a"
+            }
+          ],
+          "ruleId": "IncompleteOperationError",
+          "message": {
+            "text": "Operation on object of type java.security.MessageDigest object not completed. Expected call to digest, update.",
+            "richText": "IncompleteOperationError violating CrySL rule for java.security.MessageDigest."
+          }
+        },
+        {
+          "locations": [
+            {
+              "physicalLocation": {
+                "fileLocation": {
+                  "uri": "P.r.java"
+                },
+                "region": {
+                  "startLine": 2
+                }
+              },
+              "fullyQualifiedLogicalName": "P::r::a"
+            }
+          ],
+          "ruleId": "IncompleteOperationError-1",
+          "message": {
+            "text": "Operation on object of type java.security.MessageDigest object not completed. Expected call to digest, update.",
+            "richText": "IncompleteOperationError violating CrySL rule for java.security.MessageDigest."
+          }
+        }
+      ],
+      "tool": {
+        "name": "CryptoAnalysis",
+        "semanticVersion": null,
+        "language": "en-US",
+        "version": null
+      }
     }
-  ],
-  "_SchemaVersion": 3,
-  "_DateTime": "2022-01-14_23:27:28",
-  "_UUID": "8e489d34-0222-4d58-b973-b6ebcbd3adf2"
+  ]
 }

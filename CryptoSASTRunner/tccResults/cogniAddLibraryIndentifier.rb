@@ -24,17 +24,18 @@ lib_files.each do |file|
   index = 0
   results.each { |x| x.gsub!('/', '.') }
   results.each do |result|
-    scout_file_data_item = scout_file_data[0]
-    result = result.gsub(/^([a-z].*).apk./, '')
-    splited_result = result.gsub('.', ' ').split
-    begin
-      splited_lib_data = scout_file_data_item[index]['LibraryIndentified'].gsub('.', ' ').split
-      if splited_result.any? { |splited| splited_lib_data.include?(splited) }
-        lib_file_data['runs'][0]['results'][index]['locations'][0]['physicalLocation']['fileLocation']['PossibleExternalLibrary'] =
-          true
+    scout_file_data_items = scout_file_data[0]
+    scout_file_data_items.each do |scout_file_data_item|
+      result = result.gsub(/^([a-z].*).apk./, '')
+      splited_result = result.gsub('.', ' ').split
+      begin
+        splited_lib_data = scout_file_data_item['LibraryIndentified'].gsub('.', ' ').split
+        if splited_result.any? { |splited| splited_lib_data.include?(splited) }
+          lib_file_data['runs'][0]['results'][index]['locations'][0]['physicalLocation']['fileLocation']['PossibleExternalLibrary'] =
+            true
+        end
+      rescue StandardError => e
       end
-    rescue StandardError => e
-      p scout_file_data_item[index]
     end
     index += 1
   end

@@ -1,123 +1,186 @@
 {
-  "projectName": "CryptoGuard",
-  "ProjectVersion": "04.05.03",
-  "Target": {
-    "RawCommand": "-in apk -s /home/lables/CryptoAnalysis/apks/Security/com.daemon.ssh_12.apk -m D",
-    "FullPath": "com.daemon.ssh_12.apk/",
-    "Type": "APK",
-    "TargetSources": [
-      "/home/lables/CryptoAnalysis/apks/Security/com.daemon.ssh_12.apk"
-    ],
-    "_PropertiesFilePath": "gradle.properties",
-    "_ComputerOS": "Linux_4.15.0-163-generic",
-    "_JVMVersion": "1.8.0_312-8u312-b07-0ubuntu1~18.04-b07",
-    "_ProjectName": "com"
-  },
-  "Issues": [
+  "sarifVersion": "2.0.0",
+  "runs": [
     {
-      "Message": "Found: Untrused PRNG (java.util.Random)",
-      "Description": "Used untrusted PRNG",
-      "RuleNumber": 13,
-      "RuleDesc": "Used untrusted PRNG",
-      "CWEId": 338,
-      "Severity": "1",
-      "_FullPath": "com.daemon.ssh_12.apk.androidx.transition.Explode.class",
-      "_Id": "0",
-      "externalLibrary": true,
-      "PossibleExternalLibrary": true
-    },
-    {
-      "Message": "Found: \"MD5\"",
-      "Description": "Found broken hash functions",
-      "RuleNumber": 2,
-      "RuleDesc": "Found broken hash functions",
-      "CWEId": 759,
-      "Severity": "1",
-      "_FullPath": "com.daemon.ssh_12.apk.org.apache.commons.codec.digest.MessageDigestAlgorithms.class",
-      "_Id": "1"
-    },
-    {
-      "Message": "Found: \"SHA-1\"",
-      "Description": "Found broken hash functions",
-      "RuleNumber": 2,
-      "RuleDesc": "Found broken hash functions",
-      "CWEId": 759,
-      "Severity": "1",
-      "_FullPath": "com.daemon.ssh_12.apk.org.apache.commons.codec.digest.MessageDigestAlgorithms.class",
-      "_Id": "2"
-    },
-    {
-      "Message": "Found: \"MD2\"",
-      "Description": "Found broken hash functions",
-      "RuleNumber": 2,
-      "RuleDesc": "Found broken hash functions",
-      "CWEId": 759,
-      "Severity": "1",
-      "_FullPath": "com.daemon.ssh_12.apk.org.apache.commons.codec.digest.MessageDigestAlgorithms.class",
-      "_Id": "3"
-    },
-    {
-      "Message": "Found: \"MD2\"",
-      "Description": "Found broken hash functions",
-      "RuleNumber": 2,
-      "RuleDesc": "Found broken hash functions",
-      "CWEId": 759,
-      "Severity": "1",
-      "_FullPath": "com.daemon.ssh_12.apk.org.apache.commons.codec.digest.DigestUtils.class",
-      "_Id": "4"
-    },
-    {
-      "Message": "Found: \"SHA-1\"",
-      "Description": "Found broken hash functions",
-      "RuleNumber": 2,
-      "RuleDesc": "Found broken hash functions",
-      "CWEId": 759,
-      "Severity": "1",
-      "_FullPath": "com.daemon.ssh_12.apk.org.apache.commons.codec.digest.DigestUtils.class",
-      "_Id": "5"
-    },
-    {
-      "Message": "Found: \"MD5\"",
-      "Description": "Found broken hash functions",
-      "RuleNumber": 2,
-      "RuleDesc": "Found broken hash functions",
-      "CWEId": 759,
-      "Severity": "1",
-      "_FullPath": "com.daemon.ssh_12.apk.org.apache.commons.codec.digest.DigestUtils.class",
-      "_Id": "6"
-    },
-    {
-      "Message": "Found: \"MD5\"",
-      "Description": "Found broken hash functions",
-      "RuleNumber": 2,
-      "RuleDesc": "Found broken hash functions",
-      "CWEId": 759,
-      "Severity": "1",
-      "_FullPath": "com.daemon.ssh_12.apk.c.b.c.b.class",
-      "_Id": "7"
-    },
-    {
-      "Message": "Found: \"http://\"",
-      "Description": "Used HTTP Protocol",
-      "RuleNumber": 7,
-      "RuleDesc": "Used HTTP Protocol",
-      "CWEId": 650,
-      "Severity": "1",
-      "_FullPath": "com.daemon.ssh_12.apk.org.apache.log4j.lf5.viewer.LogBrokerMonitor.class",
-      "_Id": "8"
-    },
-    {
-      "Message": "Found: \"http://\"",
-      "Description": "Used HTTP Protocol",
-      "RuleNumber": 7,
-      "RuleDesc": "Used HTTP Protocol",
-      "CWEId": 650,
-      "Severity": "1",
-      "_FullPath": "com.daemon.ssh_12.apk.org.apache.log4j.helpers.SyslogWriter.class",
-      "_Id": "9"
+      "files": {
+        "c/b/c/b.java": {
+          "mimeType": "text/java"
+        },
+        "c/b/c/e.java": {
+          "mimeType": "text/java"
+        },
+        "org/apache/sshd/common/util/buffer/Buffer.java": {
+          "mimeType": "text/java"
+        }
+      },
+      "resources": {
+        "rules": {
+          "RequiredPredicateError": {
+            "id": "RequiredPredicateError",
+            "fullDescription": {
+              "text": "An object A expects an object B to have been used correctly (CrySL blocks REQUIRES and ENSURES). For example a Cipher object requires a SecretKey object to be correctly and securely generated."
+            }
+          },
+          "RequiredPredicateError-4": {
+            "id": "RequiredPredicateError",
+            "fullDescription": {
+              "text": "An object A expects an object B to have been used correctly (CrySL blocks REQUIRES and ENSURES). For example a Cipher object requires a SecretKey object to be correctly and securely generated."
+            }
+          },
+          "RequiredPredicateError-3": {
+            "id": "RequiredPredicateError",
+            "fullDescription": {
+              "text": "An object A expects an object B to have been used correctly (CrySL blocks REQUIRES and ENSURES). For example a Cipher object requires a SecretKey object to be correctly and securely generated."
+            }
+          },
+          "ConstraintError": {
+            "id": "ConstraintError",
+            "fullDescription": {
+              "text": "A constraint of a CrySL rule is violated, e.g., a key is generated with the wrong key size."
+            }
+          },
+          "RequiredPredicateError-2": {
+            "id": "RequiredPredicateError",
+            "fullDescription": {
+              "text": "An object A expects an object B to have been used correctly (CrySL blocks REQUIRES and ENSURES). For example a Cipher object requires a SecretKey object to be correctly and securely generated."
+            }
+          },
+          "RequiredPredicateError-1": {
+            "id": "RequiredPredicateError",
+            "fullDescription": {
+              "text": "An object A expects an object B to have been used correctly (CrySL blocks REQUIRES and ENSURES). For example a Cipher object requires a SecretKey object to be correctly and securely generated."
+            }
+          }
+        }
+      },
+      "results": [
+        {
+          "locations": [
+            {
+              "physicalLocation": {
+                "fileLocation": {
+                  "uri": "c.b.c.b.java"
+                },
+                "region": {
+                  "startLine": -1
+                }
+              },
+              "fullyQualifiedLogicalName": "c::b::c::b::b"
+            }
+          ],
+          "ruleId": "ConstraintError",
+          "message": {
+            "text": "First parameter (with value \"MD5\") should be any of {SHA-256, SHA-384, SHA-512}.",
+            "richText": "ConstraintError violating CrySL rule for java.security.MessageDigest."
+          }
+        },
+        {
+          "locations": [
+            {
+              "physicalLocation": {
+                "fileLocation": {
+                  "uri": "c.b.c.e.java"
+                },
+                "region": {
+                  "startLine": -1
+                }
+              },
+              "fullyQualifiedLogicalName": "c::b::c::e::d"
+            }
+          ],
+          "ruleId": "RequiredPredicateError",
+          "message": {
+            "text": "First parameter was not properly generated as specced Key.",
+            "richText": "RequiredPredicateError violating CrySL rule for java.security.KeyFactory."
+          }
+        },
+        {
+          "locations": [
+            {
+              "physicalLocation": {
+                "fileLocation": {
+                  "uri": "org.apache.sshd.common.util.buffer.Buffer.java"
+                },
+                "region": {
+                  "startLine": -1
+                }
+              },
+              "fullyQualifiedLogicalName": "org::apache::sshd::common::util::buffer::Buffer::extractEC"
+            }
+          ],
+          "ruleId": "RequiredPredicateError-1",
+          "message": {
+            "text": "First parameter was not properly generated as generated Pubkey.",
+            "richText": "RequiredPredicateError violating CrySL rule for java.security.KeyPair."
+          }
+        },
+        {
+          "locations": [
+            {
+              "physicalLocation": {
+                "fileLocation": {
+                  "uri": "org.apache.sshd.common.util.buffer.Buffer.java"
+                },
+                "region": {
+                  "startLine": -1
+                }
+              },
+              "fullyQualifiedLogicalName": "org::apache::sshd::common::util::buffer::Buffer::extractEC"
+            }
+          ],
+          "ruleId": "RequiredPredicateError-2",
+          "message": {
+            "text": "Second parameter was not properly generated as generated Privkey.",
+            "richText": "RequiredPredicateError violating CrySL rule for java.security.KeyPair."
+          }
+        },
+        {
+          "locations": [
+            {
+              "physicalLocation": {
+                "fileLocation": {
+                  "uri": "org.apache.sshd.common.util.buffer.Buffer.java"
+                },
+                "region": {
+                  "startLine": -1
+                }
+              },
+              "fullyQualifiedLogicalName": "org::apache::sshd::common::util::buffer::Buffer::getKeyPair"
+            }
+          ],
+          "ruleId": "RequiredPredicateError-3",
+          "message": {
+            "text": "Second parameter was not properly generated as generated Privkey.",
+            "richText": "RequiredPredicateError violating CrySL rule for java.security.KeyPair."
+          }
+        },
+        {
+          "locations": [
+            {
+              "physicalLocation": {
+                "fileLocation": {
+                  "uri": "org.apache.sshd.common.util.buffer.Buffer.java"
+                },
+                "region": {
+                  "startLine": -1
+                }
+              },
+              "fullyQualifiedLogicalName": "org::apache::sshd::common::util::buffer::Buffer::getKeyPair"
+            }
+          ],
+          "ruleId": "RequiredPredicateError-4",
+          "message": {
+            "text": "First parameter was not properly generated as generated Pubkey.",
+            "richText": "RequiredPredicateError violating CrySL rule for java.security.KeyPair."
+          }
+        }
+      ],
+      "tool": {
+        "name": "CryptoAnalysis",
+        "semanticVersion": null,
+        "language": "en-US",
+        "version": null
+      }
     }
-  ],
-  "_SchemaVersion": 3,
-  "_DateTime": "2022-01-14_23:52:27",
-  "_UUID": "1bf3e92b-ef9d-4de9-95b0-8f847e084c94"
+  ]
 }
