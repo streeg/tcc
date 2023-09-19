@@ -1,7 +1,2 @@
-This is makeindex, version 2.15 [TeX Live 2021] (kpathsea + Thai support).
-Scanning style file ./monografia.ist.............................done (29 attributes redefined, 0 ignored).
-Scanning input file monografia.acn....done (7 entries accepted, 0 rejected).
-Sorting entries....done (17 comparisons).
-Generating output file monografia.acr....done (9 lines written, 0 warnings).
-Output written in monografia.acr.
-Transcript written in monografia.alg.
+Warning: File 'monografia.acn' is empty.
+Have you used any entries defined in glossary 'acronym'?
