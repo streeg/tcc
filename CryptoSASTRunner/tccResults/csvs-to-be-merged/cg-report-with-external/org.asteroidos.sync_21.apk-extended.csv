@@ -1,0 +1,13 @@
+Message,Description,RuleNumber,RuleDesc,CWEId,Severity,ClassName,MethodName,ExternalLibrary
+Found: Untrused PRNG (java.util.Random),Used untrusted PRNG,13,Used untrusted PRNG,338,1,androidx.transition.Explode,calculateOut,true
+Found: Untrused PRNG (java.util.Random),Used untrusted PRNG,13,Used untrusted PRNG,338,1,androidx.activity.result.ActivityResultRegistry,init,true
+Found: Untrused PRNG (java.util.Random),Used untrusted PRNG,13,Used untrusted PRNG,338,1,org.osmdroid.tileprovider.tilesource.BitmapTileSourceBase,init,false
+"Found: ""MD5""",Found broken hash functions,2,Found broken hash functions,759,1,okhttp3.internal.Util,md5Hex,true
+"Found: ""SHA-1""",Found broken hash functions,2,Found broken hash functions,759,1,okhttp3.internal.Util,shaBase64,true
+"Found: ""MD5""",Found broken hash functions,2,Found broken hash functions,759,1,okio.Buffer,toString,true
+"Found: ""MD5""",Found broken hash functions,2,Found broken hash functions,759,1,okio.ByteString,md5,true
+"Found: ""SHA-1""",Found broken hash functions,2,Found broken hash functions,759,1,okhttp3.internal.Util,sha1,true
+"Found: ""http://localhost/""",Used HTTP Protocol,7,Used HTTP Protocol,650,1,retrofit2.Response,error,true
+"Found: ""http://localhost/""",Used HTTP Protocol,7,Used HTTP Protocol,650,1,retrofit2.Response,success,true
+"Found: ""http://localhost/""",Used HTTP Protocol,7,Used HTTP Protocol,650,1,retrofit2.Response,success,true
+"Found: ""http://api.openweathermap.org/data/2.5/""",Used HTTP Protocol,7,Used HTTP Protocol,650,1,github.vatsal.easyweather.retrofit.api.ApiClient,ApiClient,false

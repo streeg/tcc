@@ -1,0 +1,31 @@
+{
+  "projectName": "CryptoGuard",
+  "ProjectVersion": "04.05.03",
+  "Target": {
+    "RawCommand": "-in apk -s /home/lables/CryptoAnalysis/Finances2/fr.corenting.convertisseureurofranc_18.apk -m D",
+    "FullPath": "fr.corenting.convertisseureurofranc_18.apk/",
+    "Type": "APK",
+    "TargetSources": [
+      "/home/lables/CryptoAnalysis/Finances2/fr.corenting.convertisseureurofranc_18.apk"
+    ],
+    "_PropertiesFilePath": "gradle.properties",
+    "_ComputerOS": "Linux_4.15.0-162-generic",
+    "_JVMVersion": "1.8.0_292-8u292-b10-0ubuntu1~18.04-b10",
+    "_ProjectName": "fr"
+  },
+  "Issues": [
+    {
+      "Message": "Found: Untrused PRNG (java.util.Random)",
+      "Description": "Used untrusted PRNG",
+      "RuleNumber": 13,
+      "RuleDesc": "Used untrusted PRNG",
+      "CWEId": 338,
+      "Severity": "1",
+      "_FullPath": "fr.corenting.convertisseureurofranc_18.apk.d.q.b$a.class",
+      "_Id": "0"
+    }
+  ],
+  "_SchemaVersion": 3,
+  "_DateTime": "2021-12-01_12:19:42",
+  "_UUID": "87167f79-edaa-4048-8099-e84f9554182f"
+}

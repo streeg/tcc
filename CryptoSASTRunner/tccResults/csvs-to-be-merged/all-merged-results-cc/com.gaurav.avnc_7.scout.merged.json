@@ -1,0 +1,2181 @@
+{
+  "sarifVersion": "2.0.0",
+  "runs": [
+    {
+      "files": {
+        "com/trilead/ssh2/transport/KexManager.java": {
+          "mimeType": "text/java"
+        },
+        "com/gaurav/avnc/viewmodel/HostKeyVerifier.java": {
+          "mimeType": "text/java"
+        },
+        "com/trilead/ssh2/signature/ECDSASHA2Verify.java": {
+          "mimeType": "text/java"
+        },
+        "com/trilead/ssh2/channel/AuthAgentForwardThread.java": {
+          "mimeType": "text/java"
+        },
+        "com/trilead/ssh2/signature/RSASHA256Verify.java": {
+          "mimeType": "text/java"
+        },
+        "com/trilead/ssh2/crypto/cipher/AES.java": {
+          "mimeType": "text/java"
+        },
+        "com/trilead/ssh2/crypto/cipher/AES$CBC.java": {
+          "mimeType": "text/java"
+        },
+        "com/trilead/ssh2/signature/RSASHA512Verify.java": {
+          "mimeType": "text/java"
+        },
+        "com/trilead/ssh2/signature/RSASHA1Verify.java": {
+          "mimeType": "text/java"
+        },
+        "com/trilead/ssh2/crypto/dh/GenericDhExchange.java": {
+          "mimeType": "text/java"
+        },
+        "com/trilead/ssh2/crypto/PEMDecoder.java": {
+          "mimeType": "text/java"
+        },
+        "com/trilead/ssh2/crypto/digest/HMAC.java": {
+          "mimeType": "text/java"
+        },
+        "com/trilead/ssh2/crypto/dh/EcDhExchange.java": {
+          "mimeType": "text/java"
+        },
+        "com/trilead/ssh2/KnownHosts.java": {
+          "mimeType": "text/java"
+        },
+        "com/trilead/ssh2/auth/AuthenticationManager.java": {
+          "mimeType": "text/java"
+        },
+        "com/trilead/ssh2/crypto/dh/DhExchange.java": {
+          "mimeType": "text/java"
+        },
+        "androidx/biometric/CryptoObjectUtils.java": {
+          "mimeType": "text/java"
+        },
+        "com/trilead/ssh2/signature/DSASHA1Verify.java": {
+          "mimeType": "text/java"
+        }
+      },
+      "resources": {
+        "rules": {
+          "ConstraintError-11": {
+            "id": "ConstraintError",
+            "fullDescription": {
+              "text": "A constraint of a CrySL rule is violated, e.g., a key is generated with the wrong key size."
+            }
+          },
+          "ConstraintError-12": {
+            "id": "ConstraintError",
+            "fullDescription": {
+              "text": "A constraint of a CrySL rule is violated, e.g., a key is generated with the wrong key size."
+            }
+          },
+          "ConstraintError-10": {
+            "id": "ConstraintError",
+            "fullDescription": {
+              "text": "A constraint of a CrySL rule is violated, e.g., a key is generated with the wrong key size."
+            }
+          },
+          "ConstraintError-13": {
+            "id": "ConstraintError",
+            "fullDescription": {
+              "text": "A constraint of a CrySL rule is violated, e.g., a key is generated with the wrong key size."
+            }
+          },
+          "ConstraintError-1": {
+            "id": "ConstraintError",
+            "fullDescription": {
+              "text": "A constraint of a CrySL rule is violated, e.g., a key is generated with the wrong key size."
+            }
+          },
+          "ConstraintError-2": {
+            "id": "ConstraintError",
+            "fullDescription": {
+              "text": "A constraint of a CrySL rule is violated, e.g., a key is generated with the wrong key size."
+            }
+          },
+          "ConstraintError-3": {
+            "id": "ConstraintError",
+            "fullDescription": {
+              "text": "A constraint of a CrySL rule is violated, e.g., a key is generated with the wrong key size."
+            }
+          },
+          "ConstraintError-4": {
+            "id": "ConstraintError",
+            "fullDescription": {
+              "text": "A constraint of a CrySL rule is violated, e.g., a key is generated with the wrong key size."
+            }
+          },
+          "ConstraintError-5": {
+            "id": "ConstraintError",
+            "fullDescription": {
+              "text": "A constraint of a CrySL rule is violated, e.g., a key is generated with the wrong key size."
+            }
+          },
+          "ConstraintError-6": {
+            "id": "ConstraintError",
+            "fullDescription": {
+              "text": "A constraint of a CrySL rule is violated, e.g., a key is generated with the wrong key size."
+            }
+          },
+          "RequiredPredicateError-11": {
+            "id": "RequiredPredicateError",
+            "fullDescription": {
+              "text": "An object A expects an object B to have been used correctly (CrySL blocks REQUIRES and ENSURES). For example a Cipher object requires a SecretKey object to be correctly and securely generated."
+            }
+          },
+          "RequiredPredicateError-10": {
+            "id": "RequiredPredicateError",
+            "fullDescription": {
+              "text": "An object A expects an object B to have been used correctly (CrySL blocks REQUIRES and ENSURES). For example a Cipher object requires a SecretKey object to be correctly and securely generated."
+            }
+          },
+          "ConstraintError-7": {
+            "id": "ConstraintError",
+            "fullDescription": {
+              "text": "A constraint of a CrySL rule is violated, e.g., a key is generated with the wrong key size."
+            }
+          },
+          "RequiredPredicateError-13": {
+            "id": "RequiredPredicateError",
+            "fullDescription": {
+              "text": "An object A expects an object B to have been used correctly (CrySL blocks REQUIRES and ENSURES). For example a Cipher object requires a SecretKey object to be correctly and securely generated."
+            }
+          },
+          "ConstraintError-8": {
+            "id": "ConstraintError",
+            "fullDescription": {
+              "text": "A constraint of a CrySL rule is violated, e.g., a key is generated with the wrong key size."
+            }
+          },
+          "RequiredPredicateError-12": {
+            "id": "RequiredPredicateError",
+            "fullDescription": {
+              "text": "An object A expects an object B to have been used correctly (CrySL blocks REQUIRES and ENSURES). For example a Cipher object requires a SecretKey object to be correctly and securely generated."
+            }
+          },
+          "ConstraintError-9": {
+            "id": "ConstraintError",
+            "fullDescription": {
+              "text": "A constraint of a CrySL rule is violated, e.g., a key is generated with the wrong key size."
+            }
+          },
+          "IncompleteOperationError": {
+            "id": "IncompleteOperationError",
+            "fullDescription": {
+              "text": "The usage of an object may be incomplete: For example a Cipherobject may be initialized but never used for en- or decryption, this may render the code dead. This error heavily depends on the computed call graph (CHA by default)"
+            }
+          },
+          "RequiredPredicateError-15": {
+            "id": "RequiredPredicateError",
+            "fullDescription": {
+              "text": "An object A expects an object B to have been used correctly (CrySL blocks REQUIRES and ENSURES). For example a Cipher object requires a SecretKey object to be correctly and securely generated."
+            }
+          },
+          "RequiredPredicateError-14": {
+            "id": "RequiredPredicateError",
+            "fullDescription": {
+              "text": "An object A expects an object B to have been used correctly (CrySL blocks REQUIRES and ENSURES). For example a Cipher object requires a SecretKey object to be correctly and securely generated."
+            }
+          },
+          "RequiredPredicateError-17": {
+            "id": "RequiredPredicateError",
+            "fullDescription": {
+              "text": "An object A expects an object B to have been used correctly (CrySL blocks REQUIRES and ENSURES). For example a Cipher object requires a SecretKey object to be correctly and securely generated."
+            }
+          },
+          "RequiredPredicateError-16": {
+            "id": "RequiredPredicateError",
+            "fullDescription": {
+              "text": "An object A expects an object B to have been used correctly (CrySL blocks REQUIRES and ENSURES). For example a Cipher object requires a SecretKey object to be correctly and securely generated."
+            }
+          },
+          "RequiredPredicateError-19": {
+            "id": "RequiredPredicateError",
+            "fullDescription": {
+              "text": "An object A expects an object B to have been used correctly (CrySL blocks REQUIRES and ENSURES). For example a Cipher object requires a SecretKey object to be correctly and securely generated."
+            }
+          },
+          "RequiredPredicateError-18": {
+            "id": "RequiredPredicateError",
+            "fullDescription": {
+              "text": "An object A expects an object B to have been used correctly (CrySL blocks REQUIRES and ENSURES). For example a Cipher object requires a SecretKey object to be correctly and securely generated."
+            }
+          },
+          "RequiredPredicateError-20": {
+            "id": "RequiredPredicateError",
+            "fullDescription": {
+              "text": "An object A expects an object B to have been used correctly (CrySL blocks REQUIRES and ENSURES). For example a Cipher object requires a SecretKey object to be correctly and securely generated."
+            }
+          },
+          "RequiredPredicateError-22": {
+            "id": "RequiredPredicateError",
+            "fullDescription": {
+              "text": "An object A expects an object B to have been used correctly (CrySL blocks REQUIRES and ENSURES). For example a Cipher object requires a SecretKey object to be correctly and securely generated."
+            }
+          },
+          "RequiredPredicateError-21": {
+            "id": "RequiredPredicateError",
+            "fullDescription": {
+              "text": "An object A expects an object B to have been used correctly (CrySL blocks REQUIRES and ENSURES). For example a Cipher object requires a SecretKey object to be correctly and securely generated."
+            }
+          },
+          "RequiredPredicateError-24": {
+            "id": "RequiredPredicateError",
+            "fullDescription": {
+              "text": "An object A expects an object B to have been used correctly (CrySL blocks REQUIRES and ENSURES). For example a Cipher object requires a SecretKey object to be correctly and securely generated."
+            }
+          },
+          "RequiredPredicateError-23": {
+            "id": "RequiredPredicateError",
+            "fullDescription": {
+              "text": "An object A expects an object B to have been used correctly (CrySL blocks REQUIRES and ENSURES). For example a Cipher object requires a SecretKey object to be correctly and securely generated."
+            }
+          },
+          "ConstraintError": {
+            "id": "ConstraintError",
+            "fullDescription": {
+              "text": "A constraint of a CrySL rule is violated, e.g., a key is generated with the wrong key size."
+            }
+          },
+          "IncompleteOperationError-21": {
+            "id": "IncompleteOperationError",
+            "fullDescription": {
+              "text": "The usage of an object may be incomplete: For example a Cipherobject may be initialized but never used for en- or decryption, this may render the code dead. This error heavily depends on the computed call graph (CHA by default)"
+            }
+          },
+          "IncompleteOperationError-20": {
+            "id": "IncompleteOperationError",
+            "fullDescription": {
+              "text": "The usage of an object may be incomplete: For example a Cipherobject may be initialized but never used for en- or decryption, this may render the code dead. This error heavily depends on the computed call graph (CHA by default)"
+            }
+          },
+          "IncompleteOperationError-22": {
+            "id": "IncompleteOperationError",
+            "fullDescription": {
+              "text": "The usage of an object may be incomplete: For example a Cipherobject may be initialized but never used for en- or decryption, this may render the code dead. This error heavily depends on the computed call graph (CHA by default)"
+            }
+          },
+          "IncompleteOperationError-14": {
+            "id": "IncompleteOperationError",
+            "fullDescription": {
+              "text": "The usage of an object may be incomplete: For example a Cipherobject may be initialized but never used for en- or decryption, this may render the code dead. This error heavily depends on the computed call graph (CHA by default)"
+            }
+          },
+          "IncompleteOperationError-13": {
+            "id": "IncompleteOperationError",
+            "fullDescription": {
+              "text": "The usage of an object may be incomplete: For example a Cipherobject may be initialized but never used for en- or decryption, this may render the code dead. This error heavily depends on the computed call graph (CHA by default)"
+            }
+          },
+          "IncompleteOperationError-16": {
+            "id": "IncompleteOperationError",
+            "fullDescription": {
+              "text": "The usage of an object may be incomplete: For example a Cipherobject may be initialized but never used for en- or decryption, this may render the code dead. This error heavily depends on the computed call graph (CHA by default)"
+            }
+          },
+          "NeverTypeOfError-1": {
+            "id": "NeverTypeOfError",
+            "fullDescription": {
+              "text": "Reported when a value was found to be of a certain reference type: For example, a character array containing a password should never be converted from a String"
+            }
+          },
+          "IncompleteOperationError-15": {
+            "id": "IncompleteOperationError",
+            "fullDescription": {
+              "text": "The usage of an object may be incomplete: For example a Cipherobject may be initialized but never used for en- or decryption, this may render the code dead. This error heavily depends on the computed call graph (CHA by default)"
+            }
+          },
+          "IncompleteOperationError-18": {
+            "id": "IncompleteOperationError",
+            "fullDescription": {
+              "text": "The usage of an object may be incomplete: For example a Cipherobject may be initialized but never used for en- or decryption, this may render the code dead. This error heavily depends on the computed call graph (CHA by default)"
+            }
+          },
+          "IncompleteOperationError-17": {
+            "id": "IncompleteOperationError",
+            "fullDescription": {
+              "text": "The usage of an object may be incomplete: For example a Cipherobject may be initialized but never used for en- or decryption, this may render the code dead. This error heavily depends on the computed call graph (CHA by default)"
+            }
+          },
+          "IncompleteOperationError-19": {
+            "id": "IncompleteOperationError",
+            "fullDescription": {
+              "text": "The usage of an object may be incomplete: For example a Cipherobject may be initialized but never used for en- or decryption, this may render the code dead. This error heavily depends on the computed call graph (CHA by default)"
+            }
+          },
+          "RequiredPredicateError-26": {
+            "id": "RequiredPredicateError",
+            "fullDescription": {
+              "text": "An object A expects an object B to have been used correctly (CrySL blocks REQUIRES and ENSURES). For example a Cipher object requires a SecretKey object to be correctly and securely generated."
+            }
+          },
+          "RequiredPredicateError-25": {
+            "id": "RequiredPredicateError",
+            "fullDescription": {
+              "text": "An object A expects an object B to have been used correctly (CrySL blocks REQUIRES and ENSURES). For example a Cipher object requires a SecretKey object to be correctly and securely generated."
+            }
+          },
+          "RequiredPredicateError-28": {
+            "id": "RequiredPredicateError",
+            "fullDescription": {
+              "text": "An object A expects an object B to have been used correctly (CrySL blocks REQUIRES and ENSURES). For example a Cipher object requires a SecretKey object to be correctly and securely generated."
+            }
+          },
+          "RequiredPredicateError-27": {
+            "id": "RequiredPredicateError",
+            "fullDescription": {
+              "text": "An object A expects an object B to have been used correctly (CrySL blocks REQUIRES and ENSURES). For example a Cipher object requires a SecretKey object to be correctly and securely generated."
+            }
+          },
+          "RequiredPredicateError-29": {
+            "id": "RequiredPredicateError",
+            "fullDescription": {
+              "text": "An object A expects an object B to have been used correctly (CrySL blocks REQUIRES and ENSURES). For example a Cipher object requires a SecretKey object to be correctly and securely generated."
+            }
+          },
+          "IncompleteOperationError-7": {
+            "id": "IncompleteOperationError",
+            "fullDescription": {
+              "text": "The usage of an object may be incomplete: For example a Cipherobject may be initialized but never used for en- or decryption, this may render the code dead. This error heavily depends on the computed call graph (CHA by default)"
+            }
+          },
+          "IncompleteOperationError-6": {
+            "id": "IncompleteOperationError",
+            "fullDescription": {
+              "text": "The usage of an object may be incomplete: For example a Cipherobject may be initialized but never used for en- or decryption, this may render the code dead. This error heavily depends on the computed call graph (CHA by default)"
+            }
+          },
+          "IncompleteOperationError-9": {
+            "id": "IncompleteOperationError",
+            "fullDescription": {
+              "text": "The usage of an object may be incomplete: For example a Cipherobject may be initialized but never used for en- or decryption, this may render the code dead. This error heavily depends on the computed call graph (CHA by default)"
+            }
+          },
+          "RequiredPredicateError-31": {
+            "id": "RequiredPredicateError",
+            "fullDescription": {
+              "text": "An object A expects an object B to have been used correctly (CrySL blocks REQUIRES and ENSURES). For example a Cipher object requires a SecretKey object to be correctly and securely generated."
+            }
+          },
+          "IncompleteOperationError-8": {
+            "id": "IncompleteOperationError",
+            "fullDescription": {
+              "text": "The usage of an object may be incomplete: For example a Cipherobject may be initialized but never used for en- or decryption, this may render the code dead. This error heavily depends on the computed call graph (CHA by default)"
+            }
+          },
+          "RequiredPredicateError-30": {
+            "id": "RequiredPredicateError",
+            "fullDescription": {
+              "text": "An object A expects an object B to have been used correctly (CrySL blocks REQUIRES and ENSURES). For example a Cipher object requires a SecretKey object to be correctly and securely generated."
+            }
+          },
+          "RequiredPredicateError": {
+            "id": "RequiredPredicateError",
+            "fullDescription": {
+              "text": "An object A expects an object B to have been used correctly (CrySL blocks REQUIRES and ENSURES). For example a Cipher object requires a SecretKey object to be correctly and securely generated."
+            }
+          },
+          "RequiredPredicateError-32": {
+            "id": "RequiredPredicateError",
+            "fullDescription": {
+              "text": "An object A expects an object B to have been used correctly (CrySL blocks REQUIRES and ENSURES). For example a Cipher object requires a SecretKey object to be correctly and securely generated."
+            }
+          },
+          "NeverTypeOfError-6": {
+            "id": "NeverTypeOfError",
+            "fullDescription": {
+              "text": "Reported when a value was found to be of a certain reference type: For example, a character array containing a password should never be converted from a String"
+            }
+          },
+          "NeverTypeOfError-7": {
+            "id": "NeverTypeOfError",
+            "fullDescription": {
+              "text": "Reported when a value was found to be of a certain reference type: For example, a character array containing a password should never be converted from a String"
+            }
+          },
+          "IncompleteOperationError-1": {
+            "id": "IncompleteOperationError",
+            "fullDescription": {
+              "text": "The usage of an object may be incomplete: For example a Cipherobject may be initialized but never used for en- or decryption, this may render the code dead. This error heavily depends on the computed call graph (CHA by default)"
+            }
+          },
+          "IncompleteOperationError-3": {
+            "id": "IncompleteOperationError",
+            "fullDescription": {
+              "text": "The usage of an object may be incomplete: For example a Cipherobject may be initialized but never used for en- or decryption, this may render the code dead. This error heavily depends on the computed call graph (CHA by default)"
+            }
+          },
+          "NeverTypeOfError-2": {
+            "id": "NeverTypeOfError",
+            "fullDescription": {
+              "text": "Reported when a value was found to be of a certain reference type: For example, a character array containing a password should never be converted from a String"
+            }
+          },
+          "IncompleteOperationError-10": {
+            "id": "IncompleteOperationError",
+            "fullDescription": {
+              "text": "The usage of an object may be incomplete: For example a Cipherobject may be initialized but never used for en- or decryption, this may render the code dead. This error heavily depends on the computed call graph (CHA by default)"
+            }
+          },
+          "IncompleteOperationError-2": {
+            "id": "IncompleteOperationError",
+            "fullDescription": {
+              "text": "The usage of an object may be incomplete: For example a Cipherobject may be initialized but never used for en- or decryption, this may render the code dead. This error heavily depends on the computed call graph (CHA by default)"
+            }
+          },
+          "NeverTypeOfError-3": {
+            "id": "NeverTypeOfError",
+            "fullDescription": {
+              "text": "Reported when a value was found to be of a certain reference type: For example, a character array containing a password should never be converted from a String"
+            }
+          },
+          "IncompleteOperationError-5": {
+            "id": "IncompleteOperationError",
+            "fullDescription": {
+              "text": "The usage of an object may be incomplete: For example a Cipherobject may be initialized but never used for en- or decryption, this may render the code dead. This error heavily depends on the computed call graph (CHA by default)"
+            }
+          },
+          "NeverTypeOfError-4": {
+            "id": "NeverTypeOfError",
+            "fullDescription": {
+              "text": "Reported when a value was found to be of a certain reference type: For example, a character array containing a password should never be converted from a String"
+            }
+          },
+          "IncompleteOperationError-12": {
+            "id": "IncompleteOperationError",
+            "fullDescription": {
+              "text": "The usage of an object may be incomplete: For example a Cipherobject may be initialized but never used for en- or decryption, this may render the code dead. This error heavily depends on the computed call graph (CHA by default)"
+            }
+          },
+          "IncompleteOperationError-4": {
+            "id": "IncompleteOperationError",
+            "fullDescription": {
+              "text": "The usage of an object may be incomplete: For example a Cipherobject may be initialized but never used for en- or decryption, this may render the code dead. This error heavily depends on the computed call graph (CHA by default)"
+            }
+          },
+          "IncompleteOperationError-11": {
+            "id": "IncompleteOperationError",
+            "fullDescription": {
+              "text": "The usage of an object may be incomplete: For example a Cipherobject may be initialized but never used for en- or decryption, this may render the code dead. This error heavily depends on the computed call graph (CHA by default)"
+            }
+          },
+          "NeverTypeOfError-5": {
+            "id": "NeverTypeOfError",
+            "fullDescription": {
+              "text": "Reported when a value was found to be of a certain reference type: For example, a character array containing a password should never be converted from a String"
+            }
+          },
+          "NeverTypeOfError": {
+            "id": "NeverTypeOfError",
+            "fullDescription": {
+              "text": "Reported when a value was found to be of a certain reference type: For example, a character array containing a password should never be converted from a String"
+            }
+          },
+          "RequiredPredicateError-9": {
+            "id": "RequiredPredicateError",
+            "fullDescription": {
+              "text": "An object A expects an object B to have been used correctly (CrySL blocks REQUIRES and ENSURES). For example a Cipher object requires a SecretKey object to be correctly and securely generated."
+            }
+          },
+          "RequiredPredicateError-8": {
+            "id": "RequiredPredicateError",
+            "fullDescription": {
+              "text": "An object A expects an object B to have been used correctly (CrySL blocks REQUIRES and ENSURES). For example a Cipher object requires a SecretKey object to be correctly and securely generated."
+            }
+          },
+          "RequiredPredicateError-7": {
+            "id": "RequiredPredicateError",
+            "fullDescription": {
+              "text": "An object A expects an object B to have been used correctly (CrySL blocks REQUIRES and ENSURES). For example a Cipher object requires a SecretKey object to be correctly and securely generated."
+            }
+          },
+          "RequiredPredicateError-6": {
+            "id": "RequiredPredicateError",
+            "fullDescription": {
+              "text": "An object A expects an object B to have been used correctly (CrySL blocks REQUIRES and ENSURES). For example a Cipher object requires a SecretKey object to be correctly and securely generated."
+            }
+          },
+          "RequiredPredicateError-5": {
+            "id": "RequiredPredicateError",
+            "fullDescription": {
+              "text": "An object A expects an object B to have been used correctly (CrySL blocks REQUIRES and ENSURES). For example a Cipher object requires a SecretKey object to be correctly and securely generated."
+            }
+          },
+          "RequiredPredicateError-4": {
+            "id": "RequiredPredicateError",
+            "fullDescription": {
+              "text": "An object A expects an object B to have been used correctly (CrySL blocks REQUIRES and ENSURES). For example a Cipher object requires a SecretKey object to be correctly and securely generated."
+            }
+          },
+          "RequiredPredicateError-3": {
+            "id": "RequiredPredicateError",
+            "fullDescription": {
+              "text": "An object A expects an object B to have been used correctly (CrySL blocks REQUIRES and ENSURES). For example a Cipher object requires a SecretKey object to be correctly and securely generated."
+            }
+          },
+          "RequiredPredicateError-2": {
+            "id": "RequiredPredicateError",
+            "fullDescription": {
+              "text": "An object A expects an object B to have been used correctly (CrySL blocks REQUIRES and ENSURES). For example a Cipher object requires a SecretKey object to be correctly and securely generated."
+            }
+          },
+          "RequiredPredicateError-1": {
+            "id": "RequiredPredicateError",
+            "fullDescription": {
+              "text": "An object A expects an object B to have been used correctly (CrySL blocks REQUIRES and ENSURES). For example a Cipher object requires a SecretKey object to be correctly and securely generated."
+            }
+          }
+        }
+      },
+      "results": [
+        {
+          "locations": [
+            {
+              "physicalLocation": {
+                "fileLocation": {
+                  "uri": "androidx.biometric.CryptoObjectUtils.java",
+                  "externalLibrary": true
+                },
+                "region": {
+                  "startLine": 1
+                }
+              },
+              "fullyQualifiedLogicalName": "androidx::biometric::CryptoObjectUtils::createFakeCryptoObject"
+            }
+          ],
+          "ruleId": "ConstraintError",
+          "message": {
+            "text": "First parameter (with value \"AndroidKeyStore\") should be any of {JCEKS, JKS, DKS, PKCS11, PKCS12}.",
+            "richText": "ConstraintError violating CrySL rule for java.security.KeyStore."
+          }
+        },
+        {
+          "locations": [
+            {
+              "physicalLocation": {
+                "fileLocation": {
+                  "uri": "androidx.biometric.CryptoObjectUtils.java",
+                  "externalLibrary": true
+                },
+                "region": {
+                  "startLine": 12
+                }
+              },
+              "fullyQualifiedLogicalName": "androidx::biometric::CryptoObjectUtils::createFakeCryptoObject"
+            }
+          ],
+          "ruleId": "RequiredPredicateError",
+          "message": {
+            "text": "Second parameter was not properly generated as generated Key.",
+            "richText": "RequiredPredicateError violating CrySL rule for javax.crypto.Cipher."
+          }
+        },
+        {
+          "locations": [
+            {
+              "physicalLocation": {
+                "fileLocation": {
+                  "uri": "androidx.biometric.CryptoObjectUtils.java",
+                  "externalLibrary": true
+                },
+                "region": {
+                  "startLine": 11
+                }
+              },
+              "fullyQualifiedLogicalName": "androidx::biometric::CryptoObjectUtils::createFakeCryptoObject"
+            }
+          ],
+          "ruleId": "ConstraintError-1",
+          "message": {
+            "text": "First parameter (with value \"AES/CBC/PKCS7Padding\") should be any of AES/CBC/{PKCS5Padding, ISO10126Padding}.",
+            "richText": "ConstraintError violating CrySL rule for javax.crypto.Cipher."
+          }
+        },
+        {
+          "locations": [
+            {
+              "physicalLocation": {
+                "fileLocation": {
+                  "uri": "com.trilead.ssh2.channel.AuthAgentForwardThread.java",
+                  "externalLibrary": true
+                },
+                "region": {
+                  "startLine": 19
+                }
+              },
+              "fullyQualifiedLogicalName": "com::trilead::ssh2::channel::AuthAgentForwardThread::processSignRequest"
+            }
+          ],
+          "ruleId": "RequiredPredicateError-1",
+          "message": {
+            "text": "First parameter was not properly generated as generated Privkey.",
+            "richText": "RequiredPredicateError violating CrySL rule for java.security.Signature."
+          }
+        },
+        {
+          "locations": [
+            {
+              "physicalLocation": {
+                "fileLocation": {
+                  "uri": "com.trilead.ssh2.channel.AuthAgentForwardThread.java",
+                  "externalLibrary": true
+                },
+                "region": {
+                  "startLine": 18
+                }
+              },
+              "fullyQualifiedLogicalName": "com::trilead::ssh2::channel::AuthAgentForwardThread::processSignRequest"
+            }
+          ],
+          "ruleId": "ConstraintError-2",
+          "message": {
+            "text": "First parameter (with value \"SHA1withDSA\") should be any of {SHA256withRSA, SHA256withECDSA, SHA256withDSA, SHA384withRSA, SHA512withRSA, SHA384withECDSA, SHA512withECDSA}.",
+            "richText": "ConstraintError violating CrySL rule for java.security.Signature."
+          }
+        },
+        {
+          "locations": [
+            {
+              "physicalLocation": {
+                "fileLocation": {
+                  "uri": "com.trilead.ssh2.channel.AuthAgentForwardThread.java",
+                  "externalLibrary": true
+                },
+                "region": {
+                  "startLine": 42
+                }
+              },
+              "fullyQualifiedLogicalName": "com::trilead::ssh2::channel::AuthAgentForwardThread::addIdentity"
+            }
+          ],
+          "ruleId": "RequiredPredicateError-2",
+          "message": {
+            "text": "First parameter was not properly generated as generated Pubkey.",
+            "richText": "RequiredPredicateError violating CrySL rule for java.security.KeyPair."
+          }
+        },
+        {
+          "locations": [
+            {
+              "physicalLocation": {
+                "fileLocation": {
+                  "uri": "com.trilead.ssh2.channel.AuthAgentForwardThread.java",
+                  "externalLibrary": true
+                },
+                "region": {
+                  "startLine": 40
+                }
+              },
+              "fullyQualifiedLogicalName": "com::trilead::ssh2::channel::AuthAgentForwardThread::addIdentity"
+            }
+          ],
+          "ruleId": "RequiredPredicateError-3",
+          "message": {
+            "text": "First parameter was not properly generated as specced Key.",
+            "richText": "RequiredPredicateError violating CrySL rule for java.security.KeyFactory."
+          }
+        },
+        {
+          "locations": [
+            {
+              "physicalLocation": {
+                "fileLocation": {
+                  "uri": "com.trilead.ssh2.channel.AuthAgentForwardThread.java",
+                  "externalLibrary": true
+                },
+                "region": {
+                  "startLine": 42
+                }
+              },
+              "fullyQualifiedLogicalName": "com::trilead::ssh2::channel::AuthAgentForwardThread::addIdentity"
+            }
+          ],
+          "ruleId": "RequiredPredicateError-4",
+          "message": {
+            "text": "Second parameter was not properly generated as generated Privkey.",
+            "richText": "RequiredPredicateError violating CrySL rule for java.security.KeyPair."
+          }
+        },
+        {
+          "locations": [
+            {
+              "physicalLocation": {
+                "fileLocation": {
+                  "uri": "com.trilead.ssh2.auth.AuthenticationManager.java",
+                  "externalLibrary": true
+                },
+                "region": {
+                  "startLine": 188
+                }
+              },
+              "fullyQualifiedLogicalName": "com::trilead::ssh2::auth::AuthenticationManager::authenticatePublicKey"
+            }
+          ],
+          "ruleId": "ConstraintError-3",
+          "message": {
+            "text": "First parameter (with value \"SHA1withDSA\") should be any of {SHA256withRSA, SHA256withECDSA, SHA256withDSA, SHA384withRSA, SHA512withRSA, SHA384withECDSA, SHA512withECDSA}.",
+            "richText": "ConstraintError violating CrySL rule for java.security.Signature."
+          }
+        },
+        {
+          "locations": [
+            {
+              "physicalLocation": {
+                "fileLocation": {
+                  "uri": "com.trilead.ssh2.auth.AuthenticationManager.java",
+                  "externalLibrary": true
+                },
+                "region": {
+                  "startLine": 127
+                }
+              },
+              "fullyQualifiedLogicalName": "com::trilead::ssh2::auth::AuthenticationManager::authenticatePublicKey"
+            }
+          ],
+          "ruleId": "RequiredPredicateError-5",
+          "message": {
+            "text": "Second parameter was not properly generated as generated Privkey.",
+            "richText": "RequiredPredicateError violating CrySL rule for java.security.KeyPair."
+          }
+        },
+        {
+          "locations": [
+            {
+              "physicalLocation": {
+                "fileLocation": {
+                  "uri": "com.trilead.ssh2.auth.AuthenticationManager.java",
+                  "externalLibrary": true
+                },
+                "region": {
+                  "startLine": 189
+                }
+              },
+              "fullyQualifiedLogicalName": "com::trilead::ssh2::auth::AuthenticationManager::authenticatePublicKey"
+            }
+          ],
+          "ruleId": "RequiredPredicateError-6",
+          "message": {
+            "text": "First parameter was not properly generated as generated Privkey.",
+            "richText": "RequiredPredicateError violating CrySL rule for java.security.Signature."
+          }
+        },
+        {
+          "locations": [
+            {
+              "physicalLocation": {
+                "fileLocation": {
+                  "uri": "com.trilead.ssh2.auth.AuthenticationManager.java",
+                  "externalLibrary": true
+                },
+                "region": {
+                  "startLine": 127
+                }
+              },
+              "fullyQualifiedLogicalName": "com::trilead::ssh2::auth::AuthenticationManager::authenticatePublicKey"
+            }
+          ],
+          "ruleId": "RequiredPredicateError-7",
+          "message": {
+            "text": "First parameter was not properly generated as generated Pubkey.",
+            "richText": "RequiredPredicateError violating CrySL rule for java.security.KeyPair."
+          }
+        },
+        {
+          "locations": [
+            {
+              "physicalLocation": {
+                "fileLocation": {
+                  "uri": "com.trilead.ssh2.crypto.PEMDecoder.java",
+                  "externalLibrary": true
+                },
+                "region": {
+                  "startLine": 20
+                }
+              },
+              "fullyQualifiedLogicalName": "com::trilead::ssh2::crypto::PEMDecoder::decryptData"
+            }
+          ],
+          "ruleId": "ConstraintError-4",
+          "message": {
+            "text": "First parameter (with value \"MD5\") should be any of {SHA-256, SHA-384, SHA-512}.",
+            "richText": "ConstraintError violating CrySL rule for java.security.MessageDigest."
+          }
+        },
+        {
+          "locations": [
+            {
+              "physicalLocation": {
+                "fileLocation": {
+                  "uri": "com.trilead.ssh2.crypto.PEMDecoder.java",
+                  "externalLibrary": true
+                },
+                "region": {
+                  "startLine": 18
+                }
+              },
+              "fullyQualifiedLogicalName": "com::trilead::ssh2::crypto::PEMDecoder::decryptData"
+            }
+          ],
+          "ruleId": "IncompleteOperationError",
+          "message": {
+            "text": "Operation on object of type javax.crypto.Cipher object not completed. Expected call to init.",
+            "richText": "IncompleteOperationError violating CrySL rule for javax.crypto.Cipher."
+          }
+        },
+        {
+          "locations": [
+            {
+              "physicalLocation": {
+                "fileLocation": {
+                  "uri": "com.trilead.ssh2.crypto.PEMDecoder.java",
+                  "externalLibrary": true
+                },
+                "region": {
+                  "startLine": 16
+                }
+              },
+              "fullyQualifiedLogicalName": "com::trilead::ssh2::crypto::PEMDecoder::decryptData"
+            }
+          ],
+          "ruleId": "IncompleteOperationError-1",
+          "message": {
+            "text": "Operation on object of type javax.crypto.Cipher object not completed. Expected call to init.",
+            "richText": "IncompleteOperationError violating CrySL rule for javax.crypto.Cipher."
+          }
+        },
+        {
+          "locations": [
+            {
+              "physicalLocation": {
+                "fileLocation": {
+                  "uri": "com.trilead.ssh2.crypto.PEMDecoder.java",
+                  "externalLibrary": true
+                },
+                "region": {
+                  "startLine": 17
+                }
+              },
+              "fullyQualifiedLogicalName": "com::trilead::ssh2::crypto::PEMDecoder::decryptData"
+            }
+          ],
+          "ruleId": "IncompleteOperationError-2",
+          "message": {
+            "text": "Operation on object of type javax.crypto.Cipher object not completed. Expected call to init.",
+            "richText": "IncompleteOperationError violating CrySL rule for javax.crypto.Cipher."
+          }
+        },
+        {
+          "locations": [
+            {
+              "physicalLocation": {
+                "fileLocation": {
+                  "uri": "com.trilead.ssh2.crypto.PEMDecoder.java",
+                  "externalLibrary": true
+                },
+                "region": {
+                  "startLine": 15
+                }
+              },
+              "fullyQualifiedLogicalName": "com::trilead::ssh2::crypto::PEMDecoder::decryptData"
+            }
+          ],
+          "ruleId": "IncompleteOperationError-3",
+          "message": {
+            "text": "Operation on object of type javax.crypto.Cipher object not completed. Expected call to init.",
+            "richText": "IncompleteOperationError violating CrySL rule for javax.crypto.Cipher."
+          }
+        },
+        {
+          "locations": [
+            {
+              "physicalLocation": {
+                "fileLocation": {
+                  "uri": "com.trilead.ssh2.crypto.PEMDecoder.java",
+                  "externalLibrary": true
+                },
+                "region": {
+                  "startLine": 13
+                }
+              },
+              "fullyQualifiedLogicalName": "com::trilead::ssh2::crypto::PEMDecoder::decryptData"
+            }
+          ],
+          "ruleId": "IncompleteOperationError-4",
+          "message": {
+            "text": "Operation on object of type javax.crypto.Cipher object not completed. Expected call to init.",
+            "richText": "IncompleteOperationError violating CrySL rule for javax.crypto.Cipher."
+          }
+        },
+        {
+          "locations": [
+            {
+              "physicalLocation": {
+                "fileLocation": {
+                  "uri": "com.trilead.ssh2.crypto.PEMDecoder.java",
+                  "externalLibrary": true
+                },
+                "region": {
+                  "startLine": 14
+                }
+              },
+              "fullyQualifiedLogicalName": "com::trilead::ssh2::crypto::PEMDecoder::decryptData"
+            }
+          ],
+          "ruleId": "IncompleteOperationError-5",
+          "message": {
+            "text": "Operation on object of type javax.crypto.Cipher object not completed. Expected call to init.",
+            "richText": "IncompleteOperationError violating CrySL rule for javax.crypto.Cipher."
+          }
+        },
+        {
+          "locations": [
+            {
+              "physicalLocation": {
+                "fileLocation": {
+                  "uri": "com.trilead.ssh2.crypto.PEMDecoder.java",
+                  "externalLibrary": true
+                },
+                "region": {
+                  "startLine": 2
+                }
+              },
+              "fullyQualifiedLogicalName": "com::trilead::ssh2::crypto::PEMDecoder::generateKeyPair"
+            }
+          ],
+          "ruleId": "RequiredPredicateError-8",
+          "message": {
+            "text": "First parameter was not properly generated as specced Key.",
+            "richText": "RequiredPredicateError violating CrySL rule for java.security.KeyFactory."
+          }
+        },
+        {
+          "locations": [
+            {
+              "physicalLocation": {
+                "fileLocation": {
+                  "uri": "com.trilead.ssh2.crypto.PEMDecoder.java",
+                  "externalLibrary": true
+                },
+                "region": {
+                  "startLine": 4
+                }
+              },
+              "fullyQualifiedLogicalName": "com::trilead::ssh2::crypto::PEMDecoder::generateKeyPair"
+            }
+          ],
+          "ruleId": "RequiredPredicateError-9",
+          "message": {
+            "text": "Second parameter was not properly generated as generated Privkey.",
+            "richText": "RequiredPredicateError violating CrySL rule for java.security.KeyPair."
+          }
+        },
+        {
+          "locations": [
+            {
+              "physicalLocation": {
+                "fileLocation": {
+                  "uri": "com.trilead.ssh2.crypto.PEMDecoder.java",
+                  "externalLibrary": true
+                },
+                "region": {
+                  "startLine": 4
+                }
+              },
+              "fullyQualifiedLogicalName": "com::trilead::ssh2::crypto::PEMDecoder::generateKeyPair"
+            }
+          ],
+          "ruleId": "RequiredPredicateError-10",
+          "message": {
+            "text": "First parameter was not properly generated as generated Pubkey.",
+            "richText": "RequiredPredicateError violating CrySL rule for java.security.KeyPair."
+          }
+        },
+        {
+          "locations": [
+            {
+              "physicalLocation": {
+                "fileLocation": {
+                  "uri": "com.trilead.ssh2.crypto.digest.HMAC.java",
+                  "externalLibrary": true
+                },
+                "region": {
+                  "startLine": 30
+                }
+              },
+              "fullyQualifiedLogicalName": "com::trilead::ssh2::crypto::digest::HMAC::<init>"
+            }
+          ],
+          "ruleId": "NeverTypeOfError",
+          "message": {
+            "text": "First parameter should never be of type java.lang.String..",
+            "richText": "NeverTypeOfError violating CrySL rule for javax.crypto.spec.SecretKeySpec."
+          }
+        },
+        {
+          "locations": [
+            {
+              "physicalLocation": {
+                "fileLocation": {
+                  "uri": "com.trilead.ssh2.crypto.digest.HMAC.java",
+                  "externalLibrary": true
+                },
+                "region": {
+                  "startLine": 30
+                }
+              },
+              "fullyQualifiedLogicalName": "com::trilead::ssh2::crypto::digest::HMAC::<init>"
+            }
+          ],
+          "ruleId": "NeverTypeOfError-1",
+          "message": {
+            "text": "First parameter should never be of type java.lang.String..",
+            "richText": "NeverTypeOfError violating CrySL rule for javax.crypto.spec.SecretKeySpec."
+          }
+        },
+        {
+          "locations": [
+            {
+              "physicalLocation": {
+                "fileLocation": {
+                  "uri": "com.trilead.ssh2.crypto.digest.HMAC.java",
+                  "externalLibrary": true
+                },
+                "region": {
+                  "startLine": 4
+                }
+              },
+              "fullyQualifiedLogicalName": "com::trilead::ssh2::crypto::digest::HMAC::<init>"
+            }
+          ],
+          "ruleId": "ConstraintError-5",
+          "message": {
+            "text": "First parameter (with value \"HmacSHA1\") should be any of {HmacSHA256, HmacSHA384, HmacSHA512, HmacPBESHA1, PBEWithHmacSHA1, PBEWithHmacSHA224, PBEWithHmacSHA256, PBEWithHmacSHA384, PBEWithHmacSHA512}.",
+            "richText": "ConstraintError violating CrySL rule for javax.crypto.Mac."
+          }
+        },
+        {
+          "locations": [
+            {
+              "physicalLocation": {
+                "fileLocation": {
+                  "uri": "com.trilead.ssh2.crypto.digest.HMAC.java",
+                  "externalLibrary": true
+                },
+                "region": {
+                  "startLine": 30
+                }
+              },
+              "fullyQualifiedLogicalName": "com::trilead::ssh2::crypto::digest::HMAC::<init>"
+            }
+          ],
+          "ruleId": "NeverTypeOfError-2",
+          "message": {
+            "text": "First parameter should never be of type java.lang.String..",
+            "richText": "NeverTypeOfError violating CrySL rule for javax.crypto.spec.SecretKeySpec."
+          }
+        },
+        {
+          "locations": [
+            {
+              "physicalLocation": {
+                "fileLocation": {
+                  "uri": "com.trilead.ssh2.crypto.digest.HMAC.java",
+                  "externalLibrary": true
+                },
+                "region": {
+                  "startLine": 30
+                }
+              },
+              "fullyQualifiedLogicalName": "com::trilead::ssh2::crypto::digest::HMAC::<init>"
+            }
+          ],
+          "ruleId": "NeverTypeOfError-3",
+          "message": {
+            "text": "First parameter should never be of type java.lang.String..",
+            "richText": "NeverTypeOfError violating CrySL rule for javax.crypto.spec.SecretKeySpec."
+          }
+        },
+        {
+          "locations": [
+            {
+              "physicalLocation": {
+                "fileLocation": {
+                  "uri": "com.trilead.ssh2.crypto.digest.HMAC.java",
+                  "externalLibrary": true
+                },
+                "region": {
+                  "startLine": 30
+                }
+              },
+              "fullyQualifiedLogicalName": "com::trilead::ssh2::crypto::digest::HMAC::<init>"
+            }
+          ],
+          "ruleId": "NeverTypeOfError-4",
+          "message": {
+            "text": "First parameter should never be of type java.lang.String..",
+            "richText": "NeverTypeOfError violating CrySL rule for javax.crypto.spec.SecretKeySpec."
+          }
+        },
+        {
+          "locations": [
+            {
+              "physicalLocation": {
+                "fileLocation": {
+                  "uri": "com.trilead.ssh2.crypto.digest.HMAC.java",
+                  "externalLibrary": true
+                },
+                "region": {
+                  "startLine": 20
+                }
+              },
+              "fullyQualifiedLogicalName": "com::trilead::ssh2::crypto::digest::HMAC::<init>"
+            }
+          ],
+          "ruleId": "ConstraintError-6",
+          "message": {
+            "text": "First parameter (with value \"HmacMD5\") should be any of {HmacSHA256, HmacSHA384, HmacSHA512, HmacPBESHA1, PBEWithHmacSHA1, PBEWithHmacSHA224, PBEWithHmacSHA256, PBEWithHmacSHA384, PBEWithHmacSHA512}.",
+            "richText": "ConstraintError violating CrySL rule for javax.crypto.Mac."
+          }
+        },
+        {
+          "locations": [
+            {
+              "physicalLocation": {
+                "fileLocation": {
+                  "uri": "com.trilead.ssh2.crypto.digest.HMAC.java",
+                  "externalLibrary": true
+                },
+                "region": {
+                  "startLine": 30
+                }
+              },
+              "fullyQualifiedLogicalName": "com::trilead::ssh2::crypto::digest::HMAC::<init>"
+            }
+          ],
+          "ruleId": "RequiredPredicateError-11",
+          "message": {
+            "text": "First parameter was not properly generated as prepared Key Material.",
+            "richText": "RequiredPredicateError violating CrySL rule for javax.crypto.spec.SecretKeySpec."
+          }
+        },
+        {
+          "locations": [
+            {
+              "physicalLocation": {
+                "fileLocation": {
+                  "uri": "com.trilead.ssh2.transport.KexManager.java",
+                  "externalLibrary": true
+                },
+                "region": {
+                  "startLine": 24
+                }
+              },
+              "fullyQualifiedLogicalName": "com::trilead::ssh2::transport::KexManager::finishKex"
+            }
+          ],
+          "ruleId": "IncompleteOperationError-6",
+          "message": {
+            "text": "Operation on object of type javax.crypto.Mac object not completed. Expected call to update, doFinal.",
+            "richText": "IncompleteOperationError violating CrySL rule for javax.crypto.Mac."
+          }
+        },
+        {
+          "locations": [
+            {
+              "physicalLocation": {
+                "fileLocation": {
+                  "uri": "com.trilead.ssh2.transport.KexManager.java",
+                  "externalLibrary": true
+                },
+                "region": {
+                  "startLine": 24
+                }
+              },
+              "fullyQualifiedLogicalName": "com::trilead::ssh2::transport::KexManager::finishKex"
+            }
+          ],
+          "ruleId": "IncompleteOperationError-7",
+          "message": {
+            "text": "Operation on object of type javax.crypto.Mac object not completed. Expected call to update, doFinal.",
+            "richText": "IncompleteOperationError violating CrySL rule for javax.crypto.Mac."
+          }
+        },
+        {
+          "locations": [
+            {
+              "physicalLocation": {
+                "fileLocation": {
+                  "uri": "com.trilead.ssh2.transport.KexManager.java",
+                  "externalLibrary": true
+                },
+                "region": {
+                  "startLine": 24
+                }
+              },
+              "fullyQualifiedLogicalName": "com::trilead::ssh2::transport::KexManager::finishKex"
+            }
+          ],
+          "ruleId": "IncompleteOperationError-8",
+          "message": {
+            "text": "Operation on object of type javax.crypto.Mac object not completed. Expected call to update, doFinal.",
+            "richText": "IncompleteOperationError violating CrySL rule for javax.crypto.Mac."
+          }
+        },
+        {
+          "locations": [
+            {
+              "physicalLocation": {
+                "fileLocation": {
+                  "uri": "com.trilead.ssh2.transport.KexManager.java",
+                  "externalLibrary": true
+                },
+                "region": {
+                  "startLine": 24
+                }
+              },
+              "fullyQualifiedLogicalName": "com::trilead::ssh2::transport::KexManager::finishKex"
+            }
+          ],
+          "ruleId": "IncompleteOperationError-9",
+          "message": {
+            "text": "Operation on object of type javax.crypto.Mac object not completed. Expected call to update, doFinal.",
+            "richText": "IncompleteOperationError violating CrySL rule for javax.crypto.Mac."
+          }
+        },
+        {
+          "locations": [
+            {
+              "physicalLocation": {
+                "fileLocation": {
+                  "uri": "com.trilead.ssh2.transport.KexManager.java",
+                  "externalLibrary": true
+                },
+                "region": {
+                  "startLine": 24
+                }
+              },
+              "fullyQualifiedLogicalName": "com::trilead::ssh2::transport::KexManager::finishKex"
+            }
+          ],
+          "ruleId": "IncompleteOperationError-10",
+          "message": {
+            "text": "Operation on object of type javax.crypto.Mac object not completed. Expected call to update, doFinal.",
+            "richText": "IncompleteOperationError violating CrySL rule for javax.crypto.Mac."
+          }
+        },
+        {
+          "locations": [
+            {
+              "physicalLocation": {
+                "fileLocation": {
+                  "uri": "com.trilead.ssh2.transport.KexManager.java",
+                  "externalLibrary": true
+                },
+                "region": {
+                  "startLine": 24
+                }
+              },
+              "fullyQualifiedLogicalName": "com::trilead::ssh2::transport::KexManager::finishKex"
+            }
+          ],
+          "ruleId": "IncompleteOperationError-11",
+          "message": {
+            "text": "Operation on object of type javax.crypto.Mac object not completed. Expected call to update, doFinal.",
+            "richText": "IncompleteOperationError violating CrySL rule for javax.crypto.Mac."
+          }
+        },
+        {
+          "locations": [
+            {
+              "physicalLocation": {
+                "fileLocation": {
+                  "uri": "com.trilead.ssh2.transport.KexManager.java",
+                  "externalLibrary": true
+                },
+                "region": {
+                  "startLine": 24
+                }
+              },
+              "fullyQualifiedLogicalName": "com::trilead::ssh2::transport::KexManager::finishKex"
+            }
+          ],
+          "ruleId": "IncompleteOperationError-12",
+          "message": {
+            "text": "Operation on object of type javax.crypto.Mac object not completed. Expected call to update, doFinal.",
+            "richText": "IncompleteOperationError violating CrySL rule for javax.crypto.Mac."
+          }
+        },
+        {
+          "locations": [
+            {
+              "physicalLocation": {
+                "fileLocation": {
+                  "uri": "com.trilead.ssh2.transport.KexManager.java",
+                  "externalLibrary": true
+                },
+                "region": {
+                  "startLine": 83
+                }
+              },
+              "fullyQualifiedLogicalName": "com::trilead::ssh2::transport::KexManager::handleMessage"
+            }
+          ],
+          "ruleId": "IncompleteOperationError-13",
+          "message": {
+            "text": "Operation on object of type javax.crypto.Mac object not completed. Expected call to update, doFinal.",
+            "richText": "IncompleteOperationError violating CrySL rule for javax.crypto.Mac."
+          }
+        },
+        {
+          "locations": [
+            {
+              "physicalLocation": {
+                "fileLocation": {
+                  "uri": "com.trilead.ssh2.transport.KexManager.java",
+                  "externalLibrary": true
+                },
+                "region": {
+                  "startLine": 83
+                }
+              },
+              "fullyQualifiedLogicalName": "com::trilead::ssh2::transport::KexManager::handleMessage"
+            }
+          ],
+          "ruleId": "IncompleteOperationError-14",
+          "message": {
+            "text": "Operation on object of type javax.crypto.Mac object not completed. Expected call to update, doFinal.",
+            "richText": "IncompleteOperationError violating CrySL rule for javax.crypto.Mac."
+          }
+        },
+        {
+          "locations": [
+            {
+              "physicalLocation": {
+                "fileLocation": {
+                  "uri": "com.trilead.ssh2.transport.KexManager.java",
+                  "externalLibrary": true
+                },
+                "region": {
+                  "startLine": 83
+                }
+              },
+              "fullyQualifiedLogicalName": "com::trilead::ssh2::transport::KexManager::handleMessage"
+            }
+          ],
+          "ruleId": "IncompleteOperationError-15",
+          "message": {
+            "text": "Operation on object of type javax.crypto.Mac object not completed. Expected call to update, doFinal.",
+            "richText": "IncompleteOperationError violating CrySL rule for javax.crypto.Mac."
+          }
+        },
+        {
+          "locations": [
+            {
+              "physicalLocation": {
+                "fileLocation": {
+                  "uri": "com.trilead.ssh2.transport.KexManager.java",
+                  "externalLibrary": true
+                },
+                "region": {
+                  "startLine": 83
+                }
+              },
+              "fullyQualifiedLogicalName": "com::trilead::ssh2::transport::KexManager::handleMessage"
+            }
+          ],
+          "ruleId": "IncompleteOperationError-16",
+          "message": {
+            "text": "Operation on object of type javax.crypto.Mac object not completed. Expected call to update, doFinal.",
+            "richText": "IncompleteOperationError violating CrySL rule for javax.crypto.Mac."
+          }
+        },
+        {
+          "locations": [
+            {
+              "physicalLocation": {
+                "fileLocation": {
+                  "uri": "com.trilead.ssh2.transport.KexManager.java",
+                  "externalLibrary": true
+                },
+                "region": {
+                  "startLine": 83
+                }
+              },
+              "fullyQualifiedLogicalName": "com::trilead::ssh2::transport::KexManager::handleMessage"
+            }
+          ],
+          "ruleId": "IncompleteOperationError-17",
+          "message": {
+            "text": "Operation on object of type javax.crypto.Mac object not completed. Expected call to update, doFinal.",
+            "richText": "IncompleteOperationError violating CrySL rule for javax.crypto.Mac."
+          }
+        },
+        {
+          "locations": [
+            {
+              "physicalLocation": {
+                "fileLocation": {
+                  "uri": "com.trilead.ssh2.transport.KexManager.java",
+                  "externalLibrary": true
+                },
+                "region": {
+                  "startLine": 83
+                }
+              },
+              "fullyQualifiedLogicalName": "com::trilead::ssh2::transport::KexManager::handleMessage"
+            }
+          ],
+          "ruleId": "IncompleteOperationError-18",
+          "message": {
+            "text": "Operation on object of type javax.crypto.Mac object not completed. Expected call to update, doFinal.",
+            "richText": "IncompleteOperationError violating CrySL rule for javax.crypto.Mac."
+          }
+        },
+        {
+          "locations": [
+            {
+              "physicalLocation": {
+                "fileLocation": {
+                  "uri": "com.trilead.ssh2.transport.KexManager.java",
+                  "externalLibrary": true
+                },
+                "region": {
+                  "startLine": 83
+                }
+              },
+              "fullyQualifiedLogicalName": "com::trilead::ssh2::transport::KexManager::handleMessage"
+            }
+          ],
+          "ruleId": "IncompleteOperationError-19",
+          "message": {
+            "text": "Operation on object of type javax.crypto.Mac object not completed. Expected call to update, doFinal.",
+            "richText": "IncompleteOperationError violating CrySL rule for javax.crypto.Mac."
+          }
+        },
+        {
+          "locations": [
+            {
+              "physicalLocation": {
+                "fileLocation": {
+                  "uri": "com.trilead.ssh2.crypto.cipher.AES.java",
+                  "externalLibrary": true
+                },
+                "region": {
+                  "startLine": 1
+                }
+              },
+              "fullyQualifiedLogicalName": "com::trilead::ssh2::crypto::cipher::AES::init"
+            }
+          ],
+          "ruleId": "RequiredPredicateError-12",
+          "message": {
+            "text": "First parameter was not properly generated as randomized.",
+            "richText": "RequiredPredicateError violating CrySL rule for javax.crypto.spec.IvParameterSpec."
+          }
+        },
+        {
+          "locations": [
+            {
+              "physicalLocation": {
+                "fileLocation": {
+                  "uri": "com.trilead.ssh2.crypto.cipher.AES.java",
+                  "externalLibrary": true
+                },
+                "region": {
+                  "startLine": 1
+                }
+              },
+              "fullyQualifiedLogicalName": "com::trilead::ssh2::crypto::cipher::AES::init"
+            }
+          ],
+          "ruleId": "NeverTypeOfError-5",
+          "message": {
+            "text": "First parameter should never be of type java.lang.String..",
+            "richText": "NeverTypeOfError violating CrySL rule for javax.crypto.spec.SecretKeySpec."
+          }
+        },
+        {
+          "locations": [
+            {
+              "physicalLocation": {
+                "fileLocation": {
+                  "uri": "com.trilead.ssh2.crypto.cipher.AES.java",
+                  "externalLibrary": true
+                },
+                "region": {
+                  "startLine": 1
+                }
+              },
+              "fullyQualifiedLogicalName": "com::trilead::ssh2::crypto::cipher::AES::init"
+            }
+          ],
+          "ruleId": "NeverTypeOfError-6",
+          "message": {
+            "text": "First parameter should never be of type java.lang.String..",
+            "richText": "NeverTypeOfError violating CrySL rule for javax.crypto.spec.SecretKeySpec."
+          }
+        },
+        {
+          "locations": [
+            {
+              "physicalLocation": {
+                "fileLocation": {
+                  "uri": "com.trilead.ssh2.crypto.cipher.AES.java",
+                  "externalLibrary": true
+                },
+                "region": {
+                  "startLine": 1
+                }
+              },
+              "fullyQualifiedLogicalName": "com::trilead::ssh2::crypto::cipher::AES::init"
+            }
+          ],
+          "ruleId": "NeverTypeOfError-7",
+          "message": {
+            "text": "First parameter should never be of type java.lang.String..",
+            "richText": "NeverTypeOfError violating CrySL rule for javax.crypto.spec.SecretKeySpec."
+          }
+        },
+        {
+          "locations": [
+            {
+              "physicalLocation": {
+                "fileLocation": {
+                  "uri": "com.trilead.ssh2.crypto.cipher.AES.java",
+                  "externalLibrary": true
+                },
+                "region": {
+                  "startLine": 1
+                }
+              },
+              "fullyQualifiedLogicalName": "com::trilead::ssh2::crypto::cipher::AES::init"
+            }
+          ],
+          "ruleId": "RequiredPredicateError-13",
+          "message": {
+            "text": "First parameter was not properly generated as prepared Key Material.",
+            "richText": "RequiredPredicateError violating CrySL rule for javax.crypto.spec.SecretKeySpec."
+          }
+        },
+        {
+          "locations": [
+            {
+              "physicalLocation": {
+                "fileLocation": {
+                  "uri": "com.trilead.ssh2.signature.RSASHA1Verify.java",
+                  "externalLibrary": true
+                },
+                "region": {
+                  "startLine": 1
+                }
+              },
+              "fullyQualifiedLogicalName": "com::trilead::ssh2::signature::RSASHA1Verify::generateSignature"
+            }
+          ],
+          "ruleId": "ConstraintError-7",
+          "message": {
+            "text": "First parameter (with value \"SHA1withRSA\") should be any of {SHA256withRSA, SHA256withECDSA, SHA256withDSA, SHA384withRSA, SHA512withRSA, SHA384withECDSA, SHA512withECDSA}.",
+            "richText": "ConstraintError violating CrySL rule for java.security.Signature."
+          }
+        },
+        {
+          "locations": [
+            {
+              "physicalLocation": {
+                "fileLocation": {
+                  "uri": "com.trilead.ssh2.signature.RSASHA1Verify.java",
+                  "externalLibrary": true
+                },
+                "region": {
+                  "startLine": 2
+                }
+              },
+              "fullyQualifiedLogicalName": "com::trilead::ssh2::signature::RSASHA1Verify::generateSignature"
+            }
+          ],
+          "ruleId": "RequiredPredicateError-14",
+          "message": {
+            "text": "First parameter was not properly generated as generated Privkey.",
+            "richText": "RequiredPredicateError violating CrySL rule for java.security.Signature."
+          }
+        },
+        {
+          "locations": [
+            {
+              "physicalLocation": {
+                "fileLocation": {
+                  "uri": "com.trilead.ssh2.signature.RSASHA1Verify.java",
+                  "externalLibrary": true
+                },
+                "region": {
+                  "startLine": 8
+                }
+              },
+              "fullyQualifiedLogicalName": "com::trilead::ssh2::signature::RSASHA1Verify::verifySignature"
+            }
+          ],
+          "ruleId": "ConstraintError-8",
+          "message": {
+            "text": "First parameter (with value \"SHA1withRSA\") should be any of {SHA256withRSA, SHA256withECDSA, SHA256withDSA, SHA384withRSA, SHA512withRSA, SHA384withECDSA, SHA512withECDSA}.",
+            "richText": "ConstraintError violating CrySL rule for java.security.Signature."
+          }
+        },
+        {
+          "locations": [
+            {
+              "physicalLocation": {
+                "fileLocation": {
+                  "uri": "com.trilead.ssh2.signature.RSASHA1Verify.java",
+                  "externalLibrary": true
+                },
+                "region": {
+                  "startLine": 9
+                }
+              },
+              "fullyQualifiedLogicalName": "com::trilead::ssh2::signature::RSASHA1Verify::verifySignature"
+            }
+          ],
+          "ruleId": "RequiredPredicateError-15",
+          "message": {
+            "text": "First parameter was not properly generated as generated Pubkey.",
+            "richText": "RequiredPredicateError violating CrySL rule for java.security.Signature."
+          }
+        },
+        {
+          "locations": [
+            {
+              "physicalLocation": {
+                "fileLocation": {
+                  "uri": "com.trilead.ssh2.signature.RSASHA1Verify.java",
+                  "externalLibrary": true
+                },
+                "region": {
+                  "startLine": 9
+                }
+              },
+              "fullyQualifiedLogicalName": "com::trilead::ssh2::signature::RSASHA1Verify::decodePublicKey"
+            }
+          ],
+          "ruleId": "RequiredPredicateError-16",
+          "message": {
+            "text": "First parameter was not properly generated as specced Key.",
+            "richText": "RequiredPredicateError violating CrySL rule for java.security.KeyFactory."
+          }
+        },
+        {
+          "locations": [
+            {
+              "physicalLocation": {
+                "fileLocation": {
+                  "uri": "com.trilead.ssh2.crypto.cipher.AES$CBC.java",
+                  "externalLibrary": true
+                },
+                "region": {
+                  "startLine": 2
+                }
+              },
+              "fullyQualifiedLogicalName": "com::trilead::ssh2::crypto::cipher::AES$CBC::<init>"
+            }
+          ],
+          "ruleId": "ConstraintError-9",
+          "message": {
+            "text": "First parameter (with value \"AES/CBC/NoPadding\") should be any of AES/CBC/{PKCS5Padding, ISO10126Padding}.",
+            "richText": "ConstraintError violating CrySL rule for javax.crypto.Cipher."
+          }
+        },
+        {
+          "locations": [
+            {
+              "physicalLocation": {
+                "fileLocation": {
+                  "uri": "com.trilead.ssh2.signature.DSASHA1Verify.java",
+                  "externalLibrary": true
+                },
+                "region": {
+                  "startLine": 30
+                }
+              },
+              "fullyQualifiedLogicalName": "com::trilead::ssh2::signature::DSASHA1Verify::verifySignature"
+            }
+          ],
+          "ruleId": "ConstraintError-10",
+          "message": {
+            "text": "First parameter (with value \"SHA1withDSA\") should be any of {SHA256withRSA, SHA256withECDSA, SHA256withDSA, SHA384withRSA, SHA512withRSA, SHA384withECDSA, SHA512withECDSA}.",
+            "richText": "ConstraintError violating CrySL rule for java.security.Signature."
+          }
+        },
+        {
+          "locations": [
+            {
+              "physicalLocation": {
+                "fileLocation": {
+                  "uri": "com.trilead.ssh2.signature.DSASHA1Verify.java",
+                  "externalLibrary": true
+                },
+                "region": {
+                  "startLine": 31
+                }
+              },
+              "fullyQualifiedLogicalName": "com::trilead::ssh2::signature::DSASHA1Verify::verifySignature"
+            }
+          ],
+          "ruleId": "RequiredPredicateError-17",
+          "message": {
+            "text": "First parameter was not properly generated as generated Pubkey.",
+            "richText": "RequiredPredicateError violating CrySL rule for java.security.Signature."
+          }
+        },
+        {
+          "locations": [
+            {
+              "physicalLocation": {
+                "fileLocation": {
+                  "uri": "com.trilead.ssh2.signature.DSASHA1Verify.java",
+                  "externalLibrary": true
+                },
+                "region": {
+                  "startLine": 11
+                }
+              },
+              "fullyQualifiedLogicalName": "com::trilead::ssh2::signature::DSASHA1Verify::decodePublicKey"
+            }
+          ],
+          "ruleId": "RequiredPredicateError-18",
+          "message": {
+            "text": "First parameter was not properly generated as specced Key.",
+            "richText": "RequiredPredicateError violating CrySL rule for java.security.KeyFactory."
+          }
+        },
+        {
+          "locations": [
+            {
+              "physicalLocation": {
+                "fileLocation": {
+                  "uri": "com.trilead.ssh2.crypto.dh.GenericDhExchange.java",
+                  "externalLibrary": true
+                },
+                "region": {
+                  "startLine": 1
+                }
+              },
+              "fullyQualifiedLogicalName": "com::trilead::ssh2::crypto::dh::GenericDhExchange::calculateH"
+            }
+          ],
+          "ruleId": "IncompleteOperationError-20",
+          "message": {
+            "text": "Operation on object of type java.security.MessageDigest object not completed. Expected call to digest, update.",
+            "richText": "IncompleteOperationError violating CrySL rule for java.security.MessageDigest."
+          }
+        },
+        {
+          "locations": [
+            {
+              "physicalLocation": {
+                "fileLocation": {
+                  "uri": "com.trilead.ssh2.KnownHosts.java",
+                  "externalLibrary": true
+                },
+                "region": {
+                  "startLine": 18
+                }
+              },
+              "fullyQualifiedLogicalName": "com::trilead::ssh2::KnownHosts::hostnameMatches"
+            }
+          ],
+          "ruleId": "RequiredPredicateError-19",
+          "message": {
+            "text": "First parameter was not properly generated as generated Key.",
+            "richText": "RequiredPredicateError violating CrySL rule for javax.crypto.Mac."
+          }
+        },
+        {
+          "locations": [
+            {
+              "physicalLocation": {
+                "fileLocation": {
+                  "uri": "com.trilead.ssh2.KnownHosts.java",
+                  "externalLibrary": true
+                },
+                "region": {
+                  "startLine": 14
+                }
+              },
+              "fullyQualifiedLogicalName": "com::trilead::ssh2::KnownHosts::hostnameMatches"
+            }
+          ],
+          "ruleId": "ConstraintError-11",
+          "message": {
+            "text": "First parameter (with value \"SHA1\") should be any of {SHA-256, SHA-384, SHA-512}.",
+            "richText": "ConstraintError violating CrySL rule for java.security.MessageDigest."
+          }
+        },
+        {
+          "locations": [
+            {
+              "physicalLocation": {
+                "fileLocation": {
+                  "uri": "com.trilead.ssh2.KnownHosts.java",
+                  "externalLibrary": true
+                },
+                "region": {
+                  "startLine": 18
+                }
+              },
+              "fullyQualifiedLogicalName": "com::trilead::ssh2::KnownHosts::hostnameMatches"
+            }
+          ],
+          "ruleId": "RequiredPredicateError-20",
+          "message": {
+            "text": "First parameter was not properly generated as prepared Key Material.",
+            "richText": "RequiredPredicateError violating CrySL rule for javax.crypto.spec.SecretKeySpec."
+          }
+        },
+        {
+          "locations": [
+            {
+              "physicalLocation": {
+                "fileLocation": {
+                  "uri": "com.trilead.ssh2.KnownHosts.java",
+                  "externalLibrary": true
+                },
+                "region": {
+                  "startLine": 17
+                }
+              },
+              "fullyQualifiedLogicalName": "com::trilead::ssh2::KnownHosts::hostnameMatches"
+            }
+          ],
+          "ruleId": "IncompleteOperationError-21",
+          "message": {
+            "text": "Operation on object of type javax.crypto.Mac object not completed. Expected call to init.",
+            "richText": "IncompleteOperationError violating CrySL rule for javax.crypto.Mac."
+          }
+        },
+        {
+          "locations": [
+            {
+              "physicalLocation": {
+                "fileLocation": {
+                  "uri": "com.trilead.ssh2.KnownHosts.java",
+                  "externalLibrary": true
+                },
+                "region": {
+                  "startLine": 16
+                }
+              },
+              "fullyQualifiedLogicalName": "com::trilead::ssh2::KnownHosts::hostnameMatches"
+            }
+          ],
+          "ruleId": "ConstraintError-12",
+          "message": {
+            "text": "First parameter (with value \"HmacSHA1\") should be any of {HmacSHA256, HmacSHA384, HmacSHA512, HmacPBESHA1, PBEWithHmacSHA1, PBEWithHmacSHA224, PBEWithHmacSHA256, PBEWithHmacSHA384, PBEWithHmacSHA512}.",
+            "richText": "ConstraintError violating CrySL rule for javax.crypto.Mac."
+          }
+        },
+        {
+          "locations": [
+            {
+              "physicalLocation": {
+                "fileLocation": {
+                  "uri": "com.trilead.ssh2.KnownHosts.java",
+                  "externalLibrary": true
+                },
+                "region": {
+                  "startLine": 15
+                }
+              },
+              "fullyQualifiedLogicalName": "com::trilead::ssh2::KnownHosts::hostnameMatches"
+            }
+          ],
+          "ruleId": "IncompleteOperationError-22",
+          "message": {
+            "text": "Operation on object of type java.security.MessageDigest object not completed. Expected call to digest, update.",
+            "richText": "IncompleteOperationError violating CrySL rule for java.security.MessageDigest."
+          }
+        },
+        {
+          "locations": [
+            {
+              "physicalLocation": {
+                "fileLocation": {
+                  "uri": "com.trilead.ssh2.KnownHosts.java",
+                  "externalLibrary": true
+                },
+                "region": {
+                  "startLine": 18
+                }
+              },
+              "fullyQualifiedLogicalName": "com::trilead::ssh2::KnownHosts::hostnameMatches"
+            }
+          ],
+          "ruleId": "ConstraintError-13",
+          "message": {
+            "text": "Second parameter (with value \"HmacSHA1\") should be any of {AES, HmacSHA224, HmacSHA256, HmacSHA384, HmacSHA512}.",
+            "richText": "ConstraintError violating CrySL rule for javax.crypto.spec.SecretKeySpec."
+          }
+        },
+        {
+          "locations": [
+            {
+              "physicalLocation": {
+                "fileLocation": {
+                  "uri": "com.trilead.ssh2.KnownHosts.java",
+                  "externalLibrary": true
+                },
+                "region": {
+                  "startLine": 32
+                }
+              },
+              "fullyQualifiedLogicalName": "com::trilead::ssh2::KnownHosts::<init>"
+            }
+          ],
+          "ruleId": "RequiredPredicateError-21",
+          "message": {
+            "text": "First parameter was not properly generated as specced Key.",
+            "richText": "RequiredPredicateError violating CrySL rule for java.security.KeyFactory."
+          }
+        },
+        {
+          "locations": [
+            {
+              "physicalLocation": {
+                "fileLocation": {
+                  "uri": "com.trilead.ssh2.signature.ECDSASHA2Verify.java",
+                  "externalLibrary": true
+                },
+                "region": {
+                  "startLine": 12
+                }
+              },
+              "fullyQualifiedLogicalName": "com::trilead::ssh2::signature::ECDSASHA2Verify::decodePublicKey"
+            }
+          ],
+          "ruleId": "RequiredPredicateError-22",
+          "message": {
+            "text": "First parameter was not properly generated as specced Key.",
+            "richText": "RequiredPredicateError violating CrySL rule for java.security.KeyFactory."
+          }
+        },
+        {
+          "locations": [
+            {
+              "physicalLocation": {
+                "fileLocation": {
+                  "uri": "com.trilead.ssh2.signature.ECDSASHA2Verify.java",
+                  "externalLibrary": true
+                },
+                "region": {
+                  "startLine": 28
+                }
+              },
+              "fullyQualifiedLogicalName": "com::trilead::ssh2::signature::ECDSASHA2Verify::verifySignature"
+            }
+          ],
+          "ruleId": "RequiredPredicateError-23",
+          "message": {
+            "text": "First parameter was not properly generated as generated Pubkey.",
+            "richText": "RequiredPredicateError violating CrySL rule for java.security.Signature."
+          }
+        },
+        {
+          "locations": [
+            {
+              "physicalLocation": {
+                "fileLocation": {
+                  "uri": "com.trilead.ssh2.signature.ECDSASHA2Verify.java",
+                  "externalLibrary": true
+                },
+                "region": {
+                  "startLine": 3
+                }
+              },
+              "fullyQualifiedLogicalName": "com::trilead::ssh2::signature::ECDSASHA2Verify::generateSignature"
+            }
+          ],
+          "ruleId": "RequiredPredicateError-24",
+          "message": {
+            "text": "First parameter was not properly generated as generated Privkey.",
+            "richText": "RequiredPredicateError violating CrySL rule for java.security.Signature."
+          }
+        },
+        {
+          "locations": [
+            {
+              "physicalLocation": {
+                "fileLocation": {
+                  "uri": "com.trilead.ssh2.crypto.dh.EcDhExchange.java",
+                  "externalLibrary": true
+                },
+                "region": {
+                  "startLine": 6
+                }
+              },
+              "fullyQualifiedLogicalName": "com::trilead::ssh2::crypto::dh::EcDhExchange::setF"
+            }
+          ],
+          "ruleId": "RequiredPredicateError-25",
+          "message": {
+            "text": "First parameter was not properly generated as specced Key.",
+            "richText": "RequiredPredicateError violating CrySL rule for java.security.KeyFactory."
+          }
+        },
+        {
+          "locations": [
+            {
+              "physicalLocation": {
+                "fileLocation": {
+                  "uri": "com.trilead.ssh2.crypto.dh.EcDhExchange.java",
+                  "externalLibrary": true
+                },
+                "region": {
+                  "startLine": 11
+                }
+              },
+              "fullyQualifiedLogicalName": "com::trilead::ssh2::crypto::dh::EcDhExchange::init"
+            }
+          ],
+          "ruleId": "RequiredPredicateError-26",
+          "message": {
+            "text": "First parameter was not properly generated as prepared E C.",
+            "richText": "RequiredPredicateError violating CrySL rule for java.security.KeyPairGenerator."
+          }
+        },
+        {
+          "locations": [
+            {
+              "physicalLocation": {
+                "fileLocation": {
+                  "uri": "com.trilead.ssh2.crypto.dh.DhExchange.java",
+                  "externalLibrary": true
+                },
+                "region": {
+                  "startLine": 6
+                }
+              },
+              "fullyQualifiedLogicalName": "com::trilead::ssh2::crypto::dh::DhExchange::setF"
+            }
+          ],
+          "ruleId": "RequiredPredicateError-27",
+          "message": {
+            "text": "First parameter was not properly generated as specced Key.",
+            "richText": "RequiredPredicateError violating CrySL rule for java.security.KeyFactory."
+          }
+        },
+        {
+          "locations": [
+            {
+              "physicalLocation": {
+                "fileLocation": {
+                  "uri": "com.trilead.ssh2.signature.RSASHA512Verify.java",
+                  "externalLibrary": true
+                },
+                "region": {
+                  "startLine": 2
+                }
+              },
+              "fullyQualifiedLogicalName": "com::trilead::ssh2::signature::RSASHA512Verify::generateSignature"
+            }
+          ],
+          "ruleId": "RequiredPredicateError-28",
+          "message": {
+            "text": "First parameter was not properly generated as generated Privkey.",
+            "richText": "RequiredPredicateError violating CrySL rule for java.security.Signature."
+          }
+        },
+        {
+          "locations": [
+            {
+              "physicalLocation": {
+                "fileLocation": {
+                  "uri": "com.trilead.ssh2.signature.RSASHA512Verify.java",
+                  "externalLibrary": true
+                },
+                "region": {
+                  "startLine": 9
+                }
+              },
+              "fullyQualifiedLogicalName": "com::trilead::ssh2::signature::RSASHA512Verify::verifySignature"
+            }
+          ],
+          "ruleId": "RequiredPredicateError-29",
+          "message": {
+            "text": "First parameter was not properly generated as generated Pubkey.",
+            "richText": "RequiredPredicateError violating CrySL rule for java.security.Signature."
+          }
+        },
+        {
+          "locations": [
+            {
+              "physicalLocation": {
+                "fileLocation": {
+                  "uri": "com.trilead.ssh2.signature.RSASHA256Verify.java",
+                  "externalLibrary": true
+                },
+                "region": {
+                  "startLine": 9
+                }
+              },
+              "fullyQualifiedLogicalName": "com::trilead::ssh2::signature::RSASHA256Verify::verifySignature"
+            }
+          ],
+          "ruleId": "RequiredPredicateError-30",
+          "message": {
+            "text": "First parameter was not properly generated as generated Pubkey.",
+            "richText": "RequiredPredicateError violating CrySL rule for java.security.Signature."
+          }
+        },
+        {
+          "locations": [
+            {
+              "physicalLocation": {
+                "fileLocation": {
+                  "uri": "com.trilead.ssh2.signature.RSASHA256Verify.java",
+                  "externalLibrary": true
+                },
+                "region": {
+                  "startLine": 2
+                }
+              },
+              "fullyQualifiedLogicalName": "com::trilead::ssh2::signature::RSASHA256Verify::generateSignature"
+            }
+          ],
+          "ruleId": "RequiredPredicateError-31",
+          "message": {
+            "text": "First parameter was not properly generated as generated Privkey.",
+            "richText": "RequiredPredicateError violating CrySL rule for java.security.Signature."
+          }
+        },
+        {
+          "locations": [
+            {
+              "physicalLocation": {
+                "fileLocation": {
+                  "uri": "com.gaurav.avnc.viewmodel.HostKeyVerifier.java",
+                  "externalLibrary": true
+                },
+                "region": {
+                  "startLine": 16
+                }
+              },
+              "fullyQualifiedLogicalName": "com::gaurav::avnc::viewmodel::HostKeyVerifier::verifyServerHostKey"
+            }
+          ],
+          "ruleId": "RequiredPredicateError-32",
+          "message": {
+            "text": "First parameter was not properly generated as specced Key.",
+            "richText": "RequiredPredicateError violating CrySL rule for java.security.KeyFactory."
+          }
+        }
+      ],
+      "tool": {
+        "name": "CryptoAnalysis",
+        "semanticVersion": null,
+        "language": "en-US",
+        "version": null
+      }
+    }
+  ]
+}

@@ -1,0 +1,13 @@
+Message,Description,RuleNumber,RuleDesc,CWEId,Severity,ClassName,MethodName
+Found: Untrused PRNG (java.util.Random),Used untrusted PRNG,13,Used untrusted PRNG,338,1,androidx.transition.Explode,calculateOut
+Found: Untrused PRNG (java.util.Random),Used untrusted PRNG,13,Used untrusted PRNG,338,1,kotlin.random.FallbackThreadLocalRandom$implStorage$1,initialValue
+Found: Untrused PRNG (java.util.Random),Used untrusted PRNG,13,Used untrusted PRNG,338,1,com.bumptech.glide.load.resource.gif.GifFrameLoader,getFrameSignature
+Found: Untrused PRNG (java.util.Random),Used untrusted PRNG,13,Used untrusted PRNG,338,1,com.simplemobiletools.commons.extensions.IntKt,random
+Found: Untrused PRNG (java.util.Random),Used untrusted PRNG,13,Used untrusted PRNG,338,1,androidx.activity.result.ActivityResultRegistry,init
+Found: Untrused PRNG (java.util.Random),Used untrusted PRNG,13,Used untrusted PRNG,338,1,kotlin.random.KotlinRandom,init
+Found: Untrused PRNG (java.util.Random),Used untrusted PRNG,13,Used untrusted PRNG,338,1,com.andrognito.patternlockview.utils.RandomUtils,clinit
+"Found: ""SHA-1""",Found broken hash functions,2,Found broken hash functions,759,1,com.andrognito.patternlockview.utils.PatternLockUtils,patternToSha1
+"Found: ""MD5""",Found broken hash functions,2,Found broken hash functions,759,1,com.andrognito.patternlockview.utils.PatternLockUtils,patternToMD5
+"Found: ""MD5""",Found broken hash functions,2,Found broken hash functions,759,1,com.simplemobiletools.commons.extensions.InputStreamKt,md5
+"Found: ""MD5""",Found broken hash functions,2,Found broken hash functions,759,1,com.simplemobiletools.commons.extensions.FileKt,md5
+"Found: ""SHA-1""",Found broken hash functions,2,Found broken hash functions,759,1,com.simplemobiletools.commons.views.PinTab,getHashedPin

@@ -1,0 +1,15 @@
+Message,Description,RuleNumber,RuleDesc,CWEId,Severity,ClassName,MethodName
+Found: Untrused PRNG (java.util.Random),Used untrusted PRNG,13,Used untrusted PRNG,338,1,j$.util.concurrent.B,init
+Found: Untrused PRNG (java.util.Random),Used untrusted PRNG,13,Used untrusted PRNG,338,1,com.bumptech.glide.load.resource.gif.GifFrameLoader,getFrameSignature
+Found: Untrused PRNG (java.util.Random),Used untrusted PRNG,13,Used untrusted PRNG,338,1,com.obsez.android.lib.filechooser.permissions.PermissionsUtil,clinit
+Found: Untrused PRNG (java.util.Random),Used untrusted PRNG,13,Used untrusted PRNG,338,1,free.rm.skytube.businessobjects.YouTube.POJOs.YouTubeAPIKey,init
+Found: Untrused PRNG (java.util.Random),Used untrusted PRNG,13,Used untrusted PRNG,338,1,androidx.activity.result.ActivityResultRegistry,init
+Found: Untrused PRNG (java.util.Random),Used untrusted PRNG,13,Used untrusted PRNG,338,1,com.optimaize.langdetect.LanguageDetectorImpl,detectBlockLongText
+Found: Untrused PRNG (java.util.Random),Used untrusted PRNG,13,Used untrusted PRNG,338,1,org.mozilla.javascript.NativeMath,execIdCall
+"Found: ""SHA-1""",Found broken hash functions,2,Found broken hash functions,759,1,okio.ByteString,sha1
+"Found: ""MD5""",Found broken hash functions,2,Found broken hash functions,759,1,org.mozilla.javascript.tools.shell.Main,getDigest
+"Found: ""SHA-1""",Found broken hash functions,2,Found broken hash functions,759,1,POJOs.YouTubeAPI,getSha1
+"Found: ""http://""",Used HTTP Protocol,7,Used HTTP Protocol,650,1,org.mozilla.javascript.tools.debugger.Dim,loadSource
+"Found: ""http://www.youtube.com""",Used HTTP Protocol,7,Used HTTP Protocol,650,1,org.schabi.newpipe.extractor.services.youtube.linkHandler.YoutubeStreamLinkHandlerFactory,getId
+"Found: ""http:""",Used HTTP Protocol,7,Used HTTP Protocol,650,1,org.mozilla.javascript.tools.debugger.Dim,loadSource
+"Found: ""http://127.0.0.1""",Used HTTP Protocol,7,Used HTTP Protocol,650,1,org.mozilla.javascript.tools.debugger.Dim,loadSource

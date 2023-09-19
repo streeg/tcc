@@ -1,0 +1,18 @@
+Message,Description,RuleNumber,RuleDesc,CWEId,Severity,ClassName,MethodName,ExternalLibrary
+Found: Untrused PRNG (java.util.Random),Used untrusted PRNG,13,Used untrusted PRNG,338,1,okhttp3.OkHttpClient,newWebSocket,true
+Found: Untrused PRNG (java.util.Random),Used untrusted PRNG,13,Used untrusted PRNG,338,1,androidx.transition.Explode,calculateOut,true
+Found: Untrused PRNG (java.util.Random),Used untrusted PRNG,13,Used untrusted PRNG,338,1,kotlin.random.KotlinRandom,init,false
+Found: Untrused PRNG (java.util.Random),Used untrusted PRNG,13,Used untrusted PRNG,338,1,kotlin.random.FallbackThreadLocalRandom$implStorage$1,initialValue,false
+Found: Untrused PRNG (java.util.Random),Used untrusted PRNG,13,Used untrusted PRNG,338,1,kotlinx.coroutines.scheduling.CoroutineScheduler,init,false
+"Cause: Fixed ""[1]""",Used untrusted HostNameVerifier,6,Used untrusted HostNameVerifier,601,1,UNKNOWN,UNKNOWN,false
+"Found: ""SHA-1""",Found broken hash functions,2,Found broken hash functions,759,1,okio.HashingSink$Companion,sha1,true
+"Found: ""SHA-1""",Found broken hash functions,2,Found broken hash functions,759,1,okio.HashingSource$Companion,sha1,true
+"Found: ""MD5""",Found broken hash functions,2,Found broken hash functions,759,1,okio.Buffer,md5,true
+"Found: ""SHA-1""",Found broken hash functions,2,Found broken hash functions,759,1,okio.ByteString,sha1,true
+"Found: ""SHA-1""",Found broken hash functions,2,Found broken hash functions,759,1,okio.Buffer,sha1,true
+"Found: ""MD5""",Found broken hash functions,2,Found broken hash functions,759,1,okio.HashingSink$Companion,md5,true
+"Found: ""MD5""",Found broken hash functions,2,Found broken hash functions,759,1,okio.HashingSource$Companion,md5,true
+"Found: ""MD5""",Found broken hash functions,2,Found broken hash functions,759,1,okio.ByteString,md5,true
+"Found: Constant ""1L""",Used constant keys in code,3,Used constant keys in code,547,1,sevenz.AES256SHA256Decoder,init,false
+"Found: Constant ""0L""",Used constant keys in code,3,Used constant keys in code,547,1,sevenz.AES256SHA256Decoder,init,false
+"Found: Constant ""1L""",Used constant keys in code,3,Used constant keys in code,547,1,sevenz.AES256SHA256Decoder,init,false

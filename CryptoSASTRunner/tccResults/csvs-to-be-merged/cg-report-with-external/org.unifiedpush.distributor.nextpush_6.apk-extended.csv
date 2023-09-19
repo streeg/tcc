@@ -1,0 +1,23 @@
+Message,Description,RuleNumber,RuleDesc,CWEId,Severity,ClassName,MethodName,ExternalLibrary
+Found: Untrused PRNG (java.util.Random),Used untrusted PRNG,13,Used untrusted PRNG,338,1,androidx.transition.Explode,calculateOut,true
+Found: Untrused PRNG (java.util.Random),Used untrusted PRNG,13,Used untrusted PRNG,338,1,kotlin.random.FallbackThreadLocalRandom$implStorage$1,initialValue,false
+Found: Untrused PRNG (java.util.Random),Used untrusted PRNG,13,Used untrusted PRNG,338,1,okhttp3.OkHttpClient,newWebSocket,true
+Found: Untrused PRNG (java.util.Random),Used untrusted PRNG,13,Used untrusted PRNG,338,1,androidx.activity.result.ActivityResultRegistry,init,true
+Found: Untrused PRNG (java.util.Random),Used untrusted PRNG,13,Used untrusted PRNG,338,1,kotlin.random.KotlinRandom,init,false
+Found: Untrused PRNG (java.util.Random),Used untrusted PRNG,13,Used untrusted PRNG,338,1,com.nextcloud.android.sso.helper.ExponentialBackoff,notifyFailed,true
+"Cause: Fixed ""[1]""",Used untrusted HostNameVerifier,6,Used untrusted HostNameVerifier,601,1,UNKNOWN,UNKNOWN,false
+"Found: ""SHA-1""",Found broken hash functions,2,Found broken hash functions,759,1,okio.HashingSink$Companion,sha1,true
+"Found: ""MD5""",Found broken hash functions,2,Found broken hash functions,759,1,org.apache.commons.io.input.MessageDigestCalculatingInputStream,init,true
+"Found: ""SHA-1""",Found broken hash functions,2,Found broken hash functions,759,1,okio.HashingSource$Companion,sha1,true
+"Found: ""SHA-1""",Found broken hash functions,2,Found broken hash functions,759,1,okio.ByteString,sha1,true
+"Found: ""MD5""",Found broken hash functions,2,Found broken hash functions,759,1,okio.Buffer,md5,true
+"Found: ""MD5""",Found broken hash functions,2,Found broken hash functions,759,1,okio.HashingSink$Companion,md5,true
+"Found: ""MD5""",Found broken hash functions,2,Found broken hash functions,759,1,okio.HashingSource$Companion,md5,true
+"Found: ""MD5""",Found broken hash functions,2,Found broken hash functions,759,1,okio.ByteString,md5,true
+"Found: ""SHA-1""",Found broken hash functions,2,Found broken hash functions,759,1,okio.Buffer,sha1,true
+"Found: ""http://localhost/""",Used HTTP Protocol,7,Used HTTP Protocol,650,1,helper.Retrofit2Helper,convertExceptionToResponse,false
+"Found: ""http://localhost/""",Used HTTP Protocol,7,Used HTTP Protocol,650,1,retrofit2.Response,success,true
+"Found: ""http://localhost/""",Used HTTP Protocol,7,Used HTTP Protocol,650,1,retrofit2.Response,success,true
+"Found: ""http://localhost/""",Used HTTP Protocol,7,Used HTTP Protocol,650,1,retrofit2.Response,error,true
+"Found: ""http:""",Used HTTP Protocol,7,Used HTTP Protocol,650,1,okhttp3.Request$Builder,url,true
+"Found: ""http://localhost/""",Used HTTP Protocol,7,Used HTTP Protocol,650,1,retrofit2.Response,success,true

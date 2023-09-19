@@ -1,0 +1,31 @@
+Message,Description,RuleNumber,RuleDesc,CWEId,Severity,ClassName,MethodName
+Found: Untrused PRNG (java.util.Random),Used untrusted PRNG,13,Used untrusted PRNG,338,1,androidx.transition.Explode,calculateOut
+Found: Untrused PRNG (java.util.Random),Used untrusted PRNG,13,Used untrusted PRNG,338,1,trifa.HelperMsgNotification,run
+Found: Untrused PRNG (java.util.Random),Used untrusted PRNG,13,Used untrusted PRNG,338,1,kotlin.random.FallbackThreadLocalRandom$implStorage$1,initialValue
+Found: Untrused PRNG (java.util.Random),Used untrusted PRNG,13,Used untrusted PRNG,338,1,com.zoffcc.applications.trifa.FileLoader2$MyDataFetcher$1,run
+Found: Untrused PRNG (java.util.Random),Used untrusted PRNG,13,Used untrusted PRNG,338,1,info.guardianproject.iocipher.File,clinit
+Found: Untrused PRNG (java.util.Random),Used untrusted PRNG,13,Used untrusted PRNG,338,1,com.zoffcc.applications.trifa.HelperFiletransfer,get_incoming_filetransfer_local_filename
+Found: Untrused PRNG (java.util.Random),Used untrusted PRNG,13,Used untrusted PRNG,338,1,com.zoffcc.applications.trifa.HelperGeneric,set_new_random_nospam_value
+Found: Untrused PRNG (java.util.Random),Used untrusted PRNG,13,Used untrusted PRNG,338,1,trifa.TrifaToxService,run
+Found: Untrused PRNG (java.util.Random),Used untrusted PRNG,13,Used untrusted PRNG,338,1,com.zoffcc.applications.trifa.HelperFiletransfer,copy_outgoing_file_to_sdcard_dir
+Found: Untrused PRNG (java.util.Random),Used untrusted PRNG,13,Used untrusted PRNG,338,1,com.zoffcc.applications.trifa.TrifaToxService,load_and_add_all_friends
+Found: Untrused PRNG (java.util.Random),Used untrusted PRNG,13,Used untrusted PRNG,338,1,com.bumptech.glide.load.resource.gif.GifFrameLoader,getFrameSignature
+Found: Untrused PRNG (java.util.Random),Used untrusted PRNG,13,Used untrusted PRNG,338,1,com.zoffcc.applications.trifa.HelperGeneric,get_uniq_tmp_filename
+Found: Untrused PRNG (java.util.Random),Used untrusted PRNG,13,Used untrusted PRNG,338,1,okhttp3.OkHttpClient,newWebSocket
+Found: Untrused PRNG (java.util.Random),Used untrusted PRNG,13,Used untrusted PRNG,338,1,androidx.activity.result.ActivityResultRegistry,init
+Found: Untrused PRNG (java.util.Random),Used untrusted PRNG,13,Used untrusted PRNG,338,1,kotlin.random.KotlinRandom,init
+Found: Untrused PRNG (java.util.Random),Used untrusted PRNG,13,Used untrusted PRNG,338,1,com.zoffcc.applications.trifa.MainApplication,onCreate
+Found: Untrused PRNG (java.util.Random),Used untrusted PRNG,13,Used untrusted PRNG,338,1,com.zoffcc.applications.trifa.MainActivity,getRandomString
+"Cause: Fixed ""[1]""",Used untrusted HostNameVerifier,6,Used untrusted HostNameVerifier,601,1,UNKNOWN,UNKNOWN
+"Found: ""SHA-1""",Found broken hash functions,2,Found broken hash functions,759,1,okio.HashingSink$Companion,sha1
+"Found: ""SHA-1""",Found broken hash functions,2,Found broken hash functions,759,1,okio.HashingSource$Companion,sha1
+"Found: ""SHA-1""",Found broken hash functions,2,Found broken hash functions,759,1,okio.ByteString,sha1
+"Found: ""MD5""",Found broken hash functions,2,Found broken hash functions,759,1,okio.Buffer,md5
+"Found: ""MD5""",Found broken hash functions,2,Found broken hash functions,759,1,com.zoffcc.applications.trifa.HelperGeneric,get_uniq_tmp_filename
+"Found: ""MD5""",Found broken hash functions,2,Found broken hash functions,759,1,okio.HashingSink$Companion,md5
+"Found: ""MD5""",Found broken hash functions,2,Found broken hash functions,759,1,okio.HashingSource$Companion,md5
+"Found: ""SHA-1""",Found broken hash functions,2,Found broken hash functions,759,1,me.zhanghai.android.patternlock.PatternUtils,sha1
+"Found: ""MD5""",Found broken hash functions,2,Found broken hash functions,759,1,okio.ByteString,md5
+"Found: ""MD5""",Found broken hash functions,2,Found broken hash functions,759,1,com.zoffcc.applications.trifa.TrifaSetPatternActivity,md5
+"Found: ""SHA-1""",Found broken hash functions,2,Found broken hash functions,759,1,okio.Buffer,sha1
+"Found: ""http:""",Used HTTP Protocol,7,Used HTTP Protocol,650,1,okhttp3.Request$Builder,url

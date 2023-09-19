@@ -1,0 +1,78 @@
+Message,Description,RuleNumber,RuleDesc,CWEId,Severity,ClassName,MethodName
+Found: Untrused PRNG (java.util.Random),Used untrusted PRNG,13,Used untrusted PRNG,338,1,androidx.transition.Explode,calculateOut
+Found: Untrused PRNG (java.util.Random),Used untrusted PRNG,13,Used untrusted PRNG,338,1,org.apache.commons.lang3.ArrayUtils,shuffle
+Found: Untrused PRNG (java.util.Random),Used untrusted PRNG,13,Used untrusted PRNG,338,1,org.apache.commons.lang3.RandomUtils,clinit
+Found: Untrused PRNG (java.util.Random),Used untrusted PRNG,13,Used untrusted PRNG,338,1,kotlin.random.FallbackThreadLocalRandom$implStorage$1,initialValue
+Found: Untrused PRNG (java.util.Random),Used untrusted PRNG,13,Used untrusted PRNG,338,1,org.codehaus.plexus.util.FileUtils,createTempFile
+Found: Untrused PRNG (java.util.Random),Used untrusted PRNG,13,Used untrusted PRNG,338,1,org.apache.commons.lang3.ArrayUtils,shuffle
+Found: Untrused PRNG (java.util.Random),Used untrusted PRNG,13,Used untrusted PRNG,338,1,okhttp3.OkHttpClient,newWebSocket
+Found: Untrused PRNG (java.util.Random),Used untrusted PRNG,13,Used untrusted PRNG,338,1,org.spongycastle.math.raw.Mod,random
+Found: Untrused PRNG (java.util.Random),Used untrusted PRNG,13,Used untrusted PRNG,338,1,org.apache.commons.lang3.ArrayUtils,shuffle
+Found: Untrused PRNG (java.util.Random),Used untrusted PRNG,13,Used untrusted PRNG,338,1,org.spongycastle.asn1.ua.DSTU4145PointEncoder,solveQuadraticEquation
+Found: Untrused PRNG (java.util.Random),Used untrusted PRNG,13,Used untrusted PRNG,338,1,org.apache.commons.lang3.ArrayUtils,shuffle
+Found: Untrused PRNG (java.util.Random),Used untrusted PRNG,13,Used untrusted PRNG,338,1,kotlin.random.KotlinRandom,init
+Found: Untrused PRNG (java.util.Random),Used untrusted PRNG,13,Used untrusted PRNG,338,1,org.apache.commons.lang3.ArrayUtils,shuffle
+Found: Untrused PRNG (java.util.Random),Used untrusted PRNG,13,Used untrusted PRNG,338,1,concurrent.ThreadLocalRandom,init
+Found: Untrused PRNG (java.util.Random),Used untrusted PRNG,13,Used untrusted PRNG,338,1,org.spongycastle.pqc.math.linearalgebra.GF2nONBField,elementOfOrder
+Found: Untrused PRNG (java.util.Random),Used untrusted PRNG,13,Used untrusted PRNG,338,1,org.spongycastle.pqc.math.linearalgebra.GF2nPolynomialElement,solveQuadraticEquation
+Found: Untrused PRNG (java.util.Random),Used untrusted PRNG,13,Used untrusted PRNG,338,1,org.apache.commons.lang3.RandomStringUtils,clinit
+Found: Untrused PRNG (java.util.Random),Used untrusted PRNG,13,Used untrusted PRNG,338,1,org.spongycastle.math.ec.ECCurve$AbstractF2m,solveQuadraticEquation
+Found: Untrused PRNG (java.util.Random),Used untrusted PRNG,13,Used untrusted PRNG,338,1,j$.util.concurrent.ThreadLocalRandom,init
+Found: Untrused PRNG (java.util.Random),Used untrusted PRNG,13,Used untrusted PRNG,338,1,com.bumptech.glide.load.resource.gif.GifFrameLoader,getFrameSignature
+Found: Untrused PRNG (java.util.Random),Used untrusted PRNG,13,Used untrusted PRNG,338,1,androidx.activity.result.ActivityResultRegistry,init
+Found: Untrused PRNG (java.util.Random),Used untrusted PRNG,13,Used untrusted PRNG,338,1,org.apache.commons.lang3.ArrayUtils,shuffle
+Found: Untrused PRNG (java.util.Random),Used untrusted PRNG,13,Used untrusted PRNG,338,1,org.apache.commons.lang3.ArrayUtils,shuffle
+Found: Untrused PRNG (java.util.Random),Used untrusted PRNG,13,Used untrusted PRNG,338,1,org.spongycastle.pqc.math.linearalgebra.GF2Polynomial,clinit
+Found: Untrused PRNG (java.util.Random),Used untrusted PRNG,13,Used untrusted PRNG,338,1,org.apache.commons.lang3.ArrayUtils,shuffle
+Found: Untrused PRNG (java.util.Random),Used untrusted PRNG,13,Used untrusted PRNG,338,1,org.apache.commons.lang3.ArrayUtils,shuffle
+Found: Untrused PRNG (java.util.Random),Used untrusted PRNG,13,Used untrusted PRNG,338,1,org.spongycastle.math.ec.ECFieldElement$Fp,sqrt
+Didn't manually verify hostname in convertToSSL,Should check HostnameVerification manually,12,Should check HostnameVerification manually,297,1,org.monora.uprotocol.core.CommunicationBridge,convertToSSL
+Should at least get One accepted Issuer from Other Sources in getAcceptedIssuers method of persistence.PersistenceProvider,Uses untrusted TrustManager,4,Uses untrusted TrustManager,349,1,persistence.PersistenceProvider,getAcceptedIssuers
+Should throw java.security.cert.CertificateException in check(Client|Server)Trusted method of persistence.PersistenceProvider,Uses untrusted TrustManager,4,Uses untrusted TrustManager,349,1,persistence.PersistenceProvider,UNKNOWN
+Should at least get One accepted Issuer from Other Sources in getAcceptedIssuers method of http.HttpRequest,Uses untrusted TrustManager,4,Uses untrusted TrustManager,349,1,http.HttpRequest,getAcceptedIssuers
+Should throw java.security.cert.CertificateException in check(Client|Server)Trusted method of http.HttpRequest,Uses untrusted TrustManager,4,Uses untrusted TrustManager,349,1,http.HttpRequest,UNKNOWN
+Should at least get One accepted Issuer from Other Sources in getAcceptedIssuers method of jcajce.JcaJceUtils,Uses untrusted TrustManager,4,Uses untrusted TrustManager,349,1,jcajce.JcaJceUtils,getAcceptedIssuers
+Should throw java.security.cert.CertificateException in check(Client|Server)Trusted method of jcajce.JcaJceUtils,Uses untrusted TrustManager,4,Uses untrusted TrustManager,349,1,jcajce.JcaJceUtils,UNKNOWN
+Should at least get One accepted Issuer from Other Sources in getAcceptedIssuers method of jcajce.JcaJceUtils,Uses untrusted TrustManager,4,Uses untrusted TrustManager,349,1,jcajce.JcaJceUtils,getAcceptedIssuers
+Should throw java.security.cert.CertificateException in check(Client|Server)Trusted method of jcajce.JcaJceUtils,Uses untrusted TrustManager,4,Uses untrusted TrustManager,349,1,jcajce.JcaJceUtils,UNKNOWN
+"Cause: Fixed ""[1]""",Used untrusted HostNameVerifier,6,Used untrusted HostNameVerifier,601,1,http.HttpRequest,UNKNOWN
+"Found: ""MD5""",Found broken hash functions,2,Found broken hash functions,759,1,com.yanzhenjie.andserver.util.DigestUtils,md5Digest
+"Found: ""MD5""",Found broken hash functions,2,Found broken hash functions,759,1,okio.HashingSink,md5
+"Found: ""MD5""",Found broken hash functions,2,Found broken hash functions,759,1,org.apache.commons.io.input.MessageDigestCalculatingInputStream,init
+"Found: ""SHA-1""",Found broken hash functions,2,Found broken hash functions,759,1,okio.Buffer,sha1
+"Found: ""MD5""",Found broken hash functions,2,Found broken hash functions,759,1,okio.HashingSource,md5
+"Found: ""MD5""",Found broken hash functions,2,Found broken hash functions,759,1,com.yanzhenjie.andserver.util.DigestUtils,md5DigestAsHex
+"Found: ""SHA-1""",Found broken hash functions,2,Found broken hash functions,759,1,okio.HashingSink,sha1
+"Found: ""MD5""",Found broken hash functions,2,Found broken hash functions,759,1,com.yanzhenjie.andserver.util.DigestUtils,appendMd5DigestAsHex
+"Found: ""SHA-1""",Found broken hash functions,2,Found broken hash functions,759,1,okio.ByteString,sha1
+"Found: ""SHA1""",Found broken hash functions,2,Found broken hash functions,759,1,org.spongycastle.cert.jcajce.JcaX509ExtensionUtils,init
+"Found: ""MD5""",Found broken hash functions,2,Found broken hash functions,759,1,okio.Buffer,md5
+"Found: ""MD5""",Found broken hash functions,2,Found broken hash functions,759,1,okio.ByteString,md5
+"Found: ""SHA-1""",Found broken hash functions,2,Found broken hash functions,759,1,okio.HashingSource,sha1
+"Found: ""MD5""",Found broken hash functions,2,Found broken hash functions,759,1,com.yanzhenjie.andserver.util.DigestUtils,appendMd5DigestAsHex
+"Found: ""MD5""",Found broken hash functions,2,Found broken hash functions,759,1,com.yanzhenjie.andserver.util.DigestUtils,md5DigestAsHex
+"Found: ""MD5""",Found broken hash functions,2,Found broken hash functions,759,1,com.yanzhenjie.andserver.util.DigestUtils,md5Digest
+"Found: ""1""",Used < 1000 iteration for PBE,8,Used < 1000 iteration for PBE,326,1,org.spongycastle.jcajce.provider.keystore.bc.BcKeyStoreSpi,loadStore
+"Found: ""3""",Used < 1000 iteration for PBE,8,Used < 1000 iteration for PBE,326,1,org.spongycastle.jcajce.provider.keystore.bc.BcKeyStoreSpi$StoreEntry,init
+"Found: ""2""",Used < 1000 iteration for PBE,8,Used < 1000 iteration for PBE,326,1,org.spongycastle.jcajce.provider.symmetric.AES$PBEWithSHA1AESCBC128,init
+"Found: ""2""",Used < 1000 iteration for PBE,8,Used < 1000 iteration for PBE,326,1,org.spongycastle.jcajce.provider.symmetric.AES$PBEWithSHA256AESCBC128,init
+"Found: ""2""",Used < 1000 iteration for PBE,8,Used < 1000 iteration for PBE,326,1,org.spongycastle.jcajce.provider.keystore.bc.BcKeyStoreSpi,loadStore
+"Found: ""2""",Used < 1000 iteration for PBE,8,Used < 1000 iteration for PBE,326,1,org.spongycastle.jcajce.provider.symmetric.AES$PBEWithSHA256AESCBC256,init
+"Found: ""2""",Used < 1000 iteration for PBE,8,Used < 1000 iteration for PBE,326,1,org.spongycastle.jcajce.provider.symmetric.RC2$PBEWithSHAAnd128BitRC2,init
+"Found: ""0""",Used < 1000 iteration for PBE,8,Used < 1000 iteration for PBE,326,1,org.spongycastle.jcajce.provider.symmetric.DES$PBEWithMD2,init
+"Found: ""2""",Used < 1000 iteration for PBE,8,Used < 1000 iteration for PBE,326,1,org.spongycastle.jcajce.provider.symmetric.RC2$PBEWithSHAAnd40BitRC2,init
+"Found: ""1""",Used < 1000 iteration for PBE,8,Used < 1000 iteration for PBE,326,1,org.spongycastle.openssl.jcajce.PEMUtilities,getKey
+"Found: ""2""",Used < 1000 iteration for PBE,8,Used < 1000 iteration for PBE,326,1,org.spongycastle.jcajce.provider.symmetric.AES$PBEWithSHA1AESCBC192,init
+"Found: ""2""",Used < 1000 iteration for PBE,8,Used < 1000 iteration for PBE,326,1,org.spongycastle.jcajce.provider.symmetric.AES$PBEWithSHA1AESCBC256,init
+"Found: ""2""",Used < 1000 iteration for PBE,8,Used < 1000 iteration for PBE,326,1,org.spongycastle.jcajce.provider.symmetric.Twofish$PBEWithSHA,init
+"Found: ""4""",Used < 1000 iteration for PBE,8,Used < 1000 iteration for PBE,326,1,org.spongycastle.jcajce.provider.keystore.bc.BcKeyStoreSpi$StoreEntry,init
+"Found: ""0""",Used < 1000 iteration for PBE,8,Used < 1000 iteration for PBE,326,1,org.spongycastle.jcajce.provider.symmetric.DES$PBEWithMD5,init
+"Found: ""0""",Used < 1000 iteration for PBE,8,Used < 1000 iteration for PBE,326,1,org.spongycastle.jcajce.provider.symmetric.RC2$PBEWithMD5AndRC2,init
+"Found: ""20""",Used < 1000 iteration for PBE,8,Used < 1000 iteration for PBE,326,1,org.spongycastle.jcajce.provider.keystore.pkcs12.PKCS12KeyStoreSpi,init
+"Found: ""2""",Used < 1000 iteration for PBE,8,Used < 1000 iteration for PBE,326,1,org.spongycastle.jcajce.provider.symmetric.AES$PBEWithSHA256AESCBC192,init
+"Found: ""0""",Used < 1000 iteration for PBE,8,Used < 1000 iteration for PBE,326,1,org.spongycastle.jcajce.provider.symmetric.RC2$PBEWithSHA1AndRC2,init
+"Found: ""2""",Used < 1000 iteration for PBE,8,Used < 1000 iteration for PBE,326,1,org.spongycastle.jcajce.provider.symmetric.DESede$PBEWithSHAAndDES2Key,init
+"Found: ""2""",Used < 1000 iteration for PBE,8,Used < 1000 iteration for PBE,326,1,org.spongycastle.jcajce.provider.symmetric.DESede$PBEWithSHAAndDES3Key,init
+"Found: ""1""",Used < 1000 iteration for PBE,8,Used < 1000 iteration for PBE,326,1,org.spongycastle.jcajce.provider.keystore.bc.BcKeyStoreSpi$StoreEntry,init
+"Found: ""0""",Used < 1000 iteration for PBE,8,Used < 1000 iteration for PBE,326,1,org.spongycastle.jcajce.provider.symmetric.DES$PBEWithSHA1,init
+"Found: ""www.bouncycastle.org""",Found predictable seeds in code,11,Found predictable seeds in code,760,1,org.spongycastle.crypto.examples.DESExample,init

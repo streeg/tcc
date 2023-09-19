@@ -1,0 +1,15 @@
+Message,Description,RuleNumber,RuleDesc,CWEId,Severity,ClassName,MethodName
+Found: Untrused PRNG (java.util.Random),Used untrusted PRNG,13,Used untrusted PRNG,338,1,androidx.activity.result.ActivityResultRegistry,init
+Found: Untrused PRNG (java.util.Random),Used untrusted PRNG,13,Used untrusted PRNG,338,1,com.google.crypto.tink.integration.android.AndroidKeystoreAesGcm,decrypt
+Found: Untrused PRNG (java.util.Random),Used untrusted PRNG,13,Used untrusted PRNG,338,1,com.google.crypto.tink.integration.android.AndroidKeystoreAesGcm,encrypt
+Found: Untrused PRNG (java.util.Random),Used untrusted PRNG,13,Used untrusted PRNG,338,1,kotlin.random.FallbackThreadLocalRandom$implStorage$1,initialValue
+Found: Untrused PRNG (java.util.Random),Used untrusted PRNG,13,Used untrusted PRNG,338,1,j$.util.concurrent.ThreadLocalRandom,init
+Found: Untrused PRNG (java.util.Random),Used untrusted PRNG,13,Used untrusted PRNG,338,1,org.xbill.DNS.Header,clinit
+Should at least get One accepted Issuer from Other Sources in getAcceptedIssuers method of UNKNOWN,Uses untrusted TrustManager,4,Uses untrusted TrustManager,349,1,UNKNOWN,getAcceptedIssuers
+"Found: ""MD5""",Found broken hash functions,2,Found broken hash functions,759,1,org.conscrypt.NativeCrypto,X509_NAME_hash_old
+"Found: ""MD5""",Found broken hash functions,2,Found broken hash functions,759,1,at.bitfire.cert4android.CustomCertService,onReceiveDecision
+"Found: ""MD5""",Found broken hash functions,2,Found broken hash functions,759,1,at.bitfire.davdroid.webdav.cache.CacheUtils,md5
+"Found: ""MD5""",Found broken hash functions,2,Found broken hash functions,759,1,okio.ByteString,md5
+"Found: ""SHA1""",Found broken hash functions,2,Found broken hash functions,759,1,org.conscrypt.NativeCrypto,X509_NAME_hash
+"Found: ""jks""",Used Predictable KeyStore Password,14,Used Predictable KeyStore Password,321,1,java.security.KeyStore,getDefaultType
+"Found: ""http://www.oreillynet.com/meerkat/xml-rpc/server.php""",Used HTTP Protocol,7,Used HTTP Protocol,650,1,org.xmlpull.v1.samples.XMLRPCDecoder,main

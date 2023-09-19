@@ -1,0 +1,16 @@
+Message,Description,RuleNumber,RuleDesc,CWEId,Severity,ClassName,MethodName
+"Found: ""AES/ECB/NoPadding""",Found broken crypto schemes,1,Found broken crypto schemes,256,1,org.bitcoinj.crypto.BIP38PrivateKey,decryptNoEC
+"Found: ""AES/ECB/NoPadding""",Found broken crypto schemes,1,Found broken crypto schemes,256,1,org.bitcoinj.crypto.BIP38PrivateKey,decryptEC
+Found: Untrused PRNG (java.util.Random),Used untrusted PRNG,13,Used untrusted PRNG,338,1,org.bitcoinj.core.TransactionBroadcast,clinit
+Found: Untrused PRNG (java.util.Random),Used untrusted PRNG,13,Used untrusted PRNG,338,1,androidx.activity.result.ActivityResultRegistry,init
+Found: Untrused PRNG (java.util.Random),Used untrusted PRNG,13,Used untrusted PRNG,338,1,org.bitcoinj.net.FilterMerger,init
+Found: Untrused PRNG (java.util.Random),Used untrusted PRNG,13,Used untrusted PRNG,338,1,org.bitcoinj.core.Peer,processInv
+Found: Untrused PRNG (java.util.Random),Used untrusted PRNG,13,Used untrusted PRNG,338,1,core.Peer,run
+Found: Untrused PRNG (java.util.Random),Used untrusted PRNG,13,Used untrusted PRNG,338,1,org.bitcoinj.core.Peer,ping
+Found: Untrused PRNG (java.util.Random),Used untrusted PRNG,13,Used untrusted PRNG,338,1,org.bouncycastle.math.raw.Mod,random
+Found: Untrused PRNG (java.util.Random),Used untrusted PRNG,13,Used untrusted PRNG,338,1,org.bitcoinj.core.PeerGroup,selectDownloadPeer
+Found: Untrused PRNG (java.util.Random),Used untrusted PRNG,13,Used untrusted PRNG,338,1,org.bouncycastle.math.ec.ECCurve$AbstractF2m,solveQuadraticEquation
+Should at least get One accepted Issuer from Other Sources in getAcceptedIssuers method of send.RequestWalletBalanceTask,Uses untrusted TrustManager,4,Uses untrusted TrustManager,349,1,send.RequestWalletBalanceTask,getAcceptedIssuers
+Should throw java.security.cert.CertificateException in check(Client|Server)Trusted method of send.RequestWalletBalanceTask,Uses untrusted TrustManager,4,Uses untrusted TrustManager,349,1,send.RequestWalletBalanceTask,UNKNOWN
+"Found: ""SHA-1""",Found broken hash functions,2,Found broken hash functions,759,1,okio.ByteString,sha1
+"Found: ""SHA-1""",Found broken hash functions,2,Found broken hash functions,759,1,org.bitcoinj.script.Script,executeScript

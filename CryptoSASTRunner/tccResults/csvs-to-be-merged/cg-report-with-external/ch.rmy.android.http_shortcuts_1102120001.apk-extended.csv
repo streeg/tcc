@@ -1,0 +1,15 @@
+Message,Description,RuleNumber,RuleDesc,CWEId,Severity,ClassName,MethodName,ExternalLibrary
+Found: Untrused PRNG (java.util.Random),Used untrusted PRNG,13,Used untrusted PRNG,338,1,androidx.activity.result.ActivityResultRegistry,init,true
+Found: Untrused PRNG (java.util.Random),Used untrusted PRNG,13,Used untrusted PRNG,338,1,g.r.b$a,initialValue,false
+Should at least get One accepted Issuer from Other Sources in getAcceptedIssuers method of UNKNOWN,Uses untrusted TrustManager,4,Uses untrusted TrustManager,349,1,UNKNOWN,getAcceptedIssuers,false
+Should throw java.security.cert.CertificateException in check(Client|Server)Trusted method of UNKNOWN,Uses untrusted TrustManager,4,Uses untrusted TrustManager,349,1,UNKNOWN,UNKNOWN,false
+"Cause: Fixed ""[1]""",Used untrusted HostNameVerifier,6,Used untrusted HostNameVerifier,601,1,UNKNOWN,UNKNOWN,false
+"Found: ""MD5""",Found broken hash functions,2,Found broken hash functions,759,1,org.conscrypt.NativeCrypto,X509_NAME_hash_old,false
+"Found: ""MD5""",Found broken hash functions,2,Found broken hash functions,759,1,j.d,e,false
+"Found: ""SHA-1""",Found broken hash functions,2,Found broken hash functions,759,1,com.facebook.stetho.websocket.WebSocketHandler,generateServerKey,true
+"Found: ""MD5""",Found broken hash functions,2,Found broken hash functions,759,1,j.d,b,false
+"Found: ""sha1""",Found broken hash functions,2,Found broken hash functions,759,1,d.a.a.a.m.h.b.i1,clinit,false
+"Found: ""sha-1""",Found broken hash functions,2,Found broken hash functions,759,1,d.a.a.a.m.h.b.i1,clinit,false
+"Found: ""MD5""",Found broken hash functions,2,Found broken hash functions,759,1,b.d.a.a.b,b,false
+"Found: ""md5""",Found broken hash functions,2,Found broken hash functions,759,1,d.a.a.a.m.h.b.i1,clinit,false
+"Found: ""SHA1""",Found broken hash functions,2,Found broken hash functions,759,1,org.conscrypt.NativeCrypto,X509_NAME_hash,false

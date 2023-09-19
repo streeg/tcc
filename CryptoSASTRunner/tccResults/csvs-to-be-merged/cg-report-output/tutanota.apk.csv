@@ -1,0 +1,7 @@
+Message,Description,RuleNumber,RuleDesc,CWEId,Severity,ClassName,MethodName
+Found: Untrused PRNG (java.util.Random),Used untrusted PRNG,13,Used untrusted PRNG,338,1,de.tutao.tutanota.push.SseClient,connect
+Found: Untrused PRNG (java.util.Random),Used untrusted PRNG,13,Used untrusted PRNG,338,1,androidx.activity.result.ActivityResultRegistry,init
+Found: Untrused PRNG (java.util.Random),Used untrusted PRNG,13,Used untrusted PRNG,338,1,kotlin.random.FallbackThreadLocalRandom$implStorage$1,initialValue
+Found: Untrused PRNG (java.util.Random),Used untrusted PRNG,13,Used untrusted PRNG,338,1,de.tutao.tutanota.push.LocalNotificationsFacade,showErrorNotification
+"Found: Constant ""AES""",Used constant keys in code,3,Used constant keys in code,547,1,de.tutao.tutanota.AndroidNativeCryptoFacade$Companion,bytesToKey
+"Found: Constant ""1""",Used constant keys in code,3,Used constant keys in code,547,1,de.tutao.tutanota.AndroidNativeCryptoFacade,aesEncrypt

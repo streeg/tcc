@@ -1,0 +1,22 @@
+Message,Description,RuleNumber,RuleDesc,CWEId,Severity,ClassName,MethodName,ExternalLibrary
+Found: Untrused PRNG (java.util.Random),Used untrusted PRNG,13,Used untrusted PRNG,338,1,androidx.transition.Explode,calculateOut,true
+Found: Untrused PRNG (java.util.Random),Used untrusted PRNG,13,Used untrusted PRNG,338,1,io.netty.handler.codec.http.websocketx.WebSocketClientHandshaker00,insertRandomCharacters,false
+Found: Untrused PRNG (java.util.Random),Used untrusted PRNG,13,Used untrusted PRNG,338,1,kotlin.random.FallbackThreadLocalRandom$implStorage$1,initialValue,false
+Found: Untrused PRNG (java.util.Random),Used untrusted PRNG,13,Used untrusted PRNG,338,1,androidx.activity.result.ActivityResultRegistry,init,true
+Found: Untrused PRNG (java.util.Random),Used untrusted PRNG,13,Used untrusted PRNG,338,1,kotlin.random.KotlinRandom,init,false
+Found: Untrused PRNG (java.util.Random),Used untrusted PRNG,13,Used untrusted PRNG,338,1,io.netty.handler.codec.http.websocketx.WebSocket08FrameEncoder,encode,false
+Found: Untrused PRNG (java.util.Random),Used untrusted PRNG,13,Used untrusted PRNG,338,1,io.netty.util.internal.ThreadLocalRandom,init,false
+Should at least get One accepted Issuer from Other Sources in getAcceptedIssuers method of ssl.OpenSslX509TrustManagerWrapper,Uses untrusted TrustManager,4,Uses untrusted TrustManager,349,1,ssl.OpenSslX509TrustManagerWrapper,getAcceptedIssuers,false
+Should at least get One accepted Issuer from Other Sources in getAcceptedIssuers method of util.FingerprintTrustManagerFactory,Uses untrusted TrustManager,4,Uses untrusted TrustManager,349,1,util.FingerprintTrustManagerFactory,getAcceptedIssuers,false
+Should at least get One accepted Issuer from Other Sources in getAcceptedIssuers method of util.InsecureTrustManagerFactory,Uses untrusted TrustManager,4,Uses untrusted TrustManager,349,1,util.InsecureTrustManagerFactory,getAcceptedIssuers,false
+Should throw java.security.cert.CertificateException in check(Client|Server)Trusted method of util.InsecureTrustManagerFactory,Uses untrusted TrustManager,4,Uses untrusted TrustManager,349,1,util.InsecureTrustManagerFactory,UNKNOWN,false
+"Found: ""SHA1""",Found broken hash functions,2,Found broken hash functions,759,1,io.netty.handler.ssl.util.FingerprintTrustManagerFactory,init,false
+"Found: ""SHA1""",Found broken hash functions,2,Found broken hash functions,759,1,io.ktor.util.CryptoKt__CryptoJvmKt$sha1$1,invokeSuspend,false
+"Found: ""SHA1""",Found broken hash functions,2,Found broken hash functions,759,1,io.netty.handler.ssl.util.FingerprintTrustManagerFactory,init,false
+"Found: ""MD5""",Found broken hash functions,2,Found broken hash functions,759,1,websocketx.WebSocketUtil,initialValue,false
+"Found: ""SHA1""",Found broken hash functions,2,Found broken hash functions,759,1,websocketx.WebSocketUtil,initialValue,false
+"Found: ""SHA1""",Found broken hash functions,2,Found broken hash functions,759,1,io.netty.handler.ssl.util.FingerprintTrustManagerFactory,init,false
+"Found: ""30000L""",Found predictable seeds in code,11,Found predictable seeds in code,760,1,io.ktor.util.NonceKt$nonceGeneratorJob$1,invokeSuspend,false
+"Found: ""0L""",Found predictable seeds in code,11,Found predictable seeds in code,760,1,io.ktor.util.NonceKt$nonceGeneratorJob$1,invokeSuspend,false
+"Found: ""ktor.security.ssl.privateKeyPassword""",Used Predictable KeyStore Password,14,Used Predictable KeyStore Password,321,1,io.ktor.server.engine.CommandLineKt,commandLineEnvironment,false
+"Found: ""ktor.security.ssl.keyStorePassword""",Used Predictable KeyStore Password,14,Used Predictable KeyStore Password,321,1,io.ktor.server.engine.CommandLineKt,commandLineEnvironment,false

@@ -1,0 +1,85 @@
+Message,Description,RuleNumber,RuleDesc,CWEId,Severity,ClassName,MethodName
+"Found: ""AES""",Found broken crypto schemes,1,Found broken crypto schemes,256,1,org.picketbox.plugins.vault.PicketBoxSecurityVault,init
+"Found: ""PBEwithMD5andDES""",Found broken crypto schemes,1,Found broken crypto schemes,256,1,org.picketbox.datasource.security.PBEIdentityLoginModule,init
+"Found: ""Blowfish""",Found broken crypto schemes,1,Found broken crypto schemes,256,1,org.picketbox.datasource.security.SecureIdentityLoginModule,decode
+"Found: ""PBEwithMD5andDES""",Found broken crypto schemes,1,Found broken crypto schemes,256,1,org.jboss.security.plugins.FilePassword,decode
+"Found: ""AES""",Found broken crypto schemes,1,Found broken crypto schemes,256,1,zorg.platform.j2se.EncryptorSuiteImpl,encryptIV_for_prf
+"Found: ""PBEwithMD5andDES""",Found broken crypto schemes,1,Found broken crypto schemes,256,1,org.picketbox.datasource.security.PBEIdentityLoginModule,init
+"Found: ""PBEwithMD5andDES""",Found broken crypto schemes,1,Found broken crypto schemes,256,1,org.jboss.security.plugins.PBEUtils,main
+"Found: ""AES""",Found broken crypto schemes,1,Found broken crypto schemes,256,1,zorg.platform.j2se.EncryptorSuiteImpl,init
+"Found: ""Blowfish""",Found broken crypto schemes,1,Found broken crypto schemes,256,1,org.picketbox.datasource.security.SecureIdentityLoginModule,encode
+"Found: ""PBEwithMD5andDES""",Found broken crypto schemes,1,Found broken crypto schemes,256,1,org.picketbox.plugins.vault.PicketBoxSecurityVault,decode
+"Found: ""PBEwithMD5andDES""",Found broken crypto schemes,1,Found broken crypto schemes,256,1,org.jboss.security.plugins.FilePassword,encode
+"Found: ""PBEwithMD5andDES""",Found broken crypto schemes,1,Found broken crypto schemes,256,1,org.picketbox.util.StringUtil,decode
+Found: Untrused PRNG (java.util.Random),Used untrusted PRNG,13,Used untrusted PRNG,338,1,org.spongycastle.math.ec.ECCurve$F2m,solveQuadraticEquation
+Found: Untrused PRNG (java.util.Random),Used untrusted PRNG,13,Used untrusted PRNG,338,1,org.zoolu.tools.Random,clinit
+Found: Untrused PRNG (java.util.Random),Used untrusted PRNG,13,Used untrusted PRNG,338,1,org.spongycastle.pqc.math.linearalgebra.GF2nONBField,getRandomRoot
+Found: Untrused PRNG (java.util.Random),Used untrusted PRNG,13,Used untrusted PRNG,338,1,org.opentelecoms.util.dns.SRVRecordComparator,init
+Found: Untrused PRNG (java.util.Random),Used untrusted PRNG,13,Used untrusted PRNG,338,1,org.spongycastle.math.raw.Mod,random
+Found: Untrused PRNG (java.util.Random),Used untrusted PRNG,13,Used untrusted PRNG,338,1,org.spongycastle.pqc.math.linearalgebra.GF2nPolynomialField,getRandomRoot
+Found: Untrused PRNG (java.util.Random),Used untrusted PRNG,13,Used untrusted PRNG,338,1,org.spongycastle.asn1.ua.DSTU4145PointEncoder,solveQuadraticEquation
+Found: Untrused PRNG (java.util.Random),Used untrusted PRNG,13,Used untrusted PRNG,338,1,org.zoolu.tools.MD5OTP,encrypt
+Found: Untrused PRNG (java.util.Random),Used untrusted PRNG,13,Used untrusted PRNG,338,1,org.ice4j.attribute.ReservationTokenAttribute,clinit
+Found: Untrused PRNG (java.util.Random),Used untrusted PRNG,13,Used untrusted PRNG,338,1,org.spongycastle.pqc.math.linearalgebra.GF2Polynomial,clinit
+Found: Untrused PRNG (java.util.Random),Used untrusted PRNG,13,Used untrusted PRNG,338,1,org.sipdroid.media.RtpStreamSender,run
+Found: Untrused PRNG (java.util.Random),Used untrusted PRNG,13,Used untrusted PRNG,338,1,org.spongycastle.pqc.math.linearalgebra.GF2nONBField,elementOfOrder
+Found: Untrused PRNG (java.util.Random),Used untrusted PRNG,13,Used untrusted PRNG,338,1,org.ice4j.stack.TransactionID,clinit
+Found: Untrused PRNG (java.util.Random),Used untrusted PRNG,13,Used untrusted PRNG,338,1,org.ice4j.ice.NetworkUtils,clinit
+Found: Untrused PRNG (java.util.Random),Used untrusted PRNG,13,Used untrusted PRNG,338,1,org.spongycastle.math.ec.ECFieldElement$Fp,sqrt
+Found: Untrused PRNG (java.util.Random),Used untrusted PRNG,13,Used untrusted PRNG,338,1,org.spongycastle.pqc.math.linearalgebra.GF2nPolynomialElement,solveQuadraticEquation
+Found: Untrused PRNG (java.util.Random),Used untrusted PRNG,13,Used untrusted PRNG,338,1,org.xbill.DNS.Header,clinit
+Didn't manually verify hostname in init,Should check HostnameVerification manually,12,Should check HostnameVerification manually,297,1,org.zoolu.net.TcpSocket,init
+Should at least get One accepted Issuer from Other Sources in getAcceptedIssuers method of UNKNOWN,Uses untrusted TrustManager,4,Uses untrusted TrustManager,349,1,UNKNOWN,getAcceptedIssuers
+Should throw java.security.cert.CertificateException in check(Client|Server)Trusted method of UNKNOWN,Uses untrusted TrustManager,4,Uses untrusted TrustManager,349,1,UNKNOWN,UNKNOWN
+Should throw java.security.cert.CertificateException in check(Client|Server)Trusted method of UNKNOWN,Uses untrusted TrustManager,4,Uses untrusted TrustManager,349,1,UNKNOWN,UNKNOWN
+"Found: ""MD5""",Found broken hash functions,2,Found broken hash functions,759,1,org.jboss.security.ExternalPasswordCache,init
+"Found: ""MD5""",Found broken hash functions,2,Found broken hash functions,759,1,org.jboss.security.auth.callback.RFC2617Digest,main
+"Found: ""SHA-1""",Found broken hash functions,2,Found broken hash functions,759,1,org.lumicall.android.reg.EnrolmentService,getHexEncodedKeySignatures
+"Found: ""sha-1""",Found broken hash functions,2,Found broken hash functions,759,1,org.xbill.DNS.DNSSEC,generateDSDigest
+"Found: ""sha-1""",Found broken hash functions,2,Found broken hash functions,759,1,org.xbill.DNS.TSIG,getDigest
+"Found: ""SHA""",Found broken hash functions,2,Found broken hash functions,759,1,org.jboss.crypto.digest.SHAInterleave,init
+"Found: ""MD5""",Found broken hash functions,2,Found broken hash functions,759,1,org.sipdroid.sipua.PublishAgent,publish
+"Found: ""SHA""",Found broken hash functions,2,Found broken hash functions,759,1,org.jboss.crypto.digest.SHAReverseInterleave,init
+"Found: ""sha-1""",Found broken hash functions,2,Found broken hash functions,759,1,org.xbill.DNS.NSEC3Record,hashName
+"Found: ""md5""",Found broken hash functions,2,Found broken hash functions,759,1,org.xbill.DNS.TSIG,getDigest
+"Found: ""SHA""",Found broken hash functions,2,Found broken hash functions,759,1,org.jboss.crypto.CryptoUtil,init
+"Found: ""MD5""",Found broken hash functions,2,Found broken hash functions,759,1,org.ice4j.security.LongTermCredentialSession,getLocalKey
+"Found: ""SHA-1""",Found broken hash functions,2,Found broken hash functions,759,1,zorg.platform.j2se.DigestType,clinit
+"Found: Constant ""somearbitrarycrazystringthatdoesnotmatter""",Used constant keys in code,3,Used constant keys in code,547,1,org.picketbox.util.StringUtil,decode
+"Found: Constant ""jaas is the way""",Used constant keys in code,3,Used constant keys in code,547,1,org.picketbox.datasource.security.SecureIdentityLoginModule,encode
+"Found: Constant ""78aac249a60a13d5e882927928043ebb""",Used constant keys in code,3,Used constant keys in code,547,1,org.jboss.security.plugins.FilePassword,encode
+"Found: Constant ""jaas is the way""",Used constant keys in code,3,Used constant keys in code,547,1,org.picketbox.datasource.security.PBEIdentityLoginModule,init
+"Found: Constant ""jaas is the way""",Used constant keys in code,3,Used constant keys in code,547,1,org.picketbox.datasource.security.SecureIdentityLoginModule,decode
+"Found: Constant ""78aac249a60a13d5e882927928043ebb""",Used constant keys in code,3,Used constant keys in code,547,1,org.jboss.security.plugins.FilePassword,decode
+"Found: Constant ""somearbitrarycrazystringthatdoesnotmatter""",Used constant keys in code,3,Used constant keys in code,547,1,org.picketbox.plugins.vault.PicketBoxSecurityVault,decode
+"Found: Constant ""jaas is the way""",Used constant keys in code,3,Used constant keys in code,547,1,org.picketbox.datasource.security.PBEIdentityLoginModule,main
+"Found: Constant ""jaas is the way""",Used constant keys in code,3,Used constant keys in code,547,1,org.picketbox.datasource.security.PBEIdentityLoginModule,init
+"Found: ""4""",Found constant salts in code,9,Found constant salts in code,547,1,org.picketbox.datasource.security.PBEIdentityLoginModule,init
+"Found: ""1""",Found constant salts in code,9,Found constant salts in code,547,1,org.picketbox.datasource.security.PBEIdentityLoginModule,init
+"Found: ""11""",Found constant salts in code,9,Found constant salts in code,547,1,org.picketbox.datasource.security.PBEIdentityLoginModule,init
+"Found: ""3""",Found constant salts in code,9,Found constant salts in code,547,1,org.picketbox.datasource.security.PBEIdentityLoginModule,init
+"Found: ""7""",Found constant salts in code,9,Found constant salts in code,547,1,org.picketbox.datasource.security.PBEIdentityLoginModule,init
+"Found: ""3""",Found constant salts in code,9,Found constant salts in code,547,1,org.picketbox.datasource.security.PBEIdentityLoginModule,init
+"Found: ""jaas is the way""",Found constant salts in code,9,Found constant salts in code,547,1,org.picketbox.datasource.security.PBEIdentityLoginModule,main
+"Found: ""11""",Found constant salts in code,9,Found constant salts in code,547,1,org.picketbox.datasource.security.PBEIdentityLoginModule,init
+"Found: ""9""",Found constant salts in code,9,Found constant salts in code,547,1,org.picketbox.datasource.security.PBEIdentityLoginModule,init
+"Found: ""13""",Found constant salts in code,9,Found constant salts in code,547,1,org.picketbox.datasource.security.PBEIdentityLoginModule,init
+"Found: ""7""",Found constant salts in code,9,Found constant salts in code,547,1,org.picketbox.datasource.security.PBEIdentityLoginModule,init
+"Found: ""13""",Found constant salts in code,9,Found constant salts in code,547,1,org.picketbox.datasource.security.PBEIdentityLoginModule,init
+"Found: ""9""",Found constant salts in code,9,Found constant salts in code,547,1,org.picketbox.datasource.security.PBEIdentityLoginModule,init
+"Found: ""2""",Found constant salts in code,9,Found constant salts in code,547,1,org.picketbox.datasource.security.PBEIdentityLoginModule,init
+"Found: ""4""",Found constant salts in code,9,Found constant salts in code,547,1,org.picketbox.datasource.security.PBEIdentityLoginModule,init
+"Found: ""1""",Found constant salts in code,9,Found constant salts in code,547,1,org.picketbox.datasource.security.PBEIdentityLoginModule,init
+"Found: ""2""",Found constant salts in code,9,Found constant salts in code,547,1,org.picketbox.datasource.security.PBEIdentityLoginModule,init
+"Found: ""2""",Used < 1000 iteration for PBE,8,Used < 1000 iteration for PBE,326,1,org.spongycastle.jcajce.provider.keystore.bc.BcKeyStoreSpi,loadStore
+"Found: ""3""",Used < 1000 iteration for PBE,8,Used < 1000 iteration for PBE,326,1,org.spongycastle.jcajce.provider.keystore.bc.BcKeyStoreSpi$StoreEntry,init
+"Found: ""1""",Used < 1000 iteration for PBE,8,Used < 1000 iteration for PBE,326,1,org.spongycastle.jcajce.provider.keystore.bc.BcKeyStoreSpi,loadStore
+"Found: ""1""",Used < 1000 iteration for PBE,8,Used < 1000 iteration for PBE,326,1,org.spongycastle.jcajce.provider.keystore.bc.BcKeyStoreSpi$StoreEntry,init
+"Found: ""4""",Used < 1000 iteration for PBE,8,Used < 1000 iteration for PBE,326,1,org.spongycastle.jcajce.provider.keystore.bc.BcKeyStoreSpi$StoreEntry,init
+"Found: ""37""",Used < 1000 iteration for PBE,8,Used < 1000 iteration for PBE,326,1,org.picketbox.datasource.security.PBEIdentityLoginModule,init
+"Found: ""37""",Used < 1000 iteration for PBE,8,Used < 1000 iteration for PBE,326,1,org.picketbox.datasource.security.PBEIdentityLoginModule,init
+"Found: ""www.bouncycastle.org""",Found predictable seeds in code,11,Found predictable seeds in code,760,1,org.spongycastle.crypto.examples.DESExample,init
+"Found: ""http://169.254.169.254/latest/meta-data/""",Used HTTP Protocol,7,Used HTTP Protocol,650,1,org.ice4j.ice.harvest.AwsCandidateHarvester,doTestEc2
+"Found: ""http://169.254.169.254/latest/meta-data/public-ipv4""",Used HTTP Protocol,7,Used HTTP Protocol,650,1,org.ice4j.ice.harvest.AwsCandidateHarvester,obtainEC2Addresses
+"Found: ""http://169.254.169.254/latest/meta-data/local-ipv4""",Used HTTP Protocol,7,Used HTTP Protocol,650,1,org.ice4j.ice.harvest.AwsCandidateHarvester,obtainEC2Addresses
+"Found: ""http://sipdroid.googlecode.com/svn/images/checkin""",Used HTTP Protocol,7,Used HTTP Protocol,650,1,org.sipdroid.sipua.ui.Checkin,checkin

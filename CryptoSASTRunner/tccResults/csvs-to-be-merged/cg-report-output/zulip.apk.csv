@@ -1,0 +1,39 @@
+Message,Description,RuleNumber,RuleDesc,CWEId,Severity,ClassName,MethodName
+Found: Untrused PRNG (java.util.Random),Used untrusted PRNG,13,Used untrusted PRNG,338,1,androidx.transition.Explode,calculateOut
+Found: Untrused PRNG (java.util.Random),Used untrusted PRNG,13,Used untrusted PRNG,338,1,org.apache.commons.codec.digest.UnixCrypt,crypt
+Found: Untrused PRNG (java.util.Random),Used untrusted PRNG,13,Used untrusted PRNG,338,1,kotlin.random.FallbackThreadLocalRandom$implStorage$1,initialValue
+Found: Untrused PRNG (java.util.Random),Used untrusted PRNG,13,Used untrusted PRNG,338,1,okhttp3.OkHttpClient,newWebSocket
+Found: Untrused PRNG (java.util.Random),Used untrusted PRNG,13,Used untrusted PRNG,338,1,kotlin.random.KotlinRandom,init
+Found: Untrused PRNG (java.util.Random),Used untrusted PRNG,13,Used untrusted PRNG,338,1,org.apache.commons.codec.digest.B64,getRandomSalt
+Should at least get One accepted Issuer from Other Sources in getAcceptedIssuers method of RNFetchBlob.RNFetchBlobUtils,Uses untrusted TrustManager,4,Uses untrusted TrustManager,349,1,RNFetchBlob.RNFetchBlobUtils,getAcceptedIssuers
+Should throw java.security.cert.CertificateException in check(Client|Server)Trusted method of RNFetchBlob.RNFetchBlobUtils,Uses untrusted TrustManager,4,Uses untrusted TrustManager,349,1,RNFetchBlob.RNFetchBlobUtils,UNKNOWN
+"Cause: Fixed ""[1]""",Used untrusted HostNameVerifier,6,Used untrusted HostNameVerifier,601,1,UNKNOWN,UNKNOWN
+"Cause: Fixed ""[1]""",Used untrusted HostNameVerifier,6,Used untrusted HostNameVerifier,601,1,RNFetchBlob.RNFetchBlobUtils,UNKNOWN
+"Found: ""MD5""",Found broken hash functions,2,Found broken hash functions,759,1,org.apache.commons.io.input.MessageDigestCalculatingInputStream,init
+"Found: ""MD5""",Found broken hash functions,2,Found broken hash functions,759,1,okio.HashingSink$Companion,md5
+"Found: ""MD5""",Found broken hash functions,2,Found broken hash functions,759,1,okio.HashingSource$Companion,md5
+"Found: ""SHA-1""",Found broken hash functions,2,Found broken hash functions,759,1,com.facebook.common.util.SecureHashUtil,makeSHA1Hash
+"Found: ""SHA-1""",Found broken hash functions,2,Found broken hash functions,759,1,okio.HashingSink$Companion,sha1
+"Found: ""MD5""",Found broken hash functions,2,Found broken hash functions,759,1,com.RNFetchBlob.RNFetchBlobUtils,getMD5
+"Found: ""MD5""",Found broken hash functions,2,Found broken hash functions,759,1,org.apache.commons.codec.digest.DigestUtils,getMd5Digest
+"Found: ""SHA-1""",Found broken hash functions,2,Found broken hash functions,759,1,okio.HashingSource$Companion,sha1
+"Found: ""md5""",Found broken hash functions,2,Found broken hash functions,759,1,com.RNFetchBlob.RNFetchBlobFS,hash
+"Found: ""MD5""",Found broken hash functions,2,Found broken hash functions,759,1,com.RNFetchBlob.RNFetchBlobFS,hash
+"Found: ""SHA-1""",Found broken hash functions,2,Found broken hash functions,759,1,com.facebook.common.util.SecureHashUtil,makeSHA1HashBase64
+"Found: ""MD5""",Found broken hash functions,2,Found broken hash functions,759,1,okio.Buffer,md5
+"Found: ""MD5""",Found broken hash functions,2,Found broken hash functions,759,1,com.facebook.common.util.SecureHashUtil,makeMD5Hash
+"Found: ""MD5""",Found broken hash functions,2,Found broken hash functions,759,1,okio.ByteString,md5
+"Found: ""MD5""",Found broken hash functions,2,Found broken hash functions,759,1,soloader.SoLoader,getLibHash
+"Found: ""MD2""",Found broken hash functions,2,Found broken hash functions,759,1,org.apache.commons.codec.digest.DigestUtils,getMd2Digest
+"Found: ""SHA-1""",Found broken hash functions,2,Found broken hash functions,759,1,okio.ByteString,sha1
+"Found: ""sha1""",Found broken hash functions,2,Found broken hash functions,759,1,com.RNFetchBlob.RNFetchBlobFS,hash
+"Found: ""SHA-1""",Found broken hash functions,2,Found broken hash functions,759,1,com.RNFetchBlob.RNFetchBlobFS,hash
+"Found: ""SHA-1""",Found broken hash functions,2,Found broken hash functions,759,1,org.apache.commons.codec.digest.DigestUtils,getSha1Digest
+"Found: ""MD5""",Found broken hash functions,2,Found broken hash functions,759,1,com.facebook.common.util.SecureHashUtil,makeMD5Hash
+"Found: ""SHA-1""",Found broken hash functions,2,Found broken hash functions,759,1,okio.Buffer,sha1
+"Found: ""http://%s/%s""",Used HTTP Protocol,7,Used HTTP Protocol,650,1,com.facebook.react.devsupport.DevServerHelper,createResourceURL
+"Found: ""http:""",Used HTTP Protocol,7,Used HTTP Protocol,650,1,okhttp3.Request$Builder,url
+"Found: ""http://%s/open-stack-frame""",Used HTTP Protocol,7,Used HTTP Protocol,650,1,com.facebook.react.devsupport.DevServerHelper,createOpenStackFrameURL
+"Found: ""http://%s/status""",Used HTTP Protocol,7,Used HTTP Protocol,650,1,com.facebook.react.devsupport.PackagerStatusCheck,createPackagerStatusURL
+"Found: ""http://%s/launch-js-devtools""",Used HTTP Protocol,7,Used HTTP Protocol,650,1,com.facebook.react.devsupport.DevServerHelper,createLaunchJSDevtoolsCommandUrl
+"Found: ""http://%s/symbolicate""",Used HTTP Protocol,7,Used HTTP Protocol,650,1,com.facebook.react.devsupport.DevServerHelper,createSymbolicateURL

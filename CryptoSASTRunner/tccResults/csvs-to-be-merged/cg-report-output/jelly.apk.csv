@@ -1,0 +1,10 @@
+Message,Description,RuleNumber,RuleDesc,CWEId,Severity,ClassName,MethodName
+"Found: ""DES/ECB/NoPadding""",Found broken crypto schemes,1,Found broken crypto schemes,256,1,com.sun.mail.auth.Ntlm,init0
+Found: Untrused PRNG (java.util.Random),Used untrusted PRNG,13,Used untrusted PRNG,338,1,androidx.transition.Explode,calculateOut
+Found: Untrused PRNG (java.util.Random),Used untrusted PRNG,13,Used untrusted PRNG,338,1,androidx.activity.result.ActivityResultRegistry,init
+Found: Untrused PRNG (java.util.Random),Used untrusted PRNG,13,Used untrusted PRNG,338,1,androidx.leanback.widget.StreamingTextView,init
+Found: Untrused PRNG (java.util.Random),Used untrusted PRNG,13,Used untrusted PRNG,338,1,androidx.leanback.widget.StreamingTextView,init
+Found: Untrused PRNG (java.util.Random),Used untrusted PRNG,13,Used untrusted PRNG,338,1,com.sun.mail.auth.Ntlm,generateType3Msg
+Didn't manually verify hostname in startTLS,Should check HostnameVerification manually,12,Should check HostnameVerification manually,297,1,com.sun.mail.util.SocketFetcher,startTLS
+"Found: ""MD5""",Found broken hash functions,2,Found broken hash functions,759,1,com.sun.mail.smtp.DigestMD5,authClient
+"Found: ""MD5""",Found broken hash functions,2,Found broken hash functions,759,1,com.sun.mail.pop3.Protocol,getDigest

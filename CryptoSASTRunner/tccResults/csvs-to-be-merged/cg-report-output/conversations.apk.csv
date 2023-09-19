@@ -1,0 +1,37 @@
+Message,Description,RuleNumber,RuleDesc,CWEId,Severity,ClassName,MethodName
+Found: Untrused PRNG (java.util.Random),Used untrusted PRNG,13,Used untrusted PRNG,338,1,de.measite.minidns.AbstractDNSClient,init
+Found: Untrused PRNG (java.util.Random),Used untrusted PRNG,13,Used untrusted PRNG,338,1,androidx.activity.result.ActivityResultRegistry,init
+Found: Untrused PRNG (java.util.Random),Used untrusted PRNG,13,Used untrusted PRNG,338,1,eu.siacs.conversations.crypto.axolotl.AxolotlService,3
+Found: Untrused PRNG (java.util.Random),Used untrusted PRNG,13,Used untrusted PRNG,338,1,kotlin.random.FallbackThreadLocalRandom$implStorage$1,initialValue
+Found: Untrused PRNG (java.util.Random),Used untrusted PRNG,13,Used untrusted PRNG,338,1,com.otaliastudios.transcoder.stretch.InsertAudioStretcher,clinit
+Found: Untrused PRNG (java.util.Random),Used untrusted PRNG,13,Used untrusted PRNG,338,1,org.osmdroid.tileprovider.tilesource.BitmapTileSourceBase,init
+Found: Untrused PRNG (java.util.Random),Used untrusted PRNG,13,Used untrusted PRNG,338,1,com.google.common.cache.Striped64,clinit
+Should at least get One accepted Issuer from Other Sources in getAcceptedIssuers method of UNKNOWN,Uses untrusted TrustManager,4,Uses untrusted TrustManager,349,1,UNKNOWN,getAcceptedIssuers
+Should at least get One accepted Issuer from Other Sources in getAcceptedIssuers method of UNKNOWN,Uses untrusted TrustManager,4,Uses untrusted TrustManager,349,1,UNKNOWN,getAcceptedIssuers
+"Found: ""SHA-1""",Found broken hash functions,2,Found broken hash functions,759,1,eu.siacs.conversations.utils.CryptoHelper,getFingerprint
+"Found: ""SHA1""",Found broken hash functions,2,Found broken hash functions,759,1,org.conscrypt.NativeCrypto,X509_NAME_hash
+"Found: ""SHA-1""",Found broken hash functions,2,Found broken hash functions,759,1,eu.siacs.conversations.xmpp.jingle.JingleSocks5Transport,init
+"Found: ""SHA-1""",Found broken hash functions,2,Found broken hash functions,759,1,de.measite.minidns.dnssec.algorithms.AlgorithmMap,init
+"Found: ""SHA-1""",Found broken hash functions,2,Found broken hash functions,759,1,eu.siacs.conversations.xmpp.jingle.JingleSocks5Transport,3
+"Found: ""SHA-1""",Found broken hash functions,2,Found broken hash functions,759,1,de.measite.minidns.dnssec.algorithms.AlgorithmMap,init
+"Found: ""SHA-1""",Found broken hash functions,2,Found broken hash functions,759,1,eu.siacs.conversations.entities.ServiceDiscoveryResult,mkCapHash
+"Found: ""SHA-1""",Found broken hash functions,2,Found broken hash functions,759,1,eu.siacs.conversations.xmpp.jingle.JingleSocks5Transport,4
+"Found: ""SHA-1""",Found broken hash functions,2,Found broken hash functions,759,1,eu.siacs.conversations.persistance.FileBackend,save
+"Found: ""SHA-1""",Found broken hash functions,2,Found broken hash functions,759,1,eu.siacs.conversations.utils.CryptoHelper,getFingerprintCert
+"Found: ""SHA-1""",Found broken hash functions,2,Found broken hash functions,759,1,eu.siacs.conversations.services.MemorizingTrustManager,certDetails
+"Found: ""SHA-1""",Found broken hash functions,2,Found broken hash functions,759,1,okio.ByteString,sha1
+"Found: ""MD5""",Found broken hash functions,2,Found broken hash functions,759,1,eu.siacs.conversations.crypto.sasl.DigestMd5,getResponse
+"Found: ""SHA-1""",Found broken hash functions,2,Found broken hash functions,759,1,eu.siacs.conversations.generator.AbstractGenerator,getCapHash
+"Found: ""SHA-1""",Found broken hash functions,2,Found broken hash functions,759,1,eu.siacs.conversations.persistance.FileBackend,getPepAvatar
+"Found: ""MD5""",Found broken hash functions,2,Found broken hash functions,759,1,org.conscrypt.NativeCrypto,X509_NAME_hash_old
+"Found: ""SHA-1""",Found broken hash functions,2,Found broken hash functions,759,1,eu.siacs.conversations.persistance.FileBackend,getStoredPepAvatar
+"Found: ""SHA-1""",Found broken hash functions,2,Found broken hash functions,759,1,eu.siacs.conversations.xmpp.jingle.JingleInBandTransport,receive
+"Found: ""SHA-1""",Found broken hash functions,2,Found broken hash functions,759,1,eu.siacs.conversations.utils.XEP0392Helper,angle
+"Found: ""SHA-1""",Found broken hash functions,2,Found broken hash functions,759,1,eu.siacs.conversations.xmpp.jingle.JingleInBandTransport,send
+"Found: Constant ""2""",Used constant keys in code,3,Used constant keys in code,547,1,org.whispersystems.libsignal.ratchet.ChainKey,clinit
+"Found: Constant ""1""",Used constant keys in code,3,Used constant keys in code,547,1,org.whispersystems.libsignal.ratchet.ChainKey,clinit
+"Found: Constant ""Conversations""",Used constant keys in code,3,Used constant keys in code,547,1,eu.siacs.conversations.Config,clinit
+"Found: ""1""",Found constant IV in code,10,Found constant IV in code,547,1,org.whispersystems.libsignal.ratchet.ChainKey,clinit
+"Found: ""MTM""",Used Predictable KeyStore Password,14,Used Predictable KeyStore Password,321,1,eu.siacs.conversations.services.MemorizingTrustManager,loadAppKeyStore
+"Found: ""MTM""",Used Predictable KeyStore Password,14,Used Predictable KeyStore Password,321,1,eu.siacs.conversations.services.MemorizingTrustManager,keyStoreUpdated
+"Found: ""jks""",Used Predictable KeyStore Password,14,Used Predictable KeyStore Password,321,1,java.security.KeyStore,getDefaultType

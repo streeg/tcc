@@ -1,0 +1,15 @@
+Message,Description,RuleNumber,RuleDesc,CWEId,Severity,ClassName,MethodName,ExternalLibrary
+"Found: ""AES/ECB/NoPadding""",Found broken crypto schemes,1,Found broken crypto schemes,256,1,org.bitcoinj.crypto.BIP38PrivateKey,decryptEC,false
+"Found: ""AES/ECB/NoPadding""",Found broken crypto schemes,1,Found broken crypto schemes,256,1,org.bitcoinj.crypto.BIP38PrivateKey,decryptNoEC,false
+Found: Untrused PRNG (java.util.Random),Used untrusted PRNG,13,Used untrusted PRNG,338,1,org.bitcoinj.core.TransactionBroadcast,clinit,false
+Found: Untrused PRNG (java.util.Random),Used untrusted PRNG,13,Used untrusted PRNG,338,1,org.bitcoinj.net.FilterMerger,init,false
+Found: Untrused PRNG (java.util.Random),Used untrusted PRNG,13,Used untrusted PRNG,338,1,org.bitcoinj.core.Peer,processInv,false
+Found: Untrused PRNG (java.util.Random),Used untrusted PRNG,13,Used untrusted PRNG,338,1,de.schildbach.wallet.service.NonWitnessPeerGroup,selectDownloadPeer,false
+Found: Untrused PRNG (java.util.Random),Used untrusted PRNG,13,Used untrusted PRNG,338,1,core.Peer,run,false
+Found: Untrused PRNG (java.util.Random),Used untrusted PRNG,13,Used untrusted PRNG,338,1,org.bitcoinj.core.Peer,ping,false
+Found: Untrused PRNG (java.util.Random),Used untrusted PRNG,13,Used untrusted PRNG,338,1,de.schildbach.wallet.ui.send.RequestWalletBalanceTask,0,false
+Found: Untrused PRNG (java.util.Random),Used untrusted PRNG,13,Used untrusted PRNG,338,1,org.bouncycastle.math.raw.Mod,random,false
+Found: Untrused PRNG (java.util.Random),Used untrusted PRNG,13,Used untrusted PRNG,338,1,org.bitcoinj.core.PeerGroup,selectDownloadPeer,false
+Found: Untrused PRNG (java.util.Random),Used untrusted PRNG,13,Used untrusted PRNG,338,1,org.bouncycastle.math.ec.ECCurve$AbstractF2m,solveQuadraticEquation,false
+"Found: ""SHA-1""",Found broken hash functions,2,Found broken hash functions,759,1,okio.ByteString,sha1,false
+"Found: ""SHA-1""",Found broken hash functions,2,Found broken hash functions,759,1,org.bitcoinj.script.Script,executeScript,false

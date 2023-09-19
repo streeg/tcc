@@ -1,0 +1,65 @@
+Message,Description,RuleNumber,RuleDesc,CWEId,Severity,ClassName,MethodName,ExternalLibrary
+"Found: ""DES/ECB/NoPadding""",Found broken crypto schemes,1,Found broken crypto schemes,256,1,org.apache.mina.proxy.handlers.http.ntlm.NTLMResponses,lmHash,false
+"Found: ""DES/ECB/NoPadding""",Found broken crypto schemes,1,Found broken crypto schemes,256,1,org.apache.mina.proxy.handlers.http.ntlm.NTLMResponses,lmResponse,false
+Found: Untrused PRNG (java.util.Random),Used untrusted PRNG,13,Used untrusted PRNG,338,1,org.bouncycastle.math.ec.ECFieldElement$Fp,sqrt,false
+Found: Untrused PRNG (java.util.Random),Used untrusted PRNG,13,Used untrusted PRNG,338,1,org.apache.commons.lang3.ArrayUtils,shuffle,false
+Found: Untrused PRNG (java.util.Random),Used untrusted PRNG,13,Used untrusted PRNG,338,1,org.apache.commons.lang3.RandomUtils,clinit,false
+Found: Untrused PRNG (java.util.Random),Used untrusted PRNG,13,Used untrusted PRNG,338,1,kotlin.random.FallbackThreadLocalRandom$implStorage$1,initialValue,false
+Found: Untrused PRNG (java.util.Random),Used untrusted PRNG,13,Used untrusted PRNG,338,1,org.apache.commons.lang3.RandomStringUtils,clinit,false
+Found: Untrused PRNG (java.util.Random),Used untrusted PRNG,13,Used untrusted PRNG,338,1,org.bouncycastle.asn1.ua.DSTU4145PointEncoder,solveQuadraticEquation,false
+Found: Untrused PRNG (java.util.Random),Used untrusted PRNG,13,Used untrusted PRNG,338,1,org.bouncycastle.math.raw.Mod,random,false
+Found: Untrused PRNG (java.util.Random),Used untrusted PRNG,13,Used untrusted PRNG,338,1,org.bouncycastle.math.ec.ECCurve$AbstractF2m,solveQuadraticEquation,false
+Found: Untrused PRNG (java.util.Random),Used untrusted PRNG,13,Used untrusted PRNG,338,1,org.apache.commons.lang3.ArrayUtils,shuffle,false
+Found: Untrused PRNG (java.util.Random),Used untrusted PRNG,13,Used untrusted PRNG,338,1,org.apache.commons.lang3.ArrayUtils,shuffle,false
+Found: Untrused PRNG (java.util.Random),Used untrusted PRNG,13,Used untrusted PRNG,338,1,org.apache.commons.lang3.ArrayUtils,shuffle,false
+Found: Untrused PRNG (java.util.Random),Used untrusted PRNG,13,Used untrusted PRNG,338,1,org.apache.commons.lang3.ArrayUtils,shuffle,false
+Found: Untrused PRNG (java.util.Random),Used untrusted PRNG,13,Used untrusted PRNG,338,1,org.apache.ftpserver.util.IoUtils,clinit,false
+Found: Untrused PRNG (java.util.Random),Used untrusted PRNG,13,Used untrusted PRNG,338,1,org.apache.commons.lang3.ArrayUtils,shuffle,false
+Found: Untrused PRNG (java.util.Random),Used untrusted PRNG,13,Used untrusted PRNG,338,1,org.apache.commons.lang3.ArrayUtils,shuffle,false
+Found: Untrused PRNG (java.util.Random),Used untrusted PRNG,13,Used untrusted PRNG,338,1,org.bouncycastle.pqc.math.linearalgebra.GF2Polynomial,clinit,false
+Found: Untrused PRNG (java.util.Random),Used untrusted PRNG,13,Used untrusted PRNG,338,1,org.apache.mina.core.filterchain.DefaultIoFilterChainBuilder,isOrderedMap,true
+Found: Untrused PRNG (java.util.Random),Used untrusted PRNG,13,Used untrusted PRNG,338,1,org.apache.mina.filter.errorgenerating.ErrorGeneratingFilter,init,false
+Found: Untrused PRNG (java.util.Random),Used untrusted PRNG,13,Used untrusted PRNG,338,1,org.apache.commons.lang3.ArrayUtils,shuffle,false
+Found: Untrused PRNG (java.util.Random),Used untrusted PRNG,13,Used untrusted PRNG,338,1,org.apache.commons.lang3.ArrayUtils,shuffle,false
+Found: Untrused PRNG (java.util.Random),Used untrusted PRNG,13,Used untrusted PRNG,338,1,org.apache.ftpserver.impl.PassivePorts,init,false
+Should at least get One accepted Issuer from Other Sources in getAcceptedIssuers method of ssl.BogusTrustManagerFactory,Uses untrusted TrustManager,4,Uses untrusted TrustManager,349,1,ssl.BogusTrustManagerFactory,getAcceptedIssuers,false
+Should throw java.security.cert.CertificateException in check(Client|Server)Trusted method of ssl.BogusTrustManagerFactory,Uses untrusted TrustManager,4,Uses untrusted TrustManager,349,1,ssl.BogusTrustManagerFactory,UNKNOWN,false
+Should at least get One accepted Issuer from Other Sources in getAcceptedIssuers method of jcajce.JcaJceUtils,Uses untrusted TrustManager,4,Uses untrusted TrustManager,349,1,jcajce.JcaJceUtils,getAcceptedIssuers,false
+Should throw java.security.cert.CertificateException in check(Client|Server)Trusted method of jcajce.JcaJceUtils,Uses untrusted TrustManager,4,Uses untrusted TrustManager,349,1,jcajce.JcaJceUtils,UNKNOWN,false
+Should at least get One accepted Issuer from Other Sources in getAcceptedIssuers method of jcajce.JcaJceUtils,Uses untrusted TrustManager,4,Uses untrusted TrustManager,349,1,jcajce.JcaJceUtils,getAcceptedIssuers,false
+Should throw java.security.cert.CertificateException in check(Client|Server)Trusted method of jcajce.JcaJceUtils,Uses untrusted TrustManager,4,Uses untrusted TrustManager,349,1,jcajce.JcaJceUtils,UNKNOWN,false
+"Found: ""SHA1""",Found broken hash functions,2,Found broken hash functions,759,1,org.bouncycastle.cert.jcajce.JcaX509ExtensionUtils,init,false
+"Found: ""SHA""",Found broken hash functions,2,Found broken hash functions,759,1,org.apache.ftpserver.util.EncryptUtils,encryptSHA,false
+"Found: ""MD5""",Found broken hash functions,2,Found broken hash functions,759,1,org.apache.commons.io.input.MessageDigestCalculatingInputStream,init,false
+"Found: ""MD5""",Found broken hash functions,2,Found broken hash functions,759,1,org.apache.mina.proxy.handlers.http.ntlm.NTLMResponses,hmacMD5,false
+"Found: ""MD5""",Found broken hash functions,2,Found broken hash functions,759,1,org.apache.ftpserver.command.impl.MD5,md5,false
+"Found: ""MD5""",Found broken hash functions,2,Found broken hash functions,759,1,org.apache.ftpserver.util.EncryptUtils,encryptMD5,false
+"Found: ""MD4""",Found broken hash functions,2,Found broken hash functions,759,1,org.apache.mina.proxy.handlers.http.ntlm.NTLMResponses,ntlmHash,false
+"Found: ""MD5""",Found broken hash functions,2,Found broken hash functions,759,1,org.apache.mina.proxy.handlers.http.ntlm.NTLMResponses,getNTLM2SessionResponse,false
+"Found: ""MD5""",Found broken hash functions,2,Found broken hash functions,759,1,org.apache.mina.proxy.handlers.http.digest.DigestUtilities,clinit,false
+"Found: ""2""",Used < 1000 iteration for PBE,8,Used < 1000 iteration for PBE,326,1,org.bouncycastle.jcajce.provider.symmetric.Twofish$PBEWithSHA,init,false
+"Found: ""3""",Used < 1000 iteration for PBE,8,Used < 1000 iteration for PBE,326,1,org.bouncycastle.jcajce.provider.keystore.bc.BcKeyStoreSpi$StoreEntry,init,false
+"Found: ""0""",Used < 1000 iteration for PBE,8,Used < 1000 iteration for PBE,326,1,org.bouncycastle.jcajce.provider.symmetric.RC2$PBEWithMD5AndRC2,init,false
+"Found: ""1""",Used < 1000 iteration for PBE,8,Used < 1000 iteration for PBE,326,1,org.bouncycastle.jcajce.provider.keystore.bc.BcKeyStoreSpi,loadStore,false
+"Found: ""20""",Used < 1000 iteration for PBE,8,Used < 1000 iteration for PBE,326,1,org.bouncycastle.jcajce.provider.keystore.pkcs12.PKCS12KeyStoreSpi,init,false
+"Found: ""2""",Used < 1000 iteration for PBE,8,Used < 1000 iteration for PBE,326,1,org.bouncycastle.jcajce.provider.symmetric.AES$PBEWithSHA256AESCBC128,init,false
+"Found: ""1""",Used < 1000 iteration for PBE,8,Used < 1000 iteration for PBE,326,1,org.bouncycastle.openssl.jcajce.PEMUtilities,getKey,false
+"Found: ""2""",Used < 1000 iteration for PBE,8,Used < 1000 iteration for PBE,326,1,org.bouncycastle.jcajce.provider.symmetric.AES$PBEWithSHA1AESCBC256,init,false
+"Found: ""0""",Used < 1000 iteration for PBE,8,Used < 1000 iteration for PBE,326,1,org.bouncycastle.jcajce.provider.symmetric.DES$PBEWithMD2,init,false
+"Found: ""2""",Used < 1000 iteration for PBE,8,Used < 1000 iteration for PBE,326,1,org.bouncycastle.jcajce.provider.symmetric.AES$PBEWithSHA1AESCBC128,init,false
+"Found: ""2""",Used < 1000 iteration for PBE,8,Used < 1000 iteration for PBE,326,1,org.bouncycastle.jcajce.provider.keystore.bc.BcKeyStoreSpi,loadStore,false
+"Found: ""2""",Used < 1000 iteration for PBE,8,Used < 1000 iteration for PBE,326,1,org.bouncycastle.jcajce.provider.symmetric.AES$PBEWithSHA1AESCBC192,init,false
+"Found: ""0""",Used < 1000 iteration for PBE,8,Used < 1000 iteration for PBE,326,1,org.bouncycastle.jcajce.provider.symmetric.DES$PBEWithMD5,init,false
+"Found: ""0""",Used < 1000 iteration for PBE,8,Used < 1000 iteration for PBE,326,1,org.bouncycastle.jcajce.provider.symmetric.RC2$PBEWithSHA1AndRC2,init,false
+"Found: ""4""",Used < 1000 iteration for PBE,8,Used < 1000 iteration for PBE,326,1,org.bouncycastle.jcajce.provider.keystore.bc.BcKeyStoreSpi$StoreEntry,init,false
+"Found: ""2""",Used < 1000 iteration for PBE,8,Used < 1000 iteration for PBE,326,1,org.bouncycastle.jcajce.provider.symmetric.RC2$PBEWithSHAAnd128BitRC2,init,false
+"Found: ""2""",Used < 1000 iteration for PBE,8,Used < 1000 iteration for PBE,326,1,org.bouncycastle.jcajce.provider.symmetric.AES$PBEWithSHA256AESCBC192,init,false
+"Found: ""2""",Used < 1000 iteration for PBE,8,Used < 1000 iteration for PBE,326,1,org.bouncycastle.jcajce.provider.symmetric.RC2$PBEWithSHAAnd40BitRC2,init,false
+"Found: ""2""",Used < 1000 iteration for PBE,8,Used < 1000 iteration for PBE,326,1,org.bouncycastle.jcajce.provider.symmetric.DESede$PBEWithSHAAndDES2Key,init,false
+"Found: ""2""",Used < 1000 iteration for PBE,8,Used < 1000 iteration for PBE,326,1,org.bouncycastle.jcajce.provider.symmetric.AES$PBEWithSHA256AESCBC256,init,false
+"Found: ""1""",Used < 1000 iteration for PBE,8,Used < 1000 iteration for PBE,326,1,org.bouncycastle.jcajce.provider.keystore.bc.BcKeyStoreSpi$StoreEntry,init,false
+"Found: ""2""",Used < 1000 iteration for PBE,8,Used < 1000 iteration for PBE,326,1,org.bouncycastle.jcajce.provider.symmetric.DESede$PBEWithSHAAndDES3Key,init,false
+"Found: ""0""",Used < 1000 iteration for PBE,8,Used < 1000 iteration for PBE,326,1,org.bouncycastle.jcajce.provider.symmetric.DES$PBEWithSHA1,init,false
+"Found: ""SunX509""",Used Predictable KeyStore Password,14,Used Predictable KeyStore Password,321,1,javax.net.ssl.KeyManagerFactory,getDefaultAlgorithm,false
+"Found: ""jks""",Used Predictable KeyStore Password,14,Used Predictable KeyStore Password,321,1,java.security.KeyStore,getDefaultType,false
+"Found: ""changeit""",Used Predictable KeyStore Password,14,Used Predictable KeyStore Password,321,1,ch.qos.logback.core.net.ssl.KeyStoreFactoryBean,getPassword,true

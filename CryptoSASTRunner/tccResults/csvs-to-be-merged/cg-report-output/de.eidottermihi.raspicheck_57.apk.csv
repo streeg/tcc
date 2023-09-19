@@ -1,0 +1,84 @@
+Message,Description,RuleNumber,RuleDesc,CWEId,Severity,ClassName,MethodName
+"Found: ""Blowfish""",Found broken crypto schemes,1,Found broken crypto schemes,256,1,com.hierynomus.sshj.transport.cipher.BlockCiphers,BlowfishCBC
+"Found: ""AES""",Found broken crypto schemes,1,Found broken crypto schemes,256,1,com.hierynomus.sshj.transport.cipher.GcmCiphers,AES256GCM
+"Found: ""AES""",Found broken crypto schemes,1,Found broken crypto schemes,256,1,com.hierynomus.sshj.transport.cipher.BlockCiphers,AES192CTR
+"Found: ""AES""",Found broken crypto schemes,1,Found broken crypto schemes,256,1,com.hierynomus.sshj.transport.cipher.BlockCiphers,AES256CTR
+"Found: ""DESede""",Found broken crypto schemes,1,Found broken crypto schemes,256,1,com.hierynomus.sshj.transport.cipher.BlockCiphers,TripleDESCTR
+"Found: ""AES""",Found broken crypto schemes,1,Found broken crypto schemes,256,1,com.hierynomus.sshj.transport.cipher.BlockCiphers,AES128CTR
+"Found: ""DESede/CBC/NoPadding""",Found broken crypto schemes,1,Found broken crypto schemes,256,1,net.schmizz.sshj.transport.cipher.TripleDESCBC,init
+"Found: ""IDEA""",Found broken crypto schemes,1,Found broken crypto schemes,256,1,com.hierynomus.sshj.transport.cipher.BlockCiphers,IDEACBC
+"Found: ""RC4""",Found broken crypto schemes,1,Found broken crypto schemes,256,1,com.hierynomus.sshj.transport.cipher.StreamCiphers,Arcfour128
+"Found: ""AES""",Found broken crypto schemes,1,Found broken crypto schemes,256,1,com.hierynomus.sshj.transport.cipher.BlockCiphers,AES128CBC
+"Found: ""AES""",Found broken crypto schemes,1,Found broken crypto schemes,256,1,com.hierynomus.sshj.transport.cipher.GcmCiphers,AES128GCM
+"Found: ""RC4""",Found broken crypto schemes,1,Found broken crypto schemes,256,1,com.hierynomus.sshj.transport.cipher.StreamCiphers,Arcfour256
+"Found: ""AES""",Found broken crypto schemes,1,Found broken crypto schemes,256,1,com.hierynomus.sshj.transport.cipher.BlockCiphers,AES256CBC
+"Found: ""DESede""",Found broken crypto schemes,1,Found broken crypto schemes,256,1,com.hierynomus.sshj.transport.cipher.BlockCiphers,TripleDESCBC
+"Found: ""Blowfish/CBC/NoPadding""",Found broken crypto schemes,1,Found broken crypto schemes,256,1,net.schmizz.sshj.transport.cipher.BlowfishCBC,init
+"Found: ""AES""",Found broken crypto schemes,1,Found broken crypto schemes,256,1,com.hierynomus.sshj.transport.cipher.BlockCiphers,AES192CBC
+"Found: ""IDEA""",Found broken crypto schemes,1,Found broken crypto schemes,256,1,com.hierynomus.sshj.transport.cipher.BlockCiphers,IDEACTR
+"Found: ""Blowfish""",Found broken crypto schemes,1,Found broken crypto schemes,256,1,com.hierynomus.sshj.transport.cipher.BlockCiphers,BlowfishCTR
+Found: Untrused PRNG (java.util.Random),Used untrusted PRNG,13,Used untrusted PRNG,338,1,org.bouncycastle.pqc.math.linearalgebra.GF2nPolynomialElement,solveQuadraticEquation
+Found: Untrused PRNG (java.util.Random),Used untrusted PRNG,13,Used untrusted PRNG,338,1,org.bouncycastle.math.ec.ECFieldElement$Fp,sqrt
+Found: Untrused PRNG (java.util.Random),Used untrusted PRNG,13,Used untrusted PRNG,338,1,org.bouncycastle.pqc.math.linearalgebra.GF2Polynomial,clinit
+Found: Untrused PRNG (java.util.Random),Used untrusted PRNG,13,Used untrusted PRNG,338,1,org.bouncycastle.asn1.ua.DSTU4145PointEncoder,solveQuadraticEquation
+Found: Untrused PRNG (java.util.Random),Used untrusted PRNG,13,Used untrusted PRNG,338,1,org.bouncycastle.math.raw.Mod,random
+Found: Untrused PRNG (java.util.Random),Used untrusted PRNG,13,Used untrusted PRNG,338,1,org.bouncycastle.pqc.math.linearalgebra.GF2nONBField,elementOfOrder
+Found: Untrused PRNG (java.util.Random),Used untrusted PRNG,13,Used untrusted PRNG,338,1,org.bouncycastle.math.ec.ECCurve$AbstractF2m,solveQuadraticEquation
+Should at least get One accepted Issuer from Other Sources in getAcceptedIssuers method of jcajce.JcaJceUtils,Uses untrusted TrustManager,4,Uses untrusted TrustManager,349,1,jcajce.JcaJceUtils,getAcceptedIssuers
+Should throw java.security.cert.CertificateException in check(Client|Server)Trusted method of jcajce.JcaJceUtils,Uses untrusted TrustManager,4,Uses untrusted TrustManager,349,1,jcajce.JcaJceUtils,UNKNOWN
+Should at least get One accepted Issuer from Other Sources in getAcceptedIssuers method of jcajce.JcaJceUtils,Uses untrusted TrustManager,4,Uses untrusted TrustManager,349,1,jcajce.JcaJceUtils,getAcceptedIssuers
+Should throw java.security.cert.CertificateException in check(Client|Server)Trusted method of jcajce.JcaJceUtils,Uses untrusted TrustManager,4,Uses untrusted TrustManager,349,1,jcajce.JcaJceUtils,UNKNOWN
+"Found: ""MD5""",Found broken hash functions,2,Found broken hash functions,759,1,net.schmizz.sshj.common.SecurityUtils,getFingerprint
+"Found: ""SHA1""",Found broken hash functions,2,Found broken hash functions,759,1,org.bouncycastle.cert.jcajce.JcaX509ExtensionUtils,init
+"Found: ""SHA-1""",Found broken hash functions,2,Found broken hash functions,759,1,net.schmizz.sshj.transport.digest.SHA1,init
+"Found: ""SHA-1""",Found broken hash functions,2,Found broken hash functions,759,1,net.schmizz.sshj.userauth.keyprovider.PuTTYKeyFile,toKey
+"Found: ""MD5""",Found broken hash functions,2,Found broken hash functions,759,1,net.schmizz.sshj.transport.digest.MD5,init
+"Found: ""SHA-1""",Found broken hash functions,2,Found broken hash functions,759,1,net.schmizz.sshj.userauth.keyprovider.PuTTYKeyFile,verify
+"Found: ""SHA-1""",Found broken hash functions,2,Found broken hash functions,759,1,net.schmizz.sshj.transport.verification.FingerprintVerifier,getInstance
+"Found: ""SHA1""",Found broken hash functions,2,Found broken hash functions,759,1,org.bouncycastle.openpgp.operator.jcajce.SHA1PGPDigestCalculator,init
+"Found: ""MD5""",Found broken hash functions,2,Found broken hash functions,759,1,net.schmizz.sshj.common.SecurityUtils,registerSecurityProvider
+"Found: Constant ""0""",Used constant keys in code,3,Used constant keys in code,547,1,net.schmizz.sshj.userauth.keyprovider.PuTTYKeyFile,toKey
+"Found: Constant ""4""",Used constant keys in code,3,Used constant keys in code,547,1,org.bouncycastle.math.ec.ECPoint,getEncoded
+"Found: Constant ""0""",Used constant keys in code,3,Used constant keys in code,547,1,net.schmizz.sshj.userauth.keyprovider.PuTTYKeyFile,toKey
+"Found: Constant ""2""",Used constant keys in code,3,Used constant keys in code,547,1,org.bouncycastle.math.ec.ECPoint,getEncoded
+"Found: Constant ""0""",Used constant keys in code,3,Used constant keys in code,547,1,net.schmizz.sshj.userauth.keyprovider.PuTTYKeyFile,toKey
+"Found: Constant ""0""",Used constant keys in code,3,Used constant keys in code,547,1,net.schmizz.sshj.userauth.keyprovider.PuTTYKeyFile,toKey
+"Found: Constant ""3""",Used constant keys in code,3,Used constant keys in code,547,1,org.bouncycastle.math.ec.ECPoint,getEncoded
+"Found: Constant ""ENC""",Used constant keys in code,3,Used constant keys in code,547,1,org.bouncycastle.operator.jcajce.OperatorUtils,getJceKey
+"Found: Constant ""0""",Used constant keys in code,3,Used constant keys in code,547,1,net.schmizz.sshj.userauth.keyprovider.PuTTYKeyFile,toKey
+"Found: Constant ""1""",Used constant keys in code,3,Used constant keys in code,547,1,net.schmizz.sshj.userauth.keyprovider.PuTTYKeyFile,toKey
+"Found: Constant ""0""",Used constant keys in code,3,Used constant keys in code,547,1,net.schmizz.sshj.userauth.keyprovider.PuTTYKeyFile,toKey
+"Found: Constant ""0""",Used constant keys in code,3,Used constant keys in code,547,1,net.schmizz.sshj.userauth.keyprovider.PuTTYKeyFile,toKey
+"Found: ""0""",Found constant IV in code,10,Found constant IV in code,547,1,net.schmizz.sshj.userauth.keyprovider.PuTTYKeyFile,toKey
+"Found: ""0""",Found constant IV in code,10,Found constant IV in code,547,1,net.schmizz.sshj.userauth.keyprovider.PuTTYKeyFile,toKey
+"Found: ""0""",Found constant IV in code,10,Found constant IV in code,547,1,net.schmizz.sshj.userauth.keyprovider.PuTTYKeyFile,toKey
+"Found: ""0""",Found constant IV in code,10,Found constant IV in code,547,1,net.schmizz.sshj.userauth.keyprovider.PuTTYKeyFile,toKey
+"Found: ""0""",Found constant IV in code,10,Found constant IV in code,547,1,net.schmizz.sshj.userauth.keyprovider.PuTTYKeyFile,toKey
+"Found: ""1""",Found constant IV in code,10,Found constant IV in code,547,1,net.schmizz.sshj.userauth.keyprovider.PuTTYKeyFile,toKey
+"Found: ""0""",Found constant IV in code,10,Found constant IV in code,547,1,net.schmizz.sshj.userauth.keyprovider.PuTTYKeyFile,toKey
+"Found: ""0""",Found constant IV in code,10,Found constant IV in code,547,1,net.schmizz.sshj.userauth.keyprovider.PuTTYKeyFile,toKey
+"Found: ""2""",Used < 1000 iteration for PBE,8,Used < 1000 iteration for PBE,326,1,org.bouncycastle.jcajce.provider.symmetric.Twofish$PBEWithSHA,init
+"Found: ""3""",Used < 1000 iteration for PBE,8,Used < 1000 iteration for PBE,326,1,org.bouncycastle.jcajce.provider.keystore.bc.BcKeyStoreSpi$StoreEntry,init
+"Found: ""0""",Used < 1000 iteration for PBE,8,Used < 1000 iteration for PBE,326,1,org.bouncycastle.jcajce.provider.symmetric.RC2$PBEWithMD5AndRC2,init
+"Found: ""1""",Used < 1000 iteration for PBE,8,Used < 1000 iteration for PBE,326,1,org.bouncycastle.jcajce.provider.keystore.bc.BcKeyStoreSpi,loadStore
+"Found: ""20""",Used < 1000 iteration for PBE,8,Used < 1000 iteration for PBE,326,1,org.bouncycastle.jcajce.provider.keystore.pkcs12.PKCS12KeyStoreSpi,init
+"Found: ""2""",Used < 1000 iteration for PBE,8,Used < 1000 iteration for PBE,326,1,org.bouncycastle.jcajce.provider.symmetric.AES$PBEWithSHA256AESCBC128,init
+"Found: ""1""",Used < 1000 iteration for PBE,8,Used < 1000 iteration for PBE,326,1,org.bouncycastle.openssl.jcajce.PEMUtilities,getKey
+"Found: ""2""",Used < 1000 iteration for PBE,8,Used < 1000 iteration for PBE,326,1,org.bouncycastle.jcajce.provider.symmetric.AES$PBEWithSHA1AESCBC256,init
+"Found: ""0""",Used < 1000 iteration for PBE,8,Used < 1000 iteration for PBE,326,1,org.bouncycastle.jcajce.provider.symmetric.DES$PBEWithMD2,init
+"Found: ""2""",Used < 1000 iteration for PBE,8,Used < 1000 iteration for PBE,326,1,org.bouncycastle.jcajce.provider.symmetric.AES$PBEWithSHA1AESCBC128,init
+"Found: ""2""",Used < 1000 iteration for PBE,8,Used < 1000 iteration for PBE,326,1,org.bouncycastle.jcajce.provider.keystore.bc.BcKeyStoreSpi,loadStore
+"Found: ""2""",Used < 1000 iteration for PBE,8,Used < 1000 iteration for PBE,326,1,org.bouncycastle.jcajce.provider.symmetric.AES$PBEWithSHA1AESCBC192,init
+"Found: ""0""",Used < 1000 iteration for PBE,8,Used < 1000 iteration for PBE,326,1,org.bouncycastle.jcajce.provider.symmetric.DES$PBEWithMD5,init
+"Found: ""0""",Used < 1000 iteration for PBE,8,Used < 1000 iteration for PBE,326,1,org.bouncycastle.jcajce.provider.symmetric.RC2$PBEWithSHA1AndRC2,init
+"Found: ""4""",Used < 1000 iteration for PBE,8,Used < 1000 iteration for PBE,326,1,org.bouncycastle.jcajce.provider.keystore.bc.BcKeyStoreSpi$StoreEntry,init
+"Found: ""2""",Used < 1000 iteration for PBE,8,Used < 1000 iteration for PBE,326,1,org.bouncycastle.jcajce.provider.symmetric.RC2$PBEWithSHAAnd128BitRC2,init
+"Found: ""2""",Used < 1000 iteration for PBE,8,Used < 1000 iteration for PBE,326,1,org.bouncycastle.jcajce.provider.symmetric.AES$PBEWithSHA256AESCBC192,init
+"Found: ""2""",Used < 1000 iteration for PBE,8,Used < 1000 iteration for PBE,326,1,org.bouncycastle.jcajce.provider.symmetric.RC2$PBEWithSHAAnd40BitRC2,init
+"Found: ""2""",Used < 1000 iteration for PBE,8,Used < 1000 iteration for PBE,326,1,org.bouncycastle.jcajce.provider.symmetric.DESede$PBEWithSHAAndDES2Key,init
+"Found: ""2""",Used < 1000 iteration for PBE,8,Used < 1000 iteration for PBE,326,1,org.bouncycastle.jcajce.provider.symmetric.AES$PBEWithSHA256AESCBC256,init
+"Found: ""1""",Used < 1000 iteration for PBE,8,Used < 1000 iteration for PBE,326,1,org.bouncycastle.jcajce.provider.keystore.bc.BcKeyStoreSpi$StoreEntry,init
+"Found: ""2""",Used < 1000 iteration for PBE,8,Used < 1000 iteration for PBE,326,1,org.bouncycastle.jcajce.provider.symmetric.DESede$PBEWithSHAAndDES3Key,init
+"Found: ""0""",Used < 1000 iteration for PBE,8,Used < 1000 iteration for PBE,326,1,org.bouncycastle.jcajce.provider.symmetric.DES$PBEWithSHA1,init
+"Found: ""www.bouncycastle.org""",Found predictable seeds in code,11,Found predictable seeds in code,760,1,org.bouncycastle.crypto.examples.DESExample,init
+"Found: ""changeit""",Used Predictable KeyStore Password,14,Used Predictable KeyStore Password,321,1,ch.qos.logback.core.net.ssl.KeyStoreFactoryBean,getPassword

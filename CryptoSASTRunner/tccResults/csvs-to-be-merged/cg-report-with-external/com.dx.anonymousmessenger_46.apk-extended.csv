@@ -1,0 +1,9 @@
+Message,Description,RuleNumber,RuleDesc,CWEId,Severity,ClassName,MethodName,ExternalLibrary
+Found: Untrused PRNG (java.util.Random),Used untrusted PRNG,13,Used untrusted PRNG,338,1,androidx.transition.Explode,calculateOut,true
+Found: Untrused PRNG (java.util.Random),Used untrusted PRNG,13,Used untrusted PRNG,338,1,androidx.activity.result.ActivityResultRegistry,init,true
+"Found: ""SHA-1""",Found broken hash functions,2,Found broken hash functions,759,1,net.sf.freehaven.tor.control.PasswordDigest,secretToKey,true
+"Found: Constant ""2""",Used constant keys in code,3,Used constant keys in code,547,1,org.whispersystems.libsignal.ratchet.ChainKey,clinit,false
+"Found: Constant ""1""",Used constant keys in code,3,Used constant keys in code,547,1,org.whispersystems.libsignal.groups.ratchet.SenderChainKey,clinit,false
+"Found: Constant ""1""",Used constant keys in code,3,Used constant keys in code,547,1,org.whispersystems.libsignal.ratchet.ChainKey,clinit,false
+"Found: Constant ""2""",Used constant keys in code,3,Used constant keys in code,547,1,org.whispersystems.libsignal.groups.ratchet.SenderChainKey,clinit,false
+"Found: ""1""",Found constant IV in code,10,Found constant IV in code,547,1,org.whispersystems.libsignal.ratchet.ChainKey,clinit,false

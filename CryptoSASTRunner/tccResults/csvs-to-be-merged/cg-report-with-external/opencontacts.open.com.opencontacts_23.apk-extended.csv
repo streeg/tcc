@@ -1,0 +1,7 @@
+Message,Description,RuleNumber,RuleDesc,CWEId,Severity,ClassName,MethodName,ExternalLibrary
+Found: Untrused PRNG (java.util.Random),Used untrusted PRNG,13,Used untrusted PRNG,338,1,opencontacts.open.com.opencontacts.broadcast_recievers.PhoneStateReceiver,notifyAboutMissedCall,true
+Found: Untrused PRNG (java.util.Random),Used untrusted PRNG,13,Used untrusted PRNG,338,1,j.a.a.h.d,n,false
+Should at least get One accepted Issuer from Other Sources in getAcceptedIssuers method of utils.NetworkUtils,Uses untrusted TrustManager,4,Uses untrusted TrustManager,349,1,utils.NetworkUtils,getAcceptedIssuers,false
+Should throw java.security.cert.CertificateException in check(Client|Server)Trusted method of utils.NetworkUtils,Uses untrusted TrustManager,4,Uses untrusted TrustManager,349,1,utils.NetworkUtils,UNKNOWN,false
+"Found: ""SHA-1""",Found broken hash functions,2,Found broken hash functions,759,1,l.h,p,false
+"Found: ""SHA""",Found broken hash functions,2,Found broken hash functions,759,1,h.c.e.a$b,run,false

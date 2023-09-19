@@ -1,0 +1,72 @@
+Message,Description,RuleNumber,RuleDesc,CWEId,Severity,ClassName,MethodName
+"Found: ""AES/ECB/PKCS5Padding""",Found broken crypto schemes,1,Found broken crypto schemes,256,1,kellinwood.security.zipsigner.optional.PasswordObfuscator,encode
+"Found: ""AES/ECB/PKCS5Padding""",Found broken crypto schemes,1,Found broken crypto schemes,256,1,kellinwood.security.zipsigner.optional.PasswordObfuscator,decode
+Found: Untrused PRNG (java.util.Random),Used untrusted PRNG,13,Used untrusted PRNG,338,1,androidx.transition.Explode,calculateOut
+Found: Untrused PRNG (java.util.Random),Used untrusted PRNG,13,Used untrusted PRNG,338,1,org.bouncycastle.pqc.math.linearalgebra.GF2nPolynomialElement,solveQuadraticEquation
+Found: Untrused PRNG (java.util.Random),Used untrusted PRNG,13,Used untrusted PRNG,338,1,org.bouncycastle.math.ec.ECFieldElement$Fp,sqrt
+Found: Untrused PRNG (java.util.Random),Used untrusted PRNG,13,Used untrusted PRNG,338,1,org.bouncycastle.asn1.ua.DSTU4145PointEncoder,solveQuadraticEquation
+Found: Untrused PRNG (java.util.Random),Used untrusted PRNG,13,Used untrusted PRNG,338,1,org.bouncycastle.math.raw.Mod,random
+Found: Untrused PRNG (java.util.Random),Used untrusted PRNG,13,Used untrusted PRNG,338,1,org.bouncycastle.math.ec.ECCurve$AbstractF2m,solveQuadraticEquation
+Found: Untrused PRNG (java.util.Random),Used untrusted PRNG,13,Used untrusted PRNG,338,1,com.bumptech.glide.load.resource.gif.GifFrameLoader,getFrameSignature
+Found: Untrused PRNG (java.util.Random),Used untrusted PRNG,13,Used untrusted PRNG,338,1,androidx.activity.result.ActivityResultRegistry,init
+Found: Untrused PRNG (java.util.Random),Used untrusted PRNG,13,Used untrusted PRNG,338,1,org.apache.commons.net.ftp.FTPClient,init
+Found: Untrused PRNG (java.util.Random),Used untrusted PRNG,13,Used untrusted PRNG,338,1,org.bouncycastle.pqc.math.linearalgebra.GF2Polynomial,clinit
+Found: Untrused PRNG (java.util.Random),Used untrusted PRNG,13,Used untrusted PRNG,338,1,javax.jmdns.impl.DNSRecord,init
+Found: Untrused PRNG (java.util.Random),Used untrusted PRNG,13,Used untrusted PRNG,338,1,org.fdroid.fdroid.Preferences,getDefaultLocalRepoName
+Found: Untrused PRNG (java.util.Random),Used untrusted PRNG,13,Used untrusted PRNG,338,1,javax.jmdns.impl.JmDNSImpl,clinit
+Found: Untrused PRNG (java.util.Random),Used untrusted PRNG,13,Used untrusted PRNG,338,1,org.bouncycastle.pqc.math.linearalgebra.GF2nONBField,elementOfOrder
+Didn't manually verify hostname in sslNegotiation,Should check HostnameVerification manually,12,Should check HostnameVerification manually,297,1,org.apache.commons.net.ftp.FTPSClient,sslNegotiation
+Didn't manually verify hostname in performSSLNegotiation,Should check HostnameVerification manually,12,Should check HostnameVerification manually,297,1,org.apache.commons.net.smtp.SMTPSClient,performSSLNegotiation
+Didn't manually verify hostname in performSSLNegotiation,Should check HostnameVerification manually,12,Should check HostnameVerification manually,297,1,org.apache.commons.net.imap.IMAPSClient,performSSLNegotiation
+Didn't manually verify hostname in performSSLNegotiation,Should check HostnameVerification manually,12,Should check HostnameVerification manually,297,1,org.apache.commons.net.pop3.POP3SClient,performSSLNegotiation
+Should at least get One accepted Issuer from Other Sources in getAcceptedIssuers method of jcajce.JcaJceUtils,Uses untrusted TrustManager,4,Uses untrusted TrustManager,349,1,jcajce.JcaJceUtils,getAcceptedIssuers
+Should throw java.security.cert.CertificateException in check(Client|Server)Trusted method of jcajce.JcaJceUtils,Uses untrusted TrustManager,4,Uses untrusted TrustManager,349,1,jcajce.JcaJceUtils,UNKNOWN
+Should at least get One accepted Issuer from Other Sources in getAcceptedIssuers method of jcajce.JcaJceUtils,Uses untrusted TrustManager,4,Uses untrusted TrustManager,349,1,jcajce.JcaJceUtils,getAcceptedIssuers
+Should throw java.security.cert.CertificateException in check(Client|Server)Trusted method of jcajce.JcaJceUtils,Uses untrusted TrustManager,4,Uses untrusted TrustManager,349,1,jcajce.JcaJceUtils,UNKNOWN
+Should at least get One accepted Issuer from Other Sources in getAcceptedIssuers method of UNKNOWN,Uses untrusted TrustManager,4,Uses untrusted TrustManager,349,1,UNKNOWN,getAcceptedIssuers
+Should throw java.security.cert.CertificateException in check(Client|Server)Trusted method of UNKNOWN,Uses untrusted TrustManager,4,Uses untrusted TrustManager,349,1,UNKNOWN,UNKNOWN
+Should at least get One accepted Issuer from Other Sources in getAcceptedIssuers method of UNKNOWN,Uses untrusted TrustManager,4,Uses untrusted TrustManager,349,1,UNKNOWN,getAcceptedIssuers
+Should throw java.security.cert.CertificateException in check(Client|Server)Trusted method of UNKNOWN,Uses untrusted TrustManager,4,Uses untrusted TrustManager,349,1,UNKNOWN,UNKNOWN
+"Found: ""SHA1""",Found broken hash functions,2,Found broken hash functions,759,1,kellinwood.security.zipsigner.optional.JKS,encryptKey
+"Found: ""SHA1""",Found broken hash functions,2,Found broken hash functions,759,1,kellinwood.security.zipsigner.optional.JKS,decryptKey
+"Found: ""SHA1""",Found broken hash functions,2,Found broken hash functions,759,1,org.bouncycastle.cert.jcajce.JcaX509ExtensionUtils,init
+"Found: ""MD5""",Found broken hash functions,2,Found broken hash functions,759,1,org.apache.commons.io.input.MessageDigestCalculatingInputStream,init
+"Found: ""MD5""",Found broken hash functions,2,Found broken hash functions,759,1,org.apache.commons.net.pop3.POP3Client,login
+"Found: ""SHA""",Found broken hash functions,2,Found broken hash functions,759,1,kellinwood.security.zipsigner.optional.JKS,engineLoad
+"Found: ""MD5""",Found broken hash functions,2,Found broken hash functions,759,1,kellinwood.security.zipsigner.ZipSigner,autoDetectKey
+"Found: ""md5""",Found broken hash functions,2,Found broken hash functions,759,1,org.fdroid.fdroid.Utils,getsig
+"Found: ""MD5""",Found broken hash functions,2,Found broken hash functions,759,1,org.fdroid.fdroid.Utils,getPackageSig
+"Found: ""SHA1""",Found broken hash functions,2,Found broken hash functions,759,1,kellinwood.security.zipsigner.ZipSigner,generateSignatureFile
+"Found: ""SHA1""",Found broken hash functions,2,Found broken hash functions,759,1,kellinwood.security.zipsigner.optional.JKS,engineStore
+"Found: ""SHA1""",Found broken hash functions,2,Found broken hash functions,759,1,kellinwood.security.zipsigner.ZipSignature,init
+"Found: ""SHA1""",Found broken hash functions,2,Found broken hash functions,759,1,kellinwood.security.zipsigner.ZipSigner,writeSignatureBlock
+"Found: ""SHA1""",Found broken hash functions,2,Found broken hash functions,759,1,kellinwood.security.zipsigner.ZipSigner,addDigestsToManifest
+"Found: Constant ""harold-and-maude""",Used constant keys in code,3,Used constant keys in code,547,1,kellinwood.security.zipsigner.optional.PasswordObfuscator,init
+"Found: Constant ""harold-and-maude""",Used constant keys in code,3,Used constant keys in code,547,1,kellinwood.security.zipsigner.optional.PasswordObfuscator,decode
+"Found: Constant ""ENC""",Used constant keys in code,3,Used constant keys in code,547,1,org.bouncycastle.operator.jcajce.OperatorUtils,getJceKey
+"Found: Constant ""class Lkellinwood/security/zipsigner/optional/PasswordObfuscator;""",Used constant keys in code,3,Used constant keys in code,547,1,kellinwood.security.zipsigner.optional.PasswordObfuscator,init
+"Found: ""2""",Used < 1000 iteration for PBE,8,Used < 1000 iteration for PBE,326,1,org.bouncycastle.jcajce.provider.symmetric.Twofish$PBEWithSHA,init
+"Found: ""3""",Used < 1000 iteration for PBE,8,Used < 1000 iteration for PBE,326,1,org.bouncycastle.jcajce.provider.keystore.bc.BcKeyStoreSpi$StoreEntry,init
+"Found: ""0""",Used < 1000 iteration for PBE,8,Used < 1000 iteration for PBE,326,1,org.bouncycastle.jcajce.provider.symmetric.RC2$PBEWithMD5AndRC2,init
+"Found: ""1""",Used < 1000 iteration for PBE,8,Used < 1000 iteration for PBE,326,1,org.bouncycastle.jcajce.provider.keystore.bc.BcKeyStoreSpi,loadStore
+"Found: ""20""",Used < 1000 iteration for PBE,8,Used < 1000 iteration for PBE,326,1,org.bouncycastle.jcajce.provider.keystore.pkcs12.PKCS12KeyStoreSpi,init
+"Found: ""2""",Used < 1000 iteration for PBE,8,Used < 1000 iteration for PBE,326,1,org.bouncycastle.jcajce.provider.symmetric.AES$PBEWithSHA256AESCBC128,init
+"Found: ""1""",Used < 1000 iteration for PBE,8,Used < 1000 iteration for PBE,326,1,org.bouncycastle.openssl.jcajce.PEMUtilities,getKey
+"Found: ""2""",Used < 1000 iteration for PBE,8,Used < 1000 iteration for PBE,326,1,org.bouncycastle.jcajce.provider.symmetric.AES$PBEWithSHA1AESCBC256,init
+"Found: ""0""",Used < 1000 iteration for PBE,8,Used < 1000 iteration for PBE,326,1,org.bouncycastle.jcajce.provider.symmetric.DES$PBEWithMD2,init
+"Found: ""2""",Used < 1000 iteration for PBE,8,Used < 1000 iteration for PBE,326,1,org.bouncycastle.jcajce.provider.symmetric.AES$PBEWithSHA1AESCBC128,init
+"Found: ""2""",Used < 1000 iteration for PBE,8,Used < 1000 iteration for PBE,326,1,org.bouncycastle.jcajce.provider.keystore.bc.BcKeyStoreSpi,loadStore
+"Found: ""2""",Used < 1000 iteration for PBE,8,Used < 1000 iteration for PBE,326,1,org.bouncycastle.jcajce.provider.symmetric.AES$PBEWithSHA1AESCBC192,init
+"Found: ""0""",Used < 1000 iteration for PBE,8,Used < 1000 iteration for PBE,326,1,org.bouncycastle.jcajce.provider.symmetric.DES$PBEWithMD5,init
+"Found: ""0""",Used < 1000 iteration for PBE,8,Used < 1000 iteration for PBE,326,1,org.bouncycastle.jcajce.provider.symmetric.RC2$PBEWithSHA1AndRC2,init
+"Found: ""4""",Used < 1000 iteration for PBE,8,Used < 1000 iteration for PBE,326,1,org.bouncycastle.jcajce.provider.keystore.bc.BcKeyStoreSpi$StoreEntry,init
+"Found: ""2""",Used < 1000 iteration for PBE,8,Used < 1000 iteration for PBE,326,1,org.bouncycastle.jcajce.provider.symmetric.RC2$PBEWithSHAAnd128BitRC2,init
+"Found: ""2""",Used < 1000 iteration for PBE,8,Used < 1000 iteration for PBE,326,1,org.bouncycastle.jcajce.provider.symmetric.AES$PBEWithSHA256AESCBC192,init
+"Found: ""2""",Used < 1000 iteration for PBE,8,Used < 1000 iteration for PBE,326,1,org.bouncycastle.jcajce.provider.symmetric.RC2$PBEWithSHAAnd40BitRC2,init
+"Found: ""2""",Used < 1000 iteration for PBE,8,Used < 1000 iteration for PBE,326,1,org.bouncycastle.jcajce.provider.symmetric.DESede$PBEWithSHAAndDES2Key,init
+"Found: ""2""",Used < 1000 iteration for PBE,8,Used < 1000 iteration for PBE,326,1,org.bouncycastle.jcajce.provider.symmetric.AES$PBEWithSHA256AESCBC256,init
+"Found: ""1""",Used < 1000 iteration for PBE,8,Used < 1000 iteration for PBE,326,1,org.bouncycastle.jcajce.provider.keystore.bc.BcKeyStoreSpi$StoreEntry,init
+"Found: ""2""",Used < 1000 iteration for PBE,8,Used < 1000 iteration for PBE,326,1,org.bouncycastle.jcajce.provider.symmetric.DESede$PBEWithSHAAndDES3Key,init
+"Found: ""0""",Used < 1000 iteration for PBE,8,Used < 1000 iteration for PBE,326,1,org.bouncycastle.jcajce.provider.symmetric.DES$PBEWithSHA1,init
+"Found: ""www.bouncycastle.org""",Found predictable seeds in code,11,Found predictable seeds in code,760,1,org.bouncycastle.crypto.examples.DESExample,init
+"Found: ""jks""",Used Predictable KeyStore Password,14,Used Predictable KeyStore Password,321,1,java.security.KeyStore,getDefaultType

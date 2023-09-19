@@ -1,0 +1,99 @@
+Message,Description,RuleNumber,RuleDesc,CWEId,Severity,ClassName,MethodName
+Cause: Used default key size,Used export grade public Key,5,Used export grade public Key,321,1,com.subgraph.orchid.crypto.TorPrivateKey,createGenerator
+"Found: ""AES/ECB/PKCS7Padding""",Found broken crypto schemes,1,Found broken crypto schemes,256,1,io.lbry.lbrysdk.Utils,decrypt
+"Found: ""AES/ECB/PKCS7Padding""",Found broken crypto schemes,1,Found broken crypto schemes,256,1,io.lbry.lbrysdk.Utils,encrypt
+"Found: ""AES/ECB/NoPadding""",Found broken crypto schemes,1,Found broken crypto schemes,256,1,com.subgraph.orchid.crypto.TorStreamCipher,createCipher
+"Found: ""AES/ECB/NoPadding""",Found broken crypto schemes,1,Found broken crypto schemes,256,1,org.bitcoinj.crypto.BIP38PrivateKey,decryptEC
+"Found: ""AES/ECB/NoPadding""",Found broken crypto schemes,1,Found broken crypto schemes,256,1,org.bitcoinj.crypto.BIP38PrivateKey,decryptNoEC
+Found: Untrused PRNG (java.util.Random),Used untrusted PRNG,13,Used untrusted PRNG,338,1,org.spongycastle.math.ec.ECCurve$F2m,solveQuadraticEquation
+Found: Untrused PRNG (java.util.Random),Used untrusted PRNG,13,Used untrusted PRNG,338,1,androidx.transition.Explode,calculateOut
+Found: Untrused PRNG (java.util.Random),Used untrusted PRNG,13,Used untrusted PRNG,338,1,org.h2.engine.Database,beforeWriting
+Found: Untrused PRNG (java.util.Random),Used untrusted PRNG,13,Used untrusted PRNG,338,1,org.spongycastle.pqc.math.linearalgebra.GF2nPolynomialField,getRandomRoot
+Found: Untrused PRNG (java.util.Random),Used untrusted PRNG,13,Used untrusted PRNG,338,1,org.bitcoinj.net.FilterMerger,init
+Found: Untrused PRNG (java.util.Random),Used untrusted PRNG,13,Used untrusted PRNG,338,1,com.google.common.hash.Striped64,clinit
+Found: Untrused PRNG (java.util.Random),Used untrusted PRNG,13,Used untrusted PRNG,338,1,io.lbry.browser.utils.Helper,makeid
+Found: Untrused PRNG (java.util.Random),Used untrusted PRNG,13,Used untrusted PRNG,338,1,org.h2.util.MathUtils,clinit
+Found: Untrused PRNG (java.util.Random),Used untrusted PRNG,13,Used untrusted PRNG,338,1,kotlin.random.FallbackThreadLocalRandom$implStorage$1,initialValue
+Found: Untrused PRNG (java.util.Random),Used untrusted PRNG,13,Used untrusted PRNG,338,1,com.google.android.exoplayer2.trackselection.RandomTrackSelection$Factory,init
+Found: Untrused PRNG (java.util.Random),Used untrusted PRNG,13,Used untrusted PRNG,338,1,com.google.android.exoplayer2.source.ShuffleOrder$DefaultShuffleOrder,init
+Found: Untrused PRNG (java.util.Random),Used untrusted PRNG,13,Used untrusted PRNG,338,1,org.java_websocket.drafts.Draft_6455,init
+Found: Untrused PRNG (java.util.Random),Used untrusted PRNG,13,Used untrusted PRNG,338,1,org.h2.engine.Database,reconnectModified
+Found: Untrused PRNG (java.util.Random),Used untrusted PRNG,13,Used untrusted PRNG,338,1,io.lbry.lbrysdk.DownloadManager,generateNotificationId
+Found: Untrused PRNG (java.util.Random),Used untrusted PRNG,13,Used untrusted PRNG,338,1,okhttp3.OkHttpClient,newWebSocket
+Found: Untrused PRNG (java.util.Random),Used untrusted PRNG,13,Used untrusted PRNG,338,1,org.spongycastle.math.raw.Mod,random
+Found: Untrused PRNG (java.util.Random),Used untrusted PRNG,13,Used untrusted PRNG,338,1,io.lbry.browser.utils.Lbry,generateId
+Found: Untrused PRNG (java.util.Random),Used untrusted PRNG,13,Used untrusted PRNG,338,1,org.spongycastle.asn1.ua.DSTU4145PointEncoder,solveQuadraticEquation
+Found: Untrused PRNG (java.util.Random),Used untrusted PRNG,13,Used untrusted PRNG,338,1,io.lbry.browser.tasks.UpdateSuggestedTagsTask,doInBackground
+Found: Untrused PRNG (java.util.Random),Used untrusted PRNG,13,Used untrusted PRNG,338,1,kotlin.random.KotlinRandom,init
+Found: Untrused PRNG (java.util.Random),Used untrusted PRNG,13,Used untrusted PRNG,338,1,core.Peer,run
+Found: Untrused PRNG (java.util.Random),Used untrusted PRNG,13,Used untrusted PRNG,338,1,com.google.android.exoplayer2.source.ShuffleOrder$DefaultShuffleOrder,cloneAndInsert
+Found: Untrused PRNG (java.util.Random),Used untrusted PRNG,13,Used untrusted PRNG,338,1,com.google.android.exoplayer2.analytics.DefaultPlaybackSessionManager,clinit
+Found: Untrused PRNG (java.util.Random),Used untrusted PRNG,13,Used untrusted PRNG,338,1,org.spongycastle.pqc.math.linearalgebra.GF2nONBField,elementOfOrder
+Found: Untrused PRNG (java.util.Random),Used untrusted PRNG,13,Used untrusted PRNG,338,1,com.google.android.exoplayer2.upstream.cache.SimpleCache,init
+Found: Untrused PRNG (java.util.Random),Used untrusted PRNG,13,Used untrusted PRNG,338,1,com.google.android.exoplayer2.trackselection.RandomTrackSelection$Factory,init
+Found: Untrused PRNG (java.util.Random),Used untrusted PRNG,13,Used untrusted PRNG,338,1,org.bitcoinj.core.PeerGroup,selectDownloadPeer
+Found: Untrused PRNG (java.util.Random),Used untrusted PRNG,13,Used untrusted PRNG,338,1,org.spongycastle.pqc.math.linearalgebra.GF2nPolynomialElement,solveQuadraticEquation
+Found: Untrused PRNG (java.util.Random),Used untrusted PRNG,13,Used untrusted PRNG,338,1,org.spongycastle.pqc.math.linearalgebra.GF2nONBField,getRandomRoot
+Found: Untrused PRNG (java.util.Random),Used untrusted PRNG,13,Used untrusted PRNG,338,1,org.h2.server.web.WebApp,executeLoop
+Found: Untrused PRNG (java.util.Random),Used untrusted PRNG,13,Used untrusted PRNG,338,1,org.h2.index.PageDataIndex,add
+Found: Untrused PRNG (java.util.Random),Used untrusted PRNG,13,Used untrusted PRNG,338,1,com.google.android.exoplayer2.source.ShuffleOrder$DefaultShuffleOrder,init
+Found: Untrused PRNG (java.util.Random),Used untrusted PRNG,13,Used untrusted PRNG,338,1,com.google.android.exoplayer2.util.SntpClient,writeTimestamp
+Found: Untrused PRNG (java.util.Random),Used untrusted PRNG,13,Used untrusted PRNG,338,1,com.google.android.exoplayer2.trackselection.RandomTrackSelection,init
+Found: Untrused PRNG (java.util.Random),Used untrusted PRNG,13,Used untrusted PRNG,338,1,com.google.android.exoplayer2.source.ShuffleOrder$DefaultShuffleOrder,cloneAndClear
+Found: Untrused PRNG (java.util.Random),Used untrusted PRNG,13,Used untrusted PRNG,338,1,io.lbry.browser.utils.Helper,generateRandomColorForValue
+Found: Untrused PRNG (java.util.Random),Used untrusted PRNG,13,Used untrusted PRNG,338,1,org.h2.command.dml.Optimizer,calculateBestPlan
+Found: Untrused PRNG (java.util.Random),Used untrusted PRNG,13,Used untrusted PRNG,338,1,com.google.common.cache.Striped64,clinit
+Found: Untrused PRNG (java.util.Random),Used untrusted PRNG,13,Used untrusted PRNG,338,1,com.bumptech.glide.load.resource.gif.GifFrameLoader,getFrameSignature
+Found: Untrused PRNG (java.util.Random),Used untrusted PRNG,13,Used untrusted PRNG,338,1,io.lbry.browser.utils.Helper,generateUrl
+Found: Untrused PRNG (java.util.Random),Used untrusted PRNG,13,Used untrusted PRNG,338,1,org.bitcoinj.core.TransactionBroadcast,clinit
+Found: Untrused PRNG (java.util.Random),Used untrusted PRNG,13,Used untrusted PRNG,338,1,com.google.android.exoplayer2.source.ShuffleOrder$DefaultShuffleOrder,cloneAndRemove
+Found: Untrused PRNG (java.util.Random),Used untrusted PRNG,13,Used untrusted PRNG,338,1,org.bitcoinj.core.Peer,processInv
+Found: Untrused PRNG (java.util.Random),Used untrusted PRNG,13,Used untrusted PRNG,338,1,com.google.android.exoplayer2.trackselection.RandomTrackSelection,init
+Found: Untrused PRNG (java.util.Random),Used untrusted PRNG,13,Used untrusted PRNG,338,1,com.google.android.exoplayer2.source.ShuffleOrder$DefaultShuffleOrder,init
+Found: Untrused PRNG (java.util.Random),Used untrusted PRNG,13,Used untrusted PRNG,338,1,org.spongycastle.pqc.math.linearalgebra.GF2Polynomial,clinit
+Found: Untrused PRNG (java.util.Random),Used untrusted PRNG,13,Used untrusted PRNG,338,1,org.h2.engine.Session,getRandom
+Found: Untrused PRNG (java.util.Random),Used untrusted PRNG,13,Used untrusted PRNG,338,1,org.bitcoinj.core.Peer,ping
+Found: Untrused PRNG (java.util.Random),Used untrusted PRNG,13,Used untrusted PRNG,338,1,org.bitcoinj.wallet.Wallet,getBloomFilter
+Found: Untrused PRNG (java.util.Random),Used untrusted PRNG,13,Used untrusted PRNG,338,1,org.spongycastle.math.ec.ECFieldElement$Fp,sqrt
+Didn't manually verify hostname in run,Should check HostnameVerification manually,12,Should check HostnameVerification manually,297,1,org.java_websocket.client.WebSocketClient,run
+Should at least get One accepted Issuer from Other Sources in getAcceptedIssuers method of connections.ConnectionSocketFactory,Uses untrusted TrustManager,4,Uses untrusted TrustManager,349,1,connections.ConnectionSocketFactory,getAcceptedIssuers
+Should throw java.security.cert.CertificateException in check(Client|Server)Trusted method of connections.ConnectionSocketFactory,Uses untrusted TrustManager,4,Uses untrusted TrustManager,349,1,connections.ConnectionSocketFactory,UNKNOWN
+"Cause: Fixed ""[1]""",Used untrusted HostNameVerifier,6,Used untrusted HostNameVerifier,601,1,UNKNOWN,UNKNOWN
+"Found: ""SHA-1""",Found broken hash functions,2,Found broken hash functions,759,1,com.subgraph.orchid.crypto.TorMessageDigest,createDigestInstance
+"Found: ""SHA-1""",Found broken hash functions,2,Found broken hash functions,759,1,org.apache.commons.codec.digest.MessageDigestAlgorithms,values
+"Found: ""MD5""",Found broken hash functions,2,Found broken hash functions,759,1,com.google.common.hash.Hashing$Md5Holder,clinit
+"Found: ""SHA-1""",Found broken hash functions,2,Found broken hash functions,759,1,com.squareup.okhttp.internal.Util,shaBase64
+"Found: ""MD5""",Found broken hash functions,2,Found broken hash functions,759,1,org.apache.commons.codec.digest.DigestUtils,getMd5Digest
+"Found: ""SHA1""",Found broken hash functions,2,Found broken hash functions,759,1,org.java_websocket.drafts.Draft_6455,generateFinalKey
+"Found: ""SHA-1""",Found broken hash functions,2,Found broken hash functions,759,1,com.google.common.hash.Hashing$Sha1Holder,clinit
+"Found: ""MD5""",Found broken hash functions,2,Found broken hash functions,759,1,com.squareup.okhttp.internal.Util,md5Hex
+"Found: ""MD5""",Found broken hash functions,2,Found broken hash functions,759,1,okio.HashingSink$Companion,md5
+"Found: ""MD5""",Found broken hash functions,2,Found broken hash functions,759,1,okio.HashingSource$Companion,md5
+"Found: ""MD5""",Found broken hash functions,2,Found broken hash functions,759,1,org.apache.commons.codec.digest.MessageDigestAlgorithms,values
+"Found: ""SHA-1""",Found broken hash functions,2,Found broken hash functions,759,1,okio.HashingSink$Companion,sha1
+"Found: ""SHA-1""",Found broken hash functions,2,Found broken hash functions,759,1,com.squareup.okhttp.internal.Util,sha1
+"Found: ""MD2""",Found broken hash functions,2,Found broken hash functions,759,1,org.apache.commons.codec.digest.MessageDigestAlgorithms,values
+"Found: ""SHA-1""",Found broken hash functions,2,Found broken hash functions,759,1,okio.HashingSource$Companion,sha1
+"Found: ""MD2""",Found broken hash functions,2,Found broken hash functions,759,1,org.apache.commons.codec.digest.DigestUtils,getMd2Digest
+"Found: ""SHA-1""",Found broken hash functions,2,Found broken hash functions,759,1,okio.ByteString,sha1
+"Found: ""SHA-1""",Found broken hash functions,2,Found broken hash functions,759,1,org.bitcoinj.script.Script,executeScript
+"Found: ""MD5""",Found broken hash functions,2,Found broken hash functions,759,1,okio.Buffer,md5
+"Found: ""SHA-1""",Found broken hash functions,2,Found broken hash functions,759,1,org.apache.commons.codec.digest.DigestUtils,getSha1Digest
+"Found: ""MD5""",Found broken hash functions,2,Found broken hash functions,759,1,okio.ByteString,md5
+"Found: ""SHA-1""",Found broken hash functions,2,Found broken hash functions,759,1,okio.Buffer,sha1
+"Found: Constant ""key_extract""",Used constant keys in code,3,Used constant keys in code,547,1,com.subgraph.orchid.crypto.TorNTorKeyAgreement,deriveKeysFromHandshakeResponse
+"Found: Constant ""ntor-curve25519-sha256-1""",Used constant keys in code,3,Used constant keys in code,547,1,com.subgraph.orchid.crypto.TorNTorKeyAgreement,getStringConstant
+"Found: Constant ""verify""",Used constant keys in code,3,Used constant keys in code,547,1,com.subgraph.orchid.crypto.TorNTorKeyAgreement,deriveKeysFromHandshakeResponse
+"Found: Constant ""mac""",Used constant keys in code,3,Used constant keys in code,547,1,com.subgraph.orchid.crypto.TorNTorKeyAgreement,deriveKeysFromHandshakeResponse
+"Found: ""1L""",Found predictable seeds in code,11,Found predictable seeds in code,760,1,org.spongycastle.crypto.tls.AbstractTlsContext,nextCounterValue
+"Found: ""class Ljava/lang/System;""",Found predictable seeds in code,11,Found predictable seeds in code,760,1,org.h2.util.MathUtils,generateAlternativeSeed
+"Found: ""UnitContainer{unit=$l0 = staticinvoke <org.spongycastle.util.Times: long nanoTime()>(), method='<org.spongycastle.crypto.tls.AbstractTlsContext: void <init>(java.security.SecureRandom,org.spongycastle.crypto.tls.SecurityParameters)>'}""",Found predictable seeds in code,11,Found predictable seeds in code,760,1,org.spongycastle.crypto.tls.AbstractTlsContext,init
+"Found: ""www.bouncycastle.org""",Found predictable seeds in code,11,Found predictable seeds in code,760,1,org.spongycastle.crypto.examples.DESExample,init
+"Found: ""h2pass""",Used Predictable KeyStore Password,14,Used Predictable KeyStore Password,321,1,org.h2.security.CipherFactory,setKeystore
+"Found: ""h2pass""",Used Predictable KeyStore Password,14,Used Predictable KeyStore Password,321,1,org.h2.security.CipherFactory,setKeystore
+"Found: ""http://127.0.0.1:5279""",Used HTTP Protocol,7,Used HTTP Protocol,650,1,browser.MainActivity,run
+"Found: ""http://127.0.0.1:5279""",Used HTTP Protocol,7,Used HTTP Protocol,650,1,io.lbry.browser.ui.library.LibraryFragment,resolveMissingChannelNames
+"Found: ""http://127.0.0.1:5279""",Used HTTP Protocol,7,Used HTTP Protocol,650,1,io.lbry.browser.ui.channel.ChannelCommentsFragment,resolveCommentPosters
+"Found: ""http://127.0.0.1:5279""",Used HTTP Protocol,7,Used HTTP Protocol,650,1,io.lbry.browser.utils.Lbry,apiCall
+"Found: ""http://127.0.0.1:5279""",Used HTTP Protocol,7,Used HTTP Protocol,650,1,io.lbry.browser.utils.Lbry,transactionList
+"Found: ""http://127.0.0.1:5279""",Used HTTP Protocol,7,Used HTTP Protocol,650,1,io.lbry.lbrysdk.Utils,sdkCall

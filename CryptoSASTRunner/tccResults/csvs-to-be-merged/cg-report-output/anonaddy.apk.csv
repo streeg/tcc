@@ -1,0 +1,32 @@
+Message,Description,RuleNumber,RuleDesc,CWEId,Severity,ClassName,MethodName
+Found: Untrused PRNG (java.util.Random),Used untrusted PRNG,13,Used untrusted PRNG,338,1,androidx.transition.Explode,calculateOut
+Found: Untrused PRNG (java.util.Random),Used untrusted PRNG,13,Used untrusted PRNG,338,1,org.apache.commons.lang3.ArrayUtils,shuffle
+Found: Untrused PRNG (java.util.Random),Used untrusted PRNG,13,Used untrusted PRNG,338,1,org.apache.commons.lang3.RandomUtils,clinit
+Found: Untrused PRNG (java.util.Random),Used untrusted PRNG,13,Used untrusted PRNG,338,1,kotlin.random.FallbackThreadLocalRandom$implStorage$1,initialValue
+Found: Untrused PRNG (java.util.Random),Used untrusted PRNG,13,Used untrusted PRNG,338,1,org.apache.commons.lang3.ArrayUtils,shuffle
+Found: Untrused PRNG (java.util.Random),Used untrusted PRNG,13,Used untrusted PRNG,338,1,org.apache.commons.lang3.ArrayUtils,shuffle
+Found: Untrused PRNG (java.util.Random),Used untrusted PRNG,13,Used untrusted PRNG,338,1,org.apache.commons.lang3.ArrayUtils,shuffle
+Found: Untrused PRNG (java.util.Random),Used untrusted PRNG,13,Used untrusted PRNG,338,1,kotlin.random.KotlinRandom,init
+Found: Untrused PRNG (java.util.Random),Used untrusted PRNG,13,Used untrusted PRNG,338,1,org.apache.commons.lang3.ArrayUtils,shuffle
+Found: Untrused PRNG (java.util.Random),Used untrusted PRNG,13,Used untrusted PRNG,338,1,org.apache.commons.lang3.RandomStringUtils,clinit
+Found: Untrused PRNG (java.util.Random),Used untrusted PRNG,13,Used untrusted PRNG,338,1,com.google.crypto.tink.integration.android.AndroidKeystoreAesGcm,sleep
+Found: Untrused PRNG (java.util.Random),Used untrusted PRNG,13,Used untrusted PRNG,338,1,j$.util.concurrent.ThreadLocalRandom,init
+Found: Untrused PRNG (java.util.Random),Used untrusted PRNG,13,Used untrusted PRNG,338,1,androidx.activity.result.ActivityResultRegistry,init
+Found: Untrused PRNG (java.util.Random),Used untrusted PRNG,13,Used untrusted PRNG,338,1,org.apache.commons.lang3.ArrayUtils,shuffle
+Found: Untrused PRNG (java.util.Random),Used untrusted PRNG,13,Used untrusted PRNG,338,1,org.apache.commons.lang3.ArrayUtils,shuffle
+Found: Untrused PRNG (java.util.Random),Used untrusted PRNG,13,Used untrusted PRNG,338,1,androidx.profileinstaller.ProfileInstallerInitializer,installAfterDelay
+Found: Untrused PRNG (java.util.Random),Used untrusted PRNG,13,Used untrusted PRNG,338,1,org.apache.commons.lang3.ArrayUtils,shuffle
+Found: Untrused PRNG (java.util.Random),Used untrusted PRNG,13,Used untrusted PRNG,338,1,org.apache.commons.lang3.ArrayUtils,shuffle
+"Found: Constant ""anonaddy""",Used constant keys in code,3,Used constant keys in code,547,1,host.stjin.anonaddy.service.BackupHelper,default
+"Found: Constant ""anonaddy""",Used constant keys in code,3,Used constant keys in code,547,1,host.stjin.anonaddy.service.BackupHelper,createBackup
+"Found: ""anonaddy""",Found constant salts in code,9,Found constant salts in code,547,1,host.stjin.anonaddy.service.BackupHelper,makeCipher
+"Found: ""43""",Used < 1000 iteration for PBE,8,Used < 1000 iteration for PBE,326,1,host.stjin.anonaddy.service.BackupHelper,makeCipher
+"Found: ""http://""",Used HTTP Protocol,7,Used HTTP Protocol,650,1,com.einmalfel.earl.Utils,nonNullUrl
+"Found: ""http://search.yahoo.com/mrss/""",Used HTTP Protocol,7,Used HTTP Protocol,650,1,com.einmalfel.earl.RSSItem,read
+"Found: ""http://www.itunes.com/dtds/podcast-1.0.dtd""",Used HTTP Protocol,7,Used HTTP Protocol,650,1,com.einmalfel.earl.RSSItem,read
+"Found: ""http://search.yahoo.com/mrss/""",Used HTTP Protocol,7,Used HTTP Protocol,650,1,com.einmalfel.earl.RSSFeed,read
+"Found: ""http://xmlpull.org/v1/doc/features.html#process-namespaces""",Used HTTP Protocol,7,Used HTTP Protocol,650,1,com.einmalfel.earl.EarlParser,parseOrThrow
+"Found: ""http://purl.org/rss/1.0/modules/content/""",Used HTTP Protocol,7,Used HTTP Protocol,650,1,com.einmalfel.earl.RSSItem,read
+"Found: ""http://.""",Used HTTP Protocol,7,Used HTTP Protocol,650,1,com.github.kittinunf.fuel.core.Response$Companion,default
+"Found: ""http://purl.org/rss/1.0/modules/content/""",Used HTTP Protocol,7,Used HTTP Protocol,650,1,com.einmalfel.earl.RSSFeed,read
+"Found: ""http://www.itunes.com/dtds/podcast-1.0.dtd""",Used HTTP Protocol,7,Used HTTP Protocol,650,1,com.einmalfel.earl.RSSFeed,read

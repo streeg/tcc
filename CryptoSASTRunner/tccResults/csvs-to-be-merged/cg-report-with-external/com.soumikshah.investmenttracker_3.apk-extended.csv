@@ -1,0 +1,15 @@
+Message,Description,RuleNumber,RuleDesc,CWEId,Severity,ClassName,MethodName,ExternalLibrary
+Found: Untrused PRNG (java.util.Random),Used untrusted PRNG,13,Used untrusted PRNG,338,1,androidx.transition.Explode,calculateOut,true
+Found: Untrused PRNG (java.util.Random),Used untrusted PRNG,13,Used untrusted PRNG,338,1,org.apache.commons.codec.digest.UnixCrypt,crypt,false
+Found: Untrused PRNG (java.util.Random),Used untrusted PRNG,13,Used untrusted PRNG,338,1,kotlin.random.FallbackThreadLocalRandom$implStorage$1,initialValue,false
+Found: Untrused PRNG (java.util.Random),Used untrusted PRNG,13,Used untrusted PRNG,338,1,org.apache.poi.ss.formula.atp.RandBetween,evaluate,false
+Found: Untrused PRNG (java.util.Random),Used untrusted PRNG,13,Used untrusted PRNG,338,1,functions.NumericFunction,evaluate,false
+Found: Untrused PRNG (java.util.Random),Used untrusted PRNG,13,Used untrusted PRNG,338,1,androidx.activity.result.ActivityResultRegistry,init,true
+Found: Untrused PRNG (java.util.Random),Used untrusted PRNG,13,Used untrusted PRNG,338,1,kotlin.random.KotlinRandom,init,false
+Found: Untrused PRNG (java.util.Random),Used untrusted PRNG,13,Used untrusted PRNG,338,1,org.apache.commons.codec.digest.B64,getRandomSalt,false
+"Found: ""MD5""",Found broken hash functions,2,Found broken hash functions,759,1,org.apache.commons.codec.digest.DigestUtils,getMd5Digest,false
+"Found: ""sha1""",Found broken hash functions,2,Found broken hash functions,759,1,org.apache.poi.poifs.crypt.HashAlgorithm,clinit,false
+"Found: ""SHA-1""",Found broken hash functions,2,Found broken hash functions,759,1,org.apache.poi.poifs.crypt.HashAlgorithm,clinit,false
+"Found: ""SHA1""",Found broken hash functions,2,Found broken hash functions,759,1,org.apache.poi.poifs.crypt.HashAlgorithm,clinit,false
+"Found: ""MD2""",Found broken hash functions,2,Found broken hash functions,759,1,org.apache.commons.codec.digest.DigestUtils,getMd2Digest,false
+"Found: ""SHA-1""",Found broken hash functions,2,Found broken hash functions,759,1,org.apache.commons.codec.digest.DigestUtils,getSha1Digest,false

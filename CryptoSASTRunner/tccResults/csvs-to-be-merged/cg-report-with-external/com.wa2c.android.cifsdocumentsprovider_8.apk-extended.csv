@@ -1,0 +1,66 @@
+Message,Description,RuleNumber,RuleDesc,CWEId,Severity,ClassName,MethodName,ExternalLibrary
+"Found: ""AES""",Found broken crypto schemes,1,Found broken crypto schemes,256,1,com.wa2c.android.cifsdocumentsprovider.domain.model.CifsConnectionKt,decrypt,true
+"Found: ""RC4""",Found broken crypto schemes,1,Found broken crypto schemes,256,1,jcifs.util.Crypto,getArcfour,false
+"Found: ""DES/ECB/NoPadding""",Found broken crypto schemes,1,Found broken crypto schemes,256,1,jcifs.util.Crypto,getDES,false
+"Found: ""AES""",Found broken crypto schemes,1,Found broken crypto schemes,256,1,com.wa2c.android.cifsdocumentsprovider.domain.model.CifsConnectionKt,encrypt,true
+"Found: ""DES/CBC/NoPadding""",Found broken crypto schemes,1,Found broken crypto schemes,256,1,jcifs.pac.kerberos.KerberosEncData,decryptDES,false
+Found: Untrused PRNG (java.util.Random),Used untrusted PRNG,13,Used untrusted PRNG,338,1,androidx.transition.Explode,calculateOut,true
+Found: Untrused PRNG (java.util.Random),Used untrusted PRNG,13,Used untrusted PRNG,338,1,org.bouncycastle.pqc.math.linearalgebra.GF2nPolynomialElement,solveQuadraticEquation,false
+Found: Untrused PRNG (java.util.Random),Used untrusted PRNG,13,Used untrusted PRNG,338,1,org.bouncycastle.math.ec.ECFieldElement$Fp,sqrt,false
+Found: Untrused PRNG (java.util.Random),Used untrusted PRNG,13,Used untrusted PRNG,338,1,kotlin.random.FallbackThreadLocalRandom$implStorage$1,initialValue,false
+Found: Untrused PRNG (java.util.Random),Used untrusted PRNG,13,Used untrusted PRNG,338,1,jcifs.config.BaseConfiguration,initDefaults,false
+Found: Untrused PRNG (java.util.Random),Used untrusted PRNG,13,Used untrusted PRNG,338,1,org.bouncycastle.asn1.ua.DSTU4145PointEncoder,solveQuadraticEquation,false
+Found: Untrused PRNG (java.util.Random),Used untrusted PRNG,13,Used untrusted PRNG,338,1,org.bouncycastle.math.raw.Mod,random,false
+Found: Untrused PRNG (java.util.Random),Used untrusted PRNG,13,Used untrusted PRNG,338,1,org.bouncycastle.math.ec.ECCurve$AbstractF2m,solveQuadraticEquation,false
+Found: Untrused PRNG (java.util.Random),Used untrusted PRNG,13,Used untrusted PRNG,338,1,jcifs.smb.SmbTreeConnection,clinit,false
+Found: Untrused PRNG (java.util.Random),Used untrusted PRNG,13,Used untrusted PRNG,338,1,androidx.activity.result.ActivityResultRegistry,init,true
+Found: Untrused PRNG (java.util.Random),Used untrusted PRNG,13,Used untrusted PRNG,338,1,kotlin.random.KotlinRandom,init,false
+Found: Untrused PRNG (java.util.Random),Used untrusted PRNG,13,Used untrusted PRNG,338,1,jcifs.netbios.NameServiceClientImpl,initCache,false
+Found: Untrused PRNG (java.util.Random),Used untrusted PRNG,13,Used untrusted PRNG,338,1,org.bouncycastle.pqc.math.linearalgebra.GF2Polynomial,clinit,false
+Found: Untrused PRNG (java.util.Random),Used untrusted PRNG,13,Used untrusted PRNG,338,1,org.bouncycastle.pqc.math.linearalgebra.GF2nONBField,elementOfOrder,false
+"Found: ""MD4""",Found broken hash functions,2,Found broken hash functions,759,1,jcifs.util.Crypto,getMD4,false
+"Found: ""MD5""",Found broken hash functions,2,Found broken hash functions,759,1,jcifs.util.Crypto,getMD5,false
+"Found: ""MD5""",Found broken hash functions,2,Found broken hash functions,759,1,jcifs.pac.PacMac,calculateMacArcfourHMACMD5,false
+"Found: Constant ""com.wa2c.android""",Used constant keys in code,3,Used constant keys in code,547,1,com.wa2c.android.cifsdocumentsprovider.domain.model.CifsConnectionKt,toModel,true
+"Found: Constant ""signaturekey\u0000""",Used constant keys in code,3,Used constant keys in code,547,1,jcifs.pac.PacMac,clinit,false
+"Found: Constant ""-103""",Used constant keys in code,3,Used constant keys in code,547,1,jcifs.pac.PacMac,calculateMacHMACAES,false
+"Found: ""0""",Found constant IV in code,10,Found constant IV in code,547,1,jcifs.pac.PacMac,clinit,false
+"Found: ""0""",Found constant IV in code,10,Found constant IV in code,547,1,jcifs.pac.PacMac,clinit,false
+"Found: ""0""",Found constant IV in code,10,Found constant IV in code,547,1,jcifs.pac.PacMac,clinit,false
+"Found: ""0""",Found constant IV in code,10,Found constant IV in code,547,1,jcifs.pac.PacMac,clinit,false
+"Found: ""0""",Found constant IV in code,10,Found constant IV in code,547,1,jcifs.pac.PacMac,clinit,false
+"Found: ""0""",Found constant IV in code,10,Found constant IV in code,547,1,jcifs.pac.PacMac,clinit,false
+"Found: ""0""",Found constant IV in code,10,Found constant IV in code,547,1,jcifs.pac.PacMac,clinit,false
+"Found: ""signaturekey\u0000""",Found constant IV in code,10,Found constant IV in code,547,1,jcifs.pac.PacMac,clinit,false
+"Found: ""0""",Found constant IV in code,10,Found constant IV in code,547,1,jcifs.pac.PacMac,clinit,false
+"Found: ""0""",Found constant IV in code,10,Found constant IV in code,547,1,jcifs.pac.PacMac,clinit,false
+"Found: ""0""",Found constant IV in code,10,Found constant IV in code,547,1,jcifs.pac.PacMac,clinit,false
+"Found: ""0""",Found constant IV in code,10,Found constant IV in code,547,1,jcifs.pac.PacMac,clinit,false
+"Found: ""0""",Found constant IV in code,10,Found constant IV in code,547,1,jcifs.pac.PacMac,clinit,false
+"Found: ""0""",Found constant IV in code,10,Found constant IV in code,547,1,jcifs.pac.PacMac,clinit,false
+"Found: ""0""",Found constant IV in code,10,Found constant IV in code,547,1,jcifs.pac.PacMac,clinit,false
+"Found: ""0""",Found constant IV in code,10,Found constant IV in code,547,1,jcifs.pac.PacMac,clinit,false
+"Found: ""0""",Found constant IV in code,10,Found constant IV in code,547,1,jcifs.pac.PacMac,clinit,false
+"Found: ""2""",Used < 1000 iteration for PBE,8,Used < 1000 iteration for PBE,326,1,org.bouncycastle.jcajce.provider.symmetric.Twofish$PBEWithSHA,init,true
+"Found: ""3""",Used < 1000 iteration for PBE,8,Used < 1000 iteration for PBE,326,1,org.bouncycastle.jcajce.provider.keystore.bc.BcKeyStoreSpi$StoreEntry,init,true
+"Found: ""0""",Used < 1000 iteration for PBE,8,Used < 1000 iteration for PBE,326,1,org.bouncycastle.jcajce.provider.symmetric.RC2$PBEWithMD5AndRC2,init,true
+"Found: ""1""",Used < 1000 iteration for PBE,8,Used < 1000 iteration for PBE,326,1,org.bouncycastle.jcajce.provider.keystore.bc.BcKeyStoreSpi,loadStore,true
+"Found: ""20""",Used < 1000 iteration for PBE,8,Used < 1000 iteration for PBE,326,1,org.bouncycastle.jcajce.provider.keystore.pkcs12.PKCS12KeyStoreSpi,init,true
+"Found: ""2""",Used < 1000 iteration for PBE,8,Used < 1000 iteration for PBE,326,1,org.bouncycastle.jcajce.provider.symmetric.AES$PBEWithSHA256AESCBC128,init,true
+"Found: ""2""",Used < 1000 iteration for PBE,8,Used < 1000 iteration for PBE,326,1,org.bouncycastle.jcajce.provider.symmetric.AES$PBEWithSHA1AESCBC256,init,true
+"Found: ""0""",Used < 1000 iteration for PBE,8,Used < 1000 iteration for PBE,326,1,org.bouncycastle.jcajce.provider.symmetric.DES$PBEWithMD2,init,true
+"Found: ""2""",Used < 1000 iteration for PBE,8,Used < 1000 iteration for PBE,326,1,org.bouncycastle.jcajce.provider.symmetric.AES$PBEWithSHA1AESCBC128,init,true
+"Found: ""2""",Used < 1000 iteration for PBE,8,Used < 1000 iteration for PBE,326,1,org.bouncycastle.jcajce.provider.keystore.bc.BcKeyStoreSpi,loadStore,true
+"Found: ""2""",Used < 1000 iteration for PBE,8,Used < 1000 iteration for PBE,326,1,org.bouncycastle.jcajce.provider.symmetric.AES$PBEWithSHA1AESCBC192,init,true
+"Found: ""0""",Used < 1000 iteration for PBE,8,Used < 1000 iteration for PBE,326,1,org.bouncycastle.jcajce.provider.symmetric.DES$PBEWithMD5,init,true
+"Found: ""0""",Used < 1000 iteration for PBE,8,Used < 1000 iteration for PBE,326,1,org.bouncycastle.jcajce.provider.symmetric.RC2$PBEWithSHA1AndRC2,init,true
+"Found: ""4""",Used < 1000 iteration for PBE,8,Used < 1000 iteration for PBE,326,1,org.bouncycastle.jcajce.provider.keystore.bc.BcKeyStoreSpi$StoreEntry,init,true
+"Found: ""2""",Used < 1000 iteration for PBE,8,Used < 1000 iteration for PBE,326,1,org.bouncycastle.jcajce.provider.symmetric.RC2$PBEWithSHAAnd128BitRC2,init,true
+"Found: ""2""",Used < 1000 iteration for PBE,8,Used < 1000 iteration for PBE,326,1,org.bouncycastle.jcajce.provider.symmetric.AES$PBEWithSHA256AESCBC192,init,true
+"Found: ""2""",Used < 1000 iteration for PBE,8,Used < 1000 iteration for PBE,326,1,org.bouncycastle.jcajce.provider.symmetric.RC2$PBEWithSHAAnd40BitRC2,init,true
+"Found: ""2""",Used < 1000 iteration for PBE,8,Used < 1000 iteration for PBE,326,1,org.bouncycastle.jcajce.provider.symmetric.DESede$PBEWithSHAAndDES2Key,init,true
+"Found: ""2""",Used < 1000 iteration for PBE,8,Used < 1000 iteration for PBE,326,1,org.bouncycastle.jcajce.provider.symmetric.AES$PBEWithSHA256AESCBC256,init,true
+"Found: ""1""",Used < 1000 iteration for PBE,8,Used < 1000 iteration for PBE,326,1,org.bouncycastle.jcajce.provider.keystore.bc.BcKeyStoreSpi$StoreEntry,init,true
+"Found: ""2""",Used < 1000 iteration for PBE,8,Used < 1000 iteration for PBE,326,1,org.bouncycastle.jcajce.provider.symmetric.DESede$PBEWithSHAAndDES3Key,init,true
+"Found: ""0""",Used < 1000 iteration for PBE,8,Used < 1000 iteration for PBE,326,1,org.bouncycastle.jcajce.provider.symmetric.DES$PBEWithSHA1,init,true
+"Found: ""www.bouncycastle.org""",Found predictable seeds in code,11,Found predictable seeds in code,760,1,org.bouncycastle.crypto.examples.DESExample,init,false

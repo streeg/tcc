@@ -1,0 +1,66 @@
+Message,Description,RuleNumber,RuleDesc,CWEId,Severity,ClassName,MethodName
+Found: Untrused PRNG (java.util.Random),Used untrusted PRNG,13,Used untrusted PRNG,338,1,androidx.transition.Explode,calculateOut
+Found: Untrused PRNG (java.util.Random),Used untrusted PRNG,13,Used untrusted PRNG,338,1,at.favre.lib.bytes.Bytes,unsecureRandom
+Found: Untrused PRNG (java.util.Random),Used untrusted PRNG,13,Used untrusted PRNG,338,1,org.minidns.AbstractDnsClient,init
+Found: Untrused PRNG (java.util.Random),Used untrusted PRNG,13,Used untrusted PRNG,338,1,org.apache.commons.lang3.ArrayUtils,shuffle
+Found: Untrused PRNG (java.util.Random),Used untrusted PRNG,13,Used untrusted PRNG,338,1,org.apache.commons.lang3.RandomUtils,clinit
+Found: Untrused PRNG (java.util.Random),Used untrusted PRNG,13,Used untrusted PRNG,338,1,kotlin.random.FallbackThreadLocalRandom$implStorage$1,initialValue
+Found: Untrused PRNG (java.util.Random),Used untrusted PRNG,13,Used untrusted PRNG,338,1,androidx.leanback.widget.StreamingTextView,init
+Found: Untrused PRNG (java.util.Random),Used untrusted PRNG,13,Used untrusted PRNG,338,1,at.favre.lib.bytes.Bytes,unsecureRandom
+Found: Untrused PRNG (java.util.Random),Used untrusted PRNG,13,Used untrusted PRNG,338,1,org.minidns.util.SrvUtil,sortSrvRecords
+Found: Untrused PRNG (java.util.Random),Used untrusted PRNG,13,Used untrusted PRNG,338,1,org.apache.commons.lang3.ArrayUtils,shuffle
+Found: Untrused PRNG (java.util.Random),Used untrusted PRNG,13,Used untrusted PRNG,338,1,okhttp3.OkHttpClient,newWebSocket
+Found: Untrused PRNG (java.util.Random),Used untrusted PRNG,13,Used untrusted PRNG,338,1,org.apache.commons.lang3.ArrayUtils,shuffle
+Found: Untrused PRNG (java.util.Random),Used untrusted PRNG,13,Used untrusted PRNG,338,1,androidx.leanback.widget.StreamingTextView,init
+Found: Untrused PRNG (java.util.Random),Used untrusted PRNG,13,Used untrusted PRNG,338,1,org.apache.commons.lang3.ArrayUtils,shuffle
+Found: Untrused PRNG (java.util.Random),Used untrusted PRNG,13,Used untrusted PRNG,338,1,kotlin.random.KotlinRandom,init
+Found: Untrused PRNG (java.util.Random),Used untrusted PRNG,13,Used untrusted PRNG,338,1,org.apache.commons.lang3.ArrayUtils,shuffle
+Found: Untrused PRNG (java.util.Random),Used untrusted PRNG,13,Used untrusted PRNG,338,1,concurrent.ThreadLocalRandom,init
+Found: Untrused PRNG (java.util.Random),Used untrusted PRNG,13,Used untrusted PRNG,338,1,com.protonvpn.android.di.AppModule,clinit
+Found: Untrused PRNG (java.util.Random),Used untrusted PRNG,13,Used untrusted PRNG,338,1,io.sentry.connection.RandomEventSampler,init
+Found: Untrused PRNG (java.util.Random),Used untrusted PRNG,13,Used untrusted PRNG,338,1,org.apache.commons.lang3.RandomStringUtils,clinit
+Found: Untrused PRNG (java.util.Random),Used untrusted PRNG,13,Used untrusted PRNG,338,1,com.google.crypto.tink.integration.android.AndroidKeystoreAesGcm,sleep
+Found: Untrused PRNG (java.util.Random),Used untrusted PRNG,13,Used untrusted PRNG,338,1,j$.util.concurrent.ThreadLocalRandom,init
+Found: Untrused PRNG (java.util.Random),Used untrusted PRNG,13,Used untrusted PRNG,338,1,com.bumptech.glide.load.resource.gif.GifFrameLoader,getFrameSignature
+Found: Untrused PRNG (java.util.Random),Used untrusted PRNG,13,Used untrusted PRNG,338,1,androidx.activity.result.ActivityResultRegistry,init
+Found: Untrused PRNG (java.util.Random),Used untrusted PRNG,13,Used untrusted PRNG,338,1,org.apache.commons.lang3.ArrayUtils,shuffle
+Found: Untrused PRNG (java.util.Random),Used untrusted PRNG,13,Used untrusted PRNG,338,1,org.apache.commons.lang3.ArrayUtils,shuffle
+Found: Untrused PRNG (java.util.Random),Used untrusted PRNG,13,Used untrusted PRNG,338,1,org.apache.commons.lang3.ArrayUtils,shuffle
+Found: Untrused PRNG (java.util.Random),Used untrusted PRNG,13,Used untrusted PRNG,338,1,org.apache.commons.lang3.ArrayUtils,shuffle
+Should at least get One accepted Issuer from Other Sources in getAcceptedIssuers method of UNKNOWN,Uses untrusted TrustManager,4,Uses untrusted TrustManager,349,1,UNKNOWN,getAcceptedIssuers
+Should at least get One accepted Issuer from Other Sources in getAcceptedIssuers method of UNKNOWN,Uses untrusted TrustManager,4,Uses untrusted TrustManager,349,1,UNKNOWN,getAcceptedIssuers
+Should at least get One accepted Issuer from Other Sources in getAcceptedIssuers method of UNKNOWN,Uses untrusted TrustManager,4,Uses untrusted TrustManager,349,1,UNKNOWN,getAcceptedIssuers
+Should throw java.security.cert.CertificateException in check(Client|Server)Trusted method of UNKNOWN,Uses untrusted TrustManager,4,Uses untrusted TrustManager,349,1,UNKNOWN,UNKNOWN
+"Cause: Fixed ""[1]""",Used untrusted HostNameVerifier,6,Used untrusted HostNameVerifier,601,1,UNKNOWN,UNKNOWN
+"Cause: Fixed ""[1]""",Used untrusted HostNameVerifier,6,Used untrusted HostNameVerifier,601,1,connection.HttpConnection,UNKNOWN
+"Found: ""SHA-1""",Found broken hash functions,2,Found broken hash functions,759,1,org.apache.commons.codec.digest.MessageDigestAlgorithms,values
+"Found: ""MD5""",Found broken hash functions,2,Found broken hash functions,759,1,org.apache.commons.codec.digest.DigestUtils,getMd5Digest
+"Found: ""SHA-1""",Found broken hash functions,2,Found broken hash functions,759,1,org.minidns.dnssec.algorithms.AlgorithmMap,init
+"Found: ""SHA1""",Found broken hash functions,2,Found broken hash functions,759,1,de.blinkt.openvpn.api.AppRestrictions,hashConfig
+"Found: ""MD5""",Found broken hash functions,2,Found broken hash functions,759,1,okio.HashingSink$Companion,md5
+"Found: ""MD5""",Found broken hash functions,2,Found broken hash functions,759,1,okio.HashingSource$Companion,md5
+"Found: ""SHA1""",Found broken hash functions,2,Found broken hash functions,759,1,org.strongswan.android.security.LocalCertificateStore,getKeyId
+"Found: ""SHA-1""",Found broken hash functions,2,Found broken hash functions,759,1,at.favre.lib.bytes.Bytes,hashSha1
+"Found: ""MD5""",Found broken hash functions,2,Found broken hash functions,759,1,org.apache.commons.codec.digest.MessageDigestAlgorithms,values
+"Found: ""SHA-1""",Found broken hash functions,2,Found broken hash functions,759,1,okio.HashingSink$Companion,sha1
+"Found: ""MD2""",Found broken hash functions,2,Found broken hash functions,759,1,org.apache.commons.codec.digest.MessageDigestAlgorithms,values
+"Found: ""SHA-1""",Found broken hash functions,2,Found broken hash functions,759,1,okio.HashingSource$Companion,sha1
+"Found: ""MD2""",Found broken hash functions,2,Found broken hash functions,759,1,org.apache.commons.codec.digest.DigestUtils,getMd2Digest
+"Found: ""SHA-1""",Found broken hash functions,2,Found broken hash functions,759,1,org.minidns.dnssec.algorithms.AlgorithmMap,init
+"Found: ""SHA-1""",Found broken hash functions,2,Found broken hash functions,759,1,de.blinkt.openvpn.core.LogItem,getMobileInfoString
+"Found: ""SHA-1""",Found broken hash functions,2,Found broken hash functions,759,1,okio.ByteString,sha1
+"Found: ""MD5""",Found broken hash functions,2,Found broken hash functions,759,1,okio.Buffer,md5
+"Found: ""SHA-1""",Found broken hash functions,2,Found broken hash functions,759,1,org.apache.commons.codec.digest.DigestUtils,getSha1Digest
+"Found: ""MD5""",Found broken hash functions,2,Found broken hash functions,759,1,at.favre.lib.bytes.Bytes,hashMd5
+"Found: ""MD5""",Found broken hash functions,2,Found broken hash functions,759,1,okio.ByteString,md5
+"Found: ""SHA-1""",Found broken hash functions,2,Found broken hash functions,759,1,okio.Buffer,sha1
+"Found: Constant ""Salt""",Used constant keys in code,3,Used constant keys in code,547,1,com.protonvpn.android.ProtonApplication,initPreferences
+"Found: Constant ""Key""",Used constant keys in code,3,Used constant keys in code,547,1,com.protonvpn.android.ProtonApplication,initPreferences
+"Found: ""Salt""",Found constant salts in code,9,Found constant salts in code,547,1,com.protonvpn.android.ProtonApplication,initPreferences
+"Found: ""0""",Used < 1000 iteration for PBE,8,Used < 1000 iteration for PBE,326,1,com.protonvpn.android.utils.ProtonPreferences,init
+"Found: ""changeit""",Used Predictable KeyStore Password,14,Used Predictable KeyStore Password,321,1,ch.qos.logback.core.net.ssl.KeyStoreFactoryBean,getPassword
+"Found: ""http://localhost/""",Used HTTP Protocol,7,Used HTTP Protocol,650,1,retrofit2.Response,success
+"Found: ""http://localhost/""",Used HTTP Protocol,7,Used HTTP Protocol,650,1,retrofit2.Response,success
+"Found: ""http://localhost/""",Used HTTP Protocol,7,Used HTTP Protocol,650,1,retrofit2.Response,error
+"Found: ""http:""",Used HTTP Protocol,7,Used HTTP Protocol,650,1,okhttp3.Request$Builder,url
+"Found: ""http://localhost/""",Used HTTP Protocol,7,Used HTTP Protocol,650,1,retrofit2.Response,success

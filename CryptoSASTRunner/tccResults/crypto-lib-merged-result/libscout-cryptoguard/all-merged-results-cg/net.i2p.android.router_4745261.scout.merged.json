@@ -1,0 +1,474 @@
+{
+  "projectName": "CryptoGuard",
+  "ProjectVersion": "04.05.03",
+  "Target": {
+    "RawCommand": "-in apk -s /home/lables/CryptoAnalysis/apks/Security/net.i2p.android.router_4745261.apk -m D",
+    "FullPath": "net.i2p.android.router_4745261.apk/",
+    "Type": "APK",
+    "TargetSources": [
+      "/home/lables/CryptoAnalysis/apks/Security/net.i2p.android.router_4745261.apk"
+    ],
+    "_PropertiesFilePath": "gradle.properties",
+    "_ComputerOS": "Linux_4.15.0-163-generic",
+    "_JVMVersion": "1.8.0_312-8u312-b07-0ubuntu1~18.04-b07",
+    "_ProjectName": "net"
+  },
+  "Issues": [
+    {
+      "Message": "Found: Untrused PRNG (java.util.Random)",
+      "Description": "Used untrusted PRNG",
+      "RuleNumber": 13,
+      "RuleDesc": "Used untrusted PRNG",
+      "CWEId": 338,
+      "Severity": "1",
+      "_FullPath": "net.i2p.android.router_4745261.apk.org.cybergarage.upnp.device.Advertiser.class",
+      "_Id": "0"
+    },
+    {
+      "Message": "Found: Untrused PRNG (java.util.Random)",
+      "Description": "Used untrusted PRNG",
+      "RuleNumber": 13,
+      "RuleDesc": "Used untrusted PRNG",
+      "CWEId": 338,
+      "Severity": "1",
+      "_FullPath": "net.i2p.android.router_4745261.apk.org.cybergarage.util.TimerUtil.class",
+      "_Id": "1"
+    },
+    {
+      "Message": "Found: Untrused PRNG (java.util.Random)",
+      "Description": "Used untrusted PRNG",
+      "RuleNumber": 13,
+      "RuleDesc": "Used untrusted PRNG",
+      "CWEId": 338,
+      "Severity": "1",
+      "_FullPath": "net.i2p.android.router_4745261.apk.com.androidplot.util.SeriesUtils.class",
+      "_Id": "2",
+      "externalLibrary": true
+    },
+    {
+      "Message": "Found: Untrused PRNG (java.util.Random)",
+      "Description": "Used untrusted PRNG",
+      "RuleNumber": 13,
+      "RuleDesc": "Used untrusted PRNG",
+      "CWEId": 338,
+      "Severity": "1",
+      "_FullPath": "net.i2p.android.router_4745261.apk.net.i2p.util.FortunaRandomSource.class",
+      "_Id": "3"
+    },
+    {
+      "Message": "Found: Untrused PRNG (java.util.Random)",
+      "Description": "Used untrusted PRNG",
+      "RuleNumber": 13,
+      "RuleDesc": "Used untrusted PRNG",
+      "CWEId": 338,
+      "Severity": "1",
+      "_FullPath": "net.i2p.android.router_4745261.apk.org.cybergarage.upnp.UPnP.class",
+      "_Id": "4"
+    },
+    {
+      "Message": "Found: Untrused PRNG (java.util.Random)",
+      "Description": "Used untrusted PRNG",
+      "RuleNumber": 13,
+      "RuleDesc": "Used untrusted PRNG",
+      "CWEId": 338,
+      "Severity": "1",
+      "_FullPath": "net.i2p.android.router_4745261.apk.net.i2p.I2PAppContext.class",
+      "_Id": "5"
+    },
+    {
+      "Message": "Didn't manually verify hostname in sendRequest",
+      "Description": "Should check HostnameVerification manually",
+      "RuleNumber": 12,
+      "RuleDesc": "Should check HostnameVerification manually",
+      "CWEId": 297,
+      "Severity": "1",
+      "_FullPath": "net.i2p.android.router_4745261.apk.net.i2p.util.SSLEepGet.class",
+      "_Id": "6"
+    },
+    {
+      "Message": "Didn't manually verify hostname in sendRequest",
+      "Description": "Should check HostnameVerification manually",
+      "RuleNumber": 12,
+      "RuleDesc": "Should check HostnameVerification manually",
+      "CWEId": 297,
+      "Severity": "1",
+      "_FullPath": "net.i2p.android.router_4745261.apk.net.i2p.util.SSLEepGet.class",
+      "_Id": "7"
+    },
+    {
+      "Message": "Should at least get One accepted Issuer from Other Sources in getAcceptedIssuers method of UNKNOWN",
+      "Description": "Uses untrusted TrustManager",
+      "RuleNumber": 4,
+      "RuleDesc": "Uses untrusted TrustManager",
+      "CWEId": 349,
+      "Severity": "1",
+      "_FullPath": "net.i2p.android.router_4745261.apk.UNKNOWN.class",
+      "_Id": "8"
+    },
+    {
+      "Message": "Found: \"SHA1\"",
+      "Description": "Found broken hash functions",
+      "RuleNumber": 2,
+      "RuleDesc": "Found broken hash functions",
+      "CWEId": 759,
+      "Severity": "1",
+      "_FullPath": "net.i2p.android.router_4745261.apk.com.nettgryppa.security.HashCash.class",
+      "_Id": "9",
+      "externalLibrary": true
+    },
+    {
+      "Message": "Found: \"SHA-1\"",
+      "Description": "Found broken hash functions",
+      "RuleNumber": 2,
+      "RuleDesc": "Found broken hash functions",
+      "CWEId": 759,
+      "Severity": "1",
+      "_FullPath": "net.i2p.android.router_4745261.apk.net.i2p.crypto.SHA1.class",
+      "_Id": "10"
+    },
+    {
+      "Message": "Found: \"SHA-1\"",
+      "Description": "Found broken hash functions",
+      "RuleNumber": 2,
+      "RuleDesc": "Found broken hash functions",
+      "CWEId": 759,
+      "Severity": "1",
+      "_FullPath": "net.i2p.android.router_4745261.apk.net.i2p.crypto.SigType.class",
+      "_Id": "11"
+    },
+    {
+      "Message": "Found: \"SHA-1\"",
+      "Description": "Found broken hash functions",
+      "RuleNumber": 2,
+      "RuleDesc": "Found broken hash functions",
+      "CWEId": 759,
+      "Severity": "1",
+      "_FullPath": "net.i2p.android.router_4745261.apk.net.i2p.crypto.SHA1.class",
+      "_Id": "12"
+    },
+    {
+      "Message": "Found: \"MD5\"",
+      "Description": "Found broken hash functions",
+      "RuleNumber": 2,
+      "RuleDesc": "Found broken hash functions",
+      "CWEId": 759,
+      "Severity": "1",
+      "_FullPath": "net.i2p.android.router_4745261.apk.net.i2p.router.transport.udp.SSUHMACGenerator.class",
+      "_Id": "13"
+    },
+    {
+      "Message": "Found: \"MD5\"",
+      "Description": "Found broken hash functions",
+      "RuleNumber": 2,
+      "RuleDesc": "Found broken hash functions",
+      "CWEId": 759,
+      "Severity": "1",
+      "_FullPath": "net.i2p.android.router_4745261.apk.net.i2p.util.PasswordManager.class",
+      "_Id": "14"
+    },
+    {
+      "Message": "Found: \"SHA-1\"",
+      "Description": "Found broken hash functions",
+      "RuleNumber": 2,
+      "RuleDesc": "Found broken hash functions",
+      "CWEId": 759,
+      "Severity": "1",
+      "_FullPath": "net.i2p.android.router_4745261.apk.net.i2p.crypto.SigType.class",
+      "_Id": "15"
+    },
+    {
+      "Message": "Found: \"SHA1\"",
+      "Description": "Found broken hash functions",
+      "RuleNumber": 2,
+      "RuleDesc": "Found broken hash functions",
+      "CWEId": 759,
+      "Severity": "1",
+      "_FullPath": "net.i2p.android.router_4745261.apk.com.nettgryppa.security.HashCash.class",
+      "_Id": "16",
+      "externalLibrary": true
+    },
+    {
+      "Message": "Found: Constant \"i2p\"",
+      "Description": "Used constant keys in code",
+      "RuleNumber": 3,
+      "RuleDesc": "Used constant keys in code",
+      "CWEId": 547,
+      "Severity": "1",
+      "_FullPath": "net.i2p.android.router_4745261.apk.net.i2p.i2ptunnel.I2PTunnelHTTPClient.class",
+      "_Id": "17"
+    },
+    {
+      "Message": "Found: Constant \"UTF-8\"",
+      "Description": "Used constant keys in code",
+      "RuleNumber": 3,
+      "RuleDesc": "Used constant keys in code",
+      "CWEId": 547,
+      "Severity": "1",
+      "_FullPath": "net.i2p.android.router_4745261.apk.net.i2p.data.DataHelper.class",
+      "_Id": "18"
+    },
+    {
+      "Message": "Found: Constant \"UTF-8\"",
+      "Description": "Used constant keys in code",
+      "RuleNumber": 3,
+      "RuleDesc": "Used constant keys in code",
+      "CWEId": 547,
+      "Severity": "1",
+      "_FullPath": "net.i2p.android.router_4745261.apk.net.i2p.data.DataHelper.class",
+      "_Id": "19"
+    },
+    {
+      "Message": "Found: \"changeit\"",
+      "Description": "Used Predictable KeyStore Password",
+      "RuleNumber": 14,
+      "RuleDesc": "Used Predictable KeyStore Password",
+      "CWEId": 321,
+      "Severity": "1",
+      "_FullPath": "net.i2p.android.router_4745261.apk.net.i2p.crypto.KeyStoreUtil.class",
+      "_Id": "20"
+    },
+    {
+      "Message": "Found: \"hsc:\"",
+      "Description": "Used Predictable KeyStore Password",
+      "RuleNumber": 14,
+      "RuleDesc": "Used Predictable KeyStore Password",
+      "CWEId": 321,
+      "Severity": "1",
+      "_FullPath": "net.i2p.android.router_4745261.apk.net.i2p.sam.SAMBridge.class",
+      "_Id": "21"
+    },
+    {
+      "Message": "Found: \"changeit\"",
+      "Description": "Used Predictable KeyStore Password",
+      "RuleNumber": 14,
+      "RuleDesc": "Used Predictable KeyStore Password",
+      "CWEId": 321,
+      "Severity": "1",
+      "_FullPath": "net.i2p.android.router_4745261.apk.net.i2p.crypto.KeyStoreUtil.class",
+      "_Id": "22"
+    },
+    {
+      "Message": "Found: \"changeit\"",
+      "Description": "Used Predictable KeyStore Password",
+      "RuleNumber": 14,
+      "RuleDesc": "Used Predictable KeyStore Password",
+      "CWEId": 321,
+      "Severity": "1",
+      "_FullPath": "net.i2p.android.router_4745261.apk.net.i2p.crypto.SelfSignedGenerator.class",
+      "_Id": "23"
+    },
+    {
+      "Message": "Found: \"changeit\"",
+      "Description": "Used Predictable KeyStore Password",
+      "RuleNumber": 14,
+      "RuleDesc": "Used Predictable KeyStore Password",
+      "CWEId": 321,
+      "Severity": "1",
+      "_FullPath": "net.i2p.android.router_4745261.apk.net.i2p.crypto.KeyStoreUtil.class",
+      "_Id": "24"
+    },
+    {
+      "Message": "Found: \"changeit\"",
+      "Description": "Used Predictable KeyStore Password",
+      "RuleNumber": 14,
+      "RuleDesc": "Used Predictable KeyStore Password",
+      "CWEId": 321,
+      "Severity": "1",
+      "_FullPath": "net.i2p.android.router_4745261.apk.net.i2p.crypto.KeyStoreUtil.class",
+      "_Id": "25"
+    },
+    {
+      "Message": "Found: \"changeit\"",
+      "Description": "Used Predictable KeyStore Password",
+      "RuleNumber": 14,
+      "RuleDesc": "Used Predictable KeyStore Password",
+      "CWEId": 321,
+      "Severity": "1",
+      "_FullPath": "net.i2p.android.router_4745261.apk.net.i2p.crypto.KeyStoreUtil.class",
+      "_Id": "26"
+    },
+    {
+      "Message": "Found: \"changeit\"",
+      "Description": "Used Predictable KeyStore Password",
+      "RuleNumber": 14,
+      "RuleDesc": "Used Predictable KeyStore Password",
+      "CWEId": 321,
+      "Severity": "1",
+      "_FullPath": "net.i2p.android.router_4745261.apk.net.i2p.crypto.SU3File.class",
+      "_Id": "27"
+    },
+    {
+      "Message": "Found: \"changeit\"",
+      "Description": "Used Predictable KeyStore Password",
+      "RuleNumber": 14,
+      "RuleDesc": "Used Predictable KeyStore Password",
+      "CWEId": 321,
+      "Severity": "1",
+      "_FullPath": "net.i2p.android.router_4745261.apk.net.i2p.router.crypto.FamilyKeyCrypto.class",
+      "_Id": "28"
+    },
+    {
+      "Message": "Found: \"changeit\"",
+      "Description": "Used Predictable KeyStore Password",
+      "RuleNumber": 14,
+      "RuleDesc": "Used Predictable KeyStore Password",
+      "CWEId": 321,
+      "Severity": "1",
+      "_FullPath": "net.i2p.android.router_4745261.apk.net.i2p.crypto.KeyStoreUtil.class",
+      "_Id": "29"
+    },
+    {
+      "Message": "Found: \"changeit\"",
+      "Description": "Used Predictable KeyStore Password",
+      "RuleNumber": 14,
+      "RuleDesc": "Used Predictable KeyStore Password",
+      "CWEId": 321,
+      "Severity": "1",
+      "_FullPath": "net.i2p.android.router_4745261.apk.net.i2p.crypto.KeyStoreUtil.class",
+      "_Id": "30"
+    },
+    {
+      "Message": "Found: \"changeit\"",
+      "Description": "Used Predictable KeyStore Password",
+      "RuleNumber": 14,
+      "RuleDesc": "Used Predictable KeyStore Password",
+      "CWEId": 321,
+      "Severity": "1",
+      "_FullPath": "net.i2p.android.router_4745261.apk.net.i2p.crypto.KeyStoreUtil.class",
+      "_Id": "31"
+    },
+    {
+      "Message": "Found: \"changeit\"",
+      "Description": "Used Predictable KeyStore Password",
+      "RuleNumber": 14,
+      "RuleDesc": "Used Predictable KeyStore Password",
+      "CWEId": 321,
+      "Severity": "1",
+      "_FullPath": "net.i2p.android.router_4745261.apk.net.i2p.crypto.KeyStoreUtil.class",
+      "_Id": "32"
+    },
+    {
+      "Message": "Found: \"jks\"",
+      "Description": "Used Predictable KeyStore Password",
+      "RuleNumber": 14,
+      "RuleDesc": "Used Predictable KeyStore Password",
+      "CWEId": 321,
+      "Severity": "1",
+      "_FullPath": "net.i2p.android.router_4745261.apk.java.security.KeyStore.class",
+      "_Id": "33"
+    },
+    {
+      "Message": "Found: \"changeit\"",
+      "Description": "Used Predictable KeyStore Password",
+      "RuleNumber": 14,
+      "RuleDesc": "Used Predictable KeyStore Password",
+      "CWEId": 321,
+      "Severity": "1",
+      "_FullPath": "net.i2p.android.router_4745261.apk.net.i2p.crypto.KeyStoreUtil.class",
+      "_Id": "34"
+    },
+    {
+      "Message": "Found: \"changeit\"",
+      "Description": "Used Predictable KeyStore Password",
+      "RuleNumber": 14,
+      "RuleDesc": "Used Predictable KeyStore Password",
+      "CWEId": 321,
+      "Severity": "1",
+      "_FullPath": "net.i2p.android.router_4745261.apk.net.i2p.crypto.KeyStoreUtil.class",
+      "_Id": "35"
+    },
+    {
+      "Message": "Found: \"changeit\"",
+      "Description": "Used Predictable KeyStore Password",
+      "RuleNumber": 14,
+      "RuleDesc": "Used Predictable KeyStore Password",
+      "CWEId": 321,
+      "Severity": "1",
+      "_FullPath": "net.i2p.android.router_4745261.apk.net.i2p.crypto.KeyStoreUtil.class",
+      "_Id": "36"
+    },
+    {
+      "Message": "Found: \"sam.config\"",
+      "Description": "Used Predictable KeyStore Password",
+      "RuleNumber": 14,
+      "RuleDesc": "Used Predictable KeyStore Password",
+      "CWEId": 321,
+      "Severity": "1",
+      "_FullPath": "net.i2p.android.router_4745261.apk.net.i2p.sam.SAMBridge.class",
+      "_Id": "37"
+    },
+    {
+      "Message": "Found: \"changeit\"",
+      "Description": "Used Predictable KeyStore Password",
+      "RuleNumber": 14,
+      "RuleDesc": "Used Predictable KeyStore Password",
+      "CWEId": 321,
+      "Severity": "1",
+      "_FullPath": "net.i2p.android.router_4745261.apk.net.i2p.router.crypto.FamilyKeyCrypto.class",
+      "_Id": "38"
+    },
+    {
+      "Message": "Found: \"changeit\"",
+      "Description": "Used Predictable KeyStore Password",
+      "RuleNumber": 14,
+      "RuleDesc": "Used Predictable KeyStore Password",
+      "CWEId": 321,
+      "Severity": "1",
+      "_FullPath": "net.i2p.android.router_4745261.apk.net.i2p.router.news.BlocklistEntries.class",
+      "_Id": "39"
+    },
+    {
+      "Message": "Found: \"changeit\"",
+      "Description": "Used Predictable KeyStore Password",
+      "RuleNumber": 14,
+      "RuleDesc": "Used Predictable KeyStore Password",
+      "CWEId": 321,
+      "Severity": "1",
+      "_FullPath": "net.i2p.android.router_4745261.apk.net.i2p.router.crypto.FamilyKeyCrypto.class",
+      "_Id": "40"
+    },
+    {
+      "Message": "Found: \"changeit\"",
+      "Description": "Used Predictable KeyStore Password",
+      "RuleNumber": 14,
+      "RuleDesc": "Used Predictable KeyStore Password",
+      "CWEId": 321,
+      "Severity": "1",
+      "_FullPath": "net.i2p.android.router_4745261.apk.net.i2p.crypto.KeyStoreUtil.class",
+      "_Id": "41"
+    },
+    {
+      "Message": "Found: \"changeit\"",
+      "Description": "Used Predictable KeyStore Password",
+      "RuleNumber": 14,
+      "RuleDesc": "Used Predictable KeyStore Password",
+      "CWEId": 321,
+      "Severity": "1",
+      "_FullPath": "net.i2p.android.router_4745261.apk.net.i2p.crypto.KeyStoreUtil.class",
+      "_Id": "42"
+    },
+    {
+      "Message": "Found: \"changeit\"",
+      "Description": "Used Predictable KeyStore Password",
+      "RuleNumber": 14,
+      "RuleDesc": "Used Predictable KeyStore Password",
+      "CWEId": 321,
+      "Severity": "1",
+      "_FullPath": "net.i2p.android.router_4745261.apk.net.i2p.router.crypto.FamilyKeyCrypto.class",
+      "_Id": "43"
+    },
+    {
+      "Message": "Found: \"changeit\"",
+      "Description": "Used Predictable KeyStore Password",
+      "RuleNumber": 14,
+      "RuleDesc": "Used Predictable KeyStore Password",
+      "CWEId": 321,
+      "Severity": "1",
+      "_FullPath": "net.i2p.android.router_4745261.apk.net.i2p.crypto.KeyStoreUtil.class",
+      "_Id": "44"
+    }
+  ],
+  "_SchemaVersion": 3,
+  "_DateTime": "2022-01-14_22:28:07",
+  "_UUID": "d33163bb-705e-404f-b0a4-e60bda09d7b2"
+}

@@ -1,0 +1,28 @@
+Message,Description,RuleNumber,RuleDesc,CWEId,Severity,ClassName,MethodName
+Cause: Used default key size,Used export grade public Key,5,Used export grade public Key,321,1,io.jsonwebtoken.impl.crypto.RsaProvider,generateKeyPair
+Found: Untrused PRNG (java.util.Random),Used untrusted PRNG,13,Used untrusted PRNG,338,1,androidx.transition.Explode,calculateOut
+Found: Untrused PRNG (java.util.Random),Used untrusted PRNG,13,Used untrusted PRNG,338,1,kotlin.random.FallbackThreadLocalRandom$implStorage$1,initialValue
+Found: Untrused PRNG (java.util.Random),Used untrusted PRNG,13,Used untrusted PRNG,338,1,com.facebook.react.modules.websocket.WebSocketModule,connect
+Found: Untrused PRNG (java.util.Random),Used untrusted PRNG,13,Used untrusted PRNG,338,1,com.oney.WebRTCModule.GetUserMediaImpl,clinit
+Found: Untrused PRNG (java.util.Random),Used untrusted PRNG,13,Used untrusted PRNG,338,1,com.otaliastudios.transcoder.stretch.InsertAudioStretcher,clinit
+Found: Untrused PRNG (java.util.Random),Used untrusted PRNG,13,Used untrusted PRNG,338,1,com.jetradarmobile.snowfall.Randomizer,init
+Found: Untrused PRNG (java.util.Random),Used untrusted PRNG,13,Used untrusted PRNG,338,1,com.dropbox.core.v2.DbxRawClientV2,clinit
+Found: Untrused PRNG (java.util.Random),Used untrusted PRNG,13,Used untrusted PRNG,338,1,org.jitsi.meet.sdk.OngoingNotification,clinit
+Found: Untrused PRNG (java.util.Random),Used untrusted PRNG,13,Used untrusted PRNG,338,1,nl.dionsegijn.konfetti.core.emitter.PartyEmitter,init
+Found: Untrused PRNG (java.util.Random),Used untrusted PRNG,13,Used untrusted PRNG,338,1,com.dropbox.core.DbxRequestUtil,clinit
+Found: Untrused PRNG (java.util.Random),Used untrusted PRNG,13,Used untrusted PRNG,338,1,androidx.activity.result.ActivityResultRegistry,init
+Found: Untrused PRNG (java.util.Random),Used untrusted PRNG,13,Used untrusted PRNG,338,1,com.bumptech.glide.load.resource.gif.GifFrameLoader,loadNextFrame
+"Cause: Fixed ""[0, 1]""",Used untrusted HostNameVerifier,6,Used untrusted HostNameVerifier,601,1,UNKNOWN,UNKNOWN
+"Found: ""md5""",Found broken hash functions,2,Found broken hash functions,759,1,org.matrix.android.sdk.api.util.HashKt,md5
+"Found: ""MD5""",Found broken hash functions,2,Found broken hash functions,759,1,soloader.SoLoader,getLibHash
+"Found: ""SHA-1""",Found broken hash functions,2,Found broken hash functions,759,1,com.facebook.cache.common.CacheKeyUtil,secureHashKey
+"Found: ""SHA-1""",Found broken hash functions,2,Found broken hash functions,759,1,okio.ByteString,sha1
+"Found: ""SHA-1""",Found broken hash functions,2,Found broken hash functions,759,1,com.facebook.stetho.websocket.WebSocketHandler,generateServerKey
+"Found: ""MD5""",Found broken hash functions,2,Found broken hash functions,759,1,okio.ByteString,md5
+"Found: ""SHA-1""",Found broken hash functions,2,Found broken hash functions,759,1,org.matrix.android.sdk.api.network.ssl.Fingerprint,matrix_sdk_android_release
+"Found: Constant ""0""",Used constant keys in code,3,Used constant keys in code,547,1,org.matrix.android.sdk.internal.crypto.secrets.DefaultSharedSecretStorageService$getSecret$3,invokeSuspend
+"Found: Constant ""0""",Used constant keys in code,3,Used constant keys in code,547,1,org.matrix.android.sdk.internal.crypto.secrets.DefaultSharedSecretStorageService$storeSecret$2,invokeSuspend
+"Found: ""0""",Found constant IV in code,10,Found constant IV in code,547,1,org.matrix.android.sdk.internal.crypto.secrets.DefaultSharedSecretStorageService$getSecret$3,invokeSuspend
+"Found: ""0""",Found constant IV in code,10,Found constant IV in code,547,1,org.matrix.android.sdk.internal.crypto.attachments.MXEncryptedAttachments,encrypt
+"Found: ""0""",Found constant IV in code,10,Found constant IV in code,547,1,org.matrix.android.sdk.internal.crypto.secrets.DefaultSharedSecretStorageService$storeSecret$2,invokeSuspend
+"Found: ""0""",Found constant IV in code,10,Found constant IV in code,547,1,org.matrix.android.sdk.internal.crypto.attachments.MXEncryptedAttachments,encryptAttachment

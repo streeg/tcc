@@ -1,0 +1,17 @@
+Message,Description,RuleNumber,RuleDesc,CWEId,Severity,ClassName,MethodName
+Found: Untrused PRNG (java.util.Random),Used untrusted PRNG,13,Used untrusted PRNG,338,1,androidx.activity.result.ActivityResultRegistry,init
+Found: Untrused PRNG (java.util.Random),Used untrusted PRNG,13,Used untrusted PRNG,338,1,kotlin.random.FallbackThreadLocalRandom$implStorage$1,initialValue
+"Found: ""MD5""",Found broken hash functions,2,Found broken hash functions,759,1,com.trilead.ssh2.crypto.PEMDecoder,decryptData
+"Found: ""SHA1""",Found broken hash functions,2,Found broken hash functions,759,1,com.trilead.ssh2.KnownHosts,hostnameMatches
+"Found: Constant ""ssh-dss""",Used constant keys in code,3,Used constant keys in code,547,1,com.gaurav.avnc.viewmodel.HostKeyVerifier,verifyServerHostKey
+"Found: Constant ""62""",Used constant keys in code,3,Used constant keys in code,547,1,com.trilead.ssh2.crypto.Base64,decode
+"Found: Constant ""ssh-ed25519""",Used constant keys in code,3,Used constant keys in code,547,1,com.gaurav.avnc.viewmodel.HostKeyVerifier,verifyServerHostKey
+"Found: Constant ""64""",Used constant keys in code,3,Used constant keys in code,547,1,com.trilead.ssh2.crypto.Base64,decode
+"Found: Constant ""ecdsa-sha2-nistp521""",Used constant keys in code,3,Used constant keys in code,547,1,com.gaurav.avnc.viewmodel.HostKeyVerifier,verifyServerHostKey
+"Found: Constant ""rsa-sha2-512""",Used constant keys in code,3,Used constant keys in code,547,1,com.gaurav.avnc.viewmodel.HostKeyVerifier,verifyServerHostKey
+"Found: Constant ""ecdsa-sha2-nistp384""",Used constant keys in code,3,Used constant keys in code,547,1,com.gaurav.avnc.viewmodel.HostKeyVerifier,verifyServerHostKey
+"Found: Constant ""ecdsa-sha2-nistp256""",Used constant keys in code,3,Used constant keys in code,547,1,com.gaurav.avnc.viewmodel.HostKeyVerifier,verifyServerHostKey
+"Found: Constant ""63""",Used constant keys in code,3,Used constant keys in code,547,1,com.trilead.ssh2.crypto.Base64,decode
+"Found: Constant ""rsa-sha2-256""",Used constant keys in code,3,Used constant keys in code,547,1,com.gaurav.avnc.viewmodel.HostKeyVerifier,verifyServerHostKey
+"Found: Constant ""ISO-8859-1""",Used constant keys in code,3,Used constant keys in code,547,1,com.trilead.ssh2.packets.TypesReader,readString
+"Found: Constant ""ssh-rsa""",Used constant keys in code,3,Used constant keys in code,547,1,com.gaurav.avnc.viewmodel.HostKeyVerifier,verifyServerHostKey

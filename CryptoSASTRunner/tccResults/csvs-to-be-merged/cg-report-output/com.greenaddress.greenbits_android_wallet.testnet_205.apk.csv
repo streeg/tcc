@@ -1,0 +1,26 @@
+Message,Description,RuleNumber,RuleDesc,CWEId,Severity,ClassName,MethodName
+"Found: ""1024""",Used export grade public Key,5,Used export grade public Key,321,1,io.netty.handler.ssl.util.SelfSignedCertificate,init
+Found: Untrused PRNG (java.util.Random),Used untrusted PRNG,13,Used untrusted PRNG,338,1,org.bitcoinj.net.FilterMerger,init
+Found: Untrused PRNG (java.util.Random),Used untrusted PRNG,13,Used untrusted PRNG,338,1,io.netty.handler.codec.http.websocketx.WebSocketClientHandshaker00,insertRandomCharacters
+Found: Untrused PRNG (java.util.Random),Used untrusted PRNG,13,Used untrusted PRNG,338,1,org.spongycastle.math.ec.ECCurve$AbstractF2m,solveQuadraticEquation
+Found: Untrused PRNG (java.util.Random),Used untrusted PRNG,13,Used untrusted PRNG,338,1,org.spongycastle.math.raw.Mod,random
+Found: Untrused PRNG (java.util.Random),Used untrusted PRNG,13,Used untrusted PRNG,338,1,org.bitcoinj.core.Peer,processInv
+Found: Untrused PRNG (java.util.Random),Used untrusted PRNG,13,Used untrusted PRNG,338,1,io.netty.handler.codec.http.websocketx.WebSocketUtil,randomNumber
+Found: Untrused PRNG (java.util.Random),Used untrusted PRNG,13,Used untrusted PRNG,338,1,io.netty.handler.codec.http.websocketx.WebSocket08FrameEncoder,encode
+Found: Untrused PRNG (java.util.Random),Used untrusted PRNG,13,Used untrusted PRNG,338,1,core.Peer,run
+Found: Untrused PRNG (java.util.Random),Used untrusted PRNG,13,Used untrusted PRNG,338,1,io.netty.util.internal.ThreadLocalRandom,init
+Found: Untrused PRNG (java.util.Random),Used untrusted PRNG,13,Used untrusted PRNG,338,1,org.bitcoinj.core.Peer,ping
+Found: Untrused PRNG (java.util.Random),Used untrusted PRNG,13,Used untrusted PRNG,338,1,org.bitcoinj.core.PeerGroup,selectDownloadPeer
+Found: Untrused PRNG (java.util.Random),Used untrusted PRNG,13,Used untrusted PRNG,338,1,io.netty.util.internal.chmv8.Striped64,clinit
+Should at least get One accepted Issuer from Other Sources in getAcceptedIssuers method of util.FingerprintTrustManagerFactory,Uses untrusted TrustManager,4,Uses untrusted TrustManager,349,1,util.FingerprintTrustManagerFactory,getAcceptedIssuers
+Should throw java.security.cert.CertificateException in check(Client|Server)Trusted method of util.FingerprintTrustManagerFactory,Uses untrusted TrustManager,4,Uses untrusted TrustManager,349,1,util.FingerprintTrustManagerFactory,UNKNOWN
+Should at least get One accepted Issuer from Other Sources in getAcceptedIssuers method of greenapi.FingerprintTrustManagerFactorySHA256,Uses untrusted TrustManager,4,Uses untrusted TrustManager,349,1,greenapi.FingerprintTrustManagerFactorySHA256,getAcceptedIssuers
+Should throw java.security.cert.CertificateException in check(Client|Server)Trusted method of greenapi.FingerprintTrustManagerFactorySHA256,Uses untrusted TrustManager,4,Uses untrusted TrustManager,349,1,greenapi.FingerprintTrustManagerFactorySHA256,UNKNOWN
+Should at least get One accepted Issuer from Other Sources in getAcceptedIssuers method of util.InsecureTrustManagerFactory,Uses untrusted TrustManager,4,Uses untrusted TrustManager,349,1,util.InsecureTrustManagerFactory,getAcceptedIssuers
+Should throw java.security.cert.CertificateException in check(Client|Server)Trusted method of util.InsecureTrustManagerFactory,Uses untrusted TrustManager,4,Uses untrusted TrustManager,349,1,util.InsecureTrustManagerFactory,UNKNOWN
+"Found: ""SHA-1""",Found broken hash functions,2,Found broken hash functions,759,1,com.squareup.okhttp.internal.Util,sha1
+"Found: ""MD5""",Found broken hash functions,2,Found broken hash functions,759,1,okio.Buffer,toString
+"Found: ""MD5""",Found broken hash functions,2,Found broken hash functions,759,1,okio.ByteString,md5
+"Found: ""SHA1""",Found broken hash functions,2,Found broken hash functions,759,1,websocketx.WebSocketUtil,initialValue
+"Found: ""MD5""",Found broken hash functions,2,Found broken hash functions,759,1,websocketx.WebSocketUtil,initialValue
+"Found: ""SHA1""",Found broken hash functions,2,Found broken hash functions,759,1,util.FingerprintTrustManagerFactory,initialValue

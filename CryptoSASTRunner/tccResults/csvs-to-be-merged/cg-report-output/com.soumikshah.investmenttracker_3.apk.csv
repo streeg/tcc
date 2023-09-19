@@ -1,0 +1,15 @@
+Message,Description,RuleNumber,RuleDesc,CWEId,Severity,ClassName,MethodName
+Found: Untrused PRNG (java.util.Random),Used untrusted PRNG,13,Used untrusted PRNG,338,1,androidx.transition.Explode,calculateOut
+Found: Untrused PRNG (java.util.Random),Used untrusted PRNG,13,Used untrusted PRNG,338,1,org.apache.commons.codec.digest.UnixCrypt,crypt
+Found: Untrused PRNG (java.util.Random),Used untrusted PRNG,13,Used untrusted PRNG,338,1,kotlin.random.FallbackThreadLocalRandom$implStorage$1,initialValue
+Found: Untrused PRNG (java.util.Random),Used untrusted PRNG,13,Used untrusted PRNG,338,1,org.apache.poi.ss.formula.atp.RandBetween,evaluate
+Found: Untrused PRNG (java.util.Random),Used untrusted PRNG,13,Used untrusted PRNG,338,1,functions.NumericFunction,evaluate
+Found: Untrused PRNG (java.util.Random),Used untrusted PRNG,13,Used untrusted PRNG,338,1,androidx.activity.result.ActivityResultRegistry,init
+Found: Untrused PRNG (java.util.Random),Used untrusted PRNG,13,Used untrusted PRNG,338,1,kotlin.random.KotlinRandom,init
+Found: Untrused PRNG (java.util.Random),Used untrusted PRNG,13,Used untrusted PRNG,338,1,org.apache.commons.codec.digest.B64,getRandomSalt
+"Found: ""MD5""",Found broken hash functions,2,Found broken hash functions,759,1,org.apache.commons.codec.digest.DigestUtils,getMd5Digest
+"Found: ""sha1""",Found broken hash functions,2,Found broken hash functions,759,1,org.apache.poi.poifs.crypt.HashAlgorithm,clinit
+"Found: ""SHA-1""",Found broken hash functions,2,Found broken hash functions,759,1,org.apache.poi.poifs.crypt.HashAlgorithm,clinit
+"Found: ""SHA1""",Found broken hash functions,2,Found broken hash functions,759,1,org.apache.poi.poifs.crypt.HashAlgorithm,clinit
+"Found: ""MD2""",Found broken hash functions,2,Found broken hash functions,759,1,org.apache.commons.codec.digest.DigestUtils,getMd2Digest
+"Found: ""SHA-1""",Found broken hash functions,2,Found broken hash functions,759,1,org.apache.commons.codec.digest.DigestUtils,getSha1Digest

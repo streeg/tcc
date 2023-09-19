@@ -1,0 +1,28 @@
+Message,Description,RuleNumber,RuleDesc,CWEId,Severity,ClassName,MethodName,ExternalLibrary
+Found: Untrused PRNG (java.util.Random),Used untrusted PRNG,13,Used untrusted PRNG,338,1,androidx.transition.Explode,calculateOut,true
+Found: Untrused PRNG (java.util.Random),Used untrusted PRNG,13,Used untrusted PRNG,338,1,androidx.activity.result.ActivityResultRegistry,init,true
+Found: Untrused PRNG (java.util.Random),Used untrusted PRNG,13,Used untrusted PRNG,338,1,com.jens.automation2.Miscellaneous,logEvent,true
+Found: Untrused PRNG (java.util.Random),Used untrusted PRNG,13,Used untrusted PRNG,338,1,org.apache.commons.lang3.RandomStringUtils,clinit,false
+Should at least get One accepted Issuer from Other Sources in getAcceptedIssuers method of automation2.MySSLSocketFactoryInsecure,Uses untrusted TrustManager,4,Uses untrusted TrustManager,349,1,automation2.MySSLSocketFactoryInsecure,getAcceptedIssuers,false
+Should throw java.security.cert.CertificateException in check(Client|Server)Trusted method of automation2.MySSLSocketFactoryInsecure,Uses untrusted TrustManager,4,Uses untrusted TrustManager,349,1,automation2.MySSLSocketFactoryInsecure,UNKNOWN,false
+Should at least get One accepted Issuer from Other Sources in getAcceptedIssuers method of automation2.Miscellaneous,Uses untrusted TrustManager,4,Uses untrusted TrustManager,349,1,automation2.Miscellaneous,getAcceptedIssuers,true
+Should throw java.security.cert.CertificateException in check(Client|Server)Trusted method of automation2.Miscellaneous,Uses untrusted TrustManager,4,Uses untrusted TrustManager,349,1,automation2.Miscellaneous,UNKNOWN,true
+"Cause: Fixed ""[1]""",Used untrusted HostNameVerifier,6,Used untrusted HostNameVerifier,601,1,automation2.Miscellaneous,UNKNOWN,true
+"Found: ""SHA-1""",Found broken hash functions,2,Found broken hash functions,759,1,com.android.dx.dex.file.DexFile,calcSignature,true
+"Found: ""SHA-1""",Found broken hash functions,2,Found broken hash functions,759,1,com.android.dex.Dex,computeSignature,true
+"Found: ""0""",Found constant IV in code,10,Found constant IV in code,547,1,com.jens.automation2.AESCrypt,clinit,true
+"Found: ""0""",Found constant IV in code,10,Found constant IV in code,547,1,com.jens.automation2.AESCrypt,clinit,true
+"Found: ""0""",Found constant IV in code,10,Found constant IV in code,547,1,com.jens.automation2.AESCrypt,clinit,true
+"Found: ""0""",Found constant IV in code,10,Found constant IV in code,547,1,com.jens.automation2.AESCrypt,clinit,true
+"Found: ""0""",Found constant IV in code,10,Found constant IV in code,547,1,com.jens.automation2.AESCrypt,clinit,true
+"Found: ""0""",Found constant IV in code,10,Found constant IV in code,547,1,com.jens.automation2.AESCrypt,clinit,true
+"Found: ""0""",Found constant IV in code,10,Found constant IV in code,547,1,com.jens.automation2.AESCrypt,clinit,true
+"Found: ""0""",Found constant IV in code,10,Found constant IV in code,547,1,com.jens.automation2.AESCrypt,clinit,true
+"Found: ""0""",Found constant IV in code,10,Found constant IV in code,547,1,com.jens.automation2.AESCrypt,clinit,true
+"Found: ""0""",Found constant IV in code,10,Found constant IV in code,547,1,com.jens.automation2.AESCrypt,clinit,true
+"Found: ""0""",Found constant IV in code,10,Found constant IV in code,547,1,com.jens.automation2.AESCrypt,clinit,true
+"Found: ""0""",Found constant IV in code,10,Found constant IV in code,547,1,com.jens.automation2.AESCrypt,clinit,true
+"Found: ""0""",Found constant IV in code,10,Found constant IV in code,547,1,com.jens.automation2.AESCrypt,clinit,true
+"Found: ""0""",Found constant IV in code,10,Found constant IV in code,547,1,com.jens.automation2.AESCrypt,clinit,true
+"Found: ""0""",Found constant IV in code,10,Found constant IV in code,547,1,com.jens.automation2.AESCrypt,clinit,true
+"Found: ""0""",Found constant IV in code,10,Found constant IV in code,547,1,com.jens.automation2.AESCrypt,clinit,true

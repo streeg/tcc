@@ -1,0 +1,19 @@
+Message,Description,RuleNumber,RuleDesc,CWEId,Severity,ClassName,MethodName
+"Found: ""AES/ECB/PKCS5Padding""",Found broken crypto schemes,1,Found broken crypto schemes,256,1,com.reactlibrary.securekeystore.RNSecureKeyStoreModule,decryptAesCipherText
+"Found: ""AES/ECB/PKCS5Padding""",Found broken crypto schemes,1,Found broken crypto schemes,256,1,com.reactlibrary.securekeystore.RNSecureKeyStoreModule,encryptAesPlainText
+Found: Untrused PRNG (java.util.Random),Used untrusted PRNG,13,Used untrusted PRNG,338,1,okhttp3.OkHttpClient,newWebSocket
+Should at least get One accepted Issuer from Other Sources in getAcceptedIssuers method of UNKNOWN,Uses untrusted TrustManager,4,Uses untrusted TrustManager,349,1,UNKNOWN,getAcceptedIssuers
+Should throw java.security.cert.CertificateException in check(Client|Server)Trusted method of UNKNOWN,Uses untrusted TrustManager,4,Uses untrusted TrustManager,349,1,UNKNOWN,UNKNOWN
+Should at least get One accepted Issuer from Other Sources in getAcceptedIssuers method of UNKNOWN,Uses untrusted TrustManager,4,Uses untrusted TrustManager,349,1,UNKNOWN,getAcceptedIssuers
+Should throw java.security.cert.CertificateException in check(Client|Server)Trusted method of UNKNOWN,Uses untrusted TrustManager,4,Uses untrusted TrustManager,349,1,UNKNOWN,UNKNOWN
+"Cause: Fixed ""[1]""",Used untrusted HostNameVerifier,6,Used untrusted HostNameVerifier,601,1,UNKNOWN,UNKNOWN
+"Cause: Fixed ""[1]""",Used untrusted HostNameVerifier,6,Used untrusted HostNameVerifier,601,1,UNKNOWN,UNKNOWN
+"Found: ""SHA-1""",Found broken hash functions,2,Found broken hash functions,759,1,c.c.d.k.c,a
+"Found: ""MD5""",Found broken hash functions,2,Found broken hash functions,759,1,com.facebook.soloader.m,a
+"Found: ""sha1""",Found broken hash functions,2,Found broken hash functions,759,1,com.RNFetchBlob.t,a
+"Found: ""SHA-1""",Found broken hash functions,2,Found broken hash functions,759,1,com.RNFetchBlob.t,a
+"Found: ""SHA-1""",Found broken hash functions,2,Found broken hash functions,759,1,e.j,j
+"Found: ""md5""",Found broken hash functions,2,Found broken hash functions,759,1,com.RNFetchBlob.t,a
+"Found: ""MD5""",Found broken hash functions,2,Found broken hash functions,759,1,com.RNFetchBlob.t,a
+"Found: ""MD5""",Found broken hash functions,2,Found broken hash functions,759,1,com.RNFetchBlob.D,b
+"Found: ""MD5""",Found broken hash functions,2,Found broken hash functions,759,1,e.j,i
