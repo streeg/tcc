@@ -1,0 +1,51 @@
+{
+  "projectName": "CryptoGuard",
+  "ProjectVersion": "04.05.03",
+  "Target": {
+    "RawCommand": "-in apk -s /home/lables/CryptoAnalysis/Finances2/org.tryton.client_6.apk -m D",
+    "FullPath": "org.tryton.client_6.apk/",
+    "Type": "APK",
+    "TargetSources": [
+      "/home/lables/CryptoAnalysis/Finances2/org.tryton.client_6.apk"
+    ],
+    "_PropertiesFilePath": "gradle.properties",
+    "_ComputerOS": "Linux_4.15.0-162-generic",
+    "_JVMVersion": "1.8.0_292-8u292-b10-0ubuntu1~18.04-b10",
+    "_ProjectName": "org"
+  },
+  "Issues": [
+    {
+      "Message": "Found: Untrused PRNG (java.util.Random)",
+      "Description": "Used untrusted PRNG",
+      "RuleNumber": 13,
+      "RuleDesc": "Used untrusted PRNG",
+      "CWEId": 338,
+      "Severity": "1",
+      "_FullPath": "org.tryton.client_6.apk.org.tryton.client.models.Model.class",
+      "_Id": "0"
+    },
+    {
+      "Message": "Should at least get One accepted Issuer from Other Sources in getAcceptedIssuers method of UNKNOWN",
+      "Description": "Uses untrusted TrustManager",
+      "RuleNumber": 4,
+      "RuleDesc": "Uses untrusted TrustManager",
+      "CWEId": 349,
+      "Severity": "1",
+      "_FullPath": "org.tryton.client_6.apk.UNKNOWN.class",
+      "_Id": "1"
+    },
+    {
+      "Message": "Should throw java.security.cert.CertificateException in check(Client|Server)Trusted method of UNKNOWN",
+      "Description": "Uses untrusted TrustManager",
+      "RuleNumber": 4,
+      "RuleDesc": "Uses untrusted TrustManager",
+      "CWEId": 349,
+      "Severity": "1",
+      "_FullPath": "org.tryton.client_6.apk.UNKNOWN.class",
+      "_Id": "2"
+    }
+  ],
+  "_SchemaVersion": 3,
+  "_DateTime": "2021-12-01_12:22:44",
+  "_UUID": "fa2ad253-baf7-48fc-854b-606bdba13528"
+}

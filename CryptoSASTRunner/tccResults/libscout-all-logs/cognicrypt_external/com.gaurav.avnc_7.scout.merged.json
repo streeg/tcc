@@ -1,0 +1,182 @@
+{
+  "projectName": "CryptoGuard",
+  "ProjectVersion": "04.05.03",
+  "Target": {
+    "RawCommand": "-in apk -s /home/lables/CryptoAnalysis/apks/Connectivity/com.gaurav.avnc_7.apk -m D",
+    "FullPath": "com.gaurav.avnc_7.apk/",
+    "Type": "APK",
+    "TargetSources": [
+      "/home/lables/CryptoAnalysis/apks/Connectivity/com.gaurav.avnc_7.apk"
+    ],
+    "_PropertiesFilePath": "gradle.properties",
+    "_ComputerOS": "Linux_4.15.0-163-generic",
+    "_JVMVersion": "1.8.0_312-8u312-b07-0ubuntu1~18.04-b07",
+    "_ProjectName": "com"
+  },
+  "Issues": [
+    {
+      "Message": "Found: Untrused PRNG (java.util.Random)",
+      "Description": "Used untrusted PRNG",
+      "RuleNumber": 13,
+      "RuleDesc": "Used untrusted PRNG",
+      "CWEId": 338,
+      "Severity": "1",
+      "_FullPath": "com.gaurav.avnc_7.apk.androidx.activity.result.ActivityResultRegistry.class",
+      "_Id": "0",
+      "externalLibrary": true
+    },
+    {
+      "Message": "Found: Untrused PRNG (java.util.Random)",
+      "Description": "Used untrusted PRNG",
+      "RuleNumber": 13,
+      "RuleDesc": "Used untrusted PRNG",
+      "CWEId": 338,
+      "Severity": "1",
+      "_FullPath": "com.gaurav.avnc_7.apk.kotlin.random.FallbackThreadLocalRandom$implStorage$1.class",
+      "_Id": "1"
+    },
+    {
+      "Message": "Found: \"MD5\"",
+      "Description": "Found broken hash functions",
+      "RuleNumber": 2,
+      "RuleDesc": "Found broken hash functions",
+      "CWEId": 759,
+      "Severity": "1",
+      "_FullPath": "com.gaurav.avnc_7.apk.com.trilead.ssh2.crypto.PEMDecoder.class",
+      "_Id": "2"
+    },
+    {
+      "Message": "Found: \"SHA1\"",
+      "Description": "Found broken hash functions",
+      "RuleNumber": 2,
+      "RuleDesc": "Found broken hash functions",
+      "CWEId": 759,
+      "Severity": "1",
+      "_FullPath": "com.gaurav.avnc_7.apk.com.trilead.ssh2.KnownHosts.class",
+      "_Id": "3"
+    },
+    {
+      "Message": "Found: Constant \"ssh-dss\"",
+      "Description": "Used constant keys in code",
+      "RuleNumber": 3,
+      "RuleDesc": "Used constant keys in code",
+      "CWEId": 547,
+      "Severity": "1",
+      "_FullPath": "com.gaurav.avnc_7.apk.com.gaurav.avnc.viewmodel.HostKeyVerifier.class",
+      "_Id": "4"
+    },
+    {
+      "Message": "Found: Constant \"62\"",
+      "Description": "Used constant keys in code",
+      "RuleNumber": 3,
+      "RuleDesc": "Used constant keys in code",
+      "CWEId": 547,
+      "Severity": "1",
+      "_FullPath": "com.gaurav.avnc_7.apk.com.trilead.ssh2.crypto.Base64.class",
+      "_Id": "5"
+    },
+    {
+      "Message": "Found: Constant \"ssh-ed25519\"",
+      "Description": "Used constant keys in code",
+      "RuleNumber": 3,
+      "RuleDesc": "Used constant keys in code",
+      "CWEId": 547,
+      "Severity": "1",
+      "_FullPath": "com.gaurav.avnc_7.apk.com.gaurav.avnc.viewmodel.HostKeyVerifier.class",
+      "_Id": "6"
+    },
+    {
+      "Message": "Found: Constant \"64\"",
+      "Description": "Used constant keys in code",
+      "RuleNumber": 3,
+      "RuleDesc": "Used constant keys in code",
+      "CWEId": 547,
+      "Severity": "1",
+      "_FullPath": "com.gaurav.avnc_7.apk.com.trilead.ssh2.crypto.Base64.class",
+      "_Id": "7"
+    },
+    {
+      "Message": "Found: Constant \"ecdsa-sha2-nistp521\"",
+      "Description": "Used constant keys in code",
+      "RuleNumber": 3,
+      "RuleDesc": "Used constant keys in code",
+      "CWEId": 547,
+      "Severity": "1",
+      "_FullPath": "com.gaurav.avnc_7.apk.com.gaurav.avnc.viewmodel.HostKeyVerifier.class",
+      "_Id": "8"
+    },
+    {
+      "Message": "Found: Constant \"rsa-sha2-512\"",
+      "Description": "Used constant keys in code",
+      "RuleNumber": 3,
+      "RuleDesc": "Used constant keys in code",
+      "CWEId": 547,
+      "Severity": "1",
+      "_FullPath": "com.gaurav.avnc_7.apk.com.gaurav.avnc.viewmodel.HostKeyVerifier.class",
+      "_Id": "9"
+    },
+    {
+      "Message": "Found: Constant \"ecdsa-sha2-nistp384\"",
+      "Description": "Used constant keys in code",
+      "RuleNumber": 3,
+      "RuleDesc": "Used constant keys in code",
+      "CWEId": 547,
+      "Severity": "1",
+      "_FullPath": "com.gaurav.avnc_7.apk.com.gaurav.avnc.viewmodel.HostKeyVerifier.class",
+      "_Id": "10"
+    },
+    {
+      "Message": "Found: Constant \"ecdsa-sha2-nistp256\"",
+      "Description": "Used constant keys in code",
+      "RuleNumber": 3,
+      "RuleDesc": "Used constant keys in code",
+      "CWEId": 547,
+      "Severity": "1",
+      "_FullPath": "com.gaurav.avnc_7.apk.com.gaurav.avnc.viewmodel.HostKeyVerifier.class",
+      "_Id": "11"
+    },
+    {
+      "Message": "Found: Constant \"63\"",
+      "Description": "Used constant keys in code",
+      "RuleNumber": 3,
+      "RuleDesc": "Used constant keys in code",
+      "CWEId": 547,
+      "Severity": "1",
+      "_FullPath": "com.gaurav.avnc_7.apk.com.trilead.ssh2.crypto.Base64.class",
+      "_Id": "12"
+    },
+    {
+      "Message": "Found: Constant \"rsa-sha2-256\"",
+      "Description": "Used constant keys in code",
+      "RuleNumber": 3,
+      "RuleDesc": "Used constant keys in code",
+      "CWEId": 547,
+      "Severity": "1",
+      "_FullPath": "com.gaurav.avnc_7.apk.com.gaurav.avnc.viewmodel.HostKeyVerifier.class",
+      "_Id": "13"
+    },
+    {
+      "Message": "Found: Constant \"ISO-8859-1\"",
+      "Description": "Used constant keys in code",
+      "RuleNumber": 3,
+      "RuleDesc": "Used constant keys in code",
+      "CWEId": 547,
+      "Severity": "1",
+      "_FullPath": "com.gaurav.avnc_7.apk.com.trilead.ssh2.packets.TypesReader.class",
+      "_Id": "14"
+    },
+    {
+      "Message": "Found: Constant \"ssh-rsa\"",
+      "Description": "Used constant keys in code",
+      "RuleNumber": 3,
+      "RuleDesc": "Used constant keys in code",
+      "CWEId": 547,
+      "Severity": "1",
+      "_FullPath": "com.gaurav.avnc_7.apk.com.gaurav.avnc.viewmodel.HostKeyVerifier.class",
+      "_Id": "15"
+    }
+  ],
+  "_SchemaVersion": 3,
+  "_DateTime": "2022-01-20_02:19:41",
+  "_UUID": "b34a98ef-e7a7-4b79-8b1e-b3da5bde4184"
+}

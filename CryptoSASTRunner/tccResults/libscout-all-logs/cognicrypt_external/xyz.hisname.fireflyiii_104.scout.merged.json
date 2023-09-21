@@ -1,0 +1,112 @@
+{
+  "projectName": "CryptoGuard",
+  "ProjectVersion": "04.05.03",
+  "Target": {
+    "RawCommand": "-in apk -s /home/lables/CryptoAnalysis/Finances/xyz.hisname.fireflyiii_104.apk -m D",
+    "FullPath": "xyz.hisname.fireflyiii_104.apk/",
+    "Type": "APK",
+    "TargetSources": [
+      "/home/lables/CryptoAnalysis/Finances/xyz.hisname.fireflyiii_104.apk"
+    ],
+    "_PropertiesFilePath": "gradle.properties",
+    "_ComputerOS": "Linux_4.15.0-162-generic",
+    "_JVMVersion": "1.8.0_292-8u292-b10-0ubuntu1~18.04-b10",
+    "_ProjectName": "xyz"
+  },
+  "Issues": [
+    {
+      "Message": "Found: Untrused PRNG (java.util.Random)",
+      "Description": "Used untrusted PRNG",
+      "RuleNumber": 13,
+      "RuleDesc": "Used untrusted PRNG",
+      "CWEId": 338,
+      "Severity": "1",
+      "_FullPath": "xyz.hisname.fireflyiii_104.apk.androidx.activity.result.ActivityResultRegistry.class",
+      "_Id": "0",
+      "externalLibrary": true
+    },
+    {
+      "Message": "Found: Untrused PRNG (java.util.Random)",
+      "Description": "Used untrusted PRNG",
+      "RuleNumber": 13,
+      "RuleDesc": "Used untrusted PRNG",
+      "CWEId": 338,
+      "Severity": "1",
+      "_FullPath": "xyz.hisname.fireflyiii_104.apk.kotlin.random.FallbackThreadLocalRandom$implStorage$1.class",
+      "_Id": "1"
+    },
+    {
+      "Message": "Found: Untrused PRNG (java.util.Random)",
+      "Description": "Used untrusted PRNG",
+      "RuleNumber": 13,
+      "RuleDesc": "Used untrusted PRNG",
+      "CWEId": 338,
+      "Severity": "1",
+      "_FullPath": "xyz.hisname.fireflyiii_104.apk.org.osmdroid.tileprovider.tilesource.BitmapTileSourceBase.class",
+      "_Id": "2"
+    },
+    {
+      "Message": "Found: Untrused PRNG (java.util.Random)",
+      "Description": "Used untrusted PRNG",
+      "RuleNumber": 13,
+      "RuleDesc": "Used untrusted PRNG",
+      "CWEId": 338,
+      "Severity": "1",
+      "_FullPath": "xyz.hisname.fireflyiii_104.apk.io.karn.notify.Notify.class",
+      "_Id": "3"
+    },
+    {
+      "Message": "Found: Untrused PRNG (java.util.Random)",
+      "Description": "Used untrusted PRNG",
+      "RuleNumber": 13,
+      "RuleDesc": "Used untrusted PRNG",
+      "CWEId": 338,
+      "Severity": "1",
+      "_FullPath": "xyz.hisname.fireflyiii_104.apk.com.bumptech.glide.load.resource.gif.GifFrameLoader.class",
+      "_Id": "4"
+    },
+    {
+      "Message": "Found: Untrused PRNG (java.util.Random)",
+      "Description": "Used untrusted PRNG",
+      "RuleNumber": 13,
+      "RuleDesc": "Used untrusted PRNG",
+      "CWEId": 338,
+      "Severity": "1",
+      "_FullPath": "xyz.hisname.fireflyiii_104.apk.j$.util.concurrent.ThreadLocalRandom.class",
+      "_Id": "5"
+    },
+    {
+      "Message": "Cause: Fixed \"[1]\"",
+      "Description": "Used untrusted HostNameVerifier",
+      "RuleNumber": 6,
+      "RuleDesc": "Used untrusted HostNameVerifier",
+      "CWEId": 601,
+      "Severity": "1",
+      "_FullPath": "xyz.hisname.fireflyiii_104.apk.UNKNOWN.class",
+      "_Id": "6"
+    },
+    {
+      "Message": "Found: \"SHA-1\"",
+      "Description": "Found broken hash functions",
+      "RuleNumber": 2,
+      "RuleDesc": "Found broken hash functions",
+      "CWEId": 759,
+      "Severity": "1",
+      "_FullPath": "xyz.hisname.fireflyiii_104.apk.okhttp3.CertificatePinner.class",
+      "_Id": "7"
+    },
+    {
+      "Message": "Found: \"hunter2\"",
+      "Description": "Used Predictable KeyStore Password",
+      "RuleNumber": 14,
+      "RuleDesc": "Used Predictable KeyStore Password",
+      "CWEId": 321,
+      "Severity": "1",
+      "_FullPath": "xyz.hisname.fireflyiii_104.apk.xyz.hisname.fireflyiii.util.network.CustomCa$trustManager$2.class",
+      "_Id": "8"
+    }
+  ],
+  "_SchemaVersion": 3,
+  "_DateTime": "2021-11-28_02:09:42",
+  "_UUID": "24d3c305-0047-4cd4-957a-231682506aae"
+}

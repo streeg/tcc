@@ -1,0 +1,246 @@
+{
+  "sarifVersion": "2.0.0",
+  "runs": [
+    {
+      "files": {
+        "com/inputstick/api/Util.java": {
+          "mimeType": "text/java"
+        },
+        "com/inputstick/api/AES.java": {
+          "mimeType": "text/java"
+        },
+        "com/inputstick/api/PacketManager.java": {
+          "mimeType": "text/java"
+        }
+      },
+      "resources": {
+        "rules": {
+          "RequiredPredicateError": {
+            "id": "RequiredPredicateError",
+            "fullDescription": {
+              "text": "An object A expects an object B to have been used correctly (CrySL blocks REQUIRES and ENSURES). For example a Cipher object requires a SecretKey object to be correctly and securely generated."
+            }
+          },
+          "RequiredPredicateError-5": {
+            "id": "RequiredPredicateError",
+            "fullDescription": {
+              "text": "An object A expects an object B to have been used correctly (CrySL blocks REQUIRES and ENSURES). For example a Cipher object requires a SecretKey object to be correctly and securely generated."
+            }
+          },
+          "RequiredPredicateError-4": {
+            "id": "RequiredPredicateError",
+            "fullDescription": {
+              "text": "An object A expects an object B to have been used correctly (CrySL blocks REQUIRES and ENSURES). For example a Cipher object requires a SecretKey object to be correctly and securely generated."
+            }
+          },
+          "RequiredPredicateError-3": {
+            "id": "RequiredPredicateError",
+            "fullDescription": {
+              "text": "An object A expects an object B to have been used correctly (CrySL blocks REQUIRES and ENSURES). For example a Cipher object requires a SecretKey object to be correctly and securely generated."
+            }
+          },
+          "ConstraintError": {
+            "id": "ConstraintError",
+            "fullDescription": {
+              "text": "A constraint of a CrySL rule is violated, e.g., a key is generated with the wrong key size."
+            }
+          },
+          "RequiredPredicateError-2": {
+            "id": "RequiredPredicateError",
+            "fullDescription": {
+              "text": "An object A expects an object B to have been used correctly (CrySL blocks REQUIRES and ENSURES). For example a Cipher object requires a SecretKey object to be correctly and securely generated."
+            }
+          },
+          "RequiredPredicateError-1": {
+            "id": "RequiredPredicateError",
+            "fullDescription": {
+              "text": "An object A expects an object B to have been used correctly (CrySL blocks REQUIRES and ENSURES). For example a Cipher object requires a SecretKey object to be correctly and securely generated."
+            }
+          },
+          "ConstraintError-1": {
+            "id": "ConstraintError",
+            "fullDescription": {
+              "text": "A constraint of a CrySL rule is violated, e.g., a key is generated with the wrong key size."
+            }
+          }
+        }
+      },
+      "results": [
+        {
+          "locations": [
+            {
+              "physicalLocation": {
+                "fileLocation": {
+                  "uri": "com.inputstick.api.Util.java",
+                  "PossibleExternalLibrary": true
+                },
+                "region": {
+                  "startLine": 236
+                }
+              },
+              "fullyQualifiedLogicalName": "com::inputstick::api::Util::getPasswordBytes"
+            }
+          ],
+          "ruleId": "ConstraintError",
+          "message": {
+            "text": "First parameter (with value \"MD5\") should be any of {SHA-256, SHA-384, SHA-512}.",
+            "richText": "ConstraintError violating CrySL rule for java.security.MessageDigest."
+          }
+        },
+        {
+          "locations": [
+            {
+              "physicalLocation": {
+                "fileLocation": {
+                  "uri": "com.inputstick.api.AES.java",
+                  "PossibleExternalLibrary": true
+                },
+                "region": {
+                  "startLine": 34
+                }
+              },
+              "fullyQualifiedLogicalName": "com::inputstick::api::AES::init"
+            }
+          ],
+          "ruleId": "RequiredPredicateError",
+          "message": {
+            "text": "Second parameter was not properly generated as generated Key.",
+            "richText": "RequiredPredicateError violating CrySL rule for javax.crypto.Cipher."
+          }
+        },
+        {
+          "locations": [
+            {
+              "physicalLocation": {
+                "fileLocation": {
+                  "uri": "com.inputstick.api.AES.java",
+                  "PossibleExternalLibrary": true
+                },
+                "region": {
+                  "startLine": 38
+                }
+              },
+              "fullyQualifiedLogicalName": "com::inputstick::api::AES::init"
+            }
+          ],
+          "ruleId": "RequiredPredicateError-1",
+          "message": {
+            "text": "First parameter was not properly generated as randomized.",
+            "richText": "RequiredPredicateError violating CrySL rule for javax.crypto.spec.IvParameterSpec."
+          }
+        },
+        {
+          "locations": [
+            {
+              "physicalLocation": {
+                "fileLocation": {
+                  "uri": "com.inputstick.api.AES.java",
+                  "PossibleExternalLibrary": true
+                },
+                "region": {
+                  "startLine": 38
+                }
+              },
+              "fullyQualifiedLogicalName": "com::inputstick::api::AES::init"
+            }
+          ],
+          "ruleId": "RequiredPredicateError-2",
+          "message": {
+            "text": "Second parameter was not properly generated as generated Key.",
+            "richText": "RequiredPredicateError violating CrySL rule for javax.crypto.Cipher."
+          }
+        },
+        {
+          "locations": [
+            {
+              "physicalLocation": {
+                "fileLocation": {
+                  "uri": "com.inputstick.api.AES.java",
+                  "PossibleExternalLibrary": true
+                },
+                "region": {
+                  "startLine": 33
+                }
+              },
+              "fullyQualifiedLogicalName": "com::inputstick::api::AES::init"
+            }
+          ],
+          "ruleId": "ConstraintError-1",
+          "message": {
+            "text": "First parameter (with value \"AES/CBC/NoPadding\") should be any of AES/CBC/{PKCS5Padding, ISO10126Padding}.",
+            "richText": "ConstraintError violating CrySL rule for javax.crypto.Cipher."
+          }
+        },
+        {
+          "locations": [
+            {
+              "physicalLocation": {
+                "fileLocation": {
+                  "uri": "com.inputstick.api.AES.java",
+                  "PossibleExternalLibrary": true
+                },
+                "region": {
+                  "startLine": 32
+                }
+              },
+              "fullyQualifiedLogicalName": "com::inputstick::api::AES::init"
+            }
+          ],
+          "ruleId": "RequiredPredicateError-3",
+          "message": {
+            "text": "First parameter was not properly generated as prepared Key Material.",
+            "richText": "RequiredPredicateError violating CrySL rule for javax.crypto.spec.SecretKeySpec."
+          }
+        },
+        {
+          "locations": [
+            {
+              "physicalLocation": {
+                "fileLocation": {
+                  "uri": "com.inputstick.api.PacketManager.java",
+                  "PossibleExternalLibrary": true
+                },
+                "region": {
+                  "startLine": 216
+                }
+              },
+              "fullyQualifiedLogicalName": "com::inputstick::api::PacketManager::sendPacket"
+            }
+          ],
+          "ruleId": "RequiredPredicateError-4",
+          "message": {
+            "text": "First parameter was not properly generated as prepared Key Material.",
+            "richText": "RequiredPredicateError violating CrySL rule for javax.crypto.spec.SecretKeySpec."
+          }
+        },
+        {
+          "locations": [
+            {
+              "physicalLocation": {
+                "fileLocation": {
+                  "uri": "com.inputstick.api.PacketManager.java",
+                  "PossibleExternalLibrary": true
+                },
+                "region": {
+                  "startLine": 216
+                }
+              },
+              "fullyQualifiedLogicalName": "com::inputstick::api::PacketManager::sendPacket"
+            }
+          ],
+          "ruleId": "RequiredPredicateError-5",
+          "message": {
+            "text": "First parameter was not properly generated as generated Key.",
+            "richText": "RequiredPredicateError violating CrySL rule for javax.crypto.Mac."
+          }
+        }
+      ],
+      "tool": {
+        "name": "CryptoAnalysis",
+        "semanticVersion": null,
+        "language": "en-US",
+        "version": null
+      }
+    }
+  ]
+}

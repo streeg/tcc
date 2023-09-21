@@ -7,7 +7,7 @@ LIBSCOUT_PATH = 'libscout-result/json/'.freeze
 LIBRADAR_PATH = 'libradar-result/'.freeze
 CRYPTO_LIB_MERGED_LIBSCOUT_PATH = 'crypto-lib-merged-result/libscout-cognicrypt/'.freeze
 CRYPTO_LIB_MERGED_LIBRADAR_PATH = 'crypto-lib-merged-result/libradar/'.freeze
-LIBSCOUT_LOG_JSON_PATH = 'libscout-result/json/*.log.json'.freeze
+LIBSCOUT_LOG_JSON_PATH = 'libscout-all-logs/log_json/*.log.json'.freeze # change_as_needed
 LIBRADAR_JSON_PATH = 'libradar-result/*.json'.freeze
 COGNICRYPTGUARD_SARIF_PATH = 'cognicrypt-sarif/'.freeze
 
@@ -75,6 +75,7 @@ lib_files.each do |lib_file_name|
   # p lib_file_data.each { |x| p x['Package'] }
 
   # Open crypto file
+  byebug
   crypto_file = File.open(extract_and_format_name_sarif(lib_file_name), 'r')
   crypto_file_data = JSON.load(crypto_file)
 
@@ -93,6 +94,7 @@ lib_files.each do |lib_file_name|
 
       splited_result = result.gsub('.', ' ').split
       splited_lib_data = lib_file_data_item['Package'].gsub('.', ' ').split
+      splited_lib_data.delete('com')
       next unless splited_result.any? { |splited| splited_lib_data.include?(splited) }
 
       crypto_file_data['runs'][0]['results'][index]['locations'][0]['physicalLocation']['fileLocation']['externalLibrary'] =

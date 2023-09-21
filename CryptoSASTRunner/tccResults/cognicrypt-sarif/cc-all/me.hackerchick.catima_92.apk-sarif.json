@@ -1,0 +1,482 @@
+{
+  "sarifVersion" : "2.0.0",
+  "runs" : [ {
+    "files" : {
+      "net/lingala/zip4j/io/inputstream/InflaterInputStream.java" : {
+        "mimeType" : "text/java"
+      },
+      "net/lingala/zip4j/crypto/PBKDF2/MacBasedPRF.java" : {
+        "mimeType" : "text/java"
+      },
+      "protect/card_locker/importexport/CatimaExporter.java" : {
+        "mimeType" : "text/java"
+      },
+      "net/lingala/zip4j/crypto/AesCipherUtil.java" : {
+        "mimeType" : "text/java"
+      },
+      "okio/ByteString.java" : {
+        "mimeType" : "text/java"
+      },
+      "protect/card_locker/importexport/FidmeImporter.java" : {
+        "mimeType" : "text/java"
+      },
+      "protect/card_locker/importexport/CatimaImporter.java" : {
+        "mimeType" : "text/java"
+      },
+      "protect/card_locker/importexport/StocardImporter.java" : {
+        "mimeType" : "text/java"
+      },
+      "net/lingala/zip4j/io/inputstream/ZipInputStream.java" : {
+        "mimeType" : "text/java"
+      }
+    },
+    "resources" : {
+      "rules" : {
+        "TypestateError-1" : {
+          "id" : "TypestateError",
+          "fullDescription" : {
+            "text" : "The ORDER block of CrySL is violated, i.e., the expected method sequence call to be made is incorrect. For example, a Signature object expects a call to initSign(key) prior to update(data)."
+          }
+        },
+        "TypestateError-2" : {
+          "id" : "TypestateError",
+          "fullDescription" : {
+            "text" : "The ORDER block of CrySL is violated, i.e., the expected method sequence call to be made is incorrect. For example, a Signature object expects a call to initSign(key) prior to update(data)."
+          }
+        },
+        "ConstraintError-1" : {
+          "id" : "ConstraintError",
+          "fullDescription" : {
+            "text" : "A constraint of a CrySL rule is violated, e.g., a key is generated with the wrong key size."
+          }
+        },
+        "ConstraintError-2" : {
+          "id" : "ConstraintError",
+          "fullDescription" : {
+            "text" : "A constraint of a CrySL rule is violated, e.g., a key is generated with the wrong key size."
+          }
+        },
+        "IncompleteOperationError-7" : {
+          "id" : "IncompleteOperationError",
+          "fullDescription" : {
+            "text" : "The usage of an object may be incomplete: For example a Cipherobject may be initialized but never used for en- or decryption, this may render the code dead. This error heavily depends on the computed call graph (CHA by default)"
+          }
+        },
+        "IncompleteOperationError-6" : {
+          "id" : "IncompleteOperationError",
+          "fullDescription" : {
+            "text" : "The usage of an object may be incomplete: For example a Cipherobject may be initialized but never used for en- or decryption, this may render the code dead. This error heavily depends on the computed call graph (CHA by default)"
+          }
+        },
+        "IncompleteOperationError-9" : {
+          "id" : "IncompleteOperationError",
+          "fullDescription" : {
+            "text" : "The usage of an object may be incomplete: For example a Cipherobject may be initialized but never used for en- or decryption, this may render the code dead. This error heavily depends on the computed call graph (CHA by default)"
+          }
+        },
+        "IncompleteOperationError-8" : {
+          "id" : "IncompleteOperationError",
+          "fullDescription" : {
+            "text" : "The usage of an object may be incomplete: For example a Cipherobject may be initialized but never used for en- or decryption, this may render the code dead. This error heavily depends on the computed call graph (CHA by default)"
+          }
+        },
+        "RequiredPredicateError" : {
+          "id" : "RequiredPredicateError",
+          "fullDescription" : {
+            "text" : "An object A expects an object B to have been used correctly (CrySL blocks REQUIRES and ENSURES). For example a Cipher object requires a SecretKey object to be correctly and securely generated."
+          }
+        },
+        "TypestateError" : {
+          "id" : "TypestateError",
+          "fullDescription" : {
+            "text" : "The ORDER block of CrySL is violated, i.e., the expected method sequence call to be made is incorrect. For example, a Signature object expects a call to initSign(key) prior to update(data)."
+          }
+        },
+        "ConstraintError" : {
+          "id" : "ConstraintError",
+          "fullDescription" : {
+            "text" : "A constraint of a CrySL rule is violated, e.g., a key is generated with the wrong key size."
+          }
+        },
+        "IncompleteOperationError" : {
+          "id" : "IncompleteOperationError",
+          "fullDescription" : {
+            "text" : "The usage of an object may be incomplete: For example a Cipherobject may be initialized but never used for en- or decryption, this may render the code dead. This error heavily depends on the computed call graph (CHA by default)"
+          }
+        },
+        "IncompleteOperationError-1" : {
+          "id" : "IncompleteOperationError",
+          "fullDescription" : {
+            "text" : "The usage of an object may be incomplete: For example a Cipherobject may be initialized but never used for en- or decryption, this may render the code dead. This error heavily depends on the computed call graph (CHA by default)"
+          }
+        },
+        "RequiredPredicateError-1" : {
+          "id" : "RequiredPredicateError",
+          "fullDescription" : {
+            "text" : "An object A expects an object B to have been used correctly (CrySL blocks REQUIRES and ENSURES). For example a Cipher object requires a SecretKey object to be correctly and securely generated."
+          }
+        },
+        "IncompleteOperationError-3" : {
+          "id" : "IncompleteOperationError",
+          "fullDescription" : {
+            "text" : "The usage of an object may be incomplete: For example a Cipherobject may be initialized but never used for en- or decryption, this may render the code dead. This error heavily depends on the computed call graph (CHA by default)"
+          }
+        },
+        "IncompleteOperationError-10" : {
+          "id" : "IncompleteOperationError",
+          "fullDescription" : {
+            "text" : "The usage of an object may be incomplete: For example a Cipherobject may be initialized but never used for en- or decryption, this may render the code dead. This error heavily depends on the computed call graph (CHA by default)"
+          }
+        },
+        "IncompleteOperationError-2" : {
+          "id" : "IncompleteOperationError",
+          "fullDescription" : {
+            "text" : "The usage of an object may be incomplete: For example a Cipherobject may be initialized but never used for en- or decryption, this may render the code dead. This error heavily depends on the computed call graph (CHA by default)"
+          }
+        },
+        "IncompleteOperationError-5" : {
+          "id" : "IncompleteOperationError",
+          "fullDescription" : {
+            "text" : "The usage of an object may be incomplete: For example a Cipherobject may be initialized but never used for en- or decryption, this may render the code dead. This error heavily depends on the computed call graph (CHA by default)"
+          }
+        },
+        "IncompleteOperationError-4" : {
+          "id" : "IncompleteOperationError",
+          "fullDescription" : {
+            "text" : "The usage of an object may be incomplete: For example a Cipherobject may be initialized but never used for en- or decryption, this may render the code dead. This error heavily depends on the computed call graph (CHA by default)"
+          }
+        }
+      }
+    },
+    "results" : [ {
+      "locations" : [ {
+        "physicalLocation" : {
+          "fileLocation" : {
+            "uri" : "okio/ByteString.java"
+          },
+          "region" : {
+            "startLine" : 156
+          }
+        },
+        "fullyQualifiedLogicalName" : "okio::ByteString::digest"
+      } ],
+      "ruleId" : "ConstraintError",
+      "message" : {
+        "text" : "First parameter (with value \"SHA-1\") should be any of {SHA-256, SHA-384, SHA-512}.",
+        "richText" : "ConstraintError violating CrySL rule for java.security.MessageDigest."
+      }
+    }, {
+      "locations" : [ {
+        "physicalLocation" : {
+          "fileLocation" : {
+            "uri" : "net/lingala/zip4j/crypto/PBKDF2/MacBasedPRF.java"
+          },
+          "region" : {
+            "startLine" : 37
+          }
+        },
+        "fullyQualifiedLogicalName" : "net::lingala::zip4j::crypto::PBKDF2::MacBasedPRF::<init>"
+      } ],
+      "ruleId" : "ConstraintError-1",
+      "message" : {
+        "text" : "First parameter (with value \"HmacSHA1\") should be any of {HmacSHA256, HmacSHA384, HmacSHA512, HmacPBESHA1, PBEWithHmacSHA1, PBEWithHmacSHA224, PBEWithHmacSHA256, PBEWithHmacSHA384, PBEWithHmacSHA512}.",
+        "richText" : "ConstraintError violating CrySL rule for javax.crypto.Mac."
+      }
+    }, {
+      "locations" : [ {
+        "physicalLocation" : {
+          "fileLocation" : {
+            "uri" : "net/lingala/zip4j/crypto/PBKDF2/MacBasedPRF.java"
+          },
+          "region" : {
+            "startLine" : 74
+          }
+        },
+        "fullyQualifiedLogicalName" : "net::lingala::zip4j::crypto::PBKDF2::MacBasedPRF::update"
+      } ],
+      "ruleId" : "TypestateError",
+      "message" : {
+        "text" : "Unexpected call to method update on object of type javax.crypto.Mac..",
+        "richText" : "TypestateError violating CrySL rule for javax.crypto.Mac."
+      }
+    }, {
+      "locations" : [ {
+        "physicalLocation" : {
+          "fileLocation" : {
+            "uri" : "net/lingala/zip4j/crypto/PBKDF2/MacBasedPRF.java"
+          },
+          "region" : {
+            "startLine" : 45
+          }
+        },
+        "fullyQualifiedLogicalName" : "net::lingala::zip4j::crypto::PBKDF2::MacBasedPRF::doFinal"
+      } ],
+      "ruleId" : "TypestateError-1",
+      "message" : {
+        "text" : "Unexpected call to method <javax.crypto.Mac: byte[] doFinal(byte[])> on object of type javax.crypto.Mac. Expect a call to one of the following methods javax.crypto.Mac: void doFinal(byte[],int),javax.crypto.Mac: void update(byte[]),javax.crypto.Mac: byte[] doFinal(),javax.crypto.Mac: void update(byte),javax.crypto.Mac: void update(byte[],int,int).",
+        "richText" : "TypestateError violating CrySL rule for javax.crypto.Mac."
+      }
+    }, {
+      "locations" : [ {
+        "physicalLocation" : {
+          "fileLocation" : {
+            "uri" : "net/lingala/zip4j/crypto/PBKDF2/MacBasedPRF.java"
+          },
+          "region" : {
+            "startLine" : 49
+          }
+        },
+        "fullyQualifiedLogicalName" : "net::lingala::zip4j::crypto::PBKDF2::MacBasedPRF::doFinal"
+      } ],
+      "ruleId" : "TypestateError-2",
+      "message" : {
+        "text" : "Unexpected call to method doFinal on object of type javax.crypto.Mac..",
+        "richText" : "TypestateError violating CrySL rule for javax.crypto.Mac."
+      }
+    }, {
+      "locations" : [ {
+        "physicalLocation" : {
+          "fileLocation" : {
+            "uri" : "net/lingala/zip4j/crypto/PBKDF2/MacBasedPRF.java"
+          },
+          "region" : {
+            "startLine" : 58
+          }
+        },
+        "fullyQualifiedLogicalName" : "net::lingala::zip4j::crypto::PBKDF2::MacBasedPRF::init"
+      } ],
+      "ruleId" : "RequiredPredicateError",
+      "message" : {
+        "text" : "First parameter was not properly generated as generated Key.",
+        "richText" : "RequiredPredicateError violating CrySL rule for javax.crypto.Mac."
+      }
+    }, {
+      "locations" : [ {
+        "physicalLocation" : {
+          "fileLocation" : {
+            "uri" : "net/lingala/zip4j/crypto/PBKDF2/MacBasedPRF.java"
+          },
+          "region" : {
+            "startLine" : 58
+          }
+        },
+        "fullyQualifiedLogicalName" : "net::lingala::zip4j::crypto::PBKDF2::MacBasedPRF::init"
+      } ],
+      "ruleId" : "ConstraintError-2",
+      "message" : {
+        "text" : "Second parameter (with value \"HmacSHA1\") should be any of {AES, HmacSHA224, HmacSHA256, HmacSHA384, HmacSHA512}.",
+        "richText" : "ConstraintError violating CrySL rule for javax.crypto.spec.SecretKeySpec."
+      }
+    }, {
+      "locations" : [ {
+        "physicalLocation" : {
+          "fileLocation" : {
+            "uri" : "net/lingala/zip4j/crypto/PBKDF2/MacBasedPRF.java"
+          },
+          "region" : {
+            "startLine" : 58
+          }
+        },
+        "fullyQualifiedLogicalName" : "net::lingala::zip4j::crypto::PBKDF2::MacBasedPRF::init"
+      } ],
+      "ruleId" : "RequiredPredicateError-1",
+      "message" : {
+        "text" : "First parameter was not properly generated as prepared Key Material.",
+        "richText" : "RequiredPredicateError violating CrySL rule for javax.crypto.spec.SecretKeySpec."
+      }
+    }, {
+      "locations" : [ {
+        "physicalLocation" : {
+          "fileLocation" : {
+            "uri" : "net/lingala/zip4j/io/inputstream/ZipInputStream.java"
+          },
+          "region" : {
+            "startLine" : 320
+          }
+        },
+        "fullyQualifiedLogicalName" : "net::lingala::zip4j::io::inputstream::ZipInputStream::verifyCrc"
+      } ],
+      "ruleId" : "IncompleteOperationError",
+      "message" : {
+        "text" : "Operation on object of type javax.crypto.Mac object not completed. Expected call to update, doFinal.",
+        "richText" : "IncompleteOperationError violating CrySL rule for javax.crypto.Mac."
+      }
+    }, {
+      "locations" : [ {
+        "physicalLocation" : {
+          "fileLocation" : {
+            "uri" : "net/lingala/zip4j/io/inputstream/ZipInputStream.java"
+          },
+          "region" : {
+            "startLine" : 191
+          }
+        },
+        "fullyQualifiedLogicalName" : "net::lingala::zip4j::io::inputstream::ZipInputStream::read"
+      } ],
+      "ruleId" : "IncompleteOperationError-1",
+      "message" : {
+        "text" : "Operation on object of type javax.crypto.Mac object not completed. Expected call to update, doFinal.",
+        "richText" : "IncompleteOperationError violating CrySL rule for javax.crypto.Mac."
+      }
+    }, {
+      "locations" : [ {
+        "physicalLocation" : {
+          "fileLocation" : {
+            "uri" : "net/lingala/zip4j/io/inputstream/ZipInputStream.java"
+          },
+          "region" : {
+            "startLine" : 288
+          }
+        },
+        "fullyQualifiedLogicalName" : "net::lingala::zip4j::io::inputstream::ZipInputStream::verifyLocalFileHeader"
+      } ],
+      "ruleId" : "IncompleteOperationError-2",
+      "message" : {
+        "text" : "Operation on object of type javax.crypto.Mac object not completed. Expected call to update, doFinal.",
+        "richText" : "IncompleteOperationError violating CrySL rule for javax.crypto.Mac."
+      }
+    }, {
+      "locations" : [ {
+        "physicalLocation" : {
+          "fileLocation" : {
+            "uri" : "protect/card_locker/importexport/CatimaImporter.java"
+          },
+          "region" : {
+            "startLine" : 53
+          }
+        },
+        "fullyQualifiedLogicalName" : "protect::card_locker::importexport::CatimaImporter::importData"
+      } ],
+      "ruleId" : "IncompleteOperationError-3",
+      "message" : {
+        "text" : "Operation on object of type javax.crypto.Mac object not completed. Expected call to update, doFinal.",
+        "richText" : "IncompleteOperationError violating CrySL rule for javax.crypto.Mac."
+      }
+    }, {
+      "locations" : [ {
+        "physicalLocation" : {
+          "fileLocation" : {
+            "uri" : "protect/card_locker/importexport/CatimaExporter.java"
+          },
+          "region" : {
+            "startLine" : 84
+          }
+        },
+        "fullyQualifiedLogicalName" : "protect::card_locker::importexport::CatimaExporter::exportData"
+      } ],
+      "ruleId" : "IncompleteOperationError-4",
+      "message" : {
+        "text" : "Operation on object of type javax.crypto.Mac object not completed. Expected call to update, doFinal.",
+        "richText" : "IncompleteOperationError violating CrySL rule for javax.crypto.Mac."
+      }
+    }, {
+      "locations" : [ {
+        "physicalLocation" : {
+          "fileLocation" : {
+            "uri" : "protect/card_locker/importexport/FidmeImporter.java"
+          },
+          "region" : {
+            "startLine" : 43
+          }
+        },
+        "fullyQualifiedLogicalName" : "protect::card_locker::importexport::FidmeImporter::importData"
+      } ],
+      "ruleId" : "IncompleteOperationError-5",
+      "message" : {
+        "text" : "Operation on object of type javax.crypto.Mac object not completed. Expected call to update, doFinal.",
+        "richText" : "IncompleteOperationError violating CrySL rule for javax.crypto.Mac."
+      }
+    }, {
+      "locations" : [ {
+        "physicalLocation" : {
+          "fileLocation" : {
+            "uri" : "protect/card_locker/importexport/FidmeImporter.java"
+          },
+          "region" : {
+            "startLine" : 78
+          }
+        },
+        "fullyQualifiedLogicalName" : "protect::card_locker::importexport::FidmeImporter::importData"
+      } ],
+      "ruleId" : "IncompleteOperationError-6",
+      "message" : {
+        "text" : "Operation on object of type javax.crypto.Mac object not completed. Expected call to update, doFinal.",
+        "richText" : "IncompleteOperationError violating CrySL rule for javax.crypto.Mac."
+      }
+    }, {
+      "locations" : [ {
+        "physicalLocation" : {
+          "fileLocation" : {
+            "uri" : "net/lingala/zip4j/io/inputstream/InflaterInputStream.java"
+          },
+          "region" : {
+            "startLine" : 84
+          }
+        },
+        "fullyQualifiedLogicalName" : "net::lingala::zip4j::io::inputstream::InflaterInputStream::fill"
+      } ],
+      "ruleId" : "IncompleteOperationError-7",
+      "message" : {
+        "text" : "Operation on object of type javax.crypto.Mac object not completed. Expected call to update, doFinal.",
+        "richText" : "IncompleteOperationError violating CrySL rule for javax.crypto.Mac."
+      }
+    }, {
+      "locations" : [ {
+        "physicalLocation" : {
+          "fileLocation" : {
+            "uri" : "net/lingala/zip4j/crypto/AesCipherUtil.java"
+          },
+          "region" : {
+            "startLine" : 34
+          }
+        },
+        "fullyQualifiedLogicalName" : "net::lingala::zip4j::crypto::AesCipherUtil::derivePasswordBasedKey"
+      } ],
+      "ruleId" : "IncompleteOperationError-8",
+      "message" : {
+        "text" : "Operation on object of type javax.crypto.Mac object not completed. Expected call to update, doFinal.",
+        "richText" : "IncompleteOperationError violating CrySL rule for javax.crypto.Mac."
+      }
+    }, {
+      "locations" : [ {
+        "physicalLocation" : {
+          "fileLocation" : {
+            "uri" : "protect/card_locker/importexport/StocardImporter.java"
+          },
+          "region" : {
+            "startLine" : 68
+          }
+        },
+        "fullyQualifiedLogicalName" : "protect::card_locker::importexport::StocardImporter::importData"
+      } ],
+      "ruleId" : "IncompleteOperationError-9",
+      "message" : {
+        "text" : "Operation on object of type javax.crypto.Mac object not completed. Expected call to update, doFinal.",
+        "richText" : "IncompleteOperationError violating CrySL rule for javax.crypto.Mac."
+      }
+    }, {
+      "locations" : [ {
+        "physicalLocation" : {
+          "fileLocation" : {
+            "uri" : "protect/card_locker/importexport/StocardImporter.java"
+          },
+          "region" : {
+            "startLine" : 190
+          }
+        },
+        "fullyQualifiedLogicalName" : "protect::card_locker::importexport::StocardImporter::importData"
+      } ],
+      "ruleId" : "IncompleteOperationError-10",
+      "message" : {
+        "text" : "Operation on object of type javax.crypto.Mac object not completed. Expected call to update, doFinal.",
+        "richText" : "IncompleteOperationError violating CrySL rule for javax.crypto.Mac."
+      }
+    } ],
+    "tool" : {
+      "name" : "CryptoAnalysis",
+      "semanticVersion" : null,
+      "language" : "en-US",
+      "version" : null
+    }
+  } ]
+}

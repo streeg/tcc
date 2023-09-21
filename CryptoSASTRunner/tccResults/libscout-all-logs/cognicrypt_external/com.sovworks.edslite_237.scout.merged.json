@@ -1,0 +1,82 @@
+{
+  "projectName": "CryptoGuard",
+  "ProjectVersion": "04.05.03",
+  "Target": {
+    "RawCommand": "-in apk -s /home/lables/CryptoAnalysis/apks/Security/com.sovworks.edslite_237.apk -m D",
+    "FullPath": "com.sovworks.edslite_237.apk/",
+    "Type": "APK",
+    "TargetSources": [
+      "/home/lables/CryptoAnalysis/apks/Security/com.sovworks.edslite_237.apk"
+    ],
+    "_PropertiesFilePath": "gradle.properties",
+    "_ComputerOS": "Linux_4.15.0-163-generic",
+    "_JVMVersion": "1.8.0_312-8u312-b07-0ubuntu1~18.04-b07",
+    "_ProjectName": "com"
+  },
+  "Issues": [
+    {
+      "Message": "Found: Untrused PRNG (java.util.Random)",
+      "Description": "Used untrusted PRNG",
+      "RuleNumber": 13,
+      "RuleDesc": "Used untrusted PRNG",
+      "CWEId": 338,
+      "Severity": "1",
+      "_FullPath": "com.sovworks.edslite_237.apk.com.sovworks.eds.locations.LocationsManagerBase.class",
+      "_Id": "0"
+    },
+    {
+      "Message": "Found: Untrused PRNG (java.util.Random)",
+      "Description": "Used untrusted PRNG",
+      "RuleNumber": 13,
+      "RuleDesc": "Used untrusted PRNG",
+      "CWEId": 338,
+      "Severity": "1",
+      "_FullPath": "com.sovworks.edslite_237.apk.com.sovworks.eds.android.helpers.WipeFilesTask.class",
+      "_Id": "1",
+      "externalLibrary": true
+    },
+    {
+      "Message": "Found: \"SHA1\"",
+      "Description": "Found broken hash functions",
+      "RuleNumber": 2,
+      "RuleDesc": "Found broken hash functions",
+      "CWEId": 759,
+      "Severity": "1",
+      "_FullPath": "com.sovworks.edslite_237.apk.com.sovworks.eds.luks.VolumeLayout.class",
+      "_Id": "2"
+    },
+    {
+      "Message": "Found: \"MD5\"",
+      "Description": "Found broken hash functions",
+      "RuleNumber": 2,
+      "RuleDesc": "Found broken hash functions",
+      "CWEId": 759,
+      "Severity": "1",
+      "_FullPath": "com.sovworks.edslite_237.apk.com.sovworks.eds.crypto.SimpleCrypto.class",
+      "_Id": "3"
+    },
+    {
+      "Message": "Found: \"SHA1\"",
+      "Description": "Found broken hash functions",
+      "RuleNumber": 2,
+      "RuleDesc": "Found broken hash functions",
+      "CWEId": 759,
+      "Severity": "1",
+      "_FullPath": "com.sovworks.edslite_237.apk.com.sovworks.eds.luks.VolumeLayout.class",
+      "_Id": "4"
+    },
+    {
+      "Message": "Found: \"SHA1\"",
+      "Description": "Found broken hash functions",
+      "RuleNumber": 2,
+      "RuleDesc": "Found broken hash functions",
+      "CWEId": 759,
+      "Severity": "1",
+      "_FullPath": "com.sovworks.edslite_237.apk.com.sovworks.eds.crypto.kdf.HMACSHA1.class",
+      "_Id": "5"
+    }
+  ],
+  "_SchemaVersion": 3,
+  "_DateTime": "2022-01-14_22:44:42",
+  "_UUID": "62a2c819-56e9-4768-873e-ee311dd001be"
+}

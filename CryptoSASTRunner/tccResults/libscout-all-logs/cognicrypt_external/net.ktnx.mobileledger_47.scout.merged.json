@@ -1,0 +1,83 @@
+{
+  "projectName": "CryptoGuard",
+  "ProjectVersion": "04.05.03",
+  "Target": {
+    "RawCommand": "-in apk -s /home/lables/CryptoAnalysis/Finances/net.ktnx.mobileledger_47.apk -m D",
+    "FullPath": "net.ktnx.mobileledger_47.apk/",
+    "Type": "APK",
+    "TargetSources": [
+      "/home/lables/CryptoAnalysis/Finances/net.ktnx.mobileledger_47.apk"
+    ],
+    "_PropertiesFilePath": "gradle.properties",
+    "_ComputerOS": "Linux_4.15.0-162-generic",
+    "_JVMVersion": "1.8.0_292-8u292-b10-0ubuntu1~18.04-b10",
+    "_ProjectName": "net"
+  },
+  "Issues": [
+    {
+      "Message": "Found: Untrused PRNG (java.util.Random)",
+      "Description": "Used untrusted PRNG",
+      "RuleNumber": 13,
+      "RuleDesc": "Used untrusted PRNG",
+      "CWEId": 338,
+      "Severity": "1",
+      "_FullPath": "net.ktnx.mobileledger_47.apk.androidx.transition.Explode.class",
+      "_Id": "0",
+      "externalLibrary": true
+    },
+    {
+      "Message": "Found: Untrused PRNG (java.util.Random)",
+      "Description": "Used untrusted PRNG",
+      "RuleNumber": 13,
+      "RuleDesc": "Used untrusted PRNG",
+      "CWEId": 338,
+      "Severity": "1",
+      "_FullPath": "net.ktnx.mobileledger_47.apk.kotlin.random.FallbackThreadLocalRandom$implStorage$1.class",
+      "_Id": "1"
+    },
+    {
+      "Message": "Found: Untrused PRNG (java.util.Random)",
+      "Description": "Used untrusted PRNG",
+      "RuleNumber": 13,
+      "RuleDesc": "Used untrusted PRNG",
+      "CWEId": 338,
+      "Severity": "1",
+      "_FullPath": "net.ktnx.mobileledger_47.apk.androidx.activity.result.ActivityResultRegistry.class",
+      "_Id": "2",
+      "externalLibrary": true
+    },
+    {
+      "Message": "Found: Untrused PRNG (java.util.Random)",
+      "Description": "Used untrusted PRNG",
+      "RuleNumber": 13,
+      "RuleDesc": "Used untrusted PRNG",
+      "CWEId": 338,
+      "Severity": "1",
+      "_FullPath": "net.ktnx.mobileledger_47.apk.net.ktnx.mobileledger.async.SendTransactionTask.class",
+      "_Id": "3"
+    },
+    {
+      "Message": "Found: Untrused PRNG (java.util.Random)",
+      "Description": "Used untrusted PRNG",
+      "RuleNumber": 13,
+      "RuleDesc": "Used untrusted PRNG",
+      "CWEId": 338,
+      "Severity": "1",
+      "_FullPath": "net.ktnx.mobileledger_47.apk.kotlin.random.KotlinRandom.class",
+      "_Id": "4"
+    },
+    {
+      "Message": "Found: Untrused PRNG (java.util.Random)",
+      "Description": "Used untrusted PRNG",
+      "RuleNumber": 13,
+      "RuleDesc": "Used untrusted PRNG",
+      "CWEId": 338,
+      "Severity": "1",
+      "_FullPath": "net.ktnx.mobileledger_47.apk.net.ktnx.mobileledger.utils.Colors.class",
+      "_Id": "5"
+    }
+  ],
+  "_SchemaVersion": 3,
+  "_DateTime": "2021-11-28_01:00:40",
+  "_UUID": "b5b8becf-2cb0-41b0-a59b-edcdddb0381a"
+}

@@ -1,0 +1,943 @@
+23:20:30 INFO  LibraryIdentifier         : Process app: com.etesync.syncadapter_20204.apk
+23:20:30 INFO  LibraryIdentifier         : = Manifest Parser =
+23:20:30 INFO  LibraryIdentifier         :         Package name: com.etesync.syncadapter
+23:20:30 INFO  LibraryIdentifier         :         Version code: 20204
+23:20:30 INFO  LibraryIdentifier         :        minSdkVersion: 21
+23:20:30 INFO  LibraryIdentifier         :     targetSdkVersion: 29
+23:20:30 INFO  LibraryIdentifier         :         SharedUserId:  - none -
+23:20:30 INFO  LibraryIdentifier         :     Library dependencies:  - none -
+23:20:30 INFO  LibraryIdentifier         : 
+23:20:30 INFO  LibraryIdentifier         : Found 402 unique libraries in 12405 library profiles
+23:20:30 INFO  LibraryIdentifier         : Multi-dex apk detected - Code is merged to single class hierarchy!
+23:20:32 INFO  LibraryIdentifier         : Generated class hierarchy (in 1 sec, 184 ms)
+23:20:33 INFO  WalaUtils                 : 
+23:20:33 INFO  WalaUtils                 : = ClassHierarchy Stats =
+23:20:33 INFO  WalaUtils                 :     # of classes: 5955
+23:20:33 INFO  WalaUtils                 :     # thereof inner classes: 2566
+23:20:33 INFO  WalaUtils                 :     # thereof public classes: 5593
+23:20:33 INFO  WalaUtils                 :         Activity : 28
+23:20:33 INFO  WalaUtils                 :         Application : 1
+23:20:33 INFO  WalaUtils                 :         AsyncTask : 9
+23:20:33 INFO  WalaUtils                 :         BroadcastReceiver : 4
+23:20:33 INFO  WalaUtils                 :         ContentProvider : 4
+23:20:33 INFO  WalaUtils                 :         Fragment : 1
+23:20:33 INFO  WalaUtils                 :         Handler : 3
+23:20:33 INFO  WalaUtils                 :         LayoutContainer : 60
+23:20:33 INFO  WalaUtils                 :         Plain : 5796
+23:20:33 INFO  WalaUtils                 :         Runnable : 0
+23:20:33 INFO  WalaUtils                 :         Service : 12
+23:20:33 INFO  WalaUtils                 :         Thread : 2
+23:20:33 INFO  WalaUtils                 :         View : 35
+23:20:33 INFO  WalaUtils                 :     # methods: 38786
+23:20:33 INFO  WalaUtils                 :         # of publicly accessible methods: 37236
+23:20:33 INFO  WalaUtils                 :         # of non-accessible methods: 1550
+23:20:33 INFO  WalaUtils                 : 
+23:20:33 INFO  Profile                   : = PackageTree =
+23:20:33 INFO  PackageTree               : Root Package:  - none -
+23:20:33 INFO  PackageTree               : └── Root
+23:20:33 INFO  PackageTree               :     ├── com
+23:20:33 INFO  PackageTree               :     │   ├── etesync
+23:20:33 INFO  PackageTree               :     │   │   ├── syncadapter (36)
+23:20:33 INFO  PackageTree               :     │   │   │   ├── ui (228)
+23:20:33 INFO  PackageTree               :     │   │   │   │   ├── etebase (227)
+23:20:33 INFO  PackageTree               :     │   │   │   │   ├── importlocal (40)
+23:20:33 INFO  PackageTree               :     │   │   │   │   ├── setup (43)
+23:20:33 INFO  PackageTree               :     │   │   │   │   ├── widget (1)
+23:20:33 INFO  PackageTree               :     │   │   │   │   └── journalviewer (5)
+23:20:33 INFO  PackageTree               :     │   │   │   ├── model (78)
+23:20:33 INFO  PackageTree               :     │   │   │   ├── utils (16)
+23:20:33 INFO  PackageTree               :     │   │   │   ├── log (5)
+23:20:33 INFO  PackageTree               :     │   │   │   ├── syncadapter (30)
+23:20:33 INFO  PackageTree               :     │   │   │   └── resource (26)
+23:20:33 INFO  PackageTree               :     │   │   └── journalmanager (41)
+23:20:33 INFO  PackageTree               :     │   │       ├── util (5)
+23:20:33 INFO  PackageTree               :     │   │       └── model (5)
+23:20:33 INFO  PackageTree               :     │   ├── google
+23:20:33 INFO  PackageTree               :     │   │   ├── android
+23:20:33 INFO  PackageTree               :     │   │   │   └── material
+23:20:33 INFO  PackageTree               :     │   │   │       ├── textfield (46)
+23:20:33 INFO  PackageTree               :     │   │   │       ├── snackbar (35)
+23:20:33 INFO  PackageTree               :     │   │   │       ├── internal (49)
+23:20:33 INFO  PackageTree               :     │   │   │       ├── appbar (21)
+23:20:33 INFO  PackageTree               :     │   │   │       ├── tabs (15)
+23:20:33 INFO  PackageTree               :     │   │   │       ├── datepicker (49)
+23:20:33 INFO  PackageTree               :     │   │   │       ├── behavior (7)
+23:20:33 INFO  PackageTree               :     │   │   │       ├── transformation (15)
+23:20:33 INFO  PackageTree               :     │   │   │       ├── shape (28)
+23:20:33 INFO  PackageTree               :     │   │   │       ├── floatingactionbutton (31)
+23:20:33 INFO  PackageTree               :     │   │   │       ├── dialog (1)
+23:20:33 INFO  PackageTree               :     │   │   │       ├── bottomappbar (13)
+23:20:33 INFO  PackageTree               :     │   │   │       ├── card (4)
+23:20:33 INFO  PackageTree               :     │   │   │       ├── chip (11)
+23:20:33 INFO  PackageTree               :     │   │   │       ├── bottomsheet (10)
+23:20:33 INFO  PackageTree               :     │   │   │       ├── elevation (1)
+23:20:33 INFO  PackageTree               :     │   │   │       ├── shadow (2)
+23:20:33 INFO  PackageTree               :     │   │   │       ├── resources (9)
+23:20:33 INFO  PackageTree               :     │   │   │       ├── animation (11)
+23:20:33 INFO  PackageTree               :     │   │   │       ├── theme (1)
+23:20:33 INFO  PackageTree               :     │   │   │       │   └── overlay (1)
+23:20:33 INFO  PackageTree               :     │   │   │       ├── circularreveal (9)
+23:20:33 INFO  PackageTree               :     │   │   │       │   └── cardview (1)
+23:20:33 INFO  PackageTree               :     │   │   │       ├── button (6)
+23:20:33 INFO  PackageTree               :     │   │   │       ├── math (1)
+23:20:33 INFO  PackageTree               :     │   │   │       ├── badge (4)
+23:20:33 INFO  PackageTree               :     │   │   │       ├── ripple (3)
+23:20:33 INFO  PackageTree               :     │   │   │       ├── navigation (6)
+23:20:33 INFO  PackageTree               :     │   │   │       ├── stateful (2)
+23:20:33 INFO  PackageTree               :     │   │   │       ├── drawable (1)
+23:20:33 INFO  PackageTree               :     │   │   │       ├── expandable (2)
+23:20:33 INFO  PackageTree               :     │   │   │       ├── radiobutton (1)
+23:20:33 INFO  PackageTree               :     │   │   │       ├── textview (1)
+23:20:33 INFO  PackageTree               :     │   │   │       ├── canvas (1)
+23:20:33 INFO  PackageTree               :     │   │   │       ├── color (1)
+23:20:33 INFO  PackageTree               :     │   │   │       └── checkbox (1)
+23:20:33 INFO  PackageTree               :     │   │   └── gson (98)
+23:20:33 INFO  PackageTree               :     │   │       ├── annotations (4)
+23:20:33 INFO  PackageTree               :     │   │       ├── internal (5)
+23:20:33 INFO  PackageTree               :     │   │       ├── stream (5)
+23:20:33 INFO  PackageTree               :     │   │       └── reflect (1)
+23:20:33 INFO  PackageTree               :     │   ├── github
+23:20:33 INFO  PackageTree               :     │   │   └── mangstadt
+23:20:33 INFO  PackageTree               :     │   │       └── vinnie (4)
+23:20:33 INFO  PackageTree               :     │   │           ├── codec (3)
+23:20:33 INFO  PackageTree               :     │   │           ├── io (14)
+23:20:33 INFO  PackageTree               :     │   │           └── validate (3)
+23:20:33 INFO  PackageTree               :     │   ├── sun
+23:20:33 INFO  PackageTree               :     │   │   └── mail
+23:20:33 INFO  PackageTree               :     │   │       ├── imap (11)
+23:20:33 INFO  PackageTree               :     │   │       │   └── protocol (18)
+23:20:33 INFO  PackageTree               :     │   │       ├── iap (16)
+23:20:33 INFO  PackageTree               :     │   │       ├── pop3 (5)
+23:20:33 INFO  PackageTree               :     │   │       ├── smtp (4)
+23:20:33 INFO  PackageTree               :     │   │       └── util (8)
+23:20:33 INFO  PackageTree               :     │   └── etebase
+23:20:33 INFO  PackageTree               :     │       └── client (28)
+23:20:33 INFO  PackageTree               :     │           ├── exceptions (15)
+23:20:33 INFO  PackageTree               :     │           └── http_bridge (1)
+23:20:33 INFO  PackageTree               :     ├── at
+23:20:33 INFO  PackageTree               :     │   └── bitfire
+23:20:33 INFO  PackageTree               :     │       ├── cert4android (25)
+23:20:33 INFO  PackageTree               :     │       │   └── databinding (3)
+23:20:33 INFO  PackageTree               :     │       ├── vcard4android (25)
+23:20:33 INFO  PackageTree               :     │       └── ical4android (49)
+23:20:33 INFO  PackageTree               :     │           └── util (4)
+23:20:33 INFO  PackageTree               :     ├── j$
+23:20:33 INFO  PackageTree               :     │   ├── util (54)
+23:20:33 INFO  PackageTree               :     │   │   ├── stream (303)
+23:20:33 INFO  PackageTree               :     │   │   ├── function (36)
+23:20:33 INFO  PackageTree               :     │   │   └── concurrent (30)
+23:20:33 INFO  PackageTree               :     │   ├── time (18)
+23:20:33 INFO  PackageTree               :     │   │   ├── format (31)
+23:20:33 INFO  PackageTree               :     │   │   ├── h (9)
+23:20:33 INFO  PackageTree               :     │   │   ├── temporal (22)
+23:20:33 INFO  PackageTree               :     │   │   └── zone (8)
+23:20:33 INFO  PackageTree               :     │   └── lang (1)
+23:20:33 INFO  PackageTree               :     ├── ezvcard (10)
+23:20:33 INFO  PackageTree               :     │   ├── io (9)
+23:20:33 INFO  PackageTree               :     │   │   ├── scribe (63)
+23:20:33 INFO  PackageTree               :     │   │   ├── text (7)
+23:20:33 INFO  PackageTree               :     │   │   └── chain (5)
+23:20:33 INFO  PackageTree               :     │   ├── util (29)
+23:20:33 INFO  PackageTree               :     │   │   └── org
+23:20:33 INFO  PackageTree               :     │   │       └── apache
+23:20:33 INFO  PackageTree               :     │   │           └── commons
+23:20:33 INFO  PackageTree               :     │   │               └── codec
+23:20:33 INFO  PackageTree               :     │   │                   └── binary (3)
+23:20:33 INFO  PackageTree               :     │   ├── property (67)
+23:20:33 INFO  PackageTree               :     │   └── parameter (23)
+23:20:33 INFO  PackageTree               :     ├── org
+23:20:33 INFO  PackageTree               :     │   ├── apache
+23:20:33 INFO  PackageTree               :     │   │   └── commons
+23:20:33 INFO  PackageTree               :     │   │       ├── collections4 (13)
+23:20:33 INFO  PackageTree               :     │   │       │   ├── set (3)
+23:20:33 INFO  PackageTree               :     │   │       │   ├── iterators (10)
+23:20:33 INFO  PackageTree               :     │   │       │   └── collection (1)
+23:20:33 INFO  PackageTree               :     │   │       ├── lang3 (9)
+23:20:33 INFO  PackageTree               :     │   │       │   ├── builder (17)
+23:20:33 INFO  PackageTree               :     │   │       │   ├── time (44)
+23:20:33 INFO  PackageTree               :     │   │       │   ├── text (1)
+23:20:33 INFO  PackageTree               :     │   │       │   │   └── translate (13)
+23:20:33 INFO  PackageTree               :     │   │       │   ├── math (1)
+23:20:33 INFO  PackageTree               :     │   │       │   ├── tuple (2)
+23:20:33 INFO  PackageTree               :     │   │       │   └── exception (1)
+23:20:33 INFO  PackageTree               :     │   │       ├── codec (7)
+23:20:33 INFO  PackageTree               :     │   │       │   ├── binary (4)
+23:20:33 INFO  PackageTree               :     │   │       │   └── net (2)
+23:20:33 INFO  PackageTree               :     │   │       ├── io (1)
+23:20:33 INFO  PackageTree               :     │   │       │   └── output (2)
+23:20:33 INFO  PackageTree               :     │   │       └── text (1)
+23:20:33 INFO  PackageTree               :     │   ├── spongycastle
+23:20:33 INFO  PackageTree               :     │   │   ├── asn1 (78)
+23:20:33 INFO  PackageTree               :     │   │   │   ├── x509 (4)
+23:20:33 INFO  PackageTree               :     │   │   │   ├── x9 (37)
+23:20:33 INFO  PackageTree               :     │   │   │   ├── sec (36)
+23:20:33 INFO  PackageTree               :     │   │   │   ├── pkcs (5)
+23:20:33 INFO  PackageTree               :     │   │   │   ├── teletrust (16)
+23:20:33 INFO  PackageTree               :     │   │   │   ├── oiw (2)
+23:20:33 INFO  PackageTree               :     │   │   │   └── anssi (3)
+23:20:33 INFO  PackageTree               :     │   │   ├── crypto (15)
+23:20:33 INFO  PackageTree               :     │   │   │   ├── ec (32)
+23:20:33 INFO  PackageTree               :     │   │   │   ├── engines (4)
+23:20:33 INFO  PackageTree               :     │   │   │   ├── util (4)
+23:20:33 INFO  PackageTree               :     │   │   │   ├── params (25)
+23:20:33 INFO  PackageTree               :     │   │   │   ├── digests (3)
+23:20:33 INFO  PackageTree               :     │   │   │   ├── macs (1)
+23:20:33 INFO  PackageTree               :     │   │   │   ├── paddings (3)
+23:20:33 INFO  PackageTree               :     │   │   │   ├── modes (1)
+23:20:33 INFO  PackageTree               :     │   │   │   ├── generators (3)
+23:20:33 INFO  PackageTree               :     │   │   │   └── encodings (1)
+23:20:33 INFO  PackageTree               :     │   │   ├── math (1)
+23:20:33 INFO  PackageTree               :     │   │   │   ├── ec (19)
+23:20:33 INFO  PackageTree               :     │   │   │   │   ├── custom
+23:20:33 INFO  PackageTree               :     │   │   │   │   │   ├── sec (100)
+23:20:33 INFO  PackageTree               :     │   │   │   │   │   └── djb (4)
+23:20:33 INFO  PackageTree               :     │   │   │   │   └── endo (3)
+23:20:33 INFO  PackageTree               :     │   │   │   ├── field (7)
+23:20:33 INFO  PackageTree               :     │   │   │   └── raw (13)
+23:20:33 INFO  PackageTree               :     │   │   └── util (8)
+23:20:33 INFO  PackageTree               :     │   │       ├── encoders (5)
+23:20:33 INFO  PackageTree               :     │   │       └── io (1)
+23:20:33 INFO  PackageTree               :     │   ├── acra (4)
+23:20:33 INFO  PackageTree               :     │   │   ├── util (16)
+23:20:33 INFO  PackageTree               :     │   │   ├── scheduler (4)
+23:20:33 INFO  PackageTree               :     │   │   ├── attachment (3)
+23:20:33 INFO  PackageTree               :     │   │   ├── collector (24)
+23:20:33 INFO  PackageTree               :     │   │   ├── builder (4)
+23:20:33 INFO  PackageTree               :     │   │   ├── security (10)
+23:20:33 INFO  PackageTree               :     │   │   ├── file (14)
+23:20:33 INFO  PackageTree               :     │   │   ├── config (22)
+23:20:33 INFO  PackageTree               :     │   │   ├── data (5)
+23:20:33 INFO  PackageTree               :     │   │   ├── legacy (3)
+23:20:33 INFO  PackageTree               :     │   │   ├── sender (13)
+23:20:33 INFO  PackageTree               :     │   │   ├── dialog (2)
+23:20:33 INFO  PackageTree               :     │   │   ├── startup (4)
+23:20:33 INFO  PackageTree               :     │   │   ├── annotation (3)
+23:20:33 INFO  PackageTree               :     │   │   ├── reporter (1)
+23:20:33 INFO  PackageTree               :     │   │   ├── plugins (4)
+23:20:33 INFO  PackageTree               :     │   │   ├── http (4)
+23:20:33 INFO  PackageTree               :     │   │   ├── collections (10)
+23:20:33 INFO  PackageTree               :     │   │   ├── log (2)
+23:20:33 INFO  PackageTree               :     │   │   ├── interaction (3)
+23:20:33 INFO  PackageTree               :     │   │   └── prefs (1)
+23:20:33 INFO  PackageTree               :     │   ├── conscrypt (271)
+23:20:33 INFO  PackageTree               :     │   │   ├── ct (19)
+23:20:33 INFO  PackageTree               :     │   │   └── io (1)
+23:20:33 INFO  PackageTree               :     │   ├── slf4j (4)
+23:20:33 INFO  PackageTree               :     │   │   ├── helpers (10)
+23:20:33 INFO  PackageTree               :     │   │   ├── event (4)
+23:20:33 INFO  PackageTree               :     │   │   └── impl (3)
+23:20:33 INFO  PackageTree               :     │   ├── jetbrains
+23:20:33 INFO  PackageTree               :     │   │   └── anko (8)
+23:20:33 INFO  PackageTree               :     │   └── dmfs
+23:20:33 INFO  PackageTree               :     │       └── tasks
+23:20:33 INFO  PackageTree               :     │           └── contract (6)
+23:20:33 INFO  PackageTree               :     ├── androidx
+23:20:33 INFO  PackageTree               :     │   ├── fragment
+23:20:33 INFO  PackageTree               :     │   │   └── app (83)
+23:20:33 INFO  PackageTree               :     │   ├── core
+23:20:33 INFO  PackageTree               :     │   │   ├── content (5)
+23:20:33 INFO  PackageTree               :     │   │   │   ├── res (18)
+23:20:33 INFO  PackageTree               :     │   │   │   └── pm (1)
+23:20:33 INFO  PackageTree               :     │   │   ├── provider (15)
+23:20:33 INFO  PackageTree               :     │   │   ├── app (42)
+23:20:33 INFO  PackageTree               :     │   │   ├── view (55)
+23:20:33 INFO  PackageTree               :     │   │   │   └── accessibility (19)
+23:20:33 INFO  PackageTree               :     │   │   ├── graphics (16)
+23:20:33 INFO  PackageTree               :     │   │   │   └── drawable (8)
+23:20:33 INFO  PackageTree               :     │   │   ├── widget (20)
+23:20:33 INFO  PackageTree               :     │   │   ├── util (9)
+23:20:33 INFO  PackageTree               :     │   │   ├── internal
+23:20:33 INFO  PackageTree               :     │   │   │   └── view (3)
+23:20:33 INFO  PackageTree               :     │   │   ├── text (16)
+23:20:33 INFO  PackageTree               :     │   │   ├── os (4)
+23:20:33 INFO  PackageTree               :     │   │   └── math (1)
+23:20:33 INFO  PackageTree               :     │   ├── appcompat
+23:20:33 INFO  PackageTree               :     │   │   ├── widget (166)
+23:20:33 INFO  PackageTree               :     │   │   ├── graphics
+23:20:33 INFO  PackageTree               :     │   │   │   └── drawable (15)
+23:20:33 INFO  PackageTree               :     │   │   ├── app (76)
+23:20:33 INFO  PackageTree               :     │   │   ├── view (14)
+23:20:33 INFO  PackageTree               :     │   │   │   └── menu (43)
+23:20:33 INFO  PackageTree               :     │   │   ├── content
+23:20:33 INFO  PackageTree               :     │   │   │   └── res (2)
+23:20:33 INFO  PackageTree               :     │   │   └── text (1)
+23:20:33 INFO  PackageTree               :     │   ├── recyclerview
+23:20:33 INFO  PackageTree               :     │   │   └── widget (119)
+23:20:33 INFO  PackageTree               :     │   ├── transition (73)
+23:20:33 INFO  PackageTree               :     │   ├── cursoradapter
+23:20:33 INFO  PackageTree               :     │   │   └── widget (6)
+23:20:33 INFO  PackageTree               :     │   ├── databinding (20)
+23:20:33 INFO  PackageTree               :     │   │   ├── adapters (3)
+23:20:33 INFO  PackageTree               :     │   │   └── library
+23:20:33 INFO  PackageTree               :     │   │       └── baseAdapters (3)
+23:20:33 INFO  PackageTree               :     │   ├── preference (74)
+23:20:33 INFO  PackageTree               :     │   │   └── internal (2)
+23:20:33 INFO  PackageTree               :     │   ├── lifecycle (63)
+23:20:33 INFO  PackageTree               :     │   ├── coordinatorlayout
+23:20:33 INFO  PackageTree               :     │   │   └── widget (13)
+23:20:33 INFO  PackageTree               :     │   ├── loader
+23:20:33 INFO  PackageTree               :     │   │   ├── app (7)
+23:20:33 INFO  PackageTree               :     │   │   └── content (13)
+23:20:33 INFO  PackageTree               :     │   ├── savedstate (8)
+23:20:33 INFO  PackageTree               :     │   ├── vectordrawable
+23:20:33 INFO  PackageTree               :     │   │   └── graphics
+23:20:33 INFO  PackageTree               :     │   │       └── drawable (20)
+23:20:33 INFO  PackageTree               :     │   ├── customview
+23:20:33 INFO  PackageTree               :     │   │   ├── widget (12)
+23:20:33 INFO  PackageTree               :     │   │   └── view (3)
+23:20:33 INFO  PackageTree               :     │   ├── arch
+23:20:33 INFO  PackageTree               :     │   │   └── core
+23:20:33 INFO  PackageTree               :     │   │       ├── internal (8)
+23:20:33 INFO  PackageTree               :     │   │       └── executor (4)
+23:20:33 INFO  PackageTree               :     │   ├── cardview
+23:20:33 INFO  PackageTree               :     │   │   └── widget (12)
+23:20:33 INFO  PackageTree               :     │   ├── annotation (1)
+23:20:33 INFO  PackageTree               :     │   ├── activity (12)
+23:20:33 INFO  PackageTree               :     │   ├── versionedparcelable (6)
+23:20:33 INFO  PackageTree               :     │   ├── collection (15)
+23:20:33 INFO  PackageTree               :     │   ├── viewpager
+23:20:33 INFO  PackageTree               :     │   │   └── widget (17)
+23:20:33 INFO  PackageTree               :     │   ├── viewpager2
+23:20:33 INFO  PackageTree               :     │   │   └── adapter (6)
+23:20:33 INFO  PackageTree               :     │   ├── drawerlayout
+23:20:33 INFO  PackageTree               :     │   │   └── widget (10)
+23:20:33 INFO  PackageTree               :     │   └── interpolator
+23:20:33 INFO  PackageTree               :     │       └── view
+23:20:33 INFO  PackageTree               :     │           └── animation (4)
+23:20:33 INFO  PackageTree               :     ├── net
+23:20:33 INFO  PackageTree               :     │   ├── fortuna
+23:20:33 INFO  PackageTree               :     │   │   └── ical4j
+23:20:33 INFO  PackageTree               :     │   │       ├── model (68)
+23:20:33 INFO  PackageTree               :     │   │       │   ├── property (155)
+23:20:33 INFO  PackageTree               :     │   │       │   ├── parameter (87)
+23:20:33 INFO  PackageTree               :     │   │       │   └── component (40)
+23:20:33 INFO  PackageTree               :     │   │       ├── agent (6)
+23:20:33 INFO  PackageTree               :     │   │       ├── filter (4)
+23:20:33 INFO  PackageTree               :     │   │       ├── transform (12)
+23:20:33 INFO  PackageTree               :     │   │       │   ├── rfc5545 (13)
+23:20:33 INFO  PackageTree               :     │   │       │   ├── command (5)
+23:20:33 INFO  PackageTree               :     │   │       │   └── recurrence (26)
+23:20:33 INFO  PackageTree               :     │   │       ├── util (23)
+23:20:33 INFO  PackageTree               :     │   │       ├── data (25)
+23:20:33 INFO  PackageTree               :     │   │       ├── validate (20)
+23:20:33 INFO  PackageTree               :     │   │       │   └── component (3)
+23:20:33 INFO  PackageTree               :     │   │       └── groovy (2)
+23:20:33 INFO  PackageTree               :     │   ├── i2p
+23:20:33 INFO  PackageTree               :     │   │   └── android
+23:20:33 INFO  PackageTree               :     │   │       └── ext
+23:20:33 INFO  PackageTree               :     │   │           └── floatingactionbutton (3)
+23:20:33 INFO  PackageTree               :     │   └── cachapa
+23:20:33 INFO  PackageTree               :     │       └── expandablelayout (4)
+23:20:33 INFO  PackageTree               :     │           └── util (2)
+23:20:33 INFO  PackageTree               :     ├── okhttp3 (77)
+23:20:33 INFO  PackageTree               :     │   ├── internal (4)
+23:20:33 INFO  PackageTree               :     │   │   ├── tls (6)
+23:20:33 INFO  PackageTree               :     │   │   ├── platform (19)
+23:20:33 INFO  PackageTree               :     │   │   │   └── android (23)
+23:20:33 INFO  PackageTree               :     │   │   ├── connection (21)
+23:20:33 INFO  PackageTree               :     │   │   ├── http2 (43)
+23:20:33 INFO  PackageTree               :     │   │   ├── concurrent (9)
+23:20:33 INFO  PackageTree               :     │   │   ├── cache (16)
+23:20:33 INFO  PackageTree               :     │   │   ├── http1 (8)
+23:20:33 INFO  PackageTree               :     │   │   ├── io (2)
+23:20:33 INFO  PackageTree               :     │   │   ├── http (14)
+23:20:33 INFO  PackageTree               :     │   │   ├── proxy (1)
+23:20:33 INFO  PackageTree               :     │   │   ├── publicsuffix (2)
+23:20:33 INFO  PackageTree               :     │   │   └── authenticator (1)
+23:20:33 INFO  PackageTree               :     │   └── logging (4)
+23:20:33 INFO  PackageTree               :     ├── okio (36)
+23:20:33 INFO  PackageTree               :     │   └── internal (3)
+23:20:33 INFO  PackageTree               :     ├── yuku
+23:20:33 INFO  PackageTree               :     │   └── ambilwarna (10)
+23:20:33 INFO  PackageTree               :     │       └── widget (1)
+23:20:33 INFO  PackageTree               :     ├── io
+23:20:33 INFO  PackageTree               :     │   └── requery (13)
+23:20:33 INFO  PackageTree               :     │       ├── query (40)
+23:20:33 INFO  PackageTree               :     │       │   ├── element (21)
+23:20:33 INFO  PackageTree               :     │       │   └── function (8)
+23:20:33 INFO  PackageTree               :     │       ├── sql (112)
+23:20:33 INFO  PackageTree               :     │       │   ├── type (24)
+23:20:33 INFO  PackageTree               :     │       │   ├── gen (25)
+23:20:33 INFO  PackageTree               :     │       │   └── platform (41)
+23:20:33 INFO  PackageTree               :     │       ├── meta (29)
+23:20:33 INFO  PackageTree               :     │       ├── proxy (29)
+23:20:33 INFO  PackageTree               :     │       ├── android (3)
+23:20:33 INFO  PackageTree               :     │       │   └── sqlite (23)
+23:20:33 INFO  PackageTree               :     │       ├── cache (4)
+23:20:33 INFO  PackageTree               :     │       ├── util (8)
+23:20:33 INFO  PackageTree               :     │       │   └── function (4)
+23:20:33 INFO  PackageTree               :     │       ├── converter (10)
+23:20:33 INFO  PackageTree               :     │       └── kotlin (2)
+23:20:33 INFO  PackageTree               :     ├── kotlin (27)
+23:20:33 INFO  PackageTree               :     │   ├── collections (46)
+23:20:33 INFO  PackageTree               :     │   │   └── unsigned (2)
+23:20:33 INFO  PackageTree               :     │   ├── text (30)
+23:20:33 INFO  PackageTree               :     │   ├── internal (4)
+23:20:33 INFO  PackageTree               :     │   │   ├── jdk8 (1)
+23:20:33 INFO  PackageTree               :     │   │   └── jdk7 (1)
+23:20:33 INFO  PackageTree               :     │   ├── jvm (2)
+23:20:33 INFO  PackageTree               :     │   │   ├── internal (23)
+23:20:33 INFO  PackageTree               :     │   │   │   └── markers (1)
+23:20:33 INFO  PackageTree               :     │   │   └── functions (23)
+23:20:33 INFO  PackageTree               :     │   ├── io (17)
+23:20:33 INFO  PackageTree               :     │   ├── reflect (6)
+23:20:33 INFO  PackageTree               :     │   ├── coroutines (12)
+23:20:33 INFO  PackageTree               :     │   ├── ranges (7)
+23:20:33 INFO  PackageTree               :     │   ├── comparisons (3)
+23:20:33 INFO  PackageTree               :     │   ├── sequences (12)
+23:20:33 INFO  PackageTree               :     │   ├── concurrent (2)
+23:20:33 INFO  PackageTree               :     │   └── jdk7 (1)
+23:20:33 INFO  PackageTree               :     ├── javax
+23:20:33 INFO  PackageTree               :     │   └── mail (14)
+23:20:33 INFO  PackageTree               :     │       ├── internet (15)
+23:20:33 INFO  PackageTree               :     │       └── event (5)
+23:20:33 INFO  PackageTree               :     ├── tourguide
+23:20:33 INFO  PackageTree               :     │   └── tourguide (18)
+23:20:33 INFO  PackageTree               :     ├── kotlinx
+23:20:33 INFO  PackageTree               :     │   └── coroutines (6)
+23:20:33 INFO  PackageTree               :     │       └── android (1)
+23:20:33 INFO  PackageTree               :     └── android
+23:20:33 INFO  PackageTree               :         └── support
+23:20:33 INFO  PackageTree               :             └── v4
+23:20:33 INFO  PackageTree               :                 ├── app (4)
+23:20:33 INFO  PackageTree               :                 └── graphics
+23:20:33 INFO  PackageTree               :                     └── drawable (1)
+23:20:33 INFO  Profile                   : 
+23:20:33 INFO  AppProfile                : - generated app package tree (in 66 ms)
+23:20:33 INFO  AppProfile                : 
+23:20:33 DEBUG HashTree                  : Generate hash tree..
+23:20:34 DEBUG HashTree                  :     - generated 301 package hashes.
+23:20:34 DEBUG HashTree                  :     - generated 5826 clazz hashes.
+23:20:34 DEBUG HashTree                  :     - generated 38786 method hashes.
+23:20:34 DEBUG HashTree                  :     => Library Hash: c56ba0f72bfce31f842bd99113d728f8
+23:20:34 INFO  AppProfile                : - generated app hash trees (in 1 sec, 201 ms)
+23:20:34 INFO  AppProfile                : 
+23:20:34 INFO  LibraryIdentifier         : = Scan for library root packages (heuristic) =
+23:20:34 INFO  LibraryIdentifier         :     - Found lib root package org.acra  (ACRA)
+23:20:34 INFO  LibraryIdentifier         :     - Found lib root package com.google.gson  (Gson)
+23:20:34 INFO  LibraryIdentifier         :     - Found lib root package okhttp3  (OkHttp)
+23:20:34 INFO  LibraryIdentifier         :     - Found lib root package androidx.annotation  (androidx.annotation::annotation)
+23:20:34 INFO  LibraryIdentifier         :     - Found lib root package androidx.appcompat  (androidx.appcompat::appcompat)
+23:20:34 INFO  LibraryIdentifier         :     - Found lib root package androidx.arch.core  (androidx.arch.core::core-common)
+23:20:34 INFO  LibraryIdentifier         :     - Found lib root package androidx.arch.core.executor  (androidx.arch.core::core-runtime)
+23:20:34 INFO  LibraryIdentifier         :     - Found lib root package androidx.cardview.widget  (androidx.cardview::cardview)
+23:20:34 INFO  LibraryIdentifier         :     - Found lib root package androidx.collection  (androidx.collection::collection)
+23:20:34 INFO  LibraryIdentifier         :     - Found lib root package androidx.collection  (androidx.collection::collection-ktx)
+23:20:34 INFO  LibraryIdentifier         :     - Found lib root package androidx.coordinatorlayout.widget  (androidx.coordinatorlayout::coordinatorlayout)
+23:20:34 INFO  LibraryIdentifier         :     - Found lib root package androidx.core  (androidx.core::core)
+23:20:34 INFO  LibraryIdentifier         :     - Found lib root package androidx  (androidx.core::core-ktx)
+23:20:34 INFO  LibraryIdentifier         :     - Found lib root package androidx.cursoradapter.widget  (androidx.cursoradapter::cursoradapter)
+23:20:34 INFO  LibraryIdentifier         :     - Found lib root package androidx.customview  (androidx.customview::customview)
+23:20:34 INFO  LibraryIdentifier         :     - Found lib root package androidx.databinding  (androidx.databinding::databinding-adapters)
+23:20:34 INFO  LibraryIdentifier         :     - Found lib root package androidx.databinding  (androidx.databinding::databinding-common)
+23:20:34 INFO  LibraryIdentifier         :     - Found lib root package androidx.databinding  (androidx.databinding::databinding-runtime)
+23:20:34 INFO  LibraryIdentifier         :     - Found lib root package androidx.drawerlayout.widget  (androidx.drawerlayout::drawerlayout)
+23:20:34 INFO  LibraryIdentifier         :     - Found lib root package androidx.fragment.app  (androidx.fragment::fragment)
+23:20:34 INFO  LibraryIdentifier         :     - Found lib root package androidx.fragment.app  (androidx.fragment::fragment-ktx)
+23:20:34 INFO  LibraryIdentifier         :     - Found lib root package androidx.interpolator.view.animation  (androidx.interpolator::interpolator)
+23:20:34 INFO  LibraryIdentifier         :     - Found lib root package androidx.lifecycle  (androidx.lifecycle::lifecycle-common)
+23:20:34 INFO  LibraryIdentifier         :     - Found lib root package androidx.lifecycle  (androidx.lifecycle::lifecycle-common-java8)
+23:20:34 INFO  LibraryIdentifier         :     - Found lib root package androidx.lifecycle  (androidx.lifecycle::lifecycle-compiler)
+23:20:34 INFO  LibraryIdentifier         :     - Found lib root package androidx.lifecycle  (androidx.lifecycle::lifecycle-extensions)
+23:20:34 INFO  LibraryIdentifier         :     - Found lib root package androidx.lifecycle  (androidx.lifecycle::lifecycle-livedata)
+23:20:34 INFO  LibraryIdentifier         :     - Found lib root package androidx.lifecycle  (androidx.lifecycle::lifecycle-livedata-core)
+23:20:34 INFO  LibraryIdentifier         :     - Found lib root package androidx.lifecycle  (androidx.lifecycle::lifecycle-process)
+23:20:34 INFO  LibraryIdentifier         :     - Found lib root package androidx.lifecycle  (androidx.lifecycle::lifecycle-reactivestreams)
+23:20:34 INFO  LibraryIdentifier         :     - Found lib root package androidx.lifecycle  (androidx.lifecycle::lifecycle-reactivestreams-ktx)
+23:20:34 INFO  LibraryIdentifier         :     - Found lib root package androidx.lifecycle  (androidx.lifecycle::lifecycle-runtime)
+23:20:34 INFO  LibraryIdentifier         :     - Found lib root package androidx.lifecycle  (androidx.lifecycle::lifecycle-service)
+23:20:34 INFO  LibraryIdentifier         :     - Found lib root package androidx.lifecycle  (androidx.lifecycle::lifecycle-viewmodel)
+23:20:34 INFO  LibraryIdentifier         :     - Found lib root package androidx.lifecycle  (androidx.lifecycle::lifecycle-viewmodel-ktx)
+23:20:34 INFO  LibraryIdentifier         :     - Found lib root package androidx.loader  (androidx.loader::loader)
+23:20:34 INFO  LibraryIdentifier         :     - Found lib root package androidx.preference  (androidx.preference::preference)
+23:20:34 INFO  LibraryIdentifier         :     - Found lib root package androidx.preference  (androidx.preference::preference-ktx)
+23:20:34 INFO  LibraryIdentifier         :     - Found lib root package androidx.recyclerview.widget  (androidx.recyclerview::recyclerview)
+23:20:34 INFO  LibraryIdentifier         :     - Found lib root package androidx.transition  (androidx.transition::transition)
+23:20:34 INFO  LibraryIdentifier         :     - Found lib root package androidx.vectordrawable.graphics.drawable  (androidx.vectordrawable::vectordrawable)
+23:20:34 INFO  LibraryIdentifier         :     - Found lib root package androidx.vectordrawable.graphics.drawable  (androidx.vectordrawable::vectordrawable-animated)
+23:20:34 INFO  LibraryIdentifier         :     - Found lib root package androidx.versionedparcelable  (androidx.versionedparcelable::versionedparcelable)
+23:20:34 INFO  LibraryIdentifier         :     - Found lib root package androidx.viewpager.widget  (androidx.viewpager::viewpager)
+23:20:34 INFO  LibraryIdentifier         :     - Found lib root package android.support.v4  (com.android.support::customview)
+23:20:34 INFO  LibraryIdentifier         :     - Found lib root package android.support.v4  (com.android.support::loader)
+23:20:34 INFO  LibraryIdentifier         :     - Found lib root package android.support.v4  (com.android.support::support-compat)
+23:20:34 INFO  LibraryIdentifier         :     - Found lib root package android.support.v4  (com.android.support::support-core-ui)
+23:20:34 INFO  LibraryIdentifier         :     - Found lib root package android.support.v4  (com.android.support::support-core-utils)
+23:20:34 INFO  LibraryIdentifier         :     - Found lib root package android.support.v4.app  (com.android.support::support-fragment)
+23:20:34 INFO  LibraryIdentifier         :     - Found lib root package android.support.v4  (com.android.support::support-v4)
+23:20:34 INFO  LibraryIdentifier         :     - Found lib root package androidx.versionedparcelable  (com.android.support::versionedparcelable)
+23:20:34 INFO  LibraryIdentifier         :     - Found lib root package com.google.android.material  (com.google.android.material::material)
+23:20:34 INFO  LibraryIdentifier         :     - Found lib root package okio  (okio)
+23:20:34 INFO  LibraryIdentifier         : 
+23:20:34 INFO  LibraryIdentifier         : = Match profiles =
+23:21:14 INFO  LibraryIdentifier         :     >> profile matching done (39 sec, 975 ms)
+23:21:14 INFO  LibraryIdentifier         : 
+23:21:14 INFO  LibraryIdentifier         : == Report ==
+23:21:14 INFO  LibraryIdentifier         : - Full library matches:
+23:21:14 INFO  ProfileMatch              :                 name: com.google.firebase::firebase-ml-vision-image-label-model
+23:21:14 INFO  ProfileMatch              :             category: Android
+23:21:14 INFO  ProfileMatch              :              version: 20.0.0  [OLD VERSION]
+23:21:14 INFO  ProfileMatch              :         release-date:  --
+23:21:14 INFO  ProfileMatch              :     lib root package: "com.google.firebase.ml.vision.imagelabel"  (in app: "kotlin.internal.jdk8")
+23:21:14 INFO  ProfileMatch              : 
+23:21:14 INFO  ProfileMatch              :                 name: com.google.firebase::firebase-ml-vision-image-label-model
+23:21:14 INFO  ProfileMatch              :             category: Android
+23:21:14 INFO  ProfileMatch              :              version: 20.0.1  [OLD VERSION]
+23:21:14 INFO  ProfileMatch              :         release-date:  --
+23:21:14 INFO  ProfileMatch              :     lib root package: "com.google.firebase.ml.vision.imagelabel"  (in app: "kotlin.internal.jdk8")
+23:21:14 INFO  ProfileMatch              : 
+23:21:14 INFO  ProfileMatch              :                 name: com.google.firebase::firebase-ml-vision-image-label-model
+23:21:14 INFO  ProfileMatch              :             category: Android
+23:21:14 INFO  ProfileMatch              :              version: 20.0.2
+23:21:14 INFO  ProfileMatch              :         release-date:  --
+23:21:14 INFO  ProfileMatch              :     lib root package: "com.google.firebase.ml.vision.imagelabel"  (in app: "kotlin.internal.jdk8")
+23:21:14 INFO  ProfileMatch              : 
+23:21:14 INFO  ProfileMatch              :                 name: com.android.support::interpolator
+23:21:14 INFO  ProfileMatch              :             category: Android
+23:21:14 INFO  ProfileMatch              :              version: 28.0.0
+23:21:14 INFO  ProfileMatch              :         release-date:  --
+23:21:14 INFO  ProfileMatch              :     lib root package: "android.support.v4.view.animation"  (in app: "androidx.interpolator.view.animation")
+23:21:14 INFO  ProfileMatch              : 
+23:21:14 INFO  ProfileMatch              :                 name: androidx.interpolator::interpolator
+23:21:14 INFO  ProfileMatch              :             category: Android
+23:21:14 INFO  ProfileMatch              :              version: 1.0.0
+23:21:14 INFO  ProfileMatch              :         release-date:  --
+23:21:14 INFO  ProfileMatch              :     lib root package: "androidx.interpolator.view.animation"
+23:21:14 INFO  ProfileMatch              : 
+23:21:14 INFO  ProfileMatch              :                 name: Facebook
+23:21:14 INFO  ProfileMatch              :             category: SocialMedia
+23:21:14 INFO  ProfileMatch              :              version: 4.27.0  [OLD VERSION]
+23:21:14 INFO  ProfileMatch              :         release-date: 26.09.2017
+23:21:14 INFO  ProfileMatch              :     lib root package: "com.facebook.all"  (in app: "kotlin.internal.jdk8")
+23:21:14 INFO  ProfileMatch              : 
+23:21:14 INFO  ProfileMatch              :                 name: Facebook
+23:21:14 INFO  ProfileMatch              :             category: SocialMedia
+23:21:14 INFO  ProfileMatch              :              version: 4.28.0  [OLD VERSION]
+23:21:14 INFO  ProfileMatch              :         release-date: 07.11.2017
+23:21:14 INFO  ProfileMatch              :     lib root package: "com.facebook.all"  (in app: "kotlin.internal.jdk8")
+23:21:14 INFO  ProfileMatch              : 
+23:21:14 INFO  ProfileMatch              :                 name: Facebook
+23:21:14 INFO  ProfileMatch              :             category: SocialMedia
+23:21:14 INFO  ProfileMatch              :              version: 4.29.0  [OLD VERSION]
+23:21:14 INFO  ProfileMatch              :         release-date: 05.12.2017
+23:21:14 INFO  ProfileMatch              :     lib root package: "com.facebook.all"  (in app: "kotlin.internal.jdk8")
+23:21:14 INFO  ProfileMatch              : 
+23:21:14 INFO  ProfileMatch              :                 name: Facebook
+23:21:14 INFO  ProfileMatch              :             category: SocialMedia
+23:21:14 INFO  ProfileMatch              :              version: 4.30.0  [OLD VERSION]
+23:21:14 INFO  ProfileMatch              :         release-date: 24.01.2018
+23:21:14 INFO  ProfileMatch              :     lib root package: "com.facebook.all"  (in app: "kotlin.internal.jdk8")
+23:21:14 INFO  ProfileMatch              : 
+23:21:14 INFO  ProfileMatch              :                 name: Facebook
+23:21:14 INFO  ProfileMatch              :             category: SocialMedia
+23:21:14 INFO  ProfileMatch              :              version: 4.31.0  [OLD VERSION]
+23:21:14 INFO  ProfileMatch              :         release-date: 28.02.2018
+23:21:14 INFO  ProfileMatch              :     lib root package: "com.facebook.all"  (in app: "kotlin.internal.jdk8")
+23:21:14 INFO  ProfileMatch              : 
+23:21:14 INFO  ProfileMatch              :                 name: Facebook
+23:21:14 INFO  ProfileMatch              :             category: SocialMedia
+23:21:14 INFO  ProfileMatch              :              version: 4.32.0  [OLD VERSION]
+23:21:14 INFO  ProfileMatch              :         release-date: 11.04.2018
+23:21:14 INFO  ProfileMatch              :     lib root package: "com.facebook.all"  (in app: "kotlin.internal.jdk8")
+23:21:14 INFO  ProfileMatch              : 
+23:21:14 INFO  ProfileMatch              :                 name: Facebook
+23:21:14 INFO  ProfileMatch              :             category: SocialMedia
+23:21:14 INFO  ProfileMatch              :              version: 4.33.0  [OLD VERSION]
+23:21:14 INFO  ProfileMatch              :         release-date: 01.05.2018
+23:21:14 INFO  ProfileMatch              :     lib root package: "com.facebook.all"  (in app: "kotlin.internal.jdk8")
+23:21:14 INFO  ProfileMatch              : 
+23:21:14 INFO  ProfileMatch              :                 name: Facebook
+23:21:14 INFO  ProfileMatch              :             category: SocialMedia
+23:21:14 INFO  ProfileMatch              :              version: 4.34.0  [OLD VERSION]
+23:21:14 INFO  ProfileMatch              :         release-date: 19.06.2018
+23:21:14 INFO  ProfileMatch              :     lib root package: "com.facebook.all"  (in app: "kotlin.internal.jdk8")
+23:21:14 INFO  ProfileMatch              : 
+23:21:14 INFO  ProfileMatch              :                 name: Facebook
+23:21:14 INFO  ProfileMatch              :             category: SocialMedia
+23:21:14 INFO  ProfileMatch              :              version: 4.35.0  [OLD VERSION]
+23:21:14 INFO  ProfileMatch              :         release-date: 26.07.2018
+23:21:14 INFO  ProfileMatch              :     lib root package: "com.facebook.all"  (in app: "kotlin.internal.jdk8")
+23:21:14 INFO  ProfileMatch              : 
+23:21:14 INFO  ProfileMatch              :                 name: Facebook
+23:21:14 INFO  ProfileMatch              :             category: SocialMedia
+23:21:14 INFO  ProfileMatch              :              version: 4.36.0  [OLD VERSION]
+23:21:14 INFO  ProfileMatch              :         release-date: 29.08.2018
+23:21:14 INFO  ProfileMatch              :     lib root package: "com.facebook.all"  (in app: "kotlin.internal.jdk8")
+23:21:14 INFO  ProfileMatch              : 
+23:21:14 INFO  ProfileMatch              :                 name: Facebook
+23:21:14 INFO  ProfileMatch              :             category: SocialMedia
+23:21:14 INFO  ProfileMatch              :              version: 4.36.1  [OLD VERSION]
+23:21:14 INFO  ProfileMatch              :         release-date: 15.09.2018
+23:21:14 INFO  ProfileMatch              :     lib root package: "com.facebook.all"  (in app: "kotlin.internal.jdk8")
+23:21:14 INFO  ProfileMatch              : 
+23:21:14 INFO  ProfileMatch              :                 name: Facebook
+23:21:14 INFO  ProfileMatch              :             category: SocialMedia
+23:21:14 INFO  ProfileMatch              :              version: 4.37.0  [OLD VERSION]
+23:21:14 INFO  ProfileMatch              :         release-date: 27.09.2018
+23:21:14 INFO  ProfileMatch              :     lib root package: "com.facebook.all"  (in app: "kotlin.internal.jdk8")
+23:21:14 INFO  ProfileMatch              : 
+23:21:14 INFO  ProfileMatch              :                 name: Facebook
+23:21:14 INFO  ProfileMatch              :             category: SocialMedia
+23:21:14 INFO  ProfileMatch              :              version: 4.38.0  [OLD VERSION]
+23:21:14 INFO  ProfileMatch              :         release-date: 23.10.2018
+23:21:14 INFO  ProfileMatch              :     lib root package: "com.facebook.all"  (in app: "kotlin.internal.jdk8")
+23:21:14 INFO  ProfileMatch              : 
+23:21:14 INFO  ProfileMatch              :                 name: Facebook
+23:21:14 INFO  ProfileMatch              :             category: SocialMedia
+23:21:14 INFO  ProfileMatch              :              version: 4.38.1  [OLD VERSION]
+23:21:14 INFO  ProfileMatch              :         release-date: 31.10.2018
+23:21:14 INFO  ProfileMatch              :     lib root package: "com.facebook.all"  (in app: "kotlin.internal.jdk8")
+23:21:14 INFO  ProfileMatch              : 
+23:21:14 INFO  ProfileMatch              :                 name: Facebook
+23:21:14 INFO  ProfileMatch              :             category: SocialMedia
+23:21:14 INFO  ProfileMatch              :              version: 4.39.0  [OLD VERSION]
+23:21:14 INFO  ProfileMatch              :         release-date: 05.12.2018
+23:21:14 INFO  ProfileMatch              :     lib root package: "com.facebook.all"  (in app: "kotlin.internal.jdk8")
+23:21:14 INFO  ProfileMatch              : 
+23:21:14 INFO  ProfileMatch              :                 name: Facebook
+23:21:14 INFO  ProfileMatch              :             category: SocialMedia
+23:21:14 INFO  ProfileMatch              :              version: 4.40.0  [OLD VERSION]
+23:21:14 INFO  ProfileMatch              :         release-date: 22.01.2019
+23:21:14 INFO  ProfileMatch              :     lib root package: "com.facebook.all"  (in app: "kotlin.internal.jdk8")
+23:21:14 INFO  ProfileMatch              : 
+23:21:14 INFO  ProfileMatch              :                 name: Facebook
+23:21:14 INFO  ProfileMatch              :             category: SocialMedia
+23:21:14 INFO  ProfileMatch              :              version: 4.41.0  [OLD VERSION]
+23:21:14 INFO  ProfileMatch              :         release-date: 08.03.2019
+23:21:14 INFO  ProfileMatch              :     lib root package: "com.facebook.all"  (in app: "kotlin.internal.jdk8")
+23:21:14 INFO  ProfileMatch              : 
+23:21:14 INFO  ProfileMatch              :                 name: Facebook
+23:21:14 INFO  ProfileMatch              :             category: SocialMedia
+23:21:14 INFO  ProfileMatch              :              version: 4.42.0  [OLD VERSION]
+23:21:14 INFO  ProfileMatch              :         release-date: 08.04.2019
+23:21:14 INFO  ProfileMatch              :     lib root package: "com.facebook.all"  (in app: "kotlin.internal.jdk8")
+23:21:14 INFO  ProfileMatch              : 
+23:21:14 INFO  ProfileMatch              :                 name: Facebook
+23:21:14 INFO  ProfileMatch              :             category: SocialMedia
+23:21:14 INFO  ProfileMatch              :              version: 5.0.0  [OLD VERSION]
+23:21:14 INFO  ProfileMatch              :         release-date: 30.04.2019
+23:21:14 INFO  ProfileMatch              :     lib root package: "com.facebook.all"  (in app: "kotlin.internal.jdk8")
+23:21:14 INFO  ProfileMatch              : 
+23:21:14 INFO  ProfileMatch              :                 name: Facebook
+23:21:14 INFO  ProfileMatch              :             category: SocialMedia
+23:21:14 INFO  ProfileMatch              :              version: 5.0.1  [OLD VERSION]
+23:21:14 INFO  ProfileMatch              :         release-date: 17.05.2019
+23:21:14 INFO  ProfileMatch              :     lib root package: "com.facebook.all"  (in app: "kotlin.internal.jdk8")
+23:21:14 INFO  ProfileMatch              : 
+23:21:14 INFO  ProfileMatch              :                 name: Facebook
+23:21:14 INFO  ProfileMatch              :             category: SocialMedia
+23:21:14 INFO  ProfileMatch              :              version: 5.0.2  [OLD VERSION]
+23:21:14 INFO  ProfileMatch              :         release-date: 09.06.2019
+23:21:14 INFO  ProfileMatch              :     lib root package: "com.facebook.all"  (in app: "kotlin.internal.jdk8")
+23:21:14 INFO  ProfileMatch              : 
+23:21:14 INFO  ProfileMatch              :                 name: Facebook
+23:21:14 INFO  ProfileMatch              :             category: SocialMedia
+23:21:14 INFO  ProfileMatch              :              version: 5.0.3  [OLD VERSION]
+23:21:14 INFO  ProfileMatch              :         release-date: 14.06.2019
+23:21:14 INFO  ProfileMatch              :     lib root package: "com.facebook.all"  (in app: "kotlin.internal.jdk8")
+23:21:14 INFO  ProfileMatch              : 
+23:21:14 INFO  ProfileMatch              :                 name: Facebook
+23:21:14 INFO  ProfileMatch              :             category: SocialMedia
+23:21:14 INFO  ProfileMatch              :              version: 5.1.0  [OLD VERSION]
+23:21:14 INFO  ProfileMatch              :         release-date: 21.06.2019
+23:21:14 INFO  ProfileMatch              :     lib root package: "com.facebook.all"  (in app: "kotlin.internal.jdk8")
+23:21:14 INFO  ProfileMatch              : 
+23:21:14 INFO  ProfileMatch              :                 name: Facebook
+23:21:14 INFO  ProfileMatch              :             category: SocialMedia
+23:21:14 INFO  ProfileMatch              :              version: 5.1.1  [OLD VERSION]
+23:21:14 INFO  ProfileMatch              :         release-date: 02.07.2019
+23:21:14 INFO  ProfileMatch              :     lib root package: "com.facebook.all"  (in app: "kotlin.internal.jdk8")
+23:21:14 INFO  ProfileMatch              : 
+23:21:14 INFO  ProfileMatch              :                 name: Facebook
+23:21:14 INFO  ProfileMatch              :             category: SocialMedia
+23:21:14 INFO  ProfileMatch              :              version: 5.2.0  [OLD VERSION]
+23:21:14 INFO  ProfileMatch              :         release-date: 29.07.2019
+23:21:14 INFO  ProfileMatch              :     lib root package: "com.facebook.all"  (in app: "kotlin.internal.jdk8")
+23:21:14 INFO  ProfileMatch              : 
+23:21:14 INFO  ProfileMatch              :                 name: Facebook
+23:21:14 INFO  ProfileMatch              :             category: SocialMedia
+23:21:14 INFO  ProfileMatch              :              version: 5.4.0  [OLD VERSION]
+23:21:14 INFO  ProfileMatch              :         release-date: 16.08.2019
+23:21:14 INFO  ProfileMatch              :     lib root package: "com.facebook.all"  (in app: "kotlin.internal.jdk8")
+23:21:14 INFO  ProfileMatch              : 
+23:21:14 INFO  ProfileMatch              :                 name: Facebook
+23:21:14 INFO  ProfileMatch              :             category: SocialMedia
+23:21:14 INFO  ProfileMatch              :              version: 5.5.0  [OLD VERSION]
+23:21:14 INFO  ProfileMatch              :         release-date: 31.08.2019
+23:21:14 INFO  ProfileMatch              :     lib root package: "com.facebook.all"  (in app: "kotlin.internal.jdk8")
+23:21:14 INFO  ProfileMatch              : 
+23:21:14 INFO  ProfileMatch              :                 name: Facebook
+23:21:14 INFO  ProfileMatch              :             category: SocialMedia
+23:21:14 INFO  ProfileMatch              :              version: 5.5.1  [OLD VERSION]
+23:21:14 INFO  ProfileMatch              :         release-date: 06.09.2019
+23:21:14 INFO  ProfileMatch              :     lib root package: "com.facebook.all"  (in app: "kotlin.internal.jdk8")
+23:21:14 INFO  ProfileMatch              : 
+23:21:14 INFO  ProfileMatch              :                 name: Facebook
+23:21:14 INFO  ProfileMatch              :             category: SocialMedia
+23:21:14 INFO  ProfileMatch              :              version: 5.5.2  [OLD VERSION]
+23:21:14 INFO  ProfileMatch              :         release-date: 05.10.2019
+23:21:14 INFO  ProfileMatch              :     lib root package: "com.facebook.all"  (in app: "kotlin.internal.jdk8")
+23:21:14 INFO  ProfileMatch              : 
+23:21:14 INFO  ProfileMatch              :                 name: Facebook
+23:21:14 INFO  ProfileMatch              :             category: SocialMedia
+23:21:14 INFO  ProfileMatch              :              version: 5.8.0  [OLD VERSION]
+23:21:14 INFO  ProfileMatch              :         release-date: 08.10.2019
+23:21:14 INFO  ProfileMatch              :     lib root package: "com.facebook.all"  (in app: "kotlin.internal.jdk8")
+23:21:14 INFO  ProfileMatch              : 
+23:21:14 INFO  ProfileMatch              :                 name: Facebook
+23:21:14 INFO  ProfileMatch              :             category: SocialMedia
+23:21:14 INFO  ProfileMatch              :              version: 5.9.0  [OLD VERSION]
+23:21:14 INFO  ProfileMatch              :         release-date: 29.10.2019
+23:21:14 INFO  ProfileMatch              :     lib root package: "com.facebook.all"  (in app: "kotlin.internal.jdk8")
+23:21:14 INFO  ProfileMatch              : 
+23:21:14 INFO  ProfileMatch              :                 name: Facebook
+23:21:14 INFO  ProfileMatch              :             category: SocialMedia
+23:21:14 INFO  ProfileMatch              :              version: 5.11.0  [OLD VERSION]
+23:21:14 INFO  ProfileMatch              :         release-date: 15.11.2019
+23:21:14 INFO  ProfileMatch              :     lib root package: "com.facebook.all"  (in app: "kotlin.internal.jdk8")
+23:21:14 INFO  ProfileMatch              : 
+23:21:14 INFO  ProfileMatch              :                 name: Facebook
+23:21:14 INFO  ProfileMatch              :             category: SocialMedia
+23:21:14 INFO  ProfileMatch              :              version: 5.11.1  [OLD VERSION]
+23:21:14 INFO  ProfileMatch              :         release-date: 21.11.2019
+23:21:14 INFO  ProfileMatch              :     lib root package: "com.facebook.all"  (in app: "kotlin.internal.jdk8")
+23:21:14 INFO  ProfileMatch              : 
+23:21:14 INFO  ProfileMatch              :                 name: Facebook
+23:21:14 INFO  ProfileMatch              :             category: SocialMedia
+23:21:14 INFO  ProfileMatch              :              version: 5.11.2  [OLD VERSION]
+23:21:14 INFO  ProfileMatch              :         release-date: 22.11.2019
+23:21:14 INFO  ProfileMatch              :     lib root package: "com.facebook.all"  (in app: "kotlin.internal.jdk8")
+23:21:14 INFO  ProfileMatch              : 
+23:21:14 INFO  ProfileMatch              :                 name: Facebook
+23:21:14 INFO  ProfileMatch              :             category: SocialMedia
+23:21:14 INFO  ProfileMatch              :              version: 5.12.0  [OLD VERSION]
+23:21:14 INFO  ProfileMatch              :         release-date: 04.12.2019
+23:21:14 INFO  ProfileMatch              :     lib root package: "com.facebook.all"  (in app: "kotlin.internal.jdk8")
+23:21:14 INFO  ProfileMatch              : 
+23:21:14 INFO  ProfileMatch              :                 name: Facebook
+23:21:14 INFO  ProfileMatch              :             category: SocialMedia
+23:21:14 INFO  ProfileMatch              :              version: 5.12.1  [OLD VERSION]
+23:21:14 INFO  ProfileMatch              :         release-date: 09.12.2019
+23:21:14 INFO  ProfileMatch              :     lib root package: "com.facebook.all"  (in app: "kotlin.internal.jdk8")
+23:21:14 INFO  ProfileMatch              : 
+23:21:14 INFO  ProfileMatch              :                 name: Facebook
+23:21:14 INFO  ProfileMatch              :             category: SocialMedia
+23:21:14 INFO  ProfileMatch              :              version: 5.13.0  [OLD VERSION]
+23:21:14 INFO  ProfileMatch              :         release-date: 12.12.2019
+23:21:14 INFO  ProfileMatch              :     lib root package: "com.facebook.all"  (in app: "kotlin.internal.jdk8")
+23:21:14 INFO  ProfileMatch              : 
+23:21:14 INFO  ProfileMatch              :                 name: Facebook
+23:21:14 INFO  ProfileMatch              :             category: SocialMedia
+23:21:14 INFO  ProfileMatch              :              version: 5.15.0  [OLD VERSION]
+23:21:14 INFO  ProfileMatch              :         release-date: 21.01.2020
+23:21:14 INFO  ProfileMatch              :     lib root package: "com.facebook.all"  (in app: "kotlin.internal.jdk8")
+23:21:14 INFO  ProfileMatch              : 
+23:21:14 INFO  ProfileMatch              :                 name: Facebook
+23:21:14 INFO  ProfileMatch              :             category: SocialMedia
+23:21:14 INFO  ProfileMatch              :              version: 5.15.1  [OLD VERSION]
+23:21:14 INFO  ProfileMatch              :         release-date: 29.01.2020
+23:21:14 INFO  ProfileMatch              :     lib root package: "com.facebook.all"  (in app: "kotlin.internal.jdk8")
+23:21:14 INFO  ProfileMatch              : 
+23:21:14 INFO  ProfileMatch              :                 name: Facebook
+23:21:14 INFO  ProfileMatch              :             category: SocialMedia
+23:21:14 INFO  ProfileMatch              :              version: 5.15.2  [OLD VERSION]
+23:21:14 INFO  ProfileMatch              :         release-date: 03.02.2020
+23:21:14 INFO  ProfileMatch              :     lib root package: "com.facebook.all"  (in app: "kotlin.internal.jdk8")
+23:21:14 INFO  ProfileMatch              : 
+23:21:14 INFO  ProfileMatch              :                 name: Facebook
+23:21:14 INFO  ProfileMatch              :             category: SocialMedia
+23:21:14 INFO  ProfileMatch              :              version: 5.15.3  [OLD VERSION]
+23:21:14 INFO  ProfileMatch              :         release-date: 03.02.2020
+23:21:14 INFO  ProfileMatch              :     lib root package: "com.facebook.all"  (in app: "kotlin.internal.jdk8")
+23:21:14 INFO  ProfileMatch              : 
+23:21:14 INFO  ProfileMatch              :                 name: Facebook
+23:21:14 INFO  ProfileMatch              :             category: SocialMedia
+23:21:14 INFO  ProfileMatch              :              version: 6.0.0  [OLD VERSION]
+23:21:14 INFO  ProfileMatch              :         release-date: 03.02.2020
+23:21:14 INFO  ProfileMatch              :     lib root package: "com.facebook.all"  (in app: "kotlin.internal.jdk8")
+23:21:14 INFO  ProfileMatch              : 
+23:21:14 INFO  ProfileMatch              :                 name: Facebook
+23:21:14 INFO  ProfileMatch              :             category: SocialMedia
+23:21:14 INFO  ProfileMatch              :              version: 6.1.0  [OLD VERSION]
+23:21:14 INFO  ProfileMatch              :         release-date: 14.02.2020
+23:21:14 INFO  ProfileMatch              :     lib root package: "com.facebook.all"  (in app: "kotlin.internal.jdk8")
+23:21:14 INFO  ProfileMatch              : 
+23:21:14 INFO  ProfileMatch              :                 name: Facebook
+23:21:14 INFO  ProfileMatch              :             category: SocialMedia
+23:21:14 INFO  ProfileMatch              :              version: 6.2.0  [OLD VERSION]
+23:21:14 INFO  ProfileMatch              :         release-date: 09.03.2020
+23:21:14 INFO  ProfileMatch              :     lib root package: "com.facebook.all"  (in app: "kotlin.internal.jdk8")
+23:21:14 INFO  ProfileMatch              : 
+23:21:14 INFO  ProfileMatch              :                 name: Facebook
+23:21:14 INFO  ProfileMatch              :             category: SocialMedia
+23:21:14 INFO  ProfileMatch              :              version: 6.3.0  [OLD VERSION]
+23:21:14 INFO  ProfileMatch              :         release-date: 25.03.2020
+23:21:14 INFO  ProfileMatch              :     lib root package: "com.facebook.all"  (in app: "kotlin.internal.jdk8")
+23:21:14 INFO  ProfileMatch              : 
+23:21:14 INFO  ProfileMatch              :                 name: Facebook
+23:21:14 INFO  ProfileMatch              :             category: SocialMedia
+23:21:14 INFO  ProfileMatch              :              version: 6.4.0  [OLD VERSION]
+23:21:14 INFO  ProfileMatch              :         release-date: 15.04.2020
+23:21:14 INFO  ProfileMatch              :     lib root package: "com.facebook.all"  (in app: "kotlin.internal.jdk8")
+23:21:14 INFO  ProfileMatch              : 
+23:21:14 INFO  ProfileMatch              :                 name: Facebook
+23:21:14 INFO  ProfileMatch              :             category: SocialMedia
+23:21:14 INFO  ProfileMatch              :              version: 6.5.0  [OLD VERSION]
+23:21:14 INFO  ProfileMatch              :         release-date: 20.04.2020
+23:21:14 INFO  ProfileMatch              :     lib root package: "com.facebook.all"  (in app: "kotlin.internal.jdk8")
+23:21:14 INFO  ProfileMatch              : 
+23:21:14 INFO  ProfileMatch              :                 name: Facebook
+23:21:14 INFO  ProfileMatch              :             category: SocialMedia
+23:21:14 INFO  ProfileMatch              :              version: 6.5.1  [OLD VERSION]
+23:21:14 INFO  ProfileMatch              :         release-date: 23.04.2020
+23:21:14 INFO  ProfileMatch              :     lib root package: "com.facebook.all"  (in app: "kotlin.internal.jdk8")
+23:21:14 INFO  ProfileMatch              : 
+23:21:14 INFO  ProfileMatch              :                 name: Facebook
+23:21:14 INFO  ProfileMatch              :             category: SocialMedia
+23:21:14 INFO  ProfileMatch              :              version: 7.0.0  [OLD VERSION]
+23:21:14 INFO  ProfileMatch              :         release-date: 05.05.2020
+23:21:14 INFO  ProfileMatch              :     lib root package: "com.facebook.all"  (in app: "kotlin.internal.jdk8")
+23:21:14 INFO  ProfileMatch              : 
+23:21:14 INFO  ProfileMatch              :                 name: Facebook
+23:21:14 INFO  ProfileMatch              :             category: SocialMedia
+23:21:14 INFO  ProfileMatch              :              version: 7.0.1  [OLD VERSION]
+23:21:14 INFO  ProfileMatch              :         release-date: 09.06.2020
+23:21:14 INFO  ProfileMatch              :     lib root package: "com.facebook.all"  (in app: "kotlin.internal.jdk8")
+23:21:14 INFO  ProfileMatch              : 
+23:21:14 INFO  ProfileMatch              :                 name: Facebook
+23:21:14 INFO  ProfileMatch              :             category: SocialMedia
+23:21:14 INFO  ProfileMatch              :              version: 7.1.0  [OLD VERSION]
+23:21:14 INFO  ProfileMatch              :         release-date: 23.06.2020
+23:21:14 INFO  ProfileMatch              :     lib root package: "com.facebook.all"  (in app: "kotlin.internal.jdk8")
+23:21:14 INFO  ProfileMatch              : 
+23:21:14 INFO  ProfileMatch              :                 name: Facebook
+23:21:14 INFO  ProfileMatch              :             category: SocialMedia
+23:21:14 INFO  ProfileMatch              :              version: 8.0.0  [OLD VERSION]
+23:21:14 INFO  ProfileMatch              :         release-date: 28.09.2020
+23:21:14 INFO  ProfileMatch              :     lib root package: "com.facebook.all"  (in app: "kotlin.internal.jdk8")
+23:21:14 INFO  ProfileMatch              : 
+23:21:14 INFO  ProfileMatch              :                 name: Facebook
+23:21:14 INFO  ProfileMatch              :             category: SocialMedia
+23:21:14 INFO  ProfileMatch              :              version: 8.1.0  [OLD VERSION]
+23:21:14 INFO  ProfileMatch              :         release-date: 14.10.2020
+23:21:14 INFO  ProfileMatch              :     lib root package: "com.facebook.all"  (in app: "kotlin.internal.jdk8")
+23:21:14 INFO  ProfileMatch              : 
+23:21:14 INFO  ProfileMatch              :                 name: Facebook
+23:21:14 INFO  ProfileMatch              :             category: SocialMedia
+23:21:14 INFO  ProfileMatch              :              version: 8.2.0  [OLD VERSION]
+23:21:14 INFO  ProfileMatch              :         release-date: 18.12.2020
+23:21:14 INFO  ProfileMatch              :     lib root package: "com.facebook.all"  (in app: "kotlin.internal.jdk8")
+23:21:14 INFO  ProfileMatch              : 
+23:21:14 INFO  ProfileMatch              :                 name: Facebook
+23:21:14 INFO  ProfileMatch              :             category: SocialMedia
+23:21:14 INFO  ProfileMatch              :              version: 9.0.0  [OLD VERSION]
+23:21:14 INFO  ProfileMatch              :         release-date: 19.01.2021
+23:21:14 INFO  ProfileMatch              :     lib root package: "com.facebook.all"  (in app: "kotlin.internal.jdk8")
+23:21:14 INFO  ProfileMatch              : 
+23:21:14 INFO  ProfileMatch              :                 name: Facebook
+23:21:14 INFO  ProfileMatch              :             category: SocialMedia
+23:21:14 INFO  ProfileMatch              :              version: 9.1.0  [OLD VERSION]
+23:21:14 INFO  ProfileMatch              :         release-date: 15.03.2021
+23:21:14 INFO  ProfileMatch              :     lib root package: "com.facebook.all"  (in app: "kotlin.internal.jdk8")
+23:21:14 INFO  ProfileMatch              : 
+23:21:14 INFO  ProfileMatch              :                 name: Facebook
+23:21:14 INFO  ProfileMatch              :             category: SocialMedia
+23:21:14 INFO  ProfileMatch              :              version: 9.1.1  [OLD VERSION]
+23:21:14 INFO  ProfileMatch              :         release-date: 12.04.2021
+23:21:14 INFO  ProfileMatch              :     lib root package: "com.facebook.all"  (in app: "kotlin.internal.jdk8")
+23:21:14 INFO  ProfileMatch              : 
+23:21:14 INFO  ProfileMatch              :                 name: Facebook
+23:21:14 INFO  ProfileMatch              :             category: SocialMedia
+23:21:14 INFO  ProfileMatch              :              version: 11.0.0  [OLD VERSION]
+23:21:14 INFO  ProfileMatch              :         release-date: 08.06.2021
+23:21:14 INFO  ProfileMatch              :     lib root package: "com.facebook.all"  (in app: "kotlin.internal.jdk8")
+23:21:14 INFO  ProfileMatch              : 
+23:21:14 INFO  ProfileMatch              :                 name: Facebook
+23:21:14 INFO  ProfileMatch              :             category: SocialMedia
+23:21:14 INFO  ProfileMatch              :              version: 11.1.0  [OLD VERSION]
+23:21:14 INFO  ProfileMatch              :         release-date: 06.07.2021
+23:21:14 INFO  ProfileMatch              :     lib root package: "com.facebook.all"  (in app: "kotlin.internal.jdk8")
+23:21:14 INFO  ProfileMatch              : 
+23:21:14 INFO  ProfileMatch              :                 name: Facebook
+23:21:14 INFO  ProfileMatch              :             category: SocialMedia
+23:21:14 INFO  ProfileMatch              :              version: 11.1.1  [OLD VERSION]
+23:21:14 INFO  ProfileMatch              :         release-date: 19.07.2021
+23:21:14 INFO  ProfileMatch              :     lib root package: "com.facebook.all"  (in app: "kotlin.internal.jdk8")
+23:21:14 INFO  ProfileMatch              : 
+23:21:14 INFO  ProfileMatch              :                 name: Facebook
+23:21:14 INFO  ProfileMatch              :             category: SocialMedia
+23:21:14 INFO  ProfileMatch              :              version: 11.2.0  [OLD VERSION]
+23:21:14 INFO  ProfileMatch              :         release-date: 03.08.2021
+23:21:14 INFO  ProfileMatch              :     lib root package: "com.facebook.all"  (in app: "kotlin.internal.jdk8")
+23:21:14 INFO  ProfileMatch              : 
+23:21:14 INFO  ProfileMatch              :                 name: Facebook
+23:21:14 INFO  ProfileMatch              :             category: SocialMedia
+23:21:14 INFO  ProfileMatch              :              version: 11.3.0  [OLD VERSION]
+23:21:14 INFO  ProfileMatch              :         release-date: 07.09.2021
+23:21:14 INFO  ProfileMatch              :     lib root package: "com.facebook.all"  (in app: "kotlin.internal.jdk8")
+23:21:14 INFO  ProfileMatch              : 
+23:21:14 INFO  ProfileMatch              :                 name: Facebook
+23:21:14 INFO  ProfileMatch              :             category: SocialMedia
+23:21:14 INFO  ProfileMatch              :              version: 12.0.0  [OLD VERSION]
+23:21:14 INFO  ProfileMatch              :         release-date: 05.10.2021
+23:21:14 INFO  ProfileMatch              :     lib root package: "com.facebook.all"  (in app: "kotlin.internal.jdk8")
+23:21:14 INFO  ProfileMatch              : 
+23:21:14 INFO  ProfileMatch              :                 name: Facebook
+23:21:14 INFO  ProfileMatch              :             category: SocialMedia
+23:21:14 INFO  ProfileMatch              :              version: 12.0.1  [OLD VERSION]
+23:21:14 INFO  ProfileMatch              :         release-date: 13.10.2021
+23:21:14 INFO  ProfileMatch              :     lib root package: "com.facebook.all"  (in app: "kotlin.internal.jdk8")
+23:21:14 INFO  ProfileMatch              : 
+23:21:14 INFO  ProfileMatch              :                 name: Facebook
+23:21:14 INFO  ProfileMatch              :             category: SocialMedia
+23:21:14 INFO  ProfileMatch              :              version: 12.1.0  [OLD VERSION]
+23:21:14 INFO  ProfileMatch              :         release-date: 01.11.2021
+23:21:14 INFO  ProfileMatch              :     lib root package: "com.facebook.all"  (in app: "kotlin.internal.jdk8")
+23:21:14 INFO  ProfileMatch              : 
+23:21:14 INFO  ProfileMatch              :                 name: Facebook
+23:21:14 INFO  ProfileMatch              :             category: SocialMedia
+23:21:14 INFO  ProfileMatch              :              version: 12.2.0  [OLD VERSION]
+23:21:14 INFO  ProfileMatch              :         release-date: 06.12.2021
+23:21:14 INFO  ProfileMatch              :     lib root package: "com.facebook.all"  (in app: "kotlin.internal.jdk8")
+23:21:14 INFO  ProfileMatch              : 
+23:21:14 INFO  ProfileMatch              :                 name: Facebook
+23:21:14 INFO  ProfileMatch              :             category: SocialMedia
+23:21:14 INFO  ProfileMatch              :              version: 12.3.0  [OLD VERSION]
+23:21:14 INFO  ProfileMatch              :         release-date: 10.01.2022
+23:21:14 INFO  ProfileMatch              :     lib root package: "com.facebook.all"  (in app: "kotlin.internal.jdk8")
+23:21:14 INFO  ProfileMatch              : 
+23:21:14 INFO  ProfileMatch              :                 name: Facebook
+23:21:14 INFO  ProfileMatch              :             category: SocialMedia
+23:21:14 INFO  ProfileMatch              :              version: 13.0.0  [OLD VERSION]
+23:21:14 INFO  ProfileMatch              :         release-date: 23.02.2022
+23:21:14 INFO  ProfileMatch              :     lib root package: "com.facebook.all"  (in app: "kotlin.internal.jdk8")
+23:21:14 INFO  ProfileMatch              : 
+23:21:14 INFO  ProfileMatch              :                 name: Facebook
+23:21:14 INFO  ProfileMatch              :             category: SocialMedia
+23:21:14 INFO  ProfileMatch              :              version: 13.1.0  [OLD VERSION]
+23:21:14 INFO  ProfileMatch              :         release-date: 21.03.2022
+23:21:14 INFO  ProfileMatch              :     lib root package: "com.facebook.all"  (in app: "kotlin.internal.jdk8")
+23:21:14 INFO  ProfileMatch              : 
+23:21:14 INFO  ProfileMatch              :                 name: Facebook
+23:21:14 INFO  ProfileMatch              :             category: SocialMedia
+23:21:14 INFO  ProfileMatch              :              version: 13.2.0  [OLD VERSION]
+23:21:14 INFO  ProfileMatch              :         release-date: 22.04.2022
+23:21:14 INFO  ProfileMatch              :     lib root package: "com.facebook.all"  (in app: "kotlin.internal.jdk8")
+23:21:14 INFO  ProfileMatch              : 
+23:21:14 INFO  ProfileMatch              :                 name: Facebook
+23:21:14 INFO  ProfileMatch              :             category: SocialMedia
+23:21:14 INFO  ProfileMatch              :              version: 14.0.0
+23:21:14 INFO  ProfileMatch              :         release-date: 14.06.2022
+23:21:14 INFO  ProfileMatch              :     lib root package: "com.facebook.all"  (in app: "kotlin.internal.jdk8")
+23:21:14 INFO  ProfileMatch              : 
+23:21:15 INFO  LibraryIdentifier         : 
+23:21:15 INFO  LibraryIdentifier         : - Partial library matches:
+23:21:15 INFO  LibraryIdentifier         :                 name: androidx.customview::customview
+23:21:15 INFO  LibraryIdentifier         :             category: Android
+23:21:15 INFO  LibraryIdentifier         :              version: 1.0.0  [OLD VERSION]
+23:21:15 INFO  LibraryIdentifier         :         release-date:  --
+23:21:15 INFO  LibraryIdentifier         :     lib root package: "androidx.customview"
+23:21:15 INFO  LibraryIdentifier         :         Partial matching results:
+23:21:15 INFO  LibraryIdentifier         :              - config: Hashing.md5() | Flags: no-flag | Keep: PN | Prune: MSIG   score: 0.7083334
+23:21:15 INFO  LibraryIdentifier         : 
+23:21:15 INFO  LibraryIdentifier         : 
+23:21:15 INFO  LibraryIdentifier         : App processing time: 44 sec, 354 ms

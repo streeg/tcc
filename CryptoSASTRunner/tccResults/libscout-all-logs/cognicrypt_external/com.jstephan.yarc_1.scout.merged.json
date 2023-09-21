@@ -1,0 +1,31 @@
+{
+  "projectName": "CryptoGuard",
+  "ProjectVersion": "04.05.03",
+  "Target": {
+    "RawCommand": "-in apk -s /home/lables/CryptoAnalysis/Finances2/com.jstephan.yarc_1.apk -m D",
+    "FullPath": "com.jstephan.yarc_1.apk/",
+    "Type": "APK",
+    "TargetSources": [
+      "/home/lables/CryptoAnalysis/Finances2/com.jstephan.yarc_1.apk"
+    ],
+    "_PropertiesFilePath": "gradle.properties",
+    "_ComputerOS": "Linux_4.15.0-162-generic",
+    "_JVMVersion": "1.8.0_292-8u292-b10-0ubuntu1~18.04-b10",
+    "_ProjectName": "com"
+  },
+  "Issues": [
+    {
+      "Message": "Found: \"http://data.fixer.io/api/latest?access_key=\"",
+      "Description": "Used HTTP Protocol",
+      "RuleNumber": 7,
+      "RuleDesc": "Used HTTP Protocol",
+      "CWEId": 650,
+      "Severity": "1",
+      "_FullPath": "com.jstephan.yarc_1.apk.com.jstephan.yarc.FixerIo.class",
+      "_Id": "0"
+    }
+  ],
+  "_SchemaVersion": 3,
+  "_DateTime": "2021-12-01_13:06:32",
+  "_UUID": "90b0461c-9236-4183-b311-d3f179473562"
+}

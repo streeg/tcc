@@ -1,0 +1,258 @@
+{
+  "projectName": "CryptoGuard",
+  "ProjectVersion": "04.05.03",
+  "Target": {
+    "RawCommand": "-in apk -s /home/lables/CryptoAnalysis/apks/Sms-Phone/org.jitsi.meet_216000.apk -m D",
+    "FullPath": "org.jitsi.meet_216000.apk/",
+    "Type": "APK",
+    "TargetSources": [
+      "/home/lables/CryptoAnalysis/apks/Sms-Phone/org.jitsi.meet_216000.apk"
+    ],
+    "_PropertiesFilePath": "gradle.properties",
+    "_ComputerOS": "Linux_4.15.0-163-generic",
+    "_JVMVersion": "1.8.0_312-8u312-b07-0ubuntu1~18.04-b07",
+    "_ProjectName": "org"
+  },
+  "Issues": [
+    {
+      "Message": "Found: Untrused PRNG (java.util.Random)",
+      "Description": "Used untrusted PRNG",
+      "RuleNumber": 13,
+      "RuleDesc": "Used untrusted PRNG",
+      "CWEId": 338,
+      "Severity": "1",
+      "_FullPath": "org.jitsi.meet_216000.apk.okhttp3.OkHttpClient.class",
+      "_Id": "0",
+      "externalLibrary": true
+    },
+    {
+      "Message": "Found: Untrused PRNG (java.util.Random)",
+      "Description": "Used untrusted PRNG",
+      "RuleNumber": 13,
+      "RuleDesc": "Used untrusted PRNG",
+      "CWEId": 338,
+      "Severity": "1",
+      "_FullPath": "org.jitsi.meet_216000.apk.com.dropbox.core.g.class",
+      "_Id": "1"
+    },
+    {
+      "Message": "Found: Untrused PRNG (java.util.Random)",
+      "Description": "Used untrusted PRNG",
+      "RuleNumber": 13,
+      "RuleDesc": "Used untrusted PRNG",
+      "CWEId": 338,
+      "Severity": "1",
+      "_FullPath": "org.jitsi.meet_216000.apk.org.jitsi.meet.sdk.OngoingNotification.class",
+      "_Id": "2"
+    },
+    {
+      "Message": "Found: Untrused PRNG (java.util.Random)",
+      "Description": "Used untrusted PRNG",
+      "RuleNumber": 13,
+      "RuleDesc": "Used untrusted PRNG",
+      "CWEId": 338,
+      "Severity": "1",
+      "_FullPath": "org.jitsi.meet_216000.apk.com.dropbox.core.m.c.class",
+      "_Id": "3"
+    },
+    {
+      "Message": "Found: Untrused PRNG (java.util.Random)",
+      "Description": "Used untrusted PRNG",
+      "RuleNumber": 13,
+      "RuleDesc": "Used untrusted PRNG",
+      "CWEId": 338,
+      "Severity": "1",
+      "_FullPath": "org.jitsi.meet_216000.apk.com.oney.WebRTCModule.l0.class",
+      "_Id": "4"
+    },
+    {
+      "Message": "Found: Untrused PRNG (java.util.Random)",
+      "Description": "Used untrusted PRNG",
+      "RuleNumber": 13,
+      "RuleDesc": "Used untrusted PRNG",
+      "CWEId": 338,
+      "Severity": "1",
+      "_FullPath": "org.jitsi.meet_216000.apk.org.jitsi.meet.MainActivity.class",
+      "_Id": "5"
+    },
+    {
+      "Message": "Found: \"MD5\"",
+      "Description": "Found broken hash functions",
+      "RuleNumber": 2,
+      "RuleDesc": "Found broken hash functions",
+      "CWEId": 759,
+      "Severity": "1",
+      "_FullPath": "org.jitsi.meet_216000.apk.okio.HashingSource.class",
+      "_Id": "6",
+      "externalLibrary": true
+    },
+    {
+      "Message": "Found: \"MD5\"",
+      "Description": "Found broken hash functions",
+      "RuleNumber": 2,
+      "RuleDesc": "Found broken hash functions",
+      "CWEId": 759,
+      "Severity": "1",
+      "_FullPath": "org.jitsi.meet_216000.apk.okio.Buffer.class",
+      "_Id": "7",
+      "externalLibrary": true
+    },
+    {
+      "Message": "Found: \"SHA-1\"",
+      "Description": "Found broken hash functions",
+      "RuleNumber": 2,
+      "RuleDesc": "Found broken hash functions",
+      "CWEId": 759,
+      "Severity": "1",
+      "_FullPath": "org.jitsi.meet_216000.apk.okio.ByteString.class",
+      "_Id": "8",
+      "externalLibrary": true
+    },
+    {
+      "Message": "Found: \"MD5\"",
+      "Description": "Found broken hash functions",
+      "RuleNumber": 2,
+      "RuleDesc": "Found broken hash functions",
+      "CWEId": 759,
+      "Severity": "1",
+      "_FullPath": "org.jitsi.meet_216000.apk.com.facebook.soloader.SoLoader$a.class",
+      "_Id": "9",
+      "externalLibrary": true
+    },
+    {
+      "Message": "Found: \"MD5\"",
+      "Description": "Found broken hash functions",
+      "RuleNumber": 2,
+      "RuleDesc": "Found broken hash functions",
+      "CWEId": 759,
+      "Severity": "1",
+      "_FullPath": "org.jitsi.meet_216000.apk.okio.ByteString.class",
+      "_Id": "10",
+      "externalLibrary": true
+    },
+    {
+      "Message": "Found: \"SHA-1\"",
+      "Description": "Found broken hash functions",
+      "RuleNumber": 2,
+      "RuleDesc": "Found broken hash functions",
+      "CWEId": 759,
+      "Severity": "1",
+      "_FullPath": "org.jitsi.meet_216000.apk.com.facebook.common.util.b.class",
+      "_Id": "11",
+      "externalLibrary": true
+    },
+    {
+      "Message": "Found: \"MD5\"",
+      "Description": "Found broken hash functions",
+      "RuleNumber": 2,
+      "RuleDesc": "Found broken hash functions",
+      "CWEId": 759,
+      "Severity": "1",
+      "_FullPath": "org.jitsi.meet_216000.apk.okio.HashingSink.class",
+      "_Id": "12",
+      "externalLibrary": true
+    },
+    {
+      "Message": "Found: \"SHA-1\"",
+      "Description": "Found broken hash functions",
+      "RuleNumber": 2,
+      "RuleDesc": "Found broken hash functions",
+      "CWEId": 759,
+      "Severity": "1",
+      "_FullPath": "org.jitsi.meet_216000.apk.okio.Buffer.class",
+      "_Id": "13",
+      "externalLibrary": true
+    },
+    {
+      "Message": "Found: \"SHA-1\"",
+      "Description": "Found broken hash functions",
+      "RuleNumber": 2,
+      "RuleDesc": "Found broken hash functions",
+      "CWEId": 759,
+      "Severity": "1",
+      "_FullPath": "org.jitsi.meet_216000.apk.okio.HashingSink.class",
+      "_Id": "14",
+      "externalLibrary": true
+    },
+    {
+      "Message": "Found: \"SHA-1\"",
+      "Description": "Found broken hash functions",
+      "RuleNumber": 2,
+      "RuleDesc": "Found broken hash functions",
+      "CWEId": 759,
+      "Severity": "1",
+      "_FullPath": "org.jitsi.meet_216000.apk.okio.HashingSource.class",
+      "_Id": "15",
+      "externalLibrary": true
+    },
+    {
+      "Message": "Found: \"http://%s/onchange\"",
+      "Description": "Used HTTP Protocol",
+      "RuleNumber": 7,
+      "RuleDesc": "Used HTTP Protocol",
+      "CWEId": 650,
+      "Severity": "1",
+      "_FullPath": "org.jitsi.meet_216000.apk.com.facebook.react.devsupport.DevServerHelper.class",
+      "_Id": "16",
+      "externalLibrary": true
+    },
+    {
+      "Message": "Found: \"http://%s/%s\"",
+      "Description": "Used HTTP Protocol",
+      "RuleNumber": 7,
+      "RuleDesc": "Used HTTP Protocol",
+      "CWEId": 650,
+      "Severity": "1",
+      "_FullPath": "org.jitsi.meet_216000.apk.com.facebook.react.devsupport.DevServerHelper.class",
+      "_Id": "17",
+      "externalLibrary": true
+    },
+    {
+      "Message": "Found: \"http://%s/status\"",
+      "Description": "Used HTTP Protocol",
+      "RuleNumber": 7,
+      "RuleDesc": "Used HTTP Protocol",
+      "CWEId": 650,
+      "Severity": "1",
+      "_FullPath": "org.jitsi.meet_216000.apk.com.facebook.react.devsupport.DevServerHelper.class",
+      "_Id": "18",
+      "externalLibrary": true
+    },
+    {
+      "Message": "Found: \"http://%s/open-stack-frame\"",
+      "Description": "Used HTTP Protocol",
+      "RuleNumber": 7,
+      "RuleDesc": "Used HTTP Protocol",
+      "CWEId": 650,
+      "Severity": "1",
+      "_FullPath": "org.jitsi.meet_216000.apk.com.facebook.react.devsupport.DevServerHelper.class",
+      "_Id": "19",
+      "externalLibrary": true
+    },
+    {
+      "Message": "Found: \"http://%s/launch-js-devtools\"",
+      "Description": "Used HTTP Protocol",
+      "RuleNumber": 7,
+      "RuleDesc": "Used HTTP Protocol",
+      "CWEId": 650,
+      "Severity": "1",
+      "_FullPath": "org.jitsi.meet_216000.apk.com.facebook.react.devsupport.DevServerHelper.class",
+      "_Id": "20",
+      "externalLibrary": true
+    },
+    {
+      "Message": "Found: \"http://%s/symbolicate\"",
+      "Description": "Used HTTP Protocol",
+      "RuleNumber": 7,
+      "RuleDesc": "Used HTTP Protocol",
+      "CWEId": 650,
+      "Severity": "1",
+      "_FullPath": "org.jitsi.meet_216000.apk.com.facebook.react.devsupport.DevServerHelper.class",
+      "_Id": "21",
+      "externalLibrary": true
+    }
+  ],
+  "_SchemaVersion": 3,
+  "_DateTime": "2022-01-17_03:20:35",
+  "_UUID": "b73d9cfb-a625-49f4-a2f2-f3e5a124c37f"
+}

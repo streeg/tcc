@@ -1,0 +1,72 @@
+{
+  "projectName": "CryptoGuard",
+  "ProjectVersion": "04.05.03",
+  "Target": {
+    "RawCommand": "-in apk -s /home/lables/CryptoAnalysis/Finances/com.invoiceninja.app_66.apk -m D",
+    "FullPath": "com.invoiceninja.app_66.apk/",
+    "Type": "APK",
+    "TargetSources": [
+      "/home/lables/CryptoAnalysis/Finances/com.invoiceninja.app_66.apk"
+    ],
+    "_PropertiesFilePath": "gradle.properties",
+    "_ComputerOS": "Linux_4.15.0-162-generic",
+    "_JVMVersion": "1.8.0_292-8u292-b10-0ubuntu1~18.04-b10",
+    "_ProjectName": "com"
+  },
+  "Issues": [
+    {
+      "Message": "Found: Untrused PRNG (java.util.Random)",
+      "Description": "Used untrusted PRNG",
+      "RuleNumber": 13,
+      "RuleDesc": "Used untrusted PRNG",
+      "CWEId": 338,
+      "Severity": "1",
+      "_FullPath": "com.invoiceninja.app_66.apk.com.mr.flutter.plugin.filepicker.c.class",
+      "_Id": "0"
+    },
+    {
+      "Message": "Found: Untrused PRNG (java.util.Random)",
+      "Description": "Used untrusted PRNG",
+      "RuleNumber": 13,
+      "RuleDesc": "Used untrusted PRNG",
+      "CWEId": 338,
+      "Severity": "1",
+      "_FullPath": "com.invoiceninja.app_66.apk.io.sentry.TracesSampler.class",
+      "_Id": "1"
+    },
+    {
+      "Message": "Found: Untrused PRNG (java.util.Random)",
+      "Description": "Used untrusted PRNG",
+      "RuleNumber": 13,
+      "RuleDesc": "Used untrusted PRNG",
+      "CWEId": 338,
+      "Severity": "1",
+      "_FullPath": "com.invoiceninja.app_66.apk.io.sentry.SentryClient.class",
+      "_Id": "2"
+    },
+    {
+      "Message": "Found: Untrused PRNG (java.util.Random)",
+      "Description": "Used untrusted PRNG",
+      "RuleNumber": 13,
+      "RuleDesc": "Used untrusted PRNG",
+      "CWEId": 338,
+      "Severity": "1",
+      "_FullPath": "com.invoiceninja.app_66.apk.androidx.activity.result.d.class",
+      "_Id": "3",
+      "externalLibrary": true
+    },
+    {
+      "Message": "Found: \"SHA1\"",
+      "Description": "Found broken hash functions",
+      "RuleNumber": 2,
+      "RuleDesc": "Found broken hash functions",
+      "CWEId": 759,
+      "Severity": "1",
+      "_FullPath": "com.invoiceninja.app_66.apk.c.a.a.a.a.class",
+      "_Id": "4"
+    }
+  ],
+  "_SchemaVersion": 3,
+  "_DateTime": "2021-11-28_02:52:17",
+  "_UUID": "beeb6896-9bc2-4352-a66a-396884a5e3e9"
+}

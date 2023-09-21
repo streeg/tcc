@@ -1,0 +1,2124 @@
+15:49:28 INFO  LibraryIdentifier         : Process app: com.nighthawkapps.wallet.android_10030800.apk
+15:49:28 INFO  LibraryIdentifier         : = Manifest Parser =
+15:49:28 INFO  LibraryIdentifier         :         Package name: com.nighthawkapps.wallet.android
+15:49:28 INFO  LibraryIdentifier         :         Version code: 10030800
+15:49:28 INFO  LibraryIdentifier         :        minSdkVersion: 23
+15:49:28 INFO  LibraryIdentifier         :     targetSdkVersion: 31
+15:49:28 INFO  LibraryIdentifier         :         SharedUserId:  - none -
+15:49:28 INFO  LibraryIdentifier         :     Library dependencies:
+15:49:28 INFO  LibraryIdentifier         : 
+15:49:28 INFO  LibraryIdentifier         : Found 402 unique libraries in 12405 library profiles
+15:49:28 INFO  LibraryIdentifier         : Multi-dex apk detected - Code is merged to single class hierarchy!
+15:49:30 INFO  LibraryIdentifier         : Generated class hierarchy (in 1 sec, 88 ms)
+15:49:32 INFO  WalaUtils                 : 
+15:49:32 INFO  WalaUtils                 : = ClassHierarchy Stats =
+15:49:32 INFO  WalaUtils                 :     # of classes: 19813
+15:49:32 INFO  WalaUtils                 :     # thereof inner classes: 9779
+15:49:32 INFO  WalaUtils                 :     # thereof public classes: 12053
+15:49:32 INFO  WalaUtils                 :         Activity : 7
+15:49:32 INFO  WalaUtils                 :         Application : 3
+15:49:32 INFO  WalaUtils                 :         AsyncTask : 7
+15:49:32 INFO  WalaUtils                 :         BroadcastReceiver : 6
+15:49:32 INFO  WalaUtils                 :         ContentProvider : 3
+15:49:32 INFO  WalaUtils                 :         Fragment : 3
+15:49:32 INFO  WalaUtils                 :         Handler : 9
+15:49:32 INFO  WalaUtils                 :         LayoutContainer : 92
+15:49:32 INFO  WalaUtils                 :         Plain : 19598
+15:49:32 INFO  WalaUtils                 :         Runnable : 0
+15:49:32 INFO  WalaUtils                 :         Service : 14
+15:49:32 INFO  WalaUtils                 :         Thread : 7
+15:49:32 INFO  WalaUtils                 :         View : 64
+15:49:32 INFO  WalaUtils                 :     # methods: 134860
+15:49:32 INFO  WalaUtils                 :         # of publicly accessible methods: 91455
+15:49:32 INFO  WalaUtils                 :         # of non-accessible methods: 43405
+15:49:32 INFO  WalaUtils                 : 
+15:49:32 INFO  Profile                   : = PackageTree =
+15:49:32 INFO  PackageTree               : Root Package:  - none -
+15:49:32 INFO  PackageTree               : └── Root
+15:49:32 INFO  PackageTree               :     ├── kotlinx
+15:49:32 INFO  PackageTree               :     │   └── coroutines (172)
+15:49:32 INFO  PackageTree               :     │       ├── flow (271)
+15:49:32 INFO  PackageTree               :     │       │   └── internal (60)
+15:49:32 INFO  PackageTree               :     │       ├── channels (131)
+15:49:32 INFO  PackageTree               :     │       ├── android (9)
+15:49:32 INFO  PackageTree               :     │       ├── scheduling (18)
+15:49:32 INFO  PackageTree               :     │       ├── debug (2)
+15:49:32 INFO  PackageTree               :     │       │   └── internal (23)
+15:49:32 INFO  PackageTree               :     │       ├── internal (69)
+15:49:32 INFO  PackageTree               :     │       ├── sync (25)
+15:49:32 INFO  PackageTree               :     │       ├── selects (22)
+15:49:32 INFO  PackageTree               :     │       ├── test (7)
+15:49:32 INFO  PackageTree               :     │       └── intrinsics (2)
+15:49:32 INFO  PackageTree               :     ├── com
+15:49:32 INFO  PackageTree               :     │   ├── google
+15:49:32 INFO  PackageTree               :     │   │   ├── common
+15:49:32 INFO  PackageTree               :     │   │   │   ├── graph (120)
+15:49:32 INFO  PackageTree               :     │   │   │   ├── collect (812)
+15:49:32 INFO  PackageTree               :     │   │   │   ├── cache (120)
+15:49:32 INFO  PackageTree               :     │   │   │   ├── util
+15:49:32 INFO  PackageTree               :     │   │   │   │   └── concurrent (299)
+15:49:32 INFO  PackageTree               :     │   │   │   │       └── internal (2)
+15:49:32 INFO  PackageTree               :     │   │   │   ├── base (156)
+15:49:32 INFO  PackageTree               :     │   │   │   │   └── internal (1)
+15:49:32 INFO  PackageTree               :     │   │   │   ├── io (79)
+15:49:32 INFO  PackageTree               :     │   │   │   ├── hash (83)
+15:49:32 INFO  PackageTree               :     │   │   │   ├── reflect (72)
+15:49:32 INFO  PackageTree               :     │   │   │   ├── primitives (62)
+15:49:32 INFO  PackageTree               :     │   │   │   ├── math (28)
+15:49:32 INFO  PackageTree               :     │   │   │   ├── escape (18)
+15:49:32 INFO  PackageTree               :     │   │   │   ├── html (3)
+15:49:32 INFO  PackageTree               :     │   │   │   ├── eventbus (25)
+15:49:32 INFO  PackageTree               :     │   │   │   ├── annotations (4)
+15:49:32 INFO  PackageTree               :     │   │   │   ├── xml (3)
+15:49:32 INFO  PackageTree               :     │   │   │   └── net (15)
+15:49:32 INFO  PackageTree               :     │   │   ├── crypto
+15:49:32 INFO  PackageTree               :     │   │   │   └── tink (48)
+15:49:32 INFO  PackageTree               :     │   │   │       ├── proto (262)
+15:49:32 INFO  PackageTree               :     │   │   │       ├── shaded
+15:49:32 INFO  PackageTree               :     │   │   │       │   └── protobuf (210)
+15:49:32 INFO  PackageTree               :     │   │   │       ├── annotations (1)
+15:49:32 INFO  PackageTree               :     │   │   │       ├── signature (32)
+15:49:32 INFO  PackageTree               :     │   │   │       ├── hybrid (15)
+15:49:32 INFO  PackageTree               :     │   │   │       │   └── subtle (3)
+15:49:32 INFO  PackageTree               :     │   │   │       ├── subtle (92)
+15:49:32 INFO  PackageTree               :     │   │   │       │   └── prf (4)
+15:49:32 INFO  PackageTree               :     │   │   │       ├── prf (16)
+15:49:32 INFO  PackageTree               :     │   │   │       ├── streamingaead (15)
+15:49:32 INFO  PackageTree               :     │   │   │       ├── aead (32)
+15:49:32 INFO  PackageTree               :     │   │   │       │   └── subtle (4)
+15:49:32 INFO  PackageTree               :     │   │   │       ├── mac (11)
+15:49:32 INFO  PackageTree               :     │   │   │       ├── integration
+15:49:32 INFO  PackageTree               :     │   │   │       │   └── android (7)
+15:49:32 INFO  PackageTree               :     │   │   │       ├── daead (8)
+15:49:32 INFO  PackageTree               :     │   │   │       └── config (1)
+15:49:32 INFO  PackageTree               :     │   │   ├── android
+15:49:32 INFO  PackageTree               :     │   │   │   └── material
+15:49:32 INFO  PackageTree               :     │   │   │       ├── transition (51)
+15:49:32 INFO  PackageTree               :     │   │   │       │   └── platform (57)
+15:49:32 INFO  PackageTree               :     │   │   │       ├── snackbar (41)
+15:49:32 INFO  PackageTree               :     │   │   │       ├── textfield (51)
+15:49:32 INFO  PackageTree               :     │   │   │       ├── datepicker (69)
+15:49:32 INFO  PackageTree               :     │   │   │       ├── shape (39)
+15:49:32 INFO  PackageTree               :     │   │   │       ├── floatingactionbutton (43)
+15:49:32 INFO  PackageTree               :     │   │   │       ├── bottomappbar (19)
+15:49:32 INFO  PackageTree               :     │   │   │       ├── button (14)
+15:49:32 INFO  PackageTree               :     │   │   │       ├── timepicker (42)
+15:49:32 INFO  PackageTree               :     │   │   │       ├── navigation (22)
+15:49:32 INFO  PackageTree               :     │   │   │       ├── internal (68)
+15:49:32 INFO  PackageTree               :     │   │   │       ├── transformation (15)
+15:49:32 INFO  PackageTree               :     │   │   │       ├── progressindicator (38)
+15:49:32 INFO  PackageTree               :     │   │   │       ├── appbar (30)
+15:49:32 INFO  PackageTree               :     │   │   │       ├── animation (11)
+15:49:32 INFO  PackageTree               :     │   │   │       ├── dialog (3)
+15:49:32 INFO  PackageTree               :     │   │   │       ├── behavior (7)
+15:49:32 INFO  PackageTree               :     │   │   │       ├── circularreveal (14)
+15:49:32 INFO  PackageTree               :     │   │   │       │   ├── coordinatorlayout (1)
+15:49:32 INFO  PackageTree               :     │   │   │       │   └── cardview (1)
+15:49:32 INFO  PackageTree               :     │   │   │       ├── tooltip (2)
+15:49:32 INFO  PackageTree               :     │   │   │       ├── slider (21)
+15:49:32 INFO  PackageTree               :     │   │   │       ├── tabs (27)
+15:49:32 INFO  PackageTree               :     │   │   │       ├── bottomsheet (22)
+15:49:32 INFO  PackageTree               :     │   │   │       ├── imageview (2)
+15:49:32 INFO  PackageTree               :     │   │   │       ├── badge (8)
+15:49:32 INFO  PackageTree               :     │   │   │       ├── textview (1)
+15:49:32 INFO  PackageTree               :     │   │   │       ├── chip (11)
+15:49:32 INFO  PackageTree               :     │   │   │       ├── resources (9)
+15:49:32 INFO  PackageTree               :     │   │   │       ├── canvas (1)
+15:49:32 INFO  PackageTree               :     │   │   │       ├── card (4)
+15:49:32 INFO  PackageTree               :     │   │   │       ├── shadow (3)
+15:49:32 INFO  PackageTree               :     │   │   │       ├── navigationrail (3)
+15:49:32 INFO  PackageTree               :     │   │   │       ├── ripple (3)
+15:49:32 INFO  PackageTree               :     │   │   │       ├── expandable (3)
+15:49:32 INFO  PackageTree               :     │   │   │       ├── bottomnavigation (6)
+15:49:32 INFO  PackageTree               :     │   │   │       ├── stateful (2)
+15:49:32 INFO  PackageTree               :     │   │   │       ├── elevation (1)
+15:49:32 INFO  PackageTree               :     │   │   │       ├── theme (1)
+15:49:32 INFO  PackageTree               :     │   │   │       │   └── overlay (1)
+15:49:32 INFO  PackageTree               :     │   │   │       ├── drawable (1)
+15:49:32 INFO  PackageTree               :     │   │   │       ├── radiobutton (1)
+15:49:32 INFO  PackageTree               :     │   │   │       ├── checkbox (1)
+15:49:32 INFO  PackageTree               :     │   │   │       ├── math (1)
+15:49:32 INFO  PackageTree               :     │   │   │       ├── color (1)
+15:49:32 INFO  PackageTree               :     │   │   │       └── switchmaterial (1)
+15:49:32 INFO  PackageTree               :     │   │   ├── gson (40)
+15:49:32 INFO  PackageTree               :     │   │   │   ├── annotations (5)
+15:49:32 INFO  PackageTree               :     │   │   │   ├── internal (55)
+15:49:32 INFO  PackageTree               :     │   │   │   │   ├── bind (67)
+15:49:32 INFO  PackageTree               :     │   │   │   │   │   └── util (1)
+15:49:32 INFO  PackageTree               :     │   │   │   │   └── reflect (3)
+15:49:32 INFO  PackageTree               :     │   │   │   ├── stream (6)
+15:49:32 INFO  PackageTree               :     │   │   │   └── reflect (1)
+15:49:32 INFO  PackageTree               :     │   │   ├── zxing (23)
+15:49:32 INFO  PackageTree               :     │   │   │   ├── qrcode (2)
+15:49:32 INFO  PackageTree               :     │   │   │   │   ├── detector (7)
+15:49:32 INFO  PackageTree               :     │   │   │   │   ├── decoder (20)
+15:49:32 INFO  PackageTree               :     │   │   │   │   └── encoder (6)
+15:49:32 INFO  PackageTree               :     │   │   │   ├── oned (29)
+15:49:32 INFO  PackageTree               :     │   │   │   │   └── rss (6)
+15:49:32 INFO  PackageTree               :     │   │   │   │       └── expanded (4)
+15:49:32 INFO  PackageTree               :     │   │   │   │           └── decoders (20)
+15:49:32 INFO  PackageTree               :     │   │   │   ├── pdf417 (4)
+15:49:32 INFO  PackageTree               :     │   │   │   │   ├── encoder (7)
+15:49:32 INFO  PackageTree               :     │   │   │   │   ├── decoder (11)
+15:49:32 INFO  PackageTree               :     │   │   │   │   │   └── ec (3)
+15:49:32 INFO  PackageTree               :     │   │   │   │   └── detector (2)
+15:49:32 INFO  PackageTree               :     │   │   │   ├── aztec (3)
+15:49:32 INFO  PackageTree               :     │   │   │   │   ├── encoder (8)
+15:49:32 INFO  PackageTree               :     │   │   │   │   ├── decoder (2)
+15:49:32 INFO  PackageTree               :     │   │   │   │   └── detector (2)
+15:49:32 INFO  PackageTree               :     │   │   │   ├── multi (3)
+15:49:32 INFO  PackageTree               :     │   │   │   │   └── qrcode (2)
+15:49:32 INFO  PackageTree               :     │   │   │   │       └── detector (3)
+15:49:32 INFO  PackageTree               :     │   │   │   ├── client
+15:49:32 INFO  PackageTree               :     │   │   │   │   └── result (37)
+15:49:32 INFO  PackageTree               :     │   │   │   ├── common (12)
+15:49:32 INFO  PackageTree               :     │   │   │   │   ├── detector (3)
+15:49:32 INFO  PackageTree               :     │   │   │   │   └── reedsolomon (5)
+15:49:32 INFO  PackageTree               :     │   │   │   ├── datamatrix (2)
+15:49:32 INFO  PackageTree               :     │   │   │   │   ├── encoder (14)
+15:49:32 INFO  PackageTree               :     │   │   │   │   ├── decoder (8)
+15:49:32 INFO  PackageTree               :     │   │   │   │   └── detector (1)
+15:49:32 INFO  PackageTree               :     │   │   │   └── maxicode (1)
+15:49:32 INFO  PackageTree               :     │   │   │       └── decoder (3)
+15:49:32 INFO  PackageTree               :     │   │   ├── errorprone
+15:49:32 INFO  PackageTree               :     │   │   │   └── annotations (21)
+15:49:32 INFO  PackageTree               :     │   │   │       └── concurrent (4)
+15:49:32 INFO  PackageTree               :     │   │   ├── protobuf (313)
+15:49:32 INFO  PackageTree               :     │   │   ├── auto
+15:49:32 INFO  PackageTree               :     │   │   │   └── value (5)
+15:49:32 INFO  PackageTree               :     │   │   │       └── extension
+15:49:32 INFO  PackageTree               :     │   │   │           └── memoized (1)
+15:49:32 INFO  PackageTree               :     │   │   ├── j2objc
+15:49:32 INFO  PackageTree               :     │   │   │   └── annotations (12)
+15:49:32 INFO  PackageTree               :     │   │   └── thirdparty
+15:49:32 INFO  PackageTree               :     │   │       └── publicsuffix (3)
+15:49:32 INFO  PackageTree               :     │   ├── itextpdf
+15:49:32 INFO  PackageTree               :     │   │   ├── styledxmlparser (6)
+15:49:32 INFO  PackageTree               :     │   │   │   ├── jsoup (5)
+15:49:32 INFO  PackageTree               :     │   │   │   │   ├── safety (9)
+15:49:32 INFO  PackageTree               :     │   │   │   │   ├── parser (112)
+15:49:32 INFO  PackageTree               :     │   │   │   │   ├── nodes (24)
+15:49:32 INFO  PackageTree               :     │   │   │   │   ├── select (54)
+15:49:32 INFO  PackageTree               :     │   │   │   │   └── helper (6)
+15:49:32 INFO  PackageTree               :     │   │   │   ├── css (14)
+15:49:32 INFO  PackageTree               :     │   │   │   │   ├── util (9)
+15:49:32 INFO  PackageTree               :     │   │   │   │   ├── resolve (6)
+15:49:32 INFO  PackageTree               :     │   │   │   │   │   └── shorthand (2)
+15:49:32 INFO  PackageTree               :     │   │   │   │   │       └── impl (25)
+15:49:32 INFO  PackageTree               :     │   │   │   │   ├── selector (6)
+15:49:32 INFO  PackageTree               :     │   │   │   │   │   └── item (25)
+15:49:32 INFO  PackageTree               :     │   │   │   │   ├── parse (7)
+15:49:32 INFO  PackageTree               :     │   │   │   │   │   └── syntax (10)
+15:49:32 INFO  PackageTree               :     │   │   │   │   ├── validate (3)
+15:49:32 INFO  PackageTree               :     │   │   │   │   │   └── impl
+15:49:32 INFO  PackageTree               :     │   │   │   │   │       ├── datatype (12)
+15:49:32 INFO  PackageTree               :     │   │   │   │   │       └── declaration (2)
+15:49:32 INFO  PackageTree               :     │   │   │   │   ├── media (8)
+15:49:32 INFO  PackageTree               :     │   │   │   │   ├── page (6)
+15:49:32 INFO  PackageTree               :     │   │   │   │   ├── pseudo (3)
+15:49:32 INFO  PackageTree               :     │   │   │   │   └── font (3)
+15:49:32 INFO  PackageTree               :     │   │   │   ├── node (10)
+15:49:32 INFO  PackageTree               :     │   │   │   │   └── impl
+15:49:32 INFO  PackageTree               :     │   │   │   │       └── jsoup (2)
+15:49:32 INFO  PackageTree               :     │   │   │   │           └── node (9)
+15:49:32 INFO  PackageTree               :     │   │   │   ├── resolver
+15:49:32 INFO  PackageTree               :     │   │   │   │   ├── resource (8)
+15:49:32 INFO  PackageTree               :     │   │   │   │   └── font (1)
+15:49:32 INFO  PackageTree               :     │   │   │   ├── exceptions (1)
+15:49:32 INFO  PackageTree               :     │   │   │   └── util (2)
+15:49:32 INFO  PackageTree               :     │   │   ├── kernel (6)
+15:49:32 INFO  PackageTree               :     │   │   │   ├── pdf (78)
+15:49:32 INFO  PackageTree               :     │   │   │   │   ├── filters (13)
+15:49:32 INFO  PackageTree               :     │   │   │   │   ├── canvas (10)
+15:49:32 INFO  PackageTree               :     │   │   │   │   │   ├── parser (61)
+15:49:32 INFO  PackageTree               :     │   │   │   │   │   │   ├── clipper (34)
+15:49:32 INFO  PackageTree               :     │   │   │   │   │   │   ├── listener (24)
+15:49:32 INFO  PackageTree               :     │   │   │   │   │   │   ├── data (6)
+15:49:32 INFO  PackageTree               :     │   │   │   │   │   │   ├── filter (2)
+15:49:32 INFO  PackageTree               :     │   │   │   │   │   │   └── util (3)
+15:49:32 INFO  PackageTree               :     │   │   │   │   │   ├── wmf (9)
+15:49:32 INFO  PackageTree               :     │   │   │   │   │   └── draw (4)
+15:49:32 INFO  PackageTree               :     │   │   │   │   ├── annot (31)
+15:49:32 INFO  PackageTree               :     │   │   │   │   │   └── da (3)
+15:49:32 INFO  PackageTree               :     │   │   │   │   ├── navigation (6)
+15:49:32 INFO  PackageTree               :     │   │   │   │   ├── colorspace (31)
+15:49:32 INFO  PackageTree               :     │   │   │   │   ├── tagging (20)
+15:49:32 INFO  PackageTree               :     │   │   │   │   ├── xobject (6)
+15:49:32 INFO  PackageTree               :     │   │   │   │   ├── tagutils (12)
+15:49:32 INFO  PackageTree               :     │   │   │   │   ├── collection (5)
+15:49:32 INFO  PackageTree               :     │   │   │   │   ├── function (5)
+15:49:32 INFO  PackageTree               :     │   │   │   │   ├── action (6)
+15:49:32 INFO  PackageTree               :     │   │   │   │   ├── layer (5)
+15:49:32 INFO  PackageTree               :     │   │   │   │   ├── filespec (4)
+15:49:32 INFO  PackageTree               :     │   │   │   │   └── extgstate (1)
+15:49:32 INFO  PackageTree               :     │   │   │   ├── xmp (15)
+15:49:32 INFO  PackageTree               :     │   │   │   │   ├── impl (29)
+15:49:32 INFO  PackageTree               :     │   │   │   │   │   └── xpath (4)
+15:49:32 INFO  PackageTree               :     │   │   │   │   ├── properties (3)
+15:49:32 INFO  PackageTree               :     │   │   │   │   └── options (6)
+15:49:32 INFO  PackageTree               :     │   │   │   ├── crypto (12)
+15:49:32 INFO  PackageTree               :     │   │   │   │   └── securityhandler (15)
+15:49:32 INFO  PackageTree               :     │   │   │   ├── font (15)
+15:49:32 INFO  PackageTree               :     │   │   │   ├── colors (14)
+15:49:32 INFO  PackageTree               :     │   │   │   │   └── gradients (8)
+15:49:32 INFO  PackageTree               :     │   │   │   ├── utils (35)
+15:49:32 INFO  PackageTree               :     │   │   │   ├── geom (14)
+15:49:32 INFO  PackageTree               :     │   │   │   ├── counter (11)
+15:49:32 INFO  PackageTree               :     │   │   │   │   ├── context (3)
+15:49:32 INFO  PackageTree               :     │   │   │   │   ├── event (4)
+15:49:32 INFO  PackageTree               :     │   │   │   │   └── data (10)
+15:49:32 INFO  PackageTree               :     │   │   │   ├── log (7)
+15:49:32 INFO  PackageTree               :     │   │   │   ├── numbering (9)
+15:49:32 INFO  PackageTree               :     │   │   │   ├── events (5)
+15:49:32 INFO  PackageTree               :     │   │   │   └── security (1)
+15:49:32 INFO  PackageTree               :     │   │   ├── io (3)
+15:49:32 INFO  PackageTree               :     │   │   │   ├── util (25)
+15:49:32 INFO  PackageTree               :     │   │   │   ├── font (57)
+15:49:32 INFO  PackageTree               :     │   │   │   │   ├── cmap (13)
+15:49:32 INFO  PackageTree               :     │   │   │   │   ├── otf (52)
+15:49:32 INFO  PackageTree               :     │   │   │   │   │   ├── lookuptype6 (7)
+15:49:32 INFO  PackageTree               :     │   │   │   │   │   ├── lookuptype5 (6)
+15:49:32 INFO  PackageTree               :     │   │   │   │   │   └── lookuptype7 (2)
+15:49:32 INFO  PackageTree               :     │   │   │   │   ├── woff2 (22)
+15:49:32 INFO  PackageTree               :     │   │   │   │   └── constants (9)
+15:49:32 INFO  PackageTree               :     │   │   │   ├── image (31)
+15:49:32 INFO  PackageTree               :     │   │   │   ├── codec (26)
+15:49:32 INFO  PackageTree               :     │   │   │   │   └── brotli
+15:49:32 INFO  PackageTree               :     │   │   │   │       └── dec (17)
+15:49:32 INFO  PackageTree               :     │   │   │   ├── source (29)
+15:49:32 INFO  PackageTree               :     │   │   │   └── colors (1)
+15:49:32 INFO  PackageTree               :     │   │   ├── svg (5)
+15:49:32 INFO  PackageTree               :     │   │   │   ├── renderers (6)
+15:49:32 INFO  PackageTree               :     │   │   │   │   ├── path (3)
+15:49:32 INFO  PackageTree               :     │   │   │   │   │   └── impl (17)
+15:49:32 INFO  PackageTree               :     │   │   │   │   ├── impl (29)
+15:49:32 INFO  PackageTree               :     │   │   │   │   └── factories (4)
+15:49:32 INFO  PackageTree               :     │   │   │   ├── utils (6)
+15:49:32 INFO  PackageTree               :     │   │   │   ├── processors (3)
+15:49:32 INFO  PackageTree               :     │   │   │   │   └── impl (5)
+15:49:32 INFO  PackageTree               :     │   │   │   │       └── font (1)
+15:49:32 INFO  PackageTree               :     │   │   │   ├── css (1)
+15:49:32 INFO  PackageTree               :     │   │   │   │   └── impl (4)
+15:49:32 INFO  PackageTree               :     │   │   │   ├── converter (1)
+15:49:32 INFO  PackageTree               :     │   │   │   └── exceptions (3)
+15:49:32 INFO  PackageTree               :     │   │   ├── layout (7)
+15:49:32 INFO  PackageTree               :     │   │   │   ├── property (45)
+15:49:32 INFO  PackageTree               :     │   │   │   ├── borders (13)
+15:49:32 INFO  PackageTree               :     │   │   │   ├── tagging (7)
+15:49:32 INFO  PackageTree               :     │   │   │   ├── renderer (66)
+15:49:32 INFO  PackageTree               :     │   │   │   │   └── objectfit (2)
+15:49:32 INFO  PackageTree               :     │   │   │   ├── element (21)
+15:49:32 INFO  PackageTree               :     │   │   │   ├── font (19)
+15:49:32 INFO  PackageTree               :     │   │   │   ├── layout (10)
+15:49:32 INFO  PackageTree               :     │   │   │   ├── hyphenation (16)
+15:49:32 INFO  PackageTree               :     │   │   │   ├── minmaxwidth (5)
+15:49:32 INFO  PackageTree               :     │   │   │   ├── margincollapse (3)
+15:49:32 INFO  PackageTree               :     │   │   │   ├── exceptions (1)
+15:49:32 INFO  PackageTree               :     │   │   │   └── splitting (4)
+15:49:32 INFO  PackageTree               :     │   │   ├── pdfa (7)
+15:49:32 INFO  PackageTree               :     │   │   │   └── checker (5)
+15:49:32 INFO  PackageTree               :     │   │   ├── forms (5)
+15:49:32 INFO  PackageTree               :     │   │   │   ├── fields (6)
+15:49:32 INFO  PackageTree               :     │   │   │   │   └── borders (5)
+15:49:32 INFO  PackageTree               :     │   │   │   ├── xfdf (23)
+15:49:32 INFO  PackageTree               :     │   │   │   ├── xfa (5)
+15:49:32 INFO  PackageTree               :     │   │   │   └── util (1)
+15:49:32 INFO  PackageTree               :     │   │   ├── barcodes (16)
+15:49:32 INFO  PackageTree               :     │   │   │   ├── qrcode (24)
+15:49:32 INFO  PackageTree               :     │   │   │   └── dmcode (3)
+15:49:32 INFO  PackageTree               :     │   │   └── signatures (58)
+15:49:32 INFO  PackageTree               :     │   ├── nighthawkapps
+15:49:32 INFO  PackageTree               :     │   │   └── wallet
+15:49:32 INFO  PackageTree               :     │   │       ├── android (6)
+15:49:32 INFO  PackageTree               :     │   │       │   ├── ui (28)
+15:49:32 INFO  PackageTree               :     │   │       │   │   ├── setup (76)
+15:49:32 INFO  PackageTree               :     │   │       │   │   ├── send (64)
+15:49:32 INFO  PackageTree               :     │   │       │   │   ├── util (16)
+15:49:32 INFO  PackageTree               :     │   │       │   │   │   └── price (1)
+15:49:32 INFO  PackageTree               :     │   │       │   │   ├── base (8)
+15:49:32 INFO  PackageTree               :     │   │       │   │   ├── home (51)
+15:49:32 INFO  PackageTree               :     │   │       │   │   ├── history (31)
+15:49:32 INFO  PackageTree               :     │   │       │   │   ├── receive (11)
+15:49:32 INFO  PackageTree               :     │   │       │   │   ├── scan (14)
+15:49:32 INFO  PackageTree               :     │   │       │   │   ├── profile (11)
+15:49:32 INFO  PackageTree               :     │   │       │   │   └── tabs (10)
+15:49:32 INFO  PackageTree               :     │   │       │   ├── ext (44)
+15:49:32 INFO  PackageTree               :     │   │       │   ├── databinding (30)
+15:49:32 INFO  PackageTree               :     │   │       │   ├── di
+15:49:32 INFO  PackageTree               :     │   │       │   │   ├── module (11)
+15:49:32 INFO  PackageTree               :     │   │       │   │   ├── annotation (5)
+15:49:32 INFO  PackageTree               :     │   │       │   │   ├── component (20)
+15:49:32 INFO  PackageTree               :     │   │       │   │   └── viewmodel (6)
+15:49:32 INFO  PackageTree               :     │   │       │   ├── preference (3)
+15:49:32 INFO  PackageTree               :     │   │       │   │   └── model (5)
+15:49:32 INFO  PackageTree               :     │   │       │   ├── qrecycler (5)
+15:49:32 INFO  PackageTree               :     │   │       │   └── lockbox (2)
+15:49:32 INFO  PackageTree               :     │   │       └── kotlin
+15:49:32 INFO  PackageTree               :     │   │           └── mnemonic (4)
+15:49:32 INFO  PackageTree               :     │   ├── squareup
+15:49:32 INFO  PackageTree               :     │   │   └── okhttp (56)
+15:49:32 INFO  PackageTree               :     │   │       └── internal (24)
+15:49:32 INFO  PackageTree               :     │   │           ├── framed (46)
+15:49:32 INFO  PackageTree               :     │   │           ├── http (32)
+15:49:32 INFO  PackageTree               :     │   │           ├── tls (6)
+15:49:32 INFO  PackageTree               :     │   │           └── io (3)
+15:49:32 INFO  PackageTree               :     │   └── airbnb
+15:49:32 INFO  PackageTree               :     │       └── lottie (70)
+15:49:32 INFO  PackageTree               :     │           ├── model (10)
+15:49:32 INFO  PackageTree               :     │           │   ├── layer (13)
+15:49:32 INFO  PackageTree               :     │           │   ├── content (24)
+15:49:32 INFO  PackageTree               :     │           │   └── animatable (14)
+15:49:32 INFO  PackageTree               :     │           ├── parser (40)
+15:49:32 INFO  PackageTree               :     │           │   └── moshi (17)
+15:49:32 INFO  PackageTree               :     │           ├── animation (1)
+15:49:32 INFO  PackageTree               :     │           │   ├── keyframe (23)
+15:49:32 INFO  PackageTree               :     │           │   └── content (21)
+15:49:32 INFO  PackageTree               :     │           ├── value (12)
+15:49:32 INFO  PackageTree               :     │           ├── utils (12)
+15:49:32 INFO  PackageTree               :     │           ├── network (8)
+15:49:32 INFO  PackageTree               :     │           └── manager (2)
+15:49:32 INFO  PackageTree               :     ├── io
+15:49:32 INFO  PackageTree               :     │   ├── grpc (263)
+15:49:32 INFO  PackageTree               :     │   │   ├── internal (444)
+15:49:32 INFO  PackageTree               :     │   │   ├── stub (43)
+15:49:32 INFO  PackageTree               :     │   │   │   └── annotations (2)
+15:49:32 INFO  PackageTree               :     │   │   ├── okhttp (46)
+15:49:32 INFO  PackageTree               :     │   │   │   └── internal (19)
+15:49:32 INFO  PackageTree               :     │   │   │       └── framed (18)
+15:49:32 INFO  PackageTree               :     │   │   ├── util (45)
+15:49:32 INFO  PackageTree               :     │   │   ├── inprocess (21)
+15:49:32 INFO  PackageTree               :     │   │   ├── protobuf
+15:49:32 INFO  PackageTree               :     │   │   │   └── lite (4)
+15:49:32 INFO  PackageTree               :     │   │   └── android (6)
+15:49:32 INFO  PackageTree               :     │   └── perfmark (6)
+15:49:32 INFO  PackageTree               :     ├── cash
+15:49:32 INFO  PackageTree               :     │   └── z
+15:49:32 INFO  PackageTree               :     │       ├── wallet
+15:49:32 INFO  PackageTree               :     │       │   └── sdk
+15:49:32 INFO  PackageTree               :     │       │       └── rpc (108)
+15:49:32 INFO  PackageTree               :     │       ├── ecc
+15:49:32 INFO  PackageTree               :     │       │   └── android
+15:49:32 INFO  PackageTree               :     │       │       ├── sdk (30)
+15:49:32 INFO  PackageTree               :     │       │       │   ├── db (74)
+15:49:32 INFO  PackageTree               :     │       │       │   │   └── entity (15)
+15:49:32 INFO  PackageTree               :     │       │       │   ├── ext (37)
+15:49:32 INFO  PackageTree               :     │       │       │   │   └── android (8)
+15:49:32 INFO  PackageTree               :     │       │       │   ├── tool (18)
+15:49:32 INFO  PackageTree               :     │       │       │   ├── block (55)
+15:49:32 INFO  PackageTree               :     │       │       │   ├── exception (52)
+15:49:32 INFO  PackageTree               :     │       │       │   ├── annotation (1)
+15:49:32 INFO  PackageTree               :     │       │       │   ├── jni (6)
+15:49:32 INFO  PackageTree               :     │       │       │   ├── transaction (56)
+15:49:32 INFO  PackageTree               :     │       │       │   ├── type (13)
+15:49:32 INFO  PackageTree               :     │       │       │   └── service (4)
+15:49:32 INFO  PackageTree               :     │       │       ├── bip39 (13)
+15:49:32 INFO  PackageTree               :     │       │       └── crypto (5)
+15:49:32 INFO  PackageTree               :     │       └── android
+15:49:32 INFO  PackageTree               :     │           └── plugin (2)
+15:49:32 INFO  PackageTree               :     ├── androidx
+15:49:32 INFO  PackageTree               :     │   ├── documentfile
+15:49:32 INFO  PackageTree               :     │   │   └── provider (5)
+15:49:32 INFO  PackageTree               :     │   ├── browser
+15:49:32 INFO  PackageTree               :     │   │   ├── browseractions (22)
+15:49:32 INFO  PackageTree               :     │   │   ├── trusted (32)
+15:49:32 INFO  PackageTree               :     │   │   │   ├── sharing (6)
+15:49:32 INFO  PackageTree               :     │   │   │   └── splashscreens (2)
+15:49:32 INFO  PackageTree               :     │   │   └── customtabs (33)
+15:49:32 INFO  PackageTree               :     │   ├── annotation (64)
+15:49:32 INFO  PackageTree               :     │   │   └── experimental (3)
+15:49:32 INFO  PackageTree               :     │   ├── appcompat
+15:49:32 INFO  PackageTree               :     │   │   ├── widget (204)
+15:49:32 INFO  PackageTree               :     │   │   ├── app (90)
+15:49:32 INFO  PackageTree               :     │   │   ├── view (14)
+15:49:32 INFO  PackageTree               :     │   │   │   └── menu (45)
+15:49:32 INFO  PackageTree               :     │   │   ├── graphics
+15:49:32 INFO  PackageTree               :     │   │   │   └── drawable (17)
+15:49:32 INFO  PackageTree               :     │   │   ├── text (1)
+15:49:32 INFO  PackageTree               :     │   │   └── content
+15:49:32 INFO  PackageTree               :     │   │       └── res (2)
+15:49:32 INFO  PackageTree               :     │   ├── fragment
+15:49:32 INFO  PackageTree               :     │   │   └── app (150)
+15:49:32 INFO  PackageTree               :     │   ├── dynamicanimation
+15:49:32 INFO  PackageTree               :     │   │   └── animation (36)
+15:49:32 INFO  PackageTree               :     │   ├── activity (23)
+15:49:32 INFO  PackageTree               :     │   │   ├── contextaware (6)
+15:49:32 INFO  PackageTree               :     │   │   └── result (23)
+15:49:32 INFO  PackageTree               :     │   │       └── contract (17)
+15:49:32 INFO  PackageTree               :     │   ├── paging (427)
+15:49:32 INFO  PackageTree               :     │   │   └── multicast (39)
+15:49:32 INFO  PackageTree               :     │   ├── navigation (98)
+15:49:32 INFO  PackageTree               :     │   │   ├── fragment (16)
+15:49:32 INFO  PackageTree               :     │   │   └── ui (26)
+15:49:32 INFO  PackageTree               :     │   ├── room (121)
+15:49:32 INFO  PackageTree               :     │   │   ├── util (13)
+15:49:32 INFO  PackageTree               :     │   │   ├── migration (2)
+15:49:32 INFO  PackageTree               :     │   │   └── paging (2)
+15:49:32 INFO  PackageTree               :     │   ├── core
+15:49:32 INFO  PackageTree               :     │   │   ├── provider (36)
+15:49:32 INFO  PackageTree               :     │   │   ├── util (41)
+15:49:32 INFO  PackageTree               :     │   │   ├── view (167)
+15:49:32 INFO  PackageTree               :     │   │   │   ├── accessibility (30)
+15:49:32 INFO  PackageTree               :     │   │   │   ├── inputmethod (11)
+15:49:32 INFO  PackageTree               :     │   │   │   └── animation (2)
+15:49:32 INFO  PackageTree               :     │   │   ├── location (27)
+15:49:32 INFO  PackageTree               :     │   │   ├── telephony (6)
+15:49:32 INFO  PackageTree               :     │   │   │   └── mbms (1)
+15:49:32 INFO  PackageTree               :     │   │   ├── content (36)
+15:49:32 INFO  PackageTree               :     │   │   │   ├── res (28)
+15:49:32 INFO  PackageTree               :     │   │   │   └── pm (16)
+15:49:32 INFO  PackageTree               :     │   │   ├── app (112)
+15:49:32 INFO  PackageTree               :     │   │   │   └── unusedapprestrictions (8)
+15:49:32 INFO  PackageTree               :     │   │   ├── os (35)
+15:49:32 INFO  PackageTree               :     │   │   ├── graphics (40)
+15:49:32 INFO  PackageTree               :     │   │   │   └── drawable (17)
+15:49:32 INFO  PackageTree               :     │   │   ├── text (26)
+15:49:32 INFO  PackageTree               :     │   │   │   └── util (6)
+15:49:32 INFO  PackageTree               :     │   │   ├── animation (15)
+15:49:32 INFO  PackageTree               :     │   │   ├── widget (44)
+15:49:32 INFO  PackageTree               :     │   │   ├── accessibilityservice (1)
+15:49:32 INFO  PackageTree               :     │   │   ├── transition (12)
+15:49:32 INFO  PackageTree               :     │   │   ├── net (9)
+15:49:32 INFO  PackageTree               :     │   │   ├── internal
+15:49:32 INFO  PackageTree               :     │   │   │   └── view (3)
+15:49:32 INFO  PackageTree               :     │   │   ├── hardware
+15:49:32 INFO  PackageTree               :     │   │   │   ├── fingerprint (5)
+15:49:32 INFO  PackageTree               :     │   │   │   └── display (1)
+15:49:32 INFO  PackageTree               :     │   │   ├── database (3)
+15:49:32 INFO  PackageTree               :     │   │   │   └── sqlite (2)
+15:49:32 INFO  PackageTree               :     │   │   └── math (1)
+15:49:32 INFO  PackageTree               :     │   ├── media (78)
+15:49:32 INFO  PackageTree               :     │   │   ├── app (3)
+15:49:32 INFO  PackageTree               :     │   │   └── session (2)
+15:49:32 INFO  PackageTree               :     │   ├── camera
+15:49:32 INFO  PackageTree               :     │   │   ├── extensions (11)
+15:49:32 INFO  PackageTree               :     │   │   │   └── internal (20)
+15:49:32 INFO  PackageTree               :     │   │   │       ├── sessionprocessor (27)
+15:49:32 INFO  PackageTree               :     │   │   │       └── compat
+15:49:32 INFO  PackageTree               :     │   │   │           ├── workaround (1)
+15:49:32 INFO  PackageTree               :     │   │   │           └── quirk (3)
+15:49:32 INFO  PackageTree               :     │   │   ├── view (37)
+15:49:32 INFO  PackageTree               :     │   │   │   ├── video (13)
+15:49:32 INFO  PackageTree               :     │   │   │   ├── transform (4)
+15:49:32 INFO  PackageTree               :     │   │   │   └── internal
+15:49:32 INFO  PackageTree               :     │   │   │       └── compat
+15:49:32 INFO  PackageTree               :     │   │   │           └── quirk (5)
+15:49:32 INFO  PackageTree               :     │   │   ├── core (176)
+15:49:32 INFO  PackageTree               :     │   │   │   ├── impl (138)
+15:49:32 INFO  PackageTree               :     │   │   │   │   ├── utils (31)
+15:49:32 INFO  PackageTree               :     │   │   │   │   │   ├── futures (20)
+15:49:32 INFO  PackageTree               :     │   │   │   │   │   └── executor (17)
+15:49:32 INFO  PackageTree               :     │   │   │   │   └── annotation (1)
+15:49:32 INFO  PackageTree               :     │   │   │   └── internal (18)
+15:49:32 INFO  PackageTree               :     │   │   │       ├── compat (3)
+15:49:32 INFO  PackageTree               :     │   │   │       │   ├── workaround (2)
+15:49:32 INFO  PackageTree               :     │   │   │       │   └── quirk (6)
+15:49:32 INFO  PackageTree               :     │   │   │       └── utils (5)
+15:49:32 INFO  PackageTree               :     │   │   ├── camera2 (2)
+15:49:32 INFO  PackageTree               :     │   │   │   ├── internal (95)
+15:49:32 INFO  PackageTree               :     │   │   │   │   ├── compat (34)
+15:49:32 INFO  PackageTree               :     │   │   │   │   │   ├── quirk (19)
+15:49:32 INFO  PackageTree               :     │   │   │   │   │   ├── params (18)
+15:49:32 INFO  PackageTree               :     │   │   │   │   │   └── workaround (11)
+15:49:32 INFO  PackageTree               :     │   │   │   │   └── annotation (1)
+15:49:32 INFO  PackageTree               :     │   │   │   ├── impl (7)
+15:49:32 INFO  PackageTree               :     │   │   │   └── interop (7)
+15:49:32 INFO  PackageTree               :     │   │   └── lifecycle (8)
+15:49:32 INFO  PackageTree               :     │   ├── transition (135)
+15:49:32 INFO  PackageTree               :     │   ├── viewpager2
+15:49:32 INFO  PackageTree               :     │   │   ├── widget (32)
+15:49:32 INFO  PackageTree               :     │   │   └── adapter (13)
+15:49:32 INFO  PackageTree               :     │   ├── constraintlayout
+15:49:32 INFO  PackageTree               :     │   │   ├── core (18)
+15:49:32 INFO  PackageTree               :     │   │   │   ├── parser (13)
+15:49:32 INFO  PackageTree               :     │   │   │   ├── motion (10)
+15:49:32 INFO  PackageTree               :     │   │   │   │   ├── utils (55)
+15:49:32 INFO  PackageTree               :     │   │   │   │   ├── key (7)
+15:49:32 INFO  PackageTree               :     │   │   │   │   └── parse (3)
+15:49:32 INFO  PackageTree               :     │   │   │   ├── widgets (18)
+15:49:32 INFO  PackageTree               :     │   │   │   │   └── analyzer (21)
+15:49:32 INFO  PackageTree               :     │   │   │   └── state (19)
+15:49:32 INFO  PackageTree               :     │   │   │       └── helpers (8)
+15:49:32 INFO  PackageTree               :     │   │   ├── motion
+15:49:32 INFO  PackageTree               :     │   │   │   ├── widget (54)
+15:49:32 INFO  PackageTree               :     │   │   │   └── utils (46)
+15:49:32 INFO  PackageTree               :     │   │   ├── utils
+15:49:32 INFO  PackageTree               :     │   │   │   └── widget (15)
+15:49:32 INFO  PackageTree               :     │   │   ├── widget (34)
+15:49:32 INFO  PackageTree               :     │   │   └── helper
+15:49:32 INFO  PackageTree               :     │   │       └── widget (9)
+15:49:32 INFO  PackageTree               :     │   ├── vectordrawable
+15:49:32 INFO  PackageTree               :     │   │   └── graphics
+15:49:32 INFO  PackageTree               :     │   │       └── drawable (24)
+15:49:32 INFO  PackageTree               :     │   ├── biometric (69)
+15:49:32 INFO  PackageTree               :     │   │   └── auth (17)
+15:49:32 INFO  PackageTree               :     │   ├── recyclerview
+15:49:32 INFO  PackageTree               :     │   │   └── widget (201)
+15:49:32 INFO  PackageTree               :     │   ├── lifecycle (134)
+15:49:32 INFO  PackageTree               :     │   ├── concurrent
+15:49:32 INFO  PackageTree               :     │   │   └── futures (18)
+15:49:32 INFO  PackageTree               :     │   ├── versionedparcelable (15)
+15:49:32 INFO  PackageTree               :     │   ├── customview
+15:49:32 INFO  PackageTree               :     │   │   ├── widget (13)
+15:49:32 INFO  PackageTree               :     │   │   └── view (3)
+15:49:32 INFO  PackageTree               :     │   ├── sqlite
+15:49:32 INFO  PackageTree               :     │   │   └── db (11)
+15:49:32 INFO  PackageTree               :     │   │       └── framework (9)
+15:49:32 INFO  PackageTree               :     │   ├── cardview
+15:49:32 INFO  PackageTree               :     │   │   └── widget (12)
+15:49:32 INFO  PackageTree               :     │   ├── viewpager
+15:49:32 INFO  PackageTree               :     │   │   └── widget (24)
+15:49:32 INFO  PackageTree               :     │   ├── collection (30)
+15:49:32 INFO  PackageTree               :     │   ├── swiperefreshlayout
+15:49:32 INFO  PackageTree               :     │   │   └── widget (18)
+15:49:32 INFO  PackageTree               :     │   ├── asynclayoutinflater
+15:49:32 INFO  PackageTree               :     │   │   └── view (6)
+15:49:32 INFO  PackageTree               :     │   ├── legacy
+15:49:32 INFO  PackageTree               :     │   │   ├── app (5)
+15:49:32 INFO  PackageTree               :     │   │   ├── widget (1)
+15:49:32 INFO  PackageTree               :     │   │   └── content (1)
+15:49:32 INFO  PackageTree               :     │   ├── savedstate (10)
+15:49:32 INFO  PackageTree               :     │   ├── security
+15:49:32 INFO  PackageTree               :     │   │   └── crypto (14)
+15:49:32 INFO  PackageTree               :     │   ├── coordinatorlayout
+15:49:32 INFO  PackageTree               :     │   │   └── widget (14)
+15:49:32 INFO  PackageTree               :     │   ├── drawerlayout
+15:49:32 INFO  PackageTree               :     │   │   └── widget (12)
+15:49:32 INFO  PackageTree               :     │   ├── cursoradapter
+15:49:32 INFO  PackageTree               :     │   │   └── widget (9)
+15:49:32 INFO  PackageTree               :     │   ├── arch
+15:49:32 INFO  PackageTree               :     │   │   └── core
+15:49:32 INFO  PackageTree               :     │   │       ├── executor (6)
+15:49:32 INFO  PackageTree               :     │   │       ├── internal (8)
+15:49:32 INFO  PackageTree               :     │   │       └── util (1)
+15:49:32 INFO  PackageTree               :     │   ├── slidingpanelayout
+15:49:32 INFO  PackageTree               :     │   │   └── widget (9)
+15:49:32 INFO  PackageTree               :     │   ├── loader
+15:49:32 INFO  PackageTree               :     │   │   ├── content (15)
+15:49:32 INFO  PackageTree               :     │   │   └── app (7)
+15:49:32 INFO  PackageTree               :     │   ├── print (7)
+15:49:32 INFO  PackageTree               :     │   ├── localbroadcastmanager
+15:49:32 INFO  PackageTree               :     │   │   └── content (4)
+15:49:32 INFO  PackageTree               :     │   ├── tracing (3)
+15:49:32 INFO  PackageTree               :     │   ├── exifinterface
+15:49:32 INFO  PackageTree               :     │   │   └── media (9)
+15:49:32 INFO  PackageTree               :     │   ├── viewbinding (2)
+15:49:32 INFO  PackageTree               :     │   └── interpolator
+15:49:32 INFO  PackageTree               :     │       └── view
+15:49:32 INFO  PackageTree               :     │           └── animation (4)
+15:49:32 INFO  PackageTree               :     ├── org
+15:49:32 INFO  PackageTree               :     │   ├── checkerframework
+15:49:32 INFO  PackageTree               :     │   │   ├── checker
+15:49:32 INFO  PackageTree               :     │   │   │   ├── compilermsgs
+15:49:32 INFO  PackageTree               :     │   │   │   │   └── qual (3)
+15:49:32 INFO  PackageTree               :     │   │   │   ├── units
+15:49:32 INFO  PackageTree               :     │   │   │   │   └── qual (39)
+15:49:32 INFO  PackageTree               :     │   │   │   ├── i18nformatter
+15:49:32 INFO  PackageTree               :     │   │   │   │   └── qual (9)
+15:49:32 INFO  PackageTree               :     │   │   │   ├── i18n
+15:49:32 INFO  PackageTree               :     │   │   │   │   └── qual (5)
+15:49:32 INFO  PackageTree               :     │   │   │   ├── guieffect
+15:49:32 INFO  PackageTree               :     │   │   │   │   └── qual (10)
+15:49:32 INFO  PackageTree               :     │   │   │   ├── signature
+15:49:32 INFO  PackageTree               :     │   │   │   │   └── qual (25)
+15:49:32 INFO  PackageTree               :     │   │   │   ├── index
+15:49:32 INFO  PackageTree               :     │   │   │   │   └── qual (37)
+15:49:32 INFO  PackageTree               :     │   │   │   ├── signedness
+15:49:32 INFO  PackageTree               :     │   │   │   │   └── qual (8)
+15:49:32 INFO  PackageTree               :     │   │   │   ├── formatter
+15:49:32 INFO  PackageTree               :     │   │   │   │   └── qual (7)
+15:49:32 INFO  PackageTree               :     │   │   │   ├── calledmethods
+15:49:32 INFO  PackageTree               :     │   │   │   │   └── qual (6)
+15:49:32 INFO  PackageTree               :     │   │   │   ├── nullness
+15:49:32 INFO  PackageTree               :     │   │   │   │   ├── compatqual (10)
+15:49:32 INFO  PackageTree               :     │   │   │   │   └── qual (18)
+15:49:32 INFO  PackageTree               :     │   │   │   ├── propkey
+15:49:32 INFO  PackageTree               :     │   │   │   │   └── qual (3)
+15:49:32 INFO  PackageTree               :     │   │   │   ├── fenum
+15:49:32 INFO  PackageTree               :     │   │   │   │   └── qual (18)
+15:49:32 INFO  PackageTree               :     │   │   │   ├── lock
+15:49:32 INFO  PackageTree               :     │   │   │   │   └── qual (14)
+15:49:32 INFO  PackageTree               :     │   │   │   ├── tainting
+15:49:32 INFO  PackageTree               :     │   │   │   │   └── qual (3)
+15:49:32 INFO  PackageTree               :     │   │   │   ├── interning
+15:49:32 INFO  PackageTree               :     │   │   │   │   └── qual (9)
+15:49:32 INFO  PackageTree               :     │   │   │   ├── builder
+15:49:32 INFO  PackageTree               :     │   │   │   │   └── qual (3)
+15:49:32 INFO  PackageTree               :     │   │   │   ├── initialization
+15:49:32 INFO  PackageTree               :     │   │   │   │   └── qual (5)
+15:49:32 INFO  PackageTree               :     │   │   │   ├── optional
+15:49:32 INFO  PackageTree               :     │   │   │   │   └── qual (4)
+15:49:32 INFO  PackageTree               :     │   │   │   └── regex
+15:49:32 INFO  PackageTree               :     │   │   │       └── qual (5)
+15:49:32 INFO  PackageTree               :     │   │   ├── framework
+15:49:32 INFO  PackageTree               :     │   │   │   └── qual (41)
+15:49:32 INFO  PackageTree               :     │   │   ├── common
+15:49:32 INFO  PackageTree               :     │   │   │   ├── util
+15:49:32 INFO  PackageTree               :     │   │   │   │   └── report
+15:49:32 INFO  PackageTree               :     │   │   │   │       └── qual (8)
+15:49:32 INFO  PackageTree               :     │   │   │   ├── value
+15:49:32 INFO  PackageTree               :     │   │   │   │   └── qual (20)
+15:49:32 INFO  PackageTree               :     │   │   │   ├── reflection
+15:49:32 INFO  PackageTree               :     │   │   │   │   └── qual (13)
+15:49:32 INFO  PackageTree               :     │   │   │   ├── aliasing
+15:49:32 INFO  PackageTree               :     │   │   │   │   └── qual (5)
+15:49:32 INFO  PackageTree               :     │   │   │   ├── returnsreceiver
+15:49:32 INFO  PackageTree               :     │   │   │   │   └── qual (3)
+15:49:32 INFO  PackageTree               :     │   │   │   ├── initializedfields
+15:49:32 INFO  PackageTree               :     │   │   │   │   └── qual (5)
+15:49:32 INFO  PackageTree               :     │   │   │   └── subtyping
+15:49:32 INFO  PackageTree               :     │   │   │       └── qual (2)
+15:49:32 INFO  PackageTree               :     │   │   └── dataflow
+15:49:32 INFO  PackageTree               :     │   │       └── qual (5)
+15:49:32 INFO  PackageTree               :     │   ├── bouncycastle (1)
+15:49:32 INFO  PackageTree               :     │   │   ├── operator (37)
+15:49:32 INFO  PackageTree               :     │   │   │   ├── bc (48)
+15:49:32 INFO  PackageTree               :     │   │   │   └── jcajce (27)
+15:49:32 INFO  PackageTree               :     │   │   ├── jcajce (32)
+15:49:32 INFO  PackageTree               :     │   │   │   ├── provider
+15:49:32 INFO  PackageTree               :     │   │   │   │   ├── digest (242)
+15:49:32 INFO  PackageTree               :     │   │   │   │   ├── asymmetric (28)
+15:49:32 INFO  PackageTree               :     │   │   │   │   │   ├── edec (39)
+15:49:32 INFO  PackageTree               :     │   │   │   │   │   ├── ec (124)
+15:49:32 INFO  PackageTree               :     │   │   │   │   │   ├── rsa (73)
+15:49:32 INFO  PackageTree               :     │   │   │   │   │   ├── dstu (6)
+15:49:32 INFO  PackageTree               :     │   │   │   │   │   ├── dsa (28)
+15:49:32 INFO  PackageTree               :     │   │   │   │   │   ├── dh (44)
+15:49:32 INFO  PackageTree               :     │   │   │   │   │   ├── gost (8)
+15:49:32 INFO  PackageTree               :     │   │   │   │   │   ├── x509 (22)
+15:49:32 INFO  PackageTree               :     │   │   │   │   │   ├── elgamal (10)
+15:49:32 INFO  PackageTree               :     │   │   │   │   │   ├── util (19)
+15:49:32 INFO  PackageTree               :     │   │   │   │   │   ├── ecgost12 (10)
+15:49:32 INFO  PackageTree               :     │   │   │   │   │   ├── ecgost (8)
+15:49:32 INFO  PackageTree               :     │   │   │   │   │   └── ies (1)
+15:49:32 INFO  PackageTree               :     │   │   │   │   ├── symmetric (500)
+15:49:32 INFO  PackageTree               :     │   │   │   │   │   └── util (26)
+15:49:32 INFO  PackageTree               :     │   │   │   │   ├── keystore (6)
+15:49:32 INFO  PackageTree               :     │   │   │   │   │   ├── pkcs12 (8)
+15:49:32 INFO  PackageTree               :     │   │   │   │   │   ├── bcfks (8)
+15:49:32 INFO  PackageTree               :     │   │   │   │   │   └── bc (6)
+15:49:32 INFO  PackageTree               :     │   │   │   │   ├── drbg (16)
+15:49:32 INFO  PackageTree               :     │   │   │   │   ├── config (4)
+15:49:32 INFO  PackageTree               :     │   │   │   │   └── util (6)
+15:49:32 INFO  PackageTree               :     │   │   │   ├── interfaces (7)
+15:49:32 INFO  PackageTree               :     │   │   │   ├── io (7)
+15:49:32 INFO  PackageTree               :     │   │   │   ├── spec (26)
+15:49:32 INFO  PackageTree               :     │   │   │   └── util (12)
+15:49:32 INFO  PackageTree               :     │   │   ├── pkix (1)
+15:49:32 INFO  PackageTree               :     │   │   │   └── jcajce (13)
+15:49:32 INFO  PackageTree               :     │   │   ├── crypto (51)
+15:49:32 INFO  PackageTree               :     │   │   │   ├── digests (45)
+15:49:32 INFO  PackageTree               :     │   │   │   ├── engines (82)
+15:49:32 INFO  PackageTree               :     │   │   │   ├── ec (44)
+15:49:32 INFO  PackageTree               :     │   │   │   ├── params (97)
+15:49:32 INFO  PackageTree               :     │   │   │   ├── paddings (8)
+15:49:32 INFO  PackageTree               :     │   │   │   ├── generators (46)
+15:49:32 INFO  PackageTree               :     │   │   │   ├── util (47)
+15:49:32 INFO  PackageTree               :     │   │   │   ├── modes (32)
+15:49:32 INFO  PackageTree               :     │   │   │   │   ├── kgcm (10)
+15:49:32 INFO  PackageTree               :     │   │   │   │   └── gcm (9)
+15:49:32 INFO  PackageTree               :     │   │   │   ├── macs (24)
+15:49:32 INFO  PackageTree               :     │   │   │   ├── encodings (3)
+15:49:32 INFO  PackageTree               :     │   │   │   ├── signers (30)
+15:49:32 INFO  PackageTree               :     │   │   │   ├── prng (21)
+15:49:32 INFO  PackageTree               :     │   │   │   │   └── drbg (7)
+15:49:32 INFO  PackageTree               :     │   │   │   ├── agreement (15)
+15:49:32 INFO  PackageTree               :     │   │   │   │   ├── kdf (6)
+15:49:32 INFO  PackageTree               :     │   │   │   │   ├── jpake (7)
+15:49:32 INFO  PackageTree               :     │   │   │   │   └── srp (5)
+15:49:32 INFO  PackageTree               :     │   │   │   ├── io (10)
+15:49:32 INFO  PackageTree               :     │   │   │   ├── parsers (2)
+15:49:32 INFO  PackageTree               :     │   │   │   ├── commitments (2)
+15:49:32 INFO  PackageTree               :     │   │   │   ├── kems (2)
+15:49:32 INFO  PackageTree               :     │   │   │   └── examples (2)
+15:49:32 INFO  PackageTree               :     │   │   ├── cms (110)
+15:49:32 INFO  PackageTree               :     │   │   │   ├── jcajce (74)
+15:49:32 INFO  PackageTree               :     │   │   │   └── bc (25)
+15:49:32 INFO  PackageTree               :     │   │   ├── pqc
+15:49:32 INFO  PackageTree               :     │   │   │   ├── crypto (8)
+15:49:32 INFO  PackageTree               :     │   │   │   │   ├── util (12)
+15:49:32 INFO  PackageTree               :     │   │   │   │   ├── lms (35)
+15:49:32 INFO  PackageTree               :     │   │   │   │   ├── qtesla (14)
+15:49:32 INFO  PackageTree               :     │   │   │   │   ├── gmss (15)
+15:49:32 INFO  PackageTree               :     │   │   │   │   │   └── util (4)
+15:49:32 INFO  PackageTree               :     │   │   │   │   ├── newhope (19)
+15:49:32 INFO  PackageTree               :     │   │   │   │   ├── xmss (54)
+15:49:32 INFO  PackageTree               :     │   │   │   │   ├── mceliece (19)
+15:49:32 INFO  PackageTree               :     │   │   │   │   ├── rainbow (8)
+15:49:32 INFO  PackageTree               :     │   │   │   │   │   └── util (3)
+15:49:32 INFO  PackageTree               :     │   │   │   │   └── sphincs (14)
+15:49:32 INFO  PackageTree               :     │   │   │   ├── jcajce
+15:49:32 INFO  PackageTree               :     │   │   │   │   ├── spec (13)
+15:49:32 INFO  PackageTree               :     │   │   │   │   ├── provider (17)
+15:49:32 INFO  PackageTree               :     │   │   │   │   │   ├── xmss (29)
+15:49:32 INFO  PackageTree               :     │   │   │   │   │   ├── gmss (1)
+15:49:32 INFO  PackageTree               :     │   │   │   │   │   ├── mceliece (28)
+15:49:32 INFO  PackageTree               :     │   │   │   │   │   ├── sphincs (7)
+15:49:32 INFO  PackageTree               :     │   │   │   │   │   ├── util (4)
+15:49:32 INFO  PackageTree               :     │   │   │   │   │   ├── rainbow (10)
+15:49:32 INFO  PackageTree               :     │   │   │   │   │   ├── lms (7)
+15:49:32 INFO  PackageTree               :     │   │   │   │   │   ├── qtesla (9)
+15:49:32 INFO  PackageTree               :     │   │   │   │   │   └── newhope (5)
+15:49:32 INFO  PackageTree               :     │   │   │   │   └── interfaces (12)
+15:49:32 INFO  PackageTree               :     │   │   │   ├── asn1 (17)
+15:49:32 INFO  PackageTree               :     │   │   │   └── math
+15:49:32 INFO  PackageTree               :     │   │   │       └── linearalgebra (31)
+15:49:32 INFO  PackageTree               :     │   │   ├── asn1 (103)
+15:49:32 INFO  PackageTree               :     │   │   │   ├── x9 (41)
+15:49:32 INFO  PackageTree               :     │   │   │   ├── esf (25)
+15:49:32 INFO  PackageTree               :     │   │   │   ├── est (3)
+15:49:32 INFO  PackageTree               :     │   │   │   ├── sec (37)
+15:49:32 INFO  PackageTree               :     │   │   │   ├── pkcs (30)
+15:49:32 INFO  PackageTree               :     │   │   │   ├── ocsp (17)
+15:49:32 INFO  PackageTree               :     │   │   │   ├── dvcs (14)
+15:49:32 INFO  PackageTree               :     │   │   │   ├── x509 (82)
+15:49:32 INFO  PackageTree               :     │   │   │   │   ├── qualified (8)
+15:49:32 INFO  PackageTree               :     │   │   │   │   └── sigi (3)
+15:49:32 INFO  PackageTree               :     │   │   │   ├── cryptopro (11)
+15:49:32 INFO  PackageTree               :     │   │   │   ├── bc (13)
+15:49:32 INFO  PackageTree               :     │   │   │   ├── eac (16)
+15:49:32 INFO  PackageTree               :     │   │   │   ├── cmc (39)
+15:49:32 INFO  PackageTree               :     │   │   │   ├── teletrust (16)
+15:49:32 INFO  PackageTree               :     │   │   │   ├── x500 (6)
+15:49:32 INFO  PackageTree               :     │   │   │   │   └── style (6)
+15:49:32 INFO  PackageTree               :     │   │   │   ├── cms (53)
+15:49:32 INFO  PackageTree               :     │   │   │   │   └── ecc (2)
+15:49:32 INFO  PackageTree               :     │   │   │   ├── iso (1)
+15:49:32 INFO  PackageTree               :     │   │   │   ├── smime (6)
+15:49:32 INFO  PackageTree               :     │   │   │   ├── tsp (12)
+15:49:32 INFO  PackageTree               :     │   │   │   ├── icao (5)
+15:49:32 INFO  PackageTree               :     │   │   │   ├── cmp (38)
+15:49:32 INFO  PackageTree               :     │   │   │   ├── ua (7)
+15:49:32 INFO  PackageTree               :     │   │   │   ├── crmf (23)
+15:49:32 INFO  PackageTree               :     │   │   │   ├── ess (8)
+15:49:32 INFO  PackageTree               :     │   │   │   ├── nist (4)
+15:49:32 INFO  PackageTree               :     │   │   │   ├── isismtt (1)
+15:49:32 INFO  PackageTree               :     │   │   │   │   ├── x509 (9)
+15:49:32 INFO  PackageTree               :     │   │   │   │   └── ocsp (2)
+15:49:32 INFO  PackageTree               :     │   │   │   ├── mozilla (2)
+15:49:32 INFO  PackageTree               :     │   │   │   ├── gm (4)
+15:49:32 INFO  PackageTree               :     │   │   │   ├── iana (1)
+15:49:32 INFO  PackageTree               :     │   │   │   ├── oiw (2)
+15:49:32 INFO  PackageTree               :     │   │   │   ├── misc (7)
+15:49:32 INFO  PackageTree               :     │   │   │   ├── util (3)
+15:49:32 INFO  PackageTree               :     │   │   │   ├── anssi (3)
+15:49:32 INFO  PackageTree               :     │   │   │   ├── bsi (1)
+15:49:32 INFO  PackageTree               :     │   │   │   ├── cryptlib (1)
+15:49:32 INFO  PackageTree               :     │   │   │   ├── nsri (1)
+15:49:32 INFO  PackageTree               :     │   │   │   ├── ntt (1)
+15:49:32 INFO  PackageTree               :     │   │   │   ├── microsoft (1)
+15:49:32 INFO  PackageTree               :     │   │   │   ├── edec (1)
+15:49:32 INFO  PackageTree               :     │   │   │   ├── kisa (1)
+15:49:32 INFO  PackageTree               :     │   │   │   ├── rosstandart (1)
+15:49:32 INFO  PackageTree               :     │   │   │   ├── gnu (1)
+15:49:32 INFO  PackageTree               :     │   │   │   └── isara (1)
+15:49:32 INFO  PackageTree               :     │   │   ├── est (30)
+15:49:32 INFO  PackageTree               :     │   │   │   └── jcajce (17)
+15:49:32 INFO  PackageTree               :     │   │   ├── math (3)
+15:49:32 INFO  PackageTree               :     │   │   │   ├── raw (15)
+15:49:32 INFO  PackageTree               :     │   │   │   ├── ec (52)
+15:49:32 INFO  PackageTree               :     │   │   │   │   ├── custom
+15:49:32 INFO  PackageTree               :     │   │   │   │   │   ├── sec (130)
+15:49:32 INFO  PackageTree               :     │   │   │   │   │   ├── gm (5)
+15:49:32 INFO  PackageTree               :     │   │   │   │   │   └── djb (5)
+15:49:32 INFO  PackageTree               :     │   │   │   │   ├── endo (10)
+15:49:32 INFO  PackageTree               :     │   │   │   │   ├── rfc8032 (12)
+15:49:32 INFO  PackageTree               :     │   │   │   │   ├── rfc7748 (8)
+15:49:32 INFO  PackageTree               :     │   │   │   │   └── tools (3)
+15:49:32 INFO  PackageTree               :     │   │   │   └── field (8)
+15:49:32 INFO  PackageTree               :     │   │   ├── cert (16)
+15:49:32 INFO  PackageTree               :     │   │   │   ├── crmf (20)
+15:49:32 INFO  PackageTree               :     │   │   │   │   ├── jcajce (12)
+15:49:32 INFO  PackageTree               :     │   │   │   │   └── bc (5)
+15:49:32 INFO  PackageTree               :     │   │   │   ├── path (7)
+15:49:32 INFO  PackageTree               :     │   │   │   │   └── validations (8)
+15:49:32 INFO  PackageTree               :     │   │   │   ├── ocsp (18)
+15:49:32 INFO  PackageTree               :     │   │   │   │   └── jcajce (3)
+15:49:32 INFO  PackageTree               :     │   │   │   ├── dane (11)
+15:49:32 INFO  PackageTree               :     │   │   │   │   └── fetcher (2)
+15:49:32 INFO  PackageTree               :     │   │   │   ├── cmp (11)
+15:49:32 INFO  PackageTree               :     │   │   │   ├── bc (4)
+15:49:32 INFO  PackageTree               :     │   │   │   ├── selector (6)
+15:49:32 INFO  PackageTree               :     │   │   │   │   └── jcajce (3)
+15:49:32 INFO  PackageTree               :     │   │   │   └── jcajce (22)
+15:49:32 INFO  PackageTree               :     │   │   ├── jce (13)
+15:49:32 INFO  PackageTree               :     │   │   │   ├── provider (73)
+15:49:32 INFO  PackageTree               :     │   │   │   ├── interfaces (16)
+15:49:32 INFO  PackageTree               :     │   │   │   ├── spec (24)
+15:49:32 INFO  PackageTree               :     │   │   │   ├── exception (5)
+15:49:32 INFO  PackageTree               :     │   │   │   └── netscape (1)
+15:49:32 INFO  PackageTree               :     │   │   ├── util (29)
+15:49:32 INFO  PackageTree               :     │   │   │   ├── io (6)
+15:49:32 INFO  PackageTree               :     │   │   │   │   └── pem (7)
+15:49:32 INFO  PackageTree               :     │   │   │   ├── test (17)
+15:49:32 INFO  PackageTree               :     │   │   │   └── encoders (14)
+15:49:32 INFO  PackageTree               :     │   │   ├── pkcs (15)
+15:49:32 INFO  PackageTree               :     │   │   │   ├── jcajce (15)
+15:49:32 INFO  PackageTree               :     │   │   │   └── bc (12)
+15:49:32 INFO  PackageTree               :     │   │   ├── eac (5)
+15:49:32 INFO  PackageTree               :     │   │   │   ├── operator (2)
+15:49:32 INFO  PackageTree               :     │   │   │   │   └── jcajce (11)
+15:49:32 INFO  PackageTree               :     │   │   │   └── jcajce (5)
+15:49:32 INFO  PackageTree               :     │   │   ├── its
+15:49:32 INFO  PackageTree               :     │   │   │   └── asn1 (50)
+15:49:32 INFO  PackageTree               :     │   │   ├── openssl (32)
+15:49:32 INFO  PackageTree               :     │   │   │   ├── jcajce (17)
+15:49:32 INFO  PackageTree               :     │   │   │   └── bc (3)
+15:49:32 INFO  PackageTree               :     │   │   ├── i18n (8)
+15:49:32 INFO  PackageTree               :     │   │   │   └── filter (6)
+15:49:32 INFO  PackageTree               :     │   │   ├── x509 (33)
+15:49:32 INFO  PackageTree               :     │   │   │   ├── util (3)
+15:49:32 INFO  PackageTree               :     │   │   │   └── extension (2)
+15:49:32 INFO  PackageTree               :     │   │   ├── tsp (22)
+15:49:32 INFO  PackageTree               :     │   │   │   └── cms (7)
+15:49:32 INFO  PackageTree               :     │   │   ├── dvcs (21)
+15:49:32 INFO  PackageTree               :     │   │   ├── mime (15)
+15:49:32 INFO  PackageTree               :     │   │   │   ├── smime (13)
+15:49:32 INFO  PackageTree               :     │   │   │   └── encoding (3)
+15:49:32 INFO  PackageTree               :     │   │   ├── cmc (2)
+15:49:32 INFO  PackageTree               :     │   │   ├── iana (1)
+15:49:32 INFO  PackageTree               :     │   │   ├── mozilla (1)
+15:49:32 INFO  PackageTree               :     │   │   │   └── jcajce (1)
+15:49:32 INFO  PackageTree               :     │   │   └── voms (2)
+15:49:32 INFO  PackageTree               :     │   ├── slf4j (8)
+15:49:32 INFO  PackageTree               :     │   │   ├── helpers (15)
+15:49:32 INFO  PackageTree               :     │   │   ├── spi (4)
+15:49:32 INFO  PackageTree               :     │   │   └── event (5)
+15:49:32 INFO  PackageTree               :     │   ├── intellij
+15:49:32 INFO  PackageTree               :     │   │   └── lang
+15:49:32 INFO  PackageTree               :     │   │       └── annotations (25)
+15:49:32 INFO  PackageTree               :     │   ├── jetbrains
+15:49:32 INFO  PackageTree               :     │   │   └── annotations (7)
+15:49:32 INFO  PackageTree               :     │   └── codehaus
+15:49:32 INFO  PackageTree               :     │       └── mojo
+15:49:32 INFO  PackageTree               :     │           └── animal_sniffer (1)
+15:49:32 INFO  PackageTree               :     ├── j$
+15:49:32 INFO  PackageTree               :     │   ├── util (44)
+15:49:32 INFO  PackageTree               :     │   │   ├── stream (223)
+15:49:32 INFO  PackageTree               :     │   │   ├── function (26)
+15:49:32 INFO  PackageTree               :     │   │   └── concurrent (30)
+15:49:32 INFO  PackageTree               :     │   ├── time (14)
+15:49:32 INFO  PackageTree               :     │   │   ├── zone (3)
+15:49:32 INFO  PackageTree               :     │   │   ├── temporal (16)
+15:49:32 INFO  PackageTree               :     │   │   ├── chrono (6)
+15:49:32 INFO  PackageTree               :     │   │   └── format (21)
+15:49:32 INFO  PackageTree               :     │   └── lang (1)
+15:49:32 INFO  PackageTree               :     ├── kotlin (109)
+15:49:32 INFO  PackageTree               :     │   ├── internal (18)
+15:49:32 INFO  PackageTree               :     │   │   ├── jdk8 (1)
+15:49:32 INFO  PackageTree               :     │   │   └── jdk7 (1)
+15:49:32 INFO  PackageTree               :     │   ├── time (22)
+15:49:32 INFO  PackageTree               :     │   │   └── jdk8 (1)
+15:49:32 INFO  PackageTree               :     │   ├── contracts (11)
+15:49:32 INFO  PackageTree               :     │   ├── jvm (21)
+15:49:32 INFO  PackageTree               :     │   │   ├── internal (85)
+15:49:32 INFO  PackageTree               :     │   │   │   ├── markers (9)
+15:49:32 INFO  PackageTree               :     │   │   │   └── unsafe (1)
+15:49:32 INFO  PackageTree               :     │   │   └── functions (24)
+15:49:32 INFO  PackageTree               :     │   ├── sequences (81)
+15:49:32 INFO  PackageTree               :     │   ├── collections (134)
+15:49:32 INFO  PackageTree               :     │   │   ├── unsigned (11)
+15:49:32 INFO  PackageTree               :     │   │   ├── jdk8 (1)
+15:49:32 INFO  PackageTree               :     │   │   └── builders (15)
+15:49:32 INFO  PackageTree               :     │   ├── coroutines (24)
+15:49:32 INFO  PackageTree               :     │   │   ├── jvm
+15:49:32 INFO  PackageTree               :     │   │   │   └── internal (16)
+15:49:32 INFO  PackageTree               :     │   │   ├── intrinsics (10)
+15:49:32 INFO  PackageTree               :     │   │   └── cancellation (1)
+15:49:32 INFO  PackageTree               :     │   ├── text (68)
+15:49:32 INFO  PackageTree               :     │   │   └── jdk8 (1)
+15:49:32 INFO  PackageTree               :     │   ├── ranges (37)
+15:49:32 INFO  PackageTree               :     │   ├── random (15)
+15:49:32 INFO  PackageTree               :     │   │   └── jdk8 (1)
+15:49:32 INFO  PackageTree               :     │   ├── reflect (47)
+15:49:32 INFO  PackageTree               :     │   ├── io (36)
+15:49:32 INFO  PackageTree               :     │   │   └── path (5)
+15:49:32 INFO  PackageTree               :     │   ├── annotation (6)
+15:49:32 INFO  PackageTree               :     │   ├── comparisons (23)
+15:49:32 INFO  PackageTree               :     │   ├── streams
+15:49:32 INFO  PackageTree               :     │   │   └── jdk8 (6)
+15:49:32 INFO  PackageTree               :     │   ├── math (5)
+15:49:32 INFO  PackageTree               :     │   ├── properties (8)
+15:49:32 INFO  PackageTree               :     │   ├── jdk7 (1)
+15:49:32 INFO  PackageTree               :     │   ├── concurrent (5)
+15:49:32 INFO  PackageTree               :     │   ├── experimental (2)
+15:49:32 INFO  PackageTree               :     │   ├── js (1)
+15:49:32 INFO  PackageTree               :     │   └── system (2)
+15:49:32 INFO  PackageTree               :     ├── android
+15:49:32 INFO  PackageTree               :     │   └── support
+15:49:32 INFO  PackageTree               :     │       ├── v4
+15:49:32 INFO  PackageTree               :     │       │   ├── media (75)
+15:49:32 INFO  PackageTree               :     │       │   │   └── session (92)
+15:49:32 INFO  PackageTree               :     │       │   ├── os (8)
+15:49:32 INFO  PackageTree               :     │       │   ├── app (5)
+15:49:32 INFO  PackageTree               :     │       │   └── graphics
+15:49:32 INFO  PackageTree               :     │       │       └── drawable (1)
+15:49:32 INFO  PackageTree               :     │       └── customtabs (12)
+15:49:32 INFO  PackageTree               :     │           └── trusted (8)
+15:49:32 INFO  PackageTree               :     ├── javax
+15:49:32 INFO  PackageTree               :     │   ├── annotation (32)
+15:49:32 INFO  PackageTree               :     │   │   ├── security (5)
+15:49:32 INFO  PackageTree               :     │   │   ├── meta (7)
+15:49:32 INFO  PackageTree               :     │   │   ├── concurrent (4)
+15:49:32 INFO  PackageTree               :     │   │   └── sql (2)
+15:49:32 INFO  PackageTree               :     │   └── inject (6)
+15:49:32 INFO  PackageTree               :     ├── dagger (15)
+15:49:32 INFO  PackageTree               :     │   ├── android (23)
+15:49:32 INFO  PackageTree               :     │   │   ├── support (11)
+15:49:32 INFO  PackageTree               :     │   │   └── internal (2)
+15:49:32 INFO  PackageTree               :     │   ├── multibindings (8)
+15:49:32 INFO  PackageTree               :     │   ├── internal (25)
+15:49:32 INFO  PackageTree               :     │   └── assisted (3)
+15:49:32 INFO  PackageTree               :     ├── okio (45)
+15:49:32 INFO  PackageTree               :     └── de
+15:49:32 INFO  PackageTree               :         └── adorsys
+15:49:32 INFO  PackageTree               :             └── android
+15:49:32 INFO  PackageTree               :                 └── securestoragelibrary (7)
+15:49:32 INFO  Profile                   : 
+15:49:32 INFO  AppProfile                : - generated app package tree (in 119 ms)
+15:49:32 INFO  AppProfile                : 
+15:49:32 DEBUG HashTree                  : Generate hash tree..
+15:49:33 DEBUG HashTree                  :     - generated 783 package hashes.
+15:49:33 DEBUG HashTree                  :     - generated 19017 clazz hashes.
+15:49:33 DEBUG HashTree                  :     - generated 134860 method hashes.
+15:49:33 DEBUG HashTree                  :     => Library Hash: bcf556f739f4106c4e8039d80240496d
+15:49:33 INFO  AppProfile                : - generated app hash trees (in 1 sec, 511 ms)
+15:49:33 INFO  AppProfile                : 
+15:49:33 INFO  LibraryIdentifier         : = Scan for library root packages (heuristic) =
+15:49:35 INFO  LibraryIdentifier         :     - Found lib root package dagger  (Dagger)
+15:49:35 INFO  LibraryIdentifier         :     - Found lib root package dagger  (Dagger2)
+15:49:35 INFO  LibraryIdentifier         :     - Found lib root package com.google.gson  (Gson)
+15:49:35 INFO  LibraryIdentifier         :     - Found lib root package com.google.common  (Guava)
+15:49:35 INFO  LibraryIdentifier         :     - Found lib root package com.squareup.okhttp  (OkHttp)
+15:49:35 INFO  LibraryIdentifier         :     - Found lib root package androidx.navigation  (android.arch.navigation::navigation-common)
+15:49:35 INFO  LibraryIdentifier         :     - Found lib root package androidx.navigation  (android.arch.navigation::navigation-common-ktx)
+15:49:35 INFO  LibraryIdentifier         :     - Found lib root package androidx.navigation.fragment  (android.arch.navigation::navigation-fragment)
+15:49:35 INFO  LibraryIdentifier         :     - Found lib root package androidx.navigation.fragment  (android.arch.navigation::navigation-fragment-ktx)
+15:49:35 INFO  LibraryIdentifier         :     - Found lib root package androidx.navigation  (android.arch.navigation::navigation-runtime)
+15:49:35 INFO  LibraryIdentifier         :     - Found lib root package androidx.navigation  (android.arch.navigation::navigation-runtime-ktx)
+15:49:35 INFO  LibraryIdentifier         :     - Found lib root package androidx.navigation.ui  (android.arch.navigation::navigation-ui)
+15:49:35 INFO  LibraryIdentifier         :     - Found lib root package androidx.navigation.ui  (android.arch.navigation::navigation-ui-ktx)
+15:49:35 INFO  LibraryIdentifier         :     - Found lib root package androidx.annotation  (androidx.annotation::annotation)
+15:49:35 INFO  LibraryIdentifier         :     - Found lib root package androidx.appcompat  (androidx.appcompat::appcompat)
+15:49:35 INFO  LibraryIdentifier         :     - Found lib root package androidx.arch.core  (androidx.arch.core::core-common)
+15:49:35 INFO  LibraryIdentifier         :     - Found lib root package androidx.arch.core.executor  (androidx.arch.core::core-runtime)
+15:49:35 INFO  LibraryIdentifier         :     - Found lib root package androidx.asynclayoutinflater.view  (androidx.asynclayoutinflater::asynclayoutinflater)
+15:49:35 INFO  LibraryIdentifier         :     - Found lib root package androidx.browser  (androidx.browser::browser)
+15:49:35 INFO  LibraryIdentifier         :     - Found lib root package androidx.cardview.widget  (androidx.cardview::cardview)
+15:49:35 INFO  LibraryIdentifier         :     - Found lib root package androidx.collection  (androidx.collection::collection)
+15:49:35 INFO  LibraryIdentifier         :     - Found lib root package androidx.collection  (androidx.collection::collection-ktx)
+15:49:35 INFO  LibraryIdentifier         :     - Found lib root package androidx.constraintlayout.widget  (androidx.constraintlayout::constraintlayout)
+15:49:35 INFO  LibraryIdentifier         :     - Found lib root package androidx.coordinatorlayout.widget  (androidx.coordinatorlayout::coordinatorlayout)
+15:49:35 INFO  LibraryIdentifier         :     - Found lib root package androidx.core  (androidx.core::core)
+15:49:35 INFO  LibraryIdentifier         :     - Found lib root package androidx  (androidx.core::core-ktx)
+15:49:35 INFO  LibraryIdentifier         :     - Found lib root package androidx.cursoradapter.widget  (androidx.cursoradapter::cursoradapter)
+15:49:35 INFO  LibraryIdentifier         :     - Found lib root package androidx.customview  (androidx.customview::customview)
+15:49:35 INFO  LibraryIdentifier         :     - Found lib root package androidx.documentfile.provider  (androidx.documentfile::documentfile)
+15:49:35 INFO  LibraryIdentifier         :     - Found lib root package androidx.drawerlayout.widget  (androidx.drawerlayout::drawerlayout)
+15:49:35 INFO  LibraryIdentifier         :     - Found lib root package androidx.dynamicanimation.animation  (androidx.dynamicanimation::dynamicanimation)
+15:49:35 INFO  LibraryIdentifier         :     - Found lib root package androidx.exifinterface.media  (androidx.exifinterface::exifinterface)
+15:49:35 INFO  LibraryIdentifier         :     - Found lib root package androidx.fragment.app  (androidx.fragment::fragment)
+15:49:35 INFO  LibraryIdentifier         :     - Found lib root package androidx.fragment.app  (androidx.fragment::fragment-ktx)
+15:49:35 INFO  LibraryIdentifier         :     - Found lib root package androidx.interpolator.view.animation  (androidx.interpolator::interpolator)
+15:49:35 INFO  LibraryIdentifier         :     - Found lib root package androidx.legacy  (androidx.legacy::legacy-support-core-ui)
+15:49:35 INFO  LibraryIdentifier         :     - Found lib root package androidx.legacy.content  (androidx.legacy::legacy-support-core-utils)
+15:49:35 INFO  LibraryIdentifier         :     - Found lib root package androidx.legacy  (androidx.legacy::legacy-support-v13)
+15:49:35 INFO  LibraryIdentifier         :     - Found lib root package androidx.lifecycle  (androidx.lifecycle::lifecycle-common)
+15:49:35 INFO  LibraryIdentifier         :     - Found lib root package androidx.lifecycle  (androidx.lifecycle::lifecycle-common-java8)
+15:49:35 INFO  LibraryIdentifier         :     - Found lib root package androidx.lifecycle  (androidx.lifecycle::lifecycle-compiler)
+15:49:35 INFO  LibraryIdentifier         :     - Found lib root package androidx.lifecycle  (androidx.lifecycle::lifecycle-extensions)
+15:49:35 INFO  LibraryIdentifier         :     - Found lib root package androidx.lifecycle  (androidx.lifecycle::lifecycle-livedata)
+15:49:35 INFO  LibraryIdentifier         :     - Found lib root package androidx.lifecycle  (androidx.lifecycle::lifecycle-livedata-core)
+15:49:35 INFO  LibraryIdentifier         :     - Found lib root package androidx.lifecycle  (androidx.lifecycle::lifecycle-process)
+15:49:35 INFO  LibraryIdentifier         :     - Found lib root package androidx.lifecycle  (androidx.lifecycle::lifecycle-reactivestreams)
+15:49:35 INFO  LibraryIdentifier         :     - Found lib root package androidx.lifecycle  (androidx.lifecycle::lifecycle-reactivestreams-ktx)
+15:49:35 INFO  LibraryIdentifier         :     - Found lib root package androidx.lifecycle  (androidx.lifecycle::lifecycle-runtime)
+15:49:35 INFO  LibraryIdentifier         :     - Found lib root package androidx.lifecycle  (androidx.lifecycle::lifecycle-service)
+15:49:35 INFO  LibraryIdentifier         :     - Found lib root package androidx.lifecycle  (androidx.lifecycle::lifecycle-viewmodel)
+15:49:35 INFO  LibraryIdentifier         :     - Found lib root package androidx.lifecycle  (androidx.lifecycle::lifecycle-viewmodel-ktx)
+15:49:35 INFO  LibraryIdentifier         :     - Found lib root package androidx.loader  (androidx.loader::loader)
+15:49:35 INFO  LibraryIdentifier         :     - Found lib root package androidx.localbroadcastmanager.content  (androidx.localbroadcastmanager::localbroadcastmanager)
+15:49:35 INFO  LibraryIdentifier         :     - Found lib root package android.support.v4.media  (androidx.media::media)
+15:49:35 INFO  LibraryIdentifier         :     - Found lib root package androidx.paging  (androidx.paging::paging-common)
+15:49:35 INFO  LibraryIdentifier         :     - Found lib root package androidx.paging  (androidx.paging::paging-runtime)
+15:49:35 INFO  LibraryIdentifier         :     - Found lib root package androidx.paging  (androidx.paging::paging-rxjava2)
+15:49:35 INFO  LibraryIdentifier         :     - Found lib root package androidx.print  (androidx.print::print)
+15:49:35 INFO  LibraryIdentifier         :     - Found lib root package androidx.recyclerview.widget  (androidx.recyclerview::recyclerview)
+15:49:35 INFO  LibraryIdentifier         :     - Found lib root package androidx.room  (androidx.room::room-common)
+15:49:35 INFO  LibraryIdentifier         :     - Found lib root package androidx.room  (androidx.room::room-compiler)
+15:49:35 INFO  LibraryIdentifier         :     - Found lib root package androidx.room  (androidx.room::room-runtime)
+15:49:35 INFO  LibraryIdentifier         :     - Found lib root package androidx.room  (androidx.room::room-rxjava2)
+15:49:35 INFO  LibraryIdentifier         :     - Found lib root package androidx.slidingpanelayout.widget  (androidx.slidingpanelayout::slidingpanelayout)
+15:49:35 INFO  LibraryIdentifier         :     - Found lib root package androidx.sqlite.db  (androidx.sqlite::sqlite)
+15:49:35 INFO  LibraryIdentifier         :     - Found lib root package androidx.sqlite.db.framework  (androidx.sqlite::sqlite-framework)
+15:49:35 INFO  LibraryIdentifier         :     - Found lib root package androidx.sqlite.db  (androidx.sqlite::sqlite-ktx)
+15:49:35 INFO  LibraryIdentifier         :     - Found lib root package androidx.swiperefreshlayout.widget  (androidx.swiperefreshlayout::swiperefreshlayout)
+15:49:35 INFO  LibraryIdentifier         :     - Found lib root package androidx.transition  (androidx.transition::transition)
+15:49:35 INFO  LibraryIdentifier         :     - Found lib root package androidx.vectordrawable.graphics.drawable  (androidx.vectordrawable::vectordrawable)
+15:49:35 INFO  LibraryIdentifier         :     - Found lib root package androidx.vectordrawable.graphics.drawable  (androidx.vectordrawable::vectordrawable-animated)
+15:49:35 INFO  LibraryIdentifier         :     - Found lib root package androidx.versionedparcelable  (androidx.versionedparcelable::versionedparcelable)
+15:49:35 INFO  LibraryIdentifier         :     - Found lib root package androidx.viewpager.widget  (androidx.viewpager::viewpager)
+15:49:35 INFO  LibraryIdentifier         :     - Found lib root package android.support.customtabs  (com.android.support::customtabs)
+15:49:35 INFO  LibraryIdentifier         :     - Found lib root package android.support.v4  (com.android.support::customview)
+15:49:35 INFO  LibraryIdentifier         :     - Found lib root package android.support.v4  (com.android.support::loader)
+15:49:35 INFO  LibraryIdentifier         :     - Found lib root package android.support.v4  (com.android.support::support-compat)
+15:49:35 INFO  LibraryIdentifier         :     - Found lib root package android.support.v4  (com.android.support::support-core-ui)
+15:49:35 INFO  LibraryIdentifier         :     - Found lib root package android.support.v4  (com.android.support::support-core-utils)
+15:49:35 INFO  LibraryIdentifier         :     - Found lib root package android.support.v4.app  (com.android.support::support-fragment)
+15:49:35 INFO  LibraryIdentifier         :     - Found lib root package android.support.v4.media  (com.android.support::support-media-compat)
+15:49:35 INFO  LibraryIdentifier         :     - Found lib root package android.support.v4  (com.android.support::support-v4)
+15:49:35 INFO  LibraryIdentifier         :     - Found lib root package androidx.versionedparcelable  (com.android.support::versionedparcelable)
+15:49:35 INFO  LibraryIdentifier         :     - Found lib root package com.google.android.material  (com.google.android.material::material)
+15:49:35 INFO  LibraryIdentifier         :     - Found lib root package com.google.protobuf  (com.google.firebase::protolite-well-known-types)
+15:49:35 INFO  LibraryIdentifier         :     - Found lib root package okio  (okio)
+15:49:35 INFO  LibraryIdentifier         : 
+15:49:35 INFO  LibraryIdentifier         : = Match profiles =
+15:51:40 INFO  LibraryIdentifier         :     >> profile matching done (2 min, 5 sec, 84 ms)
+15:51:40 INFO  LibraryIdentifier         : 
+15:51:40 INFO  LibraryIdentifier         : == Report ==
+15:51:40 INFO  LibraryIdentifier         : - Full library matches:
+15:51:40 INFO  ProfileMatch              :                 name: androidx.customview::customview
+15:51:40 INFO  ProfileMatch              :             category: Android
+15:51:40 INFO  ProfileMatch              :              version: 1.1.0
+15:51:40 INFO  ProfileMatch              :         release-date:  --
+15:51:40 INFO  ProfileMatch              :     lib root package: "androidx.customview"
+15:51:40 INFO  ProfileMatch              : 
+15:51:40 INFO  ProfileMatch              :                 name: androidx.appcompat::appcompat
+15:51:40 INFO  ProfileMatch              :             category: Android
+15:51:40 INFO  ProfileMatch              :              version: 1.3.0  [OLD VERSION]
+15:51:40 INFO  ProfileMatch              :         release-date:  --
+15:51:40 INFO  ProfileMatch              :     lib root package: "androidx.appcompat"
+15:51:40 INFO  ProfileMatch              : 
+15:51:40 INFO  ProfileMatch              :                 name: androidx.appcompat::appcompat
+15:51:40 INFO  ProfileMatch              :             category: Android
+15:51:40 INFO  ProfileMatch              :              version: 1.3.1  [OLD VERSION]
+15:51:40 INFO  ProfileMatch              :         release-date:  --
+15:51:40 INFO  ProfileMatch              :     lib root package: "androidx.appcompat"
+15:51:40 INFO  ProfileMatch              : 
+15:51:40 INFO  ProfileMatch              :                 name: androidx.cursoradapter::cursoradapter
+15:51:40 INFO  ProfileMatch              :             category: Android
+15:51:40 INFO  ProfileMatch              :              version: 1.0.0
+15:51:40 INFO  ProfileMatch              :         release-date:  --
+15:51:40 INFO  ProfileMatch              :     lib root package: "androidx.cursoradapter.widget"
+15:51:40 INFO  ProfileMatch              : 
+15:51:40 INFO  ProfileMatch              :                 name: androidx.room::room-common
+15:51:40 INFO  ProfileMatch              :             category: Android
+15:51:40 INFO  ProfileMatch              :              version: 2.3.0  [OLD VERSION]
+15:51:40 INFO  ProfileMatch              :         release-date:  --
+15:51:40 INFO  ProfileMatch              :     lib root package: "androidx.room"
+15:51:40 INFO  ProfileMatch              : 
+15:51:40 INFO  ProfileMatch              :                 name: okio
+15:51:40 INFO  ProfileMatch              :             category: Utilities
+15:51:40 INFO  ProfileMatch              :              version: 1.17.0  [OLD VERSION]
+15:51:40 INFO  ProfileMatch              :         release-date: 16.01.2019
+15:51:40 INFO  ProfileMatch              :     lib root package: "okio"
+15:51:40 INFO  ProfileMatch              : 
+15:51:40 INFO  ProfileMatch              :                 name: okio
+15:51:40 INFO  ProfileMatch              :             category: Utilities
+15:51:40 INFO  ProfileMatch              :              version: 1.17.1  [OLD VERSION]
+15:51:40 INFO  ProfileMatch              :         release-date: 16.01.2019
+15:51:40 INFO  ProfileMatch              :     lib root package: "okio"
+15:51:40 INFO  ProfileMatch              : 
+15:51:40 INFO  ProfileMatch              :                 name: okio
+15:51:40 INFO  ProfileMatch              :             category: Utilities
+15:51:40 INFO  ProfileMatch              :              version: 1.17.2  [OLD VERSION]
+15:51:40 INFO  ProfileMatch              :         release-date: 17.01.2019
+15:51:40 INFO  ProfileMatch              :     lib root package: "okio"
+15:51:40 INFO  ProfileMatch              : 
+15:51:40 INFO  ProfileMatch              :                 name: okio
+15:51:40 INFO  ProfileMatch              :             category: Utilities
+15:51:40 INFO  ProfileMatch              :              version: 1.17.3  [OLD VERSION]
+15:51:40 INFO  ProfileMatch              :         release-date: 28.01.2019
+15:51:40 INFO  ProfileMatch              :     lib root package: "okio"
+15:51:40 INFO  ProfileMatch              : 
+15:51:40 INFO  ProfileMatch              :                 name: okio
+15:51:40 INFO  ProfileMatch              :             category: Utilities
+15:51:40 INFO  ProfileMatch              :              version: 1.17.4  [OLD VERSION]
+15:51:40 INFO  ProfileMatch              :         release-date: 29.04.2019
+15:51:40 INFO  ProfileMatch              :     lib root package: "okio"
+15:51:40 INFO  ProfileMatch              : 
+15:51:40 INFO  ProfileMatch              :                 name: okio
+15:51:40 INFO  ProfileMatch              :             category: Utilities
+15:51:40 INFO  ProfileMatch              :              version: 1.17.5  [OLD VERSION]
+15:51:40 INFO  ProfileMatch              :         release-date: 11.12.2019
+15:51:40 INFO  ProfileMatch              :     lib root package: "okio"
+15:51:40 INFO  ProfileMatch              : 
+15:51:40 INFO  ProfileMatch              :                 name: androidx.recyclerview::recyclerview
+15:51:40 INFO  ProfileMatch              :             category: Android
+15:51:40 INFO  ProfileMatch              :              version: 1.2.0  [OLD VERSION]
+15:51:40 INFO  ProfileMatch              :         release-date:  --
+15:51:40 INFO  ProfileMatch              :     lib root package: "androidx.recyclerview.widget"
+15:51:40 INFO  ProfileMatch              : 
+15:51:40 INFO  ProfileMatch              :                 name: androidx.recyclerview::recyclerview
+15:51:40 INFO  ProfileMatch              :             category: Android
+15:51:40 INFO  ProfileMatch              :              version: 1.2.1
+15:51:40 INFO  ProfileMatch              :         release-date:  --
+15:51:40 INFO  ProfileMatch              :     lib root package: "androidx.recyclerview.widget"
+15:51:40 INFO  ProfileMatch              : 
+15:51:40 INFO  ProfileMatch              :                 name: com.android.support::loader
+15:51:40 INFO  ProfileMatch              :             category: Android
+15:51:40 INFO  ProfileMatch              :              version: 28.0.0
+15:51:40 INFO  ProfileMatch              :         release-date:  --
+15:51:40 INFO  ProfileMatch              :     lib root package: "android.support.v4"  (in app: "androidx.loader")
+15:51:40 INFO  ProfileMatch              : 
+15:51:40 INFO  ProfileMatch              :                 name: OkHttp
+15:51:40 INFO  ProfileMatch              :             category: Utilities
+15:51:40 INFO  ProfileMatch              :              version: 2.7.4  [OLD VERSION]
+15:51:40 INFO  ProfileMatch              :         release-date: 08.02.2016
+15:51:40 INFO  ProfileMatch              :     lib root package: "com.squareup.okhttp"
+15:51:40 INFO  ProfileMatch              : 
+15:51:40 INFO  ProfileMatch              :                 name: OkHttp
+15:51:40 INFO  ProfileMatch              :             category: Utilities
+15:51:40 INFO  ProfileMatch              :              version: 2.7.5  [OLD VERSION]
+15:51:40 INFO  ProfileMatch              :         release-date: 26.02.2016
+15:51:40 INFO  ProfileMatch              :     lib root package: "com.squareup.okhttp"
+15:51:40 INFO  ProfileMatch              : 
+15:51:40 INFO  ProfileMatch              :                 name: androidx.annotation::annotation
+15:51:40 INFO  ProfileMatch              :             category: Android
+15:51:40 INFO  ProfileMatch              :              version: 1.0.1  [OLD VERSION]
+15:51:40 INFO  ProfileMatch              :         release-date:  --
+15:51:40 INFO  ProfileMatch              :     lib root package: "androidx.annotation"
+15:51:40 INFO  ProfileMatch              : 
+15:51:40 INFO  ProfileMatch              :                 name: androidx.annotation::annotation
+15:51:40 INFO  ProfileMatch              :             category: Android
+15:51:40 INFO  ProfileMatch              :              version: 1.0.2  [OLD VERSION]
+15:51:40 INFO  ProfileMatch              :         release-date:  --
+15:51:40 INFO  ProfileMatch              :     lib root package: "androidx.annotation"
+15:51:40 INFO  ProfileMatch              : 
+15:51:40 INFO  ProfileMatch              :                 name: androidx.annotation::annotation
+15:51:40 INFO  ProfileMatch              :             category: Android
+15:51:40 INFO  ProfileMatch              :              version: 1.1.0  [OLD VERSION]
+15:51:40 INFO  ProfileMatch              :         release-date:  --
+15:51:40 INFO  ProfileMatch              :     lib root package: "androidx.annotation"
+15:51:40 INFO  ProfileMatch              : 
+15:51:40 INFO  ProfileMatch              :                 name: androidx.annotation::annotation
+15:51:40 INFO  ProfileMatch              :             category: Android
+15:51:40 INFO  ProfileMatch              :              version: 1.2.0  [OLD VERSION]
+15:51:40 INFO  ProfileMatch              :         release-date:  --
+15:51:40 INFO  ProfileMatch              :     lib root package: "androidx.annotation"
+15:51:40 INFO  ProfileMatch              : 
+15:51:40 INFO  ProfileMatch              :                 name: androidx.annotation::annotation
+15:51:40 INFO  ProfileMatch              :             category: Android
+15:51:40 INFO  ProfileMatch              :              version: 1.3.0  [OLD VERSION]
+15:51:40 INFO  ProfileMatch              :         release-date:  --
+15:51:40 INFO  ProfileMatch              :     lib root package: "androidx.annotation"
+15:51:40 INFO  ProfileMatch              : 
+15:51:40 INFO  ProfileMatch              :                 name: androidx.annotation::annotation
+15:51:40 INFO  ProfileMatch              :             category: Android
+15:51:40 INFO  ProfileMatch              :              version: 1.4.0
+15:51:40 INFO  ProfileMatch              :         release-date:  --
+15:51:40 INFO  ProfileMatch              :     lib root package: "androidx.annotation"
+15:51:40 INFO  ProfileMatch              : 
+15:51:40 INFO  ProfileMatch              :                 name: androidx.coordinatorlayout::coordinatorlayout
+15:51:40 INFO  ProfileMatch              :             category: Android
+15:51:40 INFO  ProfileMatch              :              version: 1.1.0  [OLD VERSION]
+15:51:40 INFO  ProfileMatch              :         release-date:  --
+15:51:40 INFO  ProfileMatch              :     lib root package: "androidx.coordinatorlayout.widget"
+15:51:40 INFO  ProfileMatch              : 
+15:51:40 INFO  ProfileMatch              :                 name: androidx.paging::paging-common
+15:51:40 INFO  ProfileMatch              :             category: Android
+15:51:40 INFO  ProfileMatch              :              version: 3.0.1  [OLD VERSION]
+15:51:40 INFO  ProfileMatch              :         release-date:  --
+15:51:40 INFO  ProfileMatch              :     lib root package: "androidx.paging"
+15:51:40 INFO  ProfileMatch              : 
+15:51:40 INFO  ProfileMatch              :                 name: androidx.swiperefreshlayout::swiperefreshlayout
+15:51:40 INFO  ProfileMatch              :             category: Android
+15:51:40 INFO  ProfileMatch              :              version: 1.0.0  [OLD VERSION]
+15:51:40 INFO  ProfileMatch              :         release-date:  --
+15:51:40 INFO  ProfileMatch              :     lib root package: "androidx.swiperefreshlayout.widget"
+15:51:40 INFO  ProfileMatch              : 
+15:51:40 INFO  ProfileMatch              :                 name: com.android.support::localbroadcastmanager
+15:51:40 INFO  ProfileMatch              :             category: Android
+15:51:40 INFO  ProfileMatch              :              version: 28.0.0
+15:51:40 INFO  ProfileMatch              :         release-date:  --
+15:51:40 INFO  ProfileMatch              :     lib root package: "android.support.v4.content"  (in app: "androidx.localbroadcastmanager.content")
+15:51:40 INFO  ProfileMatch              : 
+15:51:40 INFO  ProfileMatch              :                 name: androidx.exifinterface::exifinterface
+15:51:40 INFO  ProfileMatch              :             category: Android
+15:51:40 INFO  ProfileMatch              :              version: 1.3.0  [OLD VERSION]
+15:51:40 INFO  ProfileMatch              :         release-date:  --
+15:51:40 INFO  ProfileMatch              :     lib root package: "androidx.exifinterface.media"
+15:51:40 INFO  ProfileMatch              : 
+15:51:40 INFO  ProfileMatch              :                 name: androidx.exifinterface::exifinterface
+15:51:40 INFO  ProfileMatch              :             category: Android
+15:51:40 INFO  ProfileMatch              :              version: 1.3.2  [OLD VERSION]
+15:51:40 INFO  ProfileMatch              :         release-date:  --
+15:51:40 INFO  ProfileMatch              :     lib root package: "androidx.exifinterface.media"
+15:51:40 INFO  ProfileMatch              : 
+15:51:40 INFO  ProfileMatch              :                 name: androidx.constraintlayout::constraintlayout
+15:51:40 INFO  ProfileMatch              :             category: Android
+15:51:40 INFO  ProfileMatch              :              version: 2.1.1  [OLD VERSION]
+15:51:40 INFO  ProfileMatch              :         release-date:  --
+15:51:40 INFO  ProfileMatch              :     lib root package: "androidx.constraintlayout"
+15:51:40 INFO  ProfileMatch              : 
+15:51:40 INFO  ProfileMatch              :                 name: androidx.loader::loader
+15:51:40 INFO  ProfileMatch              :             category: Android
+15:51:40 INFO  ProfileMatch              :              version: 1.0.0  [OLD VERSION]
+15:51:40 INFO  ProfileMatch              :         release-date:  --
+15:51:40 INFO  ProfileMatch              :     lib root package: "androidx.loader"
+15:51:40 INFO  ProfileMatch              : 
+15:51:40 INFO  ProfileMatch              :                 name: Dagger2
+15:51:40 INFO  ProfileMatch              :             category: Utilities
+15:51:40 INFO  ProfileMatch              :              version: 2.39  [OLD VERSION]
+15:51:40 INFO  ProfileMatch              :         release-date: 29.09.2021
+15:51:40 INFO  ProfileMatch              :     lib root package: "dagger"  (in app: "androidx.camera.core.impl.annotation")
+15:51:40 INFO  ProfileMatch              : 
+15:51:40 INFO  ProfileMatch              :                 name: Dagger2
+15:51:40 INFO  ProfileMatch              :             category: Utilities
+15:51:40 INFO  ProfileMatch              :              version: 2.39.1  [OLD VERSION]
+15:51:40 INFO  ProfileMatch              :         release-date: 01.10.2021
+15:51:40 INFO  ProfileMatch              :     lib root package: "dagger"  (in app: "androidx.camera.core.impl.annotation")
+15:51:40 INFO  ProfileMatch              : 
+15:51:40 INFO  ProfileMatch              :                 name: Dagger2
+15:51:40 INFO  ProfileMatch              :             category: Utilities
+15:51:40 INFO  ProfileMatch              :              version: 2.40  [OLD VERSION]
+15:51:40 INFO  ProfileMatch              :         release-date: 27.10.2021
+15:51:40 INFO  ProfileMatch              :     lib root package: "dagger"  (in app: "androidx.camera.core.impl.annotation")
+15:51:40 INFO  ProfileMatch              : 
+15:51:40 INFO  ProfileMatch              :                 name: Dagger2
+15:51:40 INFO  ProfileMatch              :             category: Utilities
+15:51:40 INFO  ProfileMatch              :              version: 2.40.1  [OLD VERSION]
+15:51:40 INFO  ProfileMatch              :         release-date: 11.11.2021
+15:51:40 INFO  ProfileMatch              :     lib root package: "dagger"  (in app: "androidx.camera.core.impl.annotation")
+15:51:40 INFO  ProfileMatch              : 
+15:51:40 INFO  ProfileMatch              :                 name: Dagger2
+15:51:40 INFO  ProfileMatch              :             category: Utilities
+15:51:40 INFO  ProfileMatch              :              version: 2.40.2  [OLD VERSION]
+15:51:40 INFO  ProfileMatch              :         release-date: 23.11.2021
+15:51:40 INFO  ProfileMatch              :     lib root package: "dagger"  (in app: "androidx.camera.core.impl.annotation")
+15:51:40 INFO  ProfileMatch              : 
+15:51:40 INFO  ProfileMatch              :                 name: Dagger2
+15:51:40 INFO  ProfileMatch              :             category: Utilities
+15:51:40 INFO  ProfileMatch              :              version: 2.40.3  [OLD VERSION]
+15:51:40 INFO  ProfileMatch              :         release-date: 29.11.2021
+15:51:40 INFO  ProfileMatch              :     lib root package: "dagger"  (in app: "androidx.camera.core.impl.annotation")
+15:51:40 INFO  ProfileMatch              : 
+15:51:40 INFO  ProfileMatch              :                 name: Dagger2
+15:51:40 INFO  ProfileMatch              :             category: Utilities
+15:51:40 INFO  ProfileMatch              :              version: 2.40.4  [OLD VERSION]
+15:51:40 INFO  ProfileMatch              :         release-date: 02.12.2021
+15:51:40 INFO  ProfileMatch              :     lib root package: "dagger"  (in app: "androidx.camera.core.impl.annotation")
+15:51:40 INFO  ProfileMatch              : 
+15:51:40 INFO  ProfileMatch              :                 name: Dagger2
+15:51:40 INFO  ProfileMatch              :             category: Utilities
+15:51:40 INFO  ProfileMatch              :              version: 2.40.5  [OLD VERSION]
+15:51:40 INFO  ProfileMatch              :         release-date: 06.12.2021
+15:51:40 INFO  ProfileMatch              :     lib root package: "dagger"  (in app: "androidx.camera.core.impl.annotation")
+15:51:40 INFO  ProfileMatch              : 
+15:51:40 INFO  ProfileMatch              :                 name: androidx.cardview::cardview
+15:51:40 INFO  ProfileMatch              :             category: Android
+15:51:40 INFO  ProfileMatch              :              version: 1.0.0
+15:51:40 INFO  ProfileMatch              :         release-date:  --
+15:51:40 INFO  ProfileMatch              :     lib root package: "androidx.cardview.widget"
+15:51:40 INFO  ProfileMatch              : 
+15:51:40 INFO  ProfileMatch              :                 name: com.android.support::support-dynamic-animation
+15:51:40 INFO  ProfileMatch              :             category: Android
+15:51:40 INFO  ProfileMatch              :              version: 27.0.0  [OLD VERSION]
+15:51:40 INFO  ProfileMatch              :         release-date:  --
+15:51:40 INFO  ProfileMatch              :     lib root package: "android.support.animation"  (in app: "androidx.dynamicanimation.animation")
+15:51:40 INFO  ProfileMatch              : 
+15:51:40 INFO  ProfileMatch              :                 name: com.android.support::support-dynamic-animation
+15:51:40 INFO  ProfileMatch              :             category: Android
+15:51:40 INFO  ProfileMatch              :              version: 27.0.1  [OLD VERSION]
+15:51:40 INFO  ProfileMatch              :         release-date:  --
+15:51:40 INFO  ProfileMatch              :     lib root package: "android.support.animation"  (in app: "androidx.dynamicanimation.animation")
+15:51:40 INFO  ProfileMatch              : 
+15:51:40 INFO  ProfileMatch              :                 name: com.android.support::support-dynamic-animation
+15:51:40 INFO  ProfileMatch              :             category: Android
+15:51:40 INFO  ProfileMatch              :              version: 27.0.2  [OLD VERSION]
+15:51:40 INFO  ProfileMatch              :         release-date:  --
+15:51:40 INFO  ProfileMatch              :     lib root package: "android.support.animation"  (in app: "androidx.dynamicanimation.animation")
+15:51:40 INFO  ProfileMatch              : 
+15:51:40 INFO  ProfileMatch              :                 name: com.android.support::support-dynamic-animation
+15:51:40 INFO  ProfileMatch              :             category: Android
+15:51:40 INFO  ProfileMatch              :              version: 27.1.0  [OLD VERSION]
+15:51:40 INFO  ProfileMatch              :         release-date:  --
+15:51:40 INFO  ProfileMatch              :     lib root package: "android.support.animation"  (in app: "androidx.dynamicanimation.animation")
+15:51:40 INFO  ProfileMatch              : 
+15:51:40 INFO  ProfileMatch              :                 name: com.android.support::support-dynamic-animation
+15:51:40 INFO  ProfileMatch              :             category: Android
+15:51:40 INFO  ProfileMatch              :              version: 27.1.1  [OLD VERSION]
+15:51:40 INFO  ProfileMatch              :         release-date:  --
+15:51:40 INFO  ProfileMatch              :     lib root package: "android.support.animation"  (in app: "androidx.dynamicanimation.animation")
+15:51:40 INFO  ProfileMatch              : 
+15:51:40 INFO  ProfileMatch              :                 name: com.android.support::support-dynamic-animation
+15:51:40 INFO  ProfileMatch              :             category: Android
+15:51:40 INFO  ProfileMatch              :              version: 28.0.0
+15:51:40 INFO  ProfileMatch              :         release-date:  --
+15:51:40 INFO  ProfileMatch              :     lib root package: "android.support.animation"  (in app: "androidx.dynamicanimation.animation")
+15:51:40 INFO  ProfileMatch              : 
+15:51:40 INFO  ProfileMatch              :                 name: androidx.print::print
+15:51:40 INFO  ProfileMatch              :             category: Android
+15:51:40 INFO  ProfileMatch              :              version: 1.0.0
+15:51:40 INFO  ProfileMatch              :         release-date:  --
+15:51:40 INFO  ProfileMatch              :     lib root package: "androidx.print"
+15:51:40 INFO  ProfileMatch              : 
+15:51:40 INFO  ProfileMatch              :                 name: androidx.drawerlayout::drawerlayout
+15:51:40 INFO  ProfileMatch              :             category: Android
+15:51:40 INFO  ProfileMatch              :              version: 1.1.0  [OLD VERSION]
+15:51:40 INFO  ProfileMatch              :         release-date:  --
+15:51:40 INFO  ProfileMatch              :     lib root package: "androidx.drawerlayout.widget"
+15:51:40 INFO  ProfileMatch              : 
+15:51:40 INFO  ProfileMatch              :                 name: androidx.drawerlayout::drawerlayout
+15:51:40 INFO  ProfileMatch              :             category: Android
+15:51:40 INFO  ProfileMatch              :              version: 1.1.1
+15:51:40 INFO  ProfileMatch              :         release-date:  --
+15:51:40 INFO  ProfileMatch              :     lib root package: "androidx.drawerlayout.widget"
+15:51:40 INFO  ProfileMatch              : 
+15:51:40 INFO  ProfileMatch              :                 name: com.android.support::support-core-utils
+15:51:40 INFO  ProfileMatch              :             category: Android
+15:51:40 INFO  ProfileMatch              :              version: 28.0.0
+15:51:40 INFO  ProfileMatch              :         release-date:  --
+15:51:40 INFO  ProfileMatch              :     lib root package: "android.support.v4.content"  (in app: "androidx.legacy.content")
+15:51:40 INFO  ProfileMatch              : 
+15:51:40 INFO  ProfileMatch              :                 name: com.android.support::swiperefreshlayout
+15:51:40 INFO  ProfileMatch              :             category: Android
+15:51:40 INFO  ProfileMatch              :              version: 28.0.0
+15:51:40 INFO  ProfileMatch              :         release-date:  --
+15:51:40 INFO  ProfileMatch              :     lib root package: "android.support.v4.widget"  (in app: "androidx.swiperefreshlayout.widget")
+15:51:40 INFO  ProfileMatch              : 
+15:51:40 INFO  ProfileMatch              :                 name: com.android.support::print
+15:51:40 INFO  ProfileMatch              :             category: Android
+15:51:40 INFO  ProfileMatch              :              version: 28.0.0
+15:51:40 INFO  ProfileMatch              :         release-date:  --
+15:51:40 INFO  ProfileMatch              :     lib root package: "android.support.v4.print"  (in app: "androidx.print")
+15:51:40 INFO  ProfileMatch              : 
+15:51:40 INFO  ProfileMatch              :                 name: androidx.sqlite::sqlite-framework
+15:51:40 INFO  ProfileMatch              :             category: Android
+15:51:40 INFO  ProfileMatch              :              version: 2.1.0  [OLD VERSION]
+15:51:40 INFO  ProfileMatch              :         release-date:  --
+15:51:40 INFO  ProfileMatch              :     lib root package: "androidx.sqlite.db.framework"
+15:51:40 INFO  ProfileMatch              : 
+15:51:40 INFO  ProfileMatch              :                 name: com.google.android.material::material
+15:51:40 INFO  ProfileMatch              :             category: Android
+15:51:40 INFO  ProfileMatch              :              version: 1.4.0  [OLD VERSION]
+15:51:40 INFO  ProfileMatch              :         release-date:  --
+15:51:40 INFO  ProfileMatch              :     lib root package: "com.google.android.material"
+15:51:40 INFO  ProfileMatch              : 
+15:51:40 INFO  ProfileMatch              :                 name: androidx.dynamicanimation::dynamicanimation
+15:51:40 INFO  ProfileMatch              :             category: Android
+15:51:40 INFO  ProfileMatch              :              version: 1.0.0
+15:51:40 INFO  ProfileMatch              :         release-date:  --
+15:51:40 INFO  ProfileMatch              :     lib root package: "androidx.dynamicanimation.animation"
+15:51:40 INFO  ProfileMatch              : 
+15:51:40 INFO  ProfileMatch              :                 name: androidx.core::core-ktx
+15:51:40 INFO  ProfileMatch              :             category: Android
+15:51:40 INFO  ProfileMatch              :              version: 1.7.0  [OLD VERSION]
+15:51:40 INFO  ProfileMatch              :         release-date:  --
+15:51:40 INFO  ProfileMatch              :     lib root package: "androidx.core"
+15:51:40 INFO  ProfileMatch              : 
+15:51:40 INFO  ProfileMatch              :                 name: androidx.arch.core::core-runtime
+15:51:40 INFO  ProfileMatch              :             category: Android
+15:51:40 INFO  ProfileMatch              :              version: 2.1.0
+15:51:40 INFO  ProfileMatch              :         release-date:  --
+15:51:40 INFO  ProfileMatch              :     lib root package: "androidx.arch.core.executor"
+15:51:40 INFO  ProfileMatch              : 
+15:51:40 INFO  ProfileMatch              :                 name: androidx.media::media
+15:51:40 INFO  ProfileMatch              :             category: Android
+15:51:40 INFO  ProfileMatch              :              version: 1.0.0  [OLD VERSION]
+15:51:40 INFO  ProfileMatch              :         release-date:  --
+15:51:40 INFO  ProfileMatch              :     lib root package: "android.support.v4.media"
+15:51:40 INFO  ProfileMatch              : 
+15:51:40 INFO  ProfileMatch              :                 name: com.google.firebase::firebase-ml-vision-image-label-model
+15:51:40 INFO  ProfileMatch              :             category: Android
+15:51:40 INFO  ProfileMatch              :              version: 20.0.0  [OLD VERSION]
+15:51:40 INFO  ProfileMatch              :         release-date:  --
+15:51:40 INFO  ProfileMatch              :     lib root package: "com.google.firebase.ml.vision.imagelabel"  (in app: "org.bouncycastle")
+15:51:40 INFO  ProfileMatch              : 
+15:51:40 INFO  ProfileMatch              :                 name: com.google.firebase::firebase-ml-vision-image-label-model
+15:51:40 INFO  ProfileMatch              :             category: Android
+15:51:40 INFO  ProfileMatch              :              version: 20.0.1  [OLD VERSION]
+15:51:40 INFO  ProfileMatch              :         release-date:  --
+15:51:40 INFO  ProfileMatch              :     lib root package: "com.google.firebase.ml.vision.imagelabel"  (in app: "org.bouncycastle")
+15:51:40 INFO  ProfileMatch              : 
+15:51:40 INFO  ProfileMatch              :                 name: com.google.firebase::firebase-ml-vision-image-label-model
+15:51:40 INFO  ProfileMatch              :             category: Android
+15:51:40 INFO  ProfileMatch              :              version: 20.0.2
+15:51:40 INFO  ProfileMatch              :         release-date:  --
+15:51:40 INFO  ProfileMatch              :     lib root package: "com.google.firebase.ml.vision.imagelabel"  (in app: "org.bouncycastle")
+15:51:40 INFO  ProfileMatch              : 
+15:51:40 INFO  ProfileMatch              :                 name: com.android.support::asynclayoutinflater
+15:51:40 INFO  ProfileMatch              :             category: Android
+15:51:40 INFO  ProfileMatch              :              version: 28.0.0
+15:51:40 INFO  ProfileMatch              :         release-date:  --
+15:51:40 INFO  ProfileMatch              :     lib root package: "android.support.v4.view"  (in app: "androidx.asynclayoutinflater.view")
+15:51:40 INFO  ProfileMatch              : 
+15:51:40 INFO  ProfileMatch              :                 name: androidx.paging::paging-runtime
+15:51:40 INFO  ProfileMatch              :             category: Android
+15:51:40 INFO  ProfileMatch              :              version: 3.0.0  [OLD VERSION]
+15:51:40 INFO  ProfileMatch              :         release-date:  --
+15:51:40 INFO  ProfileMatch              :     lib root package: "androidx.paging"
+15:51:40 INFO  ProfileMatch              : 
+15:51:40 INFO  ProfileMatch              :                 name: androidx.paging::paging-runtime
+15:51:40 INFO  ProfileMatch              :             category: Android
+15:51:40 INFO  ProfileMatch              :              version: 3.0.1  [OLD VERSION]
+15:51:40 INFO  ProfileMatch              :         release-date:  --
+15:51:40 INFO  ProfileMatch              :     lib root package: "androidx.paging"
+15:51:40 INFO  ProfileMatch              : 
+15:51:40 INFO  ProfileMatch              :                 name: androidx.arch.core::core-common
+15:51:40 INFO  ProfileMatch              :             category: Android
+15:51:40 INFO  ProfileMatch              :              version: 2.0.0  [OLD VERSION]
+15:51:40 INFO  ProfileMatch              :         release-date:  --
+15:51:40 INFO  ProfileMatch              :     lib root package: "androidx.arch.core"
+15:51:40 INFO  ProfileMatch              : 
+15:51:40 INFO  ProfileMatch              :                 name: androidx.arch.core::core-common
+15:51:40 INFO  ProfileMatch              :             category: Android
+15:51:40 INFO  ProfileMatch              :              version: 2.0.1  [OLD VERSION]
+15:51:40 INFO  ProfileMatch              :         release-date:  --
+15:51:40 INFO  ProfileMatch              :     lib root package: "androidx.arch.core"
+15:51:40 INFO  ProfileMatch              : 
+15:51:40 INFO  ProfileMatch              :                 name: androidx.arch.core::core-common
+15:51:40 INFO  ProfileMatch              :             category: Android
+15:51:40 INFO  ProfileMatch              :              version: 2.1.0
+15:51:40 INFO  ProfileMatch              :         release-date:  --
+15:51:40 INFO  ProfileMatch              :     lib root package: "androidx.arch.core"
+15:51:40 INFO  ProfileMatch              : 
+15:51:40 INFO  ProfileMatch              :                 name: com.android.support::slidingpanelayout
+15:51:40 INFO  ProfileMatch              :             category: Android
+15:51:40 INFO  ProfileMatch              :              version: 28.0.0
+15:51:40 INFO  ProfileMatch              :         release-date:  --
+15:51:40 INFO  ProfileMatch              :     lib root package: "android.support.v4.widget"  (in app: "androidx.slidingpanelayout.widget")
+15:51:40 INFO  ProfileMatch              : 
+15:51:40 INFO  ProfileMatch              :                 name: androidx.versionedparcelable::versionedparcelable  [OLD VERSION]
+15:51:40 INFO  ProfileMatch              :             category: Android
+15:51:40 INFO  ProfileMatch              :              version: 1.1.0  [OLD VERSION]
+15:51:40 INFO  ProfileMatch              :         release-date:  --
+15:51:40 INFO  ProfileMatch              :     lib root package: "androidx.versionedparcelable"
+15:51:40 INFO  ProfileMatch              : 
+15:51:40 INFO  ProfileMatch              :                 name: androidx.versionedparcelable::versionedparcelable
+15:51:40 INFO  ProfileMatch              :             category: Android
+15:51:40 INFO  ProfileMatch              :              version: 1.1.1
+15:51:40 INFO  ProfileMatch              :         release-date:  --
+15:51:40 INFO  ProfileMatch              :     lib root package: "androidx.versionedparcelable"
+15:51:40 INFO  ProfileMatch              : 
+15:51:40 INFO  ProfileMatch              :                 name: androidx.palette::palette-ktx
+15:51:40 INFO  ProfileMatch              :             category: Android
+15:51:40 INFO  ProfileMatch              :              version: 1.0.0
+15:51:40 INFO  ProfileMatch              :         release-date:  --
+15:51:40 INFO  ProfileMatch              :     lib root package: "androidx.palette.graphics"  (in app: "org.bouncycastle.est")
+15:51:40 INFO  ProfileMatch              : 
+15:51:40 INFO  ProfileMatch              :                 name: androidx.lifecycle::lifecycle-viewmodel-ktx
+15:51:40 INFO  ProfileMatch              :             category: Android
+15:51:40 INFO  ProfileMatch              :              version: 2.0.0  [OLD VERSION]
+15:51:40 INFO  ProfileMatch              :         release-date:  --
+15:51:40 INFO  ProfileMatch              :     lib root package: "androidx.lifecycle"  (in app: "androidx.paging")
+15:51:40 INFO  ProfileMatch              : 
+15:51:40 INFO  ProfileMatch              :                 name: com.android.support::cursoradapter
+15:51:40 INFO  ProfileMatch              :             category: Android
+15:51:40 INFO  ProfileMatch              :              version: 28.0.0
+15:51:40 INFO  ProfileMatch              :         release-date:  --
+15:51:40 INFO  ProfileMatch              :     lib root package: "android.support.v4.widget"  (in app: "androidx.cursoradapter.widget")
+15:51:40 INFO  ProfileMatch              : 
+15:51:40 INFO  ProfileMatch              :                 name: androidx.slidingpanelayout::slidingpanelayout
+15:51:40 INFO  ProfileMatch              :             category: Android
+15:51:40 INFO  ProfileMatch              :              version: 1.0.0  [OLD VERSION]
+15:51:40 INFO  ProfileMatch              :         release-date:  --
+15:51:40 INFO  ProfileMatch              :     lib root package: "androidx.slidingpanelayout.widget"
+15:51:40 INFO  ProfileMatch              : 
+15:51:40 INFO  ProfileMatch              :                 name: androidx.legacy::legacy-support-core-ui
+15:51:40 INFO  ProfileMatch              :             category: Android
+15:51:40 INFO  ProfileMatch              :              version: 1.0.0
+15:51:40 INFO  ProfileMatch              :         release-date:  --
+15:51:40 INFO  ProfileMatch              :     lib root package: "androidx.legacy"
+15:51:40 INFO  ProfileMatch              : 
+15:51:40 INFO  ProfileMatch              :                 name: androidx.room::room-runtime
+15:51:40 INFO  ProfileMatch              :             category: Android
+15:51:40 INFO  ProfileMatch              :              version: 2.3.0  [OLD VERSION]
+15:51:40 INFO  ProfileMatch              :         release-date:  --
+15:51:40 INFO  ProfileMatch              :     lib root package: "androidx.room"
+15:51:40 INFO  ProfileMatch              : 
+15:51:40 INFO  ProfileMatch              :                 name: com.android.support::interpolator
+15:51:40 INFO  ProfileMatch              :             category: Android
+15:51:40 INFO  ProfileMatch              :              version: 28.0.0
+15:51:40 INFO  ProfileMatch              :         release-date:  --
+15:51:40 INFO  ProfileMatch              :     lib root package: "android.support.v4.view.animation"  (in app: "androidx.interpolator.view.animation")
+15:51:40 INFO  ProfileMatch              : 
+15:51:40 INFO  ProfileMatch              :                 name: androidx.interpolator::interpolator
+15:51:40 INFO  ProfileMatch              :             category: Android
+15:51:40 INFO  ProfileMatch              :              version: 1.0.0
+15:51:40 INFO  ProfileMatch              :         release-date:  --
+15:51:40 INFO  ProfileMatch              :     lib root package: "androidx.interpolator.view.animation"
+15:51:40 INFO  ProfileMatch              : 
+15:51:40 INFO  ProfileMatch              :                 name: androidx.documentfile::documentfile
+15:51:40 INFO  ProfileMatch              :             category: Android
+15:51:40 INFO  ProfileMatch              :              version: 1.0.0  [OLD VERSION]
+15:51:40 INFO  ProfileMatch              :         release-date:  --
+15:51:40 INFO  ProfileMatch              :     lib root package: "androidx.documentfile.provider"
+15:51:40 INFO  ProfileMatch              : 
+15:51:40 INFO  ProfileMatch              :                 name: androidx.documentfile::documentfile
+15:51:40 INFO  ProfileMatch              :             category: Android
+15:51:40 INFO  ProfileMatch              :              version: 1.0.1
+15:51:40 INFO  ProfileMatch              :         release-date:  --
+15:51:40 INFO  ProfileMatch              :     lib root package: "androidx.documentfile.provider"
+15:51:40 INFO  ProfileMatch              : 
+15:51:40 INFO  ProfileMatch              :                 name: androidx.asynclayoutinflater::asynclayoutinflater
+15:51:40 INFO  ProfileMatch              :             category: Android
+15:51:40 INFO  ProfileMatch              :              version: 1.0.0
+15:51:40 INFO  ProfileMatch              :         release-date:  --
+15:51:40 INFO  ProfileMatch              :     lib root package: "androidx.asynclayoutinflater.view"
+15:51:40 INFO  ProfileMatch              : 
+15:51:40 INFO  ProfileMatch              :                 name: com.android.support::support-core-ui
+15:51:40 INFO  ProfileMatch              :             category: Android
+15:51:40 INFO  ProfileMatch              :              version: 28.0.0
+15:51:40 INFO  ProfileMatch              :         release-date:  --
+15:51:40 INFO  ProfileMatch              :     lib root package: "android.support.v4"  (in app: "androidx.legacy")
+15:51:40 INFO  ProfileMatch              : 
+15:51:40 INFO  ProfileMatch              :                 name: Facebook
+15:51:40 INFO  ProfileMatch              :             category: SocialMedia
+15:51:40 INFO  ProfileMatch              :              version: 4.27.0  [OLD VERSION]
+15:51:40 INFO  ProfileMatch              :         release-date: 26.09.2017
+15:51:40 INFO  ProfileMatch              :     lib root package: "com.facebook.all"  (in app: "org.bouncycastle")
+15:51:40 INFO  ProfileMatch              : 
+15:51:40 INFO  ProfileMatch              :                 name: Facebook
+15:51:40 INFO  ProfileMatch              :             category: SocialMedia
+15:51:40 INFO  ProfileMatch              :              version: 4.28.0  [OLD VERSION]
+15:51:40 INFO  ProfileMatch              :         release-date: 07.11.2017
+15:51:40 INFO  ProfileMatch              :     lib root package: "com.facebook.all"  (in app: "org.bouncycastle")
+15:51:40 INFO  ProfileMatch              : 
+15:51:40 INFO  ProfileMatch              :                 name: Facebook
+15:51:40 INFO  ProfileMatch              :             category: SocialMedia
+15:51:40 INFO  ProfileMatch              :              version: 4.29.0  [OLD VERSION]
+15:51:40 INFO  ProfileMatch              :         release-date: 05.12.2017
+15:51:40 INFO  ProfileMatch              :     lib root package: "com.facebook.all"  (in app: "org.bouncycastle")
+15:51:40 INFO  ProfileMatch              : 
+15:51:40 INFO  ProfileMatch              :                 name: Facebook
+15:51:40 INFO  ProfileMatch              :             category: SocialMedia
+15:51:40 INFO  ProfileMatch              :              version: 4.30.0  [OLD VERSION]
+15:51:40 INFO  ProfileMatch              :         release-date: 24.01.2018
+15:51:40 INFO  ProfileMatch              :     lib root package: "com.facebook.all"  (in app: "org.bouncycastle")
+15:51:40 INFO  ProfileMatch              : 
+15:51:40 INFO  ProfileMatch              :                 name: Facebook
+15:51:40 INFO  ProfileMatch              :             category: SocialMedia
+15:51:40 INFO  ProfileMatch              :              version: 4.31.0  [OLD VERSION]
+15:51:40 INFO  ProfileMatch              :         release-date: 28.02.2018
+15:51:40 INFO  ProfileMatch              :     lib root package: "com.facebook.all"  (in app: "org.bouncycastle")
+15:51:40 INFO  ProfileMatch              : 
+15:51:40 INFO  ProfileMatch              :                 name: Facebook
+15:51:40 INFO  ProfileMatch              :             category: SocialMedia
+15:51:40 INFO  ProfileMatch              :              version: 4.32.0  [OLD VERSION]
+15:51:40 INFO  ProfileMatch              :         release-date: 11.04.2018
+15:51:40 INFO  ProfileMatch              :     lib root package: "com.facebook.all"  (in app: "org.bouncycastle")
+15:51:40 INFO  ProfileMatch              : 
+15:51:40 INFO  ProfileMatch              :                 name: Facebook
+15:51:40 INFO  ProfileMatch              :             category: SocialMedia
+15:51:40 INFO  ProfileMatch              :              version: 4.33.0  [OLD VERSION]
+15:51:40 INFO  ProfileMatch              :         release-date: 01.05.2018
+15:51:40 INFO  ProfileMatch              :     lib root package: "com.facebook.all"  (in app: "org.bouncycastle")
+15:51:40 INFO  ProfileMatch              : 
+15:51:40 INFO  ProfileMatch              :                 name: Facebook
+15:51:40 INFO  ProfileMatch              :             category: SocialMedia
+15:51:40 INFO  ProfileMatch              :              version: 4.34.0  [OLD VERSION]
+15:51:40 INFO  ProfileMatch              :         release-date: 19.06.2018
+15:51:40 INFO  ProfileMatch              :     lib root package: "com.facebook.all"  (in app: "org.bouncycastle")
+15:51:40 INFO  ProfileMatch              : 
+15:51:40 INFO  ProfileMatch              :                 name: Facebook
+15:51:40 INFO  ProfileMatch              :             category: SocialMedia
+15:51:40 INFO  ProfileMatch              :              version: 4.35.0  [OLD VERSION]
+15:51:40 INFO  ProfileMatch              :         release-date: 26.07.2018
+15:51:40 INFO  ProfileMatch              :     lib root package: "com.facebook.all"  (in app: "org.bouncycastle")
+15:51:40 INFO  ProfileMatch              : 
+15:51:40 INFO  ProfileMatch              :                 name: Facebook
+15:51:40 INFO  ProfileMatch              :             category: SocialMedia
+15:51:40 INFO  ProfileMatch              :              version: 4.36.0  [OLD VERSION]
+15:51:40 INFO  ProfileMatch              :         release-date: 29.08.2018
+15:51:40 INFO  ProfileMatch              :     lib root package: "com.facebook.all"  (in app: "org.bouncycastle")
+15:51:40 INFO  ProfileMatch              : 
+15:51:40 INFO  ProfileMatch              :                 name: Facebook
+15:51:40 INFO  ProfileMatch              :             category: SocialMedia
+15:51:40 INFO  ProfileMatch              :              version: 4.36.1  [OLD VERSION]
+15:51:40 INFO  ProfileMatch              :         release-date: 15.09.2018
+15:51:40 INFO  ProfileMatch              :     lib root package: "com.facebook.all"  (in app: "org.bouncycastle")
+15:51:40 INFO  ProfileMatch              : 
+15:51:40 INFO  ProfileMatch              :                 name: Facebook
+15:51:40 INFO  ProfileMatch              :             category: SocialMedia
+15:51:40 INFO  ProfileMatch              :              version: 4.37.0  [OLD VERSION]
+15:51:40 INFO  ProfileMatch              :         release-date: 27.09.2018
+15:51:40 INFO  ProfileMatch              :     lib root package: "com.facebook.all"  (in app: "org.bouncycastle")
+15:51:40 INFO  ProfileMatch              : 
+15:51:40 INFO  ProfileMatch              :                 name: Facebook
+15:51:40 INFO  ProfileMatch              :             category: SocialMedia
+15:51:40 INFO  ProfileMatch              :              version: 4.38.0  [OLD VERSION]
+15:51:40 INFO  ProfileMatch              :         release-date: 23.10.2018
+15:51:40 INFO  ProfileMatch              :     lib root package: "com.facebook.all"  (in app: "org.bouncycastle")
+15:51:40 INFO  ProfileMatch              : 
+15:51:40 INFO  ProfileMatch              :                 name: Facebook
+15:51:40 INFO  ProfileMatch              :             category: SocialMedia
+15:51:40 INFO  ProfileMatch              :              version: 4.38.1  [OLD VERSION]
+15:51:40 INFO  ProfileMatch              :         release-date: 31.10.2018
+15:51:40 INFO  ProfileMatch              :     lib root package: "com.facebook.all"  (in app: "org.bouncycastle")
+15:51:40 INFO  ProfileMatch              : 
+15:51:40 INFO  ProfileMatch              :                 name: Facebook
+15:51:40 INFO  ProfileMatch              :             category: SocialMedia
+15:51:40 INFO  ProfileMatch              :              version: 4.39.0  [OLD VERSION]
+15:51:40 INFO  ProfileMatch              :         release-date: 05.12.2018
+15:51:40 INFO  ProfileMatch              :     lib root package: "com.facebook.all"  (in app: "org.bouncycastle")
+15:51:40 INFO  ProfileMatch              : 
+15:51:40 INFO  ProfileMatch              :                 name: Facebook
+15:51:40 INFO  ProfileMatch              :             category: SocialMedia
+15:51:40 INFO  ProfileMatch              :              version: 4.40.0  [OLD VERSION]
+15:51:40 INFO  ProfileMatch              :         release-date: 22.01.2019
+15:51:40 INFO  ProfileMatch              :     lib root package: "com.facebook.all"  (in app: "org.bouncycastle")
+15:51:40 INFO  ProfileMatch              : 
+15:51:40 INFO  ProfileMatch              :                 name: Facebook
+15:51:40 INFO  ProfileMatch              :             category: SocialMedia
+15:51:40 INFO  ProfileMatch              :              version: 4.41.0  [OLD VERSION]
+15:51:40 INFO  ProfileMatch              :         release-date: 08.03.2019
+15:51:40 INFO  ProfileMatch              :     lib root package: "com.facebook.all"  (in app: "org.bouncycastle")
+15:51:40 INFO  ProfileMatch              : 
+15:51:40 INFO  ProfileMatch              :                 name: Facebook
+15:51:40 INFO  ProfileMatch              :             category: SocialMedia
+15:51:40 INFO  ProfileMatch              :              version: 4.42.0  [OLD VERSION]
+15:51:40 INFO  ProfileMatch              :         release-date: 08.04.2019
+15:51:40 INFO  ProfileMatch              :     lib root package: "com.facebook.all"  (in app: "org.bouncycastle")
+15:51:40 INFO  ProfileMatch              : 
+15:51:40 INFO  ProfileMatch              :                 name: Facebook
+15:51:40 INFO  ProfileMatch              :             category: SocialMedia
+15:51:40 INFO  ProfileMatch              :              version: 5.0.0  [OLD VERSION]
+15:51:40 INFO  ProfileMatch              :         release-date: 30.04.2019
+15:51:40 INFO  ProfileMatch              :     lib root package: "com.facebook.all"  (in app: "org.bouncycastle")
+15:51:40 INFO  ProfileMatch              : 
+15:51:40 INFO  ProfileMatch              :                 name: Facebook
+15:51:40 INFO  ProfileMatch              :             category: SocialMedia
+15:51:40 INFO  ProfileMatch              :              version: 5.0.1  [OLD VERSION]
+15:51:40 INFO  ProfileMatch              :         release-date: 17.05.2019
+15:51:40 INFO  ProfileMatch              :     lib root package: "com.facebook.all"  (in app: "org.bouncycastle")
+15:51:40 INFO  ProfileMatch              : 
+15:51:40 INFO  ProfileMatch              :                 name: Facebook
+15:51:40 INFO  ProfileMatch              :             category: SocialMedia
+15:51:40 INFO  ProfileMatch              :              version: 5.0.2  [OLD VERSION]
+15:51:40 INFO  ProfileMatch              :         release-date: 09.06.2019
+15:51:40 INFO  ProfileMatch              :     lib root package: "com.facebook.all"  (in app: "org.bouncycastle")
+15:51:40 INFO  ProfileMatch              : 
+15:51:40 INFO  ProfileMatch              :                 name: Facebook
+15:51:40 INFO  ProfileMatch              :             category: SocialMedia
+15:51:40 INFO  ProfileMatch              :              version: 5.0.3  [OLD VERSION]
+15:51:40 INFO  ProfileMatch              :         release-date: 14.06.2019
+15:51:40 INFO  ProfileMatch              :     lib root package: "com.facebook.all"  (in app: "org.bouncycastle")
+15:51:40 INFO  ProfileMatch              : 
+15:51:40 INFO  ProfileMatch              :                 name: Facebook
+15:51:40 INFO  ProfileMatch              :             category: SocialMedia
+15:51:40 INFO  ProfileMatch              :              version: 5.1.0  [OLD VERSION]
+15:51:40 INFO  ProfileMatch              :         release-date: 21.06.2019
+15:51:40 INFO  ProfileMatch              :     lib root package: "com.facebook.all"  (in app: "org.bouncycastle")
+15:51:40 INFO  ProfileMatch              : 
+15:51:40 INFO  ProfileMatch              :                 name: Facebook
+15:51:40 INFO  ProfileMatch              :             category: SocialMedia
+15:51:40 INFO  ProfileMatch              :              version: 5.1.1  [OLD VERSION]
+15:51:40 INFO  ProfileMatch              :         release-date: 02.07.2019
+15:51:40 INFO  ProfileMatch              :     lib root package: "com.facebook.all"  (in app: "org.bouncycastle")
+15:51:40 INFO  ProfileMatch              : 
+15:51:40 INFO  ProfileMatch              :                 name: Facebook
+15:51:40 INFO  ProfileMatch              :             category: SocialMedia
+15:51:40 INFO  ProfileMatch              :              version: 5.2.0  [OLD VERSION]
+15:51:40 INFO  ProfileMatch              :         release-date: 29.07.2019
+15:51:40 INFO  ProfileMatch              :     lib root package: "com.facebook.all"  (in app: "org.bouncycastle")
+15:51:40 INFO  ProfileMatch              : 
+15:51:40 INFO  ProfileMatch              :                 name: Facebook
+15:51:40 INFO  ProfileMatch              :             category: SocialMedia
+15:51:40 INFO  ProfileMatch              :              version: 5.4.0  [OLD VERSION]
+15:51:40 INFO  ProfileMatch              :         release-date: 16.08.2019
+15:51:40 INFO  ProfileMatch              :     lib root package: "com.facebook.all"  (in app: "org.bouncycastle")
+15:51:40 INFO  ProfileMatch              : 
+15:51:40 INFO  ProfileMatch              :                 name: Facebook
+15:51:40 INFO  ProfileMatch              :             category: SocialMedia
+15:51:40 INFO  ProfileMatch              :              version: 5.5.0  [OLD VERSION]
+15:51:40 INFO  ProfileMatch              :         release-date: 31.08.2019
+15:51:40 INFO  ProfileMatch              :     lib root package: "com.facebook.all"  (in app: "org.bouncycastle")
+15:51:40 INFO  ProfileMatch              : 
+15:51:40 INFO  ProfileMatch              :                 name: Facebook
+15:51:40 INFO  ProfileMatch              :             category: SocialMedia
+15:51:40 INFO  ProfileMatch              :              version: 5.5.1  [OLD VERSION]
+15:51:40 INFO  ProfileMatch              :         release-date: 06.09.2019
+15:51:40 INFO  ProfileMatch              :     lib root package: "com.facebook.all"  (in app: "org.bouncycastle")
+15:51:40 INFO  ProfileMatch              : 
+15:51:40 INFO  ProfileMatch              :                 name: Facebook
+15:51:40 INFO  ProfileMatch              :             category: SocialMedia
+15:51:40 INFO  ProfileMatch              :              version: 5.5.2  [OLD VERSION]
+15:51:40 INFO  ProfileMatch              :         release-date: 05.10.2019
+15:51:40 INFO  ProfileMatch              :     lib root package: "com.facebook.all"  (in app: "org.bouncycastle")
+15:51:40 INFO  ProfileMatch              : 
+15:51:40 INFO  ProfileMatch              :                 name: Facebook
+15:51:40 INFO  ProfileMatch              :             category: SocialMedia
+15:51:40 INFO  ProfileMatch              :              version: 5.8.0  [OLD VERSION]
+15:51:40 INFO  ProfileMatch              :         release-date: 08.10.2019
+15:51:40 INFO  ProfileMatch              :     lib root package: "com.facebook.all"  (in app: "org.bouncycastle")
+15:51:40 INFO  ProfileMatch              : 
+15:51:40 INFO  ProfileMatch              :                 name: Facebook
+15:51:40 INFO  ProfileMatch              :             category: SocialMedia
+15:51:40 INFO  ProfileMatch              :              version: 5.9.0  [OLD VERSION]
+15:51:40 INFO  ProfileMatch              :         release-date: 29.10.2019
+15:51:40 INFO  ProfileMatch              :     lib root package: "com.facebook.all"  (in app: "org.bouncycastle")
+15:51:40 INFO  ProfileMatch              : 
+15:51:40 INFO  ProfileMatch              :                 name: Facebook
+15:51:40 INFO  ProfileMatch              :             category: SocialMedia
+15:51:40 INFO  ProfileMatch              :              version: 5.11.0  [OLD VERSION]
+15:51:40 INFO  ProfileMatch              :         release-date: 15.11.2019
+15:51:40 INFO  ProfileMatch              :     lib root package: "com.facebook.all"  (in app: "org.bouncycastle")
+15:51:40 INFO  ProfileMatch              : 
+15:51:40 INFO  ProfileMatch              :                 name: Facebook
+15:51:40 INFO  ProfileMatch              :             category: SocialMedia
+15:51:40 INFO  ProfileMatch              :              version: 5.11.1  [OLD VERSION]
+15:51:40 INFO  ProfileMatch              :         release-date: 21.11.2019
+15:51:40 INFO  ProfileMatch              :     lib root package: "com.facebook.all"  (in app: "org.bouncycastle")
+15:51:40 INFO  ProfileMatch              : 
+15:51:40 INFO  ProfileMatch              :                 name: Facebook
+15:51:40 INFO  ProfileMatch              :             category: SocialMedia
+15:51:40 INFO  ProfileMatch              :              version: 5.11.2  [OLD VERSION]
+15:51:40 INFO  ProfileMatch              :         release-date: 22.11.2019
+15:51:40 INFO  ProfileMatch              :     lib root package: "com.facebook.all"  (in app: "org.bouncycastle")
+15:51:40 INFO  ProfileMatch              : 
+15:51:40 INFO  ProfileMatch              :                 name: Facebook
+15:51:40 INFO  ProfileMatch              :             category: SocialMedia
+15:51:40 INFO  ProfileMatch              :              version: 5.12.0  [OLD VERSION]
+15:51:40 INFO  ProfileMatch              :         release-date: 04.12.2019
+15:51:40 INFO  ProfileMatch              :     lib root package: "com.facebook.all"  (in app: "org.bouncycastle")
+15:51:40 INFO  ProfileMatch              : 
+15:51:40 INFO  ProfileMatch              :                 name: Facebook
+15:51:40 INFO  ProfileMatch              :             category: SocialMedia
+15:51:40 INFO  ProfileMatch              :              version: 5.12.1  [OLD VERSION]
+15:51:40 INFO  ProfileMatch              :         release-date: 09.12.2019
+15:51:40 INFO  ProfileMatch              :     lib root package: "com.facebook.all"  (in app: "org.bouncycastle")
+15:51:40 INFO  ProfileMatch              : 
+15:51:40 INFO  ProfileMatch              :                 name: Facebook
+15:51:40 INFO  ProfileMatch              :             category: SocialMedia
+15:51:40 INFO  ProfileMatch              :              version: 5.13.0  [OLD VERSION]
+15:51:40 INFO  ProfileMatch              :         release-date: 12.12.2019
+15:51:40 INFO  ProfileMatch              :     lib root package: "com.facebook.all"  (in app: "org.bouncycastle")
+15:51:40 INFO  ProfileMatch              : 
+15:51:40 INFO  ProfileMatch              :                 name: Facebook
+15:51:40 INFO  ProfileMatch              :             category: SocialMedia
+15:51:40 INFO  ProfileMatch              :              version: 5.15.0  [OLD VERSION]
+15:51:40 INFO  ProfileMatch              :         release-date: 21.01.2020
+15:51:40 INFO  ProfileMatch              :     lib root package: "com.facebook.all"  (in app: "org.bouncycastle")
+15:51:40 INFO  ProfileMatch              : 
+15:51:40 INFO  ProfileMatch              :                 name: Facebook
+15:51:40 INFO  ProfileMatch              :             category: SocialMedia
+15:51:40 INFO  ProfileMatch              :              version: 5.15.1  [OLD VERSION]
+15:51:40 INFO  ProfileMatch              :         release-date: 29.01.2020
+15:51:40 INFO  ProfileMatch              :     lib root package: "com.facebook.all"  (in app: "org.bouncycastle")
+15:51:40 INFO  ProfileMatch              : 
+15:51:40 INFO  ProfileMatch              :                 name: Facebook
+15:51:40 INFO  ProfileMatch              :             category: SocialMedia
+15:51:40 INFO  ProfileMatch              :              version: 5.15.2  [OLD VERSION]
+15:51:40 INFO  ProfileMatch              :         release-date: 03.02.2020
+15:51:40 INFO  ProfileMatch              :     lib root package: "com.facebook.all"  (in app: "org.bouncycastle")
+15:51:40 INFO  ProfileMatch              : 
+15:51:40 INFO  ProfileMatch              :                 name: Facebook
+15:51:40 INFO  ProfileMatch              :             category: SocialMedia
+15:51:40 INFO  ProfileMatch              :              version: 5.15.3  [OLD VERSION]
+15:51:40 INFO  ProfileMatch              :         release-date: 03.02.2020
+15:51:40 INFO  ProfileMatch              :     lib root package: "com.facebook.all"  (in app: "org.bouncycastle")
+15:51:40 INFO  ProfileMatch              : 
+15:51:40 INFO  ProfileMatch              :                 name: Facebook
+15:51:40 INFO  ProfileMatch              :             category: SocialMedia
+15:51:40 INFO  ProfileMatch              :              version: 6.0.0  [OLD VERSION]
+15:51:40 INFO  ProfileMatch              :         release-date: 03.02.2020
+15:51:40 INFO  ProfileMatch              :     lib root package: "com.facebook.all"  (in app: "org.bouncycastle")
+15:51:40 INFO  ProfileMatch              : 
+15:51:40 INFO  ProfileMatch              :                 name: Facebook
+15:51:40 INFO  ProfileMatch              :             category: SocialMedia
+15:51:40 INFO  ProfileMatch              :              version: 6.1.0  [OLD VERSION]
+15:51:40 INFO  ProfileMatch              :         release-date: 14.02.2020
+15:51:40 INFO  ProfileMatch              :     lib root package: "com.facebook.all"  (in app: "org.bouncycastle")
+15:51:40 INFO  ProfileMatch              : 
+15:51:40 INFO  ProfileMatch              :                 name: Facebook
+15:51:40 INFO  ProfileMatch              :             category: SocialMedia
+15:51:40 INFO  ProfileMatch              :              version: 6.2.0  [OLD VERSION]
+15:51:40 INFO  ProfileMatch              :         release-date: 09.03.2020
+15:51:40 INFO  ProfileMatch              :     lib root package: "com.facebook.all"  (in app: "org.bouncycastle")
+15:51:40 INFO  ProfileMatch              : 
+15:51:40 INFO  ProfileMatch              :                 name: Facebook
+15:51:40 INFO  ProfileMatch              :             category: SocialMedia
+15:51:40 INFO  ProfileMatch              :              version: 6.3.0  [OLD VERSION]
+15:51:40 INFO  ProfileMatch              :         release-date: 25.03.2020
+15:51:40 INFO  ProfileMatch              :     lib root package: "com.facebook.all"  (in app: "org.bouncycastle")
+15:51:40 INFO  ProfileMatch              : 
+15:51:40 INFO  ProfileMatch              :                 name: Facebook
+15:51:40 INFO  ProfileMatch              :             category: SocialMedia
+15:51:40 INFO  ProfileMatch              :              version: 6.4.0  [OLD VERSION]
+15:51:40 INFO  ProfileMatch              :         release-date: 15.04.2020
+15:51:40 INFO  ProfileMatch              :     lib root package: "com.facebook.all"  (in app: "org.bouncycastle")
+15:51:40 INFO  ProfileMatch              : 
+15:51:40 INFO  ProfileMatch              :                 name: Facebook
+15:51:40 INFO  ProfileMatch              :             category: SocialMedia
+15:51:40 INFO  ProfileMatch              :              version: 6.5.0  [OLD VERSION]
+15:51:40 INFO  ProfileMatch              :         release-date: 20.04.2020
+15:51:40 INFO  ProfileMatch              :     lib root package: "com.facebook.all"  (in app: "org.bouncycastle")
+15:51:40 INFO  ProfileMatch              : 
+15:51:40 INFO  ProfileMatch              :                 name: Facebook
+15:51:40 INFO  ProfileMatch              :             category: SocialMedia
+15:51:40 INFO  ProfileMatch              :              version: 6.5.1  [OLD VERSION]
+15:51:40 INFO  ProfileMatch              :         release-date: 23.04.2020
+15:51:40 INFO  ProfileMatch              :     lib root package: "com.facebook.all"  (in app: "org.bouncycastle")
+15:51:40 INFO  ProfileMatch              : 
+15:51:40 INFO  ProfileMatch              :                 name: Facebook
+15:51:40 INFO  ProfileMatch              :             category: SocialMedia
+15:51:40 INFO  ProfileMatch              :              version: 7.0.0  [OLD VERSION]
+15:51:40 INFO  ProfileMatch              :         release-date: 05.05.2020
+15:51:40 INFO  ProfileMatch              :     lib root package: "com.facebook.all"  (in app: "org.bouncycastle")
+15:51:40 INFO  ProfileMatch              : 
+15:51:40 INFO  ProfileMatch              :                 name: Facebook
+15:51:40 INFO  ProfileMatch              :             category: SocialMedia
+15:51:40 INFO  ProfileMatch              :              version: 7.0.1  [OLD VERSION]
+15:51:40 INFO  ProfileMatch              :         release-date: 09.06.2020
+15:51:40 INFO  ProfileMatch              :     lib root package: "com.facebook.all"  (in app: "org.bouncycastle")
+15:51:40 INFO  ProfileMatch              : 
+15:51:40 INFO  ProfileMatch              :                 name: Facebook
+15:51:40 INFO  ProfileMatch              :             category: SocialMedia
+15:51:40 INFO  ProfileMatch              :              version: 7.1.0  [OLD VERSION]
+15:51:40 INFO  ProfileMatch              :         release-date: 23.06.2020
+15:51:40 INFO  ProfileMatch              :     lib root package: "com.facebook.all"  (in app: "org.bouncycastle")
+15:51:40 INFO  ProfileMatch              : 
+15:51:40 INFO  ProfileMatch              :                 name: Facebook
+15:51:40 INFO  ProfileMatch              :             category: SocialMedia
+15:51:40 INFO  ProfileMatch              :              version: 8.0.0  [OLD VERSION]
+15:51:40 INFO  ProfileMatch              :         release-date: 28.09.2020
+15:51:40 INFO  ProfileMatch              :     lib root package: "com.facebook.all"  (in app: "org.bouncycastle")
+15:51:40 INFO  ProfileMatch              : 
+15:51:40 INFO  ProfileMatch              :                 name: Facebook
+15:51:40 INFO  ProfileMatch              :             category: SocialMedia
+15:51:40 INFO  ProfileMatch              :              version: 8.1.0  [OLD VERSION]
+15:51:40 INFO  ProfileMatch              :         release-date: 14.10.2020
+15:51:40 INFO  ProfileMatch              :     lib root package: "com.facebook.all"  (in app: "org.bouncycastle")
+15:51:40 INFO  ProfileMatch              : 
+15:51:40 INFO  ProfileMatch              :                 name: Facebook
+15:51:40 INFO  ProfileMatch              :             category: SocialMedia
+15:51:40 INFO  ProfileMatch              :              version: 8.2.0  [OLD VERSION]
+15:51:40 INFO  ProfileMatch              :         release-date: 18.12.2020
+15:51:40 INFO  ProfileMatch              :     lib root package: "com.facebook.all"  (in app: "org.bouncycastle")
+15:51:40 INFO  ProfileMatch              : 
+15:51:40 INFO  ProfileMatch              :                 name: Facebook
+15:51:40 INFO  ProfileMatch              :             category: SocialMedia
+15:51:40 INFO  ProfileMatch              :              version: 9.0.0  [OLD VERSION]
+15:51:40 INFO  ProfileMatch              :         release-date: 19.01.2021
+15:51:40 INFO  ProfileMatch              :     lib root package: "com.facebook.all"  (in app: "org.bouncycastle")
+15:51:40 INFO  ProfileMatch              : 
+15:51:40 INFO  ProfileMatch              :                 name: Facebook
+15:51:40 INFO  ProfileMatch              :             category: SocialMedia
+15:51:40 INFO  ProfileMatch              :              version: 9.1.0  [OLD VERSION]
+15:51:40 INFO  ProfileMatch              :         release-date: 15.03.2021
+15:51:40 INFO  ProfileMatch              :     lib root package: "com.facebook.all"  (in app: "org.bouncycastle")
+15:51:40 INFO  ProfileMatch              : 
+15:51:40 INFO  ProfileMatch              :                 name: Facebook
+15:51:40 INFO  ProfileMatch              :             category: SocialMedia
+15:51:40 INFO  ProfileMatch              :              version: 9.1.1  [OLD VERSION]
+15:51:40 INFO  ProfileMatch              :         release-date: 12.04.2021
+15:51:40 INFO  ProfileMatch              :     lib root package: "com.facebook.all"  (in app: "org.bouncycastle")
+15:51:40 INFO  ProfileMatch              : 
+15:51:40 INFO  ProfileMatch              :                 name: Facebook
+15:51:40 INFO  ProfileMatch              :             category: SocialMedia
+15:51:40 INFO  ProfileMatch              :              version: 11.0.0  [OLD VERSION]
+15:51:40 INFO  ProfileMatch              :         release-date: 08.06.2021
+15:51:40 INFO  ProfileMatch              :     lib root package: "com.facebook.all"  (in app: "org.bouncycastle")
+15:51:40 INFO  ProfileMatch              : 
+15:51:40 INFO  ProfileMatch              :                 name: Facebook
+15:51:40 INFO  ProfileMatch              :             category: SocialMedia
+15:51:40 INFO  ProfileMatch              :              version: 11.1.0  [OLD VERSION]
+15:51:40 INFO  ProfileMatch              :         release-date: 06.07.2021
+15:51:40 INFO  ProfileMatch              :     lib root package: "com.facebook.all"  (in app: "org.bouncycastle")
+15:51:40 INFO  ProfileMatch              : 
+15:51:40 INFO  ProfileMatch              :                 name: Facebook
+15:51:40 INFO  ProfileMatch              :             category: SocialMedia
+15:51:40 INFO  ProfileMatch              :              version: 11.1.1  [OLD VERSION]
+15:51:40 INFO  ProfileMatch              :         release-date: 19.07.2021
+15:51:40 INFO  ProfileMatch              :     lib root package: "com.facebook.all"  (in app: "org.bouncycastle")
+15:51:40 INFO  ProfileMatch              : 
+15:51:40 INFO  ProfileMatch              :                 name: Facebook
+15:51:40 INFO  ProfileMatch              :             category: SocialMedia
+15:51:40 INFO  ProfileMatch              :              version: 11.2.0  [OLD VERSION]
+15:51:40 INFO  ProfileMatch              :         release-date: 03.08.2021
+15:51:40 INFO  ProfileMatch              :     lib root package: "com.facebook.all"  (in app: "org.bouncycastle")
+15:51:40 INFO  ProfileMatch              : 
+15:51:40 INFO  ProfileMatch              :                 name: Facebook
+15:51:40 INFO  ProfileMatch              :             category: SocialMedia
+15:51:40 INFO  ProfileMatch              :              version: 11.3.0  [OLD VERSION]
+15:51:40 INFO  ProfileMatch              :         release-date: 07.09.2021
+15:51:40 INFO  ProfileMatch              :     lib root package: "com.facebook.all"  (in app: "org.bouncycastle")
+15:51:40 INFO  ProfileMatch              : 
+15:51:40 INFO  ProfileMatch              :                 name: Facebook
+15:51:40 INFO  ProfileMatch              :             category: SocialMedia
+15:51:40 INFO  ProfileMatch              :              version: 12.0.0  [OLD VERSION]
+15:51:40 INFO  ProfileMatch              :         release-date: 05.10.2021
+15:51:40 INFO  ProfileMatch              :     lib root package: "com.facebook.all"  (in app: "org.bouncycastle")
+15:51:40 INFO  ProfileMatch              : 
+15:51:40 INFO  ProfileMatch              :                 name: Facebook
+15:51:40 INFO  ProfileMatch              :             category: SocialMedia
+15:51:40 INFO  ProfileMatch              :              version: 12.0.1  [OLD VERSION]
+15:51:40 INFO  ProfileMatch              :         release-date: 13.10.2021
+15:51:40 INFO  ProfileMatch              :     lib root package: "com.facebook.all"  (in app: "org.bouncycastle")
+15:51:40 INFO  ProfileMatch              : 
+15:51:40 INFO  ProfileMatch              :                 name: Facebook
+15:51:40 INFO  ProfileMatch              :             category: SocialMedia
+15:51:40 INFO  ProfileMatch              :              version: 12.1.0  [OLD VERSION]
+15:51:40 INFO  ProfileMatch              :         release-date: 01.11.2021
+15:51:40 INFO  ProfileMatch              :     lib root package: "com.facebook.all"  (in app: "org.bouncycastle")
+15:51:40 INFO  ProfileMatch              : 
+15:51:40 INFO  ProfileMatch              :                 name: Facebook
+15:51:40 INFO  ProfileMatch              :             category: SocialMedia
+15:51:40 INFO  ProfileMatch              :              version: 12.2.0  [OLD VERSION]
+15:51:40 INFO  ProfileMatch              :         release-date: 06.12.2021
+15:51:40 INFO  ProfileMatch              :     lib root package: "com.facebook.all"  (in app: "org.bouncycastle")
+15:51:40 INFO  ProfileMatch              : 
+15:51:40 INFO  ProfileMatch              :                 name: Facebook
+15:51:40 INFO  ProfileMatch              :             category: SocialMedia
+15:51:40 INFO  ProfileMatch              :              version: 12.3.0  [OLD VERSION]
+15:51:40 INFO  ProfileMatch              :         release-date: 10.01.2022
+15:51:40 INFO  ProfileMatch              :     lib root package: "com.facebook.all"  (in app: "org.bouncycastle")
+15:51:40 INFO  ProfileMatch              : 
+15:51:40 INFO  ProfileMatch              :                 name: Facebook
+15:51:40 INFO  ProfileMatch              :             category: SocialMedia
+15:51:40 INFO  ProfileMatch              :              version: 13.0.0  [OLD VERSION]
+15:51:40 INFO  ProfileMatch              :         release-date: 23.02.2022
+15:51:40 INFO  ProfileMatch              :     lib root package: "com.facebook.all"  (in app: "org.bouncycastle")
+15:51:40 INFO  ProfileMatch              : 
+15:51:40 INFO  ProfileMatch              :                 name: Facebook
+15:51:40 INFO  ProfileMatch              :             category: SocialMedia
+15:51:40 INFO  ProfileMatch              :              version: 13.1.0  [OLD VERSION]
+15:51:40 INFO  ProfileMatch              :         release-date: 21.03.2022
+15:51:40 INFO  ProfileMatch              :     lib root package: "com.facebook.all"  (in app: "org.bouncycastle")
+15:51:40 INFO  ProfileMatch              : 
+15:51:40 INFO  ProfileMatch              :                 name: Facebook
+15:51:40 INFO  ProfileMatch              :             category: SocialMedia
+15:51:40 INFO  ProfileMatch              :              version: 13.2.0  [OLD VERSION]
+15:51:40 INFO  ProfileMatch              :         release-date: 22.04.2022
+15:51:40 INFO  ProfileMatch              :     lib root package: "com.facebook.all"  (in app: "org.bouncycastle")
+15:51:40 INFO  ProfileMatch              : 
+15:51:40 INFO  ProfileMatch              :                 name: Facebook
+15:51:40 INFO  ProfileMatch              :             category: SocialMedia
+15:51:40 INFO  ProfileMatch              :              version: 14.0.0
+15:51:40 INFO  ProfileMatch              :         release-date: 14.06.2022
+15:51:40 INFO  ProfileMatch              :     lib root package: "com.facebook.all"  (in app: "org.bouncycastle")
+15:51:40 INFO  ProfileMatch              : 
+15:51:40 INFO  ProfileMatch              :                 name: androidx.sqlite::sqlite
+15:51:40 INFO  ProfileMatch              :             category: Android
+15:51:40 INFO  ProfileMatch              :              version: 2.1.0  [OLD VERSION]
+15:51:40 INFO  ProfileMatch              :         release-date:  --
+15:51:40 INFO  ProfileMatch              :     lib root package: "androidx.sqlite.db"
+15:51:40 INFO  ProfileMatch              : 
+15:51:40 INFO  ProfileMatch              :                 name: androidx.legacy::legacy-support-core-utils
+15:51:40 INFO  ProfileMatch              :             category: Android
+15:51:40 INFO  ProfileMatch              :              version: 1.0.0
+15:51:40 INFO  ProfileMatch              :         release-date:  --
+15:51:40 INFO  ProfileMatch              :     lib root package: "androidx.legacy.content"
+15:51:40 INFO  ProfileMatch              : 
+15:51:40 INFO  ProfileMatch              :                 name: com.android.support::documentfile
+15:51:40 INFO  ProfileMatch              :             category: Android
+15:51:40 INFO  ProfileMatch              :              version: 28.0.0
+15:51:40 INFO  ProfileMatch              :         release-date:  --
+15:51:40 INFO  ProfileMatch              :     lib root package: "android.support.v4.provider"  (in app: "androidx.documentfile.provider")
+15:51:40 INFO  ProfileMatch              : 
+15:51:40 INFO  ProfileMatch              :                 name: Gson
+15:51:40 INFO  ProfileMatch              :             category: Utilities
+15:51:40 INFO  ProfileMatch              :              version: 2.8.8  [OLD VERSION]
+15:51:40 INFO  ProfileMatch              :         release-date: 20.08.2021
+15:51:40 INFO  ProfileMatch              :     lib root package: "com.google.gson"
+15:51:40 INFO  ProfileMatch              : 
+15:51:40 INFO  ProfileMatch              :                 name: com.android.support::viewpager
+15:51:40 INFO  ProfileMatch              :             category: Android
+15:51:40 INFO  ProfileMatch              :              version: 28.0.0
+15:51:40 INFO  ProfileMatch              :         release-date:  --
+15:51:40 INFO  ProfileMatch              :     lib root package: "android.support.v4.view"  (in app: "androidx.viewpager.widget")
+15:51:40 INFO  ProfileMatch              : 
+15:51:40 INFO  ProfileMatch              :                 name: com.android.support::cardview-v7
+15:51:40 INFO  ProfileMatch              :             category: Android
+15:51:40 INFO  ProfileMatch              :              version: 27.1.0  [OLD VERSION]
+15:51:40 INFO  ProfileMatch              :         release-date:  --
+15:51:40 INFO  ProfileMatch              :     lib root package: "android.support.v7.widget"  (in app: "androidx.cardview.widget")
+15:51:40 INFO  ProfileMatch              : 
+15:51:40 INFO  ProfileMatch              :                 name: com.android.support::cardview-v7
+15:51:40 INFO  ProfileMatch              :             category: Android
+15:51:40 INFO  ProfileMatch              :              version: 27.1.1  [OLD VERSION]
+15:51:40 INFO  ProfileMatch              :         release-date:  --
+15:51:40 INFO  ProfileMatch              :     lib root package: "android.support.v7.widget"  (in app: "androidx.cardview.widget")
+15:51:40 INFO  ProfileMatch              : 
+15:51:40 INFO  ProfileMatch              :                 name: com.android.support::cardview-v7
+15:51:40 INFO  ProfileMatch              :             category: Android
+15:51:40 INFO  ProfileMatch              :              version: 28.0.0
+15:51:40 INFO  ProfileMatch              :         release-date:  --
+15:51:40 INFO  ProfileMatch              :     lib root package: "android.support.v7.widget"  (in app: "androidx.cardview.widget")
+15:51:40 INFO  ProfileMatch              : 
+15:51:40 INFO  ProfileMatch              :                 name: androidx.localbroadcastmanager::localbroadcastmanager
+15:51:40 INFO  ProfileMatch              :             category: Android
+15:51:40 INFO  ProfileMatch              :              version: 1.0.0  [OLD VERSION]
+15:51:40 INFO  ProfileMatch              :         release-date:  --
+15:51:40 INFO  ProfileMatch              :     lib root package: "androidx.localbroadcastmanager.content"
+15:51:40 INFO  ProfileMatch              : 
+15:51:40 INFO  ProfileMatch              :                 name: androidx.localbroadcastmanager::localbroadcastmanager
+15:51:40 INFO  ProfileMatch              :             category: Android
+15:51:40 INFO  ProfileMatch              :              version: 1.1.0
+15:51:40 INFO  ProfileMatch              :         release-date:  --
+15:51:40 INFO  ProfileMatch              :     lib root package: "androidx.localbroadcastmanager.content"
+15:51:40 INFO  ProfileMatch              : 
+15:51:40 INFO  ProfileMatch              :                 name: androidx.viewpager::viewpager
+15:51:40 INFO  ProfileMatch              :             category: Android
+15:51:40 INFO  ProfileMatch              :              version: 1.0.0
+15:51:40 INFO  ProfileMatch              :         release-date:  --
+15:51:40 INFO  ProfileMatch              :     lib root package: "androidx.viewpager.widget"
+15:51:40 INFO  ProfileMatch              : 
+15:51:40 INFO  LibraryIdentifier         : 
+15:51:40 INFO  LibraryIdentifier         : - Partial library matches:
+15:51:40 INFO  LibraryIdentifier         :                 name: android.arch.navigation::navigation-runtime-ktx
+15:51:40 INFO  LibraryIdentifier         :             category: Android
+15:51:40 INFO  LibraryIdentifier         :              version: 1.0.0
+15:51:40 INFO  LibraryIdentifier         :         release-date:  --
+15:51:40 INFO  LibraryIdentifier         :     lib root package: "androidx.navigation"
+15:51:40 INFO  LibraryIdentifier         :         Partial matching results:
+15:51:40 INFO  LibraryIdentifier         :              - config: Hashing.md5() | Flags: no-flag | Keep: PN | Prune: MSIG   score: 0.7777778
+15:51:40 INFO  LibraryIdentifier         : 
+15:51:40 INFO  LibraryIdentifier         :                 name: android.arch.navigation::navigation-common-ktx
+15:51:40 INFO  LibraryIdentifier         :             category: Android
+15:51:40 INFO  LibraryIdentifier         :              version: 1.0.0
+15:51:40 INFO  LibraryIdentifier         :         release-date:  --
+15:51:40 INFO  LibraryIdentifier         :     lib root package: "androidx.navigation"
+15:51:40 INFO  LibraryIdentifier         :         Partial matching results:
+15:51:40 INFO  LibraryIdentifier         :              - config: Hashing.md5() | Flags: no-flag | Keep: PN | Prune: MSIG   score: 0.84615386
+15:51:40 INFO  LibraryIdentifier         : 
+15:51:40 INFO  LibraryIdentifier         :                 name: android.arch.core::common
+15:51:40 INFO  LibraryIdentifier         :             category: Android
+15:51:40 INFO  LibraryIdentifier         :              version: 1.1.1
+15:51:40 INFO  LibraryIdentifier         :         release-date:  --
+15:51:40 INFO  LibraryIdentifier         :     lib root package: "android.arch.core"
+15:51:40 INFO  LibraryIdentifier         :         Partial matching results:
+15:51:40 INFO  LibraryIdentifier         :              - config: Hashing.md5() | Flags: no-flag | Keep: PN | Prune: MSIG   score: 0.875
+15:51:40 INFO  LibraryIdentifier         : 
+15:51:40 INFO  LibraryIdentifier         :                 name: androidx.browser::browser
+15:51:40 INFO  LibraryIdentifier         :             category: Android
+15:51:40 INFO  LibraryIdentifier         :              version: 1.4.0
+15:51:40 INFO  LibraryIdentifier         :         release-date:  --
+15:51:40 INFO  LibraryIdentifier         :     lib root package: "androidx.browser"
+15:51:40 INFO  LibraryIdentifier         :         Partial matching results:
+15:51:40 INFO  LibraryIdentifier         :              - config: Hashing.md5() | Flags: no-flag | Keep: PN | Prune: MSIG   score: 0.7096774
+15:51:40 INFO  LibraryIdentifier         : 
+15:51:40 INFO  LibraryIdentifier         :                 name: androidx.core::core
+15:51:40 INFO  LibraryIdentifier         :             category: Android
+15:51:40 INFO  LibraryIdentifier         :              version: 1.7.0  [OLD VERSION]
+15:51:40 INFO  LibraryIdentifier         :         release-date:  --
+15:51:40 INFO  LibraryIdentifier         :     lib root package: "androidx.core"
+15:51:40 INFO  LibraryIdentifier         :         Partial matching results:
+15:51:40 INFO  LibraryIdentifier         :              - config: Hashing.md5() | Flags: no-flag | Keep: PN | Prune: MSIG   score: 0.90276825
+15:51:40 INFO  LibraryIdentifier         : 
+15:51:40 INFO  LibraryIdentifier         :                 name: Guava
+15:51:40 INFO  LibraryIdentifier         :             category: Utilities
+15:51:40 INFO  LibraryIdentifier         :              version: 31.0.1-android  [OLD VERSION]
+15:51:40 INFO  LibraryIdentifier         :         release-date: 27.09.2021
+15:51:40 INFO  LibraryIdentifier         :     lib root package: "com.google"
+15:51:40 INFO  LibraryIdentifier         :         Partial matching results:
+15:51:40 INFO  LibraryIdentifier         :              - config: Hashing.md5() | Flags: no-flag | Keep: PN | Prune: MSIG   score: 0.9998117
+15:51:40 INFO  LibraryIdentifier         : 
+15:51:40 INFO  LibraryIdentifier         :                 name: android.arch.core::runtime
+15:51:40 INFO  LibraryIdentifier         :             category: Android
+15:51:40 INFO  LibraryIdentifier         :              version: 1.1.0  [OLD VERSION]
+15:51:40 INFO  LibraryIdentifier         :         release-date:  --
+15:51:40 INFO  LibraryIdentifier         :     lib root package: "android.arch.core"
+15:51:40 INFO  LibraryIdentifier         :         Partial matching results:
+15:51:40 INFO  LibraryIdentifier         :              - config: Hashing.md5() | Flags: no-flag | Keep: PN | Prune: MSIG   score: 0.9
+15:51:40 INFO  LibraryIdentifier         : 
+15:51:40 INFO  LibraryIdentifier         :                 name: android.arch.navigation::navigation-common
+15:51:40 INFO  LibraryIdentifier         :             category: Android
+15:51:40 INFO  LibraryIdentifier         :              version: 1.0.0
+15:51:40 INFO  LibraryIdentifier         :         release-date:  --
+15:51:40 INFO  LibraryIdentifier         :     lib root package: "androidx.navigation"
+15:51:40 INFO  LibraryIdentifier         :         Partial matching results:
+15:51:40 INFO  LibraryIdentifier         :              - config: Hashing.md5() | Flags: no-flag | Keep: PN | Prune: MSIG   score: 0.7567568
+15:51:40 INFO  LibraryIdentifier         : 
+15:51:40 INFO  LibraryIdentifier         : 
+15:51:40 INFO  LibraryIdentifier         : App processing time: 2 min, 11 sec, 918 ms

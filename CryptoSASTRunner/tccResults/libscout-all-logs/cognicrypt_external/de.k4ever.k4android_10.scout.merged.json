@@ -1,0 +1,41 @@
+{
+  "projectName": "CryptoGuard",
+  "ProjectVersion": "04.05.03",
+  "Target": {
+    "RawCommand": "-in apk -s /home/lables/CryptoAnalysis/Finances2/de.k4ever.k4android_10.apk -m D",
+    "FullPath": "de.k4ever.k4android_10.apk/",
+    "Type": "APK",
+    "TargetSources": [
+      "/home/lables/CryptoAnalysis/Finances2/de.k4ever.k4android_10.apk"
+    ],
+    "_PropertiesFilePath": "gradle.properties",
+    "_ComputerOS": "Linux_4.15.0-162-generic",
+    "_JVMVersion": "1.8.0_292-8u292-b10-0ubuntu1~18.04-b10",
+    "_ProjectName": "de"
+  },
+  "Issues": [
+    {
+      "Message": "Found: \"SunX509\"",
+      "Description": "Used Predictable KeyStore Password",
+      "RuleNumber": 14,
+      "RuleDesc": "Used Predictable KeyStore Password",
+      "CWEId": 321,
+      "Severity": "1",
+      "_FullPath": "de.k4ever.k4android_10.apk.javax.net.ssl.TrustManagerFactory.class",
+      "_Id": "0"
+    },
+    {
+      "Message": "Found: \"freitagsrunde\"",
+      "Description": "Used Predictable KeyStore Password",
+      "RuleNumber": 14,
+      "RuleDesc": "Used Predictable KeyStore Password",
+      "CWEId": 321,
+      "Severity": "1",
+      "_FullPath": "de.k4ever.k4android_10.apk.de.k4ever.k4android.a.a.class",
+      "_Id": "1"
+    }
+  ],
+  "_SchemaVersion": 3,
+  "_DateTime": "2021-12-01_12:21:04",
+  "_UUID": "3ff713ca-f46f-4f17-8d55-96d6e60ef50e"
+}

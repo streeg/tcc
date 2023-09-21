@@ -5,21 +5,22 @@ require 'byebug'
 
 ###### Constants ######
 
-CRYPTOGUARD_MERGED_PATH = '/home/guileb/tcc/CryptoSASTRunner/tccResults/crypto-lib-merged-result/libscout-cryptoguard/security/*.json'.freeze # change_path_as_needed
-SCOUT_WITH_LIBRARY_INDENTIFIER = '/home/guileb/tcc/CryptoSASTRunner/tccResults/libscout-result/security_sample_json_with_libraries/'.freeze
-LIBRARY_ADDED_PATH = '/home/guileb/tcc/CryptoSASTRunner/tccResults/crypto-lib-merged-result/libscout-cryptoguard/security_with_library/'.freeze
+COGNICRYPT_MERGED_PATH = '/home/guileb/tcc/CryptoSASTRunner/tccResults/libscout-all-logs/cognicrypt_external/*.json'.freeze # change_path_as_needed
+SCOUT_WITH_LIBRARY_INDENTIFIER = '/home/guileb/tcc/CryptoSASTRunner/tccResults/libscout-all-logs/log_json (libscout_result_with_libraries)/'.freeze
+LIBRARY_ADDED_PATH = '/home/guileb/tcc/CryptoSASTRunner/tccResults/libscout-all-logs/cognicrypt_external_with_possible/'.freeze
 ###### Main ######
-lib_files = Dir[CRYPTOGUARD_MERGED_PATH]
+lib_files = Dir[COGNICRYPT_MERGED_PATH]
 lib_files.each do |file|
   lib_file = File.open(file, 'r')
   lib_file_data = JSON.load(lib_file)
-  lib_file_name = lib_file_data['Target']['FullPath']
-  scout_file = File.open(SCOUT_WITH_LIBRARY_INDENTIFIER + lib_file_name.gsub('.apk/', '.log.json'), 'r')
+  lib_file_name = File.basename(file)
+  scout_file = File.open(SCOUT_WITH_LIBRARY_INDENTIFIER + lib_file_name.gsub('scout.merged.json', 'log.json'), 'r')
   scout_file_data = JSON.load(scout_file)
 
   results = []
-  lib_file_data['Issues'].each do |x|
-    results << x['_FullPath']
+  byebug
+  lib_file_data['runs'][0]['results'].each do |x|
+    results << x['locations'][0]['physicalLocation']['fileLocation']['uri']
   end
   index = 0
   results.each { |x| x.gsub!('/', '.') }
@@ -28,16 +29,18 @@ lib_files.each do |file|
     scout_file_data_items.each do |scout_file_data_item|
       result = result.gsub(/^([a-z].*).apk./, '')
       splited_result = result.gsub('.', ' ').split
-      splited_lib_data = scout_file_data_item['LibraryIndentified'].gsub('.', ' ').split
-      if splited_result.any? { |splited| splited_lib_data.include?(splited) }
-        lib_file_data['Issues'][index]['PossibleExternalLibrary'] = true
+      begin
+        splited_lib_data = scout_file_data_item['LibraryIndentified'].gsub('.', ' ').split
+        if splited_result.any? { |splited| splited_lib_data.include?(splited) }
+          lib_file_data['runs'][0]['results'][index]['locations'][0]['physicalLocation']['fileLocation']['PossibleExternalLibrary'] =
+            true
+        end
+      rescue StandardError => e
       end
-    rescue StandardError => e
     end
     index += 1
   end
-
-  path_lib_file_name = lib_file_name.gsub('.apk/', '.library_added.json')
+  path_lib_file_name = lib_file_name.gsub('.scout.merged.json', '.library_added.json')
   merged_file = File.new(path_lib_file_name, 'w')
   merged_file.write(JSON.pretty_generate(lib_file_data))
   merged_file.close

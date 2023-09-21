@@ -7,9 +7,9 @@ LIBSCOUT_PATH = 'libscout-result/json/'.freeze
 LIBRADAR_PATH = 'libradar-result/'.freeze
 CRYPTO_LIB_MERGED_LIBSCOUT_PATH = 'crypto-lib-merged-result/libscout-cryptoguard/'.freeze
 CRYPTO_LIB_MERGED_LIBRADAR_PATH = 'crypto-lib-merged-result/libradar/'.freeze
-LIBSCOUT_LOG_JSON_PATH = 'libscout-result/json/system/*.log.json'.freeze # change_as_needed
+LIBSCOUT_LOG_JSON_PATH = 'libscout-all-logs/log_json/*.log.json'.freeze # change_as_needed
 LIBRADAR_JSON_PATH = 'libradar-result/*.json'.freeze
-CRYPTOGUARD_PATH = 'cryptoguard/'.freeze # change_as_needed
+CRYPTOGUARD_PATH = 'cryptoguard/cg-all'.freeze # change_as_needed
 
 ###### Methods ######
 
@@ -92,6 +92,7 @@ lib_files.each do |lib_file_name|
       result = result.gsub(/^([a-z].*).apk./, '')
       splited_result = result.gsub('.', ' ').split
       splited_lib_data = lib_file_data_item['Package'].gsub('.', ' ').split
+      splited_lib_data.delete('com')
       next unless splited_result.any? { |splited| splited_lib_data.include?(splited) }
 
       crypto_file_data['Issues'][index]['externalLibrary'] = true
