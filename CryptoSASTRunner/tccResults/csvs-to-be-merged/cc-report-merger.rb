@@ -41,7 +41,6 @@ merged_files.each do |file_name|
       violated_rule = row['ViolatedRule']
       object = row['Object']
       statement = row['Statement']
-      byebug
       external_library = json_data['runs'][0]['results'].any? do |result|
         result['locations'][0]['physicalLocation']['fileLocation']['uri']&.include?("#{class_name}.") && result['locations'][0]['physicalLocation']['fileLocation']['externalLibrary'].eql?(true)
       end

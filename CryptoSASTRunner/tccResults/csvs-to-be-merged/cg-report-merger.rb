@@ -35,7 +35,6 @@ merged_files.each do |file_name|
       method_name = row['MethodName']
 
       # Verificar se a classe existe no JSON e se é uma biblioteca externa
-      byebug
       external_library = if json_data['Issues'].any? do |issue|
                               issue['_FullPath'].include?("#{class_name}.class") && issue['externalLibrary'] == true
                             end
