@@ -4,7 +4,7 @@ Message,Description,RuleNumber,RuleDesc,CWEId,Severity,ClassName,MethodName,Exte
 "Found: ""DES/ECB/NoPadding""",Found broken crypto schemes,1,Found broken crypto schemes,256,1,cz.msebera.android.httpclient.impl.auth.NTLMEngineImpl$CipherGen,getLanManagerSessionKey,true
 "Found: ""RC4""",Found broken crypto schemes,1,Found broken crypto schemes,256,1,cz.msebera.android.httpclient.impl.auth.NTLMEngineImpl,RC4,true
 "Found: ""DES/ECB/NoPadding""",Found broken crypto schemes,1,Found broken crypto schemes,256,1,cz.msebera.android.httpclient.impl.auth.NTLMEngineImpl,lmResponse,true
-Found: Untrused PRNG (java.util.Random),Used untrusted PRNG,13,Used untrusted PRNG,338,1,rehanced.com.simpleetherwallet.services.NotificationService,a,true
+Found: Untrused PRNG (java.util.Random),Used untrusted PRNG,13,Used untrusted PRNG,338,1,rehanced.com.simpleetherwallet.services.NotificationService,a,false
 Found: Untrused PRNG (java.util.Random),Used untrusted PRNG,13,Used untrusted PRNG,338,1,org.spongycastle.math.ec.ECCurve$AbstractF2m,solveQuadraticEquation,false
 Found: Untrused PRNG (java.util.Random),Used untrusted PRNG,13,Used untrusted PRNG,338,1,okhttp3.OkHttpClient,newWebSocket,true
 Found: Untrused PRNG (java.util.Random),Used untrusted PRNG,13,Used untrusted PRNG,338,1,org.spongycastle.math.raw.Mod,random,false
@@ -54,16 +54,16 @@ Should at least get One accepted Issuer from Other Sources in getAcceptedIssuers
 "Found: ""www.bouncycastle.org""",Found predictable seeds in code,11,Found predictable seeds in code,760,1,org.spongycastle.crypto.examples.DESExample,init,false
 "Found: ""web3j runtime cert store""",Used Predictable KeyStore Password,14,Used Predictable KeyStore Password,321,1,org.web3j.protocol.infura.InfuraHttpService,clinit,false
 "Found: ""http://example.com/""",Used HTTP Protocol,7,Used HTTP Protocol,650,1,cz.msebera.android.httpclient.impl.client.cache.CacheKeyGenerator,clinit,true
-"Found: ""http://api.etherscan.io/api?module=stats&action=ethprice&apikey=""",Used HTTP Protocol,7,Used HTTP Protocol,650,1,rehanced.com.simpleetherwallet.network.EthereumNetwork,getEtherPrice,true
-"Found: ""http://api.etherscan.io/api?module=account&action=balancemulti&address=""",Used HTTP Protocol,7,Used HTTP Protocol,650,1,rehanced.com.simpleetherwallet.network.EthereumNetwork,getBalances,true
-"Found: ""http://api.etherscan.io/api?module=proxy&action=eth_sendRawTransaction&hex=""",Used HTTP Protocol,7,Used HTTP Protocol,650,1,rehanced.com.simpleetherwallet.network.EthereumNetwork,forwardTransaction,true
-"Found: ""http://api.etherscan.io/api?module=account&action=txlist&address=""",Used HTTP Protocol,7,Used HTTP Protocol,650,1,rehanced.com.simpleetherwallet.network.EthereumNetwork,getNormalTransactions,true
-"Found: ""http://api.etherscan.io/api?module=proxy&action=eth_estimateGas&to=""",Used HTTP Protocol,7,Used HTTP Protocol,650,1,rehanced.com.simpleetherwallet.network.EthereumNetwork,getGasLimitEstimate,true
-"Found: ""http://api.etherscan.io/api?module=proxy&action=eth_getTransactionCount&address=""",Used HTTP Protocol,7,Used HTTP Protocol,650,1,rehanced.com.simpleetherwallet.network.EthereumNetwork,getNonceForAddress,true
-"Found: ""http://api.ethplorer.io/getAddressInfo/""",Used HTTP Protocol,7,Used HTTP Protocol,650,1,rehanced.com.simpleetherwallet.network.EthereumNetwork,getTokenBalances,true
-"Found: ""http://etherscan.io//token/images/""",Used HTTP Protocol,7,Used HTTP Protocol,650,1,rehanced.com.simpleetherwallet.network.EthereumNetwork,loadTokenIcon,true
-"Found: ""http://api.etherscan.io/api?module=account&action=txlistinternal&address=""",Used HTTP Protocol,7,Used HTTP Protocol,650,1,rehanced.com.simpleetherwallet.network.EthereumNetwork,getInternalTransactions,true
-"Found: ""http://poloniex.com/public?command=returnChartData&currencyPair=""",Used HTTP Protocol,7,Used HTTP Protocol,650,1,rehanced.com.simpleetherwallet.network.EthereumNetwork,getPriceChart,true
-"Found: ""http://api.etherscan.io/api?module=proxy&action=eth_gasPrice&apikey=""",Used HTTP Protocol,7,Used HTTP Protocol,650,1,rehanced.com.simpleetherwallet.network.EthereumNetwork,getGasPrice,true
-"Found: ""http://api.etherscan.io/api?module=account&action=balance&address=""",Used HTTP Protocol,7,Used HTTP Protocol,650,1,rehanced.com.simpleetherwallet.network.EthereumNetwork,getBalance,true
-"Found: ""http://etherscan.io//token/images/""",Used HTTP Protocol,7,Used HTTP Protocol,650,1,rehanced.com.simpleetherwallet.network.EllaismNetwork,loadTokenIcon,true
+"Found: ""http://api.etherscan.io/api?module=stats&action=ethprice&apikey=""",Used HTTP Protocol,7,Used HTTP Protocol,650,1,rehanced.com.simpleetherwallet.network.EthereumNetwork,getEtherPrice,false
+"Found: ""http://api.etherscan.io/api?module=account&action=balancemulti&address=""",Used HTTP Protocol,7,Used HTTP Protocol,650,1,rehanced.com.simpleetherwallet.network.EthereumNetwork,getBalances,false
+"Found: ""http://api.etherscan.io/api?module=proxy&action=eth_sendRawTransaction&hex=""",Used HTTP Protocol,7,Used HTTP Protocol,650,1,rehanced.com.simpleetherwallet.network.EthereumNetwork,forwardTransaction,false
+"Found: ""http://api.etherscan.io/api?module=account&action=txlist&address=""",Used HTTP Protocol,7,Used HTTP Protocol,650,1,rehanced.com.simpleetherwallet.network.EthereumNetwork,getNormalTransactions,false
+"Found: ""http://api.etherscan.io/api?module=proxy&action=eth_estimateGas&to=""",Used HTTP Protocol,7,Used HTTP Protocol,650,1,rehanced.com.simpleetherwallet.network.EthereumNetwork,getGasLimitEstimate,false
+"Found: ""http://api.etherscan.io/api?module=proxy&action=eth_getTransactionCount&address=""",Used HTTP Protocol,7,Used HTTP Protocol,650,1,rehanced.com.simpleetherwallet.network.EthereumNetwork,getNonceForAddress,false
+"Found: ""http://api.ethplorer.io/getAddressInfo/""",Used HTTP Protocol,7,Used HTTP Protocol,650,1,rehanced.com.simpleetherwallet.network.EthereumNetwork,getTokenBalances,false
+"Found: ""http://etherscan.io//token/images/""",Used HTTP Protocol,7,Used HTTP Protocol,650,1,rehanced.com.simpleetherwallet.network.EthereumNetwork,loadTokenIcon,false
+"Found: ""http://api.etherscan.io/api?module=account&action=txlistinternal&address=""",Used HTTP Protocol,7,Used HTTP Protocol,650,1,rehanced.com.simpleetherwallet.network.EthereumNetwork,getInternalTransactions,false
+"Found: ""http://poloniex.com/public?command=returnChartData&currencyPair=""",Used HTTP Protocol,7,Used HTTP Protocol,650,1,rehanced.com.simpleetherwallet.network.EthereumNetwork,getPriceChart,false
+"Found: ""http://api.etherscan.io/api?module=proxy&action=eth_gasPrice&apikey=""",Used HTTP Protocol,7,Used HTTP Protocol,650,1,rehanced.com.simpleetherwallet.network.EthereumNetwork,getGasPrice,false
+"Found: ""http://api.etherscan.io/api?module=account&action=balance&address=""",Used HTTP Protocol,7,Used HTTP Protocol,650,1,rehanced.com.simpleetherwallet.network.EthereumNetwork,getBalance,false
+"Found: ""http://etherscan.io//token/images/""",Used HTTP Protocol,7,Used HTTP Protocol,650,1,rehanced.com.simpleetherwallet.network.EllaismNetwork,loadTokenIcon,false

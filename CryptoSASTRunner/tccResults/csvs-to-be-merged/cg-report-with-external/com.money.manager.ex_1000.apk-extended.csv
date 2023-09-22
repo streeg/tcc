@@ -1,6 +1,6 @@
 Message,Description,RuleNumber,RuleDesc,CWEId,Severity,ClassName,MethodName,ExternalLibrary
-"Found: ""AES""",Found broken crypto schemes,1,Found broken crypto schemes,256,1,com.money.manager.ex.passcode.SimpleCrypto,encrypt,true
-"Found: ""AES""",Found broken crypto schemes,1,Found broken crypto schemes,256,1,com.money.manager.ex.passcode.SimpleCrypto,decrypt,true
+"Found: ""AES""",Found broken crypto schemes,1,Found broken crypto schemes,256,1,com.money.manager.ex.passcode.SimpleCrypto,encrypt,false
+"Found: ""AES""",Found broken crypto schemes,1,Found broken crypto schemes,256,1,com.money.manager.ex.passcode.SimpleCrypto,decrypt,false
 Found: Untrused PRNG (java.util.Random),Used untrusted PRNG,13,Used untrusted PRNG,338,1,androidx.transition.Explode,calculateOut,true
 Found: Untrused PRNG (java.util.Random),Used untrusted PRNG,13,Used untrusted PRNG,338,1,com.google.common.hash.Striped64,clinit,true
 Found: Untrused PRNG (java.util.Random),Used untrusted PRNG,13,Used untrusted PRNG,338,1,org.apache.commons.lang3.ArrayUtils,shuffle,true
@@ -32,10 +32,10 @@ Should throw java.security.cert.CertificateException in check(Client|Server)Trus
 "Found: ""SHA-1""",Found broken hash functions,2,Found broken hash functions,759,1,okio.HashingSink,sha1,true
 "Found: Constant ""6c2a6f30726b3447747559525162665768412370297c5573342324705b""",Used constant keys in code,3,Used constant keys in code,547,1,com.money.manager.ex.core.Passcode,decrypt,true
 "Found: Constant ""6c2a6f30726b3447747559525162665768412370297c5573342324705b""",Used constant keys in code,3,Used constant keys in code,547,1,com.money.manager.ex.core.Passcode,encrypt,true
-"Found: ""100""",Used < 1000 iteration for PBE,8,Used < 1000 iteration for PBE,326,1,com.money.manager.ex.passcode.Encryptor,deriveKeySecurely,true
+"Found: ""100""",Used < 1000 iteration for PBE,8,Used < 1000 iteration for PBE,326,1,com.money.manager.ex.passcode.Encryptor,deriveKeySecurely,false
 "Found: ""6c2a6f30726b3447747559525162665768412370297c5573342324705b""",Found predictable seeds in code,11,Found predictable seeds in code,760,1,com.money.manager.ex.core.Passcode,decrypt,true
 "Found: ""6c2a6f30726b3447747559525162665768412370297c5573342324705b""",Found predictable seeds in code,11,Found predictable seeds in code,760,1,com.money.manager.ex.core.Passcode,encrypt,true
 "Found: ""http://localhost/""",Used HTTP Protocol,7,Used HTTP Protocol,650,1,retrofit2.Response,error,true
 "Found: ""http://localhost/""",Used HTTP Protocol,7,Used HTTP Protocol,650,1,retrofit2.Response,success,true
 "Found: ""http://localhost/""",Used HTTP Protocol,7,Used HTTP Protocol,650,1,retrofit2.Response,success,true
-"Found: ""http://quotes.morningstar.com""",Used HTTP Protocol,7,Used HTTP Protocol,650,1,com.money.manager.ex.investment.morningstar.MorningstarPriceUpdater,getMorningstarService,true
+"Found: ""http://quotes.morningstar.com""",Used HTTP Protocol,7,Used HTTP Protocol,650,1,com.money.manager.ex.investment.morningstar.MorningstarPriceUpdater,getMorningstarService,false

@@ -1,7 +1,7 @@
 Message,Description,RuleNumber,RuleDesc,CWEId,Severity,ClassName,MethodName,ExternalLibrary
-"Found: ""AES""",Found broken crypto schemes,1,Found broken crypto schemes,256,1,com.blackbox.plog.utils.Encrypter,init,true
+"Found: ""AES""",Found broken crypto schemes,1,Found broken crypto schemes,256,1,com.blackbox.plog.utils.Encrypter,init,false
 Found: Untrused PRNG (java.util.Random),Used untrusted PRNG,13,Used untrusted PRNG,338,1,kotlinx.coroutines.p1.b,init,false
-Found: Untrused PRNG (java.util.Random),Used untrusted PRNG,13,Used untrusted PRNG,338,1,com.mr.flutter.plugin.filepicker.c,k,true
+Found: Untrused PRNG (java.util.Random),Used untrusted PRNG,13,Used untrusted PRNG,338,1,com.mr.flutter.plugin.filepicker.c,k,false
 Found: Untrused PRNG (java.util.Random),Used untrusted PRNG,13,Used untrusted PRNG,338,1,androidx.activity.result.d,init,true
 Should at least get One accepted Issuer from Other Sources in getAcceptedIssuers method of UNKNOWN,Uses untrusted TrustManager,4,Uses untrusted TrustManager,349,1,UNKNOWN,getAcceptedIssuers,false
 Should throw java.security.cert.CertificateException in check(Client|Server)Trusted method of UNKNOWN,Uses untrusted TrustManager,4,Uses untrusted TrustManager,349,1,UNKNOWN,UNKNOWN,false

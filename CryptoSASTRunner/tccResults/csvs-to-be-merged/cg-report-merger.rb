@@ -16,7 +16,7 @@ merged_files = merged_files.select { |f| f.end_with?('.json') }
 report_files = report_files.select { |f| f.end_with?('.apk.csv') }
 
 merged_files.each do |file_name|
-  base_name = File.basename(file_name.gsub('.scout.merged', ''), '.json')
+  base_name = File.basename(file_name.gsub('.library_added', ''), '.json')
   # Verificar se o arquivo correspondente existe na pasta de relatórios
   next unless report_files.include?("#{base_name}.apk.csv")
 
@@ -35,6 +35,7 @@ merged_files.each do |file_name|
       method_name = row['MethodName']
 
       # Verificar se a classe existe no JSON e se é uma biblioteca externa
+      byebug
       external_library = if json_data['Issues'].any? do |issue|
                               issue['_FullPath'].include?("#{class_name}.class") && issue['externalLibrary'] == true
                             end

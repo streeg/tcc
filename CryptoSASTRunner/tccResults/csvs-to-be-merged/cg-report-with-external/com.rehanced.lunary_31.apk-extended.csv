@@ -5,7 +5,7 @@ Message,Description,RuleNumber,RuleDesc,CWEId,Severity,ClassName,MethodName,Exte
 "Found: ""RC4""",Found broken crypto schemes,1,Found broken crypto schemes,256,1,cz.msebera.android.httpclient.impl.auth.NTLMEngineImpl,RC4,true
 "Found: ""DES/ECB/NoPadding""",Found broken crypto schemes,1,Found broken crypto schemes,256,1,cz.msebera.android.httpclient.impl.auth.NTLMEngineImpl,lmResponse,true
 Found: Untrused PRNG (java.util.Random),Used untrusted PRNG,13,Used untrusted PRNG,338,1,androidx.transition.Explode,calculateOut,true
-Found: Untrused PRNG (java.util.Random),Used untrusted PRNG,13,Used untrusted PRNG,338,1,rehanced.com.simpleetherwallet.services.NotificationService,a,true
+Found: Untrused PRNG (java.util.Random),Used untrusted PRNG,13,Used untrusted PRNG,338,1,rehanced.com.simpleetherwallet.services.NotificationService,a,false
 Found: Untrused PRNG (java.util.Random),Used untrusted PRNG,13,Used untrusted PRNG,338,1,org.spongycastle.math.ec.ECCurve$AbstractF2m,solveQuadraticEquation,false
 Found: Untrused PRNG (java.util.Random),Used untrusted PRNG,13,Used untrusted PRNG,338,1,okhttp3.OkHttpClient,newWebSocket,true
 Found: Untrused PRNG (java.util.Random),Used untrusted PRNG,13,Used untrusted PRNG,338,1,org.spongycastle.math.raw.Mod,random,false
@@ -56,4 +56,4 @@ Should at least get One accepted Issuer from Other Sources in getAcceptedIssuers
 "Found: ""www.bouncycastle.org""",Found predictable seeds in code,11,Found predictable seeds in code,760,1,org.spongycastle.crypto.examples.DESExample,init,false
 "Found: ""web3j runtime cert store""",Used Predictable KeyStore Password,14,Used Predictable KeyStore Password,321,1,org.web3j.protocol.infura.InfuraHttpService,clinit,false
 "Found: ""http://example.com/""",Used HTTP Protocol,7,Used HTTP Protocol,650,1,cz.msebera.android.httpclient.impl.client.cache.CacheKeyGenerator,clinit,true
-"Found: ""http://data.fixer.io/api/latest?access_key=6731fb62377f28c429b246c2184a6a46""",Used HTTP Protocol,7,Used HTTP Protocol,650,1,rehanced.com.simpleetherwallet.network.EtherscanAPI,getPriceConversionRates,true
+"Found: ""http://data.fixer.io/api/latest?access_key=6731fb62377f28c429b246c2184a6a46""",Used HTTP Protocol,7,Used HTTP Protocol,650,1,rehanced.com.simpleetherwallet.network.EtherscanAPI,getPriceConversionRates,false

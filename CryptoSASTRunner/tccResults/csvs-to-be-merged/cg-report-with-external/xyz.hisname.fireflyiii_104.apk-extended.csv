@@ -1,0 +1,10 @@
+Message,Description,RuleNumber,RuleDesc,CWEId,Severity,ClassName,MethodName,ExternalLibrary
+Found: Untrused PRNG (java.util.Random),Used untrusted PRNG,13,Used untrusted PRNG,338,1,androidx.activity.result.ActivityResultRegistry,init,true
+Found: Untrused PRNG (java.util.Random),Used untrusted PRNG,13,Used untrusted PRNG,338,1,kotlin.random.FallbackThreadLocalRandom$implStorage$1,initialValue,false
+Found: Untrused PRNG (java.util.Random),Used untrusted PRNG,13,Used untrusted PRNG,338,1,org.osmdroid.tileprovider.tilesource.BitmapTileSourceBase,init,false
+Found: Untrused PRNG (java.util.Random),Used untrusted PRNG,13,Used untrusted PRNG,338,1,io.karn.notify.Notify,library_release,false
+Found: Untrused PRNG (java.util.Random),Used untrusted PRNG,13,Used untrusted PRNG,338,1,com.bumptech.glide.load.resource.gif.GifFrameLoader,loadNextFrame,false
+Found: Untrused PRNG (java.util.Random),Used untrusted PRNG,13,Used untrusted PRNG,338,1,j$.util.concurrent.ThreadLocalRandom,init,false
+"Cause: Fixed ""[1]""",Used untrusted HostNameVerifier,6,Used untrusted HostNameVerifier,601,1,UNKNOWN,UNKNOWN,false
+"Found: ""SHA-1""",Found broken hash functions,2,Found broken hash functions,759,1,okhttp3.CertificatePinner,check,false
+"Found: ""hunter2""",Used Predictable KeyStore Password,14,Used Predictable KeyStore Password,321,1,xyz.hisname.fireflyiii.util.network.CustomCa$trustManager$2,invoke,false

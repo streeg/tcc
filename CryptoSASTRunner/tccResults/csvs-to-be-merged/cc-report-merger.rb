@@ -16,7 +16,7 @@ merged_files = merged_files.select { |f| f.end_with?('.json') }
 report_files = report_files.select { |f| f.end_with?('.apk-report.csv') }
 
 merged_files.each do |file_name|
-  base_name = File.basename(file_name.gsub('.scout.merged', ''), '.json')
+  base_name = File.basename(file_name.gsub('.library_added', ''), '.json')
   next unless report_files.include?("#{base_name}.apk-report.csv")
 
   quote_chars = %w[" | ~ ^ & *]
@@ -41,7 +41,7 @@ merged_files.each do |file_name|
       violated_rule = row['ViolatedRule']
       object = row['Object']
       statement = row['Statement']
-
+      byebug
       external_library = json_data['runs'][0]['results'].any? do |result|
         result['locations'][0]['physicalLocation']['fileLocation']['uri']&.include?("#{class_name}.") && result['locations'][0]['physicalLocation']['fileLocation']['externalLibrary'].eql?(true)
       end

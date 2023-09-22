@@ -1,6 +1,6 @@
 Message,Description,RuleNumber,RuleDesc,CWEId,Severity,ClassName,MethodName,ExternalLibrary
-"Found: ""AES/ECB/PKCS5Padding""",Found broken crypto schemes,1,Found broken crypto schemes,256,1,com.reactlibrary.securekeystore.RNSecureKeyStoreModule,decryptAesCipherText,true
-"Found: ""AES/ECB/PKCS5Padding""",Found broken crypto schemes,1,Found broken crypto schemes,256,1,com.reactlibrary.securekeystore.RNSecureKeyStoreModule,encryptAesPlainText,true
+"Found: ""AES/ECB/PKCS5Padding""",Found broken crypto schemes,1,Found broken crypto schemes,256,1,com.reactlibrary.securekeystore.RNSecureKeyStoreModule,decryptAesCipherText,false
+"Found: ""AES/ECB/PKCS5Padding""",Found broken crypto schemes,1,Found broken crypto schemes,256,1,com.reactlibrary.securekeystore.RNSecureKeyStoreModule,encryptAesPlainText,false
 Found: Untrused PRNG (java.util.Random),Used untrusted PRNG,13,Used untrusted PRNG,338,1,okhttp3.OkHttpClient,newWebSocket,true
 Should at least get One accepted Issuer from Other Sources in getAcceptedIssuers method of UNKNOWN,Uses untrusted TrustManager,4,Uses untrusted TrustManager,349,1,UNKNOWN,getAcceptedIssuers,false
 Should throw java.security.cert.CertificateException in check(Client|Server)Trusted method of UNKNOWN,Uses untrusted TrustManager,4,Uses untrusted TrustManager,349,1,UNKNOWN,UNKNOWN,false
@@ -10,10 +10,10 @@ Should throw java.security.cert.CertificateException in check(Client|Server)Trus
 "Cause: Fixed ""[1]""",Used untrusted HostNameVerifier,6,Used untrusted HostNameVerifier,601,1,UNKNOWN,UNKNOWN,false
 "Found: ""SHA-1""",Found broken hash functions,2,Found broken hash functions,759,1,c.c.d.k.c,a,false
 "Found: ""MD5""",Found broken hash functions,2,Found broken hash functions,759,1,com.facebook.soloader.m,a,true
-"Found: ""sha1""",Found broken hash functions,2,Found broken hash functions,759,1,com.RNFetchBlob.t,a,true
-"Found: ""SHA-1""",Found broken hash functions,2,Found broken hash functions,759,1,com.RNFetchBlob.t,a,true
+"Found: ""sha1""",Found broken hash functions,2,Found broken hash functions,759,1,com.RNFetchBlob.t,a,false
+"Found: ""SHA-1""",Found broken hash functions,2,Found broken hash functions,759,1,com.RNFetchBlob.t,a,false
 "Found: ""SHA-1""",Found broken hash functions,2,Found broken hash functions,759,1,e.j,j,false
-"Found: ""md5""",Found broken hash functions,2,Found broken hash functions,759,1,com.RNFetchBlob.t,a,true
-"Found: ""MD5""",Found broken hash functions,2,Found broken hash functions,759,1,com.RNFetchBlob.t,a,true
-"Found: ""MD5""",Found broken hash functions,2,Found broken hash functions,759,1,com.RNFetchBlob.D,b,true
+"Found: ""md5""",Found broken hash functions,2,Found broken hash functions,759,1,com.RNFetchBlob.t,a,false
+"Found: ""MD5""",Found broken hash functions,2,Found broken hash functions,759,1,com.RNFetchBlob.t,a,false
+"Found: ""MD5""",Found broken hash functions,2,Found broken hash functions,759,1,com.RNFetchBlob.D,b,false
 "Found: ""MD5""",Found broken hash functions,2,Found broken hash functions,759,1,e.j,i,false

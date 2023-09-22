@@ -1,11 +1,11 @@
 Message,Description,RuleNumber,RuleDesc,CWEId,Severity,ClassName,MethodName,ExternalLibrary
 Found: Untrused PRNG (java.util.Random),Used untrusted PRNG,13,Used untrusted PRNG,338,1,okhttp3.OkHttpClient,newWebSocket,true
 Found: Untrused PRNG (java.util.Random),Used untrusted PRNG,13,Used untrusted PRNG,338,1,g.t.b$a,a,false
-Found: Untrused PRNG (java.util.Random),Used untrusted PRNG,13,Used untrusted PRNG,338,1,com.parse.LocalIdManager,init,true
-Found: Untrused PRNG (java.util.Random),Used untrusted PRNG,13,Used untrusted PRNG,338,1,com.parse.ParseRequest,executeAsync,true
+Found: Untrused PRNG (java.util.Random),Used untrusted PRNG,13,Used untrusted PRNG,338,1,com.parse.LocalIdManager,init,false
+Found: Untrused PRNG (java.util.Random),Used untrusted PRNG,13,Used untrusted PRNG,338,1,com.parse.ParseRequest,executeAsync,false
 "Found: ""SHA1""",Found broken hash functions,2,Found broken hash functions,759,1,e.d.a.j,b,false
 "Found: ""SHA1""",Found broken hash functions,2,Found broken hash functions,759,1,e.d.a.j,i,false
-"Found: ""MD5""",Found broken hash functions,2,Found broken hash functions,759,1,com.parse.ParseDigestUtils,md5,true
+"Found: ""MD5""",Found broken hash functions,2,Found broken hash functions,759,1,com.parse.ParseDigestUtils,md5,false
 "Found: ""MD5""",Found broken hash functions,2,Found broken hash functions,759,1,okio.HashingSource,md5,true
 "Found: ""MD5""",Found broken hash functions,2,Found broken hash functions,759,1,okio.Buffer,md5,true
 "Found: ""SHA-1""",Found broken hash functions,2,Found broken hash functions,759,1,okio.ByteString,sha1,true
@@ -15,7 +15,7 @@ Found: Untrused PRNG (java.util.Random),Used untrusted PRNG,13,Used untrusted PR
 "Found: ""SHA-1""",Found broken hash functions,2,Found broken hash functions,759,1,okio.Buffer,sha1,true
 "Found: ""SHA-1""",Found broken hash functions,2,Found broken hash functions,759,1,okio.HashingSink,sha1,true
 "Found: ""SHA-1""",Found broken hash functions,2,Found broken hash functions,759,1,okio.HashingSource,sha1,true
-"Found: Constant ""62""",Used constant keys in code,3,Used constant keys in code,547,1,com.trilead.ssh2.crypto.Base64,a,true
-"Found: Constant ""63""",Used constant keys in code,3,Used constant keys in code,547,1,com.trilead.ssh2.crypto.Base64,a,true
-"Found: Constant ""64""",Used constant keys in code,3,Used constant keys in code,547,1,com.trilead.ssh2.crypto.Base64,a,true
+"Found: Constant ""62""",Used constant keys in code,3,Used constant keys in code,547,1,com.trilead.ssh2.crypto.Base64,a,false
+"Found: Constant ""63""",Used constant keys in code,3,Used constant keys in code,547,1,com.trilead.ssh2.crypto.Base64,a,false
+"Found: Constant ""64""",Used constant keys in code,3,Used constant keys in code,547,1,com.trilead.ssh2.crypto.Base64,a,false
 "Found: ""http://treehouses.media.mit.edu:1337/parse/""",Used HTTP Protocol,7,Used HTTP Protocol,650,1,io.treehouses.remote.MainApplication,onCreate,false

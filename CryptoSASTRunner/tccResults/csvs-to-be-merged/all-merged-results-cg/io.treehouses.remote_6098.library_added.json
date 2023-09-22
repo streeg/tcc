@@ -1,0 +1,245 @@
+{
+  "projectName": "CryptoGuard",
+  "ProjectVersion": "04.05.03",
+  "Target": {
+    "RawCommand": "-in apk -s /home/lables/CryptoAnalysis/apks/Connectivity/io.treehouses.remote_6098.apk -m D",
+    "FullPath": "io.treehouses.remote_6098.apk/",
+    "Type": "APK",
+    "TargetSources": [
+      "/home/lables/CryptoAnalysis/apks/Connectivity/io.treehouses.remote_6098.apk"
+    ],
+    "_PropertiesFilePath": "gradle.properties",
+    "_ComputerOS": "Linux_4.15.0-163-generic",
+    "_JVMVersion": "1.8.0_312-8u312-b07-0ubuntu1~18.04-b07",
+    "_ProjectName": "io"
+  },
+  "Issues": [
+    {
+      "Message": "Found: Untrused PRNG (java.util.Random)",
+      "Description": "Used untrusted PRNG",
+      "RuleNumber": 13,
+      "RuleDesc": "Used untrusted PRNG",
+      "CWEId": 338,
+      "Severity": "1",
+      "_FullPath": "io.treehouses.remote_6098.apk.okhttp3.OkHttpClient.class",
+      "_Id": "0",
+      "externalLibrary": true,
+      "PossibleExternalLibrary": true
+    },
+    {
+      "Message": "Found: Untrused PRNG (java.util.Random)",
+      "Description": "Used untrusted PRNG",
+      "RuleNumber": 13,
+      "RuleDesc": "Used untrusted PRNG",
+      "CWEId": 338,
+      "Severity": "1",
+      "_FullPath": "io.treehouses.remote_6098.apk.g.t.b$a.class",
+      "_Id": "1"
+    },
+    {
+      "Message": "Found: Untrused PRNG (java.util.Random)",
+      "Description": "Used untrusted PRNG",
+      "RuleNumber": 13,
+      "RuleDesc": "Used untrusted PRNG",
+      "CWEId": 338,
+      "Severity": "1",
+      "_FullPath": "io.treehouses.remote_6098.apk.com.parse.LocalIdManager.class",
+      "_Id": "2",
+      "PossibleExternalLibrary": true
+    },
+    {
+      "Message": "Found: Untrused PRNG (java.util.Random)",
+      "Description": "Used untrusted PRNG",
+      "RuleNumber": 13,
+      "RuleDesc": "Used untrusted PRNG",
+      "CWEId": 338,
+      "Severity": "1",
+      "_FullPath": "io.treehouses.remote_6098.apk.com.parse.ParseRequest.class",
+      "_Id": "3",
+      "PossibleExternalLibrary": true
+    },
+    {
+      "Message": "Found: \"SHA1\"",
+      "Description": "Found broken hash functions",
+      "RuleNumber": 2,
+      "RuleDesc": "Found broken hash functions",
+      "CWEId": 759,
+      "Severity": "1",
+      "_FullPath": "io.treehouses.remote_6098.apk.e.d.a.j.class",
+      "_Id": "4"
+    },
+    {
+      "Message": "Found: \"SHA1\"",
+      "Description": "Found broken hash functions",
+      "RuleNumber": 2,
+      "RuleDesc": "Found broken hash functions",
+      "CWEId": 759,
+      "Severity": "1",
+      "_FullPath": "io.treehouses.remote_6098.apk.e.d.a.j.class",
+      "_Id": "5"
+    },
+    {
+      "Message": "Found: \"MD5\"",
+      "Description": "Found broken hash functions",
+      "RuleNumber": 2,
+      "RuleDesc": "Found broken hash functions",
+      "CWEId": 759,
+      "Severity": "1",
+      "_FullPath": "io.treehouses.remote_6098.apk.com.parse.ParseDigestUtils.class",
+      "_Id": "6",
+      "PossibleExternalLibrary": true
+    },
+    {
+      "Message": "Found: \"MD5\"",
+      "Description": "Found broken hash functions",
+      "RuleNumber": 2,
+      "RuleDesc": "Found broken hash functions",
+      "CWEId": 759,
+      "Severity": "1",
+      "_FullPath": "io.treehouses.remote_6098.apk.okio.HashingSource.class",
+      "_Id": "7",
+      "externalLibrary": true,
+      "PossibleExternalLibrary": true
+    },
+    {
+      "Message": "Found: \"MD5\"",
+      "Description": "Found broken hash functions",
+      "RuleNumber": 2,
+      "RuleDesc": "Found broken hash functions",
+      "CWEId": 759,
+      "Severity": "1",
+      "_FullPath": "io.treehouses.remote_6098.apk.okio.Buffer.class",
+      "_Id": "8",
+      "externalLibrary": true,
+      "PossibleExternalLibrary": true
+    },
+    {
+      "Message": "Found: \"SHA-1\"",
+      "Description": "Found broken hash functions",
+      "RuleNumber": 2,
+      "RuleDesc": "Found broken hash functions",
+      "CWEId": 759,
+      "Severity": "1",
+      "_FullPath": "io.treehouses.remote_6098.apk.okio.ByteString.class",
+      "_Id": "9",
+      "externalLibrary": true,
+      "PossibleExternalLibrary": true
+    },
+    {
+      "Message": "Found: \"MD5\"",
+      "Description": "Found broken hash functions",
+      "RuleNumber": 2,
+      "RuleDesc": "Found broken hash functions",
+      "CWEId": 759,
+      "Severity": "1",
+      "_FullPath": "io.treehouses.remote_6098.apk.e.d.a.j.class",
+      "_Id": "10"
+    },
+    {
+      "Message": "Found: \"MD5\"",
+      "Description": "Found broken hash functions",
+      "RuleNumber": 2,
+      "RuleDesc": "Found broken hash functions",
+      "CWEId": 759,
+      "Severity": "1",
+      "_FullPath": "io.treehouses.remote_6098.apk.okio.ByteString.class",
+      "_Id": "11",
+      "externalLibrary": true,
+      "PossibleExternalLibrary": true
+    },
+    {
+      "Message": "Found: \"MD5\"",
+      "Description": "Found broken hash functions",
+      "RuleNumber": 2,
+      "RuleDesc": "Found broken hash functions",
+      "CWEId": 759,
+      "Severity": "1",
+      "_FullPath": "io.treehouses.remote_6098.apk.okio.HashingSink.class",
+      "_Id": "12",
+      "externalLibrary": true,
+      "PossibleExternalLibrary": true
+    },
+    {
+      "Message": "Found: \"SHA-1\"",
+      "Description": "Found broken hash functions",
+      "RuleNumber": 2,
+      "RuleDesc": "Found broken hash functions",
+      "CWEId": 759,
+      "Severity": "1",
+      "_FullPath": "io.treehouses.remote_6098.apk.okio.Buffer.class",
+      "_Id": "13",
+      "externalLibrary": true,
+      "PossibleExternalLibrary": true
+    },
+    {
+      "Message": "Found: \"SHA-1\"",
+      "Description": "Found broken hash functions",
+      "RuleNumber": 2,
+      "RuleDesc": "Found broken hash functions",
+      "CWEId": 759,
+      "Severity": "1",
+      "_FullPath": "io.treehouses.remote_6098.apk.okio.HashingSink.class",
+      "_Id": "14",
+      "externalLibrary": true,
+      "PossibleExternalLibrary": true
+    },
+    {
+      "Message": "Found: \"SHA-1\"",
+      "Description": "Found broken hash functions",
+      "RuleNumber": 2,
+      "RuleDesc": "Found broken hash functions",
+      "CWEId": 759,
+      "Severity": "1",
+      "_FullPath": "io.treehouses.remote_6098.apk.okio.HashingSource.class",
+      "_Id": "15",
+      "externalLibrary": true,
+      "PossibleExternalLibrary": true
+    },
+    {
+      "Message": "Found: Constant \"62\"",
+      "Description": "Used constant keys in code",
+      "RuleNumber": 3,
+      "RuleDesc": "Used constant keys in code",
+      "CWEId": 547,
+      "Severity": "1",
+      "_FullPath": "io.treehouses.remote_6098.apk.com.trilead.ssh2.crypto.Base64.class",
+      "_Id": "16",
+      "PossibleExternalLibrary": true
+    },
+    {
+      "Message": "Found: Constant \"63\"",
+      "Description": "Used constant keys in code",
+      "RuleNumber": 3,
+      "RuleDesc": "Used constant keys in code",
+      "CWEId": 547,
+      "Severity": "1",
+      "_FullPath": "io.treehouses.remote_6098.apk.com.trilead.ssh2.crypto.Base64.class",
+      "_Id": "17",
+      "PossibleExternalLibrary": true
+    },
+    {
+      "Message": "Found: Constant \"64\"",
+      "Description": "Used constant keys in code",
+      "RuleNumber": 3,
+      "RuleDesc": "Used constant keys in code",
+      "CWEId": 547,
+      "Severity": "1",
+      "_FullPath": "io.treehouses.remote_6098.apk.com.trilead.ssh2.crypto.Base64.class",
+      "_Id": "18",
+      "PossibleExternalLibrary": true
+    },
+    {
+      "Message": "Found: \"http://treehouses.media.mit.edu:1337/parse/\"",
+      "Description": "Used HTTP Protocol",
+      "RuleNumber": 7,
+      "RuleDesc": "Used HTTP Protocol",
+      "CWEId": 650,
+      "Severity": "1",
+      "_FullPath": "io.treehouses.remote_6098.apk.io.treehouses.remote.MainApplication.class",
+      "_Id": "19"
+    }
+  ],
+  "_SchemaVersion": 3,
+  "_DateTime": "2022-01-20_08:56:09",
+  "_UUID": "9671f34a-deab-43ed-a588-a1f3fd3c335c"
+}

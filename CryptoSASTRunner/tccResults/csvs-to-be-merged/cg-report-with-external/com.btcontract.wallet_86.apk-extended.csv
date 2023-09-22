@@ -2,7 +2,7 @@ Message,Description,RuleNumber,RuleDesc,CWEId,Severity,ClassName,MethodName,Exte
 "Found: ""AES/ECB/NoPadding""",Found broken crypto schemes,1,Found broken crypto schemes,256,1,org.bitcoinj.crypto.BIP38PrivateKey,decryptEC,false
 "Found: ""AES/ECB/NoPadding""",Found broken crypto schemes,1,Found broken crypto schemes,256,1,org.bitcoinj.crypto.BIP38PrivateKey,decryptNoEC,false
 Found: Untrused PRNG (java.util.Random),Used untrusted PRNG,13,Used untrusted PRNG,338,1,androidx.transition.Explode,calculateOut,true
-Found: Untrused PRNG (java.util.Random),Used untrusted PRNG,13,Used untrusted PRNG,338,1,com.sparrowwallet.hummingbird.fountain.RandomXoshiro256StarStar,init,true
+Found: Untrused PRNG (java.util.Random),Used untrusted PRNG,13,Used untrusted PRNG,338,1,com.sparrowwallet.hummingbird.fountain.RandomXoshiro256StarStar,init,false
 Found: Untrused PRNG (java.util.Random),Used untrusted PRNG,13,Used untrusted PRNG,338,1,org.bitcoinj.net.FilterMerger,init,false
 Found: Untrused PRNG (java.util.Random),Used untrusted PRNG,13,Used untrusted PRNG,338,1,io.netty.handler.codec.http.websocketx.WebSocketClientHandshaker00,insertRandomCharacters,false
 Found: Untrused PRNG (java.util.Random),Used untrusted PRNG,13,Used untrusted PRNG,338,1,com.google.common.hash.Striped64,clinit,true
@@ -24,12 +24,12 @@ Found: Untrused PRNG (java.util.Random),Used untrusted PRNG,13,Used untrusted PR
 Found: Untrused PRNG (java.util.Random),Used untrusted PRNG,13,Used untrusted PRNG,338,1,org.bouncycastle.pqc.math.linearalgebra.GF2nPolynomialElement,solveQuadraticEquation,false
 Found: Untrused PRNG (java.util.Random),Used untrusted PRNG,13,Used untrusted PRNG,338,1,org.bouncycastle.math.ec.ECFieldElement$Fp,sqrt,false
 Found: Untrused PRNG (java.util.Random),Used untrusted PRNG,13,Used untrusted PRNG,338,1,org.bouncycastle.math.raw.Mod,random,false
-Found: Untrused PRNG (java.util.Random),Used untrusted PRNG,13,Used untrusted PRNG,338,1,com.sparrowwallet.hummingbird.fountain.RandomXoshiro256StarStar,init,true
+Found: Untrused PRNG (java.util.Random),Used untrusted PRNG,13,Used untrusted PRNG,338,1,com.sparrowwallet.hummingbird.fountain.RandomXoshiro256StarStar,init,false
 Found: Untrused PRNG (java.util.Random),Used untrusted PRNG,13,Used untrusted PRNG,338,1,scala.math.package$,random,false
 Found: Untrused PRNG (java.util.Random),Used untrusted PRNG,13,Used untrusted PRNG,338,1,io.netty.util.internal.ThreadLocalRandom,init,false
 Found: Untrused PRNG (java.util.Random),Used untrusted PRNG,13,Used untrusted PRNG,338,1,org.apache.commons.codec.digest.B64,getRandomSalt,false
 Found: Untrused PRNG (java.util.Random),Used untrusted PRNG,13,Used untrusted PRNG,338,1,scala.concurrent.forkjoin.ThreadLocalRandom,init,false
-Found: Untrused PRNG (java.util.Random),Used untrusted PRNG,13,Used untrusted PRNG,338,1,com.sparrowwallet.hummingbird.fountain.RandomXoshiro256StarStar,init,true
+Found: Untrused PRNG (java.util.Random),Used untrusted PRNG,13,Used untrusted PRNG,338,1,com.sparrowwallet.hummingbird.fountain.RandomXoshiro256StarStar,init,false
 Found: Untrused PRNG (java.util.Random),Used untrusted PRNG,13,Used untrusted PRNG,338,1,org.apache.commons.codec.digest.UnixCrypt,crypt,false
 Found: Untrused PRNG (java.util.Random),Used untrusted PRNG,13,Used untrusted PRNG,338,1,org.bitcoinj.core.TransactionBroadcast,clinit,true
 Found: Untrused PRNG (java.util.Random),Used untrusted PRNG,13,Used untrusted PRNG,338,1,org.bitcoinj.core.Peer,processInv,true
