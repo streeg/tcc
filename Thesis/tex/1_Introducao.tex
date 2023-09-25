@@ -31,6 +31,25 @@ A inclusão deste recurso não apenas aumentou a precisão da detecção de falh
 
 Este trabalho representa um avanço significativo na promoção da segurança de aplicações baseadas em Java, com o objetivo de proteger sistemas vitais e dados sensíveis de ameaças cibernéticas. Para contribuir para um ecossistema digital mais resiliente e protegido, as práticas de segurança na implementação de APIs criptográficas serão fortalecidas por meio dessa abordagem qualitativa e da integração de ferramentas de detecção.
 
+\section{Objetivos}
+
+O objetivo inicial deste estudo era fornecer aos desenvolvedores uma forma de identificar vulnerabilidades em APIs criptográficas. No entanto, ao longo do estudo, percebeu-se que a detecção de vulnerabilidades em APIs criptográficas, valendo-se das ferramentas CogniCrypt e CryptoGuard, não era suficiente para identificar a origem dos alertas.
+
+Dessa forma, o objetivo deste estudo foi ampliado para incluir a identificação da origem dos alertas. Esta expansão se revelou crucial, uma vez que a capacidade de precisamente determinar a origem de um alerta é de extrema importância para os desenvolvedores. Isso possibilita ações direcionadas e específicas para corrigir possíveis vulnerabilidades, economizando tempo e recursos valiosos no processo de desenvolvimento e garantindo a segurança efetiva das aplicações.
+
+Para isso, foi necessário integrar o resultado do LibScout ao contexto do CryptoGuard e CogniCrypt. Esta abordagem possibilitou não apenas a detecção de potenciais vulnerabilidades, mas também a identificação precisa de correspondências associadas a bibliotecas externas, fornecendo uma visão clara da origem dos alertas e permitindo a implementação de soluções de segurança de forma eficiente e focalizada.
+
+\section{Justificativa}
+
+A crescente complexidade das aplicações Java, aliada à importância crítica da segurança da informação, torna imperativo o desenvolvimento de técnicas e ferramentas que auxiliem os desenvolvedores na identificação e correção de potenciais vulnerabilidades em APIs criptográficas. Diversos estudos demonstraram que o uso inadequado dessas APIs é uma das principais fontes de vulnerabilidades em software. 
+
+Diante desse cenário, a presente pesquisa se propõe a aprimorar a detecção de vulnerabilidades em APIs criptográficas, proporcionando aos desenvolvedores uma solução mais abrangente e eficaz para garantir a segurança das aplicações Java. A integração dos resultados do LibScout às ferramentas CryptoGuard e CogniCrypt representa um avanço significativo, pois não apenas identifica potenciais vulnerabilidades, mas também localiza a origem desses alertas, permitindo uma intervenção mais precisa e efetiva por parte dos desenvolvedores. 
+
+Portanto, este estudo se justifica pela necessidade premente de fortalecer a segurança das aplicações Java e pela contribuição inovadora que a abordagem proposta representa para esse fim.
+
+% Objetivo é um paragrafo explicando o a motivação do porque 
+% os desenvolvedores reportaram que nem todos eram de responsabilidade deles
+
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%

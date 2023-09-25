@@ -11,49 +11,20 @@
 #1\end{minipage}}%
 \\\vspace{\baselineskip}}%
 
+% Fundamentação teorica e trabalhos correlatos 2 ou 3 páginas
+% falar do cognicrypt do cryptoguard, como eles funcionam, falar do libscout, mencionar criptografia de uma maneira geral, citar o crysl pro cognicrypt, citar o artigo do cryptoguard
+% Problemas de criptografia, mencionar problemas de criptografia, resolver com ferramentas de analise estatica
+% Trabalho recentemente publicado sobre analise dinamica (in run time)
+
 \section{Criptografia} %https://web.cs.ucdavis.edu/~rogaway/classes/227/spring05/book/main.pdf  BELLARE, M.; ROGAWAEY, P. Introduction to modern cryptography. Davis, United States of America: University of California at Davis, 2005.
 
-A criptografia desempenha um papel fundamental na segurança da informação, sendo amplamente utilizada para garantir a confidencialidade e a integridade dos dados. Essa técnica consiste em converter os dados em um formato ilegível, conhecido como cifrado, que só pode ser decifrado e revertido ao seu formato original por uma pessoa autorizada.
+A criptografia é um componente essencial para a segurança da informação, desempenhando um papel fundamental ao garantir a confidencialidade e a integridade dos dados. Essa técnica consiste em transformar informações em um formato ilegível, conhecido como cifrado, que somente uma pessoa autorizada pode reverter ao seu estado original. No âmbito da criptografia, dois tipos de abordagens principais são empregados: a simétrica, que utiliza uma única chave para tanto cifrar quanto decifrar dados, e a assimétrica, que envolve o uso de pares distintos de chaves – uma pública, para cifragem, e outra privada, para decifragem.
 
-\subsection{CriptoSistemas}
+Diversos algoritmos criptográficos, cada qual com suas particularidades e aplicações, estão disponíveis. O Advanced Encryption Standard (AES), por exemplo, é largamente empregado na criptografia simétrica para salvaguardar dados sensíveis, sendo reconhecido pela sua segurança e eficácia. Já o RSA, um dos primeiros algoritmos de criptografia assimétrica, fundamenta-se na complexidade de fatorar números primos extremamente grandes e é amplamente utilizado em trocas seguras de chaves e assinaturas digitais.
 
-Um criptossistema é um conjunto de métodos e técnicas usados para codificar e decodificar informações. Ele envolve duas operações principais:
+A segurança de um sistema criptográfico depende da robustez do algoritmo empregado e da gestão adequada das chaves utilizadas. Em virtude do constante avanço das tecnologias de informação e das técnicas de ataque, é imperativo recorrer a algoritmos criptográficos confiáveis e adotar métodos atualizados. Este é um procedimento crucial para manter a integridade e a confidencialidade dos dados em um ambiente dinâmico e em contínua transformação.
 
-Codificação: O processo de transformar texto claro em texto codificado usando uma chave específica.
-
-Decodificação: O processo reverso, onde o texto codificado é convertido de volta ao texto claro, usando a mesma chave ou uma chave relacionada.
-
-\subsection{Chaves Criptográficas}
-
-
-As chaves são elementos essenciais no campo da criptografia. Elas desempenham um papel crucial no funcionamento dos algoritmos e são usadas tanto para cifrar quanto para decifrar dados. Existem dois tipos principais de criptografia baseada em chave:
-
-- Criptografia Simétrica: Nesse tipo de criptografia, a mesma chave é utilizada tanto para cifrar quanto para decifrar os dados. A segurança depende da proteção e distribuição segura dessa chave.
-
-- Criptografia Assimétrica: Esse tipo de criptografia envolve o uso de pares de chaves distintas: uma chave pública (utilizada para cifragem) e uma chave privada (utilizada para decifragem). A chave pública pode ser compartilhada livremente, enquanto a chave privada deve ser mantida em segredo.
-
-
-\subsection{Algoritmos Criptográficos}
-
-Existem vários algoritmos criptográficos, cada um com suas próprias características e aplicações. Alguns dos mais conhecidos incluem:
-
-Cada algoritmo criptográfico tem suas próprias características e funções. Alguns dos mais famosos são:
-
-O Advanced Encryption Standard, também conhecido como AES, é um algoritmo comumente usado na criptografia simétrica para proteger dados sensíveis. É considerado seguro e altamente eficaz.
-
-O RSA é um dos primeiros algoritmos de criptografia assimétrica e foi desenvolvido com base na dificuldade de fatorar números primos extremamente grandes. muito usado para trocas seguras de chaves e assinaturas digitais.
-
-A criptografia com curvas elípticas, ou ECC, é um tipo de criptografia assimétrica que usa curvas elípticas sobre corpos finitos. Em comparação com outros algoritmos, oferece um alto nível de segurança com chaves muito menores.
-
-
-\subsection{Segurança na Criptografia}
-
-A segurança de um sistema criptográfico depende da robustez do algoritmo utilizado e da gestão adequada das chaves usadas. Devido à evolução constante da computação e das técnicas de ataque, é essencial usar algoritmos criptográficos confiáveis e usar métodos atualizados. Ao lidar com o ambiente dinâmico e em constante mudança das tecnologias de informação, essa prática se torna fundamental para manter a integridade e a confidencialidade dos dados.
-
-\subsection{Desafios na implementação da Criptografia} 
-
-Apesar da criptografia ser um componente fundamental para garantir a segurança dos sistemas, muitos desenvolvedores encontram grandes desafios ao tentar fazê-la funcionar corretamente. Sem a expertise em criptografia, alguém pode erroneamente utilizar algoritmos e técnicas criptográficas inadequadas. Dessa forma, as aplicações podem apresentar vulnerabilidades que prejudicam a segurança e a privacidade dos dados dos usuários. É crucial contar com ferramentas que possam orientar os desenvolvedores na aplicação correta das práticas criptográficas, a fim de reduzir os riscos envolvidos quando as medidas de segurança em software são implementadas incorretamente.
-
+Apesar da importância da criptografia para a segurança dos sistemas, muitos desenvolvedores se deparam com desafios significativos ao tentar implementá-la corretamente. Sem o conhecimento especializado em criptografia, é possível utilizar erroneamente algoritmos e técnicas criptográficas inadequadas. Isso pode resultar em vulnerabilidades que comprometem a segurança e a privacidade dos dados dos usuários. Portanto, é essencial contar com ferramentas que possam orientar os desenvolvedores na aplicação correta das práticas criptográficas, reduzindo assim os riscos associados à implementação inadequada de medidas de segurança em software.Apesar da criptografia ser um componente fundamental para garantir a segurança dos sistemas, muitos desenvolvedores encontram grandes desafios ao tentar fazê-la funcionar corretamente. Sem a expertise em criptografia, alguém pode erroneamente utilizar algoritmos e técnicas criptográficas inadequadas. Dessa forma, as aplicações podem apresentar vulnerabilidades que prejudicam a segurança e a privacidade dos dados dos usuários. É crucial contar com ferramentas que possam orientar os desenvolvedores na aplicação correta das práticas criptográficas, a fim de reduzir os riscos envolvidos quando as medidas de segurança em software são implementadas incorretamente.
 
 \section{CogniCrypt} %CogniCrypt: Supporting Developers in Using Cryptography
 
@@ -134,8 +105,15 @@ Assim, os problemas com a apresentação da classe da vulnerabilidade pelas duas
 
 \section{Trabalhos Correlatos}
 
-Citar trabalho do colega de análise dinamica.
+\subsection{Análise dinâmica de APIs criptográficas} %Runtime Verification of Crypto APIs: An Empirical Study
+O estudo intitulado "Runtime Verification of Crypto APIs: An Empirical Study" apresenta uma meticulosa investigação comparativa de métodos de detecção de uso inadequado de APIs criptográficas em projetos Java. O trabalho conduzido demonstra um escrutínio minucioso das técnicas empregadas, nomeadamente a abordagem de Verificação em Tempo de Execução (Runtime Verification, ou RVSec), juntamente com analisadores estáticos notáveis, a saber, CogniCrypt e CryptoGuard, além da ferramenta CryLogger.
 
+Ao longo da análise, o estudo deixa transluzir tanto as virtudes como as limitações inerentes a cada uma destas abordagens. Detalhes acerca dos cenários em que cada técnica exibe maior eficácia, bem como aqueles em que pode incorrer em falsos positivos e negativos, são minuciosamente delineados. Adicionalmente, são propostas recomendações com vistas à otimização da precisão e efetividade na detecção de discrepâncias no emprego de APIs criptográficas.
+
+\subsection{Detecção automatizada de bibliotecas de terceiros em aplicativos Android} %Automated Third-Party Library Detection for Android Applications: Are We There Yet?
+O artigo "Automated Third-Party Library Detection for Android Applications: Are We There Yet?" se concentra na detecção automatizada de bibliotecas de terceiros em aplicativos Android. Ele aborda várias técnicas e ferramentas para identificar e categorizar bibliotecas de terceiros no código-fonte Android. A pesquisa avalia o desempenho de abordagens estáticas e dinâmicas para essa finalidade, oferecendo uma análise abrangente do estado atual da detecção automatizada de bibliotecas de terceiros em aplicativos Android.
+
+Neste estudo, baseamos nossa escolha da ferramenta LibScout para identificação de bibliotecas de terceiros (TPLs) em aplicativos Android em resultados obtidos no artigo "Automated Third-Party Library Detection for Android Applications: Are We There Yet?". Esta pesquisa forneceu uma avaliação abrangente de técnicas e ferramentas para detecção automatizada de bibliotecas de terceiros em aplicativos Android. A partir dessa avaliação, selecionamos o LibScout como a ferramenta mais adequada para identificar e categorizar TPLs em nosso contexto de detecção de vulnerabilidades em APIs criptográficas Java. Dessa forma, integramos o LibScout à nossa abordagem qualitativa, complementando as ferramentas CogniCrypt e CryptoGuard para obter resultados mais abrangentes na detecção de vulnerabilidades.
 
 % Este capítulo descreve a classe \unbcic, e demonstra os comandos disponíveis. A
 % última versão foi atualizada pelo Prof. Ralha, em 2008 (vide \refAnexo{Anexo1}).
