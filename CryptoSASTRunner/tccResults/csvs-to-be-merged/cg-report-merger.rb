@@ -5,7 +5,7 @@ require 'byebug'
 # Caminhos das pastas
 merged_results_path = '/home/guileb/tcc/CryptoSASTRunner/tccResults/csvs-to-be-merged/all-merged-results-cg'
 report_output_path = '/home/guileb/tcc/CryptoSASTRunner/tccResults/csvs-to-be-merged/cg-report-output'
-report_new_output_path = '/home/guileb/tcc/CryptoSASTRunner/tccResults/csvs-to-be-merged/cg-report-with-external'
+report_new_output_path = '/home/guileb/tcc/CryptoSASTRunner/tccResults/csvs-to-be-merged/cg-report-with-external-and-possible-external'
 
 # Listar os arquivos nas pastas
 merged_files = Dir.entries(merged_results_path).select { |f| File.file?("#{merged_results_path}/#{f}") }
@@ -28,11 +28,10 @@ merged_files.each do |file_name|
 
   # Processar os dados e criar novo CSV
   CSV.open("#{report_new_output_path}/#{base_name}.apk-extended.csv", 'w') do |csv|
-    csv << report_csv.headers + ['ExternalLibrary']
+    csv << report_csv.headers + ['ExternalLibrary'] + ['PossibleExternal']
 
     report_csv.each do |row|
       class_name = row['ClassName']
-      method_name = row['MethodName']
 
       # Verificar se a classe existe no JSON e se é uma biblioteca externa
       external_library = if json_data['Issues'].any? do |issue|
@@ -42,9 +41,16 @@ merged_files.each do |file_name|
                          else
                            false
                          end
+      possible_external = if json_data['Issues'].any? do |issue|
+                               issue['_FullPath'].include?("#{class_name}.class") && issue['PossibleExternalLibrary'] == true
+                             end
+                            true
+                          else
+                            false
+                          end
 
       # Escrever no novo CSV
-      csv << row.fields + [external_library]
+      csv << row.fields + [external_library] + [possible_external]
     end
   end
 end

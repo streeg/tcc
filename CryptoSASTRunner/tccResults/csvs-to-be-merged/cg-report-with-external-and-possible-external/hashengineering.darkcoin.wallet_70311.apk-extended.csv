@@ -1,0 +1,52 @@
+Message,Description,RuleNumber,RuleDesc,CWEId,Severity,ClassName,MethodName,ExternalLibrary,PossibleExternal
+Cause: Used default key size,Used export grade public Key,5,Used export grade public Key,321,1,io.jsonwebtoken.impl.crypto.RsaProvider,generateKeyPair,false,false
+"Found: ""AES/ECB/PKCS7Padding""",Found broken crypto schemes,1,Found broken crypto schemes,256,1,de.schildbach.wallet.ui.security.StaleEncryptionProvider,encrypt,false,false
+"Found: ""AES/ECB/PKCS7Padding""",Found broken crypto schemes,1,Found broken crypto schemes,256,1,de.schildbach.wallet.ui.security.StaleEncryptionProvider,decrypt,false,false
+"Found: ""AES/ECB/NoPadding""",Found broken crypto schemes,1,Found broken crypto schemes,256,1,org.bitcoinj.crypto.BIP38PrivateKey,decryptNoEC,false,false
+"Found: ""AES/ECB/NoPadding""",Found broken crypto schemes,1,Found broken crypto schemes,256,1,org.bitcoinj.crypto.BIP38PrivateKey,decryptEC,false,false
+Found: Untrused PRNG (java.util.Random),Used untrusted PRNG,13,Used untrusted PRNG,338,1,org.bitcoinj.governance.GovernanceManager,requestGovernanceObject,false,false
+Found: Untrused PRNG (java.util.Random),Used untrusted PRNG,13,Used untrusted PRNG,338,1,org.bouncycastle.pqc.math.linearalgebra.GF2nPolynomialElement,solveQuadraticEquation,false,false
+Found: Untrused PRNG (java.util.Random),Used untrusted PRNG,13,Used untrusted PRNG,338,1,org.bitcoinj.net.FilterMerger,init,false,false
+Found: Untrused PRNG (java.util.Random),Used untrusted PRNG,13,Used untrusted PRNG,338,1,org.bouncycastle.math.ec.ECFieldElement$Fp,sqrt,false,false
+Found: Untrused PRNG (java.util.Random),Used untrusted PRNG,13,Used untrusted PRNG,338,1,org.bitcoinj.evolution.SimplifiedMasternodeListManager,chooseRandomDownloadPeer,false,false
+Found: Untrused PRNG (java.util.Random),Used untrusted PRNG,13,Used untrusted PRNG,338,1,kotlin.random.FallbackThreadLocalRandom$implStorage$1,initialValue,false,false
+Found: Untrused PRNG (java.util.Random),Used untrusted PRNG,13,Used untrusted PRNG,338,1,org.bitcoinj.governance.GovernanceManager,requestGovernanceObjectVotes,false,false
+Found: Untrused PRNG (java.util.Random),Used untrusted PRNG,13,Used untrusted PRNG,338,1,org.bouncycastle.asn1.ua.DSTU4145PointEncoder,solveQuadraticEquation,false,false
+Found: Untrused PRNG (java.util.Random),Used untrusted PRNG,13,Used untrusted PRNG,338,1,org.bouncycastle.math.raw.Mod,random,false,false
+Found: Untrused PRNG (java.util.Random),Used untrusted PRNG,13,Used untrusted PRNG,338,1,org.bouncycastle.math.ec.ECCurve$AbstractF2m,solveQuadraticEquation,false,false
+Found: Untrused PRNG (java.util.Random),Used untrusted PRNG,13,Used untrusted PRNG,338,1,com.bumptech.glide.load.resource.gif.GifFrameLoader,getFrameSignature,false,true
+Found: Untrused PRNG (java.util.Random),Used untrusted PRNG,13,Used untrusted PRNG,338,1,org.bitcoinj.core.TransactionBroadcast,clinit,true,true
+Found: Untrused PRNG (java.util.Random),Used untrusted PRNG,13,Used untrusted PRNG,338,1,org.bitcoinj.core.Peer,processInv,true,true
+Found: Untrused PRNG (java.util.Random),Used untrusted PRNG,13,Used untrusted PRNG,338,1,core.Peer,run,true,true
+Found: Untrused PRNG (java.util.Random),Used untrusted PRNG,13,Used untrusted PRNG,338,1,org.bouncycastle.pqc.math.linearalgebra.GF2Polynomial,clinit,false,false
+Found: Untrused PRNG (java.util.Random),Used untrusted PRNG,13,Used untrusted PRNG,338,1,org.bitcoinj.core.Peer,ping,true,true
+Found: Untrused PRNG (java.util.Random),Used untrusted PRNG,13,Used untrusted PRNG,338,1,send.RequestWalletBalanceTask,run,false,false
+Found: Untrused PRNG (java.util.Random),Used untrusted PRNG,13,Used untrusted PRNG,338,1,org.bitcoinj.core.PeerGroup,selectDownloadPeer,true,true
+Found: Untrused PRNG (java.util.Random),Used untrusted PRNG,13,Used untrusted PRNG,338,1,org.bouncycastle.pqc.math.linearalgebra.GF2nONBField,elementOfOrder,false,false
+Should at least get One accepted Issuer from Other Sources in getAcceptedIssuers method of send.RequestWalletBalanceTask,Uses untrusted TrustManager,4,Uses untrusted TrustManager,349,1,send.RequestWalletBalanceTask,getAcceptedIssuers,false,false
+Should throw java.security.cert.CertificateException in check(Client|Server)Trusted method of send.RequestWalletBalanceTask,Uses untrusted TrustManager,4,Uses untrusted TrustManager,349,1,send.RequestWalletBalanceTask,UNKNOWN,false,false
+"Found: ""SHA-1""",Found broken hash functions,2,Found broken hash functions,759,1,okio.ByteString,sha1,false,true
+"Found: ""SHA-1""",Found broken hash functions,2,Found broken hash functions,759,1,org.bitcoinj.script.Script,executeScript,false,false
+"Found: ""2""",Used < 1000 iteration for PBE,8,Used < 1000 iteration for PBE,326,1,org.bouncycastle.jcajce.provider.symmetric.Twofish$PBEWithSHA,init,false,false
+"Found: ""3""",Used < 1000 iteration for PBE,8,Used < 1000 iteration for PBE,326,1,org.bouncycastle.jcajce.provider.keystore.bc.BcKeyStoreSpi$StoreEntry,init,false,false
+"Found: ""0""",Used < 1000 iteration for PBE,8,Used < 1000 iteration for PBE,326,1,org.bouncycastle.jcajce.provider.symmetric.RC2$PBEWithMD5AndRC2,init,false,false
+"Found: ""1""",Used < 1000 iteration for PBE,8,Used < 1000 iteration for PBE,326,1,org.bouncycastle.jcajce.provider.keystore.bc.BcKeyStoreSpi,loadStore,false,false
+"Found: ""20""",Used < 1000 iteration for PBE,8,Used < 1000 iteration for PBE,326,1,org.bouncycastle.jcajce.provider.keystore.pkcs12.PKCS12KeyStoreSpi,init,false,false
+"Found: ""2""",Used < 1000 iteration for PBE,8,Used < 1000 iteration for PBE,326,1,org.bouncycastle.jcajce.provider.symmetric.AES$PBEWithSHA256AESCBC128,init,false,false
+"Found: ""2""",Used < 1000 iteration for PBE,8,Used < 1000 iteration for PBE,326,1,org.bouncycastle.jcajce.provider.symmetric.AES$PBEWithSHA1AESCBC256,init,false,false
+"Found: ""0""",Used < 1000 iteration for PBE,8,Used < 1000 iteration for PBE,326,1,org.bouncycastle.jcajce.provider.symmetric.DES$PBEWithMD2,init,false,false
+"Found: ""2""",Used < 1000 iteration for PBE,8,Used < 1000 iteration for PBE,326,1,org.bouncycastle.jcajce.provider.symmetric.AES$PBEWithSHA1AESCBC128,init,false,false
+"Found: ""2""",Used < 1000 iteration for PBE,8,Used < 1000 iteration for PBE,326,1,org.bouncycastle.jcajce.provider.keystore.bc.BcKeyStoreSpi,loadStore,false,false
+"Found: ""2""",Used < 1000 iteration for PBE,8,Used < 1000 iteration for PBE,326,1,org.bouncycastle.jcajce.provider.symmetric.AES$PBEWithSHA1AESCBC192,init,false,false
+"Found: ""0""",Used < 1000 iteration for PBE,8,Used < 1000 iteration for PBE,326,1,org.bouncycastle.jcajce.provider.symmetric.DES$PBEWithMD5,init,false,false
+"Found: ""0""",Used < 1000 iteration for PBE,8,Used < 1000 iteration for PBE,326,1,org.bouncycastle.jcajce.provider.symmetric.RC2$PBEWithSHA1AndRC2,init,false,false
+"Found: ""4""",Used < 1000 iteration for PBE,8,Used < 1000 iteration for PBE,326,1,org.bouncycastle.jcajce.provider.keystore.bc.BcKeyStoreSpi$StoreEntry,init,false,false
+"Found: ""2""",Used < 1000 iteration for PBE,8,Used < 1000 iteration for PBE,326,1,org.bouncycastle.jcajce.provider.symmetric.RC2$PBEWithSHAAnd128BitRC2,init,false,false
+"Found: ""2""",Used < 1000 iteration for PBE,8,Used < 1000 iteration for PBE,326,1,org.bouncycastle.jcajce.provider.symmetric.AES$PBEWithSHA256AESCBC192,init,false,false
+"Found: ""2""",Used < 1000 iteration for PBE,8,Used < 1000 iteration for PBE,326,1,org.bouncycastle.jcajce.provider.symmetric.RC2$PBEWithSHAAnd40BitRC2,init,false,false
+"Found: ""2""",Used < 1000 iteration for PBE,8,Used < 1000 iteration for PBE,326,1,org.bouncycastle.jcajce.provider.symmetric.DESede$PBEWithSHAAndDES2Key,init,false,false
+"Found: ""2""",Used < 1000 iteration for PBE,8,Used < 1000 iteration for PBE,326,1,org.bouncycastle.jcajce.provider.symmetric.AES$PBEWithSHA256AESCBC256,init,false,false
+"Found: ""1""",Used < 1000 iteration for PBE,8,Used < 1000 iteration for PBE,326,1,org.bouncycastle.jcajce.provider.keystore.bc.BcKeyStoreSpi$StoreEntry,init,false,false
+"Found: ""2""",Used < 1000 iteration for PBE,8,Used < 1000 iteration for PBE,326,1,org.bouncycastle.jcajce.provider.symmetric.DESede$PBEWithSHAAndDES3Key,init,false,false
+"Found: ""0""",Used < 1000 iteration for PBE,8,Used < 1000 iteration for PBE,326,1,org.bouncycastle.jcajce.provider.symmetric.DES$PBEWithSHA1,init,false,false
+"Found: ""www.bouncycastle.org""",Found predictable seeds in code,11,Found predictable seeds in code,760,1,org.bouncycastle.crypto.examples.DESExample,init,false,false
