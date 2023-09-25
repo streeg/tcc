@@ -11,491 +11,609 @@
 #1\end{minipage}}%
 \\\vspace{\baselineskip}}%
 
+\section{Criptografia} %https://web.cs.ucdavis.edu/~rogaway/classes/227/spring05/book/main.pdf  BELLARE, M.; ROGAWAEY, P. Introduction to modern cryptography. Davis, United States of America: University of California at Davis, 2005.
+
+A criptografia desempenha um papel fundamental na segurança da informação, sendo amplamente utilizada para garantir a confidencialidade e a integridade dos dados. Essa técnica consiste em converter os dados em um formato ilegível, conhecido como cifrado, que só pode ser decifrado e revertido ao seu formato original por uma pessoa autorizada.
+
+\subsection{CriptoSistemas}
+
+Um criptossistema é um conjunto de métodos e técnicas usados para codificar e decodificar informações. Ele envolve duas operações principais:
+
+Codificação: O processo de transformar texto claro em texto codificado usando uma chave específica.
+
+Decodificação: O processo reverso, onde o texto codificado é convertido de volta ao texto claro, usando a mesma chave ou uma chave relacionada.
+
+\subsection{Chaves Criptográficas}
 
 
-\section{CogniCrypt}
+As chaves são elementos essenciais no campo da criptografia. Elas desempenham um papel crucial no funcionamento dos algoritmos e são usadas tanto para cifrar quanto para decifrar dados. Existem dois tipos principais de criptografia baseada em chave:
 
-A ferramenta CogniCrypt é um software livre, que permite a análise em tempo real de código e também a criptografia de dados. Se baseia em regras bem definidas construídas com o auxílio da línguagem de domínio bem definido CrySL. É desenvolvida como um projeto de pesquisa, integrada à IDE Eclipse e disponibilizada sob a licença GNU GPL. 
-CrySL especifica boas práticas para o uso correto de APIs criptográficas. O CogniCrypt já possui algumas \textit{CrySL Rules} (Regras CrySL) compatíveis com a arquitetura criptografica java \textit{(JCA - Java Cryptography Architecture)}. Seguindo essas regras e especificações, o CogniCrypt é capaz de identificar e sugerir melhorias para a segurança de um código inseguro. 
+- Criptografia Simétrica: Nesse tipo de criptografia, a mesma chave é utilizada tanto para cifrar quanto para decifrar os dados. A segurança depende da proteção e distribuição segura dessa chave.
 
-
-Este capítulo descreve a classe \unbcic, e demonstra os comandos disponíveis. A
-última versão foi atualizada pelo Prof. Ralha, em 2008 (vide \refAnexo{Anexo1}).
-A melhor forma de entender o funcionamento é observar o arquivo principal deste
-documento (\texttt{monografia.tex}).
-
-%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
-%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
-%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
-\section{Gerando o PDF}
-
-Para gerar corretamente as referências cruzadas, é necessário processar os arquivos
-mais de uma vez com a seguinte sequência de comandos (supondo que o arquivo
-principal seja \texttt{monografia.tex}).
-
-\begin{verbatim}
-pdflatex monografia
-bibtex monografia
-makeglossaries monografia
-pdflatex monografia
-\end{verbatim}
-
-O primeiro comando processa os arquivos, indicando quais referências foram citadas
-no texto (bibliográficas ou cruzadas), o segundo comando processa o arquivo
-\texttt{.bib} que contém as informações bibliográficas, o terceiro gera o índice
-de siglas/abreviaturas, e o último comando junta todas estas informações,
-produzindo um texto com referências cruzadas funcionais.
+- Criptografia Assimétrica: Esse tipo de criptografia envolve o uso de pares de chaves distintas: uma chave pública (utilizada para cifragem) e uma chave privada (utilizada para decifragem). A chave pública pode ser compartilhada livremente, enquanto a chave privada deve ser mantida em segredo.
 
 
+\subsection{Algoritmos Criptográficos}
 
-%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
-%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
-%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
-\section{Opções}
-O documento é gerado em função do curso dado como opção [obrigatória] a classe.
-Os cursos disponíveis são:
-\begin{description}
-  \item[bacharelado] Bacharelado em Ciência da Computação
-  \item[licenciatura] Licenciatura em Computação
-  \item[engenharia] Engenharia de Computação
-  \item[mestrado, ppginf] Mestrado em Informática
-  \item[doutorado, ppginf] Doutorado em Informática
-  \item[mestrado, ppca] Mestrado Profissional em Computação Aplicada
-\end{description}
+Existem vários algoritmos criptográficos, cada um com suas próprias características e aplicações. Alguns dos mais conhecidos incluem:
 
-No caso dos cursos de pós-graduação, há o \emph{exame de qualificação} do
-discente, a qual deverá constar a definição, pertinência do projeto, a sua
-abrangência, comprovação da eficiência e eficácia da metodologia proposta, uma
-revisão bibliográfica detalhada e o cronograma para conclusão do projeto~\cite{ppginf}.
-Para gerar o documento referente a este exame, use a opção \textbf{qualificacao}.
+Cada algoritmo criptográfico tem suas próprias características e funções. Alguns dos mais famosos são:
 
-%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
-%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
-%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
-\section{Informações do Trabalho}%
-O passo seguinte é definir as informações do trabalho, identificando os autores
-e os membros da banca (atenção a definição do gênero!). Por exemplo, para este
-documento foram utilizadas as seguintes definições:
+O Advanced Encryption Standard, também conhecido como AES, é um algoritmo comumente usado na criptografia simétrica para proteger dados sensíveis. É considerado seguro e altamente eficaz.
 
-\begin{verbatim}
-\orientador{\prof \dr Guilherme Novaes Ramos}{CIC/UnB}%
-%\coorientador{\prof \dr José Ralha}{CIC/UnB}
-\coordenador[a]{\prof[a] \dr[a] Ada Lovelace}{Bibliothèque universelle de Genève}%
-\diamesano{24}{dezembro}{2014}%
+O RSA é um dos primeiros algoritmos de criptografia assimétrica e foi desenvolvido com base na dificuldade de fatorar números primos extremamente grandes. muito usado para trocas seguras de chaves e assinaturas digitais.
 
-\membrobanca{\prof \dr Donald Knuth}{Stanford University}%
-\membrobanca{\dr Leslie Lamport}{Microsoft Research}%
-
-\autor{Guilherme N.}{Ramos}%
-\end{verbatim}
-
-Sobre o texto, definiu-se:
-\begin{verbatim}
-\titulo{UnB-CIC: Uma classe em LaTeX para textos do Departamento de
-Ciência da Computação}%
-
-\palavraschave{LaTeX, metodologia científica}%
-\keywords{LaTeX, scientific method}%
-\end{verbatim}
-
-O título, apesar do tamanho reduzido, deveria apresentar uma ideia clara de todo
-o trabalho. As palavras-chave devem indicar os conceitos genéricos mais relevantes
-utilizados, e servem para indexação e busca de documentos que tratam os mesmos
-temas.
+A criptografia com curvas elípticas, ou ECC, é um tipo de criptografia assimétrica que usa curvas elípticas sobre corpos finitos. Em comparação com outros algoritmos, oferece um alto nível de segurança com chaves muito menores.
 
 
-%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
-%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
-%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
-\section{Arquivos}
-Os seguintes arquivos são exigidos:
-\begin{description}%
-    \item[tex/abstract.tex] Contém o \emph{abstract} do texto.%
-    \item[tex/agradecimentos.tex] Contém os agradecimentos do autor.%
-    \item[bibliografia.bib] Contém as referências bibliográficas no formato
-    ${\mathrm{B{\scriptstyle{IB}}T_{\displaystyle E}X}}$\footnote{\url{http://www.bibtex.org}}.%
-    %\item[tex/capitulo1.tex] Contém o primeiro capítulo.%
-    \item[tex/dedicatoria.tex] Contém a dedicatória do autor.%
-    \item[tex/siglas.tex] Contém as definições de siglas/abreviaturas.%
-    \item[tex/resumo.tex] Contém o resumo do texto.%
-\end{description}%
+\subsection{Segurança na Criptografia}
 
-Os alunos dos Programas de Pós-Graduação da Universidade de Brasília devem incluir a ficha catalográfica em seus documentos, gerada pela \acrfull{BCE}. Neste caso, o aluno deve substituir o arquivo PDF \textbf{doc/BDM.pdf} pelo fornecido pela \acrshort{BCE}. \emph{Atenção}, para que o arquivo seja incluido automaticamente pela classe, o nome deve ser \emph{obrigatoriamente} \textbf{BDM.pdf}.%
+A segurança de um sistema criptográfico depende da robustez do algoritmo utilizado e da gestão adequada das chaves usadas. Devido à evolução constante da computação e das técnicas de ataque, é essencial usar algoritmos criptográficos confiáveis e usar métodos atualizados. Ao lidar com o ambiente dinâmico e em constante mudança das tecnologias de informação, essa prática se torna fundamental para manter a integridade e a confidencialidade dos dados.
 
-Demais arquivos não são inseridos automaticamente, mas a classe oferece comandos
-para inclusão, facilitando a organização destes.
+\subsection{Desafios na implementação da Criptografia} 
 
-%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
-%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
-%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
-\section{Documento}
-Todo documento em \LaTeX\ é delimitado pelo ambiente \emph{document}. O caso aqui
-não é diferente, mas a interação é simplificada. Basicamente, a classe \unbcic\
-funciona ``automagicamente'' em função dos comandos e dos nomes dos arquivos.
+Apesar da criptografia ser um componente fundamental para garantir a segurança dos sistemas, muitos desenvolvedores encontram grandes desafios ao tentar fazê-la funcionar corretamente. Sem a expertise em criptografia, alguém pode erroneamente utilizar algoritmos e técnicas criptográficas inadequadas. Dessa forma, as aplicações podem apresentar vulnerabilidades que prejudicam a segurança e a privacidade dos dados dos usuários. É crucial contar com ferramentas que possam orientar os desenvolvedores na aplicação correta das práticas criptográficas, a fim de reduzir os riscos envolvidos quando as medidas de segurança em software são implementadas incorretamente.
 
 
-%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
-%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
-%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
-\subsection{Capítulos}
-O texto de cada capítulo deve estar em seu próprio arquivo, dentro do diretório
-correto \texttt{tex}. A inclusão do texto é feita pelo comando:
-\begin{verbatim}
-\capitulo{arquivo}{título}%
-\end{verbatim}
+\section{CogniCrypt} %CogniCrypt: Supporting Developers in Using Cryptography
 
-Os dois argumentos são:
-\begin{description}%
-\item[arquivo] argumento obrigatório que define o nome do arquivo que contém o
-texto do capítulo.
-\item[título] argumento obrigatório que define o título do capítulo.
-\end{description}%
+O CogniCrypt, desenvolvido no centro de pesquisa CROSSING da Technische Universität Darmstadt, é uma ferramenta projetada para auxiliar desenvolvedores na identificação e correção de usos inseguros de bibliotecas criptográficas em software. Estudos recentes têm apontado que muitos aplicativos que empregam procedimentos criptográficos o fazem de maneira inadequada, o que destaca a relevância do CogniCrypt.
 
-Por exemplo, este texto está no arquivo \texttt{2\_UnB-CIC.tex}, e para criar os
-dois capítulos vistos até agora, o documento seria:
+Essa ferramenta integra-se ao ambiente de desenvolvimento Eclipse e oferece dois principais componentes. Primeiramente, um assistente de geração de código que auxilia os desenvolvedores na produção de código seguro para tarefas criptográficas comuns. Além disso, realiza uma análise estática contínua do código do desenvolvedor, notificando sobre possíveis usos incorretos de APIs criptográficas.
 
-\begin{verbatim}
-\begin{document}%
-  \capitulo{1_Introducao}{Introdução}% inclui o arquivo 1_Introducao.tex
-  \capitulo{2_UnB-CIC}{A Classe \unbcic}% inclui o arquivo 2_UnB-CIC.tex
-\end{document}%
-\end{verbatim}
+O CogniCrypt representa um avanço significativo na segurança de aplicações Java que fazem uso de operações criptográficas. Os desenvolvedores podem empregar a linguagem CrySL, na qual a ferramenta se baseia, para definir as melhores práticas para o uso seguro das APIs criptográficas disponíveis na arquitetura Java Cryptography (JCA). Desde a seleção de algoritmos até a gestão adequada de chaves de criptografia, as CrySL Rules fornecem um conjunto abrangente de diretrizes.
 
-Para incluir um terceiro capítulo neste texto, cujo conteúdo trata de trabalhos
-conclusão de curso, basta criar o arquivo \texttt{tex/3\_TCC.tex} e adicioná-lo
-com o comando descrito.
+Além das análises em tempo real durante o processo de escrita, o CogniCrypt facilita a criptografia de dados, oferecendo um conjunto de ferramentas para implementar práticas de segurança de forma transparente e eficaz.
 
-No caso de apêndices ou anexos necessários, o texto de cada um deve estar em seu
-próprio arquivo, também dentro do diretório \texttt{tex/capitulos}. Para facilitar
-as referências cruzadas, estes devem ser inclusos com os seguintes comandos
-(respectivamente):
-\begin{verbatim}
-\apendice{arquivo}{título}%
-\anexo{arquivo}{título}%
-\end{verbatim}
+A colaboração entre a linguagem CrySL e o CogniCrypt oferece uma abordagem abrangente para identificar e reforçar a segurança de códigos vulneráveis. Ao seguir as regras e especificações definidas em CrySL, os desenvolvedores podem identificar potenciais pontos fracos na implementação de criptografia e receber recomendações precisas para aprimorar a segurança de seus sistemas.
 
-Os dois argumentos funcionam exatamente como \texCommand{capitulo}. Desta forma,
-o exemplo de um documento ``completo'' seria: %
+Essa combinação de ferramenta e linguagem apresenta uma solução valiosa para as preocupações de segurança no desenvolvimento de aplicações Java, permitindo que os desenvolvedores tomem medidas proativas para proteger dados e sistemas contra ameaças cibernéticas.
 
-\begin{verbatim}
-\begin{document}%
-  \capitulo{1_Introducao}{Introdução}%
-  \capitulo{2_UnB-CIC}{A Classe \unbcic}%
-  \capitulo{3_TCC}{Trabalho de Conclusão de Curso}%
+\subsection{Linguagem CrySL} %CogniCrypt: Supporting Developers in Using Cryptography
 
-  \apendice{Apendice_Fichamento}{Fichamento de Artigo Científico}%
-  \anexo{Anexo1}{Parte da Documentação Original}%
-\end{document}%
-\end{verbatim}
+A linguagem de especificação criptográfica, ou CrySL, é um componente essencial do ecossistema do CogniCrypt. Ele foi desenvolvido para especificar boas práticas para o uso seguro de APIs criptográficas em Java. A CrySL, que foi desenvolvida como parte integrante do CogniCrypt, permite que os desenvolvedores expressem as regras de segurança de forma simples e fácil de entender, o que facilita a identificação de possíveis vulnerabilidades em códigos que envolvem operações criptográficas.
 
-Usando estes comandos, o rótulo de cada capítulo/apêndice/anexo é criado
-automaticamente a partir do nome do arquivo para posterior referência cruzada.
-Por exemplo, este capítulo pode ser referenciado com o comando
-\texCommand{ref\{2\_UnB-CIC\}} (cujo resultado é: \ref{2_UnB-CIC}), mas a classe
-oferece opções mais interessantes. Os comandos para referenciar çapítulos são:
+A seleção adequada de algoritmos criptográficos, o gerenciamento seguro de chaves e o tratamento adequado de dados sensíveis estão entre as construções de alto nível fornecidas pelo CrySL para descrever cenários comuns de uso de criptografia. Além disso, a linguagem foi desenvolvida para ser flexível, o que permite a inclusão de novas regras à medida que novos padrões e práticas de segurança surgem.
 
-\begin{verbatim}
-\refCap{referência}%
-\refCaps{referência inicial}{referência final}%
-\end{verbatim}
+Os desenvolvedores podem verificar automaticamente se um código está em conformidade com as boas práticas de segurança antes mesmo da execução ao definir regras em CrySL. Isso incentiva uma abordagem proativa para a segurança da informação, evitando brechas de segurança potenciais quando o software é desenvolvido em estágio inicial.
 
-Onde os argumentos são:
-\begin{description}
-\item[referência] nome da referência do capítulo.
-\item[referência inicial] nome da referência do capítulo inicial da sequência de capítulos.
-\item[referência final] nome da referência do capítulo final da sequência de capítulos.
-\end{description}
+A linguagem CrySL e o CogniCrypt criam um ambiente poderoso e fácil de entender para o desenvolvimento seguro de aplicações Java. Eles fornecem um conjunto abrangente de diretrizes e ferramentas para proteger dados e sistemas críticos de ameaças cibernéticas.
 
-O \refCap{1_Introducao} é referenciado com o comando:
-\begin{verbatim}
-\refCap{1_Introducao}%
-\end{verbatim}
+\section{CryptoGuard} %CRYPTOGUARD: High Precision Detection of Cryptographic Vulnerabilities in Massive-sized Java Projects
 
-Considerando  \refCap{1_Introducao} e também o \refCap{2_UnB-CIC}, é possível referenciar
-a \emph{sequência} de \refCaps{1_Introducao}{2_UnB-CIC} com o comando:
-\begin{verbatim}
-\refCaps{1_Introducao}{2_UnB-CIC}%
-\end{verbatim}
+Cryptoguard assim como o CogniCrypt é uma ferramenta que pode identificar vulnerabilidades criptográficas em projetos Java. Ele usa algoritmos de fatiamento rápidos e altamente precisos para refinar fatias do programa e reduzir alertas falsos em até 80\%. 
 
-Embora estes comandos não ``simplifiquem'' a inclusão de figuras, eles
-certamente facilitam a referência a elas com um padrão uniforme, e nada impede o
-uso dos comandos padrões.
+A ferramenta conecta abstrações criptográficas a elementos de programação Java concretos que podem ser aplicados estaticamente. Ele é especializado no fatiamento de programas com novos algoritmos de refinamento contextual baseados em linguagem e mostra com sucesso uma redução significativa de falsos positivos relacionados a constantes e valores previsíveis. 
+
+Ao usar o Cryptoguard, podemos relatar vários problemas preocupantes de codificação criptográfica em projetos de código aberto Apache e Android. Além disso, incorpora um padrão para comparar a qualidade das ferramentas de detecção de vulnerabilidades criptográficas.
+
+\subsection{CryptoGuard vs CrySL} %CRYPTOGUARD: High Precision Detection of Cryptographic Vulnerabilities in Massive-sized Java Projects
+
+A comparação é baseada na precisão e no tempo de execução das ferramentas. Durante os experimentos, o CrySL travou e saiu prematuramente de 7 dos 10 subprojetos raiz do Apache selecionados aleatoriamente. Para os 3 projetos concluídos, o CrySL é mais lento, mas comparável em 2 projetos (5 vs. 3 segundos, 25 vs. 19 segundos). No entanto, é 3 ordens de magnitude mais lento que o Cryptoguard no codec Kerbaros. 
+
+Os falsos positivos do CrySL devem-se principalmente ao fato de suas regras serem excessivamente rígidas e ele não conseguir reconhecer 4 usos corretos da API na avaliação (de 9). Por outro lado, o Cryptoguard usa algoritmos de fatiamento rápidos e altamente precisos para refinar as fatias do programa e reduzir alertas falsos em até 80\%. 
+
+\section{Ferramentas para análise de bibliotecas externas} %Automatic Detection of Java Cryptographic API Misuses: Are We There Yet?
+
+Na escolha de quais ferramentas seriam utilizadas para a identificação e mapeamento de bibliotecas nativas e externas em aplicações Android, foram consideradas as ferramentas LibScout, LibRadar, LibSoft, LibPecker, LibId e ORLIS. Foi observado que através dos resultados apresentados no artigo Automatic Detection of Java Cryptographic API Misuses: Are We There Yet? que as ferramentas LibScout e LibRadar apresentaram os melhores resultados. O artigo aborda algumas categorias para a classificação das ferramentas, sendo elas:
+
+Efetividade, Eficiência/Escalabilidade, Capacidade de resiliência à código obfuscado e Facilidade de uso. Para a escolha nos atentamos particularmente à eficiência. Tanto o LibRadar quanto o LibScout apresentaram resultados satisfatórios, porém o LibScout apresentou um desempenho melhor visto que a base utilizada para clusterização do libRadar é de 2016 e o LibScout utiliza uma base mais atualizada. As outras ferramentas apresentadas tinham baixo recall e precisão, além disso, o tempo de execução para um único aplicativo era muito alto.
+
+\subsection{LibScout} % https://github.com/reddr/LibScout Automatic Detection of Java Cryptographic API Misuses: Are We There Yet? % Reliable Third-Party Library Detection in Android and its Security Applications
+
+LibScout é uma ferramenta que visa extrair dados das APIs de bibliotecas de aplicativos android. Este resultado faz parte de um projeto de pesquisa cujo objetivo principal é analisar quais são as bibliotecas externas e quais são bibliotecas nativas em aplicativos Android. Essa presença é fundamental para compreender e avaliar a segurança e a integridade dessas aplicações.
+
+Esta ferramenta permite analisar chamadas de API de aplicativos Android diretamente do bytecode java. A ferramenta coleta informações detalhadas sobre bibliotecas implantadas, incluindo nomes e definições, e fornece uma visão abrangente do ecossistema de bibliotecas de cada aplicativo analisado. Essa funcionalidade é particularmente útil para desenvolvedores e pesquisadores que desejam melhorar sua compreensão a cerca de bibliotecas que pertencem à aplicativos específicos.
+
+O LibScout funciona bem com aplicativos Android, independentemente de sua finalidade ou complexidade. Assim, a ferramenta nos ajuda a identificar se o uso de práticas de desenvolvimento seguras ou inseguras está associado à integração de bibliotecas externas, facilitando a identificação e compreensão de bibliotecas de terceiros na aplicação
+
+A adição dos resultados das ferramentas CryptoGuard e CogniCrypt aos resultados gerados pelo LibScout melhorou significativamente a capacidade de avaliar a segurança de aplicativos Android e identificar possíveis vulnerabilidades relacionadas ao uso de bibliotecas de terceiros.
+
+A ferramenta conta com técnicas de clusterização para encontrar bibliotecas externas em aplicativos Java. Este método baseia-se na análise de diversas aplicações Java como base. Isso permite que o LibScout identifique padrões comuns e classifique se a instancia é ou não uma biblioteca externa ou nativa.
+
+Usando esta estratégia de agrupamento, o LibScout pode encontrar bibliotecas de terceiros em vários contextos de aplicativos Java. Ao coletar dados de múltiplas aplicações, o LibScout é capaz de buscar padrões de chamadas de API que vão além das especificações de cada aplicação, fornecendo uma forma confiável de busca em bibliotecas externas.
+
+Ao adicionar clustering ao seu processo de identificação, o LibScout melhora sua capacidade de distinguir entre chamadas de API para bibliotecas externas e nativas. Esta abordagem melhora o desempenho e a precisão do LibScout em bibliotecas de terceiros encontradas em aplicações Java, mesmo com os desafios de implementação de ofuscação de código.
+
+\subsection{Aplicativos obfuscados} %Automatic Detection of Java Cryptographic API Misuses: Are We There Yet?
+
+Uma dificuldade significativa na localização e extração de informações sobre bibliotecas de terceiros é a análise de aplicativos obfuscados. O uso comum da técnica de ofuscação de código torna a compreensão e análise do código-fonte mais difíceis, tornando a localização de bibliotecas externas ainda mais complicada. A exemplo dos resultados apresentados pelas ferramentas de análise estática de código, a ofuscação em ambas as ferramentas impossibilitou a identificação dos nomes das bibilotecas com vulnerabilidades.
+
+A ofuscação pode incluir a inserção de código adicional, bem como a renomeação de classes, métodos e variáveis, tornando as chamadas de API menos identificáveis. Mesmo com ferramentas como o LibScout, isso dificulta a extração precisa de informações sobre bibliotecas de terceiros.
+
+O LibScout é excepcionalmente resistente a aplicativos obfuscados, sendo capaz de identificar bibliotecas mesmo diante de vários tipos de ofuscação comuns, como o ProGuard. Essa capacidade é essencial para garantir a precisão e confiabilidade na identificação de bibliotecas de terceiros em aplicativos obfuscados.
+
+Além disso, a ofuscação pode criar novos níveis de complexidade que requerem métodos sofisticados de análise de bytecode para desembaraçar o código obfuscado e identificar as chamadas de API pertinentes. Portanto, é fundamental usar abordagens e técnicas específicas ao lidar com aplicativos obfuscados para superar os problemas relacionados à prática da ofuscação de código.
+
+Para garantir a precisão e a confiabilidade na identificação de bibliotecas de terceiros, é necessário levar em consideração esses problemas ao trabalhar na análise de aplicativos obfuscados. Mesmo diante das complexidades criadas pela prática da ofuscação de código, isso permite uma avaliação completa da segurança dos aplicativos.
+
+Um desafio significativo surgiu ao integrar os resultados do LibScout com as ferramentas CryptoGuard e CogniCrypt. Embora essas ferramentas mais recentes detectem problemas e erros de segurança com sucesso, elas têm dificuldade em encontrar os nomes originais das bibliotecas e classes que são usadas. O processo de correlacionar os resultados e combinar os scripts de identificação de bibliotecas externas é mais difícil devido a essa restrição.
+
+Assim, os problemas com a apresentação da classe da vulnerabilidade pelas duas ferramentas impediram que os resultados do LibScout fossem usados para melhorar a análise de segurança do CryptoGuard e CogniCrypt para esse estudo. No entanto, a capacidade do LibScout de localizar bibliotecas de terceiros em aplicativos Android é vital para avaliar a segurança desses aplicativos e relacionar os resultados das duas ferramentas com os do LibScout.
+
+
+\section{Trabalhos Correlatos}
+
+Citar trabalho do colega de análise dinamica.
+
+
+% Este capítulo descreve a classe \unbcic, e demonstra os comandos disponíveis. A
+% última versão foi atualizada pelo Prof. Ralha, em 2008 (vide \refAnexo{Anexo1}).
+% A melhor forma de entender o funcionamento é observar o arquivo principal deste
+% documento (\texttt{monografia.tex}).
 
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
-\subsection{Figuras}
-Para manter a organização dos arquivos de seu documento, as figuras devem ficar
-separadas no diretório \texttt{img}. As funções de inclusão de figuras permanecem
-as mesmas, mas a classe \unbcic\ oferece uma forma mais simples de inserir uma
-figura (e de referenciá-la). Basta executar o comando:
+% \section{Gerando o PDF}
 
-\begin{verbatim}
-\figura[posição]{arquivo}{legenda}{referência}{tamanho}%
-\end{verbatim}
+% Para gerar corretamente as referências cruzadas, é necessário processar os arquivos
+% mais de uma vez com a seguinte sequência de comandos (supondo que o arquivo
+% principal seja \texttt{monografia.tex}).
 
-Os 5 argumentos são:
-\begin{description}
-\item[posição] argumento [opcional] para posicionar a figura no texto\footnote{Mais
-informações na documentação do ambiente \emph{figure}, mas este é um bom começo: \url{http://en.wikibooks.org/wiki/LaTeX/Floats,_Figures_and_Captions}.}.
-\item[arquivo] nome do arquivo da imagem.
-\item[legenda] legenda da figura.
-\item[referência] nome da referência da figura para referências cruzadas.
-\item[tamanho] tamanho da imagem\footnote{Mais informações na documentação do comando
-\texCommand{includegraphics}.}.
-\end{description}
+% \begin{verbatim}
+% pdflatex monografia
+% bibtex monografia
+% makeglossaries monografia
+% pdflatex monografia
+% \end{verbatim}
 
-Por exemplo, a \refFig{unbPB}, inserida com o seguinte comando:
-
-\begin{verbatim}
-\figura[!h]{contorno_preto}{Marca P/B}{unbPB}{width=0.5\textwidth}%
-\end{verbatim}
-
-\figura[!h]{contorno_preto}{Marca P/B}{unbPB}{width=0.5\textwidth}%
-
-Os comandos para referenciar figuras são:
-
-\begin{verbatim}
-\refFig{referência}%
-\refFigs{referência inicial}{referência final}%
-\end{verbatim}
-
-Onde os argumentos são:
-\begin{description}
-\item[referência] nome da referência da figura.
-\item[referência inicial] nome da referência da figura inicial da sequência de figuras.
-\item[referência final] nome da referência da figura final da sequência de figuras.
-\end{description}
-
-A \refFig{unbPB} é referenciada com o comando:
-\begin{verbatim}
-\refFig{unbPB}%
-\end{verbatim}
-
-\figura{positivo_cor}{Marca colorida}{unb}{width=0.25\textwidth}%
-
-Considerando a \refFig{unb} e também a \refFig{unb2}, é possível referenciar
-a \emph{sequência} de \refFigs{unbPB}{unb2} com o comando:
-\begin{verbatim}
-\refFigs{unbPB}{unb2}%
-\end{verbatim}
-
-Algumas vezes deseja-se usar a figura de uma das referências bibliográficas. Neste caso, utilize o comando:
-
-\begin{verbatim}
-\figuraBib[posição]{arquivo}{legenda}{bib}{referência}{tamanho}%
-\end{verbatim}
-
-Os argumentos são os mesmos do comando \texCommand{figura}, acrescidos de:
-\begin{description}
-\item[bib] nome da referência bibliográfica que originou a figura.
-\end{description}
-
-Por exemplo, a \refFig{latexvsword} foi gerada com o comando:
-\begin{verbatim}
-\figuraBib{miktex}{\LaTeX\ vs MS Word}
-{pinteric_latex_2004}{latexvsword}{width=.45\textwidth}%
-\end{verbatim}
-
-Embora estes comandos não ``simplifiquem'' a inclusão de figuras, eles
-certamente facilitam a referência a elas com um padrão uniforme, e nada impede o
-uso dos comandos padrões.
-
-\figura{positivo_cor}{Outra marca colorida}{unb2}{width=0.25\textwidth}%
+% O primeiro comando processa os arquivos, indicando quais referências foram citadas
+% no texto (bibliográficas ou cruzadas), o segundo comando processa o arquivo
+% \texttt{.bib} que contém as informações bibliográficas, o terceiro gera o índice
+% de siglas/abreviaturas, e o último comando junta todas estas informações,
+% produzindo um texto com referências cruzadas funcionais.
 
 
 
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
-\subsection{Equações}
-As funções de inclusão de equações permanecem as mesmas, mas a classe \unbcic\
-oferece uma forma mais simples de inserir uma equação (e de referenciá-la). Basta
-executar o comando:
+% \section{Opções}
+% O documento é gerado em função do curso dado como opção [obrigatória] a classe.
+% Os cursos disponíveis são:
+% \begin{description}
+%   \item[bacharelado] Bacharelado em Ciência da Computação
+%   \item[licenciatura] Licenciatura em Computação
+%   \item[engenharia] Engenharia de Computação
+%   \item[mestrado, ppginf] Mestrado em Informática
+%   \item[doutorado, ppginf] Doutorado em Informática
+%   \item[mestrado, ppca] Mestrado Profissional em Computação Aplicada
+% \end{description}
 
-\begin{verbatim}
-\equacao{referência}{fórmula}%
-\end{verbatim}
+% No caso dos cursos de pós-graduação, há o \emph{exame de qualificação} do
+% discente, a qual deverá constar a definição, pertinência do projeto, a sua
+% abrangência, comprovação da eficiência e eficácia da metodologia proposta, uma
+% revisão bibliográfica detalhada e o cronograma para conclusão do projeto~\cite{ppginf}.
+% Para gerar o documento referente a este exame, use a opção \textbf{qualificacao}.
 
-Os 2 argumentos são:
-\begin{description}
-\item[referência] nome da referência da equação para referências cruzadas.
-\item[fórmula] a equação em si.
-\end{description}
+% %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+% %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+% %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+% \section{Informações do Trabalho}%
+% O passo seguinte é definir as informações do trabalho, identificando os autores
+% e os membros da banca (atenção a definição do gênero!). Por exemplo, para este
+% documento foram utilizadas as seguintes definições:
 
-Por exemplo, a \refEq{pitagoras}, inserida com o seguinte comando:
-\begin{verbatim}
-\equacao{pitagoras}{a^2 + b^2 = c^2}%
-\end{verbatim}
+% \begin{verbatim}
+% \orientador{\prof \dr Guilherme Novaes Ramos}{CIC/UnB}%
+% %\coorientador{\prof \dr José Ralha}{CIC/UnB}
+% \coordenador[a]{\prof[a] \dr[a] Ada Lovelace}{Bibliothèque universelle de Genève}%
+% \diamesano{24}{dezembro}{2014}%
 
-\equacao{pitagoras}{a^2 + b^2 = c^2}%
+% \membrobanca{\prof \dr Donald Knuth}{Stanford University}%
+% \membrobanca{\dr Leslie Lamport}{Microsoft Research}%
 
-Além disso, é possível quebrar em linhas, como na \refEq{pit2}, com o mesmo comando:
-\begin{verbatim}
-\equacao{pit2}{a = (x+y)^2\\b= (x*y)^2}%
-\end{verbatim}
+% \autor{Guilherme N.}{Ramos}%
+% \end{verbatim}
 
-\equacao{pit2}{a = (x+y)^2\\b= (x*y)^2}%
+% Sobre o texto, definiu-se:
+% \begin{verbatim}
+% \titulo{UnB-CIC: Uma classe em LaTeX para textos do Departamento de
+% Ciência da Computação}%
 
-Os comandos para referenciar equações são:
+% \palavraschave{LaTeX, metodologia científica}%
+% \keywords{LaTeX, scientific method}%
+% \end{verbatim}
 
-\begin{verbatim}
-\refEq{referência}%
-\refEqs{referência inicial}{referência final}%
-\end{verbatim}
-
-Onde os argumentos são:
-\begin{description}
-\item[referência] nome da referência da equação.
-\item[referência inicial] nome da referência da equação inicial da sequência de equações.
-\item[referência final] nome da referência da equação final da sequência de equações.
-\end{description}
-
-Considerando a \refEq{pitagoras} e também a \refEq{eq}, é possível referenciar
-a \emph{sequência} de \refEqs{pitagoras}{eq} com o comando:
-\begin{verbatim}
-\refEqs{pitagoras}{eq}%
-\end{verbatim}
-
-Embora estes comandos não ``simplifiquem'' a inclusão de equações, eles
-certamente facilitam a referência a elas com um padrão uniforme e nada impede o
-uso dos comandos padrões.
-
-\equacao{eq}{d=c^3 - \frac{a}{b}}%
+% O título, apesar do tamanho reduzido, deveria apresentar uma ideia clara de todo
+% o trabalho. As palavras-chave devem indicar os conceitos genéricos mais relevantes
+% utilizados, e servem para indexação e busca de documentos que tratam os mesmos
+% temas.
 
 
-%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
-%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
-%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
-\subsection{Tabelas}
-As funções de inclusão de tabelas permanecem as mesmas, mas a classe \unbcic\
-oferece uma forma mais simples de inserir uma tabela (e de referenciá-la). Basta
-executar o comando:
+% %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+% %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+% %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+% \section{Arquivos}
+% Os seguintes arquivos são exigidos:
+% \begin{description}%
+%     \item[tex/abstract.tex] Contém o \emph{abstract} do texto.%
+%     \item[tex/agradecimentos.tex] Contém os agradecimentos do autor.%
+%     \item[bibliografia.bib] Contém as referências bibliográficas no formato
+%     ${\mathrm{B{\scriptstyle{IB}}T_{\displaystyle E}X}}$\footnote{\url{http://www.bibtex.org}}.%
+%     %\item[tex/capitulo1.tex] Contém o primeiro capítulo.%
+%     \item[tex/dedicatoria.tex] Contém a dedicatória do autor.%
+%     \item[tex/siglas.tex] Contém as definições de siglas/abreviaturas.%
+%     \item[tex/resumo.tex] Contém o resumo do texto.%
+% \end{description}%
 
-\begin{verbatim}
-\tabela{legenda}{referência}{especificações}{tabela}%
-\end{verbatim}
+% Os alunos dos Programas de Pós-Graduação da Universidade de Brasília devem incluir a ficha catalográfica em seus documentos, gerada pela \acrfull{BCE}. Neste caso, o aluno deve substituir o arquivo PDF \textbf{doc/BDM.pdf} pelo fornecido pela \acrshort{BCE}. \emph{Atenção}, para que o arquivo seja incluido automaticamente pela classe, o nome deve ser \emph{obrigatoriamente} \textbf{BDM.pdf}.%
 
-Os 4 argumentos são:
-\begin{description}
-\item[legenda] legenda da tabela.
-\item[referência] nome da referência da tabela para referências cruzadas.
-\item[especificações] alinhamento de cada coluna da tabela.
-\item[tabela] o conteúdo da tabela\footnote{Mais informações na documentação do
-ambiente \emph{\href{http://en.wikibooks.org/wiki/LaTeX/Tables}{tabular}}.}.
-\end{description}
+% Demais arquivos não são inseridos automaticamente, mas a classe oferece comandos
+% para inclusão, facilitando a organização destes.
 
-Por exemplo, a \refTab{exemplo}, inserida com o seguinte comando:
-\begin{verbatim}
-\tabela{Exemplo de tabela}{exemplo}{| c | c |}%
-  {\hline
-  \textbf{Item} & \textbf{Descrição} \\\hline
-  1 & Descrição 1 \\\hline
-  2 & Descrição 2 \\\hline
-  3 & Descrição 3 \\\hline}%
-\end{verbatim}
+% %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+% %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+% %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+% \section{Documento}
+% Todo documento em \LaTeX\ é delimitado pelo ambiente \emph{document}. O caso aqui
+% não é diferente, mas a interação é simplificada. Basicamente, a classe \unbcic\
+% funciona ``automagicamente'' em função dos comandos e dos nomes dos arquivos.
 
-\tabela{Exemplo de tabela}{exemplo}{| c | c |}%
-  {\hline
-  \textbf{Item} & \textbf{Descrição} \\\hline
-  1 & Descrição 1 \\\hline
-  2 & Descrição 2 \\\hline
-  3 & Descrição 3 \\\hline}%
 
-Os comandos para referenciar tabelas são:
+% %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+% %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+% %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+% \subsection{Capítulos}
+% O texto de cada capítulo deve estar em seu próprio arquivo, dentro do diretório
+% correto \texttt{tex}. A inclusão do texto é feita pelo comando:
+% \begin{verbatim}
+% \capitulo{arquivo}{título}%
+% \end{verbatim}
 
-\begin{verbatim}
-\refTab{referência}%
-\refTabs{referência inicial}{referência final}%
-\end{verbatim}
+% Os dois argumentos são:
+% \begin{description}%
+% \item[arquivo] argumento obrigatório que define o nome do arquivo que contém o
+% texto do capítulo.
+% \item[título] argumento obrigatório que define o título do capítulo.
+% \end{description}%
 
-Onde os argumentos são:
-\begin{description}
-\item[referência] nome da referência da tabela.
-\item[referência inicial] nome da referência da tabela inicial da sequência de tabelas.
-\item[referência final] nome da referência da tabela final da sequência de tabelas.
-\end{description}
+% Por exemplo, este texto está no arquivo \texttt{2\_UnB-CIC.tex}, e para criar os
+% dois capítulos vistos até agora, o documento seria:
 
-Considerando a \refTab{exemplo} e também a \refTab{exemplo2}, é possível referenciar
-a \emph{sequência} de \refTabs{exemplo}{exemplo2} com o comando:
-\begin{verbatim}
-\refTabs{exemplo}{exemplo2}%
-\end{verbatim}
+% \begin{verbatim}
+% \begin{document}%
+%   \capitulo{1_Introducao}{Introdução}% inclui o arquivo 1_Introducao.tex
+%   \capitulo{2_UnB-CIC}{A Classe \unbcic}% inclui o arquivo 2_UnB-CIC.tex
+% \end{document}%
+% \end{verbatim}
 
-Algumas vezes deseja-se usar a tabela de uma das referências bibliográficas. Neste caso, utilize o comando:
+% Para incluir um terceiro capítulo neste texto, cujo conteúdo trata de trabalhos
+% conclusão de curso, basta criar o arquivo \texttt{tex/3\_TCC.tex} e adicioná-lo
+% com o comando descrito.
 
-\begin{verbatim}
-\tabelaBib{legenda}{bib}{referência}{especificações}{tabela}%
-\end{verbatim}
+% No caso de apêndices ou anexos necessários, o texto de cada um deve estar em seu
+% próprio arquivo, também dentro do diretório \texttt{tex/capitulos}. Para facilitar
+% as referências cruzadas, estes devem ser inclusos com os seguintes comandos
+% (respectivamente):
+% \begin{verbatim}
+% \apendice{arquivo}{título}%
+% \anexo{arquivo}{título}%
+% \end{verbatim}
 
-Os argumentos são os mesmos do comando \texCommand{tabela}, acrescidos de:
-\begin{description}
-\item[bib] nome da referência bibliográfica que originou a tabela.
-\end{description}
+% Os dois argumentos funcionam exatamente como \texCommand{capitulo}. Desta forma,
+% o exemplo de um documento ``completo'' seria: %
 
-\tabelaBib{Matriz de Decisão de Eisenhower}
-{covey_first_1995}{EisenhowerTable}{ r | c | c }{
-                        & \textbf{Urgente} & \textbf{Não Urgente} \\\hline%
-\textbf{Importante}     & Crises       & Planejamentos \\\hline%
-\textbf{Não importante} & Interrupções & Distrações%
-}%
+% \begin{verbatim}
+% \begin{document}%
+%   \capitulo{1_Introducao}{Introdução}%
+%   \capitulo{2_UnB-CIC}{A Classe \unbcic}%
+%   \capitulo{3_TCC}{Trabalho de Conclusão de Curso}%
 
-Por exemplo, a \refTab{EisenhowerTable}\footnote{Vale a pena assistir o vídeo da palestra \emph{Time Management} de Randy Pausch: \url{http://www.cs.virginia.edu/~robins/Randy/}} foi gerada com o comando:
-\begin{verbatim}
-\tabelaBib{Matriz de Decisão de Eisenhower}
-{covey_first_1995}{EisenhowerTable}{ r | c | c }{%
-                    & \textbf{Urgente} & \textbf{Não Urgente} \\\hline%
-\textbf{Importante}     & Crises       & Planejamentos \\\hline%
-\textbf{Não importante} & Interrupções & Distrações%
-}%
-\end{verbatim}
+%   \apendice{Apendice_Fichamento}{Fichamento de Artigo Científico}%
+%   \anexo{Anexo1}{Parte da Documentação Original}%
+% \end{document}%
+% \end{verbatim}
 
-Embora estes comandos não ``simplifiquem'' a inclusão de tabelas, eles
-certamente facilitam a referência a elas com um padrão uniforme, e nada impede o
-uso dos comandos padrões.
+% Usando estes comandos, o rótulo de cada capítulo/apêndice/anexo é criado
+% automaticamente a partir do nome do arquivo para posterior referência cruzada.
+% Por exemplo, este capítulo pode ser referenciado com o comando
+% \texCommand{ref\{2\_UnB-CIC\}} (cujo resultado é: \ref{2_UnB-CIC}), mas a classe
+% oferece opções mais interessantes. Os comandos para referenciar çapítulos são:
 
-\tabela{Outro exemplo de tabela}{exemplo2}{| r | c | c | l |}%
-  {\hline
-  \textbf{\#} & \textbf{A} & \textbf{B} & \textbf{Comentário} \\\hline
-  1 & $a_1$ & $b_1$ & comentário 1\\
-  2 & $a_2$ & $b_2$ & comentário 2\\
-  3 & $a_3$ & $b_3$ & comentário 3\\\hline}%
+% \begin{verbatim}
+% \refCap{referência}%
+% \refCaps{referência inicial}{referência final}%
+% \end{verbatim}
 
-%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
-%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
-%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
-\subsection{Abreviaturas e Siglas}
-Abreviaturas e siglas devem ser definidas no arquivo \texttt{tex/siglas.tex}, e
-a inserção feita com o comando:
+% Onde os argumentos são:
+% \begin{description}
+% \item[referência] nome da referência do capítulo.
+% \item[referência inicial] nome da referência do capítulo inicial da sequência de capítulos.
+% \item[referência final] nome da referência do capítulo final da sequência de capítulos.
+% \end{description}
 
-\begin{verbatim}
-\sigla{sigla}{descrição}%
-\end{verbatim}
+% O \refCap{1_Introducao} é referenciado com o comando:
+% \begin{verbatim}
+% \refCap{1_Introducao}%
+% \end{verbatim}
 
-Onde os argumentos são:
-\begin{description}
-\item[sigla] a própria sigla/abreviatura.
-\item[descrição] definição completa do que representa a sigla/abreviatura.
-\end{description}
+% Considerando  \refCap{1_Introducao} e também o \refCap{2_UnB-CIC}, é possível referenciar
+% a \emph{sequência} de \refCaps{1_Introducao}{2_UnB-CIC} com o comando:
+% \begin{verbatim}
+% \refCaps{1_Introducao}{2_UnB-CIC}%
+% \end{verbatim}
 
-Por exemplo:
+% Embora estes comandos não ``simplifiquem'' a inclusão de figuras, eles
+% certamente facilitam a referência a elas com um padrão uniforme, e nada impede o
+% uso dos comandos padrões.
 
-\begin{verbatim}
-\sigla{CIC}{Departamento de Ciência da Computação}%
-\end{verbatim}
+% %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+% %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+% %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+% \subsection{Figuras}
+% Para manter a organização dos arquivos de seu documento, as figuras devem ficar
+% separadas no diretório \texttt{img}. As funções de inclusão de figuras permanecem
+% as mesmas, mas a classe \unbcic\ oferece uma forma mais simples de inserir uma
+% figura (e de referenciá-la). Basta executar o comando:
 
-A inserção de uma sigla/abreviatura no texto é simples, e pode ser feita de três
-formas diferentes:
+% \begin{verbatim}
+% \figura[posição]{arquivo}{legenda}{referência}{tamanho}%
+% \end{verbatim}
 
-\begin{minipage}[t]{.3\textwidth}%
-\begin{verbatim}
-\acrshort{CIC}
-\acrlong{CIC}
-\acrfull{CIC}
-\end{verbatim}
-\end{minipage}%
-\begin{minipage}[t]{.6\textwidth}%
-\acrshort{CIC}\\
-\acrlong{CIC}\\
-\acrfull{CIC}
-\end{minipage}%
+% Os 5 argumentos são:
+% \begin{description}
+% \item[posição] argumento [opcional] para posicionar a figura no texto\footnote{Mais
+% informações na documentação do ambiente \emph{figure}, mas este é um bom começo: \url{http://en.wikibooks.org/wiki/LaTeX/Floats,_Figures_and_Captions}.}.
+% \item[arquivo] nome do arquivo da imagem.
+% \item[legenda] legenda da figura.
+% \item[referência] nome da referência da figura para referências cruzadas.
+% \item[tamanho] tamanho da imagem\footnote{Mais informações na documentação do comando
+% \texCommand{includegraphics}.}.
+% \end{description}
+
+% Por exemplo, a \refFig{unbPB}, inserida com o seguinte comando:
+
+% \begin{verbatim}
+% \figura[!h]{contorno_preto}{Marca P/B}{unbPB}{width=0.5\textwidth}%
+% \end{verbatim}
+
+% \figura[!h]{contorno_preto}{Marca P/B}{unbPB}{width=0.5\textwidth}%
+
+% Os comandos para referenciar figuras são:
+
+% \begin{verbatim}
+% \refFig{referência}%
+% \refFigs{referência inicial}{referência final}%
+% \end{verbatim}
+
+% Onde os argumentos são:
+% \begin{description}
+% \item[referência] nome da referência da figura.
+% \item[referência inicial] nome da referência da figura inicial da sequência de figuras.
+% \item[referência final] nome da referência da figura final da sequência de figuras.
+% \end{description}
+
+% A \refFig{unbPB} é referenciada com o comando:
+% \begin{verbatim}
+% \refFig{unbPB}%
+% \end{verbatim}
+
+% \figura{positivo_cor}{Marca colorida}{unb}{width=0.25\textwidth}%
+
+% Considerando a \refFig{unb} e também a \refFig{unb2}, é possível referenciar
+% a \emph{sequência} de \refFigs{unbPB}{unb2} com o comando:
+% \begin{verbatim}
+% \refFigs{unbPB}{unb2}%
+% \end{verbatim}
+
+% Algumas vezes deseja-se usar a figura de uma das referências bibliográficas. Neste caso, utilize o comando:
+
+% \begin{verbatim}
+% \figuraBib[posição]{arquivo}{legenda}{bib}{referência}{tamanho}%
+% \end{verbatim}
+
+% Os argumentos são os mesmos do comando \texCommand{figura}, acrescidos de:
+% \begin{description}
+% \item[bib] nome da referência bibliográfica que originou a figura.
+% \end{description}
+
+% Por exemplo, a \refFig{latexvsword} foi gerada com o comando:
+% \begin{verbatim}
+% \figuraBib{miktex}{\LaTeX\ vs MS Word}
+% {pinteric_latex_2004}{latexvsword}{width=.45\textwidth}%
+% \end{verbatim}
+
+% Embora estes comandos não ``simplifiquem'' a inclusão de figuras, eles
+% certamente facilitam a referência a elas com um padrão uniforme, e nada impede o
+% uso dos comandos padrões.
+
+% \figura{positivo_cor}{Outra marca colorida}{unb2}{width=0.25\textwidth}%
+
+
+
+% %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+% %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+% %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+% \subsection{Equações}
+% As funções de inclusão de equações permanecem as mesmas, mas a classe \unbcic\
+% oferece uma forma mais simples de inserir uma equação (e de referenciá-la). Basta
+% executar o comando:
+
+% \begin{verbatim}
+% \equacao{referência}{fórmula}%
+% \end{verbatim}
+
+% Os 2 argumentos são:
+% \begin{description}
+% \item[referência] nome da referência da equação para referências cruzadas.
+% \item[fórmula] a equação em si.
+% \end{description}
+
+% Por exemplo, a \refEq{pitagoras}, inserida com o seguinte comando:
+% \begin{verbatim}
+% \equacao{pitagoras}{a^2 + b^2 = c^2}%
+% \end{verbatim}
+
+% \equacao{pitagoras}{a^2 + b^2 = c^2}%
+
+% Além disso, é possível quebrar em linhas, como na \refEq{pit2}, com o mesmo comando:
+% \begin{verbatim}
+% \equacao{pit2}{a = (x+y)^2\\b= (x*y)^2}%
+% \end{verbatim}
+
+% \equacao{pit2}{a = (x+y)^2\\b= (x*y)^2}%
+
+% Os comandos para referenciar equações são:
+
+% \begin{verbatim}
+% \refEq{referência}%
+% \refEqs{referência inicial}{referência final}%
+% \end{verbatim}
+
+% Onde os argumentos são:
+% \begin{description}
+% \item[referência] nome da referência da equação.
+% \item[referência inicial] nome da referência da equação inicial da sequência de equações.
+% \item[referência final] nome da referência da equação final da sequência de equações.
+% \end{description}
+
+% Considerando a \refEq{pitagoras} e também a \refEq{eq}, é possível referenciar
+% a \emph{sequência} de \refEqs{pitagoras}{eq} com o comando:
+% \begin{verbatim}
+% \refEqs{pitagoras}{eq}%
+% \end{verbatim}
+
+% Embora estes comandos não ``simplifiquem'' a inclusão de equações, eles
+% certamente facilitam a referência a elas com um padrão uniforme e nada impede o
+% uso dos comandos padrões.
+
+% \equacao{eq}{d=c^3 - \frac{a}{b}}%
+
+
+% %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+% %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+% %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+% \subsection{Tabelas}
+% As funções de inclusão de tabelas permanecem as mesmas, mas a classe \unbcic\
+% oferece uma forma mais simples de inserir uma tabela (e de referenciá-la). Basta
+% executar o comando:
+
+% \begin{verbatim}
+% \tabela{legenda}{referência}{especificações}{tabela}%
+% \end{verbatim}
+
+% Os 4 argumentos são:
+% \begin{description}
+% \item[legenda] legenda da tabela.
+% \item[referência] nome da referência da tabela para referências cruzadas.
+% \item[especificações] alinhamento de cada coluna da tabela.
+% \item[tabela] o conteúdo da tabela\footnote{Mais informações na documentação do
+% ambiente \emph{\href{http://en.wikibooks.org/wiki/LaTeX/Tables}{tabular}}.}.
+% \end{description}
+
+% Por exemplo, a \refTab{exemplo}, inserida com o seguinte comando:
+% \begin{verbatim}
+% \tabela{Exemplo de tabela}{exemplo}{| c | c |}%
+%   {\hline
+%   \textbf{Item} & \textbf{Descrição} \\\hline
+%   1 & Descrição 1 \\\hline
+%   2 & Descrição 2 \\\hline
+%   3 & Descrição 3 \\\hline}%
+% \end{verbatim}
+
+% \tabela{Exemplo de tabela}{exemplo}{| c | c |}%
+%   {\hline
+%   \textbf{Item} & \textbf{Descrição} \\\hline
+%   1 & Descrição 1 \\\hline
+%   2 & Descrição 2 \\\hline
+%   3 & Descrição 3 \\\hline}%
+
+% Os comandos para referenciar tabelas são:
+
+% \begin{verbatim}
+% \refTab{referência}%
+% \refTabs{referência inicial}{referência final}%
+% \end{verbatim}
+
+% Onde os argumentos são:
+% \begin{description}
+% \item[referência] nome da referência da tabela.
+% \item[referência inicial] nome da referência da tabela inicial da sequência de tabelas.
+% \item[referência final] nome da referência da tabela final da sequência de tabelas.
+% \end{description}
+
+% Considerando a \refTab{exemplo} e também a \refTab{exemplo2}, é possível referenciar
+% a \emph{sequência} de \refTabs{exemplo}{exemplo2} com o comando:
+% \begin{verbatim}
+% \refTabs{exemplo}{exemplo2}%
+% \end{verbatim}
+
+% Algumas vezes deseja-se usar a tabela de uma das referências bibliográficas. Neste caso, utilize o comando:
+
+% \begin{verbatim}
+% \tabelaBib{legenda}{bib}{referência}{especificações}{tabela}%
+% \end{verbatim}
+
+% Os argumentos são os mesmos do comando \texCommand{tabela}, acrescidos de:
+% \begin{description}
+% \item[bib] nome da referência bibliográfica que originou a tabela.
+% \end{description}
+
+% \tabelaBib{Matriz de Decisão de Eisenhower}
+% {covey_first_1995}{EisenhowerTable}{ r | c | c }{
+%                         & \textbf{Urgente} & \textbf{Não Urgente} \\\hline%
+% \textbf{Importante}     & Crises       & Planejamentos \\\hline%
+% \textbf{Não importante} & Interrupções & Distrações%
+% }%
+
+% Por exemplo, a \refTab{EisenhowerTable}\footnote{Vale a pena assistir o vídeo da palestra \emph{Time Management} de Randy Pausch: \url{http://www.cs.virginia.edu/~robins/Randy/}} foi gerada com o comando:
+% \begin{verbatim}
+% \tabelaBib{Matriz de Decisão de Eisenhower}
+% {covey_first_1995}{EisenhowerTable}{ r | c | c }{%
+%                     & \textbf{Urgente} & \textbf{Não Urgente} \\\hline%
+% \textbf{Importante}     & Crises       & Planejamentos \\\hline%
+% \textbf{Não importante} & Interrupções & Distrações%
+% }%
+% \end{verbatim}
+
+% Embora estes comandos não ``simplifiquem'' a inclusão de tabelas, eles
+% certamente facilitam a referência a elas com um padrão uniforme, e nada impede o
+% uso dos comandos padrões.
+
+% \tabela{Outro exemplo de tabela}{exemplo2}{| r | c | c | l |}%
+%   {\hline
+%   \textbf{\#} & \textbf{A} & \textbf{B} & \textbf{Comentário} \\\hline
+%   1 & $a_1$ & $b_1$ & comentário 1\\
+%   2 & $a_2$ & $b_2$ & comentário 2\\
+%   3 & $a_3$ & $b_3$ & comentário 3\\\hline}%
+
+% %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+% %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+% %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+% \subsection{Abreviaturas e Siglas}
+% Abreviaturas e siglas devem ser definidas no arquivo \texttt{tex/siglas.tex}, e
+% a inserção feita com o comando:
+
+% \begin{verbatim}
+% \sigla{sigla}{descrição}%
+% \end{verbatim}
+
+% Onde os argumentos são:
+% \begin{description}
+% \item[sigla] a própria sigla/abreviatura.
+% \item[descrição] definição completa do que representa a sigla/abreviatura.
+% \end{description}
+
+% Por exemplo:
+
+% \begin{verbatim}
+% \sigla{CIC}{Departamento de Ciência da Computação}%
+% \end{verbatim}
+
+% A inserção de uma sigla/abreviatura no texto é simples, e pode ser feita de três
+% formas diferentes:
+
+% \begin{minipage}[t]{.3\textwidth}%
+% \begin{verbatim}
+% \acrshort{CIC}
+% \acrlong{CIC}
+% \acrfull{CIC}
+% \end{verbatim}
+% \end{minipage}%
+% \begin{minipage}[t]{.6\textwidth}%
+% \acrshort{CIC}\\
+% \acrlong{CIC}\\
+% \acrfull{CIC}
+% \end{minipage}%
