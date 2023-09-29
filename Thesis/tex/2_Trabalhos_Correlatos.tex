@@ -1,0 +1,685 @@
+\newcommand{\texCommand}[1]{\texttt{\textbackslash{#1}}}%
+
+\newcommand{\exemplo}[1]{%
+\vspace{\baselineskip}%
+\noindent\fbox{\begin{minipage}{\textwidth}#1\end{minipage}}%
+\\\vspace{\baselineskip}}%
+
+\newcommand{\exemploVerbatim}[1]{%
+\vspace{\baselineskip}%
+\noindent\fbox{\begin{minipage}{\textwidth}%
+#1\end{minipage}}%
+\\\vspace{\baselineskip}}%
+
+
+% Trabalho recentemente publicado sobre analise dinamica (in run time)
+
+\section{Trabalhos Correlatos e Revisão de Literatura}
+
+\subsection{Análise dinâmica de APIs criptográficas} %Runtime Verification of Crypto APIs: An Empirical Study
+O estudo intitulado "Runtime Verification of Crypto APIs: An Empirical Study" oferece uma meticulosa investigação comparativa de métodos de detecção de uso inadequado de APIs criptográficas em projetos Java. A pesquisa conduzida fornece uma análise detalhada das técnicas empregadas, incluindo a abordagem de Verificação em Tempo de Execução (Runtime Verification, ou RVSec), juntamente com notáveis analisadores estáticos como CogniCrypt e CryptoGuard, além da ferramenta CryLogger.
+
+Ao longo da análise, o estudo destaca tanto as virtudes como as limitações inerentes a cada uma dessas abordagens. Detalhes sobre os cenários em que cada técnica demonstra maior eficácia, bem como os casos em que pode resultar em falsos positivos e negativos, são minuciosamente delineados. Adicionalmente, são propostas recomendações para otimizar a precisão e efetividade na detecção de discrepâncias no uso de APIs criptográficas.
+
+Este estudo desempenha um papel fundamental ao estabelecer um sólido alicerce para nossa própria investigação. Ele não apenas fornece insights valiosos sobre as técnicas de detecção de vulnerabilidades em APIs criptográficas, mas também nos motivou a explorar uma perspectiva complementar. Nossa pesquisa se concentra em avaliar a percepção dos desenvolvedores sobre as vulnerabilidades identificadas pelos métodos analisados, preenchendo assim uma lacuna crucial no entendimento do impacto dessas detecções no processo de desenvolvimento de software. Ao considerar tanto a eficácia técnica quanto a perspectiva dos desenvolvedores, buscamos enriquecer o panorama das práticas de segurança na utilização de APIs criptográficas em projetos Java.
+
+\subsection{Automatic Detection of Java Cryptographic API Misuses: Are We There Yet?}
+
+O estudo apresentado no artigo acima traz que ao se trabalhar com APIs criptográficas Java, os desenvolvedores se deparam com diversos desafios. Em primeiro lugar, algumas dessas APIs tendem a ser excessivamente complexas, o que torna sua compreensão e utilização eficaz uma tarefa árdua. A situação é frequentemente agravada pela escassez de documentação adequada, o que dificulta ainda mais para os desenvolvedores o uso correto dessas APIs.
+
+Além disso, muitos desenvolvedores podem não possuir o treinamento em cibersegurança necessário para compreender plenamente as implicações de segurança ao utilizar as opções de codificação dentro das APIs criptográficas. Eles podem não estar completamente cientes dos valores de parâmetros apropriados, das sequências de chamadas corretas ou da lógica de substituição, o que pode resultar na implementação insegura de funcionalidades de segurança.
+
+Outro desafio comum decorre da falta de compreensão e treinamento, levando os desenvolvedores a fazerem uso inadequado das APIs criptográficas. Isso pode se manifestar na escolha de métodos incorretos, na passagem de parâmetros inadequados ou em outros erros que introduzem vulnerabilidades ou fragilidades no software desenvolvido.
+
+Adicionalmente, é comum que os desenvolvedores recorram à prática de copiar e colar trechos de código de fontes online, como o StackOverflow. No entanto, essa abordagem nem sempre é acompanhada de uma compreensão plena do uso da API criptográfica em questão. Tal prática pode resultar na disseminação de usos inadequados da API em diversas aplicações.
+
+Esses desafios podem, por sua vez, culminar na existência de vulnerabilidades exploráveis. Hackers têm a capacidade de aproveitar-se dessas vulnerabilidades relacionadas às APIs, potencialmente comprometendo a segurança de dados sensíveis, como credenciais de usuários. Portanto, a importância de uma utilização adequada das APIs criptográficas torna-se evidente.
+
+Em síntese, os obstáculos enfrentados pelos desenvolvedores nesse contexto emergem da complexidade das APIs, da falta de treinamento em cibersegurança e da possibilidade de utilização inadequada das mesmas, o que pode resultar na introdução de vulnerabilidades no software desenvolvido.
+% Fontes:
+
+% Página 1: As interfaces de programação de aplicativos (APIs) oferecidas por esses frameworks visam facilitar a programação segura dos desenvolvedores, como a geração de chaves e o estabelecimento de comunicações seguras. No entanto, as APIs na realidade não são fáceis de usar por duas razões. Primeiro, algumas APIs são excessivamente complexas, mas mal documentadas [3]–[5]. Segundo, os desenvolvedores carecem do treinamento em cibersegurança necessário; eles desconhecem as implicações de segurança das opções de codificação (por exemplo, os valores de parâmetros, sequências de chamadas ou lógica de substituição das APIs) [5]–[8]. Consequentemente, muitos desenvolvedores usaram as APIs criptográficas de maneira inadequada, construíram funcionalidades de segurança de forma insegura e introduziram vulnerabilidades ou fraquezas no software.
+% Página 2: A plataforma Java fornece dois frameworks importantes para possibilitar a implementação de segurança: JCA e JSSE. O JCA oferece APIs para implementar conceitos de criptografia, como assinaturas digitais, resumos de mensagens, certificados e sua validação, criptografia, geração e gerenciamento de chaves, e geração segura de números aleatórios [1]. O JSSE permite comunicações seguras pela internet; ele inclui APIs para criação de canais seguros, criptografia de dados, autenticação de servidor, integridade de mensagens e autenticação opcional de cliente [2]. Entre todas as APIs definidas no JCA e JSSE, existem 13 tipos de Java (ou seja, classes ou interfaces) frequentemente mencionados nos padrões de uso inadequado de API resumidos por pesquisas anteriores [10]–[12], [15], [17], [26], [27].
+
+Também foi identificado pelo estudo que diversas vulnerabilidades relacionadas ao uso inadequado de APIs criptográficas Java. Entre elas, destacam-se:
+
+Os desenvolvedores frequentemente utilizavam parâmetros inadequados em métodos como Cipher.getInstance(), MessageDigest.getInstance() e SecretKeyFactory.getInstance(), indicando a utilização de algoritmos criptográficos quebrados ou arriscados, potencialmente expondo informações sensíveis.
+
+Houve casos em que os desenvolvedores empregaram métodos inseguros para gerar chaves criptográficas, comprometendo a segurança dos processos de criptografia e descriptografia e facilitando possíveis ataques.
+
+Foi observado que o gerenciamento de chaves criptográficas muitas vezes deixou a desejar. Isso incluiu práticas como a codificação rígida de chaves no código-fonte, o armazenamento em locais inseguros e o uso de mecanismos de armazenamento de chaves frágeis, o que poderia resultar em acessos não autorizados a dados sensíveis.
+
+Em algumas situações, os desenvolvedores falharam na inicialização correta de objetos criptográficos, como definir o modo ou preenchimento adequado para algoritmos de criptografia. Essas falhas poderiam levar a processos de criptografia ou descriptografia vulneráveis, tornando o sistema suscetível a ataques.
+
+Foram encontrados casos em que os desenvolvedores utilizaram métodos inseguros para gerar números aleatórios, como a classe java.util.Random em vez da mais segura java.security.SecureRandom. Essa prática poderia comprometer a segurança das operações criptográficas.
+
+Por fim, o estudo identificou situações em que os desenvolvedores não autenticavam ou validavam adequadamente operações criptográficas, como a falta de verificação de assinaturas digitais ou a validação de certificados. Isso poderia resultar na aceitação de dados forjados ou adulterados, prejudicando a integridade e autenticidade do sistema.
+
+
+% FONTES:
+
+% Página 2: Padrões de uso incorreto de APIs criptográficas
+% Página 10: Estudo empírico em projetos Apache
+% Página 13: Análise de ferramentas existentes e vulnerabilidades
+
+Em relação às percepções apresentadas pelos desenvolvedores tivemos visões divergentes em relação às ferramentas existentes para detectar usos incorretos de APIs. Dos 47 feedbacks recebidos, a maioria dos desenvolvedores (30) rejeitou as vulnerabilidades relatadas, indicando que não as consideravam válidas ou relevantes. Menos desenvolvedores (17) demonstraram disposição para abordar os problemas reportados e fazer as correções necessárias. Ainda menos desenvolvedores (9) efetivamente substituíram os usos incorretos de APIs com base nas orientações fornecidas pelas ferramentas.
+
+O estudo identificou três fatores que contribuíram para a relutância dos desenvolvedores em lidar com os problemas reportados. Em primeiro lugar, as sugestões de correção fornecidas pelas ferramentas muitas vezes eram vagas e incompletas, tornando difícil para os desenvolvedores compreender como corrigir os usos incorretos de forma eficaz. Em segundo lugar, os desenvolvedores expressaram a necessidade de evidências de exploração de segurança que pudessem ser habilitadas pelas vulnerabilidades relatadas. Eles queriam compreender o impacto potencial e a gravidade dos problemas antes de investir tempo em corrigi-los. Por fim, alguns dos usos incorretos detectados foram encontrados em código de teste ou em contextos de programa que não eram considerados relevantes para a segurança. Os desenvolvedores acreditavam que esses problemas não teriam consequências de segurança, levando-os a ignorá-los ou descartá-los.
+
+No geral, o estudo revelou uma lacuna significativa entre as ferramentas existentes e as expectativas dos desenvolvedores. Os relatórios gerados pelas ferramentas não alteraram efetivamente as práticas de codificação dos desenvolvedores, e estes tinham preocupações sobre as capacidades das ferramentas, a correção das correções sugeridas e a exploração dos problemas relatados.
+
+% FONTES:
+
+% Página 2: "De acordo com as 47 respostas que recebemos, a maioria dos desenvolvedores (ou seja, 30) rejeitou as vulnerabilidades relatadas, menos desenvolvedores (ou seja, 17) queriam abordar os problemas relatados e ainda menos desenvolvedores (ou seja, 9) substituíram usos inadequados de APIs seguindo orientações geradas pela ferramenta. Os relatórios das ferramentas geralmente não alteraram as práticas de codificação dos desenvolvedores."
+
+Diante dos argumentos expostos, o presente estudo se fundamenta na análise crítica do trabalho suplementar, visando compreender se as vulnerabilidades identificadas pelas ferramentas CryptoGuard e CogniCrypt têm sua origem associada a bibliotecas de caráter nativo ou externo. Este enfoque pode se revelar essencial para uma apreciação abrangente das fragilidades apontadas, proporcionando um discernimento mais aprofundado acerca das nuances envolvidas na integridade e segurança do sistema em questão.
+
+\subsection{Automated Third-Party Library Detection for Android Applications: Are We There Yet?} %Automated Third-Party Library Detection for Android Applications: Are We There Yet?
+
+A incorporação de bibliotecas de terceiros em aplicações Android suscita diversas preocupações relevantes. Uma delas refere-se à possibilidade de presença de código malicioso nessas bibliotecas, representando uma ameaça à segurança e à privacidade dos dispositivos dos usuários. Esse código tem o potencial de ser utilizado em atividades como a apropriação indevida de dados, acessos não autorizados e até mesmo o controle remoto do dispositivo.
+
+Além disso, a existência de vulnerabilidades nas bibliotecas de terceiros é outra preocupação significativa. Estas vulnerabilidades podem ser exploradas por atacantes, possibilitando o acesso não autorizado ao dispositivo, a execução de código arbitrário ou a realização de atividades maliciosas.
+
+Outro ponto de preocupação refere-se à possível incompatibilidade dessas bibliotecas com a aplicação em si ou com outras bibliotecas utilizadas no desenvolvimento. Tal cenário pode resultar em falhas, dificuldades de desempenho ou em outros comportamentos inesperados no âmbito da aplicação.
+
+A falta de atualizações regulares ou suporte por parte dos desenvolvedores de bibliotecas de terceiros também é uma questão a ser considerada. Isso pode deixar a aplicação vulnerável a novas ameaças de segurança ou a dificuldades de compatibilidade.
+
+Adicionalmente, o emprego de determinadas bibliotecas de terceiros pode acarretar em violação de acordos de licenciamento ou direitos de propriedade intelectual, potencialmente resultando em consequências legais para o desenvolvedor da aplicação.
+
+A complexa cadeia de dependências que frequentemente acompanha as bibliotecas de terceiros é outra preocupação destacável. Caso alguma dessas dependências apresente vulnerabilidades ou outros problemas, isso pode afetar a segurança e a estabilidade global da aplicação.
+
+Outro aspecto crítico refere-se à possibilidade de bibliotecas de terceiros coletarem e transmitirem dados do usuário sem o devido conhecimento ou consentimento. Esta prática pode resultar em violações de privacidade e no uso não autorizado de informações pessoais.
+
+Por fim, o desempenho da aplicação pode ser comprometido caso bibliotecas de terceiros não tenham sido otimizadas de maneira adequada ou apresentem eficiência limitada. Isso pode resultar em tempos de carregamento mais lentos, uso elevado de recursos e, consequentemente, numa experiência de usuário insatisfatória
+
+% Fonte:
+
+% Zhan, X., Fan, L., Liu, T., Chen, S., Li, L., Wang, H., Xu, Y., Luo, X., & Liu, Y. (2020). Automated Third-Party Library Detection for Android Applications: Are We There Yet?. In 35th IEEE/ACM International Conference on Automated Software Engineering (ASE ’20), September 21–25, 2020, Virtual Event, Australia. ACM, New York, NY, USA, 12 pages. https://doi.org/10.1145/3324884.3416582
+
+O impacto das Bibliotecas de Terceiros (TPLs) na detecção de malware em aplicativos móveis é que as TPLs podem introduzir ameaças à segurança se contiverem código malicioso. Quando essas TPLs são integradas a aplicativos populares, elas podem rapidamente infectar um grande número de dispositivos móveis. Além disso, as TPLs também podem afetar os resultados da detecção de malware, já que podem agir como ruído e potencialmente interferir no processo de detecção. Portanto, é importante contar com técnicas eficazes de detecção de TPLs para identificar e mitigar os riscos associados às TPLs em aplicativos móveis.
+
+% FONTES:
+
+% Página 2: "ASE ’20, 21 a 25 de setembro de 2020, Evento Virtual, Austrália X. Zhan, L. Fan, T. Liu, S. Chen, L. Li, H. Wang, Y. Xu, X. Luo, Y. Liu"
+% Página 2: "ASE ’20, 21 a 25 de setembro de 2020, Evento Virtual, Austrália X. Zhan, L. Fan, T. Liu, S. Chen, L. Li, H. Wang, Y. Xu, X. Luo, Y. Liu"
+
+As ferramentas e métodos existentes para detectar e mitigar os riscos associados a Bibliotecas de Terceiros (TPLs) em aplicações Android abrangem diversas abordagens. Um desses métodos é o Baseado em Lista Branca, que emprega uma lista pré-definida de TPLs confiáveis para filtrar bibliotecas conhecidas. No entanto, esse método apresenta limitações, pois não é resiliente a renomeações de pacotes e pode deixar de abranger algumas TPLs, especialmente as mais recentes.
+
+Além disso, diversas Ferramentas de Detecção foram desenvolvidas para identificar TPLs em aplicações Android. Estas ferramentas extraem características como APIs do Android, grafos de fluxo de controle e assinaturas de métodos variantes para representar as TPLs. Elas fazem uso de técnicas diversas, como métodos baseados em agrupamento e métodos de comparação de similaridade, a fim de identificar TPLs dentro do aplicativo.
+
+Outra estratégia é a Revisão Sistemática da Literatura (RSL), na qual pesquisadores conduzem análises comparativas de técnicas de detecção de TPLs existentes. Esses estudos avaliam a eficácia, eficiência, capacidade de resistência à ofuscação de código e facilidade de uso das diferentes ferramentas.
+
+Paralelamente, são adotadas Estratégias de Ofuscação de Código para proteger o software contra engenharia reversa, embora isso possa complicar a detecção de TPLs. Para contornar esse desafio, foram desenvolvidas ferramentas que são resilientes à ofuscação e capazes de lidar com renomeações de identificadores e pacotes.
+
+Alguns pesquisadores disponibilizaram Conjuntos de Dados de Aplicativos Repacotados, os quais são utilizados para estudar e replicar abordagens de detecção de TPLs já existentes.
+
+É crucial ressaltar que as vantagens, desvantagens e desempenho dessas ferramentas variam, tornando a seleção da ferramenta apropriada um processo dependente do cenário de aplicação específico e dos requisitos envolvidos.
+
+% FONTES:
+
+% Página 4: ASE ’20, 21 a 25 de setembro de 2020, Evento Virtual, Austrália
+% Página 3: ASE ’20, 21 a 25 de setembro de 2020, Evento Virtual, Austrália
+% Página 2: ASE ’20, 21 a 25 de setembro de 2020, Evento Virtual, Austrália
+
+O artigo menciona diversas ferramentas para detectar bibliotecas de terceiros (TPLs) em aplicativos Android. Algumas dessas ferramentas incluem o LibID, que utiliza uma combinação de análise estática e dinâmica para identificar TPLs em aplicativos Android. O LibPecker se concentra na detecção de TPLs que são ofuscadas utilizando diferentes técnicas de ofuscação de código. O ORLIS também emprega uma combinação de análise estática e dinâmica para detectar TPLs, fornecendo ainda análise de vulnerabilidades para as TPLs identificadas. O LibRadar utiliza análise baseada em API para detectar TPLs em aplicativos Android, sendo conhecido por sua rápida velocidade de detecção. O LibD2, semelhante ao LibID e ORLIS, utiliza uma combinação de análise estática e dinâmica para detectar TPLs, oferecendo também análise de vulnerabilidades para as TPLs detectadas. O LibScout é destacado por sua sensibilidade à ofuscação do fluxo de controle, achatamento de pacotes e remoção de código inativo. Ele utiliza uma árvore de Merkle para gerar perfis de TPLs e depende da estrutura hierárquica de pacotes. Observa-se ainda que o LibScout possui uma alta taxa de detecção de TPLs, mas é afetado por técnicas de ofuscação de código, levando a uma redução na taxa de detecção em mais de 70%.
+
+Em resumo, o artigo destaca o LibScout como uma ferramenta sensível a técnicas de ofuscação de código, que depende da estrutura hierárquica de pacotes para a detecção de TPLs. Embora possua uma alta taxa de detecção, o LibScout é influenciado por determinadas técnicas de ofuscação, o que resulta em uma diminuição na precisão da detecção.
+
+% FONTES:
+
+% Página 9: "Para a detecção vulnerável de TPLs no aplicativo, recomendamos o LibScout, que possui melhor desempenho na identificação das versões específicas da biblioteca na detecção de TPLs."
+% Página 9: "O LibScout é sensível à ofuscação do fluxo de controle, achatamento de pacotes e remoção de código inativo."
+% Página 9: Tabela 5: Avaliação das capacidades das ferramentas existentes para diferentes técnicas de ofuscação de código
+% Página 7: "Resposta à C3: O LibPecker supera outras ferramentas na defesa contra diferentes ofuscadores e diferentes técnicas de ofuscação."
+% Página 7: "Resposta à C1: Em termos de eficácia, o LibScout se destaca."
+
+Neste estudo, baseamos nossa escolha da ferramenta LibScout para identificação de bibliotecas de terceiros (TPLs) em aplicativos Android. Um dos maiores motivadores foi o fato de sua robustez e a apresentação dos resultados fornecendo uma visão hierarquizada das bibliotecas. Dessa forma, integramos o LibScout à nossa abordagem qualitativa, complementando as ferramentas CogniCrypt e CryptoGuard para tentar obter resultados mais abrangentes na detecção de vulnerabilidades. O tempo de execução, baixa precisão e amostras fora de data foram parte do porque não termos escolhido outras ferramentas.
+
+\subsection{CogniCrypt: Supporting Developers in Using Cryptography}
+
+O CogniCrypt pode oferecer uma abordagem abrangente para abordar a identificação de vulnerabilidades no código por meio de dois recursos fundamentais: a geração de código e a aplicação de análises estáticas.
+
+A funcionalidade de geração de código do CogniCrypt destaca-se ao produzir implementações seguras para tarefas de programação comumente associadas à criptografia. Por meio desta característica, os desenvolvedores recebem exemplos de uso orientados por tarefas específicas das APIs criptográficas em Java. Esses exemplos são gerados com base em configurações selecionadas, que incluem o algoritmo criptográfico desejado e seus parâmetros correspondentes. Ao empregar esta capacidade, o CogniCrypt pode desempenhar um papel crucial em auxiliar os desenvolvedores na prevenção de vulnerabilidades comuns, garantindo a integração segura de componentes criptográficos em seus projetos.
+
+Adicionalmente, o CogniCrypt incorpora uma funcionalidade de análise estática que opera em segundo plano, aplicando uma série de análises ao projeto do desenvolvedor. Estas análises têm por objetivo assegurar que todas as utilizações das APIs criptográficas permaneçam seguras, mesmo que o desenvolvedor venha a modificar o código gerado ou utilize as APIs diretamente, sem recorrer à geração de código. O CogniCrypt se vale do framework de análise de estados TS4J, implementado como um plugin do Eclipse, para efetuar a inspeção do projeto. Ele reporta discrepâncias na utilização por meio da geração de marcadores de erro diretamente no ambiente de desenvolvimento Eclipse IDE. Esta funcionalidade pode apoiar os desenvolvedores na identificação e correção de vulnerabilidades em seu código.
+
+Por meio da sinergia entre geração de código e análise estática, o CogniCrypt pode conceder aos desenvolvedores uma abordagem completa para lidar com vulnerabilidades em seu código, promovendo o uso seguro de APIs criptográficas.
+
+% FONTES:
+
+% Página 3: "Além de gerar código, o CogniCrypt aplica continuamente uma série de análises estáticas ao projeto do desenvolvedor em segundo plano."
+% Página 5: "O CogniCrypt gera exemplos de uso baseados em tarefas para APIs de Cripto Java."
+% Página 5: "O CogniCrypt relata usos inadequados gerando marcadores de erro diretamente no lado esquerdo dentro do ambiente de desenvolvimento Eclipse IDE."
+
+Os desafios enfrentados pelos desenvolvedores ao criar código são diversos e envolvem uma série de complexidades, especialmente quando lidam com sistemas extensos e intricados. Compreender os requisitos, desenhar a arquitetura e implementar o código são tarefas que demandam habilidade e atenção minuciosa.
+
+A identificação e correção de bugs e erros são etapas cruciais, muitas vezes exigindo um esforço considerável em termos de depuração e resolução de problemas. Além disso, a gestão do tempo é uma preocupação constante, pois os desenvolvedores frequentemente trabalham sob prazos apertados. Esta pressão adicional pode tornar desafiador o cumprimento desses prazos, o que, por sua vez, demanda a entrega de código de alta qualidade dentro dos limites estabelecidos.
+
+A dinamicidade dos requisitos de um projeto ao longo do processo de desenvolvimento pode requerer adaptações e modificações no código, o que, por sua vez, pode gerar trabalho adicional e até mesmo conflitos com o código já existente.
+
+Em ambientes colaborativos, a efetiva colaboração e comunicação entre membros da equipe são de vital importância. Coordenar esforços, resolver conflitos e assegurar que todos os membros estejam alinhados com os objetivos e metas do projeto pode se configurar como uma tarefa desafiadora, exigindo habilidades de comunicação e gestão de equipe.
+
+A aprendizagem contínua é um componente essencial no universo do desenvolvimento de software. A necessidade de se manter atualizado em relação a novas tecnologias, linguagens de programação, frameworks e ferramentas é premente. Este processo, embora vital, pode ser demandante em termos de tempo e esforço, requerendo um investimento contínuo por parte dos desenvolvedores.
+
+Uma vez que o código é desenvolvido, a manutenção contínua se torna imperativa. Esta etapa envolve a correção de bugs, adição de novos recursos e otimização de desempenho. No entanto, a complexidade desta tarefa pode ser exacerbada quando o código não está adequadamente documentado ou quando os desenvolvedores originais não estão mais disponíveis para prestar suporte.
+
+Por fim, a segurança e garantia de qualidade do código são aspectos cruciais. Os desenvolvedores devem assegurar que seu código seja imune a vulnerabilidades e que siga as melhores práticas para codificação segura. A condução de testes rigorosos se torna essencial para identificar e corrigir possíveis problemas de segurança, garantindo assim a integridade e segurança do software desenvolvido.
+
+Ao integrarmos o CogniCrypt em nossa abordagem, complementando-o com outras ferramentas como o CryptoGuard e o LibScout, queremos fornecer aos desenvolvedores uma estratégia poderosa e abrangente para detectar e corrigir vulnerabilidades em APIs criptográficas Java, seja ela de código nativo ou externo. Isso pode contribuir significativamente para a segurança e integridade dos sistemas desenvolvidos.
+
+
+
+% FONTES:
+
+% Página 1: "Por que o software criptográfico falha?: um estudo de caso e problemas em aberto" (Workshop da ACM Ásia-Pacífico em Sistemas)
+% Página 1: "Superando obstáculos: por que os desenvolvedores Java têm dificuldade com APIs de criptografia?" (Conferência Internacional sobre Engenharia de Software)
+% Página 6: "Por que o software criptográfico falha?: um estudo de caso e problemas em aberto" (Workshop da ACM Ásia-Pacífico em Sistemas)
+% Página 6: "Superando obstáculos: por que os desenvolvedores Java têm dificuldade com APIs de criptografia?" (Conferência Internacional sobre Engenharia de Software)
+
+\subsection{CRYPTOGUARD: High Precision Detection of Cryptographic Vulnerabilities in Massive-sized Java Projects}
+
+O objetivo do CRYPTOGUARD é detectar vulnerabilidades criptográficas em projetos Java. Ele alcança isso por meio do uso de técnicas de análise estática de programas para analisar o código e identificar possíveis usos incorretos de APIs criptográficas. O CRYPTOGUARD emprega um conjunto de algoritmos de "slicing" (recorte) rápidos e altamente precisos que refinam recortes de programas ao identificar elementos irrelevantes específicos da linguagem Java. Esses refinamentos auxiliam na redução significativa de alertas falsos. Ao executar o CRYPTOGUARD em projetos Java de grande escala, são gerados insights de segurança e auxilia na identificação de vulnerabilidades no código.
+
+% FONTES:
+
+% Página 1: CRYPTOGUARD: Detecção de Alta Precisão de Vulnerabilidades Criptográficas em Projetos Java de Tamanho Massivo
+% Página 2: CRYPTOGUARD: Detecção de Alta Precisão de Vulnerabilidades Criptográficas em Projetos Java de Tamanho Massivo
+
+As conclusões de segurança obtidas a partir dos testes com o CRYPTOGUARD em projetos Apache e aplicativos Android incluem o seguinte:
+
+Projetos Apache:
+Dos 46 projetos Apache avaliados, 39 projetos apresentaram pelo menos um tipo de uso incorreto de criptografia, e 33 projetos tinham pelo menos dois tipos.
+As vulnerabilidades comuns encontradas nos projetos Apache incluíam o uso de chaves previsíveis, funções hash inseguras, geradores de números aleatórios inseguros e a utilização de URLs HTTP.
+O CRYPTOGUARD auxiliou na identificação e relato dessas vulnerabilidades para as equipes do Apache, resultando em correções rápidas em alguns casos.
+Aplicativos Android:
+A avaliação em 6.181 aplicativos Android demonstrou que cerca de 95\% das vulnerabilidades totais originaram-se de bibliotecas empacotadas com o código do aplicativo.
+Bibliotecas de empresas como Google, Facebook, Apache, Umeng e Tencent foram identificadas com violações em diversas categorias, incluindo senhas hardcoded de keyStore e vulnerabilidades SSL/TLS.
+O CRYPTOGUARD detectou múltiplas vulnerabilidades SSL/TLS (MitM) que a triagem automática do Google Play aparentemente deixou passar.
+FONTES:
+
+% Página 2: plataforma de análise de segurança de software livre bem conhecida.
+% Página 2: Obtivemos inúmeras percepções de segurança ao avaliar 46 projetos Apache.
+% Página 2: Nossa avaliação em 6.181 aplicativos Android mostra que cerca de 95\% das vulnerabilidades totais vêm de bibliotecas empacotadas com o código do aplicativo.
+
+O estudo sobre o CRYPTOGUARD, ao evidenciar a complexidade na identificação da percepção de vulnerabilidades, assume um papel catalisador para a pesquisa em questão. Ao abordar a detecção de falhas criptográficas em projetos Java, o CRYPTOGUARD não apenas destaca a necessidade premente de compreensão e correção de vulnerabilidades, mas também delineia um terreno propício para a investigação correlata. A pesquisa em pauta visa justamente tentar elucidar as origens das vulnerabilidades identificadas por meio de ferramentas análogas, oferecendo um avanço significativo no entendimento das fragilidades inerentes a sistemas criptográficos. Deste modo, o estudo sobre o CRYPTOGUARD se revela não apenas como um contributo intrínseco ao domínio da segurança cibernética, mas também como um impulso fundamental para a empreitada que visa discernir as fontes subjacentes às vulnerabilidades apresentadas por ferramentas congêneres.
+
+% Este capítulo descreve a classe \unbcic, e demonstra os comandos disponíveis. A
+% última versão foi atualizada pelo Prof. Ralha, em 2008 (vide \refAnexo{Anexo1}).
+% A melhor forma de entender o funcionamento é observar o arquivo principal deste
+% documento (\texttt{monografia.tex}).
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+% \section{Gerando o PDF}
+
+% Para gerar corretamente as referências cruzadas, é necessário processar os arquivos
+% mais de uma vez com a seguinte sequência de comandos (supondo que o arquivo
+% principal seja \texttt{monografia.tex}).
+
+% \begin{verbatim}
+% pdflatex monografia
+% bibtex monografia
+% makeglossaries monografia
+% pdflatex monografia
+% \end{verbatim}
+
+% O primeiro comando processa os arquivos, indicando quais referências foram citadas
+% no texto (bibliográficas ou cruzadas), o segundo comando processa o arquivo
+% \texttt{.bib} que contém as informações bibliográficas, o terceiro gera o índice
+% de siglas/abreviaturas, e o último comando junta todas estas informações,
+% produzindo um texto com referências cruzadas funcionais.
+
+
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+% \section{Opções}
+% O documento é gerado em função do curso dado como opção [obrigatória] a classe.
+% Os cursos disponíveis são:
+% \begin{description}
+%   \item[bacharelado] Bacharelado em Ciência da Computação
+%   \item[licenciatura] Licenciatura em Computação
+%   \item[engenharia] Engenharia de Computação
+%   \item[mestrado, ppginf] Mestrado em Informática
+%   \item[doutorado, ppginf] Doutorado em Informática
+%   \item[mestrado, ppca] Mestrado Profissional em Computação Aplicada
+% \end{description}
+
+% No caso dos cursos de pós-graduação, há o \emph{exame de qualificação} do
+% discente, a qual deverá constar a definição, pertinência do projeto, a sua
+% abrangência, comprovação da eficiência e eficácia da metodologia proposta, uma
+% revisão bibliográfica detalhada e o cronograma para conclusão do projeto~\cite{ppginf}.
+% Para gerar o documento referente a este exame, use a opção \textbf{qualificacao}.
+
+% %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+% %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+% %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+% \section{Informações do Trabalho}%
+% O passo seguinte é definir as informações do trabalho, identificando os autores
+% e os membros da banca (atenção a definição do gênero!). Por exemplo, para este
+% documento foram utilizadas as seguintes definições:
+
+% \begin{verbatim}
+% \orientador{\prof \dr Guilherme Novaes Ramos}{CIC/UnB}%
+% %\coorientador{\prof \dr José Ralha}{CIC/UnB}
+% \coordenador[a]{\prof[a] \dr[a] Ada Lovelace}{Bibliothèque universelle de Genève}%
+% \diamesano{24}{dezembro}{2014}%
+
+% \membrobanca{\prof \dr Donald Knuth}{Stanford University}%
+% \membrobanca{\dr Leslie Lamport}{Microsoft Research}%
+
+% \autor{Guilherme N.}{Ramos}%
+% \end{verbatim}
+
+% Sobre o texto, definiu-se:
+% \begin{verbatim}
+% \titulo{UnB-CIC: Uma classe em LaTeX para textos do Departamento de
+% Ciência da Computação}%
+
+% \palavraschave{LaTeX, metodologia científica}%
+% \keywords{LaTeX, scientific method}%
+% \end{verbatim}
+
+% O título, apesar do tamanho reduzido, deveria apresentar uma ideia clara de todo
+% o trabalho. As palavras-chave devem indicar os conceitos genéricos mais relevantes
+% utilizados, e servem para indexação e busca de documentos que tratam os mesmos
+% temas.
+
+
+% %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+% %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+% %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+% \section{Arquivos}
+% Os seguintes arquivos são exigidos:
+% \begin{description}%
+%     \item[tex/abstract.tex] Contém o \emph{abstract} do texto.%
+%     \item[tex/agradecimentos.tex] Contém os agradecimentos do autor.%
+%     \item[bibliografia.bib] Contém as referências bibliográficas no formato
+%     ${\mathrm{B{\scriptstyle{IB}}T_{\displaystyle E}X}}$\footnote{\url{http://www.bibtex.org}}.%
+%     %\item[tex/capitulo1.tex] Contém o primeiro capítulo.%
+%     \item[tex/dedicatoria.tex] Contém a dedicatória do autor.%
+%     \item[tex/siglas.tex] Contém as definições de siglas/abreviaturas.%
+%     \item[tex/resumo.tex] Contém o resumo do texto.%
+% \end{description}%
+
+% Os alunos dos Programas de Pós-Graduação da Universidade de Brasília devem incluir a ficha catalográfica em seus documentos, gerada pela \acrfull{BCE}. Neste caso, o aluno deve substituir o arquivo PDF \textbf{doc/BDM.pdf} pelo fornecido pela \acrshort{BCE}. \emph{Atenção}, para que o arquivo seja incluido automaticamente pela classe, o nome deve ser \emph{obrigatoriamente} \textbf{BDM.pdf}.%
+
+% Demais arquivos não são inseridos automaticamente, mas a classe oferece comandos
+% para inclusão, facilitando a organização destes.
+
+% %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+% %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+% %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+% \section{Documento}
+% Todo documento em \LaTeX\ é delimitado pelo ambiente \emph{document}. O caso aqui
+% não é diferente, mas a interação é simplificada. Basicamente, a classe \unbcic\
+% funciona ``automagicamente'' em função dos comandos e dos nomes dos arquivos.
+
+
+% %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+% %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+% %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+% \subsection{Capítulos}
+% O texto de cada capítulo deve estar em seu próprio arquivo, dentro do diretório
+% correto \texttt{tex}. A inclusão do texto é feita pelo comando:
+% \begin{verbatim}
+% \capitulo{arquivo}{título}%
+% \end{verbatim}
+
+% Os dois argumentos são:
+% \begin{description}%
+% \item[arquivo] argumento obrigatório que define o nome do arquivo que contém o
+% texto do capítulo.
+% \item[título] argumento obrigatório que define o título do capítulo.
+% \end{description}%
+
+% Por exemplo, este texto está no arquivo \texttt{2\_UnB-CIC.tex}, e para criar os
+% dois capítulos vistos até agora, o documento seria:
+
+% \begin{verbatim}
+% \begin{document}%
+%   \capitulo{1_Introducao}{Introdução}% inclui o arquivo 1_Introducao.tex
+%   \capitulo{2_UnB-CIC}{A Classe \unbcic}% inclui o arquivo 2_UnB-CIC.tex
+% \end{document}%
+% \end{verbatim}
+
+% Para incluir um terceiro capítulo neste texto, cujo conteúdo trata de trabalhos
+% conclusão de curso, basta criar o arquivo \texttt{tex/3\_TCC.tex} e adicioná-lo
+% com o comando descrito.
+
+% No caso de apêndices ou anexos necessários, o texto de cada um deve estar em seu
+% próprio arquivo, também dentro do diretório \texttt{tex/capitulos}. Para facilitar
+% as referências cruzadas, estes devem ser inclusos com os seguintes comandos
+% (respectivamente):
+% \begin{verbatim}
+% \apendice{arquivo}{título}%
+% \anexo{arquivo}{título}%
+% \end{verbatim}
+
+% Os dois argumentos funcionam exatamente como \texCommand{capitulo}. Desta forma,
+% o exemplo de um documento ``completo'' seria: %
+
+% \begin{verbatim}
+% \begin{document}%
+%   \capitulo{1_Introducao}{Introdução}%
+%   \capitulo{2_UnB-CIC}{A Classe \unbcic}%
+%   \capitulo{3_TCC}{Trabalho de Conclusão de Curso}%
+
+%   \apendice{Apendice_Fichamento}{Fichamento de Artigo Científico}%
+%   \anexo{Anexo1}{Parte da Documentação Original}%
+% \end{document}%
+% \end{verbatim}
+
+% Usando estes comandos, o rótulo de cada capítulo/apêndice/anexo é criado
+% automaticamente a partir do nome do arquivo para posterior referência cruzada.
+% Por exemplo, este capítulo pode ser referenciado com o comando
+% \texCommand{ref\{2\_UnB-CIC\}} (cujo resultado é: \ref{2_UnB-CIC}), mas a classe
+% oferece opções mais interessantes. Os comandos para referenciar çapítulos são:
+
+% \begin{verbatim}
+% \refCap{referência}%
+% \refCaps{referência inicial}{referência final}%
+% \end{verbatim}
+
+% Onde os argumentos são:
+% \begin{description}
+% \item[referência] nome da referência do capítulo.
+% \item[referência inicial] nome da referência do capítulo inicial da sequência de capítulos.
+% \item[referência final] nome da referência do capítulo final da sequência de capítulos.
+% \end{description}
+
+% O \refCap{1_Introducao} é referenciado com o comando:
+% \begin{verbatim}
+% \refCap{1_Introducao}%
+% \end{verbatim}
+
+% Considerando  \refCap{1_Introducao} e também o \refCap{2_UnB-CIC}, é possível referenciar
+% a \emph{sequência} de \refCaps{1_Introducao}{2_UnB-CIC} com o comando:
+% \begin{verbatim}
+% \refCaps{1_Introducao}{2_UnB-CIC}%
+% \end{verbatim}
+
+% Embora estes comandos não ``simplifiquem'' a inclusão de figuras, eles
+% certamente facilitam a referência a elas com um padrão uniforme, e nada impede o
+% uso dos comandos padrões.
+
+% %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+% %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+% %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+% \subsection{Figuras}
+% Para manter a organização dos arquivos de seu documento, as figuras devem ficar
+% separadas no diretório \texttt{img}. As funções de inclusão de figuras permanecem
+% as mesmas, mas a classe \unbcic\ oferece uma forma mais simples de inserir uma
+% figura (e de referenciá-la). Basta executar o comando:
+
+% \begin{verbatim}
+% \figura[posição]{arquivo}{legenda}{referência}{tamanho}%
+% \end{verbatim}
+
+% Os 5 argumentos são:
+% \begin{description}
+% \item[posição] argumento [opcional] para posicionar a figura no texto\footnote{Mais
+% informações na documentação do ambiente \emph{figure}, mas este é um bom começo: \url{http://en.wikibooks.org/wiki/LaTeX/Floats,_Figures_and_Captions}.}.
+% \item[arquivo] nome do arquivo da imagem.
+% \item[legenda] legenda da figura.
+% \item[referência] nome da referência da figura para referências cruzadas.
+% \item[tamanho] tamanho da imagem\footnote{Mais informações na documentação do comando
+% \texCommand{includegraphics}.}.
+% \end{description}
+
+% Por exemplo, a \refFig{unbPB}, inserida com o seguinte comando:
+
+% \begin{verbatim}
+% \figura[!h]{contorno_preto}{Marca P/B}{unbPB}{width=0.5\textwidth}%
+% \end{verbatim}
+
+% \figura[!h]{contorno_preto}{Marca P/B}{unbPB}{width=0.5\textwidth}%
+
+% Os comandos para referenciar figuras são:
+
+% \begin{verbatim}
+% \refFig{referência}%
+% \refFigs{referência inicial}{referência final}%
+% \end{verbatim}
+
+% Onde os argumentos são:
+% \begin{description}
+% \item[referência] nome da referência da figura.
+% \item[referência inicial] nome da referência da figura inicial da sequência de figuras.
+% \item[referência final] nome da referência da figura final da sequência de figuras.
+% \end{description}
+
+% A \refFig{unbPB} é referenciada com o comando:
+% \begin{verbatim}
+% \refFig{unbPB}%
+% \end{verbatim}
+
+% \figura{positivo_cor}{Marca colorida}{unb}{width=0.25\textwidth}%
+
+% Considerando a \refFig{unb} e também a \refFig{unb2}, é possível referenciar
+% a \emph{sequência} de \refFigs{unbPB}{unb2} com o comando:
+% \begin{verbatim}
+% \refFigs{unbPB}{unb2}%
+% \end{verbatim}
+
+% Algumas vezes deseja-se usar a figura de uma das referências bibliográficas. Neste caso, utilize o comando:
+
+% \begin{verbatim}
+% \figuraBib[posição]{arquivo}{legenda}{bib}{referência}{tamanho}%
+% \end{verbatim}
+
+% Os argumentos são os mesmos do comando \texCommand{figura}, acrescidos de:
+% \begin{description}
+% \item[bib] nome da referência bibliográfica que originou a figura.
+% \end{description}
+
+% Por exemplo, a \refFig{latexvsword} foi gerada com o comando:
+% \begin{verbatim}
+% \figuraBib{miktex}{\LaTeX\ vs MS Word}
+% {pinteric_latex_2004}{latexvsword}{width=.45\textwidth}%
+% \end{verbatim}
+
+% Embora estes comandos não ``simplifiquem'' a inclusão de figuras, eles
+% certamente facilitam a referência a elas com um padrão uniforme, e nada impede o
+% uso dos comandos padrões.
+
+% \figura{positivo_cor}{Outra marca colorida}{unb2}{width=0.25\textwidth}%
+
+
+
+% %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+% %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+% %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+% \subsection{Equações}
+% As funções de inclusão de equações permanecem as mesmas, mas a classe \unbcic\
+% oferece uma forma mais simples de inserir uma equação (e de referenciá-la). Basta
+% executar o comando:
+
+% \begin{verbatim}
+% \equacao{referência}{fórmula}%
+% \end{verbatim}
+
+% Os 2 argumentos são:
+% \begin{description}
+% \item[referência] nome da referência da equação para referências cruzadas.
+% \item[fórmula] a equação em si.
+% \end{description}
+
+% Por exemplo, a \refEq{pitagoras}, inserida com o seguinte comando:
+% \begin{verbatim}
+% \equacao{pitagoras}{a^2 + b^2 = c^2}%
+% \end{verbatim}
+
+% \equacao{pitagoras}{a^2 + b^2 = c^2}%
+
+% Além disso, é possível quebrar em linhas, como na \refEq{pit2}, com o mesmo comando:
+% \begin{verbatim}
+% \equacao{pit2}{a = (x+y)^2\\b= (x*y)^2}%
+% \end{verbatim}
+
+% \equacao{pit2}{a = (x+y)^2\\b= (x*y)^2}%
+
+% Os comandos para referenciar equações são:
+
+% \begin{verbatim}
+% \refEq{referência}%
+% \refEqs{referência inicial}{referência final}%
+% \end{verbatim}
+
+% Onde os argumentos são:
+% \begin{description}
+% \item[referência] nome da referência da equação.
+% \item[referência inicial] nome da referência da equação inicial da sequência de equações.
+% \item[referência final] nome da referência da equação final da sequência de equações.
+% \end{description}
+
+% Considerando a \refEq{pitagoras} e também a \refEq{eq}, é possível referenciar
+% a \emph{sequência} de \refEqs{pitagoras}{eq} com o comando:
+% \begin{verbatim}
+% \refEqs{pitagoras}{eq}%
+% \end{verbatim}
+
+% Embora estes comandos não ``simplifiquem'' a inclusão de equações, eles
+% certamente facilitam a referência a elas com um padrão uniforme e nada impede o
+% uso dos comandos padrões.
+
+% \equacao{eq}{d=c^3 - \frac{a}{b}}%
+
+
+% %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+% %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+% %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+% \subsection{Tabelas}
+% As funções de inclusão de tabelas permanecem as mesmas, mas a classe \unbcic\
+% oferece uma forma mais simples de inserir uma tabela (e de referenciá-la). Basta
+% executar o comando:
+
+% \begin{verbatim}
+% \tabela{legenda}{referência}{especificações}{tabela}%
+% \end{verbatim}
+
+% Os 4 argumentos são:
+% \begin{description}
+% \item[legenda] legenda da tabela.
+% \item[referência] nome da referência da tabela para referências cruzadas.
+% \item[especificações] alinhamento de cada coluna da tabela.
+% \item[tabela] o conteúdo da tabela\footnote{Mais informações na documentação do
+% ambiente \emph{\href{http://en.wikibooks.org/wiki/LaTeX/Tables}{tabular}}.}.
+% \end{description}
+
+% Por exemplo, a \refTab{exemplo}, inserida com o seguinte comando:
+% \begin{verbatim}
+% \tabela{Exemplo de tabela}{exemplo}{| c | c |}%
+%   {\hline
+%   \textbf{Item} & \textbf{Descrição} \\\hline
+%   1 & Descrição 1 \\\hline
+%   2 & Descrição 2 \\\hline
+%   3 & Descrição 3 \\\hline}%
+% \end{verbatim}
+
+% \tabela{Exemplo de tabela}{exemplo}{| c | c |}%
+%   {\hline
+%   \textbf{Item} & \textbf{Descrição} \\\hline
+%   1 & Descrição 1 \\\hline
+%   2 & Descrição 2 \\\hline
+%   3 & Descrição 3 \\\hline}%
+
+% Os comandos para referenciar tabelas são:
+
+% \begin{verbatim}
+% \refTab{referência}%
+% \refTabs{referência inicial}{referência final}%
+% \end{verbatim}
+
+% Onde os argumentos são:
+% \begin{description}
+% \item[referência] nome da referência da tabela.
+% \item[referência inicial] nome da referência da tabela inicial da sequência de tabelas.
+% \item[referência final] nome da referência da tabela final da sequência de tabelas.
+% \end{description}
+
+% Considerando a \refTab{exemplo} e também a \refTab{exemplo2}, é possível referenciar
+% a \emph{sequência} de \refTabs{exemplo}{exemplo2} com o comando:
+% \begin{verbatim}
+% \refTabs{exemplo}{exemplo2}%
+% \end{verbatim}
+
+% Algumas vezes deseja-se usar a tabela de uma das referências bibliográficas. Neste caso, utilize o comando:
+
+% \begin{verbatim}
+% \tabelaBib{legenda}{bib}{referência}{especificações}{tabela}%
+% \end{verbatim}
+
+% Os argumentos são os mesmos do comando \texCommand{tabela}, acrescidos de:
+% \begin{description}
+% \item[bib] nome da referência bibliográfica que originou a tabela.
+% \end{description}
+
+% \tabelaBib{Matriz de Decisão de Eisenhower}
+% {covey_first_1995}{EisenhowerTable}{ r | c | c }{
+%                         & \textbf{Urgente} & \textbf{Não Urgente} \\\hline%
+% \textbf{Importante}     & Crises       & Planejamentos \\\hline%
+% \textbf{Não importante} & Interrupções & Distrações%
+% }%
+
+% Por exemplo, a \refTab{EisenhowerTable}\footnote{Vale a pena assistir o vídeo da palestra \emph{Time Management} de Randy Pausch: \url{http://www.cs.virginia.edu/~robins/Randy/}} foi gerada com o comando:
+% \begin{verbatim}
+% \tabelaBib{Matriz de Decisão de Eisenhower}
+% {covey_first_1995}{EisenhowerTable}{ r | c | c }{%
+%                     & \textbf{Urgente} & \textbf{Não Urgente} \\\hline%
+% \textbf{Importante}     & Crises       & Planejamentos \\\hline%
+% \textbf{Não importante} & Interrupções & Distrações%
+% }%
+% \end{verbatim}
+
+% Embora estes comandos não ``simplifiquem'' a inclusão de tabelas, eles
+% certamente facilitam a referência a elas com um padrão uniforme, e nada impede o
+% uso dos comandos padrões.
+
+% \tabela{Outro exemplo de tabela}{exemplo2}{| r | c | c | l |}%
+%   {\hline
+%   \textbf{\#} & \textbf{A} & \textbf{B} & \textbf{Comentário} \\\hline
+%   1 & $a_1$ & $b_1$ & comentário 1\\
+%   2 & $a_2$ & $b_2$ & comentário 2\\
+%   3 & $a_3$ & $b_3$ & comentário 3\\\hline}%
+
+% %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+% %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+% %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+% \subsection{Abreviaturas e Siglas}
+% Abreviaturas e siglas devem ser definidas no arquivo \texttt{tex/siglas.tex}, e
+% a inserção feita com o comando:
+
+% \begin{verbatim}
+% \sigla{sigla}{descrição}%
+% \end{verbatim}
+
+% Onde os argumentos são:
+% \begin{description}
+% \item[sigla] a própria sigla/abreviatura.
+% \item[descrição] definição completa do que representa a sigla/abreviatura.
+% \end{description}
+
+% Por exemplo:
+
+% \begin{verbatim}
+% \sigla{CIC}{Departamento de Ciência da Computação}%
+% \end{verbatim}
+
+% A inserção de uma sigla/abreviatura no texto é simples, e pode ser feita de três
+% formas diferentes:
+
+% \begin{minipage}[t]{.3\textwidth}%
+% \begin{verbatim}
+% \acrshort{CIC}
+% \acrlong{CIC}
+% \acrfull{CIC}
+% \end{verbatim}
+% \end{minipage}%
+% \begin{minipage}[t]{.6\textwidth}%
+% \acrshort{CIC}\\
+% \acrlong{CIC}\\
+% \acrfull{CIC}
+% \end{minipage}%
