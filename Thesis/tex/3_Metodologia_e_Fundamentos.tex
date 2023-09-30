@@ -126,11 +126,23 @@ Assim, os problemas com a apresentação da classe da vulnerabilidade pelas duas
 A metodologia abordada nestre trabalho serve como um instrumento complementar às metodologias e mecanismos descritas e abordadas no artigo 'Perceptions of Software Practitioners Regarding Crypto-API Misuses and Vulnerabilities'.
 O artigo mencionado acima apresenta um estudo macro em relação à percepção das vulnerabilidades dos códigos dos desenvolvedores.
 
-\img{img/metodologia.png}{Metodologia}{fig:metodologia}{width=0.5\textwidth}
+\begin{figure}[!h]
+  \centering
+  \includegraphics[scale=0.5]{img/metodologia.png}
+  \caption{Metodologia adotada no artigo 'Perceptions of Software Practitioners Regarding Crypto-API Misuses and Vulnerabilities'}
+  \label{averageWarnings}
+\end{figure}
+
 
 A imagem acima descreve a metodologia utilizada no artigo 'Perceptions of Software Practitioners Regarding Crypto-API Misuses and Vulnerabilities'. A metodologia abordada neste trabalho entra na etapa de 'Análise de Dados' em específico 'Análise externa / nativa', onde é feita a integração dos resultados obtidos pelo LibScout com os contextos fornecidos pelo CryptoGuard e CogniCrypt. Essa integração tenta proporcionar uma visão mais minuciosa e contextualizada de onde as vulnerabilidades identificadas se encontram.
+Nosso trabalho propõe a seguinte integração:
 
-
+\begin{figure}[!h]
+  \centering
+  \includegraphics[scale=0.5]{img/studySettingsExternal.png}
+  \caption{Metodologia adotada neste trabalho'}
+  \label{averageWarnings}
+\end{figure}
 
 \begin{itemize}
 \item{Coleta de Dados}
@@ -146,7 +158,12 @@ A etapa subsequente consistiu na aplicação das ferramentas CryptoGuard e Cogni
 
 Após a conclusão da análise estática, foi possível identificar um conjunto de vulnerabilidades que não foram reconhecidas pelos desenvolvedores, bem como aquelas que foram identificadas, porém não receberam intervenção corretiva. Para facilitar a comunicação e o entendimento das questões de segurança identificadas, procedeu-se à criação de GISTS individuais para cada vulnerabilidade. Um GIST é um recurso que permite compartilhar trechos de código, arquivos inteiros ou até mesmo aplicações, e também possibilita a preservação e compartilhamento de saída de console ao executar, depurar ou testar o código. Cada GIST representa um repositório que pode ser clonado ou bifurcado por outras pessoas, promovendo assim a colaboração e a discussão ativa em busca do aprimoramento da segurança nos aplicativos avaliados.
 
-\img{img/gist.png}{Gist}{fig:gist}{width=0.5\textwidth}
+\begin{figure}[!h]
+  \centering
+  \includegraphics[scale=0.5]{img/gist.png}
+  \caption{'Exemplo de uma Gist'}
+  \label{averageWarnings}
+\end{figure}
 
 \item{Analisar origem das vulnerabilidades}
 
