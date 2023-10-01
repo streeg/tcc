@@ -5,11 +5,12 @@ require 'byebug'
 
 ###### Constants ######
 
-COGNICRYPT_MERGED_PATH = '/home/guileb/tcc/CryptoSASTRunner/tccResults/libscout-all-logs/cognicrypt_external/*.json'.freeze # change_path_as_needed
+CRIPTOGUARD_MERGED_PATH = '/home/guileb/tcc/CryptoSASTRunner/tccResults/libscout-all-logs/cryptoguard_external/*.json'.freeze # change_path_as_needed
 SCOUT_WITH_LIBRARY_INDENTIFIER = '/home/guileb/tcc/CryptoSASTRunner/tccResults/libscout-all-logs/log_json (libscout_result_with_libraries)/'.freeze
-LIBRARY_ADDED_PATH = '/home/guileb/tcc/CryptoSASTRunner/tccResults/libscout-all-logs/cognicrypt_external_with_possible/'.freeze
+LIBRARY_ADDED_PATH = '/home/guileb/tcc/CryptoSASTRunner/tccResults/libscout-all-logs/criptoguard_external_with_possible/'.freeze
 ###### Main ######
-lib_files = Dir[COGNICRYPT_MERGED_PATH]
+lib_files = Dir[CRIPTOGUARD_MERGED_PATH]
+byebug
 lib_files.each do |file|
   lib_file = File.open(file, 'r')
   lib_file_data = JSON.load(lib_file)
@@ -18,7 +19,6 @@ lib_files.each do |file|
   scout_file_data = JSON.load(scout_file)
 
   results = []
-  byebug
   lib_file_data['runs'][0]['results'].each do |x|
     results << x['locations'][0]['physicalLocation']['fileLocation']['uri']
   end

@@ -1,0 +1,881 @@
+{
+  "sarifVersion": "2.0.0",
+  "runs": [
+    {
+      "files": {
+        "com/wa2c/android/cifsdocumentsprovider/domain/model/CifsConnectionKt.java": {
+          "mimeType": "text/java"
+        },
+        "jcifs/ntlmssp/Type3Message.java": {
+          "mimeType": "text/java"
+        },
+        "jcifs/util/Crypto.java": {
+          "mimeType": "text/java"
+        },
+        "jcifs/smb/NtlmUtil.java": {
+          "mimeType": "text/java"
+        },
+        "org/bouncycastle/x509/AttributeCertificateHolder.java": {
+          "mimeType": "text/java"
+        },
+        "jcifs/internal/smb2/Smb2SigningDigest.java": {
+          "mimeType": "text/java"
+        }
+      },
+      "resources": {
+        "rules": {
+          "TypestateError-4": {
+            "id": "TypestateError",
+            "fullDescription": {
+              "text": "The ORDER block of CrySL is violated, i.e., the expected method sequence call to be made is incorrect. For example, a Signature object expects a call to initSign(key) prior to update(data)."
+            }
+          },
+          "TypestateError-5": {
+            "id": "TypestateError",
+            "fullDescription": {
+              "text": "The ORDER block of CrySL is violated, i.e., the expected method sequence call to be made is incorrect. For example, a Signature object expects a call to initSign(key) prior to update(data)."
+            }
+          },
+          "NeverTypeOfError-1": {
+            "id": "NeverTypeOfError",
+            "fullDescription": {
+              "text": "Reported when a value was found to be of a certain reference type: For example, a character array containing a password should never be converted from a String"
+            }
+          },
+          "TypestateError-1": {
+            "id": "TypestateError",
+            "fullDescription": {
+              "text": "The ORDER block of CrySL is violated, i.e., the expected method sequence call to be made is incorrect. For example, a Signature object expects a call to initSign(key) prior to update(data)."
+            }
+          },
+          "TypestateError-2": {
+            "id": "TypestateError",
+            "fullDescription": {
+              "text": "The ORDER block of CrySL is violated, i.e., the expected method sequence call to be made is incorrect. For example, a Signature object expects a call to initSign(key) prior to update(data)."
+            }
+          },
+          "ConstraintError-1": {
+            "id": "ConstraintError",
+            "fullDescription": {
+              "text": "A constraint of a CrySL rule is violated, e.g., a key is generated with the wrong key size."
+            }
+          },
+          "TypestateError-3": {
+            "id": "TypestateError",
+            "fullDescription": {
+              "text": "The ORDER block of CrySL is violated, i.e., the expected method sequence call to be made is incorrect. For example, a Signature object expects a call to initSign(key) prior to update(data)."
+            }
+          },
+          "ConstraintError-2": {
+            "id": "ConstraintError",
+            "fullDescription": {
+              "text": "A constraint of a CrySL rule is violated, e.g., a key is generated with the wrong key size."
+            }
+          },
+          "ConstraintError-3": {
+            "id": "ConstraintError",
+            "fullDescription": {
+              "text": "A constraint of a CrySL rule is violated, e.g., a key is generated with the wrong key size."
+            }
+          },
+          "ConstraintError-4": {
+            "id": "ConstraintError",
+            "fullDescription": {
+              "text": "A constraint of a CrySL rule is violated, e.g., a key is generated with the wrong key size."
+            }
+          },
+          "ConstraintError-5": {
+            "id": "ConstraintError",
+            "fullDescription": {
+              "text": "A constraint of a CrySL rule is violated, e.g., a key is generated with the wrong key size."
+            }
+          },
+          "RequiredPredicateError": {
+            "id": "RequiredPredicateError",
+            "fullDescription": {
+              "text": "An object A expects an object B to have been used correctly (CrySL blocks REQUIRES and ENSURES). For example a Cipher object requires a SecretKey object to be correctly and securely generated."
+            }
+          },
+          "ConstraintError-6": {
+            "id": "ConstraintError",
+            "fullDescription": {
+              "text": "A constraint of a CrySL rule is violated, e.g., a key is generated with the wrong key size."
+            }
+          },
+          "ConstraintError-7": {
+            "id": "ConstraintError",
+            "fullDescription": {
+              "text": "A constraint of a CrySL rule is violated, e.g., a key is generated with the wrong key size."
+            }
+          },
+          "ConstraintError-8": {
+            "id": "ConstraintError",
+            "fullDescription": {
+              "text": "A constraint of a CrySL rule is violated, e.g., a key is generated with the wrong key size."
+            }
+          },
+          "ConstraintError-9": {
+            "id": "ConstraintError",
+            "fullDescription": {
+              "text": "A constraint of a CrySL rule is violated, e.g., a key is generated with the wrong key size."
+            }
+          },
+          "IncompleteOperationError": {
+            "id": "IncompleteOperationError",
+            "fullDescription": {
+              "text": "The usage of an object may be incomplete: For example a Cipherobject may be initialized but never used for en- or decryption, this may render the code dead. This error heavily depends on the computed call graph (CHA by default)"
+            }
+          },
+          "IncompleteOperationError-1": {
+            "id": "IncompleteOperationError",
+            "fullDescription": {
+              "text": "The usage of an object may be incomplete: For example a Cipherobject may be initialized but never used for en- or decryption, this may render the code dead. This error heavily depends on the computed call graph (CHA by default)"
+            }
+          },
+          "NeverTypeOfError-2": {
+            "id": "NeverTypeOfError",
+            "fullDescription": {
+              "text": "Reported when a value was found to be of a certain reference type: For example, a character array containing a password should never be converted from a String"
+            }
+          },
+          "IncompleteOperationError-2": {
+            "id": "IncompleteOperationError",
+            "fullDescription": {
+              "text": "The usage of an object may be incomplete: For example a Cipherobject may be initialized but never used for en- or decryption, this may render the code dead. This error heavily depends on the computed call graph (CHA by default)"
+            }
+          },
+          "NeverTypeOfError-3": {
+            "id": "NeverTypeOfError",
+            "fullDescription": {
+              "text": "Reported when a value was found to be of a certain reference type: For example, a character array containing a password should never be converted from a String"
+            }
+          },
+          "NeverTypeOfError": {
+            "id": "NeverTypeOfError",
+            "fullDescription": {
+              "text": "Reported when a value was found to be of a certain reference type: For example, a character array containing a password should never be converted from a String"
+            }
+          },
+          "RequiredPredicateError-8": {
+            "id": "RequiredPredicateError",
+            "fullDescription": {
+              "text": "An object A expects an object B to have been used correctly (CrySL blocks REQUIRES and ENSURES). For example a Cipher object requires a SecretKey object to be correctly and securely generated."
+            }
+          },
+          "RequiredPredicateError-7": {
+            "id": "RequiredPredicateError",
+            "fullDescription": {
+              "text": "An object A expects an object B to have been used correctly (CrySL blocks REQUIRES and ENSURES). For example a Cipher object requires a SecretKey object to be correctly and securely generated."
+            }
+          },
+          "TypestateError": {
+            "id": "TypestateError",
+            "fullDescription": {
+              "text": "The ORDER block of CrySL is violated, i.e., the expected method sequence call to be made is incorrect. For example, a Signature object expects a call to initSign(key) prior to update(data)."
+            }
+          },
+          "RequiredPredicateError-6": {
+            "id": "RequiredPredicateError",
+            "fullDescription": {
+              "text": "An object A expects an object B to have been used correctly (CrySL blocks REQUIRES and ENSURES). For example a Cipher object requires a SecretKey object to be correctly and securely generated."
+            }
+          },
+          "RequiredPredicateError-5": {
+            "id": "RequiredPredicateError",
+            "fullDescription": {
+              "text": "An object A expects an object B to have been used correctly (CrySL blocks REQUIRES and ENSURES). For example a Cipher object requires a SecretKey object to be correctly and securely generated."
+            }
+          },
+          "RequiredPredicateError-4": {
+            "id": "RequiredPredicateError",
+            "fullDescription": {
+              "text": "An object A expects an object B to have been used correctly (CrySL blocks REQUIRES and ENSURES). For example a Cipher object requires a SecretKey object to be correctly and securely generated."
+            }
+          },
+          "RequiredPredicateError-3": {
+            "id": "RequiredPredicateError",
+            "fullDescription": {
+              "text": "An object A expects an object B to have been used correctly (CrySL blocks REQUIRES and ENSURES). For example a Cipher object requires a SecretKey object to be correctly and securely generated."
+            }
+          },
+          "ConstraintError": {
+            "id": "ConstraintError",
+            "fullDescription": {
+              "text": "A constraint of a CrySL rule is violated, e.g., a key is generated with the wrong key size."
+            }
+          },
+          "RequiredPredicateError-2": {
+            "id": "RequiredPredicateError",
+            "fullDescription": {
+              "text": "An object A expects an object B to have been used correctly (CrySL blocks REQUIRES and ENSURES). For example a Cipher object requires a SecretKey object to be correctly and securely generated."
+            }
+          },
+          "RequiredPredicateError-1": {
+            "id": "RequiredPredicateError",
+            "fullDescription": {
+              "text": "An object A expects an object B to have been used correctly (CrySL blocks REQUIRES and ENSURES). For example a Cipher object requires a SecretKey object to be correctly and securely generated."
+            }
+          }
+        }
+      },
+      "results": [
+        {
+          "locations": [
+            {
+              "physicalLocation": {
+                "fileLocation": {
+                  "uri": "com.wa2c.android.cifsdocumentsprovider.domain.model.CifsConnectionKt.java",
+                  "externalLibrary": true
+                },
+                "region": {
+                  "startLine": 156
+                }
+              },
+              "fullyQualifiedLogicalName": "com::wa2c::android::cifsdocumentsprovider::domain::model::CifsConnectionKt::decrypt"
+            }
+          ],
+          "ruleId": "RequiredPredicateError",
+          "message": {
+            "text": "First parameter was not properly generated as prepared Key Material.",
+            "richText": "RequiredPredicateError violating CrySL rule for javax.crypto.spec.SecretKeySpec."
+          }
+        },
+        {
+          "locations": [
+            {
+              "physicalLocation": {
+                "fileLocation": {
+                  "uri": "com.wa2c.android.cifsdocumentsprovider.domain.model.CifsConnectionKt.java",
+                  "externalLibrary": true
+                },
+                "region": {
+                  "startLine": 156
+                }
+              },
+              "fullyQualifiedLogicalName": "com::wa2c::android::cifsdocumentsprovider::domain::model::CifsConnectionKt::decrypt"
+            }
+          ],
+          "ruleId": "NeverTypeOfError",
+          "message": {
+            "text": "First parameter should never be of type java.lang.String..",
+            "richText": "NeverTypeOfError violating CrySL rule for javax.crypto.spec.SecretKeySpec."
+          }
+        },
+        {
+          "locations": [
+            {
+              "physicalLocation": {
+                "fileLocation": {
+                  "uri": "com.wa2c.android.cifsdocumentsprovider.domain.model.CifsConnectionKt.java",
+                  "externalLibrary": true
+                },
+                "region": {
+                  "startLine": 159
+                }
+              },
+              "fullyQualifiedLogicalName": "com::wa2c::android::cifsdocumentsprovider::domain::model::CifsConnectionKt::decrypt"
+            }
+          ],
+          "ruleId": "TypestateError",
+          "message": {
+            "text": "Unexpected call to method doFinal on object of type javax.crypto.Cipher. Expect a call to one of the following methods init,updateAAD.",
+            "richText": "TypestateError violating CrySL rule for javax.crypto.Cipher."
+          }
+        },
+        {
+          "locations": [
+            {
+              "physicalLocation": {
+                "fileLocation": {
+                  "uri": "com.wa2c.android.cifsdocumentsprovider.domain.model.CifsConnectionKt.java",
+                  "externalLibrary": true
+                },
+                "region": {
+                  "startLine": 158
+                }
+              },
+              "fullyQualifiedLogicalName": "com::wa2c::android::cifsdocumentsprovider::domain::model::CifsConnectionKt::decrypt"
+            }
+          ],
+          "ruleId": "RequiredPredicateError-1",
+          "message": {
+            "text": "Second parameter was not properly generated as generated Key.",
+            "richText": "RequiredPredicateError violating CrySL rule for javax.crypto.Cipher."
+          }
+        },
+        {
+          "locations": [
+            {
+              "physicalLocation": {
+                "fileLocation": {
+                  "uri": "com.wa2c.android.cifsdocumentsprovider.domain.model.CifsConnectionKt.java",
+                  "externalLibrary": true
+                },
+                "region": {
+                  "startLine": 157
+                }
+              },
+              "fullyQualifiedLogicalName": "com::wa2c::android::cifsdocumentsprovider::domain::model::CifsConnectionKt::decrypt"
+            }
+          ],
+          "ruleId": "ConstraintError",
+          "message": {
+            "text": "First parameter (with value \"AES\") should be any of AES/{CBC, GCM, PCBC, CTR, CTS, CFB, OFB}.",
+            "richText": "ConstraintError violating CrySL rule for javax.crypto.Cipher."
+          }
+        },
+        {
+          "locations": [
+            {
+              "physicalLocation": {
+                "fileLocation": {
+                  "uri": "com.wa2c.android.cifsdocumentsprovider.domain.model.CifsConnectionKt.java",
+                  "externalLibrary": true
+                },
+                "region": {
+                  "startLine": 143
+                }
+              },
+              "fullyQualifiedLogicalName": "com::wa2c::android::cifsdocumentsprovider::domain::model::CifsConnectionKt::encrypt"
+            }
+          ],
+          "ruleId": "ConstraintError-1",
+          "message": {
+            "text": "First parameter (with value \"AES\") should be any of AES/{CBC, GCM, PCBC, CTR, CTS, CFB, OFB}.",
+            "richText": "ConstraintError violating CrySL rule for javax.crypto.Cipher."
+          }
+        },
+        {
+          "locations": [
+            {
+              "physicalLocation": {
+                "fileLocation": {
+                  "uri": "com.wa2c.android.cifsdocumentsprovider.domain.model.CifsConnectionKt.java",
+                  "externalLibrary": true
+                },
+                "region": {
+                  "startLine": 145
+                }
+              },
+              "fullyQualifiedLogicalName": "com::wa2c::android::cifsdocumentsprovider::domain::model::CifsConnectionKt::encrypt"
+            }
+          ],
+          "ruleId": "TypestateError-1",
+          "message": {
+            "text": "Unexpected call to method doFinal on object of type javax.crypto.Cipher. Expect a call to one of the following methods init,updateAAD.",
+            "richText": "TypestateError violating CrySL rule for javax.crypto.Cipher."
+          }
+        },
+        {
+          "locations": [
+            {
+              "physicalLocation": {
+                "fileLocation": {
+                  "uri": "com.wa2c.android.cifsdocumentsprovider.domain.model.CifsConnectionKt.java",
+                  "externalLibrary": true
+                },
+                "region": {
+                  "startLine": 144
+                }
+              },
+              "fullyQualifiedLogicalName": "com::wa2c::android::cifsdocumentsprovider::domain::model::CifsConnectionKt::encrypt"
+            }
+          ],
+          "ruleId": "RequiredPredicateError-2",
+          "message": {
+            "text": "Second parameter was not properly generated as generated Key.",
+            "richText": "RequiredPredicateError violating CrySL rule for javax.crypto.Cipher."
+          }
+        },
+        {
+          "locations": [
+            {
+              "physicalLocation": {
+                "fileLocation": {
+                  "uri": "com.wa2c.android.cifsdocumentsprovider.domain.model.CifsConnectionKt.java",
+                  "externalLibrary": true
+                },
+                "region": {
+                  "startLine": 142
+                }
+              },
+              "fullyQualifiedLogicalName": "com::wa2c::android::cifsdocumentsprovider::domain::model::CifsConnectionKt::encrypt"
+            }
+          ],
+          "ruleId": "RequiredPredicateError-3",
+          "message": {
+            "text": "First parameter was not properly generated as prepared Key Material.",
+            "richText": "RequiredPredicateError violating CrySL rule for javax.crypto.spec.SecretKeySpec."
+          }
+        },
+        {
+          "locations": [
+            {
+              "physicalLocation": {
+                "fileLocation": {
+                  "uri": "com.wa2c.android.cifsdocumentsprovider.domain.model.CifsConnectionKt.java",
+                  "externalLibrary": true
+                },
+                "region": {
+                  "startLine": 142
+                }
+              },
+              "fullyQualifiedLogicalName": "com::wa2c::android::cifsdocumentsprovider::domain::model::CifsConnectionKt::encrypt"
+            }
+          ],
+          "ruleId": "NeverTypeOfError-1",
+          "message": {
+            "text": "First parameter should never be of type java.lang.String..",
+            "richText": "NeverTypeOfError violating CrySL rule for javax.crypto.spec.SecretKeySpec."
+          }
+        },
+        {
+          "locations": [
+            {
+              "physicalLocation": {
+                "fileLocation": {
+                  "uri": "org.bouncycastle.x509.AttributeCertificateHolder.java"
+                },
+                "region": {
+                  "startLine": -1
+                }
+              },
+              "fullyQualifiedLogicalName": "org::bouncycastle::x509::AttributeCertificateHolder::match"
+            }
+          ],
+          "ruleId": "TypestateError-2",
+          "message": {
+            "text": "Unexpected call to method <java.security.MessageDigest: byte[] digest()> on object of type java.security.MessageDigest. Expect a call to one of the following methods java.security.MessageDigest: void update(byte[],int,int),java.security.MessageDigest: void update(java.nio.ByteBuffer),java.security.MessageDigest: byte[] digest(byte[]),java.security.MessageDigest: void update(byte),java.security.MessageDigest: void update(byte[]).",
+            "richText": "TypestateError violating CrySL rule for java.security.MessageDigest."
+          }
+        },
+        {
+          "locations": [
+            {
+              "physicalLocation": {
+                "fileLocation": {
+                  "uri": "jcifs.util.Crypto.java"
+                },
+                "region": {
+                  "startLine": 132
+                }
+              },
+              "fullyQualifiedLogicalName": "jcifs::util::Crypto::getDES"
+            }
+          ],
+          "ruleId": "RequiredPredicateError-4",
+          "message": {
+            "text": "First parameter was not properly generated as prepared Key Material.",
+            "richText": "RequiredPredicateError violating CrySL rule for javax.crypto.spec.SecretKeySpec."
+          }
+        },
+        {
+          "locations": [
+            {
+              "physicalLocation": {
+                "fileLocation": {
+                  "uri": "jcifs.util.Crypto.java"
+                },
+                "region": {
+                  "startLine": 131
+                }
+              },
+              "fullyQualifiedLogicalName": "jcifs::util::Crypto::getDES"
+            }
+          ],
+          "ruleId": "ConstraintError-2",
+          "message": {
+            "text": "First parameter (with value \"DES/ECB/NoPadding\") should be any of {AES, PBEWithHmacSHA224AndAES_128, PBEWithHmacSHA256AndAES_128, PBEWithHmacSHA384AndAES_128, PBEWithHmacSHA512AndAES_128, PBEWithHmacSHA224AndAES_256, PBEWithHmacSHA256AndAES_256, PBEWithHmacSHA384AndAES_256, PBEWithHmacSHA512AndAES_256}.",
+            "richText": "ConstraintError violating CrySL rule for javax.crypto.Cipher."
+          }
+        },
+        {
+          "locations": [
+            {
+              "physicalLocation": {
+                "fileLocation": {
+                  "uri": "jcifs.util.Crypto.java"
+                },
+                "region": {
+                  "startLine": 132
+                }
+              },
+              "fullyQualifiedLogicalName": "jcifs::util::Crypto::getDES"
+            }
+          ],
+          "ruleId": "RequiredPredicateError-5",
+          "message": {
+            "text": "Second parameter was not properly generated as generated Key.",
+            "richText": "RequiredPredicateError violating CrySL rule for javax.crypto.Cipher."
+          }
+        },
+        {
+          "locations": [
+            {
+              "physicalLocation": {
+                "fileLocation": {
+                  "uri": "jcifs.util.Crypto.java"
+                },
+                "region": {
+                  "startLine": 132
+                }
+              },
+              "fullyQualifiedLogicalName": "jcifs::util::Crypto::getDES"
+            }
+          ],
+          "ruleId": "ConstraintError-3",
+          "message": {
+            "text": "Second parameter (with value \"DES\") should be any of {AES, HmacSHA224, HmacSHA256, HmacSHA384, HmacSHA512}.",
+            "richText": "ConstraintError violating CrySL rule for javax.crypto.spec.SecretKeySpec."
+          }
+        },
+        {
+          "locations": [
+            {
+              "physicalLocation": {
+                "fileLocation": {
+                  "uri": "jcifs.util.Crypto.java"
+                },
+                "region": {
+                  "startLine": 55
+                }
+              },
+              "fullyQualifiedLogicalName": "jcifs::util::Crypto::getMD4"
+            }
+          ],
+          "ruleId": "ConstraintError-4",
+          "message": {
+            "text": "First parameter (with value \"MD4\") should be any of {SHA-256, SHA-384, SHA-512}.",
+            "richText": "ConstraintError violating CrySL rule for java.security.MessageDigest."
+          }
+        },
+        {
+          "locations": [
+            {
+              "physicalLocation": {
+                "fileLocation": {
+                  "uri": "jcifs.util.Crypto.java"
+                },
+                "region": {
+                  "startLine": 69
+                }
+              },
+              "fullyQualifiedLogicalName": "jcifs::util::Crypto::getMD5"
+            }
+          ],
+          "ruleId": "ConstraintError-5",
+          "message": {
+            "text": "First parameter (with value \"MD5\") should be any of {SHA-256, SHA-384, SHA-512}.",
+            "richText": "ConstraintError violating CrySL rule for java.security.MessageDigest."
+          }
+        },
+        {
+          "locations": [
+            {
+              "physicalLocation": {
+                "fileLocation": {
+                  "uri": "jcifs.util.Crypto.java"
+                },
+                "region": {
+                  "startLine": 108
+                }
+              },
+              "fullyQualifiedLogicalName": "jcifs::util::Crypto::getArcfour"
+            }
+          ],
+          "ruleId": "ConstraintError-6",
+          "message": {
+            "text": "Second parameter (with value \"RC4\") should be any of {AES, HmacSHA224, HmacSHA256, HmacSHA384, HmacSHA512}.",
+            "richText": "ConstraintError violating CrySL rule for javax.crypto.spec.SecretKeySpec."
+          }
+        },
+        {
+          "locations": [
+            {
+              "physicalLocation": {
+                "fileLocation": {
+                  "uri": "jcifs.util.Crypto.java"
+                },
+                "region": {
+                  "startLine": 108
+                }
+              },
+              "fullyQualifiedLogicalName": "jcifs::util::Crypto::getArcfour"
+            }
+          ],
+          "ruleId": "RequiredPredicateError-6",
+          "message": {
+            "text": "First parameter was not properly generated as prepared Key Material.",
+            "richText": "RequiredPredicateError violating CrySL rule for javax.crypto.spec.SecretKeySpec."
+          }
+        },
+        {
+          "locations": [
+            {
+              "physicalLocation": {
+                "fileLocation": {
+                  "uri": "jcifs.util.Crypto.java"
+                },
+                "region": {
+                  "startLine": 108
+                }
+              },
+              "fullyQualifiedLogicalName": "jcifs::util::Crypto::getArcfour"
+            }
+          ],
+          "ruleId": "RequiredPredicateError-7",
+          "message": {
+            "text": "Second parameter was not properly generated as generated Key.",
+            "richText": "RequiredPredicateError violating CrySL rule for javax.crypto.Cipher."
+          }
+        },
+        {
+          "locations": [
+            {
+              "physicalLocation": {
+                "fileLocation": {
+                  "uri": "jcifs.util.Crypto.java"
+                },
+                "region": {
+                  "startLine": 107
+                }
+              },
+              "fullyQualifiedLogicalName": "jcifs::util::Crypto::getArcfour"
+            }
+          ],
+          "ruleId": "ConstraintError-7",
+          "message": {
+            "text": "First parameter (with value \"RC4\") should be any of {AES, PBEWithHmacSHA224AndAES_128, PBEWithHmacSHA256AndAES_128, PBEWithHmacSHA384AndAES_128, PBEWithHmacSHA512AndAES_128, PBEWithHmacSHA224AndAES_256, PBEWithHmacSHA256AndAES_256, PBEWithHmacSHA384AndAES_256, PBEWithHmacSHA512AndAES_256}.",
+            "richText": "ConstraintError violating CrySL rule for javax.crypto.Cipher."
+          }
+        },
+        {
+          "locations": [
+            {
+              "physicalLocation": {
+                "fileLocation": {
+                  "uri": "jcifs.smb.NtlmUtil.java"
+                },
+                "region": {
+                  "startLine": 303
+                }
+              },
+              "fullyQualifiedLogicalName": "jcifs::smb::NtlmUtil::E"
+            }
+          ],
+          "ruleId": "TypestateError-3",
+          "message": {
+            "text": "Unexpected call to method update on object of type javax.crypto.Cipher. Expect a call to one of the following methods init,updateAAD.",
+            "richText": "TypestateError violating CrySL rule for javax.crypto.Cipher."
+          }
+        },
+        {
+          "locations": [
+            {
+              "physicalLocation": {
+                "fileLocation": {
+                  "uri": "jcifs.internal.smb2.Smb2SigningDigest.java"
+                },
+                "region": {
+                  "startLine": 74
+                }
+              },
+              "fullyQualifiedLogicalName": "jcifs::internal::smb2::Smb2SigningDigest::<init>"
+            }
+          ],
+          "ruleId": "ConstraintError-8",
+          "message": {
+            "text": "First parameter (with value \"AESCMAC\") should be any of {HmacSHA256, HmacSHA384, HmacSHA512, HmacPBESHA1, PBEWithHmacSHA1, PBEWithHmacSHA224, PBEWithHmacSHA256, PBEWithHmacSHA384, PBEWithHmacSHA512}.",
+            "richText": "ConstraintError violating CrySL rule for javax.crypto.Mac."
+          }
+        },
+        {
+          "locations": [
+            {
+              "physicalLocation": {
+                "fileLocation": {
+                  "uri": "jcifs.internal.smb2.Smb2SigningDigest.java"
+                },
+                "region": {
+                  "startLine": 87
+                }
+              },
+              "fullyQualifiedLogicalName": "jcifs::internal::smb2::Smb2SigningDigest::<init>"
+            }
+          ],
+          "ruleId": "ConstraintError-9",
+          "message": {
+            "text": "Second parameter (with value \"HMAC\") should be any of {AES, HmacSHA224, HmacSHA256, HmacSHA384, HmacSHA512}.",
+            "richText": "ConstraintError violating CrySL rule for javax.crypto.spec.SecretKeySpec."
+          }
+        },
+        {
+          "locations": [
+            {
+              "physicalLocation": {
+                "fileLocation": {
+                  "uri": "jcifs.internal.smb2.Smb2SigningDigest.java"
+                },
+                "region": {
+                  "startLine": 87
+                }
+              },
+              "fullyQualifiedLogicalName": "jcifs::internal::smb2::Smb2SigningDigest::<init>"
+            }
+          ],
+          "ruleId": "RequiredPredicateError-8",
+          "message": {
+            "text": "First parameter was not properly generated as prepared Key Material.",
+            "richText": "RequiredPredicateError violating CrySL rule for javax.crypto.spec.SecretKeySpec."
+          }
+        },
+        {
+          "locations": [
+            {
+              "physicalLocation": {
+                "fileLocation": {
+                  "uri": "jcifs.internal.smb2.Smb2SigningDigest.java"
+                },
+                "region": {
+                  "startLine": 87
+                }
+              },
+              "fullyQualifiedLogicalName": "jcifs::internal::smb2::Smb2SigningDigest::<init>"
+            }
+          ],
+          "ruleId": "IncompleteOperationError",
+          "message": {
+            "text": "Operation on object of type javax.crypto.Mac object not completed. Expected call to update, doFinal.",
+            "richText": "IncompleteOperationError violating CrySL rule for javax.crypto.Mac."
+          }
+        },
+        {
+          "locations": [
+            {
+              "physicalLocation": {
+                "fileLocation": {
+                  "uri": "jcifs.internal.smb2.Smb2SigningDigest.java"
+                },
+                "region": {
+                  "startLine": 87
+                }
+              },
+              "fullyQualifiedLogicalName": "jcifs::internal::smb2::Smb2SigningDigest::<init>"
+            }
+          ],
+          "ruleId": "IncompleteOperationError-1",
+          "message": {
+            "text": "Operation on object of type javax.crypto.Mac object not completed. Expected call to update, doFinal.",
+            "richText": "IncompleteOperationError violating CrySL rule for javax.crypto.Mac."
+          }
+        },
+        {
+          "locations": [
+            {
+              "physicalLocation": {
+                "fileLocation": {
+                  "uri": "jcifs.internal.smb2.Smb2SigningDigest.java"
+                },
+                "region": {
+                  "startLine": 87
+                }
+              },
+              "fullyQualifiedLogicalName": "jcifs::internal::smb2::Smb2SigningDigest::<init>"
+            }
+          ],
+          "ruleId": "IncompleteOperationError-2",
+          "message": {
+            "text": "Operation on object of type javax.crypto.Mac object not completed. Expected call to update, doFinal.",
+            "richText": "IncompleteOperationError violating CrySL rule for javax.crypto.Mac."
+          }
+        },
+        {
+          "locations": [
+            {
+              "physicalLocation": {
+                "fileLocation": {
+                  "uri": "jcifs.internal.smb2.Smb2SigningDigest.java"
+                },
+                "region": {
+                  "startLine": 87
+                }
+              },
+              "fullyQualifiedLogicalName": "jcifs::internal::smb2::Smb2SigningDigest::<init>"
+            }
+          ],
+          "ruleId": "NeverTypeOfError-2",
+          "message": {
+            "text": "First parameter should never be of type java.lang.String..",
+            "richText": "NeverTypeOfError violating CrySL rule for javax.crypto.spec.SecretKeySpec."
+          }
+        },
+        {
+          "locations": [
+            {
+              "physicalLocation": {
+                "fileLocation": {
+                  "uri": "jcifs.internal.smb2.Smb2SigningDigest.java"
+                },
+                "region": {
+                  "startLine": 87
+                }
+              },
+              "fullyQualifiedLogicalName": "jcifs::internal::smb2::Smb2SigningDigest::<init>"
+            }
+          ],
+          "ruleId": "NeverTypeOfError-3",
+          "message": {
+            "text": "First parameter should never be of type java.lang.String..",
+            "richText": "NeverTypeOfError violating CrySL rule for javax.crypto.spec.SecretKeySpec."
+          }
+        },
+        {
+          "locations": [
+            {
+              "physicalLocation": {
+                "fileLocation": {
+                  "uri": "jcifs.ntlmssp.Type3Message.java"
+                },
+                "region": {
+                  "startLine": 301
+                }
+              },
+              "fullyQualifiedLogicalName": "jcifs::ntlmssp::Type3Message::<init>"
+            }
+          ],
+          "ruleId": "TypestateError-4",
+          "message": {
+            "text": "Unexpected call to method update on object of type javax.crypto.Cipher. Expect a call to one of the following methods init,updateAAD.",
+            "richText": "TypestateError violating CrySL rule for javax.crypto.Cipher."
+          }
+        },
+        {
+          "locations": [
+            {
+              "physicalLocation": {
+                "fileLocation": {
+                  "uri": "jcifs.ntlmssp.Type3Message.java"
+                },
+                "region": {
+                  "startLine": 243
+                }
+              },
+              "fullyQualifiedLogicalName": "jcifs::ntlmssp::Type3Message::<init>"
+            }
+          ],
+          "ruleId": "TypestateError-5",
+          "message": {
+            "text": "Unexpected call to method update on object of type javax.crypto.Cipher. Expect a call to one of the following methods init,updateAAD.",
+            "richText": "TypestateError violating CrySL rule for javax.crypto.Cipher."
+          }
+        }
+      ],
+      "tool": {
+        "name": "CryptoAnalysis",
+        "semanticVersion": null,
+        "language": "en-US",
+        "version": null
+      }
+    }
+  ]
+}

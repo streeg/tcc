@@ -1,0 +1,380 @@
+{
+  "sarifVersion": "2.0.0",
+  "runs": [
+    {
+      "files": {
+        "dk/kjeldsen/carwingsflutter/g.java": {
+          "mimeType": "text/java"
+        },
+        "c/F.java": {
+          "mimeType": "text/java"
+        },
+        "c/a/f/b.java": {
+          "mimeType": "text/java"
+        },
+        "c/a/e.java": {
+          "mimeType": "text/java"
+        },
+        "c/a/f/f.java": {
+          "mimeType": "text/java"
+        },
+        "c/a/f/c.java": {
+          "mimeType": "text/java"
+        },
+        "d/h.java": {
+          "mimeType": "text/java"
+        }
+      },
+      "resources": {
+        "rules": {
+          "ConstraintError-1": {
+            "id": "ConstraintError",
+            "fullDescription": {
+              "text": "A constraint of a CrySL rule is violated, e.g., a key is generated with the wrong key size."
+            }
+          },
+          "ConstraintError-2": {
+            "id": "ConstraintError",
+            "fullDescription": {
+              "text": "A constraint of a CrySL rule is violated, e.g., a key is generated with the wrong key size."
+            }
+          },
+          "ConstraintError-3": {
+            "id": "ConstraintError",
+            "fullDescription": {
+              "text": "A constraint of a CrySL rule is violated, e.g., a key is generated with the wrong key size."
+            }
+          },
+          "ConstraintError-4": {
+            "id": "ConstraintError",
+            "fullDescription": {
+              "text": "A constraint of a CrySL rule is violated, e.g., a key is generated with the wrong key size."
+            }
+          },
+          "ConstraintError-5": {
+            "id": "ConstraintError",
+            "fullDescription": {
+              "text": "A constraint of a CrySL rule is violated, e.g., a key is generated with the wrong key size."
+            }
+          },
+          "RequiredPredicateError": {
+            "id": "RequiredPredicateError",
+            "fullDescription": {
+              "text": "An object A expects an object B to have been used correctly (CrySL blocks REQUIRES and ENSURES). For example a Cipher object requires a SecretKey object to be correctly and securely generated."
+            }
+          },
+          "TypestateError": {
+            "id": "TypestateError",
+            "fullDescription": {
+              "text": "The ORDER block of CrySL is violated, i.e., the expected method sequence call to be made is incorrect. For example, a Signature object expects a call to initSign(key) prior to update(data)."
+            }
+          },
+          "RequiredPredicateError-5": {
+            "id": "RequiredPredicateError",
+            "fullDescription": {
+              "text": "An object A expects an object B to have been used correctly (CrySL blocks REQUIRES and ENSURES). For example a Cipher object requires a SecretKey object to be correctly and securely generated."
+            }
+          },
+          "RequiredPredicateError-4": {
+            "id": "RequiredPredicateError",
+            "fullDescription": {
+              "text": "An object A expects an object B to have been used correctly (CrySL blocks REQUIRES and ENSURES). For example a Cipher object requires a SecretKey object to be correctly and securely generated."
+            }
+          },
+          "RequiredPredicateError-3": {
+            "id": "RequiredPredicateError",
+            "fullDescription": {
+              "text": "An object A expects an object B to have been used correctly (CrySL blocks REQUIRES and ENSURES). For example a Cipher object requires a SecretKey object to be correctly and securely generated."
+            }
+          },
+          "ConstraintError": {
+            "id": "ConstraintError",
+            "fullDescription": {
+              "text": "A constraint of a CrySL rule is violated, e.g., a key is generated with the wrong key size."
+            }
+          },
+          "RequiredPredicateError-2": {
+            "id": "RequiredPredicateError",
+            "fullDescription": {
+              "text": "An object A expects an object B to have been used correctly (CrySL blocks REQUIRES and ENSURES). For example a Cipher object requires a SecretKey object to be correctly and securely generated."
+            }
+          },
+          "RequiredPredicateError-1": {
+            "id": "RequiredPredicateError",
+            "fullDescription": {
+              "text": "An object A expects an object B to have been used correctly (CrySL blocks REQUIRES and ENSURES). For example a Cipher object requires a SecretKey object to be correctly and securely generated."
+            }
+          }
+        }
+      },
+      "results": [
+        {
+          "locations": [
+            {
+              "physicalLocation": {
+                "fileLocation": {
+                  "uri": "dk.kjeldsen.carwingsflutter.g.java"
+                },
+                "region": {
+                  "startLine": 59
+                }
+              },
+              "fullyQualifiedLogicalName": "dk::kjeldsen::carwingsflutter::g::a"
+            }
+          ],
+          "ruleId": "ConstraintError",
+          "message": {
+            "text": "First parameter (with value \"Blowfish\") should be any of {AES, PBEWithHmacSHA224AndAES_128, PBEWithHmacSHA256AndAES_128, PBEWithHmacSHA384AndAES_128, PBEWithHmacSHA512AndAES_128, PBEWithHmacSHA224AndAES_256, PBEWithHmacSHA256AndAES_256, PBEWithHmacSHA384AndAES_256, PBEWithHmacSHA512AndAES_256}.",
+            "richText": "ConstraintError violating CrySL rule for javax.crypto.Cipher."
+          }
+        },
+        {
+          "locations": [
+            {
+              "physicalLocation": {
+                "fileLocation": {
+                  "uri": "dk.kjeldsen.carwingsflutter.g.java"
+                },
+                "region": {
+                  "startLine": 58
+                }
+              },
+              "fullyQualifiedLogicalName": "dk::kjeldsen::carwingsflutter::g::a"
+            }
+          ],
+          "ruleId": "RequiredPredicateError",
+          "message": {
+            "text": "First parameter was not properly generated as prepared Key Material.",
+            "richText": "RequiredPredicateError violating CrySL rule for javax.crypto.spec.SecretKeySpec."
+          }
+        },
+        {
+          "locations": [
+            {
+              "physicalLocation": {
+                "fileLocation": {
+                  "uri": "dk.kjeldsen.carwingsflutter.g.java"
+                },
+                "region": {
+                  "startLine": 61
+                }
+              },
+              "fullyQualifiedLogicalName": "dk::kjeldsen::carwingsflutter::g::a"
+            }
+          ],
+          "ruleId": "TypestateError",
+          "message": {
+            "text": "Unexpected call to method doFinal on object of type javax.crypto.Cipher. Expect a call to one of the following methods init,updateAAD.",
+            "richText": "TypestateError violating CrySL rule for javax.crypto.Cipher."
+          }
+        },
+        {
+          "locations": [
+            {
+              "physicalLocation": {
+                "fileLocation": {
+                  "uri": "dk.kjeldsen.carwingsflutter.g.java"
+                },
+                "region": {
+                  "startLine": 58
+                }
+              },
+              "fullyQualifiedLogicalName": "dk::kjeldsen::carwingsflutter::g::a"
+            }
+          ],
+          "ruleId": "ConstraintError-1",
+          "message": {
+            "text": "Second parameter (with value \"Blowfish\") should be any of {AES, HmacSHA224, HmacSHA256, HmacSHA384, HmacSHA512}.",
+            "richText": "ConstraintError violating CrySL rule for javax.crypto.spec.SecretKeySpec."
+          }
+        },
+        {
+          "locations": [
+            {
+              "physicalLocation": {
+                "fileLocation": {
+                  "uri": "dk.kjeldsen.carwingsflutter.g.java"
+                },
+                "region": {
+                  "startLine": 60
+                }
+              },
+              "fullyQualifiedLogicalName": "dk::kjeldsen::carwingsflutter::g::a"
+            }
+          ],
+          "ruleId": "RequiredPredicateError-1",
+          "message": {
+            "text": "Second parameter was not properly generated as generated Key.",
+            "richText": "RequiredPredicateError violating CrySL rule for javax.crypto.Cipher."
+          }
+        },
+        {
+          "locations": [
+            {
+              "physicalLocation": {
+                "fileLocation": {
+                  "uri": "c.a.f.f.java"
+                },
+                "region": {
+                  "startLine": 8
+                }
+              },
+              "fullyQualifiedLogicalName": "c::a::f::f::b"
+            }
+          ],
+          "ruleId": "ConstraintError-2",
+          "message": {
+            "text": "First parameter (with value \"TLS\") should be any of {TLSv1.2, TLSv1.3}.",
+            "richText": "ConstraintError violating CrySL rule for javax.net.ssl.SSLContext."
+          }
+        },
+        {
+          "locations": [
+            {
+              "physicalLocation": {
+                "fileLocation": {
+                  "uri": "c.a.f.b.java"
+                },
+                "region": {
+                  "startLine": 21
+                }
+              },
+              "fullyQualifiedLogicalName": "c::a::f::b::b"
+            }
+          ],
+          "ruleId": "ConstraintError-3",
+          "message": {
+            "text": "First parameter (with value \"TLS\") should be any of {TLSv1.2, TLSv1.3}.",
+            "richText": "ConstraintError violating CrySL rule for javax.net.ssl.SSLContext."
+          }
+        },
+        {
+          "locations": [
+            {
+              "physicalLocation": {
+                "fileLocation": {
+                  "uri": "c.a.f.c.java"
+                },
+                "region": {
+                  "startLine": 5
+                }
+              },
+              "fullyQualifiedLogicalName": "c::a::f::c::b"
+            }
+          ],
+          "ruleId": "ConstraintError-4",
+          "message": {
+            "text": "First parameter (with value \"TLS\") should be any of {TLSv1.2, TLSv1.3}.",
+            "richText": "ConstraintError violating CrySL rule for javax.net.ssl.SSLContext."
+          }
+        },
+        {
+          "locations": [
+            {
+              "physicalLocation": {
+                "fileLocation": {
+                  "uri": "d.h.java"
+                },
+                "region": {
+                  "startLine": 1
+                }
+              },
+              "fullyQualifiedLogicalName": "d::h::c"
+            }
+          ],
+          "ruleId": "ConstraintError-5",
+          "message": {
+            "text": "First parameter (with value \"SHA-1\") should be any of {SHA-256, SHA-384, SHA-512}.",
+            "richText": "ConstraintError violating CrySL rule for java.security.MessageDigest."
+          }
+        },
+        {
+          "locations": [
+            {
+              "physicalLocation": {
+                "fileLocation": {
+                  "uri": "c.F.java"
+                },
+                "region": {
+                  "startLine": 2
+                }
+              },
+              "fullyQualifiedLogicalName": "c::F::a"
+            }
+          ],
+          "ruleId": "RequiredPredicateError-2",
+          "message": {
+            "text": "Second parameter was not properly generated as generated Trust Managers.",
+            "richText": "RequiredPredicateError violating CrySL rule for javax.net.ssl.SSLContext."
+          }
+        },
+        {
+          "locations": [
+            {
+              "physicalLocation": {
+                "fileLocation": {
+                  "uri": "c.F.java"
+                },
+                "region": {
+                  "startLine": 2
+                }
+              },
+              "fullyQualifiedLogicalName": "c::F::a"
+            }
+          ],
+          "ruleId": "RequiredPredicateError-3",
+          "message": {
+            "text": "Third parameter was not properly generated as randomized.",
+            "richText": "RequiredPredicateError violating CrySL rule for javax.net.ssl.SSLContext."
+          }
+        },
+        {
+          "locations": [
+            {
+              "physicalLocation": {
+                "fileLocation": {
+                  "uri": "c.F.java"
+                },
+                "region": {
+                  "startLine": 2
+                }
+              },
+              "fullyQualifiedLogicalName": "c::F::a"
+            }
+          ],
+          "ruleId": "RequiredPredicateError-4",
+          "message": {
+            "text": "First parameter was not properly generated as generated Key Managers.",
+            "richText": "RequiredPredicateError violating CrySL rule for javax.net.ssl.SSLContext."
+          }
+        },
+        {
+          "locations": [
+            {
+              "physicalLocation": {
+                "fileLocation": {
+                  "uri": "c.a.e.java"
+                },
+                "region": {
+                  "startLine": 79
+                }
+              },
+              "fullyQualifiedLogicalName": "c::a::e::a"
+            }
+          ],
+          "ruleId": "RequiredPredicateError-5",
+          "message": {
+            "text": "First parameter was not properly generated as generated Key Store.",
+            "richText": "RequiredPredicateError violating CrySL rule for javax.net.ssl.TrustManagerFactory."
+          }
+        }
+      ],
+      "tool": {
+        "name": "CryptoAnalysis",
+        "semanticVersion": null,
+        "language": "en-US",
+        "version": null
+      }
+    }
+  ]
+}
