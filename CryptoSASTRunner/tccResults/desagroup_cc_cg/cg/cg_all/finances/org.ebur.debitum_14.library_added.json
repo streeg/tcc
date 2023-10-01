@@ -1,0 +1,50 @@
+{
+  "sarifVersion": "2.0.0",
+  "runs": [
+    {
+      "files": {
+        "org/ebur/debitum/util/ColorUtils.java": {
+          "mimeType": "text/java"
+        }
+      },
+      "resources": {
+        "rules": {
+          "ConstraintError": {
+            "id": "ConstraintError",
+            "fullDescription": {
+              "text": "A constraint of a CrySL rule is violated, e.g., a key is generated with the wrong key size."
+            }
+          }
+        }
+      },
+      "results": [
+        {
+          "locations": [
+            {
+              "physicalLocation": {
+                "fileLocation": {
+                  "uri": "org.ebur.debitum.util.ColorUtils.java"
+                },
+                "region": {
+                  "startLine": 58
+                }
+              },
+              "fullyQualifiedLogicalName": "org::ebur::debitum::util::ColorUtils::md5Hash"
+            }
+          ],
+          "ruleId": "ConstraintError",
+          "message": {
+            "text": "First parameter (with value \"MD5\") should be any of {SHA-256, SHA-384, SHA-512}.",
+            "richText": "ConstraintError violating CrySL rule for java.security.MessageDigest."
+          }
+        }
+      ],
+      "tool": {
+        "name": "CryptoAnalysis",
+        "semanticVersion": null,
+        "language": "en-US",
+        "version": null
+      }
+    }
+  ]
+}

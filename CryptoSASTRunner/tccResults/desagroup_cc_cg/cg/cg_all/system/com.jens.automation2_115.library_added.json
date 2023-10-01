@@ -1,0 +1,547 @@
+{
+  "sarifVersion": "2.0.0",
+  "runs": [
+    {
+      "files": {
+        "com/jens/automation2/MySSLSocketFactoryInsecure.java": {
+          "mimeType": "text/java"
+        },
+        "com/android/dx/dex/file/DexFile.java": {
+          "mimeType": "text/java"
+        },
+        "com/jens/automation2/AESCrypt.java": {
+          "mimeType": "text/java"
+        },
+        "com/jens/automation2/Actions.java": {
+          "mimeType": "text/java"
+        }
+      },
+      "resources": {
+        "rules": {
+          "TypestateError-1": {
+            "id": "TypestateError",
+            "fullDescription": {
+              "text": "The ORDER block of CrySL is violated, i.e., the expected method sequence call to be made is incorrect. For example, a Signature object expects a call to initSign(key) prior to update(data)."
+            }
+          },
+          "ConstraintError-1": {
+            "id": "ConstraintError",
+            "fullDescription": {
+              "text": "A constraint of a CrySL rule is violated, e.g., a key is generated with the wrong key size."
+            }
+          },
+          "ConstraintError-2": {
+            "id": "ConstraintError",
+            "fullDescription": {
+              "text": "A constraint of a CrySL rule is violated, e.g., a key is generated with the wrong key size."
+            }
+          },
+          "ConstraintError-3": {
+            "id": "ConstraintError",
+            "fullDescription": {
+              "text": "A constraint of a CrySL rule is violated, e.g., a key is generated with the wrong key size."
+            }
+          },
+          "ConstraintError-4": {
+            "id": "ConstraintError",
+            "fullDescription": {
+              "text": "A constraint of a CrySL rule is violated, e.g., a key is generated with the wrong key size."
+            }
+          },
+          "RequiredPredicateError-9": {
+            "id": "RequiredPredicateError",
+            "fullDescription": {
+              "text": "An object A expects an object B to have been used correctly (CrySL blocks REQUIRES and ENSURES). For example a Cipher object requires a SecretKey object to be correctly and securely generated."
+            }
+          },
+          "RequiredPredicateError": {
+            "id": "RequiredPredicateError",
+            "fullDescription": {
+              "text": "An object A expects an object B to have been used correctly (CrySL blocks REQUIRES and ENSURES). For example a Cipher object requires a SecretKey object to be correctly and securely generated."
+            }
+          },
+          "RequiredPredicateError-8": {
+            "id": "RequiredPredicateError",
+            "fullDescription": {
+              "text": "An object A expects an object B to have been used correctly (CrySL blocks REQUIRES and ENSURES). For example a Cipher object requires a SecretKey object to be correctly and securely generated."
+            }
+          },
+          "RequiredPredicateError-11": {
+            "id": "RequiredPredicateError",
+            "fullDescription": {
+              "text": "An object A expects an object B to have been used correctly (CrySL blocks REQUIRES and ENSURES). For example a Cipher object requires a SecretKey object to be correctly and securely generated."
+            }
+          },
+          "RequiredPredicateError-7": {
+            "id": "RequiredPredicateError",
+            "fullDescription": {
+              "text": "An object A expects an object B to have been used correctly (CrySL blocks REQUIRES and ENSURES). For example a Cipher object requires a SecretKey object to be correctly and securely generated."
+            }
+          },
+          "RequiredPredicateError-10": {
+            "id": "RequiredPredicateError",
+            "fullDescription": {
+              "text": "An object A expects an object B to have been used correctly (CrySL blocks REQUIRES and ENSURES). For example a Cipher object requires a SecretKey object to be correctly and securely generated."
+            }
+          },
+          "TypestateError": {
+            "id": "TypestateError",
+            "fullDescription": {
+              "text": "The ORDER block of CrySL is violated, i.e., the expected method sequence call to be made is incorrect. For example, a Signature object expects a call to initSign(key) prior to update(data)."
+            }
+          },
+          "RequiredPredicateError-6": {
+            "id": "RequiredPredicateError",
+            "fullDescription": {
+              "text": "An object A expects an object B to have been used correctly (CrySL blocks REQUIRES and ENSURES). For example a Cipher object requires a SecretKey object to be correctly and securely generated."
+            }
+          },
+          "RequiredPredicateError-5": {
+            "id": "RequiredPredicateError",
+            "fullDescription": {
+              "text": "An object A expects an object B to have been used correctly (CrySL blocks REQUIRES and ENSURES). For example a Cipher object requires a SecretKey object to be correctly and securely generated."
+            }
+          },
+          "RequiredPredicateError-4": {
+            "id": "RequiredPredicateError",
+            "fullDescription": {
+              "text": "An object A expects an object B to have been used correctly (CrySL blocks REQUIRES and ENSURES). For example a Cipher object requires a SecretKey object to be correctly and securely generated."
+            }
+          },
+          "RequiredPredicateError-3": {
+            "id": "RequiredPredicateError",
+            "fullDescription": {
+              "text": "An object A expects an object B to have been used correctly (CrySL blocks REQUIRES and ENSURES). For example a Cipher object requires a SecretKey object to be correctly and securely generated."
+            }
+          },
+          "ConstraintError": {
+            "id": "ConstraintError",
+            "fullDescription": {
+              "text": "A constraint of a CrySL rule is violated, e.g., a key is generated with the wrong key size."
+            }
+          },
+          "RequiredPredicateError-2": {
+            "id": "RequiredPredicateError",
+            "fullDescription": {
+              "text": "An object A expects an object B to have been used correctly (CrySL blocks REQUIRES and ENSURES). For example a Cipher object requires a SecretKey object to be correctly and securely generated."
+            }
+          },
+          "RequiredPredicateError-1": {
+            "id": "RequiredPredicateError",
+            "fullDescription": {
+              "text": "An object A expects an object B to have been used correctly (CrySL blocks REQUIRES and ENSURES). For example a Cipher object requires a SecretKey object to be correctly and securely generated."
+            }
+          }
+        }
+      },
+      "results": [
+        {
+          "locations": [
+            {
+              "physicalLocation": {
+                "fileLocation": {
+                  "uri": "com.jens.automation2.AESCrypt.java",
+                  "PossibleExternalLibrary": true
+                },
+                "region": {
+                  "startLine": 158
+                }
+              },
+              "fullyQualifiedLogicalName": "com::jens::automation2::AESCrypt::decrypt"
+            }
+          ],
+          "ruleId": "RequiredPredicateError",
+          "message": {
+            "text": "Second parameter was not properly generated as generated Key.",
+            "richText": "RequiredPredicateError violating CrySL rule for javax.crypto.Cipher."
+          }
+        },
+        {
+          "locations": [
+            {
+              "physicalLocation": {
+                "fileLocation": {
+                  "uri": "com.jens.automation2.AESCrypt.java",
+                  "PossibleExternalLibrary": true
+                },
+                "region": {
+                  "startLine": 159
+                }
+              },
+              "fullyQualifiedLogicalName": "com::jens::automation2::AESCrypt::decrypt"
+            }
+          ],
+          "ruleId": "TypestateError",
+          "message": {
+            "text": "Unexpected call to method doFinal on object of type javax.crypto.Cipher. Expect a call to one of the following methods init,updateAAD.",
+            "richText": "TypestateError violating CrySL rule for javax.crypto.Cipher."
+          }
+        },
+        {
+          "locations": [
+            {
+              "physicalLocation": {
+                "fileLocation": {
+                  "uri": "com.jens.automation2.AESCrypt.java",
+                  "PossibleExternalLibrary": true
+                },
+                "region": {
+                  "startLine": 156
+                }
+              },
+              "fullyQualifiedLogicalName": "com::jens::automation2::AESCrypt::decrypt"
+            }
+          ],
+          "ruleId": "ConstraintError",
+          "message": {
+            "text": "First parameter (with value \"AES/CBC/PKCS7Padding\") should be any of AES/CBC/{PKCS5Padding, ISO10126Padding}.",
+            "richText": "ConstraintError violating CrySL rule for javax.crypto.Cipher."
+          }
+        },
+        {
+          "locations": [
+            {
+              "physicalLocation": {
+                "fileLocation": {
+                  "uri": "com.jens.automation2.AESCrypt.java",
+                  "PossibleExternalLibrary": true
+                },
+                "region": {
+                  "startLine": 157
+                }
+              },
+              "fullyQualifiedLogicalName": "com::jens::automation2::AESCrypt::decrypt"
+            }
+          ],
+          "ruleId": "RequiredPredicateError-1",
+          "message": {
+            "text": "First parameter was not properly generated as randomized.",
+            "richText": "RequiredPredicateError violating CrySL rule for javax.crypto.spec.IvParameterSpec."
+          }
+        },
+        {
+          "locations": [
+            {
+              "physicalLocation": {
+                "fileLocation": {
+                  "uri": "com.jens.automation2.AESCrypt.java",
+                  "PossibleExternalLibrary": true
+                },
+                "region": {
+                  "startLine": 102
+                }
+              },
+              "fullyQualifiedLogicalName": "com::jens::automation2::AESCrypt::encrypt"
+            }
+          ],
+          "ruleId": "TypestateError-1",
+          "message": {
+            "text": "Unexpected call to method doFinal on object of type javax.crypto.Cipher. Expect a call to one of the following methods init,updateAAD.",
+            "richText": "TypestateError violating CrySL rule for javax.crypto.Cipher."
+          }
+        },
+        {
+          "locations": [
+            {
+              "physicalLocation": {
+                "fileLocation": {
+                  "uri": "com.jens.automation2.AESCrypt.java",
+                  "PossibleExternalLibrary": true
+                },
+                "region": {
+                  "startLine": 100
+                }
+              },
+              "fullyQualifiedLogicalName": "com::jens::automation2::AESCrypt::encrypt"
+            }
+          ],
+          "ruleId": "RequiredPredicateError-2",
+          "message": {
+            "text": "First parameter was not properly generated as randomized.",
+            "richText": "RequiredPredicateError violating CrySL rule for javax.crypto.spec.IvParameterSpec."
+          }
+        },
+        {
+          "locations": [
+            {
+              "physicalLocation": {
+                "fileLocation": {
+                  "uri": "com.jens.automation2.AESCrypt.java",
+                  "PossibleExternalLibrary": true
+                },
+                "region": {
+                  "startLine": 101
+                }
+              },
+              "fullyQualifiedLogicalName": "com::jens::automation2::AESCrypt::encrypt"
+            }
+          ],
+          "ruleId": "RequiredPredicateError-3",
+          "message": {
+            "text": "Third parameter was not properly generated as prepared I V.",
+            "richText": "RequiredPredicateError violating CrySL rule for javax.crypto.Cipher."
+          }
+        },
+        {
+          "locations": [
+            {
+              "physicalLocation": {
+                "fileLocation": {
+                  "uri": "com.jens.automation2.AESCrypt.java",
+                  "PossibleExternalLibrary": true
+                },
+                "region": {
+                  "startLine": 101
+                }
+              },
+              "fullyQualifiedLogicalName": "com::jens::automation2::AESCrypt::encrypt"
+            }
+          ],
+          "ruleId": "RequiredPredicateError-4",
+          "message": {
+            "text": "Second parameter was not properly generated as generated Key.",
+            "richText": "RequiredPredicateError violating CrySL rule for javax.crypto.Cipher."
+          }
+        },
+        {
+          "locations": [
+            {
+              "physicalLocation": {
+                "fileLocation": {
+                  "uri": "com.jens.automation2.AESCrypt.java",
+                  "PossibleExternalLibrary": true
+                },
+                "region": {
+                  "startLine": 99
+                }
+              },
+              "fullyQualifiedLogicalName": "com::jens::automation2::AESCrypt::encrypt"
+            }
+          ],
+          "ruleId": "ConstraintError-1",
+          "message": {
+            "text": "First parameter (with value \"AES/CBC/PKCS7Padding\") should be any of AES/CBC/{PKCS5Padding, ISO10126Padding}.",
+            "richText": "ConstraintError violating CrySL rule for javax.crypto.Cipher."
+          }
+        },
+        {
+          "locations": [
+            {
+              "physicalLocation": {
+                "fileLocation": {
+                  "uri": "com.jens.automation2.AESCrypt.java",
+                  "PossibleExternalLibrary": true
+                },
+                "region": {
+                  "startLine": 53
+                }
+              },
+              "fullyQualifiedLogicalName": "com::jens::automation2::AESCrypt::generateKey"
+            }
+          ],
+          "ruleId": "RequiredPredicateError-5",
+          "message": {
+            "text": "First parameter was not properly generated as prepared Key Material.",
+            "richText": "RequiredPredicateError violating CrySL rule for javax.crypto.spec.SecretKeySpec."
+          }
+        },
+        {
+          "locations": [
+            {
+              "physicalLocation": {
+                "fileLocation": {
+                  "uri": "com.jens.automation2.Actions.java",
+                  "PossibleExternalLibrary": true
+                },
+                "region": {
+                  "startLine": 859
+                }
+              },
+              "fullyQualifiedLogicalName": "com::jens::automation2::Actions::getInsecureSslClient"
+            }
+          ],
+          "ruleId": "RequiredPredicateError-6",
+          "message": {
+            "text": "Second parameter was not properly generated as generated Trust Managers.",
+            "richText": "RequiredPredicateError violating CrySL rule for javax.net.ssl.SSLContext."
+          }
+        },
+        {
+          "locations": [
+            {
+              "physicalLocation": {
+                "fileLocation": {
+                  "uri": "com.jens.automation2.Actions.java",
+                  "PossibleExternalLibrary": true
+                },
+                "region": {
+                  "startLine": 859
+                }
+              },
+              "fullyQualifiedLogicalName": "com::jens::automation2::Actions::getInsecureSslClient"
+            }
+          ],
+          "ruleId": "RequiredPredicateError-7",
+          "message": {
+            "text": "Third parameter was not properly generated as randomized.",
+            "richText": "RequiredPredicateError violating CrySL rule for javax.net.ssl.SSLContext."
+          }
+        },
+        {
+          "locations": [
+            {
+              "physicalLocation": {
+                "fileLocation": {
+                  "uri": "com.jens.automation2.Actions.java",
+                  "PossibleExternalLibrary": true
+                },
+                "region": {
+                  "startLine": 859
+                }
+              },
+              "fullyQualifiedLogicalName": "com::jens::automation2::Actions::getInsecureSslClient"
+            }
+          ],
+          "ruleId": "RequiredPredicateError-8",
+          "message": {
+            "text": "First parameter was not properly generated as generated Key Managers.",
+            "richText": "RequiredPredicateError violating CrySL rule for javax.net.ssl.SSLContext."
+          }
+        },
+        {
+          "locations": [
+            {
+              "physicalLocation": {
+                "fileLocation": {
+                  "uri": "com.jens.automation2.Actions.java",
+                  "PossibleExternalLibrary": true
+                },
+                "region": {
+                  "startLine": 831
+                }
+              },
+              "fullyQualifiedLogicalName": "com::jens::automation2::Actions::getInsecureSslClient"
+            }
+          ],
+          "ruleId": "ConstraintError-2",
+          "message": {
+            "text": "First parameter (with value \"TLS\") should be any of {TLSv1.2, TLSv1.3}.",
+            "richText": "ConstraintError violating CrySL rule for javax.net.ssl.SSLContext."
+          }
+        },
+        {
+          "locations": [
+            {
+              "physicalLocation": {
+                "fileLocation": {
+                  "uri": "com.jens.automation2.MySSLSocketFactoryInsecure.java",
+                  "PossibleExternalLibrary": true
+                },
+                "region": {
+                  "startLine": 43
+                }
+              },
+              "fullyQualifiedLogicalName": "com::jens::automation2::MySSLSocketFactoryInsecure::<init>"
+            }
+          ],
+          "ruleId": "RequiredPredicateError-9",
+          "message": {
+            "text": "Third parameter was not properly generated as randomized.",
+            "richText": "RequiredPredicateError violating CrySL rule for javax.net.ssl.SSLContext."
+          }
+        },
+        {
+          "locations": [
+            {
+              "physicalLocation": {
+                "fileLocation": {
+                  "uri": "com.jens.automation2.MySSLSocketFactoryInsecure.java",
+                  "PossibleExternalLibrary": true
+                },
+                "region": {
+                  "startLine": 43
+                }
+              },
+              "fullyQualifiedLogicalName": "com::jens::automation2::MySSLSocketFactoryInsecure::<init>"
+            }
+          ],
+          "ruleId": "RequiredPredicateError-10",
+          "message": {
+            "text": "First parameter was not properly generated as generated Key Managers.",
+            "richText": "RequiredPredicateError violating CrySL rule for javax.net.ssl.SSLContext."
+          }
+        },
+        {
+          "locations": [
+            {
+              "physicalLocation": {
+                "fileLocation": {
+                  "uri": "com.jens.automation2.MySSLSocketFactoryInsecure.java",
+                  "PossibleExternalLibrary": true
+                },
+                "region": {
+                  "startLine": 22
+                }
+              },
+              "fullyQualifiedLogicalName": "com::jens::automation2::MySSLSocketFactoryInsecure::<init>"
+            }
+          ],
+          "ruleId": "ConstraintError-3",
+          "message": {
+            "text": "First parameter (with value \"TLS\") should be any of {TLSv1.2, TLSv1.3}.",
+            "richText": "ConstraintError violating CrySL rule for javax.net.ssl.SSLContext."
+          }
+        },
+        {
+          "locations": [
+            {
+              "physicalLocation": {
+                "fileLocation": {
+                  "uri": "com.jens.automation2.MySSLSocketFactoryInsecure.java",
+                  "PossibleExternalLibrary": true
+                },
+                "region": {
+                  "startLine": 43
+                }
+              },
+              "fullyQualifiedLogicalName": "com::jens::automation2::MySSLSocketFactoryInsecure::<init>"
+            }
+          ],
+          "ruleId": "RequiredPredicateError-11",
+          "message": {
+            "text": "Second parameter was not properly generated as generated Trust Managers.",
+            "richText": "RequiredPredicateError violating CrySL rule for javax.net.ssl.SSLContext."
+          }
+        },
+        {
+          "locations": [
+            {
+              "physicalLocation": {
+                "fileLocation": {
+                  "uri": "com.android.dx.dex.file.DexFile.java",
+                  "externalLibrary": true,
+                  "PossibleExternalLibrary": true
+                },
+                "region": {
+                  "startLine": 768
+                }
+              },
+              "fullyQualifiedLogicalName": "com::android::dx::dex::file::DexFile::calcSignature"
+            }
+          ],
+          "ruleId": "ConstraintError-4",
+          "message": {
+            "text": "First parameter (with value \"SHA-1\") should be any of {SHA-256, SHA-384, SHA-512}.",
+            "richText": "ConstraintError violating CrySL rule for java.security.MessageDigest."
+          }
+        }
+      ],
+      "tool": {
+        "name": "CryptoAnalysis",
+        "semanticVersion": null,
+        "language": "en-US",
+        "version": null
+      }
+    }
+  ]
+}

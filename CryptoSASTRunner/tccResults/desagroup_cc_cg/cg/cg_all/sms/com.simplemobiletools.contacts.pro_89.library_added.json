@@ -1,0 +1,446 @@
+{
+  "sarifVersion": "2.0.0",
+  "runs": [
+    {
+      "files": {
+        "f1/a.java": {
+          "mimeType": "text/java"
+        },
+        "w1/r.java": {
+          "mimeType": "text/java"
+        },
+        "com/bumptech/glide/i.java": {
+          "mimeType": "text/java"
+        },
+        "com/bumptech/glide/load/engine/k$a.java": {
+          "mimeType": "text/java"
+        },
+        "z1/b.java": {
+          "mimeType": "text/java"
+        },
+        "z1/k.java": {
+          "mimeType": "text/java"
+        },
+        "com/simplemobiletools/commons/views/PinTab.java": {
+          "mimeType": "text/java"
+        },
+        "androidx/biometric/h.java": {
+          "mimeType": "text/java"
+        }
+      },
+      "resources": {
+        "rules": {
+          "ConstraintError-1": {
+            "id": "ConstraintError",
+            "fullDescription": {
+              "text": "A constraint of a CrySL rule is violated, e.g., a key is generated with the wrong key size."
+            }
+          },
+          "IncompleteOperationError-7": {
+            "id": "IncompleteOperationError",
+            "fullDescription": {
+              "text": "The usage of an object may be incomplete: For example a Cipherobject may be initialized but never used for en- or decryption, this may render the code dead. This error heavily depends on the computed call graph (CHA by default)"
+            }
+          },
+          "ConstraintError-2": {
+            "id": "ConstraintError",
+            "fullDescription": {
+              "text": "A constraint of a CrySL rule is violated, e.g., a key is generated with the wrong key size."
+            }
+          },
+          "IncompleteOperationError-6": {
+            "id": "IncompleteOperationError",
+            "fullDescription": {
+              "text": "The usage of an object may be incomplete: For example a Cipherobject may be initialized but never used for en- or decryption, this may render the code dead. This error heavily depends on the computed call graph (CHA by default)"
+            }
+          },
+          "ConstraintError-3": {
+            "id": "ConstraintError",
+            "fullDescription": {
+              "text": "A constraint of a CrySL rule is violated, e.g., a key is generated with the wrong key size."
+            }
+          },
+          "IncompleteOperationError-9": {
+            "id": "IncompleteOperationError",
+            "fullDescription": {
+              "text": "The usage of an object may be incomplete: For example a Cipherobject may be initialized but never used for en- or decryption, this may render the code dead. This error heavily depends on the computed call graph (CHA by default)"
+            }
+          },
+          "IncompleteOperationError-8": {
+            "id": "IncompleteOperationError",
+            "fullDescription": {
+              "text": "The usage of an object may be incomplete: For example a Cipherobject may be initialized but never used for en- or decryption, this may render the code dead. This error heavily depends on the computed call graph (CHA by default)"
+            }
+          },
+          "RequiredPredicateError": {
+            "id": "RequiredPredicateError",
+            "fullDescription": {
+              "text": "An object A expects an object B to have been used correctly (CrySL blocks REQUIRES and ENSURES). For example a Cipher object requires a SecretKey object to be correctly and securely generated."
+            }
+          },
+          "IncompleteOperationError": {
+            "id": "IncompleteOperationError",
+            "fullDescription": {
+              "text": "The usage of an object may be incomplete: For example a Cipherobject may be initialized but never used for en- or decryption, this may render the code dead. This error heavily depends on the computed call graph (CHA by default)"
+            }
+          },
+          "IncompleteOperationError-1": {
+            "id": "IncompleteOperationError",
+            "fullDescription": {
+              "text": "The usage of an object may be incomplete: For example a Cipherobject may be initialized but never used for en- or decryption, this may render the code dead. This error heavily depends on the computed call graph (CHA by default)"
+            }
+          },
+          "ConstraintError": {
+            "id": "ConstraintError",
+            "fullDescription": {
+              "text": "A constraint of a CrySL rule is violated, e.g., a key is generated with the wrong key size."
+            }
+          },
+          "IncompleteOperationError-3": {
+            "id": "IncompleteOperationError",
+            "fullDescription": {
+              "text": "The usage of an object may be incomplete: For example a Cipherobject may be initialized but never used for en- or decryption, this may render the code dead. This error heavily depends on the computed call graph (CHA by default)"
+            }
+          },
+          "IncompleteOperationError-2": {
+            "id": "IncompleteOperationError",
+            "fullDescription": {
+              "text": "The usage of an object may be incomplete: For example a Cipherobject may be initialized but never used for en- or decryption, this may render the code dead. This error heavily depends on the computed call graph (CHA by default)"
+            }
+          },
+          "IncompleteOperationError-5": {
+            "id": "IncompleteOperationError",
+            "fullDescription": {
+              "text": "The usage of an object may be incomplete: For example a Cipherobject may be initialized but never used for en- or decryption, this may render the code dead. This error heavily depends on the computed call graph (CHA by default)"
+            }
+          },
+          "IncompleteOperationError-4": {
+            "id": "IncompleteOperationError",
+            "fullDescription": {
+              "text": "The usage of an object may be incomplete: For example a Cipherobject may be initialized but never used for en- or decryption, this may render the code dead. This error heavily depends on the computed call graph (CHA by default)"
+            }
+          }
+        }
+      },
+      "results": [
+        {
+          "locations": [
+            {
+              "physicalLocation": {
+                "fileLocation": {
+                  "uri": "com.bumptech.glide.i.java",
+                  "PossibleExternalLibrary": true
+                },
+                "region": {
+                  "startLine": 8
+                }
+              },
+              "fullyQualifiedLogicalName": "com::bumptech::glide::i::r0"
+            }
+          ],
+          "ruleId": "IncompleteOperationError",
+          "message": {
+            "text": "Operation on object of type java.security.MessageDigest object not completed. Expected call to digest, update.",
+            "richText": "IncompleteOperationError violating CrySL rule for java.security.MessageDigest."
+          }
+        },
+        {
+          "locations": [
+            {
+              "physicalLocation": {
+                "fileLocation": {
+                  "uri": "com.bumptech.glide.i.java",
+                  "PossibleExternalLibrary": true
+                },
+                "region": {
+                  "startLine": 11
+                }
+              },
+              "fullyQualifiedLogicalName": "com::bumptech::glide::i::r0"
+            }
+          ],
+          "ruleId": "IncompleteOperationError-1",
+          "message": {
+            "text": "Operation on object of type java.security.MessageDigest object not completed. Expected call to digest, update.",
+            "richText": "IncompleteOperationError violating CrySL rule for java.security.MessageDigest."
+          }
+        },
+        {
+          "locations": [
+            {
+              "physicalLocation": {
+                "fileLocation": {
+                  "uri": "z1.b.java"
+                },
+                "region": {
+                  "startLine": 4
+                }
+              },
+              "fullyQualifiedLogicalName": "z1::b::e"
+            }
+          ],
+          "ruleId": "IncompleteOperationError-2",
+          "message": {
+            "text": "Operation on object of type java.security.MessageDigest object not completed. Expected call to digest, update.",
+            "richText": "IncompleteOperationError violating CrySL rule for java.security.MessageDigest."
+          }
+        },
+        {
+          "locations": [
+            {
+              "physicalLocation": {
+                "fileLocation": {
+                  "uri": "com.bumptech.glide.load.engine.k$a.java",
+                  "PossibleExternalLibrary": true
+                },
+                "region": {
+                  "startLine": 3
+                }
+              },
+              "fullyQualifiedLogicalName": "com::bumptech::glide::load::engine::k$a::run"
+            }
+          ],
+          "ruleId": "IncompleteOperationError-3",
+          "message": {
+            "text": "Operation on object of type java.security.MessageDigest object not completed. Expected call to digest, update.",
+            "richText": "IncompleteOperationError violating CrySL rule for java.security.MessageDigest."
+          }
+        },
+        {
+          "locations": [
+            {
+              "physicalLocation": {
+                "fileLocation": {
+                  "uri": "com.bumptech.glide.load.engine.k$a.java",
+                  "PossibleExternalLibrary": true
+                },
+                "region": {
+                  "startLine": 4
+                }
+              },
+              "fullyQualifiedLogicalName": "com::bumptech::glide::load::engine::k$a::run"
+            }
+          ],
+          "ruleId": "IncompleteOperationError-4",
+          "message": {
+            "text": "Operation on object of type java.security.MessageDigest object not completed. Expected call to digest, update.",
+            "richText": "IncompleteOperationError violating CrySL rule for java.security.MessageDigest."
+          }
+        },
+        {
+          "locations": [
+            {
+              "physicalLocation": {
+                "fileLocation": {
+                  "uri": "z1.k.java"
+                },
+                "region": {
+                  "startLine": 8
+                }
+              },
+              "fullyQualifiedLogicalName": "z1::k::e"
+            }
+          ],
+          "ruleId": "IncompleteOperationError-5",
+          "message": {
+            "text": "Operation on object of type java.security.MessageDigest object not completed. Expected call to digest, update.",
+            "richText": "IncompleteOperationError violating CrySL rule for java.security.MessageDigest."
+          }
+        },
+        {
+          "locations": [
+            {
+              "physicalLocation": {
+                "fileLocation": {
+                  "uri": "z1.k.java"
+                },
+                "region": {
+                  "startLine": 5
+                }
+              },
+              "fullyQualifiedLogicalName": "z1::k::e"
+            }
+          ],
+          "ruleId": "IncompleteOperationError-6",
+          "message": {
+            "text": "Operation on object of type java.security.MessageDigest object not completed. Expected call to digest, update.",
+            "richText": "IncompleteOperationError violating CrySL rule for java.security.MessageDigest."
+          }
+        },
+        {
+          "locations": [
+            {
+              "physicalLocation": {
+                "fileLocation": {
+                  "uri": "w1.r.java"
+                },
+                "region": {
+                  "startLine": 4
+                }
+              },
+              "fullyQualifiedLogicalName": "w1::r::f"
+            }
+          ],
+          "ruleId": "IncompleteOperationError-7",
+          "message": {
+            "text": "Operation on object of type java.security.MessageDigest object not completed. Expected call to digest, update.",
+            "richText": "IncompleteOperationError violating CrySL rule for java.security.MessageDigest."
+          }
+        },
+        {
+          "locations": [
+            {
+              "physicalLocation": {
+                "fileLocation": {
+                  "uri": "w1.r.java"
+                },
+                "region": {
+                  "startLine": 3
+                }
+              },
+              "fullyQualifiedLogicalName": "w1::r::f"
+            }
+          ],
+          "ruleId": "IncompleteOperationError-8",
+          "message": {
+            "text": "Operation on object of type java.security.MessageDigest object not completed. Expected call to digest, update.",
+            "richText": "IncompleteOperationError violating CrySL rule for java.security.MessageDigest."
+          }
+        },
+        {
+          "locations": [
+            {
+              "physicalLocation": {
+                "fileLocation": {
+                  "uri": "w1.r.java"
+                },
+                "region": {
+                  "startLine": 3
+                }
+              },
+              "fullyQualifiedLogicalName": "w1::r::f"
+            }
+          ],
+          "ruleId": "IncompleteOperationError-9",
+          "message": {
+            "text": "Operation on object of type java.security.MessageDigest object not completed. Expected call to digest, update.",
+            "richText": "IncompleteOperationError violating CrySL rule for java.security.MessageDigest."
+          }
+        },
+        {
+          "locations": [
+            {
+              "physicalLocation": {
+                "fileLocation": {
+                  "uri": "androidx.biometric.h.java",
+                  "externalLibrary": true,
+                  "PossibleExternalLibrary": true
+                },
+                "region": {
+                  "startLine": 11
+                }
+              },
+              "fullyQualifiedLogicalName": "androidx::biometric::h::a"
+            }
+          ],
+          "ruleId": "ConstraintError",
+          "message": {
+            "text": "First parameter (with value \"AES/CBC/PKCS7Padding\") should be any of AES/CBC/{PKCS5Padding, ISO10126Padding}.",
+            "richText": "ConstraintError violating CrySL rule for javax.crypto.Cipher."
+          }
+        },
+        {
+          "locations": [
+            {
+              "physicalLocation": {
+                "fileLocation": {
+                  "uri": "androidx.biometric.h.java",
+                  "externalLibrary": true,
+                  "PossibleExternalLibrary": true
+                },
+                "region": {
+                  "startLine": 1
+                }
+              },
+              "fullyQualifiedLogicalName": "androidx::biometric::h::a"
+            }
+          ],
+          "ruleId": "ConstraintError-1",
+          "message": {
+            "text": "First parameter (with value \"AndroidKeyStore\") should be any of {JCEKS, JKS, DKS, PKCS11, PKCS12}.",
+            "richText": "ConstraintError violating CrySL rule for java.security.KeyStore."
+          }
+        },
+        {
+          "locations": [
+            {
+              "physicalLocation": {
+                "fileLocation": {
+                  "uri": "androidx.biometric.h.java",
+                  "externalLibrary": true,
+                  "PossibleExternalLibrary": true
+                },
+                "region": {
+                  "startLine": 12
+                }
+              },
+              "fullyQualifiedLogicalName": "androidx::biometric::h::a"
+            }
+          ],
+          "ruleId": "RequiredPredicateError",
+          "message": {
+            "text": "Second parameter was not properly generated as generated Key.",
+            "richText": "RequiredPredicateError violating CrySL rule for javax.crypto.Cipher."
+          }
+        },
+        {
+          "locations": [
+            {
+              "physicalLocation": {
+                "fileLocation": {
+                  "uri": "com.simplemobiletools.commons.views.PinTab.java",
+                  "PossibleExternalLibrary": true
+                },
+                "region": {
+                  "startLine": 1
+                }
+              },
+              "fullyQualifiedLogicalName": "com::simplemobiletools::commons::views::PinTab::getHashedPin"
+            }
+          ],
+          "ruleId": "ConstraintError-2",
+          "message": {
+            "text": "First parameter (with value \"SHA-1\") should be any of {SHA-256, SHA-384, SHA-512}.",
+            "richText": "ConstraintError violating CrySL rule for java.security.MessageDigest."
+          }
+        },
+        {
+          "locations": [
+            {
+              "physicalLocation": {
+                "fileLocation": {
+                  "uri": "f1.a.java"
+                },
+                "region": {
+                  "startLine": 1
+                }
+              },
+              "fullyQualifiedLogicalName": "f1::a::a"
+            }
+          ],
+          "ruleId": "ConstraintError-3",
+          "message": {
+            "text": "First parameter (with value \"SHA-1\") should be any of {SHA-256, SHA-384, SHA-512}.",
+            "richText": "ConstraintError violating CrySL rule for java.security.MessageDigest."
+          }
+        }
+      ],
+      "tool": {
+        "name": "CryptoAnalysis",
+        "semanticVersion": null,
+        "language": "en-US",
+        "version": null
+      }
+    }
+  ]
+}

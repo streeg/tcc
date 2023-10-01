@@ -1,0 +1,2 @@
+ErrorType;Class;Method;ViolatedRule;Object;Statement;ExternalLibrary;PossibleExternal
+ConstraintError;com.android.volley.InternalUtils;java.lang.String sha1Hash(java.lang.String);violating CrySL rule for java.security.MessageDigest (on Object #5cf2870b7f06374187544a7b97402b2d4cbfaa8be9f48c6911d3d3fa198d2155);First parameter (with value "SHA-1") should be any of {SHA-256, SHA-384, SHA-512};$r1 = staticinvoke <java.security.MessageDigest: java.security.MessageDigest getInstance(java.lang.String)>(varReplacer1057);true;true

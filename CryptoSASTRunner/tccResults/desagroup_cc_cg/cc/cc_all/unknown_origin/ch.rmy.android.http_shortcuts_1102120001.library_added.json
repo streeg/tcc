@@ -1,0 +1,165 @@
+{
+  "projectName": "CryptoGuard",
+  "ProjectVersion": "04.05.03",
+  "Target": {
+    "RawCommand": "-in apk -s /home/lables/CryptoAnalysis/apks/System/ch.rmy.android.http_shortcuts_1102120001.apk -m D",
+    "FullPath": "ch.rmy.android.http_shortcuts_1102120001.apk/",
+    "Type": "APK",
+    "TargetSources": [
+      "/home/lables/CryptoAnalysis/apks/System/ch.rmy.android.http_shortcuts_1102120001.apk"
+    ],
+    "_PropertiesFilePath": "gradle.properties",
+    "_ComputerOS": "Linux_4.15.0-163-generic",
+    "_JVMVersion": "1.8.0_312-8u312-b07-0ubuntu1~18.04-b07",
+    "_ProjectName": "ch"
+  },
+  "Issues": [
+    {
+      "Message": "Found: Untrused PRNG (java.util.Random)",
+      "Description": "Used untrusted PRNG",
+      "RuleNumber": 13,
+      "RuleDesc": "Used untrusted PRNG",
+      "CWEId": 338,
+      "Severity": "1",
+      "_FullPath": "ch.rmy.android.http_shortcuts_1102120001.apk.androidx.activity.result.ActivityResultRegistry.class",
+      "_Id": "0",
+      "externalLibrary": true,
+      "PossibleExternalLibrary": true
+    },
+    {
+      "Message": "Found: Untrused PRNG (java.util.Random)",
+      "Description": "Used untrusted PRNG",
+      "RuleNumber": 13,
+      "RuleDesc": "Used untrusted PRNG",
+      "CWEId": 338,
+      "Severity": "1",
+      "_FullPath": "ch.rmy.android.http_shortcuts_1102120001.apk.g.r.b$a.class",
+      "_Id": "1"
+    },
+    {
+      "Message": "Should at least get One accepted Issuer from Other Sources in getAcceptedIssuers method of UNKNOWN",
+      "Description": "Uses untrusted TrustManager",
+      "RuleNumber": 4,
+      "RuleDesc": "Uses untrusted TrustManager",
+      "CWEId": 349,
+      "Severity": "1",
+      "_FullPath": "ch.rmy.android.http_shortcuts_1102120001.apk.UNKNOWN.class",
+      "_Id": "2"
+    },
+    {
+      "Message": "Should throw java.security.cert.CertificateException in check(Client|Server)Trusted method of UNKNOWN",
+      "Description": "Uses untrusted TrustManager",
+      "RuleNumber": 4,
+      "RuleDesc": "Uses untrusted TrustManager",
+      "CWEId": 349,
+      "Severity": "1",
+      "_FullPath": "ch.rmy.android.http_shortcuts_1102120001.apk.UNKNOWN.class",
+      "_Id": "3"
+    },
+    {
+      "Message": "Cause: Fixed \"[1]\"",
+      "Description": "Used untrusted HostNameVerifier",
+      "RuleNumber": 6,
+      "RuleDesc": "Used untrusted HostNameVerifier",
+      "CWEId": 601,
+      "Severity": "1",
+      "_FullPath": "ch.rmy.android.http_shortcuts_1102120001.apk.UNKNOWN.class",
+      "_Id": "4"
+    },
+    {
+      "Message": "Found: \"MD5\"",
+      "Description": "Found broken hash functions",
+      "RuleNumber": 2,
+      "RuleDesc": "Found broken hash functions",
+      "CWEId": 759,
+      "Severity": "1",
+      "_FullPath": "ch.rmy.android.http_shortcuts_1102120001.apk.org.conscrypt.NativeCrypto.class",
+      "_Id": "5"
+    },
+    {
+      "Message": "Found: \"MD5\"",
+      "Description": "Found broken hash functions",
+      "RuleNumber": 2,
+      "RuleDesc": "Found broken hash functions",
+      "CWEId": 759,
+      "Severity": "1",
+      "_FullPath": "ch.rmy.android.http_shortcuts_1102120001.apk.j.d.class",
+      "_Id": "6"
+    },
+    {
+      "Message": "Found: \"SHA-1\"",
+      "Description": "Found broken hash functions",
+      "RuleNumber": 2,
+      "RuleDesc": "Found broken hash functions",
+      "CWEId": 759,
+      "Severity": "1",
+      "_FullPath": "ch.rmy.android.http_shortcuts_1102120001.apk.com.facebook.stetho.websocket.WebSocketHandler.class",
+      "_Id": "7",
+      "externalLibrary": true,
+      "PossibleExternalLibrary": true
+    },
+    {
+      "Message": "Found: \"MD5\"",
+      "Description": "Found broken hash functions",
+      "RuleNumber": 2,
+      "RuleDesc": "Found broken hash functions",
+      "CWEId": 759,
+      "Severity": "1",
+      "_FullPath": "ch.rmy.android.http_shortcuts_1102120001.apk.j.d.class",
+      "_Id": "8"
+    },
+    {
+      "Message": "Found: \"sha1\"",
+      "Description": "Found broken hash functions",
+      "RuleNumber": 2,
+      "RuleDesc": "Found broken hash functions",
+      "CWEId": 759,
+      "Severity": "1",
+      "_FullPath": "ch.rmy.android.http_shortcuts_1102120001.apk.d.a.a.a.m.h.b.i1.class",
+      "_Id": "9"
+    },
+    {
+      "Message": "Found: \"sha-1\"",
+      "Description": "Found broken hash functions",
+      "RuleNumber": 2,
+      "RuleDesc": "Found broken hash functions",
+      "CWEId": 759,
+      "Severity": "1",
+      "_FullPath": "ch.rmy.android.http_shortcuts_1102120001.apk.d.a.a.a.m.h.b.i1.class",
+      "_Id": "10"
+    },
+    {
+      "Message": "Found: \"MD5\"",
+      "Description": "Found broken hash functions",
+      "RuleNumber": 2,
+      "RuleDesc": "Found broken hash functions",
+      "CWEId": 759,
+      "Severity": "1",
+      "_FullPath": "ch.rmy.android.http_shortcuts_1102120001.apk.b.d.a.a.b.class",
+      "_Id": "11"
+    },
+    {
+      "Message": "Found: \"md5\"",
+      "Description": "Found broken hash functions",
+      "RuleNumber": 2,
+      "RuleDesc": "Found broken hash functions",
+      "CWEId": 759,
+      "Severity": "1",
+      "_FullPath": "ch.rmy.android.http_shortcuts_1102120001.apk.d.a.a.a.m.h.b.i1.class",
+      "_Id": "12"
+    },
+    {
+      "Message": "Found: \"SHA1\"",
+      "Description": "Found broken hash functions",
+      "RuleNumber": 2,
+      "RuleDesc": "Found broken hash functions",
+      "CWEId": 759,
+      "Severity": "1",
+      "_FullPath": "ch.rmy.android.http_shortcuts_1102120001.apk.org.conscrypt.NativeCrypto.class",
+      "_Id": "13"
+    }
+  ],
+  "_SchemaVersion": 3,
+  "_DateTime": "2022-01-16_20:30:44",
+  "_UUID": "f805e1b9-d96b-4c3c-980c-22d08fc371ba"
+}

@@ -1,0 +1,2906 @@
+{
+  "sarifVersion": "2.0.0",
+  "runs": [
+    {
+      "files": {
+        "com/xeiam/xchange/btcchina/service/polling/BTCChinaPollingMarketDataService.java": {
+          "mimeType": "text/java"
+        },
+        "com/veken0m/bitcoinium/OrderbookActivity.java": {
+          "mimeType": "text/java"
+        },
+        "com/xeiam/xchange/btcchina/service/BTCChinaDigest.java": {
+          "mimeType": "text/java"
+        },
+        "com/xeiam/xchange/mtgox/v2/service/polling/MtGoxPollingMarketDataService.java": {
+          "mimeType": "text/java"
+        },
+        "com/xeiam/xchange/mtgox/v2/service/MtGoxV2Digest.java": {
+          "mimeType": "text/java"
+        },
+        "si/mazi/rescu/HmacPostBodyDigest.java": {
+          "mimeType": "text/java"
+        },
+        "com/xeiam/xchange/bitstamp/service/polling/BitstampPollingMarketDataService.java": {
+          "mimeType": "text/java"
+        },
+        "com/veken0m/bitcoinium/GraphActivity.java": {
+          "mimeType": "text/java"
+        },
+        "com/xeiam/xchange/bitstamp/service/BitstampDigest.java": {
+          "mimeType": "text/java"
+        },
+        "com/xeiam/xchange/campbx/service/polling/CampBXPollingMarketDataService.java": {
+          "mimeType": "text/java"
+        },
+        "com/xeiam/xchange/btce/v2/service/BTCEHmacPostBodyDigest.java": {
+          "mimeType": "text/java"
+        },
+        "com/xeiam/xchange/btce/v3/service/polling/BTCEPollingMarketDataService.java": {
+          "mimeType": "text/java"
+        },
+        "com/xeiam/xchange/btce/v3/service/BTCEHmacPostBodyDigest.java": {
+          "mimeType": "text/java"
+        },
+        "com/veken0m/bitcoinium/BitcoinAverageActivity.java": {
+          "mimeType": "text/java"
+        },
+        "com/xeiam/xchange/kraken/service/KrakenDigest.java": {
+          "mimeType": "text/java"
+        },
+        "com/xeiam/xchange/mtgox/v1/service/marketdata/polling/MtGoxPollingMarketDataService.java": {
+          "mimeType": "text/java"
+        },
+        "com/xeiam/xchange/kraken/service/polling/KrakenPollingMarketDataService.java": {
+          "mimeType": "text/java"
+        }
+      },
+      "resources": {
+        "rules": {
+          "IncompleteOperationError-79": {
+            "id": "IncompleteOperationError",
+            "fullDescription": {
+              "text": "The usage of an object may be incomplete: For example a Cipherobject may be initialized but never used for en- or decryption, this may render the code dead. This error heavily depends on the computed call graph (CHA by default)"
+            }
+          },
+          "IncompleteOperationError-70": {
+            "id": "IncompleteOperationError",
+            "fullDescription": {
+              "text": "The usage of an object may be incomplete: For example a Cipherobject may be initialized but never used for en- or decryption, this may render the code dead. This error heavily depends on the computed call graph (CHA by default)"
+            }
+          },
+          "IncompleteOperationError-72": {
+            "id": "IncompleteOperationError",
+            "fullDescription": {
+              "text": "The usage of an object may be incomplete: For example a Cipherobject may be initialized but never used for en- or decryption, this may render the code dead. This error heavily depends on the computed call graph (CHA by default)"
+            }
+          },
+          "IncompleteOperationError-71": {
+            "id": "IncompleteOperationError",
+            "fullDescription": {
+              "text": "The usage of an object may be incomplete: For example a Cipherobject may be initialized but never used for en- or decryption, this may render the code dead. This error heavily depends on the computed call graph (CHA by default)"
+            }
+          },
+          "IncompleteOperationError": {
+            "id": "IncompleteOperationError",
+            "fullDescription": {
+              "text": "The usage of an object may be incomplete: For example a Cipherobject may be initialized but never used for en- or decryption, this may render the code dead. This error heavily depends on the computed call graph (CHA by default)"
+            }
+          },
+          "IncompleteOperationError-74": {
+            "id": "IncompleteOperationError",
+            "fullDescription": {
+              "text": "The usage of an object may be incomplete: For example a Cipherobject may be initialized but never used for en- or decryption, this may render the code dead. This error heavily depends on the computed call graph (CHA by default)"
+            }
+          },
+          "IncompleteOperationError-73": {
+            "id": "IncompleteOperationError",
+            "fullDescription": {
+              "text": "The usage of an object may be incomplete: For example a Cipherobject may be initialized but never used for en- or decryption, this may render the code dead. This error heavily depends on the computed call graph (CHA by default)"
+            }
+          },
+          "IncompleteOperationError-76": {
+            "id": "IncompleteOperationError",
+            "fullDescription": {
+              "text": "The usage of an object may be incomplete: For example a Cipherobject may be initialized but never used for en- or decryption, this may render the code dead. This error heavily depends on the computed call graph (CHA by default)"
+            }
+          },
+          "IncompleteOperationError-75": {
+            "id": "IncompleteOperationError",
+            "fullDescription": {
+              "text": "The usage of an object may be incomplete: For example a Cipherobject may be initialized but never used for en- or decryption, this may render the code dead. This error heavily depends on the computed call graph (CHA by default)"
+            }
+          },
+          "IncompleteOperationError-78": {
+            "id": "IncompleteOperationError",
+            "fullDescription": {
+              "text": "The usage of an object may be incomplete: For example a Cipherobject may be initialized but never used for en- or decryption, this may render the code dead. This error heavily depends on the computed call graph (CHA by default)"
+            }
+          },
+          "IncompleteOperationError-77": {
+            "id": "IncompleteOperationError",
+            "fullDescription": {
+              "text": "The usage of an object may be incomplete: For example a Cipherobject may be initialized but never used for en- or decryption, this may render the code dead. This error heavily depends on the computed call graph (CHA by default)"
+            }
+          },
+          "IncompleteOperationError-69": {
+            "id": "IncompleteOperationError",
+            "fullDescription": {
+              "text": "The usage of an object may be incomplete: For example a Cipherobject may be initialized but never used for en- or decryption, this may render the code dead. This error heavily depends on the computed call graph (CHA by default)"
+            }
+          },
+          "IncompleteOperationError-68": {
+            "id": "IncompleteOperationError",
+            "fullDescription": {
+              "text": "The usage of an object may be incomplete: For example a Cipherobject may be initialized but never used for en- or decryption, this may render the code dead. This error heavily depends on the computed call graph (CHA by default)"
+            }
+          },
+          "IncompleteOperationError-61": {
+            "id": "IncompleteOperationError",
+            "fullDescription": {
+              "text": "The usage of an object may be incomplete: For example a Cipherobject may be initialized but never used for en- or decryption, this may render the code dead. This error heavily depends on the computed call graph (CHA by default)"
+            }
+          },
+          "IncompleteOperationError-60": {
+            "id": "IncompleteOperationError",
+            "fullDescription": {
+              "text": "The usage of an object may be incomplete: For example a Cipherobject may be initialized but never used for en- or decryption, this may render the code dead. This error heavily depends on the computed call graph (CHA by default)"
+            }
+          },
+          "IncompleteOperationError-63": {
+            "id": "IncompleteOperationError",
+            "fullDescription": {
+              "text": "The usage of an object may be incomplete: For example a Cipherobject may be initialized but never used for en- or decryption, this may render the code dead. This error heavily depends on the computed call graph (CHA by default)"
+            }
+          },
+          "ConstraintError": {
+            "id": "ConstraintError",
+            "fullDescription": {
+              "text": "A constraint of a CrySL rule is violated, e.g., a key is generated with the wrong key size."
+            }
+          },
+          "IncompleteOperationError-62": {
+            "id": "IncompleteOperationError",
+            "fullDescription": {
+              "text": "The usage of an object may be incomplete: For example a Cipherobject may be initialized but never used for en- or decryption, this may render the code dead. This error heavily depends on the computed call graph (CHA by default)"
+            }
+          },
+          "IncompleteOperationError-65": {
+            "id": "IncompleteOperationError",
+            "fullDescription": {
+              "text": "The usage of an object may be incomplete: For example a Cipherobject may be initialized but never used for en- or decryption, this may render the code dead. This error heavily depends on the computed call graph (CHA by default)"
+            }
+          },
+          "IncompleteOperationError-64": {
+            "id": "IncompleteOperationError",
+            "fullDescription": {
+              "text": "The usage of an object may be incomplete: For example a Cipherobject may be initialized but never used for en- or decryption, this may render the code dead. This error heavily depends on the computed call graph (CHA by default)"
+            }
+          },
+          "IncompleteOperationError-67": {
+            "id": "IncompleteOperationError",
+            "fullDescription": {
+              "text": "The usage of an object may be incomplete: For example a Cipherobject may be initialized but never used for en- or decryption, this may render the code dead. This error heavily depends on the computed call graph (CHA by default)"
+            }
+          },
+          "IncompleteOperationError-66": {
+            "id": "IncompleteOperationError",
+            "fullDescription": {
+              "text": "The usage of an object may be incomplete: For example a Cipherobject may be initialized but never used for en- or decryption, this may render the code dead. This error heavily depends on the computed call graph (CHA by default)"
+            }
+          },
+          "IncompleteOperationError-58": {
+            "id": "IncompleteOperationError",
+            "fullDescription": {
+              "text": "The usage of an object may be incomplete: For example a Cipherobject may be initialized but never used for en- or decryption, this may render the code dead. This error heavily depends on the computed call graph (CHA by default)"
+            }
+          },
+          "IncompleteOperationError-57": {
+            "id": "IncompleteOperationError",
+            "fullDescription": {
+              "text": "The usage of an object may be incomplete: For example a Cipherobject may be initialized but never used for en- or decryption, this may render the code dead. This error heavily depends on the computed call graph (CHA by default)"
+            }
+          },
+          "IncompleteOperationError-59": {
+            "id": "IncompleteOperationError",
+            "fullDescription": {
+              "text": "The usage of an object may be incomplete: For example a Cipherobject may be initialized but never used for en- or decryption, this may render the code dead. This error heavily depends on the computed call graph (CHA by default)"
+            }
+          },
+          "IncompleteOperationError-7": {
+            "id": "IncompleteOperationError",
+            "fullDescription": {
+              "text": "The usage of an object may be incomplete: For example a Cipherobject may be initialized but never used for en- or decryption, this may render the code dead. This error heavily depends on the computed call graph (CHA by default)"
+            }
+          },
+          "IncompleteOperationError-6": {
+            "id": "IncompleteOperationError",
+            "fullDescription": {
+              "text": "The usage of an object may be incomplete: For example a Cipherobject may be initialized but never used for en- or decryption, this may render the code dead. This error heavily depends on the computed call graph (CHA by default)"
+            }
+          },
+          "IncompleteOperationError-9": {
+            "id": "IncompleteOperationError",
+            "fullDescription": {
+              "text": "The usage of an object may be incomplete: For example a Cipherobject may be initialized but never used for en- or decryption, this may render the code dead. This error heavily depends on the computed call graph (CHA by default)"
+            }
+          },
+          "IncompleteOperationError-8": {
+            "id": "IncompleteOperationError",
+            "fullDescription": {
+              "text": "The usage of an object may be incomplete: For example a Cipherobject may be initialized but never used for en- or decryption, this may render the code dead. This error heavily depends on the computed call graph (CHA by default)"
+            }
+          },
+          "IncompleteOperationError-50": {
+            "id": "IncompleteOperationError",
+            "fullDescription": {
+              "text": "The usage of an object may be incomplete: For example a Cipherobject may be initialized but never used for en- or decryption, this may render the code dead. This error heavily depends on the computed call graph (CHA by default)"
+            }
+          },
+          "IncompleteOperationError-1": {
+            "id": "IncompleteOperationError",
+            "fullDescription": {
+              "text": "The usage of an object may be incomplete: For example a Cipherobject may be initialized but never used for en- or decryption, this may render the code dead. This error heavily depends on the computed call graph (CHA by default)"
+            }
+          },
+          "IncompleteOperationError-52": {
+            "id": "IncompleteOperationError",
+            "fullDescription": {
+              "text": "The usage of an object may be incomplete: For example a Cipherobject may be initialized but never used for en- or decryption, this may render the code dead. This error heavily depends on the computed call graph (CHA by default)"
+            }
+          },
+          "IncompleteOperationError-51": {
+            "id": "IncompleteOperationError",
+            "fullDescription": {
+              "text": "The usage of an object may be incomplete: For example a Cipherobject may be initialized but never used for en- or decryption, this may render the code dead. This error heavily depends on the computed call graph (CHA by default)"
+            }
+          },
+          "IncompleteOperationError-3": {
+            "id": "IncompleteOperationError",
+            "fullDescription": {
+              "text": "The usage of an object may be incomplete: For example a Cipherobject may be initialized but never used for en- or decryption, this may render the code dead. This error heavily depends on the computed call graph (CHA by default)"
+            }
+          },
+          "IncompleteOperationError-54": {
+            "id": "IncompleteOperationError",
+            "fullDescription": {
+              "text": "The usage of an object may be incomplete: For example a Cipherobject may be initialized but never used for en- or decryption, this may render the code dead. This error heavily depends on the computed call graph (CHA by default)"
+            }
+          },
+          "IncompleteOperationError-2": {
+            "id": "IncompleteOperationError",
+            "fullDescription": {
+              "text": "The usage of an object may be incomplete: For example a Cipherobject may be initialized but never used for en- or decryption, this may render the code dead. This error heavily depends on the computed call graph (CHA by default)"
+            }
+          },
+          "IncompleteOperationError-53": {
+            "id": "IncompleteOperationError",
+            "fullDescription": {
+              "text": "The usage of an object may be incomplete: For example a Cipherobject may be initialized but never used for en- or decryption, this may render the code dead. This error heavily depends on the computed call graph (CHA by default)"
+            }
+          },
+          "IncompleteOperationError-5": {
+            "id": "IncompleteOperationError",
+            "fullDescription": {
+              "text": "The usage of an object may be incomplete: For example a Cipherobject may be initialized but never used for en- or decryption, this may render the code dead. This error heavily depends on the computed call graph (CHA by default)"
+            }
+          },
+          "IncompleteOperationError-56": {
+            "id": "IncompleteOperationError",
+            "fullDescription": {
+              "text": "The usage of an object may be incomplete: For example a Cipherobject may be initialized but never used for en- or decryption, this may render the code dead. This error heavily depends on the computed call graph (CHA by default)"
+            }
+          },
+          "IncompleteOperationError-4": {
+            "id": "IncompleteOperationError",
+            "fullDescription": {
+              "text": "The usage of an object may be incomplete: For example a Cipherobject may be initialized but never used for en- or decryption, this may render the code dead. This error heavily depends on the computed call graph (CHA by default)"
+            }
+          },
+          "IncompleteOperationError-55": {
+            "id": "IncompleteOperationError",
+            "fullDescription": {
+              "text": "The usage of an object may be incomplete: For example a Cipherobject may be initialized but never used for en- or decryption, this may render the code dead. This error heavily depends on the computed call graph (CHA by default)"
+            }
+          },
+          "IncompleteOperationError-47": {
+            "id": "IncompleteOperationError",
+            "fullDescription": {
+              "text": "The usage of an object may be incomplete: For example a Cipherobject may be initialized but never used for en- or decryption, this may render the code dead. This error heavily depends on the computed call graph (CHA by default)"
+            }
+          },
+          "IncompleteOperationError-46": {
+            "id": "IncompleteOperationError",
+            "fullDescription": {
+              "text": "The usage of an object may be incomplete: For example a Cipherobject may be initialized but never used for en- or decryption, this may render the code dead. This error heavily depends on the computed call graph (CHA by default)"
+            }
+          },
+          "IncompleteOperationError-49": {
+            "id": "IncompleteOperationError",
+            "fullDescription": {
+              "text": "The usage of an object may be incomplete: For example a Cipherobject may be initialized but never used for en- or decryption, this may render the code dead. This error heavily depends on the computed call graph (CHA by default)"
+            }
+          },
+          "IncompleteOperationError-48": {
+            "id": "IncompleteOperationError",
+            "fullDescription": {
+              "text": "The usage of an object may be incomplete: For example a Cipherobject may be initialized but never used for en- or decryption, this may render the code dead. This error heavily depends on the computed call graph (CHA by default)"
+            }
+          },
+          "IncompleteOperationError-41": {
+            "id": "IncompleteOperationError",
+            "fullDescription": {
+              "text": "The usage of an object may be incomplete: For example a Cipherobject may be initialized but never used for en- or decryption, this may render the code dead. This error heavily depends on the computed call graph (CHA by default)"
+            }
+          },
+          "IncompleteOperationError-40": {
+            "id": "IncompleteOperationError",
+            "fullDescription": {
+              "text": "The usage of an object may be incomplete: For example a Cipherobject may be initialized but never used for en- or decryption, this may render the code dead. This error heavily depends on the computed call graph (CHA by default)"
+            }
+          },
+          "IncompleteOperationError-43": {
+            "id": "IncompleteOperationError",
+            "fullDescription": {
+              "text": "The usage of an object may be incomplete: For example a Cipherobject may be initialized but never used for en- or decryption, this may render the code dead. This error heavily depends on the computed call graph (CHA by default)"
+            }
+          },
+          "IncompleteOperationError-42": {
+            "id": "IncompleteOperationError",
+            "fullDescription": {
+              "text": "The usage of an object may be incomplete: For example a Cipherobject may be initialized but never used for en- or decryption, this may render the code dead. This error heavily depends on the computed call graph (CHA by default)"
+            }
+          },
+          "IncompleteOperationError-45": {
+            "id": "IncompleteOperationError",
+            "fullDescription": {
+              "text": "The usage of an object may be incomplete: For example a Cipherobject may be initialized but never used for en- or decryption, this may render the code dead. This error heavily depends on the computed call graph (CHA by default)"
+            }
+          },
+          "IncompleteOperationError-44": {
+            "id": "IncompleteOperationError",
+            "fullDescription": {
+              "text": "The usage of an object may be incomplete: For example a Cipherobject may be initialized but never used for en- or decryption, this may render the code dead. This error heavily depends on the computed call graph (CHA by default)"
+            }
+          },
+          "IncompleteOperationError-36": {
+            "id": "IncompleteOperationError",
+            "fullDescription": {
+              "text": "The usage of an object may be incomplete: For example a Cipherobject may be initialized but never used for en- or decryption, this may render the code dead. This error heavily depends on the computed call graph (CHA by default)"
+            }
+          },
+          "IncompleteOperationError-35": {
+            "id": "IncompleteOperationError",
+            "fullDescription": {
+              "text": "The usage of an object may be incomplete: For example a Cipherobject may be initialized but never used for en- or decryption, this may render the code dead. This error heavily depends on the computed call graph (CHA by default)"
+            }
+          },
+          "IncompleteOperationError-38": {
+            "id": "IncompleteOperationError",
+            "fullDescription": {
+              "text": "The usage of an object may be incomplete: For example a Cipherobject may be initialized but never used for en- or decryption, this may render the code dead. This error heavily depends on the computed call graph (CHA by default)"
+            }
+          },
+          "IncompleteOperationError-37": {
+            "id": "IncompleteOperationError",
+            "fullDescription": {
+              "text": "The usage of an object may be incomplete: For example a Cipherobject may be initialized but never used for en- or decryption, this may render the code dead. This error heavily depends on the computed call graph (CHA by default)"
+            }
+          },
+          "IncompleteOperationError-39": {
+            "id": "IncompleteOperationError",
+            "fullDescription": {
+              "text": "The usage of an object may be incomplete: For example a Cipherobject may be initialized but never used for en- or decryption, this may render the code dead. This error heavily depends on the computed call graph (CHA by default)"
+            }
+          },
+          "ConstraintError-1": {
+            "id": "ConstraintError",
+            "fullDescription": {
+              "text": "A constraint of a CrySL rule is violated, e.g., a key is generated with the wrong key size."
+            }
+          },
+          "IncompleteOperationError-30": {
+            "id": "IncompleteOperationError",
+            "fullDescription": {
+              "text": "The usage of an object may be incomplete: For example a Cipherobject may be initialized but never used for en- or decryption, this may render the code dead. This error heavily depends on the computed call graph (CHA by default)"
+            }
+          },
+          "IncompleteOperationError-32": {
+            "id": "IncompleteOperationError",
+            "fullDescription": {
+              "text": "The usage of an object may be incomplete: For example a Cipherobject may be initialized but never used for en- or decryption, this may render the code dead. This error heavily depends on the computed call graph (CHA by default)"
+            }
+          },
+          "IncompleteOperationError-31": {
+            "id": "IncompleteOperationError",
+            "fullDescription": {
+              "text": "The usage of an object may be incomplete: For example a Cipherobject may be initialized but never used for en- or decryption, this may render the code dead. This error heavily depends on the computed call graph (CHA by default)"
+            }
+          },
+          "IncompleteOperationError-34": {
+            "id": "IncompleteOperationError",
+            "fullDescription": {
+              "text": "The usage of an object may be incomplete: For example a Cipherobject may be initialized but never used for en- or decryption, this may render the code dead. This error heavily depends on the computed call graph (CHA by default)"
+            }
+          },
+          "IncompleteOperationError-33": {
+            "id": "IncompleteOperationError",
+            "fullDescription": {
+              "text": "The usage of an object may be incomplete: For example a Cipherobject may be initialized but never used for en- or decryption, this may render the code dead. This error heavily depends on the computed call graph (CHA by default)"
+            }
+          },
+          "IncompleteOperationError-25": {
+            "id": "IncompleteOperationError",
+            "fullDescription": {
+              "text": "The usage of an object may be incomplete: For example a Cipherobject may be initialized but never used for en- or decryption, this may render the code dead. This error heavily depends on the computed call graph (CHA by default)"
+            }
+          },
+          "IncompleteOperationError-24": {
+            "id": "IncompleteOperationError",
+            "fullDescription": {
+              "text": "The usage of an object may be incomplete: For example a Cipherobject may be initialized but never used for en- or decryption, this may render the code dead. This error heavily depends on the computed call graph (CHA by default)"
+            }
+          },
+          "IncompleteOperationError-27": {
+            "id": "IncompleteOperationError",
+            "fullDescription": {
+              "text": "The usage of an object may be incomplete: For example a Cipherobject may be initialized but never used for en- or decryption, this may render the code dead. This error heavily depends on the computed call graph (CHA by default)"
+            }
+          },
+          "IncompleteOperationError-26": {
+            "id": "IncompleteOperationError",
+            "fullDescription": {
+              "text": "The usage of an object may be incomplete: For example a Cipherobject may be initialized but never used for en- or decryption, this may render the code dead. This error heavily depends on the computed call graph (CHA by default)"
+            }
+          },
+          "IncompleteOperationError-29": {
+            "id": "IncompleteOperationError",
+            "fullDescription": {
+              "text": "The usage of an object may be incomplete: For example a Cipherobject may be initialized but never used for en- or decryption, this may render the code dead. This error heavily depends on the computed call graph (CHA by default)"
+            }
+          },
+          "IncompleteOperationError-28": {
+            "id": "IncompleteOperationError",
+            "fullDescription": {
+              "text": "The usage of an object may be incomplete: For example a Cipherobject may be initialized but never used for en- or decryption, this may render the code dead. This error heavily depends on the computed call graph (CHA by default)"
+            }
+          },
+          "IncompleteOperationError-21": {
+            "id": "IncompleteOperationError",
+            "fullDescription": {
+              "text": "The usage of an object may be incomplete: For example a Cipherobject may be initialized but never used for en- or decryption, this may render the code dead. This error heavily depends on the computed call graph (CHA by default)"
+            }
+          },
+          "IncompleteOperationError-20": {
+            "id": "IncompleteOperationError",
+            "fullDescription": {
+              "text": "The usage of an object may be incomplete: For example a Cipherobject may be initialized but never used for en- or decryption, this may render the code dead. This error heavily depends on the computed call graph (CHA by default)"
+            }
+          },
+          "IncompleteOperationError-23": {
+            "id": "IncompleteOperationError",
+            "fullDescription": {
+              "text": "The usage of an object may be incomplete: For example a Cipherobject may be initialized but never used for en- or decryption, this may render the code dead. This error heavily depends on the computed call graph (CHA by default)"
+            }
+          },
+          "IncompleteOperationError-22": {
+            "id": "IncompleteOperationError",
+            "fullDescription": {
+              "text": "The usage of an object may be incomplete: For example a Cipherobject may be initialized but never used for en- or decryption, this may render the code dead. This error heavily depends on the computed call graph (CHA by default)"
+            }
+          },
+          "IncompleteOperationError-14": {
+            "id": "IncompleteOperationError",
+            "fullDescription": {
+              "text": "The usage of an object may be incomplete: For example a Cipherobject may be initialized but never used for en- or decryption, this may render the code dead. This error heavily depends on the computed call graph (CHA by default)"
+            }
+          },
+          "IncompleteOperationError-13": {
+            "id": "IncompleteOperationError",
+            "fullDescription": {
+              "text": "The usage of an object may be incomplete: For example a Cipherobject may be initialized but never used for en- or decryption, this may render the code dead. This error heavily depends on the computed call graph (CHA by default)"
+            }
+          },
+          "IncompleteOperationError-16": {
+            "id": "IncompleteOperationError",
+            "fullDescription": {
+              "text": "The usage of an object may be incomplete: For example a Cipherobject may be initialized but never used for en- or decryption, this may render the code dead. This error heavily depends on the computed call graph (CHA by default)"
+            }
+          },
+          "IncompleteOperationError-15": {
+            "id": "IncompleteOperationError",
+            "fullDescription": {
+              "text": "The usage of an object may be incomplete: For example a Cipherobject may be initialized but never used for en- or decryption, this may render the code dead. This error heavily depends on the computed call graph (CHA by default)"
+            }
+          },
+          "IncompleteOperationError-18": {
+            "id": "IncompleteOperationError",
+            "fullDescription": {
+              "text": "The usage of an object may be incomplete: For example a Cipherobject may be initialized but never used for en- or decryption, this may render the code dead. This error heavily depends on the computed call graph (CHA by default)"
+            }
+          },
+          "IncompleteOperationError-17": {
+            "id": "IncompleteOperationError",
+            "fullDescription": {
+              "text": "The usage of an object may be incomplete: For example a Cipherobject may be initialized but never used for en- or decryption, this may render the code dead. This error heavily depends on the computed call graph (CHA by default)"
+            }
+          },
+          "IncompleteOperationError-19": {
+            "id": "IncompleteOperationError",
+            "fullDescription": {
+              "text": "The usage of an object may be incomplete: For example a Cipherobject may be initialized but never used for en- or decryption, this may render the code dead. This error heavily depends on the computed call graph (CHA by default)"
+            }
+          },
+          "IncompleteOperationError-90": {
+            "id": "IncompleteOperationError",
+            "fullDescription": {
+              "text": "The usage of an object may be incomplete: For example a Cipherobject may be initialized but never used for en- or decryption, this may render the code dead. This error heavily depends on the computed call graph (CHA by default)"
+            }
+          },
+          "RequiredPredicateError": {
+            "id": "RequiredPredicateError",
+            "fullDescription": {
+              "text": "An object A expects an object B to have been used correctly (CrySL blocks REQUIRES and ENSURES). For example a Cipher object requires a SecretKey object to be correctly and securely generated."
+            }
+          },
+          "IncompleteOperationError-92": {
+            "id": "IncompleteOperationError",
+            "fullDescription": {
+              "text": "The usage of an object may be incomplete: For example a Cipherobject may be initialized but never used for en- or decryption, this may render the code dead. This error heavily depends on the computed call graph (CHA by default)"
+            }
+          },
+          "IncompleteOperationError-91": {
+            "id": "IncompleteOperationError",
+            "fullDescription": {
+              "text": "The usage of an object may be incomplete: For example a Cipherobject may be initialized but never used for en- or decryption, this may render the code dead. This error heavily depends on the computed call graph (CHA by default)"
+            }
+          },
+          "IncompleteOperationError-94": {
+            "id": "IncompleteOperationError",
+            "fullDescription": {
+              "text": "The usage of an object may be incomplete: For example a Cipherobject may be initialized but never used for en- or decryption, this may render the code dead. This error heavily depends on the computed call graph (CHA by default)"
+            }
+          },
+          "IncompleteOperationError-93": {
+            "id": "IncompleteOperationError",
+            "fullDescription": {
+              "text": "The usage of an object may be incomplete: For example a Cipherobject may be initialized but never used for en- or decryption, this may render the code dead. This error heavily depends on the computed call graph (CHA by default)"
+            }
+          },
+          "IncompleteOperationError-95": {
+            "id": "IncompleteOperationError",
+            "fullDescription": {
+              "text": "The usage of an object may be incomplete: For example a Cipherobject may be initialized but never used for en- or decryption, this may render the code dead. This error heavily depends on the computed call graph (CHA by default)"
+            }
+          },
+          "IncompleteOperationError-10": {
+            "id": "IncompleteOperationError",
+            "fullDescription": {
+              "text": "The usage of an object may be incomplete: For example a Cipherobject may be initialized but never used for en- or decryption, this may render the code dead. This error heavily depends on the computed call graph (CHA by default)"
+            }
+          },
+          "IncompleteOperationError-12": {
+            "id": "IncompleteOperationError",
+            "fullDescription": {
+              "text": "The usage of an object may be incomplete: For example a Cipherobject may be initialized but never used for en- or decryption, this may render the code dead. This error heavily depends on the computed call graph (CHA by default)"
+            }
+          },
+          "IncompleteOperationError-11": {
+            "id": "IncompleteOperationError",
+            "fullDescription": {
+              "text": "The usage of an object may be incomplete: For example a Cipherobject may be initialized but never used for en- or decryption, this may render the code dead. This error heavily depends on the computed call graph (CHA by default)"
+            }
+          },
+          "IncompleteOperationError-81": {
+            "id": "IncompleteOperationError",
+            "fullDescription": {
+              "text": "The usage of an object may be incomplete: For example a Cipherobject may be initialized but never used for en- or decryption, this may render the code dead. This error heavily depends on the computed call graph (CHA by default)"
+            }
+          },
+          "RequiredPredicateError-6": {
+            "id": "RequiredPredicateError",
+            "fullDescription": {
+              "text": "An object A expects an object B to have been used correctly (CrySL blocks REQUIRES and ENSURES). For example a Cipher object requires a SecretKey object to be correctly and securely generated."
+            }
+          },
+          "IncompleteOperationError-80": {
+            "id": "IncompleteOperationError",
+            "fullDescription": {
+              "text": "The usage of an object may be incomplete: For example a Cipherobject may be initialized but never used for en- or decryption, this may render the code dead. This error heavily depends on the computed call graph (CHA by default)"
+            }
+          },
+          "RequiredPredicateError-5": {
+            "id": "RequiredPredicateError",
+            "fullDescription": {
+              "text": "An object A expects an object B to have been used correctly (CrySL blocks REQUIRES and ENSURES). For example a Cipher object requires a SecretKey object to be correctly and securely generated."
+            }
+          },
+          "IncompleteOperationError-83": {
+            "id": "IncompleteOperationError",
+            "fullDescription": {
+              "text": "The usage of an object may be incomplete: For example a Cipherobject may be initialized but never used for en- or decryption, this may render the code dead. This error heavily depends on the computed call graph (CHA by default)"
+            }
+          },
+          "RequiredPredicateError-4": {
+            "id": "RequiredPredicateError",
+            "fullDescription": {
+              "text": "An object A expects an object B to have been used correctly (CrySL blocks REQUIRES and ENSURES). For example a Cipher object requires a SecretKey object to be correctly and securely generated."
+            }
+          },
+          "IncompleteOperationError-82": {
+            "id": "IncompleteOperationError",
+            "fullDescription": {
+              "text": "The usage of an object may be incomplete: For example a Cipherobject may be initialized but never used for en- or decryption, this may render the code dead. This error heavily depends on the computed call graph (CHA by default)"
+            }
+          },
+          "RequiredPredicateError-3": {
+            "id": "RequiredPredicateError",
+            "fullDescription": {
+              "text": "An object A expects an object B to have been used correctly (CrySL blocks REQUIRES and ENSURES). For example a Cipher object requires a SecretKey object to be correctly and securely generated."
+            }
+          },
+          "IncompleteOperationError-85": {
+            "id": "IncompleteOperationError",
+            "fullDescription": {
+              "text": "The usage of an object may be incomplete: For example a Cipherobject may be initialized but never used for en- or decryption, this may render the code dead. This error heavily depends on the computed call graph (CHA by default)"
+            }
+          },
+          "RequiredPredicateError-2": {
+            "id": "RequiredPredicateError",
+            "fullDescription": {
+              "text": "An object A expects an object B to have been used correctly (CrySL blocks REQUIRES and ENSURES). For example a Cipher object requires a SecretKey object to be correctly and securely generated."
+            }
+          },
+          "IncompleteOperationError-84": {
+            "id": "IncompleteOperationError",
+            "fullDescription": {
+              "text": "The usage of an object may be incomplete: For example a Cipherobject may be initialized but never used for en- or decryption, this may render the code dead. This error heavily depends on the computed call graph (CHA by default)"
+            }
+          },
+          "RequiredPredicateError-1": {
+            "id": "RequiredPredicateError",
+            "fullDescription": {
+              "text": "An object A expects an object B to have been used correctly (CrySL blocks REQUIRES and ENSURES). For example a Cipher object requires a SecretKey object to be correctly and securely generated."
+            }
+          },
+          "IncompleteOperationError-87": {
+            "id": "IncompleteOperationError",
+            "fullDescription": {
+              "text": "The usage of an object may be incomplete: For example a Cipherobject may be initialized but never used for en- or decryption, this may render the code dead. This error heavily depends on the computed call graph (CHA by default)"
+            }
+          },
+          "IncompleteOperationError-86": {
+            "id": "IncompleteOperationError",
+            "fullDescription": {
+              "text": "The usage of an object may be incomplete: For example a Cipherobject may be initialized but never used for en- or decryption, this may render the code dead. This error heavily depends on the computed call graph (CHA by default)"
+            }
+          },
+          "IncompleteOperationError-89": {
+            "id": "IncompleteOperationError",
+            "fullDescription": {
+              "text": "The usage of an object may be incomplete: For example a Cipherobject may be initialized but never used for en- or decryption, this may render the code dead. This error heavily depends on the computed call graph (CHA by default)"
+            }
+          },
+          "IncompleteOperationError-88": {
+            "id": "IncompleteOperationError",
+            "fullDescription": {
+              "text": "The usage of an object may be incomplete: For example a Cipherobject may be initialized but never used for en- or decryption, this may render the code dead. This error heavily depends on the computed call graph (CHA by default)"
+            }
+          }
+        }
+      },
+      "results": [
+        {
+          "locations": [
+            {
+              "physicalLocation": {
+                "fileLocation": {
+                  "uri": "com.xeiam.xchange.btcchina.service.polling.BTCChinaPollingMarketDataService.java",
+                  "PossibleExternalLibrary": true
+                },
+                "region": {
+                  "startLine": 102
+                }
+              },
+              "fullyQualifiedLogicalName": "com::xeiam::xchange::btcchina::service::polling::BTCChinaPollingMarketDataService::getTrades"
+            }
+          ],
+          "ruleId": "IncompleteOperationError",
+          "message": {
+            "text": "Operation on object of type javax.crypto.Mac object not completed. Expected call to update, doFinal.",
+            "richText": "IncompleteOperationError violating CrySL rule for javax.crypto.Mac."
+          }
+        },
+        {
+          "locations": [
+            {
+              "physicalLocation": {
+                "fileLocation": {
+                  "uri": "com.xeiam.xchange.btcchina.service.polling.BTCChinaPollingMarketDataService.java",
+                  "PossibleExternalLibrary": true
+                },
+                "region": {
+                  "startLine": 102
+                }
+              },
+              "fullyQualifiedLogicalName": "com::xeiam::xchange::btcchina::service::polling::BTCChinaPollingMarketDataService::getTrades"
+            }
+          ],
+          "ruleId": "IncompleteOperationError-1",
+          "message": {
+            "text": "Operation on object of type javax.crypto.Mac object not completed. Expected call to update, doFinal.",
+            "richText": "IncompleteOperationError violating CrySL rule for javax.crypto.Mac."
+          }
+        },
+        {
+          "locations": [
+            {
+              "physicalLocation": {
+                "fileLocation": {
+                  "uri": "com.xeiam.xchange.btcchina.service.polling.BTCChinaPollingMarketDataService.java",
+                  "PossibleExternalLibrary": true
+                },
+                "region": {
+                  "startLine": 102
+                }
+              },
+              "fullyQualifiedLogicalName": "com::xeiam::xchange::btcchina::service::polling::BTCChinaPollingMarketDataService::getTrades"
+            }
+          ],
+          "ruleId": "IncompleteOperationError-2",
+          "message": {
+            "text": "Operation on object of type javax.crypto.Mac object not completed. Expected call to update, doFinal.",
+            "richText": "IncompleteOperationError violating CrySL rule for javax.crypto.Mac."
+          }
+        },
+        {
+          "locations": [
+            {
+              "physicalLocation": {
+                "fileLocation": {
+                  "uri": "com.xeiam.xchange.btcchina.service.polling.BTCChinaPollingMarketDataService.java",
+                  "PossibleExternalLibrary": true
+                },
+                "region": {
+                  "startLine": 102
+                }
+              },
+              "fullyQualifiedLogicalName": "com::xeiam::xchange::btcchina::service::polling::BTCChinaPollingMarketDataService::getTrades"
+            }
+          ],
+          "ruleId": "IncompleteOperationError-3",
+          "message": {
+            "text": "Operation on object of type java.security.MessageDigest object not completed. Expected call to digest, update.",
+            "richText": "IncompleteOperationError violating CrySL rule for java.security.MessageDigest."
+          }
+        },
+        {
+          "locations": [
+            {
+              "physicalLocation": {
+                "fileLocation": {
+                  "uri": "com.xeiam.xchange.btcchina.service.polling.BTCChinaPollingMarketDataService.java",
+                  "PossibleExternalLibrary": true
+                },
+                "region": {
+                  "startLine": 102
+                }
+              },
+              "fullyQualifiedLogicalName": "com::xeiam::xchange::btcchina::service::polling::BTCChinaPollingMarketDataService::getTrades"
+            }
+          ],
+          "ruleId": "IncompleteOperationError-4",
+          "message": {
+            "text": "Operation on object of type javax.crypto.Mac object not completed. Expected call to update, doFinal.",
+            "richText": "IncompleteOperationError violating CrySL rule for javax.crypto.Mac."
+          }
+        },
+        {
+          "locations": [
+            {
+              "physicalLocation": {
+                "fileLocation": {
+                  "uri": "com.xeiam.xchange.btcchina.service.polling.BTCChinaPollingMarketDataService.java",
+                  "PossibleExternalLibrary": true
+                },
+                "region": {
+                  "startLine": 102
+                }
+              },
+              "fullyQualifiedLogicalName": "com::xeiam::xchange::btcchina::service::polling::BTCChinaPollingMarketDataService::getTrades"
+            }
+          ],
+          "ruleId": "IncompleteOperationError-5",
+          "message": {
+            "text": "Operation on object of type javax.crypto.Mac object not completed. Expected call to update, doFinal.",
+            "richText": "IncompleteOperationError violating CrySL rule for javax.crypto.Mac."
+          }
+        },
+        {
+          "locations": [
+            {
+              "physicalLocation": {
+                "fileLocation": {
+                  "uri": "com.xeiam.xchange.kraken.service.polling.KrakenPollingMarketDataService.java",
+                  "PossibleExternalLibrary": true
+                },
+                "region": {
+                  "startLine": 140
+                }
+              },
+              "fullyQualifiedLogicalName": "com::xeiam::xchange::kraken::service::polling::KrakenPollingMarketDataService::getTrades"
+            }
+          ],
+          "ruleId": "IncompleteOperationError-6",
+          "message": {
+            "text": "Operation on object of type javax.crypto.Mac object not completed. Expected call to update, doFinal.",
+            "richText": "IncompleteOperationError violating CrySL rule for javax.crypto.Mac."
+          }
+        },
+        {
+          "locations": [
+            {
+              "physicalLocation": {
+                "fileLocation": {
+                  "uri": "com.xeiam.xchange.kraken.service.polling.KrakenPollingMarketDataService.java",
+                  "PossibleExternalLibrary": true
+                },
+                "region": {
+                  "startLine": 140
+                }
+              },
+              "fullyQualifiedLogicalName": "com::xeiam::xchange::kraken::service::polling::KrakenPollingMarketDataService::getTrades"
+            }
+          ],
+          "ruleId": "IncompleteOperationError-7",
+          "message": {
+            "text": "Operation on object of type javax.crypto.Mac object not completed. Expected call to update, doFinal.",
+            "richText": "IncompleteOperationError violating CrySL rule for javax.crypto.Mac."
+          }
+        },
+        {
+          "locations": [
+            {
+              "physicalLocation": {
+                "fileLocation": {
+                  "uri": "com.xeiam.xchange.kraken.service.polling.KrakenPollingMarketDataService.java",
+                  "PossibleExternalLibrary": true
+                },
+                "region": {
+                  "startLine": 140
+                }
+              },
+              "fullyQualifiedLogicalName": "com::xeiam::xchange::kraken::service::polling::KrakenPollingMarketDataService::getTrades"
+            }
+          ],
+          "ruleId": "IncompleteOperationError-8",
+          "message": {
+            "text": "Operation on object of type javax.crypto.Mac object not completed. Expected call to update, doFinal.",
+            "richText": "IncompleteOperationError violating CrySL rule for javax.crypto.Mac."
+          }
+        },
+        {
+          "locations": [
+            {
+              "physicalLocation": {
+                "fileLocation": {
+                  "uri": "com.xeiam.xchange.kraken.service.polling.KrakenPollingMarketDataService.java",
+                  "PossibleExternalLibrary": true
+                },
+                "region": {
+                  "startLine": 140
+                }
+              },
+              "fullyQualifiedLogicalName": "com::xeiam::xchange::kraken::service::polling::KrakenPollingMarketDataService::getTrades"
+            }
+          ],
+          "ruleId": "IncompleteOperationError-9",
+          "message": {
+            "text": "Operation on object of type javax.crypto.Mac object not completed. Expected call to update, doFinal.",
+            "richText": "IncompleteOperationError violating CrySL rule for javax.crypto.Mac."
+          }
+        },
+        {
+          "locations": [
+            {
+              "physicalLocation": {
+                "fileLocation": {
+                  "uri": "com.xeiam.xchange.kraken.service.polling.KrakenPollingMarketDataService.java",
+                  "PossibleExternalLibrary": true
+                },
+                "region": {
+                  "startLine": 140
+                }
+              },
+              "fullyQualifiedLogicalName": "com::xeiam::xchange::kraken::service::polling::KrakenPollingMarketDataService::getTrades"
+            }
+          ],
+          "ruleId": "IncompleteOperationError-10",
+          "message": {
+            "text": "Operation on object of type javax.crypto.Mac object not completed. Expected call to update, doFinal.",
+            "richText": "IncompleteOperationError violating CrySL rule for javax.crypto.Mac."
+          }
+        },
+        {
+          "locations": [
+            {
+              "physicalLocation": {
+                "fileLocation": {
+                  "uri": "com.xeiam.xchange.kraken.service.polling.KrakenPollingMarketDataService.java",
+                  "PossibleExternalLibrary": true
+                },
+                "region": {
+                  "startLine": 140
+                }
+              },
+              "fullyQualifiedLogicalName": "com::xeiam::xchange::kraken::service::polling::KrakenPollingMarketDataService::getTrades"
+            }
+          ],
+          "ruleId": "IncompleteOperationError-11",
+          "message": {
+            "text": "Operation on object of type java.security.MessageDigest object not completed. Expected call to digest, update.",
+            "richText": "IncompleteOperationError violating CrySL rule for java.security.MessageDigest."
+          }
+        },
+        {
+          "locations": [
+            {
+              "physicalLocation": {
+                "fileLocation": {
+                  "uri": "com.xeiam.xchange.kraken.service.polling.KrakenPollingMarketDataService.java",
+                  "PossibleExternalLibrary": true
+                },
+                "region": {
+                  "startLine": 84
+                }
+              },
+              "fullyQualifiedLogicalName": "com::xeiam::xchange::kraken::service::polling::KrakenPollingMarketDataService::getTicker"
+            }
+          ],
+          "ruleId": "IncompleteOperationError-12",
+          "message": {
+            "text": "Operation on object of type java.security.MessageDigest object not completed. Expected call to digest, update.",
+            "richText": "IncompleteOperationError violating CrySL rule for java.security.MessageDigest."
+          }
+        },
+        {
+          "locations": [
+            {
+              "physicalLocation": {
+                "fileLocation": {
+                  "uri": "com.xeiam.xchange.kraken.service.polling.KrakenPollingMarketDataService.java",
+                  "PossibleExternalLibrary": true
+                },
+                "region": {
+                  "startLine": 84
+                }
+              },
+              "fullyQualifiedLogicalName": "com::xeiam::xchange::kraken::service::polling::KrakenPollingMarketDataService::getTicker"
+            }
+          ],
+          "ruleId": "IncompleteOperationError-13",
+          "message": {
+            "text": "Operation on object of type javax.crypto.Mac object not completed. Expected call to update, doFinal.",
+            "richText": "IncompleteOperationError violating CrySL rule for javax.crypto.Mac."
+          }
+        },
+        {
+          "locations": [
+            {
+              "physicalLocation": {
+                "fileLocation": {
+                  "uri": "com.xeiam.xchange.kraken.service.polling.KrakenPollingMarketDataService.java",
+                  "PossibleExternalLibrary": true
+                },
+                "region": {
+                  "startLine": 84
+                }
+              },
+              "fullyQualifiedLogicalName": "com::xeiam::xchange::kraken::service::polling::KrakenPollingMarketDataService::getTicker"
+            }
+          ],
+          "ruleId": "IncompleteOperationError-14",
+          "message": {
+            "text": "Operation on object of type javax.crypto.Mac object not completed. Expected call to update, doFinal.",
+            "richText": "IncompleteOperationError violating CrySL rule for javax.crypto.Mac."
+          }
+        },
+        {
+          "locations": [
+            {
+              "physicalLocation": {
+                "fileLocation": {
+                  "uri": "com.xeiam.xchange.kraken.service.polling.KrakenPollingMarketDataService.java",
+                  "PossibleExternalLibrary": true
+                },
+                "region": {
+                  "startLine": 84
+                }
+              },
+              "fullyQualifiedLogicalName": "com::xeiam::xchange::kraken::service::polling::KrakenPollingMarketDataService::getTicker"
+            }
+          ],
+          "ruleId": "IncompleteOperationError-15",
+          "message": {
+            "text": "Operation on object of type javax.crypto.Mac object not completed. Expected call to update, doFinal.",
+            "richText": "IncompleteOperationError violating CrySL rule for javax.crypto.Mac."
+          }
+        },
+        {
+          "locations": [
+            {
+              "physicalLocation": {
+                "fileLocation": {
+                  "uri": "com.xeiam.xchange.kraken.service.polling.KrakenPollingMarketDataService.java",
+                  "PossibleExternalLibrary": true
+                },
+                "region": {
+                  "startLine": 84
+                }
+              },
+              "fullyQualifiedLogicalName": "com::xeiam::xchange::kraken::service::polling::KrakenPollingMarketDataService::getTicker"
+            }
+          ],
+          "ruleId": "IncompleteOperationError-16",
+          "message": {
+            "text": "Operation on object of type javax.crypto.Mac object not completed. Expected call to update, doFinal.",
+            "richText": "IncompleteOperationError violating CrySL rule for javax.crypto.Mac."
+          }
+        },
+        {
+          "locations": [
+            {
+              "physicalLocation": {
+                "fileLocation": {
+                  "uri": "com.xeiam.xchange.kraken.service.polling.KrakenPollingMarketDataService.java",
+                  "PossibleExternalLibrary": true
+                },
+                "region": {
+                  "startLine": 84
+                }
+              },
+              "fullyQualifiedLogicalName": "com::xeiam::xchange::kraken::service::polling::KrakenPollingMarketDataService::getTicker"
+            }
+          ],
+          "ruleId": "IncompleteOperationError-17",
+          "message": {
+            "text": "Operation on object of type javax.crypto.Mac object not completed. Expected call to update, doFinal.",
+            "richText": "IncompleteOperationError violating CrySL rule for javax.crypto.Mac."
+          }
+        },
+        {
+          "locations": [
+            {
+              "physicalLocation": {
+                "fileLocation": {
+                  "uri": "com.xeiam.xchange.kraken.service.polling.KrakenPollingMarketDataService.java",
+                  "PossibleExternalLibrary": true
+                },
+                "region": {
+                  "startLine": 109
+                }
+              },
+              "fullyQualifiedLogicalName": "com::xeiam::xchange::kraken::service::polling::KrakenPollingMarketDataService::getOrderBook"
+            }
+          ],
+          "ruleId": "IncompleteOperationError-18",
+          "message": {
+            "text": "Operation on object of type java.security.MessageDigest object not completed. Expected call to digest, update.",
+            "richText": "IncompleteOperationError violating CrySL rule for java.security.MessageDigest."
+          }
+        },
+        {
+          "locations": [
+            {
+              "physicalLocation": {
+                "fileLocation": {
+                  "uri": "com.xeiam.xchange.kraken.service.polling.KrakenPollingMarketDataService.java",
+                  "PossibleExternalLibrary": true
+                },
+                "region": {
+                  "startLine": 109
+                }
+              },
+              "fullyQualifiedLogicalName": "com::xeiam::xchange::kraken::service::polling::KrakenPollingMarketDataService::getOrderBook"
+            }
+          ],
+          "ruleId": "IncompleteOperationError-19",
+          "message": {
+            "text": "Operation on object of type javax.crypto.Mac object not completed. Expected call to update, doFinal.",
+            "richText": "IncompleteOperationError violating CrySL rule for javax.crypto.Mac."
+          }
+        },
+        {
+          "locations": [
+            {
+              "physicalLocation": {
+                "fileLocation": {
+                  "uri": "com.xeiam.xchange.kraken.service.polling.KrakenPollingMarketDataService.java",
+                  "PossibleExternalLibrary": true
+                },
+                "region": {
+                  "startLine": 109
+                }
+              },
+              "fullyQualifiedLogicalName": "com::xeiam::xchange::kraken::service::polling::KrakenPollingMarketDataService::getOrderBook"
+            }
+          ],
+          "ruleId": "IncompleteOperationError-20",
+          "message": {
+            "text": "Operation on object of type javax.crypto.Mac object not completed. Expected call to update, doFinal.",
+            "richText": "IncompleteOperationError violating CrySL rule for javax.crypto.Mac."
+          }
+        },
+        {
+          "locations": [
+            {
+              "physicalLocation": {
+                "fileLocation": {
+                  "uri": "com.xeiam.xchange.kraken.service.polling.KrakenPollingMarketDataService.java",
+                  "PossibleExternalLibrary": true
+                },
+                "region": {
+                  "startLine": 109
+                }
+              },
+              "fullyQualifiedLogicalName": "com::xeiam::xchange::kraken::service::polling::KrakenPollingMarketDataService::getOrderBook"
+            }
+          ],
+          "ruleId": "IncompleteOperationError-21",
+          "message": {
+            "text": "Operation on object of type javax.crypto.Mac object not completed. Expected call to update, doFinal.",
+            "richText": "IncompleteOperationError violating CrySL rule for javax.crypto.Mac."
+          }
+        },
+        {
+          "locations": [
+            {
+              "physicalLocation": {
+                "fileLocation": {
+                  "uri": "com.xeiam.xchange.kraken.service.polling.KrakenPollingMarketDataService.java",
+                  "PossibleExternalLibrary": true
+                },
+                "region": {
+                  "startLine": 109
+                }
+              },
+              "fullyQualifiedLogicalName": "com::xeiam::xchange::kraken::service::polling::KrakenPollingMarketDataService::getOrderBook"
+            }
+          ],
+          "ruleId": "IncompleteOperationError-22",
+          "message": {
+            "text": "Operation on object of type javax.crypto.Mac object not completed. Expected call to update, doFinal.",
+            "richText": "IncompleteOperationError violating CrySL rule for javax.crypto.Mac."
+          }
+        },
+        {
+          "locations": [
+            {
+              "physicalLocation": {
+                "fileLocation": {
+                  "uri": "com.xeiam.xchange.kraken.service.polling.KrakenPollingMarketDataService.java",
+                  "PossibleExternalLibrary": true
+                },
+                "region": {
+                  "startLine": 109
+                }
+              },
+              "fullyQualifiedLogicalName": "com::xeiam::xchange::kraken::service::polling::KrakenPollingMarketDataService::getOrderBook"
+            }
+          ],
+          "ruleId": "IncompleteOperationError-23",
+          "message": {
+            "text": "Operation on object of type javax.crypto.Mac object not completed. Expected call to update, doFinal.",
+            "richText": "IncompleteOperationError violating CrySL rule for javax.crypto.Mac."
+          }
+        },
+        {
+          "locations": [
+            {
+              "physicalLocation": {
+                "fileLocation": {
+                  "uri": "com.xeiam.xchange.mtgox.v2.service.polling.MtGoxPollingMarketDataService.java",
+                  "PossibleExternalLibrary": true
+                },
+                "region": {
+                  "startLine": 78
+                }
+              },
+              "fullyQualifiedLogicalName": "com::xeiam::xchange::mtgox::v2::service::polling::MtGoxPollingMarketDataService::getTicker"
+            }
+          ],
+          "ruleId": "IncompleteOperationError-24",
+          "message": {
+            "text": "Operation on object of type javax.crypto.Mac object not completed. Expected call to update, doFinal.",
+            "richText": "IncompleteOperationError violating CrySL rule for javax.crypto.Mac."
+          }
+        },
+        {
+          "locations": [
+            {
+              "physicalLocation": {
+                "fileLocation": {
+                  "uri": "com.xeiam.xchange.mtgox.v2.service.polling.MtGoxPollingMarketDataService.java",
+                  "PossibleExternalLibrary": true
+                },
+                "region": {
+                  "startLine": 78
+                }
+              },
+              "fullyQualifiedLogicalName": "com::xeiam::xchange::mtgox::v2::service::polling::MtGoxPollingMarketDataService::getTicker"
+            }
+          ],
+          "ruleId": "IncompleteOperationError-25",
+          "message": {
+            "text": "Operation on object of type javax.crypto.Mac object not completed. Expected call to update, doFinal.",
+            "richText": "IncompleteOperationError violating CrySL rule for javax.crypto.Mac."
+          }
+        },
+        {
+          "locations": [
+            {
+              "physicalLocation": {
+                "fileLocation": {
+                  "uri": "com.xeiam.xchange.mtgox.v2.service.polling.MtGoxPollingMarketDataService.java",
+                  "PossibleExternalLibrary": true
+                },
+                "region": {
+                  "startLine": 78
+                }
+              },
+              "fullyQualifiedLogicalName": "com::xeiam::xchange::mtgox::v2::service::polling::MtGoxPollingMarketDataService::getTicker"
+            }
+          ],
+          "ruleId": "IncompleteOperationError-26",
+          "message": {
+            "text": "Operation on object of type javax.crypto.Mac object not completed. Expected call to update, doFinal.",
+            "richText": "IncompleteOperationError violating CrySL rule for javax.crypto.Mac."
+          }
+        },
+        {
+          "locations": [
+            {
+              "physicalLocation": {
+                "fileLocation": {
+                  "uri": "com.xeiam.xchange.mtgox.v2.service.polling.MtGoxPollingMarketDataService.java",
+                  "PossibleExternalLibrary": true
+                },
+                "region": {
+                  "startLine": 78
+                }
+              },
+              "fullyQualifiedLogicalName": "com::xeiam::xchange::mtgox::v2::service::polling::MtGoxPollingMarketDataService::getTicker"
+            }
+          ],
+          "ruleId": "IncompleteOperationError-27",
+          "message": {
+            "text": "Operation on object of type java.security.MessageDigest object not completed. Expected call to digest, update.",
+            "richText": "IncompleteOperationError violating CrySL rule for java.security.MessageDigest."
+          }
+        },
+        {
+          "locations": [
+            {
+              "physicalLocation": {
+                "fileLocation": {
+                  "uri": "com.xeiam.xchange.mtgox.v2.service.polling.MtGoxPollingMarketDataService.java",
+                  "PossibleExternalLibrary": true
+                },
+                "region": {
+                  "startLine": 78
+                }
+              },
+              "fullyQualifiedLogicalName": "com::xeiam::xchange::mtgox::v2::service::polling::MtGoxPollingMarketDataService::getTicker"
+            }
+          ],
+          "ruleId": "IncompleteOperationError-28",
+          "message": {
+            "text": "Operation on object of type javax.crypto.Mac object not completed. Expected call to update, doFinal.",
+            "richText": "IncompleteOperationError violating CrySL rule for javax.crypto.Mac."
+          }
+        },
+        {
+          "locations": [
+            {
+              "physicalLocation": {
+                "fileLocation": {
+                  "uri": "com.xeiam.xchange.mtgox.v2.service.polling.MtGoxPollingMarketDataService.java",
+                  "PossibleExternalLibrary": true
+                },
+                "region": {
+                  "startLine": 78
+                }
+              },
+              "fullyQualifiedLogicalName": "com::xeiam::xchange::mtgox::v2::service::polling::MtGoxPollingMarketDataService::getTicker"
+            }
+          ],
+          "ruleId": "IncompleteOperationError-29",
+          "message": {
+            "text": "Operation on object of type javax.crypto.Mac object not completed. Expected call to update, doFinal.",
+            "richText": "IncompleteOperationError violating CrySL rule for javax.crypto.Mac."
+          }
+        },
+        {
+          "locations": [
+            {
+              "physicalLocation": {
+                "fileLocation": {
+                  "uri": "com.xeiam.xchange.mtgox.v2.service.polling.MtGoxPollingMarketDataService.java",
+                  "PossibleExternalLibrary": true
+                },
+                "region": {
+                  "startLine": 155
+                }
+              },
+              "fullyQualifiedLogicalName": "com::xeiam::xchange::mtgox::v2::service::polling::MtGoxPollingMarketDataService::getTrades"
+            }
+          ],
+          "ruleId": "IncompleteOperationError-30",
+          "message": {
+            "text": "Operation on object of type javax.crypto.Mac object not completed. Expected call to update, doFinal.",
+            "richText": "IncompleteOperationError violating CrySL rule for javax.crypto.Mac."
+          }
+        },
+        {
+          "locations": [
+            {
+              "physicalLocation": {
+                "fileLocation": {
+                  "uri": "com.xeiam.xchange.mtgox.v2.service.polling.MtGoxPollingMarketDataService.java",
+                  "PossibleExternalLibrary": true
+                },
+                "region": {
+                  "startLine": 155
+                }
+              },
+              "fullyQualifiedLogicalName": "com::xeiam::xchange::mtgox::v2::service::polling::MtGoxPollingMarketDataService::getTrades"
+            }
+          ],
+          "ruleId": "IncompleteOperationError-31",
+          "message": {
+            "text": "Operation on object of type javax.crypto.Mac object not completed. Expected call to update, doFinal.",
+            "richText": "IncompleteOperationError violating CrySL rule for javax.crypto.Mac."
+          }
+        },
+        {
+          "locations": [
+            {
+              "physicalLocation": {
+                "fileLocation": {
+                  "uri": "com.xeiam.xchange.mtgox.v2.service.polling.MtGoxPollingMarketDataService.java",
+                  "PossibleExternalLibrary": true
+                },
+                "region": {
+                  "startLine": 155
+                }
+              },
+              "fullyQualifiedLogicalName": "com::xeiam::xchange::mtgox::v2::service::polling::MtGoxPollingMarketDataService::getTrades"
+            }
+          ],
+          "ruleId": "IncompleteOperationError-32",
+          "message": {
+            "text": "Operation on object of type javax.crypto.Mac object not completed. Expected call to update, doFinal.",
+            "richText": "IncompleteOperationError violating CrySL rule for javax.crypto.Mac."
+          }
+        },
+        {
+          "locations": [
+            {
+              "physicalLocation": {
+                "fileLocation": {
+                  "uri": "com.xeiam.xchange.mtgox.v2.service.polling.MtGoxPollingMarketDataService.java",
+                  "PossibleExternalLibrary": true
+                },
+                "region": {
+                  "startLine": 155
+                }
+              },
+              "fullyQualifiedLogicalName": "com::xeiam::xchange::mtgox::v2::service::polling::MtGoxPollingMarketDataService::getTrades"
+            }
+          ],
+          "ruleId": "IncompleteOperationError-33",
+          "message": {
+            "text": "Operation on object of type java.security.MessageDigest object not completed. Expected call to digest, update.",
+            "richText": "IncompleteOperationError violating CrySL rule for java.security.MessageDigest."
+          }
+        },
+        {
+          "locations": [
+            {
+              "physicalLocation": {
+                "fileLocation": {
+                  "uri": "com.xeiam.xchange.mtgox.v2.service.polling.MtGoxPollingMarketDataService.java",
+                  "PossibleExternalLibrary": true
+                },
+                "region": {
+                  "startLine": 155
+                }
+              },
+              "fullyQualifiedLogicalName": "com::xeiam::xchange::mtgox::v2::service::polling::MtGoxPollingMarketDataService::getTrades"
+            }
+          ],
+          "ruleId": "IncompleteOperationError-34",
+          "message": {
+            "text": "Operation on object of type javax.crypto.Mac object not completed. Expected call to update, doFinal.",
+            "richText": "IncompleteOperationError violating CrySL rule for javax.crypto.Mac."
+          }
+        },
+        {
+          "locations": [
+            {
+              "physicalLocation": {
+                "fileLocation": {
+                  "uri": "com.xeiam.xchange.mtgox.v2.service.polling.MtGoxPollingMarketDataService.java",
+                  "PossibleExternalLibrary": true
+                },
+                "region": {
+                  "startLine": 155
+                }
+              },
+              "fullyQualifiedLogicalName": "com::xeiam::xchange::mtgox::v2::service::polling::MtGoxPollingMarketDataService::getTrades"
+            }
+          ],
+          "ruleId": "IncompleteOperationError-35",
+          "message": {
+            "text": "Operation on object of type javax.crypto.Mac object not completed. Expected call to update, doFinal.",
+            "richText": "IncompleteOperationError violating CrySL rule for javax.crypto.Mac."
+          }
+        },
+        {
+          "locations": [
+            {
+              "physicalLocation": {
+                "fileLocation": {
+                  "uri": "com.xeiam.xchange.mtgox.v2.service.polling.MtGoxPollingMarketDataService.java",
+                  "PossibleExternalLibrary": true
+                },
+                "region": {
+                  "startLine": 113
+                }
+              },
+              "fullyQualifiedLogicalName": "com::xeiam::xchange::mtgox::v2::service::polling::MtGoxPollingMarketDataService::getOrderBook"
+            }
+          ],
+          "ruleId": "IncompleteOperationError-36",
+          "message": {
+            "text": "Operation on object of type javax.crypto.Mac object not completed. Expected call to update, doFinal.",
+            "richText": "IncompleteOperationError violating CrySL rule for javax.crypto.Mac."
+          }
+        },
+        {
+          "locations": [
+            {
+              "physicalLocation": {
+                "fileLocation": {
+                  "uri": "com.xeiam.xchange.mtgox.v2.service.polling.MtGoxPollingMarketDataService.java",
+                  "PossibleExternalLibrary": true
+                },
+                "region": {
+                  "startLine": 113
+                }
+              },
+              "fullyQualifiedLogicalName": "com::xeiam::xchange::mtgox::v2::service::polling::MtGoxPollingMarketDataService::getOrderBook"
+            }
+          ],
+          "ruleId": "IncompleteOperationError-37",
+          "message": {
+            "text": "Operation on object of type javax.crypto.Mac object not completed. Expected call to update, doFinal.",
+            "richText": "IncompleteOperationError violating CrySL rule for javax.crypto.Mac."
+          }
+        },
+        {
+          "locations": [
+            {
+              "physicalLocation": {
+                "fileLocation": {
+                  "uri": "com.xeiam.xchange.mtgox.v2.service.polling.MtGoxPollingMarketDataService.java",
+                  "PossibleExternalLibrary": true
+                },
+                "region": {
+                  "startLine": 113
+                }
+              },
+              "fullyQualifiedLogicalName": "com::xeiam::xchange::mtgox::v2::service::polling::MtGoxPollingMarketDataService::getOrderBook"
+            }
+          ],
+          "ruleId": "IncompleteOperationError-38",
+          "message": {
+            "text": "Operation on object of type javax.crypto.Mac object not completed. Expected call to update, doFinal.",
+            "richText": "IncompleteOperationError violating CrySL rule for javax.crypto.Mac."
+          }
+        },
+        {
+          "locations": [
+            {
+              "physicalLocation": {
+                "fileLocation": {
+                  "uri": "com.xeiam.xchange.mtgox.v2.service.polling.MtGoxPollingMarketDataService.java",
+                  "PossibleExternalLibrary": true
+                },
+                "region": {
+                  "startLine": 113
+                }
+              },
+              "fullyQualifiedLogicalName": "com::xeiam::xchange::mtgox::v2::service::polling::MtGoxPollingMarketDataService::getOrderBook"
+            }
+          ],
+          "ruleId": "IncompleteOperationError-39",
+          "message": {
+            "text": "Operation on object of type javax.crypto.Mac object not completed. Expected call to update, doFinal.",
+            "richText": "IncompleteOperationError violating CrySL rule for javax.crypto.Mac."
+          }
+        },
+        {
+          "locations": [
+            {
+              "physicalLocation": {
+                "fileLocation": {
+                  "uri": "com.xeiam.xchange.mtgox.v2.service.polling.MtGoxPollingMarketDataService.java",
+                  "PossibleExternalLibrary": true
+                },
+                "region": {
+                  "startLine": 113
+                }
+              },
+              "fullyQualifiedLogicalName": "com::xeiam::xchange::mtgox::v2::service::polling::MtGoxPollingMarketDataService::getOrderBook"
+            }
+          ],
+          "ruleId": "IncompleteOperationError-40",
+          "message": {
+            "text": "Operation on object of type javax.crypto.Mac object not completed. Expected call to update, doFinal.",
+            "richText": "IncompleteOperationError violating CrySL rule for javax.crypto.Mac."
+          }
+        },
+        {
+          "locations": [
+            {
+              "physicalLocation": {
+                "fileLocation": {
+                  "uri": "com.xeiam.xchange.mtgox.v2.service.polling.MtGoxPollingMarketDataService.java",
+                  "PossibleExternalLibrary": true
+                },
+                "region": {
+                  "startLine": 113
+                }
+              },
+              "fullyQualifiedLogicalName": "com::xeiam::xchange::mtgox::v2::service::polling::MtGoxPollingMarketDataService::getOrderBook"
+            }
+          ],
+          "ruleId": "IncompleteOperationError-41",
+          "message": {
+            "text": "Operation on object of type java.security.MessageDigest object not completed. Expected call to digest, update.",
+            "richText": "IncompleteOperationError violating CrySL rule for java.security.MessageDigest."
+          }
+        },
+        {
+          "locations": [
+            {
+              "physicalLocation": {
+                "fileLocation": {
+                  "uri": "com.xeiam.xchange.btce.v3.service.polling.BTCEPollingMarketDataService.java",
+                  "PossibleExternalLibrary": true
+                },
+                "region": {
+                  "startLine": 94
+                }
+              },
+              "fullyQualifiedLogicalName": "com::xeiam::xchange::btce::v3::service::polling::BTCEPollingMarketDataService::getOrderBook"
+            }
+          ],
+          "ruleId": "IncompleteOperationError-42",
+          "message": {
+            "text": "Operation on object of type java.security.MessageDigest object not completed. Expected call to digest, update.",
+            "richText": "IncompleteOperationError violating CrySL rule for java.security.MessageDigest."
+          }
+        },
+        {
+          "locations": [
+            {
+              "physicalLocation": {
+                "fileLocation": {
+                  "uri": "com.xeiam.xchange.btce.v3.service.polling.BTCEPollingMarketDataService.java",
+                  "PossibleExternalLibrary": true
+                },
+                "region": {
+                  "startLine": 94
+                }
+              },
+              "fullyQualifiedLogicalName": "com::xeiam::xchange::btce::v3::service::polling::BTCEPollingMarketDataService::getOrderBook"
+            }
+          ],
+          "ruleId": "IncompleteOperationError-43",
+          "message": {
+            "text": "Operation on object of type javax.crypto.Mac object not completed. Expected call to update, doFinal.",
+            "richText": "IncompleteOperationError violating CrySL rule for javax.crypto.Mac."
+          }
+        },
+        {
+          "locations": [
+            {
+              "physicalLocation": {
+                "fileLocation": {
+                  "uri": "com.xeiam.xchange.btce.v3.service.polling.BTCEPollingMarketDataService.java",
+                  "PossibleExternalLibrary": true
+                },
+                "region": {
+                  "startLine": 94
+                }
+              },
+              "fullyQualifiedLogicalName": "com::xeiam::xchange::btce::v3::service::polling::BTCEPollingMarketDataService::getOrderBook"
+            }
+          ],
+          "ruleId": "IncompleteOperationError-44",
+          "message": {
+            "text": "Operation on object of type javax.crypto.Mac object not completed. Expected call to update, doFinal.",
+            "richText": "IncompleteOperationError violating CrySL rule for javax.crypto.Mac."
+          }
+        },
+        {
+          "locations": [
+            {
+              "physicalLocation": {
+                "fileLocation": {
+                  "uri": "com.xeiam.xchange.btce.v3.service.polling.BTCEPollingMarketDataService.java",
+                  "PossibleExternalLibrary": true
+                },
+                "region": {
+                  "startLine": 94
+                }
+              },
+              "fullyQualifiedLogicalName": "com::xeiam::xchange::btce::v3::service::polling::BTCEPollingMarketDataService::getOrderBook"
+            }
+          ],
+          "ruleId": "IncompleteOperationError-45",
+          "message": {
+            "text": "Operation on object of type javax.crypto.Mac object not completed. Expected call to update, doFinal.",
+            "richText": "IncompleteOperationError violating CrySL rule for javax.crypto.Mac."
+          }
+        },
+        {
+          "locations": [
+            {
+              "physicalLocation": {
+                "fileLocation": {
+                  "uri": "com.xeiam.xchange.btce.v3.service.polling.BTCEPollingMarketDataService.java",
+                  "PossibleExternalLibrary": true
+                },
+                "region": {
+                  "startLine": 94
+                }
+              },
+              "fullyQualifiedLogicalName": "com::xeiam::xchange::btce::v3::service::polling::BTCEPollingMarketDataService::getOrderBook"
+            }
+          ],
+          "ruleId": "IncompleteOperationError-46",
+          "message": {
+            "text": "Operation on object of type javax.crypto.Mac object not completed. Expected call to update, doFinal.",
+            "richText": "IncompleteOperationError violating CrySL rule for javax.crypto.Mac."
+          }
+        },
+        {
+          "locations": [
+            {
+              "physicalLocation": {
+                "fileLocation": {
+                  "uri": "com.xeiam.xchange.btce.v3.service.polling.BTCEPollingMarketDataService.java",
+                  "PossibleExternalLibrary": true
+                },
+                "region": {
+                  "startLine": 94
+                }
+              },
+              "fullyQualifiedLogicalName": "com::xeiam::xchange::btce::v3::service::polling::BTCEPollingMarketDataService::getOrderBook"
+            }
+          ],
+          "ruleId": "IncompleteOperationError-47",
+          "message": {
+            "text": "Operation on object of type javax.crypto.Mac object not completed. Expected call to update, doFinal.",
+            "richText": "IncompleteOperationError violating CrySL rule for javax.crypto.Mac."
+          }
+        },
+        {
+          "locations": [
+            {
+              "physicalLocation": {
+                "fileLocation": {
+                  "uri": "com.xeiam.xchange.bitstamp.service.polling.BitstampPollingMarketDataService.java",
+                  "PossibleExternalLibrary": true
+                },
+                "region": {
+                  "startLine": 87
+                }
+              },
+              "fullyQualifiedLogicalName": "com::xeiam::xchange::bitstamp::service::polling::BitstampPollingMarketDataService::getTrades"
+            }
+          ],
+          "ruleId": "IncompleteOperationError-48",
+          "message": {
+            "text": "Operation on object of type java.security.MessageDigest object not completed. Expected call to digest, update.",
+            "richText": "IncompleteOperationError violating CrySL rule for java.security.MessageDigest."
+          }
+        },
+        {
+          "locations": [
+            {
+              "physicalLocation": {
+                "fileLocation": {
+                  "uri": "com.xeiam.xchange.bitstamp.service.polling.BitstampPollingMarketDataService.java",
+                  "PossibleExternalLibrary": true
+                },
+                "region": {
+                  "startLine": 87
+                }
+              },
+              "fullyQualifiedLogicalName": "com::xeiam::xchange::bitstamp::service::polling::BitstampPollingMarketDataService::getTrades"
+            }
+          ],
+          "ruleId": "IncompleteOperationError-49",
+          "message": {
+            "text": "Operation on object of type javax.crypto.Mac object not completed. Expected call to update, doFinal.",
+            "richText": "IncompleteOperationError violating CrySL rule for javax.crypto.Mac."
+          }
+        },
+        {
+          "locations": [
+            {
+              "physicalLocation": {
+                "fileLocation": {
+                  "uri": "com.xeiam.xchange.bitstamp.service.polling.BitstampPollingMarketDataService.java",
+                  "PossibleExternalLibrary": true
+                },
+                "region": {
+                  "startLine": 87
+                }
+              },
+              "fullyQualifiedLogicalName": "com::xeiam::xchange::bitstamp::service::polling::BitstampPollingMarketDataService::getTrades"
+            }
+          ],
+          "ruleId": "IncompleteOperationError-50",
+          "message": {
+            "text": "Operation on object of type javax.crypto.Mac object not completed. Expected call to update, doFinal.",
+            "richText": "IncompleteOperationError violating CrySL rule for javax.crypto.Mac."
+          }
+        },
+        {
+          "locations": [
+            {
+              "physicalLocation": {
+                "fileLocation": {
+                  "uri": "com.xeiam.xchange.bitstamp.service.polling.BitstampPollingMarketDataService.java",
+                  "PossibleExternalLibrary": true
+                },
+                "region": {
+                  "startLine": 87
+                }
+              },
+              "fullyQualifiedLogicalName": "com::xeiam::xchange::bitstamp::service::polling::BitstampPollingMarketDataService::getTrades"
+            }
+          ],
+          "ruleId": "IncompleteOperationError-51",
+          "message": {
+            "text": "Operation on object of type javax.crypto.Mac object not completed. Expected call to update, doFinal.",
+            "richText": "IncompleteOperationError violating CrySL rule for javax.crypto.Mac."
+          }
+        },
+        {
+          "locations": [
+            {
+              "physicalLocation": {
+                "fileLocation": {
+                  "uri": "com.xeiam.xchange.bitstamp.service.polling.BitstampPollingMarketDataService.java",
+                  "PossibleExternalLibrary": true
+                },
+                "region": {
+                  "startLine": 87
+                }
+              },
+              "fullyQualifiedLogicalName": "com::xeiam::xchange::bitstamp::service::polling::BitstampPollingMarketDataService::getTrades"
+            }
+          ],
+          "ruleId": "IncompleteOperationError-52",
+          "message": {
+            "text": "Operation on object of type javax.crypto.Mac object not completed. Expected call to update, doFinal.",
+            "richText": "IncompleteOperationError violating CrySL rule for javax.crypto.Mac."
+          }
+        },
+        {
+          "locations": [
+            {
+              "physicalLocation": {
+                "fileLocation": {
+                  "uri": "com.xeiam.xchange.bitstamp.service.polling.BitstampPollingMarketDataService.java",
+                  "PossibleExternalLibrary": true
+                },
+                "region": {
+                  "startLine": 87
+                }
+              },
+              "fullyQualifiedLogicalName": "com::xeiam::xchange::bitstamp::service::polling::BitstampPollingMarketDataService::getTrades"
+            }
+          ],
+          "ruleId": "IncompleteOperationError-53",
+          "message": {
+            "text": "Operation on object of type javax.crypto.Mac object not completed. Expected call to update, doFinal.",
+            "richText": "IncompleteOperationError violating CrySL rule for javax.crypto.Mac."
+          }
+        },
+        {
+          "locations": [
+            {
+              "physicalLocation": {
+                "fileLocation": {
+                  "uri": "com.veken0m.bitcoinium.BitcoinAverageActivity.java",
+                  "PossibleExternalLibrary": true
+                },
+                "region": {
+                  "startLine": 88
+                }
+              },
+              "fullyQualifiedLogicalName": "com::veken0m::bitcoinium::BitcoinAverageActivity::getBitcoinAverage"
+            }
+          ],
+          "ruleId": "IncompleteOperationError-54",
+          "message": {
+            "text": "Operation on object of type java.security.MessageDigest object not completed. Expected call to digest, update.",
+            "richText": "IncompleteOperationError violating CrySL rule for java.security.MessageDigest."
+          }
+        },
+        {
+          "locations": [
+            {
+              "physicalLocation": {
+                "fileLocation": {
+                  "uri": "com.veken0m.bitcoinium.BitcoinAverageActivity.java",
+                  "PossibleExternalLibrary": true
+                },
+                "region": {
+                  "startLine": 88
+                }
+              },
+              "fullyQualifiedLogicalName": "com::veken0m::bitcoinium::BitcoinAverageActivity::getBitcoinAverage"
+            }
+          ],
+          "ruleId": "IncompleteOperationError-55",
+          "message": {
+            "text": "Operation on object of type javax.crypto.Mac object not completed. Expected call to update, doFinal.",
+            "richText": "IncompleteOperationError violating CrySL rule for javax.crypto.Mac."
+          }
+        },
+        {
+          "locations": [
+            {
+              "physicalLocation": {
+                "fileLocation": {
+                  "uri": "com.veken0m.bitcoinium.BitcoinAverageActivity.java",
+                  "PossibleExternalLibrary": true
+                },
+                "region": {
+                  "startLine": 88
+                }
+              },
+              "fullyQualifiedLogicalName": "com::veken0m::bitcoinium::BitcoinAverageActivity::getBitcoinAverage"
+            }
+          ],
+          "ruleId": "IncompleteOperationError-56",
+          "message": {
+            "text": "Operation on object of type javax.crypto.Mac object not completed. Expected call to update, doFinal.",
+            "richText": "IncompleteOperationError violating CrySL rule for javax.crypto.Mac."
+          }
+        },
+        {
+          "locations": [
+            {
+              "physicalLocation": {
+                "fileLocation": {
+                  "uri": "com.veken0m.bitcoinium.BitcoinAverageActivity.java",
+                  "PossibleExternalLibrary": true
+                },
+                "region": {
+                  "startLine": 88
+                }
+              },
+              "fullyQualifiedLogicalName": "com::veken0m::bitcoinium::BitcoinAverageActivity::getBitcoinAverage"
+            }
+          ],
+          "ruleId": "IncompleteOperationError-57",
+          "message": {
+            "text": "Operation on object of type javax.crypto.Mac object not completed. Expected call to update, doFinal.",
+            "richText": "IncompleteOperationError violating CrySL rule for javax.crypto.Mac."
+          }
+        },
+        {
+          "locations": [
+            {
+              "physicalLocation": {
+                "fileLocation": {
+                  "uri": "com.veken0m.bitcoinium.BitcoinAverageActivity.java",
+                  "PossibleExternalLibrary": true
+                },
+                "region": {
+                  "startLine": 88
+                }
+              },
+              "fullyQualifiedLogicalName": "com::veken0m::bitcoinium::BitcoinAverageActivity::getBitcoinAverage"
+            }
+          ],
+          "ruleId": "IncompleteOperationError-58",
+          "message": {
+            "text": "Operation on object of type javax.crypto.Mac object not completed. Expected call to update, doFinal.",
+            "richText": "IncompleteOperationError violating CrySL rule for javax.crypto.Mac."
+          }
+        },
+        {
+          "locations": [
+            {
+              "physicalLocation": {
+                "fileLocation": {
+                  "uri": "com.veken0m.bitcoinium.BitcoinAverageActivity.java",
+                  "PossibleExternalLibrary": true
+                },
+                "region": {
+                  "startLine": 88
+                }
+              },
+              "fullyQualifiedLogicalName": "com::veken0m::bitcoinium::BitcoinAverageActivity::getBitcoinAverage"
+            }
+          ],
+          "ruleId": "IncompleteOperationError-59",
+          "message": {
+            "text": "Operation on object of type javax.crypto.Mac object not completed. Expected call to update, doFinal.",
+            "richText": "IncompleteOperationError violating CrySL rule for javax.crypto.Mac."
+          }
+        },
+        {
+          "locations": [
+            {
+              "physicalLocation": {
+                "fileLocation": {
+                  "uri": "com.veken0m.bitcoinium.BitcoinAverageActivity.java",
+                  "PossibleExternalLibrary": true
+                },
+                "region": {
+                  "startLine": 88
+                }
+              },
+              "fullyQualifiedLogicalName": "com::veken0m::bitcoinium::BitcoinAverageActivity::getBitcoinAverage"
+            }
+          ],
+          "ruleId": "IncompleteOperationError-60",
+          "message": {
+            "text": "Operation on object of type javax.crypto.Mac object not completed. Expected call to update, doFinal.",
+            "richText": "IncompleteOperationError violating CrySL rule for javax.crypto.Mac."
+          }
+        },
+        {
+          "locations": [
+            {
+              "physicalLocation": {
+                "fileLocation": {
+                  "uri": "com.veken0m.bitcoinium.BitcoinAverageActivity.java",
+                  "PossibleExternalLibrary": true
+                },
+                "region": {
+                  "startLine": 88
+                }
+              },
+              "fullyQualifiedLogicalName": "com::veken0m::bitcoinium::BitcoinAverageActivity::getBitcoinAverage"
+            }
+          ],
+          "ruleId": "IncompleteOperationError-61",
+          "message": {
+            "text": "Operation on object of type javax.crypto.Mac object not completed. Expected call to update, doFinal.",
+            "richText": "IncompleteOperationError violating CrySL rule for javax.crypto.Mac."
+          }
+        },
+        {
+          "locations": [
+            {
+              "physicalLocation": {
+                "fileLocation": {
+                  "uri": "com.xeiam.xchange.campbx.service.polling.CampBXPollingMarketDataService.java",
+                  "PossibleExternalLibrary": true
+                },
+                "region": {
+                  "startLine": 81
+                }
+              },
+              "fullyQualifiedLogicalName": "com::xeiam::xchange::campbx::service::polling::CampBXPollingMarketDataService::getCampBXOrderBook"
+            }
+          ],
+          "ruleId": "IncompleteOperationError-62",
+          "message": {
+            "text": "Operation on object of type javax.crypto.Mac object not completed. Expected call to update, doFinal.",
+            "richText": "IncompleteOperationError violating CrySL rule for javax.crypto.Mac."
+          }
+        },
+        {
+          "locations": [
+            {
+              "physicalLocation": {
+                "fileLocation": {
+                  "uri": "com.xeiam.xchange.campbx.service.polling.CampBXPollingMarketDataService.java",
+                  "PossibleExternalLibrary": true
+                },
+                "region": {
+                  "startLine": 81
+                }
+              },
+              "fullyQualifiedLogicalName": "com::xeiam::xchange::campbx::service::polling::CampBXPollingMarketDataService::getCampBXOrderBook"
+            }
+          ],
+          "ruleId": "IncompleteOperationError-63",
+          "message": {
+            "text": "Operation on object of type javax.crypto.Mac object not completed. Expected call to update, doFinal.",
+            "richText": "IncompleteOperationError violating CrySL rule for javax.crypto.Mac."
+          }
+        },
+        {
+          "locations": [
+            {
+              "physicalLocation": {
+                "fileLocation": {
+                  "uri": "com.xeiam.xchange.campbx.service.polling.CampBXPollingMarketDataService.java",
+                  "PossibleExternalLibrary": true
+                },
+                "region": {
+                  "startLine": 81
+                }
+              },
+              "fullyQualifiedLogicalName": "com::xeiam::xchange::campbx::service::polling::CampBXPollingMarketDataService::getCampBXOrderBook"
+            }
+          ],
+          "ruleId": "IncompleteOperationError-64",
+          "message": {
+            "text": "Operation on object of type javax.crypto.Mac object not completed. Expected call to update, doFinal.",
+            "richText": "IncompleteOperationError violating CrySL rule for javax.crypto.Mac."
+          }
+        },
+        {
+          "locations": [
+            {
+              "physicalLocation": {
+                "fileLocation": {
+                  "uri": "com.xeiam.xchange.campbx.service.polling.CampBXPollingMarketDataService.java",
+                  "PossibleExternalLibrary": true
+                },
+                "region": {
+                  "startLine": 81
+                }
+              },
+              "fullyQualifiedLogicalName": "com::xeiam::xchange::campbx::service::polling::CampBXPollingMarketDataService::getCampBXOrderBook"
+            }
+          ],
+          "ruleId": "IncompleteOperationError-65",
+          "message": {
+            "text": "Operation on object of type javax.crypto.Mac object not completed. Expected call to update, doFinal.",
+            "richText": "IncompleteOperationError violating CrySL rule for javax.crypto.Mac."
+          }
+        },
+        {
+          "locations": [
+            {
+              "physicalLocation": {
+                "fileLocation": {
+                  "uri": "com.xeiam.xchange.campbx.service.polling.CampBXPollingMarketDataService.java",
+                  "PossibleExternalLibrary": true
+                },
+                "region": {
+                  "startLine": 81
+                }
+              },
+              "fullyQualifiedLogicalName": "com::xeiam::xchange::campbx::service::polling::CampBXPollingMarketDataService::getCampBXOrderBook"
+            }
+          ],
+          "ruleId": "IncompleteOperationError-66",
+          "message": {
+            "text": "Operation on object of type javax.crypto.Mac object not completed. Expected call to update, doFinal.",
+            "richText": "IncompleteOperationError violating CrySL rule for javax.crypto.Mac."
+          }
+        },
+        {
+          "locations": [
+            {
+              "physicalLocation": {
+                "fileLocation": {
+                  "uri": "com.xeiam.xchange.campbx.service.polling.CampBXPollingMarketDataService.java",
+                  "PossibleExternalLibrary": true
+                },
+                "region": {
+                  "startLine": 81
+                }
+              },
+              "fullyQualifiedLogicalName": "com::xeiam::xchange::campbx::service::polling::CampBXPollingMarketDataService::getCampBXOrderBook"
+            }
+          ],
+          "ruleId": "IncompleteOperationError-67",
+          "message": {
+            "text": "Operation on object of type java.security.MessageDigest object not completed. Expected call to digest, update.",
+            "richText": "IncompleteOperationError violating CrySL rule for java.security.MessageDigest."
+          }
+        },
+        {
+          "locations": [
+            {
+              "physicalLocation": {
+                "fileLocation": {
+                  "uri": "com.xeiam.xchange.campbx.service.polling.CampBXPollingMarketDataService.java",
+                  "PossibleExternalLibrary": true
+                },
+                "region": {
+                  "startLine": 67
+                }
+              },
+              "fullyQualifiedLogicalName": "com::xeiam::xchange::campbx::service::polling::CampBXPollingMarketDataService::getCampBXTicker"
+            }
+          ],
+          "ruleId": "IncompleteOperationError-68",
+          "message": {
+            "text": "Operation on object of type java.security.MessageDigest object not completed. Expected call to digest, update.",
+            "richText": "IncompleteOperationError violating CrySL rule for java.security.MessageDigest."
+          }
+        },
+        {
+          "locations": [
+            {
+              "physicalLocation": {
+                "fileLocation": {
+                  "uri": "com.xeiam.xchange.campbx.service.polling.CampBXPollingMarketDataService.java",
+                  "PossibleExternalLibrary": true
+                },
+                "region": {
+                  "startLine": 67
+                }
+              },
+              "fullyQualifiedLogicalName": "com::xeiam::xchange::campbx::service::polling::CampBXPollingMarketDataService::getCampBXTicker"
+            }
+          ],
+          "ruleId": "IncompleteOperationError-69",
+          "message": {
+            "text": "Operation on object of type javax.crypto.Mac object not completed. Expected call to update, doFinal.",
+            "richText": "IncompleteOperationError violating CrySL rule for javax.crypto.Mac."
+          }
+        },
+        {
+          "locations": [
+            {
+              "physicalLocation": {
+                "fileLocation": {
+                  "uri": "com.xeiam.xchange.campbx.service.polling.CampBXPollingMarketDataService.java",
+                  "PossibleExternalLibrary": true
+                },
+                "region": {
+                  "startLine": 67
+                }
+              },
+              "fullyQualifiedLogicalName": "com::xeiam::xchange::campbx::service::polling::CampBXPollingMarketDataService::getCampBXTicker"
+            }
+          ],
+          "ruleId": "IncompleteOperationError-70",
+          "message": {
+            "text": "Operation on object of type javax.crypto.Mac object not completed. Expected call to update, doFinal.",
+            "richText": "IncompleteOperationError violating CrySL rule for javax.crypto.Mac."
+          }
+        },
+        {
+          "locations": [
+            {
+              "physicalLocation": {
+                "fileLocation": {
+                  "uri": "com.xeiam.xchange.campbx.service.polling.CampBXPollingMarketDataService.java",
+                  "PossibleExternalLibrary": true
+                },
+                "region": {
+                  "startLine": 67
+                }
+              },
+              "fullyQualifiedLogicalName": "com::xeiam::xchange::campbx::service::polling::CampBXPollingMarketDataService::getCampBXTicker"
+            }
+          ],
+          "ruleId": "IncompleteOperationError-71",
+          "message": {
+            "text": "Operation on object of type javax.crypto.Mac object not completed. Expected call to update, doFinal.",
+            "richText": "IncompleteOperationError violating CrySL rule for javax.crypto.Mac."
+          }
+        },
+        {
+          "locations": [
+            {
+              "physicalLocation": {
+                "fileLocation": {
+                  "uri": "com.xeiam.xchange.campbx.service.polling.CampBXPollingMarketDataService.java",
+                  "PossibleExternalLibrary": true
+                },
+                "region": {
+                  "startLine": 67
+                }
+              },
+              "fullyQualifiedLogicalName": "com::xeiam::xchange::campbx::service::polling::CampBXPollingMarketDataService::getCampBXTicker"
+            }
+          ],
+          "ruleId": "IncompleteOperationError-72",
+          "message": {
+            "text": "Operation on object of type javax.crypto.Mac object not completed. Expected call to update, doFinal.",
+            "richText": "IncompleteOperationError violating CrySL rule for javax.crypto.Mac."
+          }
+        },
+        {
+          "locations": [
+            {
+              "physicalLocation": {
+                "fileLocation": {
+                  "uri": "com.xeiam.xchange.campbx.service.polling.CampBXPollingMarketDataService.java",
+                  "PossibleExternalLibrary": true
+                },
+                "region": {
+                  "startLine": 67
+                }
+              },
+              "fullyQualifiedLogicalName": "com::xeiam::xchange::campbx::service::polling::CampBXPollingMarketDataService::getCampBXTicker"
+            }
+          ],
+          "ruleId": "IncompleteOperationError-73",
+          "message": {
+            "text": "Operation on object of type javax.crypto.Mac object not completed. Expected call to update, doFinal.",
+            "richText": "IncompleteOperationError violating CrySL rule for javax.crypto.Mac."
+          }
+        },
+        {
+          "locations": [
+            {
+              "physicalLocation": {
+                "fileLocation": {
+                  "uri": "com.veken0m.bitcoinium.GraphActivity.java",
+                  "PossibleExternalLibrary": true
+                },
+                "region": {
+                  "startLine": 177
+                }
+              },
+              "fullyQualifiedLogicalName": "com::veken0m::bitcoinium::GraphActivity::generatePriceGraph"
+            }
+          ],
+          "ruleId": "IncompleteOperationError-74",
+          "message": {
+            "text": "Operation on object of type javax.crypto.Mac object not completed. Expected call to update, doFinal.",
+            "richText": "IncompleteOperationError violating CrySL rule for javax.crypto.Mac."
+          }
+        },
+        {
+          "locations": [
+            {
+              "physicalLocation": {
+                "fileLocation": {
+                  "uri": "com.veken0m.bitcoinium.GraphActivity.java",
+                  "PossibleExternalLibrary": true
+                },
+                "region": {
+                  "startLine": 177
+                }
+              },
+              "fullyQualifiedLogicalName": "com::veken0m::bitcoinium::GraphActivity::generatePriceGraph"
+            }
+          ],
+          "ruleId": "IncompleteOperationError-75",
+          "message": {
+            "text": "Operation on object of type javax.crypto.Mac object not completed. Expected call to update, doFinal.",
+            "richText": "IncompleteOperationError violating CrySL rule for javax.crypto.Mac."
+          }
+        },
+        {
+          "locations": [
+            {
+              "physicalLocation": {
+                "fileLocation": {
+                  "uri": "com.veken0m.bitcoinium.GraphActivity.java",
+                  "PossibleExternalLibrary": true
+                },
+                "region": {
+                  "startLine": 177
+                }
+              },
+              "fullyQualifiedLogicalName": "com::veken0m::bitcoinium::GraphActivity::generatePriceGraph"
+            }
+          ],
+          "ruleId": "IncompleteOperationError-76",
+          "message": {
+            "text": "Operation on object of type javax.crypto.Mac object not completed. Expected call to update, doFinal.",
+            "richText": "IncompleteOperationError violating CrySL rule for javax.crypto.Mac."
+          }
+        },
+        {
+          "locations": [
+            {
+              "physicalLocation": {
+                "fileLocation": {
+                  "uri": "com.veken0m.bitcoinium.GraphActivity.java",
+                  "PossibleExternalLibrary": true
+                },
+                "region": {
+                  "startLine": 177
+                }
+              },
+              "fullyQualifiedLogicalName": "com::veken0m::bitcoinium::GraphActivity::generatePriceGraph"
+            }
+          ],
+          "ruleId": "IncompleteOperationError-77",
+          "message": {
+            "text": "Operation on object of type javax.crypto.Mac object not completed. Expected call to update, doFinal.",
+            "richText": "IncompleteOperationError violating CrySL rule for javax.crypto.Mac."
+          }
+        },
+        {
+          "locations": [
+            {
+              "physicalLocation": {
+                "fileLocation": {
+                  "uri": "com.veken0m.bitcoinium.GraphActivity.java",
+                  "PossibleExternalLibrary": true
+                },
+                "region": {
+                  "startLine": 177
+                }
+              },
+              "fullyQualifiedLogicalName": "com::veken0m::bitcoinium::GraphActivity::generatePriceGraph"
+            }
+          ],
+          "ruleId": "IncompleteOperationError-78",
+          "message": {
+            "text": "Operation on object of type javax.crypto.Mac object not completed. Expected call to update, doFinal.",
+            "richText": "IncompleteOperationError violating CrySL rule for javax.crypto.Mac."
+          }
+        },
+        {
+          "locations": [
+            {
+              "physicalLocation": {
+                "fileLocation": {
+                  "uri": "com.veken0m.bitcoinium.GraphActivity.java",
+                  "PossibleExternalLibrary": true
+                },
+                "region": {
+                  "startLine": 177
+                }
+              },
+              "fullyQualifiedLogicalName": "com::veken0m::bitcoinium::GraphActivity::generatePriceGraph"
+            }
+          ],
+          "ruleId": "IncompleteOperationError-79",
+          "message": {
+            "text": "Operation on object of type javax.crypto.Mac object not completed. Expected call to update, doFinal.",
+            "richText": "IncompleteOperationError violating CrySL rule for javax.crypto.Mac."
+          }
+        },
+        {
+          "locations": [
+            {
+              "physicalLocation": {
+                "fileLocation": {
+                  "uri": "com.veken0m.bitcoinium.GraphActivity.java",
+                  "PossibleExternalLibrary": true
+                },
+                "region": {
+                  "startLine": 177
+                }
+              },
+              "fullyQualifiedLogicalName": "com::veken0m::bitcoinium::GraphActivity::generatePriceGraph"
+            }
+          ],
+          "ruleId": "IncompleteOperationError-80",
+          "message": {
+            "text": "Operation on object of type javax.crypto.Mac object not completed. Expected call to update, doFinal.",
+            "richText": "IncompleteOperationError violating CrySL rule for javax.crypto.Mac."
+          }
+        },
+        {
+          "locations": [
+            {
+              "physicalLocation": {
+                "fileLocation": {
+                  "uri": "com.veken0m.bitcoinium.GraphActivity.java",
+                  "PossibleExternalLibrary": true
+                },
+                "region": {
+                  "startLine": 177
+                }
+              },
+              "fullyQualifiedLogicalName": "com::veken0m::bitcoinium::GraphActivity::generatePriceGraph"
+            }
+          ],
+          "ruleId": "IncompleteOperationError-81",
+          "message": {
+            "text": "Operation on object of type java.security.MessageDigest object not completed. Expected call to digest, update.",
+            "richText": "IncompleteOperationError violating CrySL rule for java.security.MessageDigest."
+          }
+        },
+        {
+          "locations": [
+            {
+              "physicalLocation": {
+                "fileLocation": {
+                  "uri": "com.xeiam.xchange.mtgox.v1.service.marketdata.polling.MtGoxPollingMarketDataService.java",
+                  "PossibleExternalLibrary": true
+                },
+                "region": {
+                  "startLine": 100
+                }
+              },
+              "fullyQualifiedLogicalName": "com::xeiam::xchange::mtgox::v1::service::marketdata::polling::MtGoxPollingMarketDataService::getOrderBook"
+            }
+          ],
+          "ruleId": "IncompleteOperationError-82",
+          "message": {
+            "text": "Operation on object of type java.security.MessageDigest object not completed. Expected call to digest, update.",
+            "richText": "IncompleteOperationError violating CrySL rule for java.security.MessageDigest."
+          }
+        },
+        {
+          "locations": [
+            {
+              "physicalLocation": {
+                "fileLocation": {
+                  "uri": "com.xeiam.xchange.mtgox.v1.service.marketdata.polling.MtGoxPollingMarketDataService.java",
+                  "PossibleExternalLibrary": true
+                },
+                "region": {
+                  "startLine": 100
+                }
+              },
+              "fullyQualifiedLogicalName": "com::xeiam::xchange::mtgox::v1::service::marketdata::polling::MtGoxPollingMarketDataService::getOrderBook"
+            }
+          ],
+          "ruleId": "IncompleteOperationError-83",
+          "message": {
+            "text": "Operation on object of type javax.crypto.Mac object not completed. Expected call to update, doFinal.",
+            "richText": "IncompleteOperationError violating CrySL rule for javax.crypto.Mac."
+          }
+        },
+        {
+          "locations": [
+            {
+              "physicalLocation": {
+                "fileLocation": {
+                  "uri": "com.xeiam.xchange.mtgox.v1.service.marketdata.polling.MtGoxPollingMarketDataService.java",
+                  "PossibleExternalLibrary": true
+                },
+                "region": {
+                  "startLine": 100
+                }
+              },
+              "fullyQualifiedLogicalName": "com::xeiam::xchange::mtgox::v1::service::marketdata::polling::MtGoxPollingMarketDataService::getOrderBook"
+            }
+          ],
+          "ruleId": "IncompleteOperationError-84",
+          "message": {
+            "text": "Operation on object of type javax.crypto.Mac object not completed. Expected call to update, doFinal.",
+            "richText": "IncompleteOperationError violating CrySL rule for javax.crypto.Mac."
+          }
+        },
+        {
+          "locations": [
+            {
+              "physicalLocation": {
+                "fileLocation": {
+                  "uri": "com.xeiam.xchange.mtgox.v1.service.marketdata.polling.MtGoxPollingMarketDataService.java",
+                  "PossibleExternalLibrary": true
+                },
+                "region": {
+                  "startLine": 100
+                }
+              },
+              "fullyQualifiedLogicalName": "com::xeiam::xchange::mtgox::v1::service::marketdata::polling::MtGoxPollingMarketDataService::getOrderBook"
+            }
+          ],
+          "ruleId": "IncompleteOperationError-85",
+          "message": {
+            "text": "Operation on object of type javax.crypto.Mac object not completed. Expected call to update, doFinal.",
+            "richText": "IncompleteOperationError violating CrySL rule for javax.crypto.Mac."
+          }
+        },
+        {
+          "locations": [
+            {
+              "physicalLocation": {
+                "fileLocation": {
+                  "uri": "com.xeiam.xchange.mtgox.v1.service.marketdata.polling.MtGoxPollingMarketDataService.java",
+                  "PossibleExternalLibrary": true
+                },
+                "region": {
+                  "startLine": 100
+                }
+              },
+              "fullyQualifiedLogicalName": "com::xeiam::xchange::mtgox::v1::service::marketdata::polling::MtGoxPollingMarketDataService::getOrderBook"
+            }
+          ],
+          "ruleId": "IncompleteOperationError-86",
+          "message": {
+            "text": "Operation on object of type javax.crypto.Mac object not completed. Expected call to update, doFinal.",
+            "richText": "IncompleteOperationError violating CrySL rule for javax.crypto.Mac."
+          }
+        },
+        {
+          "locations": [
+            {
+              "physicalLocation": {
+                "fileLocation": {
+                  "uri": "com.xeiam.xchange.mtgox.v1.service.marketdata.polling.MtGoxPollingMarketDataService.java",
+                  "PossibleExternalLibrary": true
+                },
+                "region": {
+                  "startLine": 100
+                }
+              },
+              "fullyQualifiedLogicalName": "com::xeiam::xchange::mtgox::v1::service::marketdata::polling::MtGoxPollingMarketDataService::getOrderBook"
+            }
+          ],
+          "ruleId": "IncompleteOperationError-87",
+          "message": {
+            "text": "Operation on object of type javax.crypto.Mac object not completed. Expected call to update, doFinal.",
+            "richText": "IncompleteOperationError violating CrySL rule for javax.crypto.Mac."
+          }
+        },
+        {
+          "locations": [
+            {
+              "physicalLocation": {
+                "fileLocation": {
+                  "uri": "com.veken0m.bitcoinium.OrderbookActivity.java",
+                  "PossibleExternalLibrary": true
+                },
+                "region": {
+                  "startLine": 152
+                }
+              },
+              "fullyQualifiedLogicalName": "com::veken0m::bitcoinium::OrderbookActivity::getOrderBook"
+            }
+          ],
+          "ruleId": "IncompleteOperationError-88",
+          "message": {
+            "text": "Operation on object of type javax.crypto.Mac object not completed. Expected call to update, doFinal.",
+            "richText": "IncompleteOperationError violating CrySL rule for javax.crypto.Mac."
+          }
+        },
+        {
+          "locations": [
+            {
+              "physicalLocation": {
+                "fileLocation": {
+                  "uri": "com.veken0m.bitcoinium.OrderbookActivity.java",
+                  "PossibleExternalLibrary": true
+                },
+                "region": {
+                  "startLine": 152
+                }
+              },
+              "fullyQualifiedLogicalName": "com::veken0m::bitcoinium::OrderbookActivity::getOrderBook"
+            }
+          ],
+          "ruleId": "IncompleteOperationError-89",
+          "message": {
+            "text": "Operation on object of type javax.crypto.Mac object not completed. Expected call to update, doFinal.",
+            "richText": "IncompleteOperationError violating CrySL rule for javax.crypto.Mac."
+          }
+        },
+        {
+          "locations": [
+            {
+              "physicalLocation": {
+                "fileLocation": {
+                  "uri": "com.veken0m.bitcoinium.OrderbookActivity.java",
+                  "PossibleExternalLibrary": true
+                },
+                "region": {
+                  "startLine": 152
+                }
+              },
+              "fullyQualifiedLogicalName": "com::veken0m::bitcoinium::OrderbookActivity::getOrderBook"
+            }
+          ],
+          "ruleId": "IncompleteOperationError-90",
+          "message": {
+            "text": "Operation on object of type javax.crypto.Mac object not completed. Expected call to update, doFinal.",
+            "richText": "IncompleteOperationError violating CrySL rule for javax.crypto.Mac."
+          }
+        },
+        {
+          "locations": [
+            {
+              "physicalLocation": {
+                "fileLocation": {
+                  "uri": "com.veken0m.bitcoinium.OrderbookActivity.java",
+                  "PossibleExternalLibrary": true
+                },
+                "region": {
+                  "startLine": 152
+                }
+              },
+              "fullyQualifiedLogicalName": "com::veken0m::bitcoinium::OrderbookActivity::getOrderBook"
+            }
+          ],
+          "ruleId": "IncompleteOperationError-91",
+          "message": {
+            "text": "Operation on object of type javax.crypto.Mac object not completed. Expected call to update, doFinal.",
+            "richText": "IncompleteOperationError violating CrySL rule for javax.crypto.Mac."
+          }
+        },
+        {
+          "locations": [
+            {
+              "physicalLocation": {
+                "fileLocation": {
+                  "uri": "com.veken0m.bitcoinium.OrderbookActivity.java",
+                  "PossibleExternalLibrary": true
+                },
+                "region": {
+                  "startLine": 152
+                }
+              },
+              "fullyQualifiedLogicalName": "com::veken0m::bitcoinium::OrderbookActivity::getOrderBook"
+            }
+          ],
+          "ruleId": "IncompleteOperationError-92",
+          "message": {
+            "text": "Operation on object of type javax.crypto.Mac object not completed. Expected call to update, doFinal.",
+            "richText": "IncompleteOperationError violating CrySL rule for javax.crypto.Mac."
+          }
+        },
+        {
+          "locations": [
+            {
+              "physicalLocation": {
+                "fileLocation": {
+                  "uri": "com.veken0m.bitcoinium.OrderbookActivity.java",
+                  "PossibleExternalLibrary": true
+                },
+                "region": {
+                  "startLine": 152
+                }
+              },
+              "fullyQualifiedLogicalName": "com::veken0m::bitcoinium::OrderbookActivity::getOrderBook"
+            }
+          ],
+          "ruleId": "IncompleteOperationError-93",
+          "message": {
+            "text": "Operation on object of type java.security.MessageDigest object not completed. Expected call to digest, update.",
+            "richText": "IncompleteOperationError violating CrySL rule for java.security.MessageDigest."
+          }
+        },
+        {
+          "locations": [
+            {
+              "physicalLocation": {
+                "fileLocation": {
+                  "uri": "com.veken0m.bitcoinium.OrderbookActivity.java",
+                  "PossibleExternalLibrary": true
+                },
+                "region": {
+                  "startLine": 147
+                }
+              },
+              "fullyQualifiedLogicalName": "com::veken0m::bitcoinium::OrderbookActivity::getOrderBook"
+            }
+          ],
+          "ruleId": "IncompleteOperationError-94",
+          "message": {
+            "text": "Operation on object of type javax.crypto.Mac object not completed. Expected call to update, doFinal.",
+            "richText": "IncompleteOperationError violating CrySL rule for javax.crypto.Mac."
+          }
+        },
+        {
+          "locations": [
+            {
+              "physicalLocation": {
+                "fileLocation": {
+                  "uri": "com.veken0m.bitcoinium.OrderbookActivity.java",
+                  "PossibleExternalLibrary": true
+                },
+                "region": {
+                  "startLine": 147
+                }
+              },
+              "fullyQualifiedLogicalName": "com::veken0m::bitcoinium::OrderbookActivity::getOrderBook"
+            }
+          ],
+          "ruleId": "IncompleteOperationError-95",
+          "message": {
+            "text": "Operation on object of type javax.crypto.Mac object not completed. Expected call to update, doFinal.",
+            "richText": "IncompleteOperationError violating CrySL rule for javax.crypto.Mac."
+          }
+        },
+        {
+          "locations": [
+            {
+              "physicalLocation": {
+                "fileLocation": {
+                  "uri": "com.xeiam.xchange.btcchina.service.BTCChinaDigest.java",
+                  "PossibleExternalLibrary": true
+                },
+                "region": {
+                  "startLine": 58
+                }
+              },
+              "fullyQualifiedLogicalName": "com::xeiam::xchange::btcchina::service::BTCChinaDigest::<init>"
+            }
+          ],
+          "ruleId": "ConstraintError",
+          "message": {
+            "text": "Second parameter (with value \"HmacSHA1\") should be any of {AES, HmacSHA224, HmacSHA256, HmacSHA384, HmacSHA512}.",
+            "richText": "ConstraintError violating CrySL rule for javax.crypto.spec.SecretKeySpec."
+          }
+        },
+        {
+          "locations": [
+            {
+              "physicalLocation": {
+                "fileLocation": {
+                  "uri": "com.xeiam.xchange.btcchina.service.BTCChinaDigest.java",
+                  "PossibleExternalLibrary": true
+                },
+                "region": {
+                  "startLine": 58
+                }
+              },
+              "fullyQualifiedLogicalName": "com::xeiam::xchange::btcchina::service::BTCChinaDigest::<init>"
+            }
+          ],
+          "ruleId": "RequiredPredicateError",
+          "message": {
+            "text": "First parameter was not properly generated as prepared Key Material.",
+            "richText": "RequiredPredicateError violating CrySL rule for javax.crypto.spec.SecretKeySpec."
+          }
+        },
+        {
+          "locations": [
+            {
+              "physicalLocation": {
+                "fileLocation": {
+                  "uri": "com.xeiam.xchange.btcchina.service.BTCChinaDigest.java",
+                  "PossibleExternalLibrary": true
+                },
+                "region": {
+                  "startLine": 59
+                }
+              },
+              "fullyQualifiedLogicalName": "com::xeiam::xchange::btcchina::service::BTCChinaDigest::<init>"
+            }
+          ],
+          "ruleId": "ConstraintError-1",
+          "message": {
+            "text": "First parameter (with value \"HmacSHA1\") should be any of {HmacSHA256, HmacSHA384, HmacSHA512, HmacPBESHA1, PBEWithHmacSHA1, PBEWithHmacSHA224, PBEWithHmacSHA256, PBEWithHmacSHA384, PBEWithHmacSHA512}.",
+            "richText": "ConstraintError violating CrySL rule for javax.crypto.Mac."
+          }
+        },
+        {
+          "locations": [
+            {
+              "physicalLocation": {
+                "fileLocation": {
+                  "uri": "com.xeiam.xchange.mtgox.v2.service.MtGoxV2Digest.java",
+                  "PossibleExternalLibrary": true
+                },
+                "region": {
+                  "startLine": 53
+                }
+              },
+              "fullyQualifiedLogicalName": "com::xeiam::xchange::mtgox::v2::service::MtGoxV2Digest::<init>"
+            }
+          ],
+          "ruleId": "RequiredPredicateError-1",
+          "message": {
+            "text": "First parameter was not properly generated as prepared Key Material.",
+            "richText": "RequiredPredicateError violating CrySL rule for javax.crypto.spec.SecretKeySpec."
+          }
+        },
+        {
+          "locations": [
+            {
+              "physicalLocation": {
+                "fileLocation": {
+                  "uri": "com.xeiam.xchange.bitstamp.service.BitstampDigest.java",
+                  "PossibleExternalLibrary": true
+                },
+                "region": {
+                  "startLine": 59
+                }
+              },
+              "fullyQualifiedLogicalName": "com::xeiam::xchange::bitstamp::service::BitstampDigest::<init>"
+            }
+          ],
+          "ruleId": "RequiredPredicateError-2",
+          "message": {
+            "text": "First parameter was not properly generated as prepared Key Material.",
+            "richText": "RequiredPredicateError violating CrySL rule for javax.crypto.spec.SecretKeySpec."
+          }
+        },
+        {
+          "locations": [
+            {
+              "physicalLocation": {
+                "fileLocation": {
+                  "uri": "com.xeiam.xchange.btce.v2.service.BTCEHmacPostBodyDigest.java",
+                  "PossibleExternalLibrary": true
+                },
+                "region": {
+                  "startLine": 59
+                }
+              },
+              "fullyQualifiedLogicalName": "com::xeiam::xchange::btce::v2::service::BTCEHmacPostBodyDigest::<init>"
+            }
+          ],
+          "ruleId": "RequiredPredicateError-3",
+          "message": {
+            "text": "First parameter was not properly generated as prepared Key Material.",
+            "richText": "RequiredPredicateError violating CrySL rule for javax.crypto.spec.SecretKeySpec."
+          }
+        },
+        {
+          "locations": [
+            {
+              "physicalLocation": {
+                "fileLocation": {
+                  "uri": "si.mazi.rescu.HmacPostBodyDigest.java"
+                },
+                "region": {
+                  "startLine": 53
+                }
+              },
+              "fullyQualifiedLogicalName": "si::mazi::rescu::HmacPostBodyDigest::<init>"
+            }
+          ],
+          "ruleId": "RequiredPredicateError-4",
+          "message": {
+            "text": "First parameter was not properly generated as prepared Key Material.",
+            "richText": "RequiredPredicateError violating CrySL rule for javax.crypto.spec.SecretKeySpec."
+          }
+        },
+        {
+          "locations": [
+            {
+              "physicalLocation": {
+                "fileLocation": {
+                  "uri": "com.xeiam.xchange.kraken.service.KrakenDigest.java",
+                  "PossibleExternalLibrary": true
+                },
+                "region": {
+                  "startLine": 57
+                }
+              },
+              "fullyQualifiedLogicalName": "com::xeiam::xchange::kraken::service::KrakenDigest::<init>"
+            }
+          ],
+          "ruleId": "RequiredPredicateError-5",
+          "message": {
+            "text": "First parameter was not properly generated as prepared Key Material.",
+            "richText": "RequiredPredicateError violating CrySL rule for javax.crypto.spec.SecretKeySpec."
+          }
+        },
+        {
+          "locations": [
+            {
+              "physicalLocation": {
+                "fileLocation": {
+                  "uri": "com.xeiam.xchange.btce.v3.service.BTCEHmacPostBodyDigest.java",
+                  "PossibleExternalLibrary": true
+                },
+                "region": {
+                  "startLine": 58
+                }
+              },
+              "fullyQualifiedLogicalName": "com::xeiam::xchange::btce::v3::service::BTCEHmacPostBodyDigest::<init>"
+            }
+          ],
+          "ruleId": "RequiredPredicateError-6",
+          "message": {
+            "text": "First parameter was not properly generated as prepared Key Material.",
+            "richText": "RequiredPredicateError violating CrySL rule for javax.crypto.spec.SecretKeySpec."
+          }
+        }
+      ],
+      "tool": {
+        "name": "CryptoAnalysis",
+        "semanticVersion": null,
+        "language": "en-US",
+        "version": null
+      }
+    }
+  ]
+}

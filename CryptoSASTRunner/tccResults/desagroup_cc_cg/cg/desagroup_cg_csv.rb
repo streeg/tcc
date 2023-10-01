@@ -10,7 +10,6 @@ unknown_origin_dir = "#{cg_all_path}/unknown_origin"
 FileUtils.mkdir_p(unknown_origin_dir) unless File.directory?(unknown_origin_dir)
 
 # Itera sobre os arquivos em cg_all
-byebug
 Dir.glob("#{cg_all_path}/*.apk-extended.csv").each do |csv_file|
   # Obtém o nome do arquivo sem a extensão
   base_name = File.basename(csv_file, '.apk-extended.csv')

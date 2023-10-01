@@ -1,0 +1,33 @@
+{
+  "projectName": "CryptoGuard",
+  "ProjectVersion": "04.05.03",
+  "Target": {
+    "RawCommand": "-in apk -s /home/lables/CryptoAnalysis/Finances2/com.xvzan.simplemoneytracker_20200725.apk -m D",
+    "FullPath": "com.xvzan.simplemoneytracker_20200725.apk/",
+    "Type": "APK",
+    "TargetSources": [
+      "/home/lables/CryptoAnalysis/Finances2/com.xvzan.simplemoneytracker_20200725.apk"
+    ],
+    "_PropertiesFilePath": "gradle.properties",
+    "_ComputerOS": "Linux_4.15.0-162-generic",
+    "_JVMVersion": "1.8.0_292-8u292-b10-0ubuntu1~18.04-b10",
+    "_ProjectName": "com"
+  },
+  "Issues": [
+    {
+      "Message": "Found: Untrused PRNG (java.util.Random)",
+      "Description": "Used untrusted PRNG",
+      "RuleNumber": 13,
+      "RuleDesc": "Used untrusted PRNG",
+      "CWEId": 338,
+      "Severity": "1",
+      "_FullPath": "com.xvzan.simplemoneytracker_20200725.apk.androidx.transition.Explode.class",
+      "_Id": "0",
+      "externalLibrary": true,
+      "PossibleExternalLibrary": true
+    }
+  ],
+  "_SchemaVersion": 3,
+  "_DateTime": "2021-12-01_13:30:29",
+  "_UUID": "ed1d33c4-d96a-4796-808c-92e177fb8586"
+}

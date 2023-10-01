@@ -1,0 +1,51 @@
+{
+  "projectName": "CryptoGuard",
+  "ProjectVersion": "04.05.03",
+  "Target": {
+    "RawCommand": "-in apk -s /home/lables/CryptoAnalysis/apks/Connectivity/com.fr3ts0n.ecu.gui.androbd_20502.apk -m D",
+    "FullPath": "com.fr3ts0n.ecu.gui.androbd_20502.apk/",
+    "Type": "APK",
+    "TargetSources": [
+      "/home/lables/CryptoAnalysis/apks/Connectivity/com.fr3ts0n.ecu.gui.androbd_20502.apk"
+    ],
+    "_PropertiesFilePath": "gradle.properties",
+    "_ComputerOS": "Linux_4.15.0-163-generic",
+    "_JVMVersion": "1.8.0_312-8u312-b07-0ubuntu1~18.04-b07",
+    "_ProjectName": "com"
+  },
+  "Issues": [
+    {
+      "Message": "Found: Untrused PRNG (java.util.Random)",
+      "Description": "Used untrusted PRNG",
+      "RuleNumber": 13,
+      "RuleDesc": "Used untrusted PRNG",
+      "CWEId": 338,
+      "Severity": "1",
+      "_FullPath": "com.fr3ts0n.ecu.gui.androbd_20502.apk.kotlin.random.KotlinRandom.class",
+      "_Id": "0"
+    },
+    {
+      "Message": "Found: Untrused PRNG (java.util.Random)",
+      "Description": "Used untrusted PRNG",
+      "RuleNumber": 13,
+      "RuleDesc": "Used untrusted PRNG",
+      "CWEId": 338,
+      "Severity": "1",
+      "_FullPath": "com.fr3ts0n.ecu.gui.androbd_20502.apk.com.github.anastr.speedviewlib.Gauge.class",
+      "_Id": "1"
+    },
+    {
+      "Message": "Found: Untrused PRNG (java.util.Random)",
+      "Description": "Used untrusted PRNG",
+      "RuleNumber": 13,
+      "RuleDesc": "Used untrusted PRNG",
+      "CWEId": 338,
+      "Severity": "1",
+      "_FullPath": "com.fr3ts0n.ecu.gui.androbd_20502.apk.kotlin.random.FallbackThreadLocalRandom$implStorage$1.class",
+      "_Id": "2"
+    }
+  ],
+  "_SchemaVersion": 3,
+  "_DateTime": "2022-01-19_13:38:37",
+  "_UUID": "f1d5a170-ae4b-4b4c-914f-07efacb5036e"
+}
