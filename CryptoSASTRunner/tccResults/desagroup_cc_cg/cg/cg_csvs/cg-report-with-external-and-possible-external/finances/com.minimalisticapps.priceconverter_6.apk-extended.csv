@@ -1,0 +1,18 @@
+Message,Description,RuleNumber,RuleDesc,CWEId,Severity,ClassName,MethodName,ExternalLibrary,PossibleExternal
+Found: Untrused PRNG (java.util.Random),Used untrusted PRNG,13,Used untrusted PRNG,338,1,okhttp3.OkHttpClient,newWebSocket,true,true
+Found: Untrused PRNG (java.util.Random),Used untrusted PRNG,13,Used untrusted PRNG,338,1,androidx.transition.Explode,calculateOut,true,true
+Found: Untrused PRNG (java.util.Random),Used untrusted PRNG,13,Used untrusted PRNG,338,1,androidx.activity.result.ActivityResultRegistry,init,true,true
+Found: Untrused PRNG (java.util.Random),Used untrusted PRNG,13,Used untrusted PRNG,338,1,kotlin.random.KotlinRandom,init,false,false
+Found: Untrused PRNG (java.util.Random),Used untrusted PRNG,13,Used untrusted PRNG,338,1,kotlin.random.FallbackThreadLocalRandom$implStorage$1,initialValue,false,false
+"Found: ""SHA-1""",Found broken hash functions,2,Found broken hash functions,759,1,okio.ByteString,sha1,true,true
+"Found: ""MD5""",Found broken hash functions,2,Found broken hash functions,759,1,okio.HashingSink,md5,true,true
+"Found: ""MD5""",Found broken hash functions,2,Found broken hash functions,759,1,okio.Buffer,md5,true,true
+"Found: ""MD5""",Found broken hash functions,2,Found broken hash functions,759,1,okio.ByteString,md5,true,true
+"Found: ""MD5""",Found broken hash functions,2,Found broken hash functions,759,1,okio.HashingSource,md5,true,true
+"Found: ""SHA-1""",Found broken hash functions,2,Found broken hash functions,759,1,okio.HashingSource,sha1,true,true
+"Found: ""SHA-1""",Found broken hash functions,2,Found broken hash functions,759,1,okio.Buffer,sha1,true,true
+"Found: ""SHA-1""",Found broken hash functions,2,Found broken hash functions,759,1,okio.HashingSink,sha1,true,true
+"Found: ""http://localhost/""",Used HTTP Protocol,7,Used HTTP Protocol,650,1,retrofit2.Response,success,true,true
+"Found: ""http://localhost/""",Used HTTP Protocol,7,Used HTTP Protocol,650,1,retrofit2.Response,success,true,true
+"Found: ""http://localhost/""",Used HTTP Protocol,7,Used HTTP Protocol,650,1,retrofit2.Response,error,true,true
+"Found: ""http://localhost/""",Used HTTP Protocol,7,Used HTTP Protocol,650,1,retrofit2.Response,success,true,true

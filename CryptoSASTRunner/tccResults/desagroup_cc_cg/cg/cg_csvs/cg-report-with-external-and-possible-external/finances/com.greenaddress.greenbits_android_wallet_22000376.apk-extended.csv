@@ -1,0 +1,5 @@
+Message,Description,RuleNumber,RuleDesc,CWEId,Severity,ClassName,MethodName,ExternalLibrary,PossibleExternal
+Found: Untrused PRNG (java.util.Random),Used untrusted PRNG,13,Used untrusted PRNG,338,1,com.greenaddress.jade.JadeAPI,init,false,true
+Found: Untrused PRNG (java.util.Random),Used untrusted PRNG,13,Used untrusted PRNG,338,1,kotlin.random.FallbackThreadLocalRandom$implStorage$1,initialValue,false,false
+Found: Untrused PRNG (java.util.Random),Used untrusted PRNG,13,Used untrusted PRNG,338,1,androidx.activity.result.ActivityResultRegistry,init,true,true
+"Found: ""http://vgza7wu4h7osixmrx6e4op5r72okqpagr3w6oupgsvmim4cz3wzdgrad.onion""",Used HTTP Protocol,7,Used HTTP Protocol,650,1,com.greenaddress.greenbits.wallets.JadeFirmwareManager,downloadJadeFwFile,false,true

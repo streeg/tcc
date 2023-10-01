@@ -1,0 +1,6 @@
+Message,Description,RuleNumber,RuleDesc,CWEId,Severity,ClassName,MethodName,ExternalLibrary,PossibleExternal
+Found: Untrused PRNG (java.util.Random),Used untrusted PRNG,13,Used untrusted PRNG,338,1,androidx.activity.result.ActivityResultRegistry,init,true,true
+"Found: ""MD5""",Found broken hash functions,2,Found broken hash functions,759,1,com.github.olga_yakovleva.rhvoice.android.DataPack,verifyFile,true,true
+"Found: ""SHA1""",Found broken hash functions,2,Found broken hash functions,759,1,org.conscrypt.NativeCrypto,X509_NAME_hash,false,false
+"Found: ""MD5""",Found broken hash functions,2,Found broken hash functions,759,1,org.conscrypt.NativeCrypto,X509_NAME_hash_old,false,false
+"Found: ""jks""",Used Predictable KeyStore Password,14,Used Predictable KeyStore Password,321,1,java.security.KeyStore,getDefaultType,false,false

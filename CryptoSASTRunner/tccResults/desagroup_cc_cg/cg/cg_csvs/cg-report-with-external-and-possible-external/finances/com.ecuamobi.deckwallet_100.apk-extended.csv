@@ -1,0 +1,4 @@
+Message,Description,RuleNumber,RuleDesc,CWEId,Severity,ClassName,MethodName,ExternalLibrary,PossibleExternal
+Found: Untrused PRNG (java.util.Random),Used untrusted PRNG,13,Used untrusted PRNG,338,1,org.spongycastle.math.ec.ECCurve$F2m,solveQuadradicEquation,false,false
+Found: Untrused PRNG (java.util.Random),Used untrusted PRNG,13,Used untrusted PRNG,338,1,org.spongycastle.math.ec.ECFieldElement$Fp,sqrt,false,false
+"Found: ""www.spongycastle.org""",Found predictable seeds in code,11,Found predictable seeds in code,760,1,org.spongycastle.crypto.examples.DESExample,init,false,false

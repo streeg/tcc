@@ -1,0 +1,43 @@
+{
+  "projectName": "CryptoGuard",
+  "ProjectVersion": "04.05.03",
+  "Target": {
+    "RawCommand": "-in apk -s /home/lables/CryptoAnalysis/Finances2/com.github.samotari.paynoway_20100.apk -m D",
+    "FullPath": "com.github.samotari.paynoway_20100.apk/",
+    "Type": "APK",
+    "TargetSources": [
+      "/home/lables/CryptoAnalysis/Finances2/com.github.samotari.paynoway_20100.apk"
+    ],
+    "_PropertiesFilePath": "gradle.properties",
+    "_ComputerOS": "Linux_4.15.0-162-generic",
+    "_JVMVersion": "1.8.0_292-8u292-b10-0ubuntu1~18.04-b10",
+    "_ProjectName": "com"
+  },
+  "Issues": [
+    {
+      "Message": "Found: \"http://www.google.com/books?vid=isbn\"",
+      "Description": "Used HTTP Protocol",
+      "RuleNumber": 7,
+      "RuleDesc": "Used HTTP Protocol",
+      "CWEId": 650,
+      "Severity": "1",
+      "_FullPath": "com.github.samotari.paynoway_20100.apk.com.google.zxing.client.android.book.SearchBookContentsActivity$NetworkTask.class",
+      "_Id": "0",
+      "externalLibrary": true
+    },
+    {
+      "Message": "Found: \"http://www.google.com/books?id=\"",
+      "Description": "Used HTTP Protocol",
+      "RuleNumber": 7,
+      "RuleDesc": "Used HTTP Protocol",
+      "CWEId": 650,
+      "Severity": "1",
+      "_FullPath": "com.github.samotari.paynoway_20100.apk.com.google.zxing.client.android.book.SearchBookContentsActivity$NetworkTask.class",
+      "_Id": "1",
+      "externalLibrary": true
+    }
+  ],
+  "_SchemaVersion": 3,
+  "_DateTime": "2021-12-01_13:08:42",
+  "_UUID": "49762512-ff3a-485e-bf21-e9338b4897ed"
+}

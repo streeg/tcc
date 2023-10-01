@@ -1,0 +1,42 @@
+{
+  "projectName": "CryptoGuard",
+  "ProjectVersion": "04.05.03",
+  "Target": {
+    "RawCommand": "-in apk -s /home/lables/CryptoAnalysis/apks/Connectivity/aq.metallists.loudbang_45.apk -m D",
+    "FullPath": "aq.metallists.loudbang_45.apk/",
+    "Type": "APK",
+    "TargetSources": [
+      "/home/lables/CryptoAnalysis/apks/Connectivity/aq.metallists.loudbang_45.apk"
+    ],
+    "_PropertiesFilePath": "gradle.properties",
+    "_ComputerOS": "Linux_4.15.0-163-generic",
+    "_JVMVersion": "1.8.0_312-8u312-b07-0ubuntu1~18.04-b07",
+    "_ProjectName": "aq"
+  },
+  "Issues": [
+    {
+      "Message": "Found: Untrused PRNG (java.util.Random)",
+      "Description": "Used untrusted PRNG",
+      "RuleNumber": 13,
+      "RuleDesc": "Used untrusted PRNG",
+      "CWEId": 338,
+      "Severity": "1",
+      "_FullPath": "aq.metallists.loudbang_45.apk.aq.metallists.loudbang.LBService.class",
+      "_Id": "0"
+    },
+    {
+      "Message": "Found: Untrused PRNG (java.util.Random)",
+      "Description": "Used untrusted PRNG",
+      "RuleNumber": 13,
+      "RuleDesc": "Used untrusted PRNG",
+      "CWEId": 338,
+      "Severity": "1",
+      "_FullPath": "aq.metallists.loudbang_45.apk.androidx.transition.Explode.class",
+      "_Id": "1",
+      "externalLibrary": true
+    }
+  ],
+  "_SchemaVersion": 3,
+  "_DateTime": "2022-01-20_01:51:33",
+  "_UUID": "a23f0829-d10a-4d67-9400-a85867f69055"
+}

@@ -1,0 +1,165 @@
+{
+  "projectName": "CryptoGuard",
+  "ProjectVersion": "04.05.03",
+  "Target": {
+    "RawCommand": "-in apk -s /home/lables/CryptoAnalysis/Finances/com.soumikshah.investmenttracker_3.apk -m D",
+    "FullPath": "com.soumikshah.investmenttracker_3.apk/",
+    "Type": "APK",
+    "TargetSources": [
+      "/home/lables/CryptoAnalysis/Finances/com.soumikshah.investmenttracker_3.apk"
+    ],
+    "_PropertiesFilePath": "gradle.properties",
+    "_ComputerOS": "Linux_4.15.0-162-generic",
+    "_JVMVersion": "1.8.0_292-8u292-b10-0ubuntu1~18.04-b10",
+    "_ProjectName": "com"
+  },
+  "Issues": [
+    {
+      "Message": "Found: Untrused PRNG (java.util.Random)",
+      "Description": "Used untrusted PRNG",
+      "RuleNumber": 13,
+      "RuleDesc": "Used untrusted PRNG",
+      "CWEId": 338,
+      "Severity": "1",
+      "_FullPath": "com.soumikshah.investmenttracker_3.apk.androidx.transition.Explode.class",
+      "_Id": "0",
+      "externalLibrary": true,
+      "PossibleExternalLibrary": true
+    },
+    {
+      "Message": "Found: Untrused PRNG (java.util.Random)",
+      "Description": "Used untrusted PRNG",
+      "RuleNumber": 13,
+      "RuleDesc": "Used untrusted PRNG",
+      "CWEId": 338,
+      "Severity": "1",
+      "_FullPath": "com.soumikshah.investmenttracker_3.apk.org.apache.commons.codec.digest.UnixCrypt.class",
+      "_Id": "1"
+    },
+    {
+      "Message": "Found: Untrused PRNG (java.util.Random)",
+      "Description": "Used untrusted PRNG",
+      "RuleNumber": 13,
+      "RuleDesc": "Used untrusted PRNG",
+      "CWEId": 338,
+      "Severity": "1",
+      "_FullPath": "com.soumikshah.investmenttracker_3.apk.kotlin.random.FallbackThreadLocalRandom$implStorage$1.class",
+      "_Id": "2"
+    },
+    {
+      "Message": "Found: Untrused PRNG (java.util.Random)",
+      "Description": "Used untrusted PRNG",
+      "RuleNumber": 13,
+      "RuleDesc": "Used untrusted PRNG",
+      "CWEId": 338,
+      "Severity": "1",
+      "_FullPath": "com.soumikshah.investmenttracker_3.apk.org.apache.poi.ss.formula.atp.RandBetween.class",
+      "_Id": "3"
+    },
+    {
+      "Message": "Found: Untrused PRNG (java.util.Random)",
+      "Description": "Used untrusted PRNG",
+      "RuleNumber": 13,
+      "RuleDesc": "Used untrusted PRNG",
+      "CWEId": 338,
+      "Severity": "1",
+      "_FullPath": "com.soumikshah.investmenttracker_3.apk.functions.NumericFunction.class",
+      "_Id": "4"
+    },
+    {
+      "Message": "Found: Untrused PRNG (java.util.Random)",
+      "Description": "Used untrusted PRNG",
+      "RuleNumber": 13,
+      "RuleDesc": "Used untrusted PRNG",
+      "CWEId": 338,
+      "Severity": "1",
+      "_FullPath": "com.soumikshah.investmenttracker_3.apk.androidx.activity.result.ActivityResultRegistry.class",
+      "_Id": "5",
+      "externalLibrary": true,
+      "PossibleExternalLibrary": true
+    },
+    {
+      "Message": "Found: Untrused PRNG (java.util.Random)",
+      "Description": "Used untrusted PRNG",
+      "RuleNumber": 13,
+      "RuleDesc": "Used untrusted PRNG",
+      "CWEId": 338,
+      "Severity": "1",
+      "_FullPath": "com.soumikshah.investmenttracker_3.apk.kotlin.random.KotlinRandom.class",
+      "_Id": "6"
+    },
+    {
+      "Message": "Found: Untrused PRNG (java.util.Random)",
+      "Description": "Used untrusted PRNG",
+      "RuleNumber": 13,
+      "RuleDesc": "Used untrusted PRNG",
+      "CWEId": 338,
+      "Severity": "1",
+      "_FullPath": "com.soumikshah.investmenttracker_3.apk.org.apache.commons.codec.digest.B64.class",
+      "_Id": "7"
+    },
+    {
+      "Message": "Found: \"MD5\"",
+      "Description": "Found broken hash functions",
+      "RuleNumber": 2,
+      "RuleDesc": "Found broken hash functions",
+      "CWEId": 759,
+      "Severity": "1",
+      "_FullPath": "com.soumikshah.investmenttracker_3.apk.org.apache.commons.codec.digest.DigestUtils.class",
+      "_Id": "8"
+    },
+    {
+      "Message": "Found: \"sha1\"",
+      "Description": "Found broken hash functions",
+      "RuleNumber": 2,
+      "RuleDesc": "Found broken hash functions",
+      "CWEId": 759,
+      "Severity": "1",
+      "_FullPath": "com.soumikshah.investmenttracker_3.apk.org.apache.poi.poifs.crypt.HashAlgorithm.class",
+      "_Id": "9"
+    },
+    {
+      "Message": "Found: \"SHA-1\"",
+      "Description": "Found broken hash functions",
+      "RuleNumber": 2,
+      "RuleDesc": "Found broken hash functions",
+      "CWEId": 759,
+      "Severity": "1",
+      "_FullPath": "com.soumikshah.investmenttracker_3.apk.org.apache.poi.poifs.crypt.HashAlgorithm.class",
+      "_Id": "10"
+    },
+    {
+      "Message": "Found: \"SHA1\"",
+      "Description": "Found broken hash functions",
+      "RuleNumber": 2,
+      "RuleDesc": "Found broken hash functions",
+      "CWEId": 759,
+      "Severity": "1",
+      "_FullPath": "com.soumikshah.investmenttracker_3.apk.org.apache.poi.poifs.crypt.HashAlgorithm.class",
+      "_Id": "11"
+    },
+    {
+      "Message": "Found: \"MD2\"",
+      "Description": "Found broken hash functions",
+      "RuleNumber": 2,
+      "RuleDesc": "Found broken hash functions",
+      "CWEId": 759,
+      "Severity": "1",
+      "_FullPath": "com.soumikshah.investmenttracker_3.apk.org.apache.commons.codec.digest.DigestUtils.class",
+      "_Id": "12"
+    },
+    {
+      "Message": "Found: \"SHA-1\"",
+      "Description": "Found broken hash functions",
+      "RuleNumber": 2,
+      "RuleDesc": "Found broken hash functions",
+      "CWEId": 759,
+      "Severity": "1",
+      "_FullPath": "com.soumikshah.investmenttracker_3.apk.org.apache.commons.codec.digest.DigestUtils.class",
+      "_Id": "13"
+    }
+  ],
+  "_SchemaVersion": 3,
+  "_DateTime": "2021-11-28_00:58:39",
+  "_UUID": "22d1a56e-f107-4c95-80da-f4d4b8683130"
+}

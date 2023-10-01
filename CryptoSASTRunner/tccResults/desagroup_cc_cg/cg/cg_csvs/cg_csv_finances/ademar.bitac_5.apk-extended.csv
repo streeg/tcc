@@ -1,0 +1,9 @@
+Message,Description,RuleNumber,RuleDesc,CWEId,Severity,ClassName,MethodName,ExternalLibrary,PossibleExternal
+Found: Untrused PRNG (java.util.Random),Used untrusted PRNG,13,Used untrusted PRNG,338,1,okhttp3.OkHttpClient,newWebSocket,true,true
+"Cause: Fixed ""[1]""",Used untrusted HostNameVerifier,6,Used untrusted HostNameVerifier,601,1,UNKNOWN,UNKNOWN,false,false
+"Found: ""SHA-1""",Found broken hash functions,2,Found broken hash functions,759,1,okio.ByteString,sha1,false,true
+"Found: ""MD5""",Found broken hash functions,2,Found broken hash functions,759,1,okio.ByteString,md5,false,true
+"Found: ""http://localhost/""",Used HTTP Protocol,7,Used HTTP Protocol,650,1,retrofit2.Response,success,true,true
+"Found: ""http://localhost/""",Used HTTP Protocol,7,Used HTTP Protocol,650,1,retrofit2.Response,success,true,true
+"Found: ""http://localhost/""",Used HTTP Protocol,7,Used HTTP Protocol,650,1,retrofit2.Response,error,true,true
+"Found: ""http://localhost/""",Used HTTP Protocol,7,Used HTTP Protocol,650,1,retrofit2.Response,success,true,true

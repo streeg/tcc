@@ -1,0 +1,1249 @@
+{
+  "sarifVersion": "2.0.0",
+  "runs": [
+    {
+      "files": {
+        "org/whispersystems/libsignal/state/SessionState.java": {
+          "mimeType": "text/java"
+        },
+        "com/dx/anonymousmessenger/tor/TorClient.java": {
+          "mimeType": "text/java"
+        },
+        "org/whispersystems/libsignal/protocol/SignalMessage.java": {
+          "mimeType": "text/java"
+        },
+        "com/dx/anonymousmessenger/tor/ServerSocketViaTor$Server.java": {
+          "mimeType": "text/java"
+        },
+        "org/whispersystems/libsignal/kdf/HKDF.java": {
+          "mimeType": "text/java"
+        },
+        "org/whispersystems/libsignal/kdf/DerivedMessageSecrets.java": {
+          "mimeType": "text/java"
+        },
+        "com/dx/anonymousmessenger/file/FileHelper.java": {
+          "mimeType": "text/java"
+        },
+        "org/whispersystems/libsignal/ratchet/ChainKey.java": {
+          "mimeType": "text/java"
+        },
+        "org/whispersystems/libsignal/SessionCipher.java": {
+          "mimeType": "text/java"
+        }
+      },
+      "resources": {
+        "rules": {
+          "TypestateError-4": {
+            "id": "TypestateError",
+            "fullDescription": {
+              "text": "The ORDER block of CrySL is violated, i.e., the expected method sequence call to be made is incorrect. For example, a Signature object expects a call to initSign(key) prior to update(data)."
+            }
+          },
+          "TypestateError-5": {
+            "id": "TypestateError",
+            "fullDescription": {
+              "text": "The ORDER block of CrySL is violated, i.e., the expected method sequence call to be made is incorrect. For example, a Signature object expects a call to initSign(key) prior to update(data)."
+            }
+          },
+          "TypestateError-6": {
+            "id": "TypestateError",
+            "fullDescription": {
+              "text": "The ORDER block of CrySL is violated, i.e., the expected method sequence call to be made is incorrect. For example, a Signature object expects a call to initSign(key) prior to update(data)."
+            }
+          },
+          "TypestateError-7": {
+            "id": "TypestateError",
+            "fullDescription": {
+              "text": "The ORDER block of CrySL is violated, i.e., the expected method sequence call to be made is incorrect. For example, a Signature object expects a call to initSign(key) prior to update(data)."
+            }
+          },
+          "TypestateError-8": {
+            "id": "TypestateError",
+            "fullDescription": {
+              "text": "The ORDER block of CrySL is violated, i.e., the expected method sequence call to be made is incorrect. For example, a Signature object expects a call to initSign(key) prior to update(data)."
+            }
+          },
+          "TypestateError-9": {
+            "id": "TypestateError",
+            "fullDescription": {
+              "text": "The ORDER block of CrySL is violated, i.e., the expected method sequence call to be made is incorrect. For example, a Signature object expects a call to initSign(key) prior to update(data)."
+            }
+          },
+          "RequiredPredicateError-26": {
+            "id": "RequiredPredicateError",
+            "fullDescription": {
+              "text": "An object A expects an object B to have been used correctly (CrySL blocks REQUIRES and ENSURES). For example a Cipher object requires a SecretKey object to be correctly and securely generated."
+            }
+          },
+          "RequiredPredicateError-25": {
+            "id": "RequiredPredicateError",
+            "fullDescription": {
+              "text": "An object A expects an object B to have been used correctly (CrySL blocks REQUIRES and ENSURES). For example a Cipher object requires a SecretKey object to be correctly and securely generated."
+            }
+          },
+          "RequiredPredicateError-28": {
+            "id": "RequiredPredicateError",
+            "fullDescription": {
+              "text": "An object A expects an object B to have been used correctly (CrySL blocks REQUIRES and ENSURES). For example a Cipher object requires a SecretKey object to be correctly and securely generated."
+            }
+          },
+          "RequiredPredicateError-27": {
+            "id": "RequiredPredicateError",
+            "fullDescription": {
+              "text": "An object A expects an object B to have been used correctly (CrySL blocks REQUIRES and ENSURES). For example a Cipher object requires a SecretKey object to be correctly and securely generated."
+            }
+          },
+          "TypestateError-1": {
+            "id": "TypestateError",
+            "fullDescription": {
+              "text": "The ORDER block of CrySL is violated, i.e., the expected method sequence call to be made is incorrect. For example, a Signature object expects a call to initSign(key) prior to update(data)."
+            }
+          },
+          "RequiredPredicateError-29": {
+            "id": "RequiredPredicateError",
+            "fullDescription": {
+              "text": "An object A expects an object B to have been used correctly (CrySL blocks REQUIRES and ENSURES). For example a Cipher object requires a SecretKey object to be correctly and securely generated."
+            }
+          },
+          "TypestateError-2": {
+            "id": "TypestateError",
+            "fullDescription": {
+              "text": "The ORDER block of CrySL is violated, i.e., the expected method sequence call to be made is incorrect. For example, a Signature object expects a call to initSign(key) prior to update(data)."
+            }
+          },
+          "TypestateError-3": {
+            "id": "TypestateError",
+            "fullDescription": {
+              "text": "The ORDER block of CrySL is violated, i.e., the expected method sequence call to be made is incorrect. For example, a Signature object expects a call to initSign(key) prior to update(data)."
+            }
+          },
+          "RequiredPredicateError-31": {
+            "id": "RequiredPredicateError",
+            "fullDescription": {
+              "text": "An object A expects an object B to have been used correctly (CrySL blocks REQUIRES and ENSURES). For example a Cipher object requires a SecretKey object to be correctly and securely generated."
+            }
+          },
+          "TypestateError-10": {
+            "id": "TypestateError",
+            "fullDescription": {
+              "text": "The ORDER block of CrySL is violated, i.e., the expected method sequence call to be made is incorrect. For example, a Signature object expects a call to initSign(key) prior to update(data)."
+            }
+          },
+          "RequiredPredicateError-30": {
+            "id": "RequiredPredicateError",
+            "fullDescription": {
+              "text": "An object A expects an object B to have been used correctly (CrySL blocks REQUIRES and ENSURES). For example a Cipher object requires a SecretKey object to be correctly and securely generated."
+            }
+          },
+          "RequiredPredicateError": {
+            "id": "RequiredPredicateError",
+            "fullDescription": {
+              "text": "An object A expects an object B to have been used correctly (CrySL blocks REQUIRES and ENSURES). For example a Cipher object requires a SecretKey object to be correctly and securely generated."
+            }
+          },
+          "RequiredPredicateError-11": {
+            "id": "RequiredPredicateError",
+            "fullDescription": {
+              "text": "An object A expects an object B to have been used correctly (CrySL blocks REQUIRES and ENSURES). For example a Cipher object requires a SecretKey object to be correctly and securely generated."
+            }
+          },
+          "RequiredPredicateError-10": {
+            "id": "RequiredPredicateError",
+            "fullDescription": {
+              "text": "An object A expects an object B to have been used correctly (CrySL blocks REQUIRES and ENSURES). For example a Cipher object requires a SecretKey object to be correctly and securely generated."
+            }
+          },
+          "RequiredPredicateError-13": {
+            "id": "RequiredPredicateError",
+            "fullDescription": {
+              "text": "An object A expects an object B to have been used correctly (CrySL blocks REQUIRES and ENSURES). For example a Cipher object requires a SecretKey object to be correctly and securely generated."
+            }
+          },
+          "RequiredPredicateError-12": {
+            "id": "RequiredPredicateError",
+            "fullDescription": {
+              "text": "An object A expects an object B to have been used correctly (CrySL blocks REQUIRES and ENSURES). For example a Cipher object requires a SecretKey object to be correctly and securely generated."
+            }
+          },
+          "IncompleteOperationError": {
+            "id": "IncompleteOperationError",
+            "fullDescription": {
+              "text": "The usage of an object may be incomplete: For example a Cipherobject may be initialized but never used for en- or decryption, this may render the code dead. This error heavily depends on the computed call graph (CHA by default)"
+            }
+          },
+          "IncompleteOperationError-1": {
+            "id": "IncompleteOperationError",
+            "fullDescription": {
+              "text": "The usage of an object may be incomplete: For example a Cipherobject may be initialized but never used for en- or decryption, this may render the code dead. This error heavily depends on the computed call graph (CHA by default)"
+            }
+          },
+          "RequiredPredicateError-15": {
+            "id": "RequiredPredicateError",
+            "fullDescription": {
+              "text": "An object A expects an object B to have been used correctly (CrySL blocks REQUIRES and ENSURES). For example a Cipher object requires a SecretKey object to be correctly and securely generated."
+            }
+          },
+          "RequiredPredicateError-14": {
+            "id": "RequiredPredicateError",
+            "fullDescription": {
+              "text": "An object A expects an object B to have been used correctly (CrySL blocks REQUIRES and ENSURES). For example a Cipher object requires a SecretKey object to be correctly and securely generated."
+            }
+          },
+          "RequiredPredicateError-17": {
+            "id": "RequiredPredicateError",
+            "fullDescription": {
+              "text": "An object A expects an object B to have been used correctly (CrySL blocks REQUIRES and ENSURES). For example a Cipher object requires a SecretKey object to be correctly and securely generated."
+            }
+          },
+          "RequiredPredicateError-16": {
+            "id": "RequiredPredicateError",
+            "fullDescription": {
+              "text": "An object A expects an object B to have been used correctly (CrySL blocks REQUIRES and ENSURES). For example a Cipher object requires a SecretKey object to be correctly and securely generated."
+            }
+          },
+          "RequiredPredicateError-19": {
+            "id": "RequiredPredicateError",
+            "fullDescription": {
+              "text": "An object A expects an object B to have been used correctly (CrySL blocks REQUIRES and ENSURES). For example a Cipher object requires a SecretKey object to be correctly and securely generated."
+            }
+          },
+          "RequiredPredicateError-18": {
+            "id": "RequiredPredicateError",
+            "fullDescription": {
+              "text": "An object A expects an object B to have been used correctly (CrySL blocks REQUIRES and ENSURES). For example a Cipher object requires a SecretKey object to be correctly and securely generated."
+            }
+          },
+          "RequiredPredicateError-20": {
+            "id": "RequiredPredicateError",
+            "fullDescription": {
+              "text": "An object A expects an object B to have been used correctly (CrySL blocks REQUIRES and ENSURES). For example a Cipher object requires a SecretKey object to be correctly and securely generated."
+            }
+          },
+          "RequiredPredicateError-9": {
+            "id": "RequiredPredicateError",
+            "fullDescription": {
+              "text": "An object A expects an object B to have been used correctly (CrySL blocks REQUIRES and ENSURES). For example a Cipher object requires a SecretKey object to be correctly and securely generated."
+            }
+          },
+          "RequiredPredicateError-8": {
+            "id": "RequiredPredicateError",
+            "fullDescription": {
+              "text": "An object A expects an object B to have been used correctly (CrySL blocks REQUIRES and ENSURES). For example a Cipher object requires a SecretKey object to be correctly and securely generated."
+            }
+          },
+          "RequiredPredicateError-22": {
+            "id": "RequiredPredicateError",
+            "fullDescription": {
+              "text": "An object A expects an object B to have been used correctly (CrySL blocks REQUIRES and ENSURES). For example a Cipher object requires a SecretKey object to be correctly and securely generated."
+            }
+          },
+          "RequiredPredicateError-7": {
+            "id": "RequiredPredicateError",
+            "fullDescription": {
+              "text": "An object A expects an object B to have been used correctly (CrySL blocks REQUIRES and ENSURES). For example a Cipher object requires a SecretKey object to be correctly and securely generated."
+            }
+          },
+          "RequiredPredicateError-21": {
+            "id": "RequiredPredicateError",
+            "fullDescription": {
+              "text": "An object A expects an object B to have been used correctly (CrySL blocks REQUIRES and ENSURES). For example a Cipher object requires a SecretKey object to be correctly and securely generated."
+            }
+          },
+          "TypestateError": {
+            "id": "TypestateError",
+            "fullDescription": {
+              "text": "The ORDER block of CrySL is violated, i.e., the expected method sequence call to be made is incorrect. For example, a Signature object expects a call to initSign(key) prior to update(data)."
+            }
+          },
+          "RequiredPredicateError-6": {
+            "id": "RequiredPredicateError",
+            "fullDescription": {
+              "text": "An object A expects an object B to have been used correctly (CrySL blocks REQUIRES and ENSURES). For example a Cipher object requires a SecretKey object to be correctly and securely generated."
+            }
+          },
+          "RequiredPredicateError-24": {
+            "id": "RequiredPredicateError",
+            "fullDescription": {
+              "text": "An object A expects an object B to have been used correctly (CrySL blocks REQUIRES and ENSURES). For example a Cipher object requires a SecretKey object to be correctly and securely generated."
+            }
+          },
+          "RequiredPredicateError-5": {
+            "id": "RequiredPredicateError",
+            "fullDescription": {
+              "text": "An object A expects an object B to have been used correctly (CrySL blocks REQUIRES and ENSURES). For example a Cipher object requires a SecretKey object to be correctly and securely generated."
+            }
+          },
+          "RequiredPredicateError-23": {
+            "id": "RequiredPredicateError",
+            "fullDescription": {
+              "text": "An object A expects an object B to have been used correctly (CrySL blocks REQUIRES and ENSURES). For example a Cipher object requires a SecretKey object to be correctly and securely generated."
+            }
+          },
+          "RequiredPredicateError-4": {
+            "id": "RequiredPredicateError",
+            "fullDescription": {
+              "text": "An object A expects an object B to have been used correctly (CrySL blocks REQUIRES and ENSURES). For example a Cipher object requires a SecretKey object to be correctly and securely generated."
+            }
+          },
+          "RequiredPredicateError-3": {
+            "id": "RequiredPredicateError",
+            "fullDescription": {
+              "text": "An object A expects an object B to have been used correctly (CrySL blocks REQUIRES and ENSURES). For example a Cipher object requires a SecretKey object to be correctly and securely generated."
+            }
+          },
+          "RequiredPredicateError-2": {
+            "id": "RequiredPredicateError",
+            "fullDescription": {
+              "text": "An object A expects an object B to have been used correctly (CrySL blocks REQUIRES and ENSURES). For example a Cipher object requires a SecretKey object to be correctly and securely generated."
+            }
+          },
+          "RequiredPredicateError-1": {
+            "id": "RequiredPredicateError",
+            "fullDescription": {
+              "text": "An object A expects an object B to have been used correctly (CrySL blocks REQUIRES and ENSURES). For example a Cipher object requires a SecretKey object to be correctly and securely generated."
+            }
+          }
+        }
+      },
+      "results": [
+        {
+          "locations": [
+            {
+              "physicalLocation": {
+                "fileLocation": {
+                  "uri": "com.dx.anonymousmessenger.file.FileHelper.java",
+                  "PossibleExternalLibrary": true
+                },
+                "region": {
+                  "startLine": 73
+                }
+              },
+              "fullyQualifiedLogicalName": "com::dx::anonymousmessenger::file::FileHelper::encrypt"
+            }
+          ],
+          "ruleId": "RequiredPredicateError",
+          "message": {
+            "text": "Second parameter was not properly generated as generated Key.",
+            "richText": "RequiredPredicateError violating CrySL rule for javax.crypto.Cipher."
+          }
+        },
+        {
+          "locations": [
+            {
+              "physicalLocation": {
+                "fileLocation": {
+                  "uri": "com.dx.anonymousmessenger.file.FileHelper.java",
+                  "PossibleExternalLibrary": true
+                },
+                "region": {
+                  "startLine": 73
+                }
+              },
+              "fullyQualifiedLogicalName": "com::dx::anonymousmessenger::file::FileHelper::encrypt"
+            }
+          ],
+          "ruleId": "RequiredPredicateError-1",
+          "message": {
+            "text": "First parameter was not properly generated as prepared Key Material.",
+            "richText": "RequiredPredicateError violating CrySL rule for javax.crypto.spec.SecretKeySpec."
+          }
+        },
+        {
+          "locations": [
+            {
+              "physicalLocation": {
+                "fileLocation": {
+                  "uri": "com.dx.anonymousmessenger.file.FileHelper.java",
+                  "PossibleExternalLibrary": true
+                },
+                "region": {
+                  "startLine": 74
+                }
+              },
+              "fullyQualifiedLogicalName": "com::dx::anonymousmessenger::file::FileHelper::encrypt"
+            }
+          ],
+          "ruleId": "TypestateError",
+          "message": {
+            "text": "Unexpected call to method doFinal on object of type javax.crypto.Cipher. Expect a call to one of the following methods init,updateAAD.",
+            "richText": "TypestateError violating CrySL rule for javax.crypto.Cipher."
+          }
+        },
+        {
+          "locations": [
+            {
+              "physicalLocation": {
+                "fileLocation": {
+                  "uri": "com.dx.anonymousmessenger.file.FileHelper.java",
+                  "PossibleExternalLibrary": true
+                },
+                "region": {
+                  "startLine": 93
+                }
+              },
+              "fullyQualifiedLogicalName": "com::dx::anonymousmessenger::file::FileHelper::decrypt"
+            }
+          ],
+          "ruleId": "RequiredPredicateError-2",
+          "message": {
+            "text": "Second parameter was not properly generated as randomized.",
+            "richText": "RequiredPredicateError violating CrySL rule for javax.crypto.spec.GCMParameterSpec."
+          }
+        },
+        {
+          "locations": [
+            {
+              "physicalLocation": {
+                "fileLocation": {
+                  "uri": "com.dx.anonymousmessenger.file.FileHelper.java",
+                  "PossibleExternalLibrary": true
+                },
+                "region": {
+                  "startLine": 94
+                }
+              },
+              "fullyQualifiedLogicalName": "com::dx::anonymousmessenger::file::FileHelper::decrypt"
+            }
+          ],
+          "ruleId": "TypestateError-1",
+          "message": {
+            "text": "Unexpected call to method doFinal on object of type javax.crypto.Cipher. Expect a call to one of the following methods init,updateAAD.",
+            "richText": "TypestateError violating CrySL rule for javax.crypto.Cipher."
+          }
+        },
+        {
+          "locations": [
+            {
+              "physicalLocation": {
+                "fileLocation": {
+                  "uri": "com.dx.anonymousmessenger.file.FileHelper.java",
+                  "PossibleExternalLibrary": true
+                },
+                "region": {
+                  "startLine": 93
+                }
+              },
+              "fullyQualifiedLogicalName": "com::dx::anonymousmessenger::file::FileHelper::decrypt"
+            }
+          ],
+          "ruleId": "RequiredPredicateError-3",
+          "message": {
+            "text": "Third parameter was not properly generated as prepared G C M.",
+            "richText": "RequiredPredicateError violating CrySL rule for javax.crypto.Cipher."
+          }
+        },
+        {
+          "locations": [
+            {
+              "physicalLocation": {
+                "fileLocation": {
+                  "uri": "com.dx.anonymousmessenger.file.FileHelper.java",
+                  "PossibleExternalLibrary": true
+                },
+                "region": {
+                  "startLine": 93
+                }
+              },
+              "fullyQualifiedLogicalName": "com::dx::anonymousmessenger::file::FileHelper::decrypt"
+            }
+          ],
+          "ruleId": "RequiredPredicateError-4",
+          "message": {
+            "text": "Second parameter was not properly generated as generated Key.",
+            "richText": "RequiredPredicateError violating CrySL rule for javax.crypto.Cipher."
+          }
+        },
+        {
+          "locations": [
+            {
+              "physicalLocation": {
+                "fileLocation": {
+                  "uri": "com.dx.anonymousmessenger.file.FileHelper.java",
+                  "PossibleExternalLibrary": true
+                },
+                "region": {
+                  "startLine": 93
+                }
+              },
+              "fullyQualifiedLogicalName": "com::dx::anonymousmessenger::file::FileHelper::decrypt"
+            }
+          ],
+          "ruleId": "RequiredPredicateError-5",
+          "message": {
+            "text": "First parameter was not properly generated as prepared Key Material.",
+            "richText": "RequiredPredicateError violating CrySL rule for javax.crypto.spec.SecretKeySpec."
+          }
+        },
+        {
+          "locations": [
+            {
+              "physicalLocation": {
+                "fileLocation": {
+                  "uri": "com.dx.anonymousmessenger.file.FileHelper.java",
+                  "PossibleExternalLibrary": true
+                },
+                "region": {
+                  "startLine": 324
+                }
+              },
+              "fullyQualifiedLogicalName": "com::dx::anonymousmessenger::file::FileHelper::saveFile"
+            }
+          ],
+          "ruleId": "RequiredPredicateError-6",
+          "message": {
+            "text": "First parameter was not properly generated as prepared Key Material.",
+            "richText": "RequiredPredicateError violating CrySL rule for javax.crypto.spec.SecretKeySpec."
+          }
+        },
+        {
+          "locations": [
+            {
+              "physicalLocation": {
+                "fileLocation": {
+                  "uri": "com.dx.anonymousmessenger.file.FileHelper.java",
+                  "PossibleExternalLibrary": true
+                },
+                "region": {
+                  "startLine": 324
+                }
+              },
+              "fullyQualifiedLogicalName": "com::dx::anonymousmessenger::file::FileHelper::saveFile"
+            }
+          ],
+          "ruleId": "RequiredPredicateError-7",
+          "message": {
+            "text": "Second parameter was not properly generated as generated Key.",
+            "richText": "RequiredPredicateError violating CrySL rule for javax.crypto.Cipher."
+          }
+        },
+        {
+          "locations": [
+            {
+              "physicalLocation": {
+                "fileLocation": {
+                  "uri": "com.dx.anonymousmessenger.file.FileHelper.java",
+                  "PossibleExternalLibrary": true
+                },
+                "region": {
+                  "startLine": 348
+                }
+              },
+              "fullyQualifiedLogicalName": "com::dx::anonymousmessenger::file::FileHelper::saveFile"
+            }
+          ],
+          "ruleId": "TypestateError-2",
+          "message": {
+            "text": "Unexpected call to method doFinal on object of type javax.crypto.Cipher. Expect a call to one of the following methods init,updateAAD.",
+            "richText": "TypestateError violating CrySL rule for javax.crypto.Cipher."
+          }
+        },
+        {
+          "locations": [
+            {
+              "physicalLocation": {
+                "fileLocation": {
+                  "uri": "com.dx.anonymousmessenger.file.FileHelper.java",
+                  "PossibleExternalLibrary": true
+                },
+                "region": {
+                  "startLine": 260
+                }
+              },
+              "fullyQualifiedLogicalName": "com::dx::anonymousmessenger::file::FileHelper::getTempFileWithProgress"
+            }
+          ],
+          "ruleId": "RequiredPredicateError-8",
+          "message": {
+            "text": "Second parameter was not properly generated as randomized.",
+            "richText": "RequiredPredicateError violating CrySL rule for javax.crypto.spec.GCMParameterSpec."
+          }
+        },
+        {
+          "locations": [
+            {
+              "physicalLocation": {
+                "fileLocation": {
+                  "uri": "com.dx.anonymousmessenger.file.FileHelper.java",
+                  "PossibleExternalLibrary": true
+                },
+                "region": {
+                  "startLine": 286
+                }
+              },
+              "fullyQualifiedLogicalName": "com::dx::anonymousmessenger::file::FileHelper::getTempFileWithProgress"
+            }
+          ],
+          "ruleId": "TypestateError-3",
+          "message": {
+            "text": "Unexpected call to method doFinal on object of type javax.crypto.Cipher. Expect a call to one of the following methods init,updateAAD.",
+            "richText": "TypestateError violating CrySL rule for javax.crypto.Cipher."
+          }
+        },
+        {
+          "locations": [
+            {
+              "physicalLocation": {
+                "fileLocation": {
+                  "uri": "com.dx.anonymousmessenger.file.FileHelper.java",
+                  "PossibleExternalLibrary": true
+                },
+                "region": {
+                  "startLine": 260
+                }
+              },
+              "fullyQualifiedLogicalName": "com::dx::anonymousmessenger::file::FileHelper::getTempFileWithProgress"
+            }
+          ],
+          "ruleId": "RequiredPredicateError-9",
+          "message": {
+            "text": "Second parameter was not properly generated as generated Key.",
+            "richText": "RequiredPredicateError violating CrySL rule for javax.crypto.Cipher."
+          }
+        },
+        {
+          "locations": [
+            {
+              "physicalLocation": {
+                "fileLocation": {
+                  "uri": "com.dx.anonymousmessenger.file.FileHelper.java",
+                  "PossibleExternalLibrary": true
+                },
+                "region": {
+                  "startLine": 260
+                }
+              },
+              "fullyQualifiedLogicalName": "com::dx::anonymousmessenger::file::FileHelper::getTempFileWithProgress"
+            }
+          ],
+          "ruleId": "RequiredPredicateError-10",
+          "message": {
+            "text": "Third parameter was not properly generated as prepared G C M.",
+            "richText": "RequiredPredicateError violating CrySL rule for javax.crypto.Cipher."
+          }
+        },
+        {
+          "locations": [
+            {
+              "physicalLocation": {
+                "fileLocation": {
+                  "uri": "com.dx.anonymousmessenger.file.FileHelper.java",
+                  "PossibleExternalLibrary": true
+                },
+                "region": {
+                  "startLine": 260
+                }
+              },
+              "fullyQualifiedLogicalName": "com::dx::anonymousmessenger::file::FileHelper::getTempFileWithProgress"
+            }
+          ],
+          "ruleId": "RequiredPredicateError-11",
+          "message": {
+            "text": "First parameter was not properly generated as prepared Key Material.",
+            "richText": "RequiredPredicateError violating CrySL rule for javax.crypto.spec.SecretKeySpec."
+          }
+        },
+        {
+          "locations": [
+            {
+              "physicalLocation": {
+                "fileLocation": {
+                  "uri": "com.dx.anonymousmessenger.file.FileHelper.java",
+                  "PossibleExternalLibrary": true
+                },
+                "region": {
+                  "startLine": 205
+                }
+              },
+              "fullyQualifiedLogicalName": "com::dx::anonymousmessenger::file::FileHelper::saveToStorageWithProgress"
+            }
+          ],
+          "ruleId": "TypestateError-4",
+          "message": {
+            "text": "Unexpected call to method doFinal on object of type javax.crypto.Cipher. Expect a call to one of the following methods init,updateAAD.",
+            "richText": "TypestateError violating CrySL rule for javax.crypto.Cipher."
+          }
+        },
+        {
+          "locations": [
+            {
+              "physicalLocation": {
+                "fileLocation": {
+                  "uri": "com.dx.anonymousmessenger.file.FileHelper.java",
+                  "PossibleExternalLibrary": true
+                },
+                "region": {
+                  "startLine": 188
+                }
+              },
+              "fullyQualifiedLogicalName": "com::dx::anonymousmessenger::file::FileHelper::saveToStorageWithProgress"
+            }
+          ],
+          "ruleId": "RequiredPredicateError-12",
+          "message": {
+            "text": "First parameter was not properly generated as prepared Key Material.",
+            "richText": "RequiredPredicateError violating CrySL rule for javax.crypto.spec.SecretKeySpec."
+          }
+        },
+        {
+          "locations": [
+            {
+              "physicalLocation": {
+                "fileLocation": {
+                  "uri": "com.dx.anonymousmessenger.file.FileHelper.java",
+                  "PossibleExternalLibrary": true
+                },
+                "region": {
+                  "startLine": 188
+                }
+              },
+              "fullyQualifiedLogicalName": "com::dx::anonymousmessenger::file::FileHelper::saveToStorageWithProgress"
+            }
+          ],
+          "ruleId": "RequiredPredicateError-13",
+          "message": {
+            "text": "Third parameter was not properly generated as prepared G C M.",
+            "richText": "RequiredPredicateError violating CrySL rule for javax.crypto.Cipher."
+          }
+        },
+        {
+          "locations": [
+            {
+              "physicalLocation": {
+                "fileLocation": {
+                  "uri": "com.dx.anonymousmessenger.file.FileHelper.java",
+                  "PossibleExternalLibrary": true
+                },
+                "region": {
+                  "startLine": 188
+                }
+              },
+              "fullyQualifiedLogicalName": "com::dx::anonymousmessenger::file::FileHelper::saveToStorageWithProgress"
+            }
+          ],
+          "ruleId": "RequiredPredicateError-14",
+          "message": {
+            "text": "Second parameter was not properly generated as generated Key.",
+            "richText": "RequiredPredicateError violating CrySL rule for javax.crypto.Cipher."
+          }
+        },
+        {
+          "locations": [
+            {
+              "physicalLocation": {
+                "fileLocation": {
+                  "uri": "com.dx.anonymousmessenger.file.FileHelper.java",
+                  "PossibleExternalLibrary": true
+                },
+                "region": {
+                  "startLine": 188
+                }
+              },
+              "fullyQualifiedLogicalName": "com::dx::anonymousmessenger::file::FileHelper::saveToStorageWithProgress"
+            }
+          ],
+          "ruleId": "RequiredPredicateError-15",
+          "message": {
+            "text": "Second parameter was not properly generated as randomized.",
+            "richText": "RequiredPredicateError violating CrySL rule for javax.crypto.spec.GCMParameterSpec."
+          }
+        },
+        {
+          "locations": [
+            {
+              "physicalLocation": {
+                "fileLocation": {
+                  "uri": "com.dx.anonymousmessenger.tor.TorClient.java",
+                  "PossibleExternalLibrary": true
+                },
+                "region": {
+                  "startLine": 191
+                }
+              },
+              "fullyQualifiedLogicalName": "com::dx::anonymousmessenger::tor::TorClient::sendFile"
+            }
+          ],
+          "ruleId": "TypestateError-5",
+          "message": {
+            "text": "Unexpected call to method doFinal on object of type javax.crypto.Cipher. Expect a call to one of the following methods init,updateAAD.",
+            "richText": "TypestateError violating CrySL rule for javax.crypto.Cipher."
+          }
+        },
+        {
+          "locations": [
+            {
+              "physicalLocation": {
+                "fileLocation": {
+                  "uri": "com.dx.anonymousmessenger.tor.TorClient.java",
+                  "PossibleExternalLibrary": true
+                },
+                "region": {
+                  "startLine": 167
+                }
+              },
+              "fullyQualifiedLogicalName": "com::dx::anonymousmessenger::tor::TorClient::sendFile"
+            }
+          ],
+          "ruleId": "RequiredPredicateError-16",
+          "message": {
+            "text": "First parameter was not properly generated as prepared Key Material.",
+            "richText": "RequiredPredicateError violating CrySL rule for javax.crypto.spec.SecretKeySpec."
+          }
+        },
+        {
+          "locations": [
+            {
+              "physicalLocation": {
+                "fileLocation": {
+                  "uri": "com.dx.anonymousmessenger.tor.TorClient.java",
+                  "PossibleExternalLibrary": true
+                },
+                "region": {
+                  "startLine": 167
+                }
+              },
+              "fullyQualifiedLogicalName": "com::dx::anonymousmessenger::tor::TorClient::sendFile"
+            }
+          ],
+          "ruleId": "RequiredPredicateError-17",
+          "message": {
+            "text": "Third parameter was not properly generated as prepared G C M.",
+            "richText": "RequiredPredicateError violating CrySL rule for javax.crypto.Cipher."
+          }
+        },
+        {
+          "locations": [
+            {
+              "physicalLocation": {
+                "fileLocation": {
+                  "uri": "com.dx.anonymousmessenger.tor.TorClient.java",
+                  "PossibleExternalLibrary": true
+                },
+                "region": {
+                  "startLine": 167
+                }
+              },
+              "fullyQualifiedLogicalName": "com::dx::anonymousmessenger::tor::TorClient::sendFile"
+            }
+          ],
+          "ruleId": "RequiredPredicateError-18",
+          "message": {
+            "text": "Second parameter was not properly generated as generated Key.",
+            "richText": "RequiredPredicateError violating CrySL rule for javax.crypto.Cipher."
+          }
+        },
+        {
+          "locations": [
+            {
+              "physicalLocation": {
+                "fileLocation": {
+                  "uri": "com.dx.anonymousmessenger.tor.TorClient.java",
+                  "PossibleExternalLibrary": true
+                },
+                "region": {
+                  "startLine": 167
+                }
+              },
+              "fullyQualifiedLogicalName": "com::dx::anonymousmessenger::tor::TorClient::sendFile"
+            }
+          ],
+          "ruleId": "RequiredPredicateError-19",
+          "message": {
+            "text": "Second parameter was not properly generated as randomized.",
+            "richText": "RequiredPredicateError violating CrySL rule for javax.crypto.spec.GCMParameterSpec."
+          }
+        },
+        {
+          "locations": [
+            {
+              "physicalLocation": {
+                "fileLocation": {
+                  "uri": "com.dx.anonymousmessenger.tor.ServerSocketViaTor$Server.java",
+                  "PossibleExternalLibrary": true
+                },
+                "region": {
+                  "startLine": 467
+                }
+              },
+              "fullyQualifiedLogicalName": "com::dx::anonymousmessenger::tor::ServerSocketViaTor$Server::handleFile"
+            }
+          ],
+          "ruleId": "IncompleteOperationError",
+          "message": {
+            "text": "Operation on object of type javax.crypto.Cipher object not completed. Expected call to init.",
+            "richText": "IncompleteOperationError violating CrySL rule for javax.crypto.Cipher."
+          }
+        },
+        {
+          "locations": [
+            {
+              "physicalLocation": {
+                "fileLocation": {
+                  "uri": "com.dx.anonymousmessenger.tor.ServerSocketViaTor$Server.java",
+                  "PossibleExternalLibrary": true
+                },
+                "region": {
+                  "startLine": 466
+                }
+              },
+              "fullyQualifiedLogicalName": "com::dx::anonymousmessenger::tor::ServerSocketViaTor$Server::handleFile"
+            }
+          ],
+          "ruleId": "RequiredPredicateError-20",
+          "message": {
+            "text": "Second parameter was not properly generated as generated Key.",
+            "richText": "RequiredPredicateError violating CrySL rule for javax.crypto.Cipher."
+          }
+        },
+        {
+          "locations": [
+            {
+              "physicalLocation": {
+                "fileLocation": {
+                  "uri": "com.dx.anonymousmessenger.tor.ServerSocketViaTor$Server.java",
+                  "PossibleExternalLibrary": true
+                },
+                "region": {
+                  "startLine": 466
+                }
+              },
+              "fullyQualifiedLogicalName": "com::dx::anonymousmessenger::tor::ServerSocketViaTor$Server::handleFile"
+            }
+          ],
+          "ruleId": "RequiredPredicateError-21",
+          "message": {
+            "text": "First parameter was not properly generated as prepared Key Material.",
+            "richText": "RequiredPredicateError violating CrySL rule for javax.crypto.spec.SecretKeySpec."
+          }
+        },
+        {
+          "locations": [
+            {
+              "physicalLocation": {
+                "fileLocation": {
+                  "uri": "com.dx.anonymousmessenger.tor.ServerSocketViaTor$Server.java",
+                  "PossibleExternalLibrary": true
+                },
+                "region": {
+                  "startLine": 467
+                }
+              },
+              "fullyQualifiedLogicalName": "com::dx::anonymousmessenger::tor::ServerSocketViaTor$Server::handleFile"
+            }
+          ],
+          "ruleId": "TypestateError-6",
+          "message": {
+            "text": "Unexpected call to method doFinal on object of type javax.crypto.Cipher. Expect a call to one of the following methods init,updateAAD.",
+            "richText": "TypestateError violating CrySL rule for javax.crypto.Cipher."
+          }
+        },
+        {
+          "locations": [
+            {
+              "physicalLocation": {
+                "fileLocation": {
+                  "uri": "com.dx.anonymousmessenger.tor.ServerSocketViaTor$Server.java",
+                  "PossibleExternalLibrary": true
+                },
+                "region": {
+                  "startLine": 411
+                }
+              },
+              "fullyQualifiedLogicalName": "com::dx::anonymousmessenger::tor::ServerSocketViaTor$Server::handleFile"
+            }
+          ],
+          "ruleId": "IncompleteOperationError-1",
+          "message": {
+            "text": "Operation on object of type javax.crypto.Cipher object not completed. Expected call to init.",
+            "richText": "IncompleteOperationError violating CrySL rule for javax.crypto.Cipher."
+          }
+        },
+        {
+          "locations": [
+            {
+              "physicalLocation": {
+                "fileLocation": {
+                  "uri": "org.whispersystems.libsignal.ratchet.ChainKey.java"
+                },
+                "region": {
+                  "startLine": 57
+                }
+              },
+              "fullyQualifiedLogicalName": "org::whispersystems::libsignal::ratchet::ChainKey::getBaseMaterial"
+            }
+          ],
+          "ruleId": "RequiredPredicateError-22",
+          "message": {
+            "text": "First parameter was not properly generated as prepared Key Material.",
+            "richText": "RequiredPredicateError violating CrySL rule for javax.crypto.spec.SecretKeySpec."
+          }
+        },
+        {
+          "locations": [
+            {
+              "physicalLocation": {
+                "fileLocation": {
+                  "uri": "org.whispersystems.libsignal.ratchet.ChainKey.java"
+                },
+                "region": {
+                  "startLine": 59
+                }
+              },
+              "fullyQualifiedLogicalName": "org::whispersystems::libsignal::ratchet::ChainKey::getBaseMaterial"
+            }
+          ],
+          "ruleId": "TypestateError-7",
+          "message": {
+            "text": "Unexpected call to method <javax.crypto.Mac: byte[] doFinal(byte[])> on object of type javax.crypto.Mac. Expect a call to one of the following methods javax.crypto.Mac: void doFinal(byte[],int),javax.crypto.Mac: void update(byte[]),javax.crypto.Mac: void update(byte),javax.crypto.Mac: byte[] doFinal(),javax.crypto.Mac: void update(byte[],int,int).",
+            "richText": "TypestateError violating CrySL rule for javax.crypto.Mac."
+          }
+        },
+        {
+          "locations": [
+            {
+              "physicalLocation": {
+                "fileLocation": {
+                  "uri": "org.whispersystems.libsignal.SessionCipher.java"
+                },
+                "region": {
+                  "startLine": 408
+                }
+              },
+              "fullyQualifiedLogicalName": "org::whispersystems::libsignal::SessionCipher::getPlaintext"
+            }
+          ],
+          "ruleId": "TypestateError-8",
+          "message": {
+            "text": "Unexpected call to method doFinal on object of type javax.crypto.Cipher. Expect a call to one of the following methods init,updateAAD.",
+            "richText": "TypestateError violating CrySL rule for javax.crypto.Cipher."
+          }
+        },
+        {
+          "locations": [
+            {
+              "physicalLocation": {
+                "fileLocation": {
+                  "uri": "org.whispersystems.libsignal.SessionCipher.java"
+                },
+                "region": {
+                  "startLine": 397
+                }
+              },
+              "fullyQualifiedLogicalName": "org::whispersystems::libsignal::SessionCipher::getCiphertext"
+            }
+          ],
+          "ruleId": "TypestateError-9",
+          "message": {
+            "text": "Unexpected call to method doFinal on object of type javax.crypto.Cipher. Expect a call to one of the following methods init,updateAAD.",
+            "richText": "TypestateError violating CrySL rule for javax.crypto.Cipher."
+          }
+        },
+        {
+          "locations": [
+            {
+              "physicalLocation": {
+                "fileLocation": {
+                  "uri": "org.whispersystems.libsignal.SessionCipher.java"
+                },
+                "region": {
+                  "startLine": 417
+                }
+              },
+              "fullyQualifiedLogicalName": "org::whispersystems::libsignal::SessionCipher::getCipher"
+            }
+          ],
+          "ruleId": "RequiredPredicateError-23",
+          "message": {
+            "text": "Second parameter was not properly generated as generated Key.",
+            "richText": "RequiredPredicateError violating CrySL rule for javax.crypto.Cipher."
+          }
+        },
+        {
+          "locations": [
+            {
+              "physicalLocation": {
+                "fileLocation": {
+                  "uri": "org.whispersystems.libsignal.kdf.HKDF.java"
+                },
+                "region": {
+                  "startLine": 42
+                }
+              },
+              "fullyQualifiedLogicalName": "org::whispersystems::libsignal::kdf::HKDF::extract"
+            }
+          ],
+          "ruleId": "TypestateError-10",
+          "message": {
+            "text": "Unexpected call to method <javax.crypto.Mac: byte[] doFinal(byte[])> on object of type javax.crypto.Mac. Expect a call to one of the following methods javax.crypto.Mac: void doFinal(byte[],int),javax.crypto.Mac: void update(byte[]),javax.crypto.Mac: void update(byte),javax.crypto.Mac: byte[] doFinal(),javax.crypto.Mac: void update(byte[],int,int).",
+            "richText": "TypestateError violating CrySL rule for javax.crypto.Mac."
+          }
+        },
+        {
+          "locations": [
+            {
+              "physicalLocation": {
+                "fileLocation": {
+                  "uri": "org.whispersystems.libsignal.kdf.HKDF.java"
+                },
+                "region": {
+                  "startLine": 41
+                }
+              },
+              "fullyQualifiedLogicalName": "org::whispersystems::libsignal::kdf::HKDF::extract"
+            }
+          ],
+          "ruleId": "RequiredPredicateError-24",
+          "message": {
+            "text": "First parameter was not properly generated as prepared Key Material.",
+            "richText": "RequiredPredicateError violating CrySL rule for javax.crypto.spec.SecretKeySpec."
+          }
+        },
+        {
+          "locations": [
+            {
+              "physicalLocation": {
+                "fileLocation": {
+                  "uri": "org.whispersystems.libsignal.kdf.HKDF.java"
+                },
+                "region": {
+                  "startLine": 57
+                }
+              },
+              "fullyQualifiedLogicalName": "org::whispersystems::libsignal::kdf::HKDF::expand"
+            }
+          ],
+          "ruleId": "RequiredPredicateError-25",
+          "message": {
+            "text": "First parameter was not properly generated as prepared Key Material.",
+            "richText": "RequiredPredicateError violating CrySL rule for javax.crypto.spec.SecretKeySpec."
+          }
+        },
+        {
+          "locations": [
+            {
+              "physicalLocation": {
+                "fileLocation": {
+                  "uri": "org.whispersystems.libsignal.kdf.HKDF.java"
+                },
+                "region": {
+                  "startLine": 57
+                }
+              },
+              "fullyQualifiedLogicalName": "org::whispersystems::libsignal::kdf::HKDF::expand"
+            }
+          ],
+          "ruleId": "RequiredPredicateError-26",
+          "message": {
+            "text": "First parameter was not properly generated as generated Key.",
+            "richText": "RequiredPredicateError violating CrySL rule for javax.crypto.Mac."
+          }
+        },
+        {
+          "locations": [
+            {
+              "physicalLocation": {
+                "fileLocation": {
+                  "uri": "org.whispersystems.libsignal.kdf.DerivedMessageSecrets.java"
+                },
+                "region": {
+                  "startLine": 33
+                }
+              },
+              "fullyQualifiedLogicalName": "org::whispersystems::libsignal::kdf::DerivedMessageSecrets::<init>"
+            }
+          ],
+          "ruleId": "RequiredPredicateError-27",
+          "message": {
+            "text": "First parameter was not properly generated as randomized.",
+            "richText": "RequiredPredicateError violating CrySL rule for javax.crypto.spec.IvParameterSpec."
+          }
+        },
+        {
+          "locations": [
+            {
+              "physicalLocation": {
+                "fileLocation": {
+                  "uri": "org.whispersystems.libsignal.kdf.DerivedMessageSecrets.java"
+                },
+                "region": {
+                  "startLine": 31
+                }
+              },
+              "fullyQualifiedLogicalName": "org::whispersystems::libsignal::kdf::DerivedMessageSecrets::<init>"
+            }
+          ],
+          "ruleId": "RequiredPredicateError-28",
+          "message": {
+            "text": "First parameter was not properly generated as prepared Key Material.",
+            "richText": "RequiredPredicateError violating CrySL rule for javax.crypto.spec.SecretKeySpec."
+          }
+        },
+        {
+          "locations": [
+            {
+              "physicalLocation": {
+                "fileLocation": {
+                  "uri": "org.whispersystems.libsignal.state.SessionState.java"
+                },
+                "region": {
+                  "startLine": 287
+                }
+              },
+              "fullyQualifiedLogicalName": "org::whispersystems::libsignal::state::SessionState::removeMessageKeys"
+            }
+          ],
+          "ruleId": "RequiredPredicateError-29",
+          "message": {
+            "text": "First parameter was not properly generated as prepared Key Material.",
+            "richText": "RequiredPredicateError violating CrySL rule for javax.crypto.spec.SecretKeySpec."
+          }
+        },
+        {
+          "locations": [
+            {
+              "physicalLocation": {
+                "fileLocation": {
+                  "uri": "org.whispersystems.libsignal.state.SessionState.java"
+                },
+                "region": {
+                  "startLine": 288
+                }
+              },
+              "fullyQualifiedLogicalName": "org::whispersystems::libsignal::state::SessionState::removeMessageKeys"
+            }
+          ],
+          "ruleId": "RequiredPredicateError-30",
+          "message": {
+            "text": "First parameter was not properly generated as randomized.",
+            "richText": "RequiredPredicateError violating CrySL rule for javax.crypto.spec.IvParameterSpec."
+          }
+        },
+        {
+          "locations": [
+            {
+              "physicalLocation": {
+                "fileLocation": {
+                  "uri": "org.whispersystems.libsignal.protocol.SignalMessage.java"
+                },
+                "region": {
+                  "startLine": 129
+                }
+              },
+              "fullyQualifiedLogicalName": "org::whispersystems::libsignal::protocol::SignalMessage::getMac"
+            }
+          ],
+          "ruleId": "RequiredPredicateError-31",
+          "message": {
+            "text": "First parameter was not properly generated as generated Key.",
+            "richText": "RequiredPredicateError violating CrySL rule for javax.crypto.Mac."
+          }
+        }
+      ],
+      "tool": {
+        "name": "CryptoAnalysis",
+        "semanticVersion": null,
+        "language": "en-US",
+        "version": null
+      }
+    }
+  ]
+}
