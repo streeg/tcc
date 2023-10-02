@@ -23,9 +23,9 @@ Ao longo da análise, o estudo destaca tanto as virtudes como as limitações in
 
 Este estudo desempenha um papel fundamental ao estabelecer um sólido alicerce para nossa própria investigação. Ele não apenas fornece insights valiosos sobre as técnicas de detecção de vulnerabilidades em APIs criptográficas, mas também nos motivou a explorar uma perspectiva complementar. Nossa pesquisa se concentra em avaliar a percepção dos desenvolvedores sobre as vulnerabilidades identificadas pelos métodos analisados, preenchendo assim uma lacuna crucial no entendimento do impacto dessas detecções no processo de desenvolvimento de software. Ao considerar tanto a eficácia técnica quanto a perspectiva dos desenvolvedores, buscamos enriquecer o panorama das práticas de segurança na utilização de APIs criptográficas em projetos Java.
 
-\subsection{Automatic Detection of Java Cryptographic API Misuses: Are We There Yet?}
+\subsection{Detecção de vulnerabilidades em APIs criptográficas Java} %Automatic Detection of Java Cryptographic API Misuses: Are We There Yet?
 
-O estudo apresentado no artigo acima traz que ao se trabalhar com APIs criptográficas Java, os desenvolvedores se deparam com diversos desafios. Em primeiro lugar, algumas dessas APIs tendem a ser excessivamente complexas, o que torna sua compreensão e utilização eficaz uma tarefa árdua. A situação é frequentemente agravada pela escassez de documentação adequada, o que dificulta ainda mais para os desenvolvedores o uso correto dessas APIs.
+O estudo apresentado no artigo 'Automatic Detection of Java Cryptographic API Misuses: Are We There Yet?' traz que ao se trabalhar com APIs criptográficas Java, os desenvolvedores se deparam com diversos desafios. Em primeiro lugar, algumas dessas APIs tendem a ser excessivamente complexas, o que torna sua compreensão e utilização eficaz uma tarefa árdua. A situação é frequentemente agravada pela escassez de documentação adequada, o que dificulta ainda mais para os desenvolvedores o uso correto dessas APIs.
 
 Além disso, muitos desenvolvedores podem não possuir o treinamento em cibersegurança necessário para compreender plenamente as implicações de segurança ao utilizar as opções de codificação dentro das APIs criptográficas. Eles podem não estar completamente cientes dos valores de parâmetros apropriados, das sequências de chamadas corretas ou da lógica de substituição, o que pode resultar na implementação insegura de funcionalidades de segurança.
 
@@ -74,7 +74,7 @@ No geral, o estudo revelou uma lacuna significativa entre as ferramentas existen
 
 Diante dos argumentos expostos, o presente estudo se fundamenta na análise crítica do trabalho suplementar, visando compreender se as vulnerabilidades identificadas pelas ferramentas CryptoGuard e CogniCrypt têm sua origem associada a bibliotecas de caráter nativo ou externo. Este enfoque pode se revelar essencial para uma apreciação abrangente das fragilidades apontadas, proporcionando um discernimento mais aprofundado acerca das nuances envolvidas na integridade e segurança do sistema em questão.
 
-\subsection{Automated Third-Party Library Detection for Android Applications: Are We There Yet?} %Automated Third-Party Library Detection for Android Applications: Are We There Yet?
+\subsection{Detecção de bibliotecas externas em aplicações Android} %Automated Third-Party Library Detection for Android Applications: Are We There Yet?
 
 A incorporação de bibliotecas de terceiros em aplicações Android suscita diversas preocupações relevantes. Uma delas refere-se à possibilidade de presença de código malicioso nessas bibliotecas, representando uma ameaça à segurança e à privacidade dos dispositivos dos usuários. Esse código tem o potencial de ser utilizado em atividades como a apropriação indevida de dados, acessos não autorizados e até mesmo o controle remoto do dispositivo.
 
@@ -141,7 +141,7 @@ Os resultados do LibRadar e do LibScout para o piloto não foram semelhantes. O 
 
 Neste estudo, baseamos nossa escolha da ferramenta LibScout para identificação de bibliotecas de terceiros (TPLs) em aplicativos Android. Um dos maiores motivadores foi o fato de sua robustez e a apresentação dos resultados fornecendo uma visão hierarquizada das bibliotecas. Dessa forma, integramos o LibScout à nossa abordagem qualitativa, complementando as ferramentas CogniCrypt e CryptoGuard para tentar obter resultados mais abrangentes na detecção de vulnerabilidades. O tempo de execução, baixa precisão e amostras fora de data foram parte do porque não termos escolhido outras ferramentas.
 
-\subsection{CogniCrypt: Supporting Developers in Using Cryptography}
+\subsection{O que é a ferramenta CogniCrypt?}
 
 O CogniCrypt pode oferecer uma abordagem abrangente para abordar a identificação de vulnerabilidades no código por meio de dois recursos fundamentais: a geração de código e a aplicação de análises estáticas.
 
@@ -182,7 +182,7 @@ Ao integrarmos o CogniCrypt em nossa abordagem, complementando-o com outras ferr
 % Página 6: "Por que o software criptográfico falha?: um estudo de caso e problemas em aberto" (Workshop da ACM Ásia-Pacífico em Sistemas)
 % Página 6: "Superando obstáculos: por que os desenvolvedores Java têm dificuldade com APIs de criptografia?" (Conferência Internacional sobre Engenharia de Software)
 
-\subsection{CRYPTOGUARD: High Precision Detection of Cryptographic Vulnerabilities in Massive-sized Java Projects}
+\subsection{O que é a ferramenta CryptoGuard?}
 
 O objetivo do CRYPTOGUARD é detectar vulnerabilidades criptográficas em projetos Java. Ele alcança isso por meio do uso de técnicas de análise estática de programas para analisar o código e identificar possíveis usos incorretos de APIs criptográficas. O CRYPTOGUARD emprega um conjunto de algoritmos de "slicing" (recorte) rápidos e altamente precisos que refinam recortes de programas ao identificar elementos irrelevantes específicos da linguagem Java. Esses refinamentos auxiliam na redução significativa de alertas falsos. Ao executar o CRYPTOGUARD em projetos Java de grande escala, são gerados insights de segurança e auxilia na identificação de vulnerabilidades no código.
 
