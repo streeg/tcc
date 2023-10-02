@@ -8,7 +8,7 @@ Ao integrar os resultados do LibScout ao contexto das ferramentas CryptoGuard e 
 
 \section{Fundamentação Teórica}
 
-\section{Criptografia} %https://web.cs.ucdavis.edu/~rogaway/classes/227/spring05/book/main.pdf  BELLARE, M.; ROGAWAEY, P. Introduction to modern cryptography. Davis, United States of America: University of California at Davis, 2005.
+\subsection{Criptografia} %https://web.cs.ucdavis.edu/~rogaway/classes/227/spring05/book/main.pdf  BELLARE, M.; ROGAWAEY, P. Introduction to modern cryptography. Davis, United States of America: University of California at Davis, 2005.
 
 A criptografia é um componente essencial para a segurança da informação, desempenhando um papel fundamental ao garantir a confidencialidade e a integridade dos dados. Essa técnica consiste em transformar informações em um formato ilegível, conhecido como cifrado, que somente uma pessoa autorizada pode reverter ao seu estado original. No âmbito da criptografia, dois tipos de abordagens principais são empregados: a simétrica, que utiliza uma única chave para tanto cifrar quanto decifrar dados, e a assimétrica, que envolve o uso de pares distintos de chaves – uma pública, para cifragem, e outra privada, para decifragem.
 
@@ -18,7 +18,7 @@ A segurança de um sistema criptográfico depende da robustez do algoritmo empre
 
 Apesar da importância da criptografia para a segurança dos sistemas, muitos desenvolvedores se deparam com desafios significativos ao tentar implementá-la corretamente. Sem o conhecimento especializado em criptografia, é possível utilizar erroneamente algoritmos e técnicas criptográficas inadequadas. Isso pode resultar em vulnerabilidades que comprometem a segurança e a privacidade dos dados dos usuários. Portanto, é essencial contar com ferramentas que possam orientar os desenvolvedores na aplicação correta das práticas criptográficas, reduzindo assim os riscos associados à implementação inadequada de medidas de segurança em software.Apesar da criptografia ser um componente fundamental para garantir a segurança dos sistemas, muitos desenvolvedores encontram grandes desafios ao tentar fazê-la funcionar corretamente. Sem a expertise em criptografia, alguém pode erroneamente utilizar algoritmos e técnicas criptográficas inadequadas. Dessa forma, as aplicações podem apresentar vulnerabilidades que prejudicam a segurança e a privacidade dos dados dos usuários. É crucial contar com ferramentas que possam orientar os desenvolvedores na aplicação correta das práticas criptográficas, a fim de reduzir os riscos envolvidos quando as medidas de segurança em software são implementadas incorretamente.
 
-\section{CogniCrypt} %CogniCrypt: Supporting Developers in Using Cryptography
+\subsection{CogniCrypt} %CogniCrypt: Supporting Developers in Using Cryptography
 
 O CogniCrypt, desenvolvido no centro de pesquisa CROSSING da Technische Universität Darmstadt, é uma ferramenta projetada para auxiliar desenvolvedores na identificação e correção de usos inseguros de bibliotecas criptográficas em software. Estudos recentes têm apontado que muitos aplicativos que empregam procedimentos criptográficos o fazem de maneira inadequada, o que destaca a relevância do CogniCrypt.
 
@@ -42,7 +42,7 @@ Os desenvolvedores podem verificar automaticamente se um código está em confor
 
 A linguagem CrySL e o CogniCrypt criam um ambiente poderoso e fácil de entender para o desenvolvimento seguro de aplicações Java. Eles fornecem um conjunto abrangente de diretrizes e ferramentas para proteger dados e sistemas críticos de ameaças cibernéticas.
 
-\section{CryptoGuard} %CRYPTOGUARD: High Precision Detection of Cryptographic Vulnerabilities in Massive-sized Java Projects
+\subsection{CryptoGuard} %CRYPTOGUARD: High Precision Detection of Cryptographic Vulnerabilities in Massive-sized Java Projects
 
 CRYPTOGUARD é uma ferramenta de verificação de código estático projetada para detectar usos incorretos de APIs criptográficas e SSL/TLS em projetos Java de grande porte. Seu propósito é auxiliar os desenvolvedores na identificação e correção de vulnerabilidades relacionadas a algoritmos criptográficos, exposição de segredos, geração previsível de números aleatórios e verificações de certificados vulneráveis. O CRYPTOGUARD alcança isso por meio da implementação de um conjunto de novos algoritmos de análise que realizam uma análise estática do código-fonte. Ele proporciona detecção de alta precisão de vulnerabilidades criptográficas e oferece insights de segurança aos desenvolvedores. A ferramenta é projetada para ser leve e eficiente, executando mais rapidamente do que técnicas de análise existentes. Suas funcionalidades incluem identificação de violações de propriedades criptográficas, realização de fatiamento para frente e para trás, e geração de alertas de segurança para potenciais vulnerabilidades. O CRYPTOGUARD foi avaliado em 46 projetos Apache e 6.181 aplicativos Android, fornecendo descobertas de segurança valiosas e auxiliando projetos na melhoria de seu código.
 
@@ -82,7 +82,7 @@ A comparação é baseada na precisão e no tempo de execução das ferramentas.
 
 Os falsos positivos do CrySL devem-se principalmente ao fato de suas regras serem excessivamente rígidas e ele não conseguir reconhecer 4 usos corretos da API na avaliação (de 9). Por outro lado, o Cryptoguard usa algoritmos de fatiamento rápidos e altamente precisos para refinar as fatias do programa e reduzir alertas falsos em até 80\%. 
 
-\section{Ferramentas para análise de bibliotecas externas} %Automatic Detection of Java Cryptographic API Misuses: Are We There Yet?
+\subsection{Ferramentas para análise de bibliotecas externas} %Automatic Detection of Java Cryptographic API Misuses: Are We There Yet?
 
 Na escolha de quais ferramentas seriam utilizadas para a identificação e mapeamento de bibliotecas nativas e externas em aplicações Android, foram consideradas as ferramentas LibScout, LibRadar, LibSoft, LibPecker, LibId e ORLIS. Foi observado que através dos resultados apresentados no artigo Automatic Detection of Java Cryptographic API Misuses: Are We There Yet? que as ferramentas LibScout e LibRadar apresentaram os melhores resultados. O artigo aborda algumas categorias para a classificação das ferramentas, sendo elas:
 
