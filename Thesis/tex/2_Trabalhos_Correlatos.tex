@@ -16,8 +16,24 @@
 
 \section{Trabalhos Correlatos e Revisão de Literatura}
 
+\subsection{Criptografia} %https://www.techtarget.com/searchsecurity/definition/cryptography
+
+A criptografia é um método de proteger informações e comunicações por meio do uso de códigos, para que apenas aqueles para quem as informações são destinadas possam lê-las e processá-las \cite{what_is_cryptography}.
+
+Em ciência da computação, a criptografia se refere a técnicas seguras de informações e comunicações derivadas de conceitos matemáticos e de um conjunto de cálculos baseados em regras chamados algoritmos, para transformar mensagens de maneiras difíceis de decifrar \cite{what_is_cryptography}.
+
+A criptografia moderna preocupa-se com quatro objetivos principais: confidencialidade, integridade, não repúdio e autenticação \cite{what_is_cryptography}.
+
+Algoritmos de criptografia de chave única ou simétrica criam um bloco de tamanho fixo de bits conhecido como cifra com uma chave secreta que o criador/remetente usa para cifrar dados. Um exemplo disso é o Advanced Encryption Standard (AES) \cite{what_is_cryptography}.
+
+Exemplos de criptografia de chave pública incluem RSA, Elliptic Curve Digital Signature Algorithm (ECDSA) e Digital Signature Algorithm (DSA) \cite{what_is_cryptography}.
+
+A palavra "criptografia" é derivada do grego "kryptos", que significa escondido. A origem da criptografia geralmente remonta a cerca de 2000 a.C., com a prática egípcia de hieróglifos. No entanto, a criptografia moderna teve início com Júlio César, que criou um sistema de substituição de caracteres em mensagens \cite{what_is_cryptography}.
+
+Apesar da importância da criptografia para a segurança dos sistemas, muitos desenvolvedores se deparam com desafios significativos ao tentar implementá-la corretamente. Sem o conhecimento especializado em criptografia, é possível utilizar erroneamente algoritmos e técnicas criptográficas inadequadas. Isso pode resultar em vulnerabilidades que comprometem a segurança e a privacidade dos dados dos usuários. Portanto, é essencial contar com ferramentas que possam orientar os desenvolvedores na aplicação correta das práticas criptográficas, reduzindo assim os riscos associados à implementação inadequada de medidas de segurança em software.Apesar da criptografia ser um componente fundamental para garantir a segurança dos sistemas, muitos desenvolvedores encontram grandes desafios ao tentar fazê-la funcionar corretamente. Sem a expertise em criptografia, alguém pode erroneamente utilizar algoritmos e técnicas criptográficas inadequadas. Dessa forma, as aplicações podem apresentar vulnerabilidades que prejudicam a segurança e a privacidade dos dados dos usuários. É crucial contar com ferramentas que possam orientar os desenvolvedores na aplicação correta das práticas criptográficas, a fim de reduzir os riscos envolvidos quando as medidas de segurança em software são implementadas incorretamente.\cite{api_misuses_zhang}
+
 \subsection{Análise dinâmica de APIs criptográficas} %Runtime Verification of Crypto APIs: An Empirical Study
-O estudo intitulado "Runtime Verification of Crypto APIs: An Empirical Study" oferece uma meticulosa investigação comparativa de métodos de detecção de uso inadequado de APIs criptográficas em projetos Java. A pesquisa conduzida fornece uma análise detalhada das técnicas empregadas, incluindo a abordagem de Verificação em Tempo de Execução (Runtime Verification, ou RVSec), juntamente com notáveis analisadores estáticos como CogniCrypt e CryptoGuard, além da ferramenta CryLogger.
+Um estudo empírico importante realizado por Torres et al. \cite{runtime_verification_crypto} fornece uma meticulosa investigação comparativa de métodos de detecção de uso inadequado de APIs criptográficas em projetos Java. A pesquisa conduzida oferece uma análise detalhada das técnicas empregadas, incluindo a abordagem de Verificação em Tempo de Execução (Runtime Verification, ou RVSec), juntamente com notáveis analisadores estáticos como CogniCrypt e CryptoGuard, além da ferramenta CryLogger.
 
 Ao longo da análise, o estudo destaca tanto as virtudes como as limitações inerentes a cada uma dessas abordagens. Detalhes sobre os cenários em que cada técnica demonstra maior eficácia, bem como os casos em que pode resultar em falsos positivos e negativos, são minuciosamente delineados. Adicionalmente, são propostas recomendações para otimizar a precisão e efetividade na detecção de discrepâncias no uso de APIs criptográficas.
 
@@ -25,36 +41,36 @@ Este estudo desempenha um papel fundamental ao estabelecer um sólido alicerce p
 
 \subsection{Detecção de vulnerabilidades em APIs criptográficas Java} %Automatic Detection of Java Cryptographic API Misuses: Are We There Yet?
 
-O estudo apresentado no artigo 'Automatic Detection of Java Cryptographic API Misuses: Are We There Yet?' traz que ao se trabalhar com APIs criptográficas Java, os desenvolvedores se deparam com diversos desafios. Em primeiro lugar, algumas dessas APIs tendem a ser excessivamente complexas, o que torna sua compreensão e utilização eficaz uma tarefa árdua. A situação é frequentemente agravada pela escassez de documentação adequada, o que dificulta ainda mais para os desenvolvedores o uso correto dessas APIs.
+O estudo conduzido por Zhang et al. no artigo intitulado "Automatic Detection of Java Cryptographic API Misuses: Are We There Yet?" \cite{api_misuses_zhang} aborda os desafios enfrentados pelos desenvolvedores ao trabalhar com APIs criptográficas Java. O artigo fornece uma análise detalhada desses desafios, destacando questões como a complexidade das APIs, a falta de documentação adequada e a falta de treinamento em segurança cibernética por parte dos desenvolvedores \cite{api_misuses_zhang}.
 
-Além disso, muitos desenvolvedores podem não possuir o treinamento em cibersegurança necessário para compreender plenamente as implicações de segurança ao utilizar as opções de codificação dentro das APIs criptográficas. Eles podem não estar completamente cientes dos valores de parâmetros apropriados, das sequências de chamadas corretas ou da lógica de substituição, o que pode resultar na implementação insegura de funcionalidades de segurança.
+Além disso, muitos desenvolvedores podem não possuir o treinamento em cibersegurança necessário para compreender plenamente as implicações de segurança ao utilizar as opções de codificação dentro das APIs criptográficas \cite{api_misuses_zhang}. Eles podem não estar completamente cientes dos valores de parâmetros apropriados, das sequências de chamadas corretas ou da lógica de substituição, o que pode resultar na implementação insegura de funcionalidades de segurança \cite{api_misuses_zhang}.
 
-Outro desafio comum decorre da falta de compreensão e treinamento, levando os desenvolvedores a fazerem uso inadequado das APIs criptográficas. Isso pode se manifestar na escolha de métodos incorretos, na passagem de parâmetros inadequados ou em outros erros que introduzem vulnerabilidades ou fragilidades no software desenvolvido.
+Outro desafio comum decorre da falta de compreensão e treinamento, levando os desenvolvedores a fazerem uso inadequado das APIs criptográficas \cite{api_misuses_zhang}. Isso pode se manifestar na escolha de métodos incorretos, na passagem de parâmetros inadequados ou em outros erros que introduzem vulnerabilidades ou fragilidades no software desenvolvido \cite{api_misuses_zhang}.
 
-Adicionalmente, é comum que os desenvolvedores recorram à prática de copiar e colar trechos de código de fontes online, como o StackOverflow. No entanto, essa abordagem nem sempre é acompanhada de uma compreensão plena do uso da API criptográfica em questão. Tal prática pode resultar na disseminação de usos inadequados da API em diversas aplicações.
+Adicionalmente, é comum que os desenvolvedores recorram à prática de copiar e colar trechos de código de fontes online, como o StackOverflow \cite{api_misuses_zhang}. No entanto, essa abordagem nem sempre é acompanhada de uma compreensão plena do uso da API criptográfica em questão. Tal prática pode resultar na disseminação de usos inadequados da API em diversas aplicações \cite{api_misuses_zhang}.
 
-Esses desafios podem, por sua vez, culminar na existência de vulnerabilidades exploráveis. Hackers têm a capacidade de aproveitar-se dessas vulnerabilidades relacionadas às APIs, potencialmente comprometendo a segurança de dados sensíveis, como credenciais de usuários. Portanto, a importância de uma utilização adequada das APIs criptográficas torna-se evidente.
+Esses desafios podem, por sua vez, culminar na existência de vulnerabilidades exploráveis. Hackers têm a capacidade de aproveitar-se dessas vulnerabilidades relacionadas às APIs, potencialmente comprometendo a segurança de dados sensíveis, como credenciais de usuários \cite{api_misuses_zhang}. Portanto, a importância de uma utilização adequada das APIs criptográficas torna-se evidente \cite{api_misuses_zhang}.
 
-Em síntese, os obstáculos enfrentados pelos desenvolvedores nesse contexto emergem da complexidade das APIs, da falta de treinamento em cibersegurança e da possibilidade de utilização inadequada das mesmas, o que pode resultar na introdução de vulnerabilidades no software desenvolvido.
+Em síntese, os obstáculos enfrentados pelos desenvolvedores nesse contexto emergem da complexidade das APIs, da falta de treinamento em cibersegurança e da possibilidade de utilização inadequada das mesmas, o que pode resultar na introdução de vulnerabilidades no software desenvolvido \cite{api_misuses_zhang}.
+
 % Fontes:
 
 % Página 1: As interfaces de programação de aplicativos (APIs) oferecidas por esses frameworks visam facilitar a programação segura dos desenvolvedores, como a geração de chaves e o estabelecimento de comunicações seguras. No entanto, as APIs na realidade não são fáceis de usar por duas razões. Primeiro, algumas APIs são excessivamente complexas, mas mal documentadas [3]–[5]. Segundo, os desenvolvedores carecem do treinamento em cibersegurança necessário; eles desconhecem as implicações de segurança das opções de codificação (por exemplo, os valores de parâmetros, sequências de chamadas ou lógica de substituição das APIs) [5]–[8]. Consequentemente, muitos desenvolvedores usaram as APIs criptográficas de maneira inadequada, construíram funcionalidades de segurança de forma insegura e introduziram vulnerabilidades ou fraquezas no software.
 % Página 2: A plataforma Java fornece dois frameworks importantes para possibilitar a implementação de segurança: JCA e JSSE. O JCA oferece APIs para implementar conceitos de criptografia, como assinaturas digitais, resumos de mensagens, certificados e sua validação, criptografia, geração e gerenciamento de chaves, e geração segura de números aleatórios [1]. O JSSE permite comunicações seguras pela internet; ele inclui APIs para criação de canais seguros, criptografia de dados, autenticação de servidor, integridade de mensagens e autenticação opcional de cliente [2]. Entre todas as APIs definidas no JCA e JSSE, existem 13 tipos de Java (ou seja, classes ou interfaces) frequentemente mencionados nos padrões de uso inadequado de API resumidos por pesquisas anteriores [10]–[12], [15], [17], [26], [27].
 
-Também foi identificado pelo estudo que diversas vulnerabilidades relacionadas ao uso inadequado de APIs criptográficas Java. Entre elas, destacam-se:
+Também foi identificado pelo estudo que diversas vulnerabilidades relacionadas ao uso inadequado de APIs criptográficas Java \cite{api_misuses_zhang}. Entre elas, destacam-se:
 
-Os desenvolvedores frequentemente utilizavam parâmetros inadequados em métodos como Cipher.getInstance(), MessageDigest.getInstance() e SecretKeyFactory.getInstance(), indicando a utilização de algoritmos criptográficos quebrados ou arriscados, potencialmente expondo informações sensíveis.
+Os desenvolvedores frequentemente utilizavam parâmetros inadequados em métodos como Cipher.getInstance(), MessageDigest.getInstance() e SecretKeyFactory.getInstance(), indicando a utilização de algoritmos criptográficos quebrados ou arriscados, potencialmente expondo informações sensíveis \cite{api_misuses_zhang}.
 
-Houve casos em que os desenvolvedores empregaram métodos inseguros para gerar chaves criptográficas, comprometendo a segurança dos processos de criptografia e descriptografia e facilitando possíveis ataques.
+Houve casos em que os desenvolvedores empregaram métodos inseguros para gerar chaves criptográficas, comprometendo a segurança dos processos de criptografia e descriptografia e facilitando possíveis ataques \cite{api_misuses_zhang}.
 
-Foi observado que o gerenciamento de chaves criptográficas muitas vezes deixou a desejar. Isso incluiu práticas como a codificação rígida de chaves no código-fonte, o armazenamento em locais inseguros e o uso de mecanismos de armazenamento de chaves frágeis, o que poderia resultar em acessos não autorizados a dados sensíveis.
+Foi observado que o gerenciamento de chaves criptográficas muitas vezes deixou a desejar. Isso incluiu práticas como a codificação rígida de chaves no código-fonte, o armazenamento em locais inseguros e o uso de mecanismos de armazenamento de chaves frágeis, o que poderia resultar em acessos não autorizados a dados sensíveis \cite{api_misuses_zhang}.
 
-Em algumas situações, os desenvolvedores falharam na inicialização correta de objetos criptográficos, como definir o modo ou preenchimento adequado para algoritmos de criptografia. Essas falhas poderiam levar a processos de criptografia ou descriptografia vulneráveis, tornando o sistema suscetível a ataques.
+Em algumas situações, os desenvolvedores falharam na inicialização correta de objetos criptográficos, como definir o modo ou preenchimento adequado para algoritmos de criptografia. Essas falhas poderiam levar a processos de criptografia ou descriptografia vulneráveis, tornando o sistema suscetível a ataques \cite{api_misuses_zhang}.
 
-Foram encontrados casos em que os desenvolvedores utilizaram métodos inseguros para gerar números aleatórios, como a classe java.util.Random em vez da mais segura java.security.SecureRandom. Essa prática poderia comprometer a segurança das operações criptográficas.
+Foram encontrados casos em que os desenvolvedores utilizaram métodos inseguros para gerar números aleatórios, como a classe java.util.Random em vez da mais segura java.security.SecureRandom. Essa prática poderia comprometer a segurança das operações criptográficas \cite{api_misuses_zhang}.
 
-Por fim, o estudo identificou situações em que os desenvolvedores não autenticavam ou validavam adequadamente operações criptográficas, como a falta de verificação de assinaturas digitais ou a validação de certificados. Isso poderia resultar na aceitação de dados forjados ou adulterados, prejudicando a integridade e autenticidade do sistema.
-
+Por fim, o estudo identificou situações em que os desenvolvedores não autenticavam ou validavam adequadamente operações criptográficas, como a falta de verificação de assinaturas digitais ou a validação de certificados. Isso poderia resultar na aceitação de dados forjados ou adulterados, prejudicando a integridade e autenticidade do sistema \cite{api_misuses_zhang}.
 
 % FONTES:
 
@@ -62,12 +78,11 @@ Por fim, o estudo identificou situações em que os desenvolvedores não autenti
 % Página 10: Estudo empírico em projetos Apache
 % Página 13: Análise de ferramentas existentes e vulnerabilidades
 
-Em relação às percepções apresentadas pelos desenvolvedores tivemos visões divergentes em relação às ferramentas existentes para detectar usos incorretos de APIs. Dos 47 feedbacks recebidos, a maioria dos desenvolvedores (30) rejeitou as vulnerabilidades relatadas, indicando que não as consideravam válidas ou relevantes. Menos desenvolvedores (17) demonstraram disposição para abordar os problemas reportados e fazer as correções necessárias. Ainda menos desenvolvedores (9) efetivamente substituíram os usos incorretos de APIs com base nas orientações fornecidas pelas ferramentas.
+Em relação às percepções apresentadas pelos desenvolvedores, tivemos visões divergentes em relação às ferramentas existentes para detectar usos incorretos de APIs. Dos 47 feedbacks recebidos, a maioria dos desenvolvedores (30) rejeitou as vulnerabilidades relatadas, indicando que não as consideravam válidas ou relevantes. Menos desenvolvedores (17) demonstraram disposição para abordar os problemas reportados e fazer as correções necessárias. Ainda menos desenvolvedores (9) efetivamente substituíram os usos incorretos de APIs com base nas orientações fornecidas pelas ferramentas \cite{api_misuses_zhang}.
 
-O estudo identificou três fatores que contribuíram para a relutância dos desenvolvedores em lidar com os problemas reportados. Em primeiro lugar, as sugestões de correção fornecidas pelas ferramentas muitas vezes eram vagas e incompletas, tornando difícil para os desenvolvedores compreender como corrigir os usos incorretos de forma eficaz. Em segundo lugar, os desenvolvedores expressaram a necessidade de evidências de exploração de segurança que pudessem ser habilitadas pelas vulnerabilidades relatadas. Eles queriam compreender o impacto potencial e a gravidade dos problemas antes de investir tempo em corrigi-los. Por fim, alguns dos usos incorretos detectados foram encontrados em código de teste ou em contextos de programa que não eram considerados relevantes para a segurança. Os desenvolvedores acreditavam que esses problemas não teriam consequências de segurança, levando-os a ignorá-los ou descartá-los.
+O estudo identificou três fatores que contribuíram para a relutância dos desenvolvedores em lidar com os problemas reportados. Em primeiro lugar, as sugestões de correção fornecidas pelas ferramentas muitas vezes eram vagas e incompletas, tornando difícil para os desenvolvedores compreender como corrigir os usos incorretos de forma eficaz. Em segundo lugar, os desenvolvedores expressaram a necessidade de evidências de exploração de segurança que pudessem ser habilitadas pelas vulnerabilidades relatadas. Eles queriam compreender o impacto potencial e a gravidade dos problemas antes de investir tempo em corrigi-los. Por fim, alguns dos usos incorretos detectados foram encontrados em código de teste ou em contextos de programa que não eram considerados relevantes para a segurança. Os desenvolvedores acreditavam que esses problemas não teriam consequências de segurança, levando-os a ignorá-los ou descartá-los \cite{api_misuses_zhang}.
 
-No geral, o estudo revelou uma lacuna significativa entre as ferramentas existentes e as expectativas dos desenvolvedores. Os relatórios gerados pelas ferramentas não alteraram efetivamente as práticas de codificação dos desenvolvedores, e estes tinham preocupações sobre as capacidades das ferramentas, a correção das correções sugeridas e a exploração dos problemas relatados.
-
+No geral, o estudo revelou uma lacuna significativa entre as ferramentas existentes e as expectativas dos desenvolvedores. Os relatórios gerados pelas ferramentas não alteraram efetivamente as práticas de codificação dos desenvolvedores, e estes tinham preocupações sobre as capacidades das ferramentas, a correção das correções sugeridas e a exploração dos problemas relatados \cite{api_misuses_zhang}.
 % FONTES:
 
 % Página 2: "De acordo com as 47 respostas que recebemos, a maioria dos desenvolvedores (ou seja, 30) rejeitou as vulnerabilidades relatadas, menos desenvolvedores (ou seja, 17) queriam abordar os problemas relatados e ainda menos desenvolvedores (ou seja, 9) substituíram usos inadequados de APIs seguindo orientações geradas pela ferramenta. Os relatórios das ferramentas geralmente não alteraram as práticas de codificação dos desenvolvedores."
@@ -76,28 +91,27 @@ Diante dos argumentos expostos, o presente estudo se fundamenta na análise crí
 
 \subsection{Detecção de bibliotecas externas em aplicações Android} %Automated Third-Party Library Detection for Android Applications: Are We There Yet?
 
-A incorporação de bibliotecas de terceiros em aplicações Android suscita diversas preocupações relevantes. Uma delas refere-se à possibilidade de presença de código malicioso nessas bibliotecas, representando uma ameaça à segurança e à privacidade dos dispositivos dos usuários. Esse código tem o potencial de ser utilizado em atividades como a apropriação indevida de dados, acessos não autorizados e até mesmo o controle remoto do dispositivo.
+A incorporação de bibliotecas de terceiros em aplicações Android suscita diversas preocupações relevantes. Uma delas refere-se à possibilidade de presença de código malicioso nessas bibliotecas, representando uma ameaça à segurança e à privacidade dos dispositivos dos usuários. Esse código tem o potencial de ser utilizado em atividades como a apropriação indevida de dados, acessos não autorizados e até mesmo o controle remoto do dispositivo. \cite{api_tpl_zhang}
 
-Além disso, a existência de vulnerabilidades nas bibliotecas de terceiros é outra preocupação significativa. Estas vulnerabilidades podem ser exploradas por atacantes, possibilitando o acesso não autorizado ao dispositivo, a execução de código arbitrário ou a realização de atividades maliciosas.
+Além disso, a existência de vulnerabilidades nas bibliotecas de terceiros é outra preocupação significativa. Estas vulnerabilidades podem ser exploradas por atacantes, possibilitando o acesso não autorizado ao dispositivo, a execução de código arbitrário ou a realização de atividades maliciosas \cite{api_tpl_zhang}.
 
-Outro ponto de preocupação refere-se à possível incompatibilidade dessas bibliotecas com a aplicação em si ou com outras bibliotecas utilizadas no desenvolvimento. Tal cenário pode resultar em falhas, dificuldades de desempenho ou em outros comportamentos inesperados no âmbito da aplicação.
+Outro ponto de preocupação refere-se à possível incompatibilidade dessas bibliotecas com a aplicação em si ou com outras bibliotecas utilizadas no desenvolvimento. Tal cenário pode resultar em falhas, dificuldades de desempenho ou em outros comportamentos inesperados no âmbito da aplicação \cite{api_tpl_zhang}.
 
-A falta de atualizações regulares ou suporte por parte dos desenvolvedores de bibliotecas de terceiros também é uma questão a ser considerada. Isso pode deixar a aplicação vulnerável a novas ameaças de segurança ou a dificuldades de compatibilidade.
+A falta de atualizações regulares ou suporte por parte dos desenvolvedores de bibliotecas de terceiros também é uma questão a ser considerada. Isso pode deixar a aplicação vulnerável a novas ameaças de segurança ou a dificuldades de compatibilidade \cite{api_tpl_zhang}.
 
-Adicionalmente, o emprego de determinadas bibliotecas de terceiros pode acarretar em violação de acordos de licenciamento ou direitos de propriedade intelectual, potencialmente resultando em consequências legais para o desenvolvedor da aplicação.
+Adicionalmente, o emprego de determinadas bibliotecas de terceiros pode acarretar em violação de acordos de licenciamento ou direitos de propriedade intelectual, potencialmente resultando em consequências legais para o desenvolvedor da aplicação \cite{api_tpl_zhang}.
 
-A complexa cadeia de dependências que frequentemente acompanha as bibliotecas de terceiros é outra preocupação destacável. Caso alguma dessas dependências apresente vulnerabilidades ou outros problemas, isso pode afetar a segurança e a estabilidade global da aplicação.
+A complexa cadeia de dependências que frequentemente acompanha as bibliotecas de terceiros é outra preocupação destacável. Caso alguma dessas dependências apresente vulnerabilidades ou outros problemas, isso pode afetar a segurança e a estabilidade global da aplicação \cite{api_tpl_zhang}.
 
-Outro aspecto crítico refere-se à possibilidade de bibliotecas de terceiros coletarem e transmitirem dados do usuário sem o devido conhecimento ou consentimento. Esta prática pode resultar em violações de privacidade e no uso não autorizado de informações pessoais.
+Outro aspecto crítico refere-se à possibilidade de bibliotecas de terceiros coletarem e transmitirem dados do usuário sem o devido conhecimento ou consentimento. Esta prática pode resultar em violações de privacidade e no uso não autorizado de informações pessoais \cite{api_tpl_zhang}.
 
-Por fim, o desempenho da aplicação pode ser comprometido caso bibliotecas de terceiros não tenham sido otimizadas de maneira adequada ou apresentem eficiência limitada. Isso pode resultar em tempos de carregamento mais lentos, uso elevado de recursos e, consequentemente, numa experiência de usuário insatisfatória
+Por fim, o desempenho da aplicação pode ser comprometido caso bibliotecas de terceiros não tenham sido otimizadas de maneira adequada ou apresentem eficiência limitada. Isso pode resultar em tempos de carregamento mais lentos, uso elevado de recursos e, consequentemente, numa experiência de usuário insatisfatória \cite{api_tpl_zhang}.
 
 % Fonte:
 
 % Zhan, X., Fan, L., Liu, T., Chen, S., Li, L., Wang, H., Xu, Y., Luo, X., & Liu, Y. (2020). Automated Third-Party Library Detection for Android Applications: Are We There Yet?. In 35th IEEE/ACM International Conference on Automated Software Engineering (ASE ’20), September 21–25, 2020, Virtual Event, Australia. ACM, New York, NY, USA, 12 pages. https://doi.org/10.1145/3324884.3416582
 
-O impacto das Bibliotecas de Terceiros (TPLs) na detecção de malware em aplicativos móveis é que as TPLs podem introduzir ameaças à segurança se contiverem código malicioso. Quando essas TPLs são integradas a aplicativos populares, elas podem rapidamente infectar um grande número de dispositivos móveis. Além disso, as TPLs também podem afetar os resultados da detecção de malware, já que podem agir como ruído e potencialmente interferir no processo de detecção. Portanto, é importante contar com técnicas eficazes de detecção de TPLs para identificar e mitigar os riscos associados às TPLs em aplicativos móveis.
-
+O impacto das Bibliotecas de Terceiros (TPLs) na detecção de malware em aplicativos móveis é que as TPLs podem introduzir ameaças à segurança se contiverem código malicioso. Quando essas TPLs são integradas a aplicativos populares, elas podem rapidamente infectar um grande número de dispositivos móveis. Além disso, as TPLs também podem afetar os resultados da detecção de malware, já que podem agir como ruído e potencialmente interferir no processo de detecção. Portanto, é importante contar com técnicas eficazes de detecção de TPLs para identificar e mitigar os riscos associados às TPLs em aplicativos móveis \cite{api_tpl_zhang}.
 % FONTES:
 
 % Página 2: "ASE ’20, 21 a 25 de setembro de 2020, Evento Virtual, Austrália X. Zhan, L. Fan, T. Liu, S. Chen, L. Li, H. Wang, Y. Xu, X. Luo, Y. Liu"
@@ -107,13 +121,13 @@ As ferramentas e métodos existentes para detectar e mitigar os riscos associado
 
 Além disso, diversas Ferramentas de Detecção foram desenvolvidas para identificar TPLs em aplicações Android. Estas ferramentas extraem características como APIs do Android, grafos de fluxo de controle e assinaturas de métodos variantes para representar as TPLs. Elas fazem uso de técnicas diversas, como métodos baseados em agrupamento e métodos de comparação de similaridade, a fim de identificar TPLs dentro do aplicativo.
 
-Outra estratégia é a Revisão Sistemática da Literatura (RSL), na qual pesquisadores conduzem análises comparativas de técnicas de detecção de TPLs existentes. Esses estudos avaliam a eficácia, eficiência, capacidade de resistência à ofuscação de código e facilidade de uso das diferentes ferramentas.
+Outra estratégia é a Revisão Sistemática da Literatura (RSL), na qual pesquisadores conduzem análises comparativas de técnicas de detecção de TPLs existentes. Esses estudos avaliam a eficácia, eficiência, capacidade de resistência à ofuscação de código e facilidade de uso das diferentes ferramentas \cite{api_tpl_zhang}.
 
 Paralelamente, são adotadas Estratégias de Ofuscação de Código para proteger o software contra engenharia reversa, embora isso possa complicar a detecção de TPLs. Para contornar esse desafio, foram desenvolvidas ferramentas que são resilientes à ofuscação e capazes de lidar com renomeações de identificadores e pacotes.
 
 Alguns pesquisadores disponibilizaram Conjuntos de Dados de Aplicativos Repacotados, os quais são utilizados para estudar e replicar abordagens de detecção de TPLs já existentes.
 
-É crucial ressaltar que as vantagens, desvantagens e desempenho dessas ferramentas variam, tornando a seleção da ferramenta apropriada um processo dependente do cenário de aplicação específico e dos requisitos envolvidos.
+É crucial ressaltar que as vantagens, desvantagens e desempenho dessas ferramentas variam, tornando a seleção da ferramenta apropriada um processo dependente do cenário de aplicação específico e dos requisitos envolvidos \cite{api_tpl_zhang}.
 
 % FONTES:
 
@@ -121,15 +135,13 @@ Alguns pesquisadores disponibilizaram Conjuntos de Dados de Aplicativos Repacota
 % Página 3: ASE ’20, 21 a 25 de setembro de 2020, Evento Virtual, Austrália
 % Página 2: ASE ’20, 21 a 25 de setembro de 2020, Evento Virtual, Austrália
 
-O artigo destaca várias ferramentas para detectar bibliotecas de terceiros (TPLs) em aplicativos Android, incluindo o LibID, que utiliza análise estática e dinâmica para identificar TPLs. O LibPecker concentra-se na detecção de TPLs ofuscadas por diferentes técnicas de ofuscação de código. O ORLIS também emprega uma combinação de análise estática e dinâmica, fornecendo análise de vulnerabilidades para as TPLs identificadas. O LibRadar utiliza análise baseada em API e é conhecido por sua rápida detecção. O LibD2, semelhante ao LibID e ORLIS, usa análise estática e dinâmica, além de fornecer análise de vulnerabilidades para as TPLs detectadas. O LibScout se destaca por sua sensibilidade à ofuscação do fluxo de controle, achatamento de pacotes e remoção de código inativo, dependendo da estrutura hierárquica de pacotes. No entanto, é afetado por técnicas de ofuscação de código, resultando em uma redução na taxa de detecção.
+O artigo destaca várias ferramentas para detectar bibliotecas de terceiros (TPLs) em aplicativos Android, incluindo o LibID, que utiliza análise estática e dinâmica para identificar TPLs. O LibPecker concentra-se na detecção de TPLs ofuscadas por diferentes técnicas de ofuscação de código. O ORLIS também emprega uma combinação de análise estática e dinâmica, fornecendo análise de vulnerabilidades para as TPLs identificadas. O LibRadar utiliza análise baseada em API e é conhecido por sua rápida detecção. O LibD2, semelhante ao LibID e ORLIS, usa análise estática e dinâmica, além de fornecer análise de vulnerabilidades para as TPLs detectadas. O LibScout se destaca por sua sensibilidade à ofuscação do fluxo de controle, achatamento de pacotes e remoção de código inativo, dependendo da estrutura hierárquica de pacotes. No entanto, é afetado por técnicas de ofuscação de código, resultando em uma redução na taxa de detecção \cite{api_tpl_zhang}.
 
-Em resumo, o artigo enfatiza o LibScout como uma ferramenta sensível a técnicas de ofuscação de código, que depende da estrutura hierárquica de pacotes para detectar TPLs. Embora tenha uma alta taxa de detecção, o LibScout pode ser influenciado por certas técnicas de ofuscação, o que afeta a precisão da detecção.
+Em resumo, o artigo enfatiza o LibScout como uma ferramenta sensível a técnicas de ofuscação de código, que depende da estrutura hierárquica de pacotes para detectar TPLs. Embora tenha uma alta taxa de detecção, o LibScout pode ser influenciado por certas técnicas de ofuscação, o que afeta a precisão da detecção \cite{api_tpl_zhang}.
 
-Além disso, os programas LibID, LibRadar, LibScout, LibPecker e ORLIS foram avaliados em quatro categorias: eficiência, eficácia/escalabilidade, resistência à obfuscação e facilidade de uso. O LibScout se destacou na eficiência, identificando 49 bibliotecas de terceiros com uma precisão de 97\%. Em eficiência/escalabilidade, o LibRadar foi o mais eficaz, capaz de analisar cada aplicação em cerca de 5 segundos. No quesito resistência à obfuscação, o LibPecker mostrou-se o mais eficaz. Quanto à facilidade de uso, tanto o LibScout quanto o LibRadar superaram os concorrentes.
+Além disso, os programas LibID, LibRadar, LibScout, LibPecker e ORLIS foram avaliados em quatro categorias: eficiência, eficácia/escalabilidade, resistência à obfuscação e facilidade de uso. O LibScout se destacou na eficiência, identificando 49 bibliotecas de terceiros com uma precisão de 97\%. Em eficiência/escalabilidade, o LibRadar foi o mais eficaz, capaz de analisar cada aplicação em cerca de 5 segundos. No quesito resistência à obfuscação, o LibPecker mostrou-se o mais eficaz. Quanto à facilidade de uso, tanto o LibScout quanto o LibRadar superaram os concorrentes \cite{api_tpl_zhang}.
 
-Em resumo, o artigo destaca o LibScout como uma ferramenta sensível a técnicas de ofuscação de código, que depende da estrutura hierárquica de pacotes para a detecção de TPLs. Embora possua uma alta taxa de detecção, o LibScout é influenciado por determinadas técnicas de ofuscação, o que resulta em uma diminuição na precisão da detecção.
-
-Os resultados do LibRadar e do LibScout para o piloto não foram semelhantes. O LibScout identificou muito mais TPLs do que o LibRadar devido ao primeiro analisar profundamente a aplicação, enquanto o último utiliza um método de agrupamento para categorizar se é ou não uma TPL. Para executar o LibRadar, tivemos que configurar um servidor Redis e carregar uma amostra para que o LibRadar possa comparar se a aplicação em teste utiliza ou não bibliotecas externas. A última vez que a amostra foi atualizada com um bom exemplo de agrupamento foi em 2017. A maioria dos aplicativos analisados eram de 2017 em diante. Por essa razão, o foco se voltou para o LibScout.
+Os resultados do LibRadar e do LibScout para o piloto não foram semelhantes. O LibScout identificou muito mais TPLs do que o LibRadar devido ao primeiro analisar profundamente a aplicação, enquanto o último utiliza um método de agrupamento para categorizar se é ou não uma TPL. Para executar o LibRadar, tivemos que configurar um servidor Redis e carregar uma amostra para que o LibRadar possa comparar se a aplicação em teste utiliza ou não bibliotecas externas. A última vez que a amostra foi atualizada com um bom exemplo de agrupamento foi em 2017. A maioria dos aplicativos analisados eram de 2017 em diante. Por essa razão, o foco se voltou para o LibScout \cite{api_tpl_zhang}.
 
 % FONTES:
 
@@ -139,40 +151,82 @@ Os resultados do LibRadar e do LibScout para o piloto não foram semelhantes. O 
 % Página 7: "Resposta à C3: O LibPecker supera outras ferramentas na defesa contra diferentes ofuscadores e diferentes técnicas de ofuscação."
 % Página 7: "Resposta à C1: Em termos de eficácia, o LibScout se destaca."
 
-Neste estudo, baseamos nossa escolha da ferramenta LibScout para identificação de bibliotecas de terceiros (TPLs) em aplicativos Android. Um dos maiores motivadores foi o fato de sua robustez e a apresentação dos resultados fornecendo uma visão hierarquizada das bibliotecas. Dessa forma, integramos o LibScout à nossa abordagem qualitativa, complementando as ferramentas CogniCrypt e CryptoGuard para tentar obter resultados mais abrangentes na detecção de vulnerabilidades. O tempo de execução, baixa precisão e amostras fora de data foram parte do porque não termos escolhido outras ferramentas.
+Assim para realizar a escolha de quais ferramentas seriam utilizadas para a identificação e mapeamento de bibliotecas nativas e externas em aplicações Android, foram consideradas as ferramentas LibScout, LibRadar, LibSoft, LibPecker, LibId e ORLIS. Foi observado que através dos resultados apresentados no artigo Automatic Detection of Java Cryptographic API Misuses: Are We There Yet? que as ferramentas LibScout e LibRadar apresentaram os melhores resultados. O artigo aborda algumas categorias para a classificação das ferramentas, sendo elas:
 
-\subsection{O que é a ferramenta CogniCrypt?}
+Efetividade, Eficiência/Escalabilidade, Capacidade de resiliência à código obfuscado e Facilidade de uso. Para a escolha nos atentamos particularmente à eficiência. Tanto o LibRadar quanto o LibScout apresentaram resultados satisfatórios, porém o LibScout apresentou um desempenho melhor visto que a base utilizada para clusterização do libRadar é de 2016 e o LibScout utiliza uma base mais atualizada. As outras ferramentas apresentadas tinham baixo recall e precisão, além disso, o tempo de execução para um único aplicativo era muito alto.
 
-O CogniCrypt pode oferecer uma abordagem abrangente para abordar a identificação de vulnerabilidades no código por meio de dois recursos fundamentais: a geração de código e a aplicação de análises estáticas.
+Por fim, foi optado a escolha da ferramenta LibScout para identificação de bibliotecas de terceiros (TPLs) em aplicativos Android para esse estudo. Um dos maiores motivadores foi o fato de sua robustez e a apresentação dos resultados fornecendo uma visão hierarquizada das bibliotecas. Dessa forma, integramos o LibScout à nossa abordagem qualitativa, complementando as ferramentas CogniCrypt e CryptoGuard para tentar obter resultados mais abrangentes na detecção de vulnerabilidades. O tempo de execução, baixa precisão e amostras fora de data foram parte do porque não termos escolhido outras ferramentas.
 
-A funcionalidade de geração de código do CogniCrypt destaca-se ao produzir implementações seguras para tarefas de programação comumente associadas à criptografia. Por meio desta característica, os desenvolvedores recebem exemplos de uso orientados por tarefas específicas das APIs criptográficas em Java. Esses exemplos são gerados com base em configurações selecionadas, que incluem o algoritmo criptográfico desejado e seus parâmetros correspondentes. Ao empregar esta capacidade, o CogniCrypt pode desempenhar um papel crucial em auxiliar os desenvolvedores na prevenção de vulnerabilidades comuns, garantindo a integração segura de componentes criptográficos em seus projetos.
+\subsection{LibScout} % https://github.com/reddr/LibScout 
 
-Adicionalmente, o CogniCrypt incorpora uma funcionalidade de análise estática que opera em segundo plano, aplicando uma série de análises ao projeto do desenvolvedor. Estas análises têm por objetivo assegurar que todas as utilizações das APIs criptográficas permaneçam seguras, mesmo que o desenvolvedor venha a modificar o código gerado ou utilize as APIs diretamente, sem recorrer à geração de código. O CogniCrypt se vale do framework de análise de estados TS4J, implementado como um plugin do Eclipse, para efetuar a inspeção do projeto. Ele reporta discrepâncias na utilização por meio da geração de marcadores de erro diretamente no ambiente de desenvolvimento Eclipse IDE. Esta funcionalidade pode apoiar os desenvolvedores na identificação e correção de vulnerabilidades em seu código.
+LibScout é uma ferramenta que visa extrair dados das APIs de bibliotecas de aplicativos Android. \cite{LibScout} Este resultado faz parte de um projeto de pesquisa cujo objetivo principal é analisar quais são as bibliotecas externas e quais são bibliotecas nativas em aplicativos Android. \cite{LibScout} Essa presença é fundamental para compreender e avaliar a segurança e a integridade dessas aplicações.
 
-Por meio da sinergia entre geração de código e análise estática, o CogniCrypt pode conceder aos desenvolvedores uma abordagem completa para lidar com vulnerabilidades em seu código, promovendo o uso seguro de APIs criptográficas.
+Esta ferramenta permite analisar chamadas de API de aplicativos Android diretamente do bytecode java. \cite{LibScout} A ferramenta coleta informações detalhadas sobre bibliotecas implantadas, incluindo nomes e definições, e fornece uma visão abrangente do ecossistema de bibliotecas de cada aplicativo analisado. \cite{LibScout} Essa funcionalidade é particularmente útil para desenvolvedores e pesquisadores que desejam melhorar sua compreensão a cerca de bibliotecas que pertencem à aplicativos específicos.
 
+O LibScout funciona bem com aplicativos Android, independentemente de sua finalidade ou complexidade. \cite{LibScout} Assim, a ferramenta nos ajuda a identificar se o uso de práticas de desenvolvimento seguras ou inseguras está associado à integração de bibliotecas externas, facilitando a identificação e compreensão de bibliotecas de terceiros na aplicação \cite{LibScout}.
+
+A ferramenta conta com técnicas como 'renomeação de identificador'\cite{LibScout} e 'ofuscações baseadas em código', como ocultação de API baseada em 'reflexão' ou 'randomização de fluxo de controle' para encontrar bibliotecas externas em aplicativos Java mesmo com os desafios de implementação de ofuscação de código \cite{LibScout}. \cite{LibScout} 
+
+Usando essas estratégias, o LibScout pode encontrar bibliotecas de terceiros em vários contextos de aplicativos Java. Ao coletar dados de múltiplas aplicações, o LibScout é capaz de buscar padrões de chamadas de API que vão além das especificações de cada aplicação, fornecendo uma forma confiável de busca em bibliotecas externas \cite{LibScout}.
+
+A adição dos resultados das ferramentas CryptoGuard e CogniCrypt aos resultados gerados pelo LibScout pode melhorar significativamente a capacidade de avaliar a segurança de aplicativos Android e identificar possíveis vulnerabilidades relacionadas ao uso de bibliotecas de terceiros.
+
+\subsection{Aplicativos obfuscados} %Automatic Detection of Java Cryptographic API Misuses: Are We There Yet?
+
+Uma dificuldade significativa na localização e extração de informações sobre bibliotecas de terceiros é a análise de aplicativos obfuscados. O uso comum da técnica de ofuscação de código torna a compreensão e análise do código-fonte mais difíceis, tornando a localização de bibliotecas externas ainda mais complicada. \cite{api_tpl_zhang}
+
+A ofuscação pode incluir a inserção de código adicional, bem como a renomeação de classes, métodos e variáveis, tornando as chamadas de API menos identificáveis. \cite{api_tpl_zhang} Mesmo com ferramentas como o LibScout, isso dificulta a extração precisa de informações sobre bibliotecas de terceiros. \cite{LibScout}
+
+O LibScout é excepcionalmente resistente a aplicativos obfuscados, sendo capaz de identificar bibliotecas mesmo diante de vários tipos de ofuscação comuns, como o ProGuard. Essa capacidade é essencial para garantir a precisão e confiabilidade na identificação de bibliotecas de terceiros em aplicativos obfuscados. \cite{LibScout}
+
+Além disso, a ofuscação pode criar novos níveis de complexidade que requerem métodos sofisticados de análise de bytecode para desembaraçar o código obfuscado e identificar as chamadas de API pertinentes. Portanto, é fundamental usar abordagens e técnicas específicas ao lidar com aplicativos obfuscados para superar os problemas relacionados à prática da ofuscação de código. \cite{api_tpl_zhang}
+
+Para garantir a precisão e a confiabilidade na identificação de bibliotecas de terceiros, é necessário levar em consideração esses problemas ao trabalhar na análise de aplicativos obfuscados. Mesmo diante das complexidades criadas pela prática da ofuscação de código, isso permite uma avaliação completa da segurança dos aplicativos.
+
+Um desafio significativo surgiu ao integrar os resultados do LibScout com as ferramentas CryptoGuard e CogniCrypt. Embora essas ferramentas mais recentes detectem problemas e erros de segurança com sucesso, elas têm dificuldade em encontrar os nomes originais das bibliotecas e classes que são usadas. O processo de correlacionar os resultados e combinar os scripts de identificação de bibliotecas externas é mais difícil devido a essa restrição.
+
+Assim, os problemas com a apresentação da classe da vulnerabilidade pelas duas ferramentas impediram que os resultados do LibScout fossem usados para melhorar a análise de segurança do CryptoGuard e CogniCrypt para esse estudo. No entanto, a capacidade do LibScout de localizar bibliotecas de terceiros em aplicativos Android é vital para avaliar a segurança desses aplicativos e relacionar os resultados das duas ferramentas com os do LibScout.
+
+\subsection{O que é a ferramenta CogniCrypt?} %CogniCrypt: Supporting Developers in Using Cryptography
+
+O CogniCrypt, desenvolvido no centro de pesquisa CROSSING da Technische Universität Darmstadt, é uma ferramenta projetada para auxiliar desenvolvedores na identificação e correção de usos inseguros de bibliotecas criptográficas em software. Estudos recentes têm apontado que muitos aplicativos que empregam procedimentos criptográficos o fazem de maneira inadequada, o que destaca a relevância do CogniCrypt \cite{CogniCrypt}.
+
+Essa ferramenta integra-se ao ambiente de desenvolvimento Eclipse e oferece dois principais componentes. Primeiramente, um assistente de geração de código que auxilia os desenvolvedores na produção de código seguro para tarefas criptográficas comuns. Além disso, realiza uma análise estática contínua do código do desenvolvedor, notificando sobre possíveis usos incorretos de APIs criptográficas \cite{CogniCrypt}.
+
+O CogniCrypt representa um avanço significativo na segurança de aplicações Java que fazem uso de operações criptográficas. Os desenvolvedores podem empregar a linguagem CrySL, na qual a ferramenta se baseia, para definir as melhores práticas para o uso seguro das APIs criptográficas disponíveis na arquitetura Java Cryptography (JCA). Desde a seleção de algoritmos até a gestão adequada de chaves de criptografia, as CrySL Rules fornecem um conjunto abrangente de diretrizes \cite{CogniCrypt}.
+
+Além das análises em tempo real durante o processo de escrita, o CogniCrypt facilita a criptografia de dados, oferecendo um conjunto de ferramentas para implementar práticas de segurança de forma transparente e eficaz \cite{CogniCrypt}.
+
+A colaboração entre a linguagem CrySL e o CogniCrypt oferece uma abordagem abrangente para identificar e reforçar a segurança de códigos vulneráveis. Ao seguir as regras e especificações definidas em CrySL, os desenvolvedores podem identificar potenciais pontos fracos na implementação de criptografia e receber recomendações precisas para aprimorar a segurança de seus sistemas \cite{CogniCrypt}.
+
+Assim, o CogniCrypt pode oferecer uma abordagem abrangente para abordar a identificação de vulnerabilidades no código por meio de dois recursos fundamentais: a geração de código e a aplicação de análises estáticas \cite{CogniCrypt}.
+
+A funcionalidade de geração de código do CogniCrypt destaca-se ao produzir implementações seguras para tarefas de programação comumente associadas à criptografia. Por meio desta característica, os desenvolvedores recebem exemplos de uso orientados por tarefas específicas das APIs criptográficas em Java. Esses exemplos são gerados com base em configurações selecionadas, que incluem o algoritmo criptográfico desejado e seus parâmetros correspondentes. Ao empregar esta capacidade, o CogniCrypt pode desempenhar um papel crucial em auxiliar os desenvolvedores na prevenção de vulnerabilidades comuns, garantindo a integração segura de componentes criptográficos em seus projetos \cite{CogniCrypt}.
+
+Adicionalmente, o CogniCrypt incorpora uma funcionalidade de análise estática que opera em segundo plano, aplicando uma série de análises ao projeto do desenvolvedor. Estas análises têm por objetivo assegurar que todas as utilizações das APIs criptográficas permaneçam seguras, mesmo que o desenvolvedor venha a modificar o código gerado ou utilize as APIs diretamente, sem recorrer à geração de código. O CogniCrypt se vale do framework de análise de estados TS4J, implementado como um plugin do Eclipse, para efetuar a inspeção do projeto. Ele reporta discrepâncias na utilização por meio da geração de marcadores de erro diretamente no ambiente de desenvolvimento Eclipse IDE. Esta funcionalidade pode apoiar os desenvolvedores na identificação e correção de vulnerabilidades em seu código \cite{CogniCrypt}.
+
+Por meio da sinergia entre geração de código e análise estática, o CogniCrypt pode conceder aos desenvolvedores uma abordagem completa para lidar com vulnerabilidades em seu código, promovendo o uso seguro de APIs criptográficas \cite{CogniCrypt}.
 % FONTES:
 
 % Página 3: "Além de gerar código, o CogniCrypt aplica continuamente uma série de análises estáticas ao projeto do desenvolvedor em segundo plano."
 % Página 5: "O CogniCrypt gera exemplos de uso baseados em tarefas para APIs de Cripto Java."
 % Página 5: "O CogniCrypt relata usos inadequados gerando marcadores de erro diretamente no lado esquerdo dentro do ambiente de desenvolvimento Eclipse IDE."
 
-Os desafios enfrentados pelos desenvolvedores ao criar código são diversos e envolvem uma série de complexidades, especialmente quando lidam com sistemas extensos e intricados. Compreender os requisitos, desenhar a arquitetura e implementar o código são tarefas que demandam habilidade e atenção minuciosa.
+Os desafios enfrentados pelos desenvolvedores ao criar código são diversos e envolvem uma série de complexidades, especialmente quando lidam com sistemas extensos e intricados. Compreender os requisitos, desenhar a arquitetura e implementar o código são tarefas que demandam habilidade e atenção minuciosa. \cite{CogniCrypt}
 
-A identificação e correção de bugs e erros são etapas cruciais, muitas vezes exigindo um esforço considerável em termos de depuração e resolução de problemas. Além disso, a gestão do tempo é uma preocupação constante, pois os desenvolvedores frequentemente trabalham sob prazos apertados. Esta pressão adicional pode tornar desafiador o cumprimento desses prazos, o que, por sua vez, demanda a entrega de código de alta qualidade dentro dos limites estabelecidos.
+A identificação e correção de bugs e erros são etapas cruciais, muitas vezes exigindo um esforço considerável em termos de depuração e resolução de problemas. Além disso, a gestão do tempo é uma preocupação constante, pois os desenvolvedores frequentemente trabalham sob prazos apertados. Esta pressão adicional pode tornar desafiador o cumprimento desses prazos, o que, por sua vez, demanda a entrega de código de alta qualidade dentro dos limites estabelecidos. \cite{CogniCrypt}
 
-A dinamicidade dos requisitos de um projeto ao longo do processo de desenvolvimento pode requerer adaptações e modificações no código, o que, por sua vez, pode gerar trabalho adicional e até mesmo conflitos com o código já existente.
+A dinamicidade dos requisitos de um projeto ao longo do processo de desenvolvimento pode requerer adaptações e modificações no código, o que, por sua vez, pode gerar trabalho adicional e até mesmo conflitos com o código já existente. \cite{CogniCrypt}
 
-Em ambientes colaborativos, a efetiva colaboração e comunicação entre membros da equipe são de vital importância. Coordenar esforços, resolver conflitos e assegurar que todos os membros estejam alinhados com os objetivos e metas do projeto pode se configurar como uma tarefa desafiadora, exigindo habilidades de comunicação e gestão de equipe.
+Em ambientes colaborativos, a efetiva colaboração e comunicação entre membros da equipe são de vital importância. Coordenar esforços, resolver conflitos e assegurar que todos os membros estejam alinhados com os objetivos e metas do projeto pode se configurar como uma tarefa desafiadora, exigindo habilidades de comunicação e gestão de equipe. \cite{CogniCrypt}
 
-A aprendizagem contínua é um componente essencial no universo do desenvolvimento de software. A necessidade de se manter atualizado em relação a novas tecnologias, linguagens de programação, frameworks e ferramentas é premente. Este processo, embora vital, pode ser demandante em termos de tempo e esforço, requerendo um investimento contínuo por parte dos desenvolvedores.
+A aprendizagem contínua é um componente essencial no universo do desenvolvimento de software. A necessidade de se manter atualizado em relação a novas tecnologias, linguagens de programação, frameworks e ferramentas é premente. Este processo, embora vital, pode ser demandante em termos de tempo e esforço, requerendo um investimento contínuo por parte dos desenvolvedores. \cite{CogniCrypt}
 
-Uma vez que o código é desenvolvido, a manutenção contínua se torna imperativa. Esta etapa envolve a correção de bugs, adição de novos recursos e otimização de desempenho. No entanto, a complexidade desta tarefa pode ser exacerbada quando o código não está adequadamente documentado ou quando os desenvolvedores originais não estão mais disponíveis para prestar suporte.
+Uma vez que o código é desenvolvido, a manutenção contínua se torna imperativa. Esta etapa envolve a correção de bugs, adição de novos recursos e otimização de desempenho. No entanto, a complexidade desta tarefa pode ser exacerbada quando o código não está adequadamente documentado ou quando os desenvolvedores originais não estão mais disponíveis para prestar suporte. \cite{CogniCrypt}
 
-Por fim, a segurança e garantia de qualidade do código são aspectos cruciais. Os desenvolvedores devem assegurar que seu código seja imune a vulnerabilidades e que siga as melhores práticas para codificação segura. A condução de testes rigorosos se torna essencial para identificar e corrigir possíveis problemas de segurança, garantindo assim a integridade e segurança do software desenvolvido.
+Por fim, a segurança e garantia de qualidade do código são aspectos cruciais. Os desenvolvedores devem assegurar que seu código seja imune a vulnerabilidades e que siga as melhores práticas para codificação segura. A condução de testes rigorosos se torna essencial para identificar e corrigir possíveis problemas de segurança, garantindo assim a integridade e segurança do software desenvolvido. \cite{CogniCrypt}
 
 Ao integrarmos o CogniCrypt em nossa abordagem, complementando-o com outras ferramentas como o CryptoGuard e o LibScout, queremos fornecer aos desenvolvedores uma estratégia poderosa e abrangente para detectar e corrigir vulnerabilidades em APIs criptográficas Java, seja ela de código nativo ou externo. Isso pode contribuir significativamente para a segurança e integridade dos sistemas desenvolvidos.
-
 
 
 % FONTES:
@@ -182,9 +236,48 @@ Ao integrarmos o CogniCrypt em nossa abordagem, complementando-o com outras ferr
 % Página 6: "Por que o software criptográfico falha?: um estudo de caso e problemas em aberto" (Workshop da ACM Ásia-Pacífico em Sistemas)
 % Página 6: "Superando obstáculos: por que os desenvolvedores Java têm dificuldade com APIs de criptografia?" (Conferência Internacional sobre Engenharia de Software)
 
+\subsection{O que é a linguagem CrySL?} %CogniCrypt: Supporting Developers in Using Cryptography
+
+A linguagem de especificação criptográfica, ou CrySL, é um componente essencial do ecossistema do CogniCrypt. Ele foi desenvolvido para especificar boas práticas para o uso seguro de APIs criptográficas em Java. A CrySL, que foi desenvolvida como parte integrante do CogniCrypt, permite que os desenvolvedores expressem as regras de segurança de forma simples e fácil de entender, o que facilita a identificação de possíveis vulnerabilidades em códigos que envolvem operações criptográficas. \cite{CogniCrypt}
+
+A seleção adequada de algoritmos criptográficos, o gerenciamento seguro de chaves e o tratamento adequado de dados sensíveis estão entre as construções de alto nível fornecidas pelo CrySL para descrever cenários comuns de uso de criptografia. Além disso, a linguagem foi desenvolvida para ser flexível, o que permite a inclusão de novas regras à medida que novos padrões e práticas de segurança surgem. \cite{CogniCrypt}
+
+Os desenvolvedores podem verificar automaticamente se um código está em conformidade com as boas práticas de segurança antes mesmo da execução ao definir regras em CrySL. Isso incentiva uma abordagem proativa para a segurança da informação, evitando brechas de segurança potenciais quando o software é desenvolvido em estágio inicial. \cite{CogniCrypt}
+
+A linguagem CrySL e o CogniCrypt criam um ambiente poderoso e fácil de entender para o desenvolvimento seguro de aplicações Java. Eles fornecem um conjunto abrangente de diretrizes e ferramentas para proteger dados e sistemas críticos de ameaças cibernéticas. \cite{CogniCrypt}
+
+
+
 \subsection{O que é a ferramenta CryptoGuard?}
 
-O objetivo do CRYPTOGUARD é detectar vulnerabilidades criptográficas em projetos Java. Ele alcança isso por meio do uso de técnicas de análise estática de programas para analisar o código e identificar possíveis usos incorretos de APIs criptográficas. O CRYPTOGUARD emprega um conjunto de algoritmos de "slicing" (recorte) rápidos e altamente precisos que refinam recortes de programas ao identificar elementos irrelevantes específicos da linguagem Java. Esses refinamentos auxiliam na redução significativa de alertas falsos. Ao executar o CRYPTOGUARD em projetos Java de grande escala, são gerados insights de segurança e auxilia na identificação de vulnerabilidades no código.
+CRYPTOGUARD é uma ferramenta de verificação de código estático projetada para detectar usos incorretos de APIs criptográficas e SSL/TLS em projetos Java de grande porte. \cite{CryptoGuard} Seu propósito é auxiliar os desenvolvedores na identificação e correção de vulnerabilidades relacionadas a algoritmos criptográficos, exposição de segredos, geração previsível de números aleatórios e verificações de certificados vulneráveis. \cite{CryptoGuard} O CRYPTOGUARD alcança isso por meio da implementação de um conjunto de novos algoritmos de análise que realizam uma análise estática do código-fonte. \cite{CryptoGuard} Ele proporciona detecção de alta precisão de vulnerabilidades criptográficas e oferece insights de segurança aos desenvolvedores. \cite{CryptoGuard} A ferramenta é projetada para ser leve e eficiente, executando mais rapidamente do que técnicas de análise existentes. \cite{CryptoGuard} Suas funcionalidades incluem identificação de violações de propriedades criptográficas, realização de fatiamento para frente e para trás, e geração de alertas de segurança para potenciais vulnerabilidades. \cite{CryptoGuard} O CRYPTOGUARD foi avaliado em 46 projetos Apache e 6.181 aplicativos Android, fornecendo descobertas de segurança valiosas e auxiliando projetos na melhoria de seu código.  \cite{CryptoGuard}
+
+% SOURCES:
+
+% Page 1: "TOGUARD, on 46 high-impact large-scale Apache projects and 6,181 Android apps generate many security insights."
+% Page 2: "Our static code checking tool, CRYPTOGUARD, is designed for developers to use routinely on large Java projects."
+% Page 2: "CRYPTOGUARD covers more cryptographic properties than CrySL [44], Coverity [1], and SpotBugs [2] combined."
+% Page 2: "Our most complex analysis (for Rule 15 on insecure RSA/ECC key sizes) involves multiple rounds of forward and backward slicing."
+% Page 8: "Our experimental evaluation aims to answer the following questions... How does CRYPTOGUARD compare with CrySL, SpotBugs, and the free trial version of Coverity on benchmarks or real-world projects?"
+% Page 8: "Our findings helped multiple popular Apache projects to harden their code, including Spark, Ranger, and Ofbiz."
+
+O CRYPTOGUARD utiliza algoritmos especializados de fatiamento de programa para sua análise estática. Esses algoritmos de fatiamento são implementados utilizando técnicas de análise de fluxo de dados sensíveis a fluxo, contexto e campo. Os algoritmos de fatiamento são projetados para identificar o conjunto de instruções que influenciam ou são influenciadas por uma variável de programa. \cite{CryptoGuard}
+
+Os algoritmos de fatiamento utilizados pelo CRYPTOGUARD incluem:
+
+Fatiamento interprocedural retroativo: Este algoritmo parte de um critério de fatiamento e se propaga retroativamente pelo programa, identificando as instruções que contribuem para o valor do critério de fatiamento. Ele constrói uma coleção ordenada de instruções de todos os métodos visitados. \cite{CryptoGuard}
+
+Fatiamento retroativo intra-procedural: Semelhante ao fatiamento interprocedural retroativo, este algoritmo opera dentro de um único método. Ele identifica as instruções dentro do método que contribuem para o valor do critério de fatiamento. \cite{CryptoGuard}
+
+Fatiamento interprocedural progressivo: Este algoritmo identifica as instruções que são influenciadas por um critério de fatiamento em termos de relações de definição e uso. Ele opera nos recortes obtidos a partir do fatiamento retroativo interprocedural. \cite{CryptoGuard}
+
+Fatiamento progressivo intra-procedural: Este algoritmo é utilizado para sensibilidade de campo sob demanda de classes apenas com dados. Ele identifica as instruções dentro de um método que são influenciadas por um critério de fatiamento, especificamente para classes apenas com dados onde os campos são visíveis apenas em invocações de método ortogonais. \cite{CryptoGuard}
+
+Esses algoritmos de fatiamento permitem ao CRYPTOGUARD analisar eficientemente projetos Java de grande porte e detectar vulnerabilidades de uso indevido de APIs criptográficas e SSL/TLS. \cite{CryptoGuard}
+
+Ao usar o Cryptoguard, podemos relatar vários problemas preocupantes de codificação criptográfica em projetos de código aberto Apache e Android. Além disso, incorpora um padrão para comparar a qualidade das ferramentas de detecção de vulnerabilidades criptográficas. \cite{CryptoGuard}
+
+Em resumo o objetivo do CRYPTOGUARD é detectar vulnerabilidades criptográficas em projetos Java. \cite{CryptoGuard} Ele alcança isso por meio do uso de técnicas de análise estática de programas para analisar o código e identificar possíveis usos incorretos de APIs criptográficas. \cite{CryptoGuard} O CRYPTOGUARD emprega um conjunto de algoritmos de "slicing" (recorte) rápidos e altamente precisos que refinam recortes de programas ao identificar elementos irrelevantes específicos da linguagem Java. \cite{CryptoGuard} Esses refinamentos auxiliam na redução significativa de alertas falsos. Ao executar o CRYPTOGUARD em projetos Java de grande escala, são gerados insights de segurança e auxilia na identificação de vulnerabilidades no código. \cite{CryptoGuard}
 
 % FONTES:
 
@@ -194,20 +287,30 @@ O objetivo do CRYPTOGUARD é detectar vulnerabilidades criptográficas em projet
 As conclusões de segurança obtidas a partir dos testes com o CRYPTOGUARD em projetos Apache e aplicativos Android incluem o seguinte:
 
 Projetos Apache:
-Dos 46 projetos Apache avaliados, 39 projetos apresentaram pelo menos um tipo de uso incorreto de criptografia, e 33 projetos tinham pelo menos dois tipos.
-As vulnerabilidades comuns encontradas nos projetos Apache incluíam o uso de chaves previsíveis, funções hash inseguras, geradores de números aleatórios inseguros e a utilização de URLs HTTP.
-O CRYPTOGUARD auxiliou na identificação e relato dessas vulnerabilidades para as equipes do Apache, resultando em correções rápidas em alguns casos.
+Dos 46 projetos Apache avaliados, 39 projetos apresentaram pelo menos um tipo de uso incorreto de criptografia, e 33 projetos tinham pelo menos dois tipos. \cite{CryptoGuard}
+As vulnerabilidades comuns encontradas nos projetos Apache incluíam o uso de chaves previsíveis, funções hash inseguras, geradores de números aleatórios inseguros e a utilização de URLs HTTP. \cite{CryptoGuard}
+O CRYPTOGUARD auxiliou na identificação e relato dessas vulnerabilidades para as equipes do Apache, resultando em correções rápidas em alguns casos. \cite{CryptoGuard}
+
 Aplicativos Android:
-A avaliação em 6.181 aplicativos Android demonstrou que cerca de 95\% das vulnerabilidades totais originaram-se de bibliotecas empacotadas com o código do aplicativo.
-Bibliotecas de empresas como Google, Facebook, Apache, Umeng e Tencent foram identificadas com violações em diversas categorias, incluindo senhas hardcoded de keyStore e vulnerabilidades SSL/TLS.
-O CRYPTOGUARD detectou múltiplas vulnerabilidades SSL/TLS (MitM) que a triagem automática do Google Play aparentemente deixou passar.
-FONTES:
+A avaliação em 6.181 aplicativos Android demonstrou que cerca de 95\% das vulnerabilidades totais originaram-se de bibliotecas empacotadas com o código do aplicativo.\cite{CryptoGuard}
+Bibliotecas de empresas como Google, Facebook, Apache, Umeng e Tencent foram identificadas com violações em diversas categorias, incluindo senhas hardcoded de keyStore e vulnerabilidades SSL/TLS.\cite{CryptoGuard}
+O CRYPTOGUARD detectou múltiplas vulnerabilidades SSL/TLS (MitM) que a triagem automática do Google Play aparentemente deixou passar.\cite{CryptoGuard}
+
+% FONTES:
 
 % Página 2: plataforma de análise de segurança de software livre bem conhecida.
 % Página 2: Obtivemos inúmeras percepções de segurança ao avaliar 46 projetos Apache.
 % Página 2: Nossa avaliação em 6.181 aplicativos Android mostra que cerca de 95\% das vulnerabilidades totais vêm de bibliotecas empacotadas com o código do aplicativo.
 
 O estudo sobre o CRYPTOGUARD, ao evidenciar a complexidade na identificação da percepção de vulnerabilidades, assume um papel catalisador para a pesquisa em questão. Ao abordar a detecção de falhas criptográficas em projetos Java, o CRYPTOGUARD não apenas destaca a necessidade premente de compreensão e correção de vulnerabilidades, mas também delineia um terreno propício para a investigação correlata. A pesquisa em pauta visa justamente tentar elucidar as origens das vulnerabilidades identificadas por meio de ferramentas análogas, oferecendo um avanço significativo no entendimento das fragilidades inerentes a sistemas criptográficos. Deste modo, o estudo sobre o CRYPTOGUARD se revela não apenas como um contributo intrínseco ao domínio da segurança cibernética, mas também como um impulso fundamental para a empreitada que visa discernir as fontes subjacentes às vulnerabilidades apresentadas por ferramentas congêneres.
+
+
+\subsection{CryptoGuard vs CrySL} %CRYPTOGUARD: High Precision Detection of Cryptographic Vulnerabilities in Massive-sized Java Projects
+
+A comparação é baseada na precisão e no tempo de execução das ferramentas. \cite{CryptoGuard} Durante os experimentos, o CrySL travou e saiu prematuramente de 7 dos 10 subprojetos raiz do Apache selecionados aleatoriamente. \cite{CryptoGuard} Para os 3 projetos concluídos, o CrySL é mais lento, mas comparável em 2 projetos (5 vs. 3 segundos, 25 vs. 19 segundos). \cite{CryptoGuard} No entanto, é 3 ordens de magnitude mais lento que o Cryptoguard no codec Kerbaros. \cite{CryptoGuard}
+
+Os falsos positivos do CrySL devem-se principalmente ao fato de suas regras serem excessivamente rígidas e ele não conseguir reconhecer 4 usos corretos da API na avaliação (de 9). \cite{CryptoGuard} Por outro lado, o Cryptoguard usa algoritmos de fatiamento rápidos e altamente precisos para refinar as fatias do programa e reduzir alertas falsos em até 80\%. \cite{CryptoGuard}
+
 
 % Este capítulo descreve a classe \unbcic, e demonstra os comandos disponíveis. A
 % última versão foi atualizada pelo Prof. Ralha, em 2008 (vide \refAnexo{Anexo1}).

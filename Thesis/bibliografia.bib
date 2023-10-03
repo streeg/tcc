@@ -1,3 +1,102 @@
+@misc{what_is_cryptography,
+  title = {Cryptography},
+  url = {https://www.techtarget.com/searchsecurity/definition/cryptography},
+  urldate = {2023-10-03},
+  author = {Kathleen Richards}
+},
+
+@article{api_misuses_zhang,
+  author={Zhang, Ying and Kabir, Md Mahir Asef and Xiao, Ya and Yao, Danfeng and Meng, Na},
+  journal={IEEE Transactions on Software Engineering}, 
+  title={Automatic Detection of Java Cryptographic API Misuses: Are We There Yet?}, 
+  year={2023},
+  volume={49},
+  number={1},
+  pages={288-303},
+  doi={10.1109/TSE.2022.3150302}
+  },
+
+@article{perception_developers,
+  author={Bonifacio, Amaral, Monteiro},
+  journal={IEEE Transactions on Software Engineering}, 
+  title={Perceptions of Software Practitioners Regarding Crypto-API Misuses and Vulnerabilities}, 
+  year={2023},
+  volume={49}, %adjust this
+  number={1}, %adjust this
+  pages={288-303}, %adjust this
+  doi={10.1109/TSE.2022.3150302} %adjust this
+  },
+
+@article {runtime_verification_crypto,
+author = {A. Torres and P. Costa and L. Amaral and J. Pastro and R. Bonifacio and M. d&#x27;Amorim and O. Legunsen and E. Bodden and E. Dias Canedo},
+journal = {IEEE Transactions on Software Engineering},
+title = {Runtime Verification of Crypto APIs: An Empirical Study},
+year = {5555},
+volume = {},
+number = {01},
+issn = {1939-3520},
+pages = {1-16},
+abstract = {Misuse of cryptographic (crypto) APIs is a noteworthy cause of security vulnerabilities. For this reason, static analyzers were recently proposed for detecting crypto API misuses. They differ in strengths and weaknesses, and they might miss bugs. Motivated by the inherent limitations of static analyzers, this paper reports on a study of runtime verification (RV) as a dynamic-analysis-based alternative for crypto API misuse detection. RV monitors program runs against formal specifications; it was shown to be effective and efficient for amplifying the bug-finding ability of software tests. We focus on the popular JCA crypto API and write 22 RV specifications based on expert-validated rules in a static analyzer. We monitor these specifications while running tests in five benchmarks. Lastly, we compare the accuracy of our RV-based approach, RVSec, with those of three state-of-the-art crypto API misuses detectors: CogniCrypt, CryptoGuard, and CryLogger. Results show that RVSec has higher accuracy in four benchmarks and is on par with CryptoGuard in the fifth. Overall, RVSec achieves an average F1 measure of 95%, compared with 83%, 78%, and 86% for CogniCrypt, CryptoGuard, and CryLogger, respectively. We highlight the strengths and limitations of these tools and show that RV is effective for detecting crypto API misuses. We also discuss how static and dynamic analysis can complement each other for detecting crypto API misuses.},
+keywords = {cryptography;codes;ciphers;runtime;benchmark testing;monitoring;software},
+doi = {10.1109/TSE.2023.3301660},
+publisher = {IEEE Computer Society},
+address = {Los Alamitos, CA, USA},
+month = {aug}}
+},
+
+@inproceedings{api_tpl_zhang,
+author = {Zhan, Xian and Fan, Lingling and Liu, Tianming and Chen, Sen and Li, Li and Wang, Haoyu and Xu, Yifei and Luo, Xiapu and Liu, Yang},
+title = {Automated Third-Party Library Detection for Android Applications: Are We There Yet?},
+year = {2021},
+isbn = {9781450367684},
+publisher = {Association for Computing Machinery},
+address = {New York, NY, USA},
+url = {https://doi.org/10.1145/3324884.3416582},
+doi = {10.1145/3324884.3416582},
+abstract = {Third-party libraries (TPLs) have become a significant part of the Android ecosystem. Developers can employ various TPLs with different functionalities to facilitate their app development. Unfortunately, the popularity of TPLs also brings new challenges and even threats. TPLs may carry malicious or vulnerable code, which can infect popular apps to pose threats to mobile users. Besides, the code of third-party libraries could constitute noises in some downstream tasks (e.g., malware and repackaged app detection). Thus, researchers have developed various tools to identify TPLs. However, no existing work has studied these TPL detection tools in detail; different tools focus on different applications with performance differences, but little is known about them.To better understand existing TPL detection tools and dissect TPL detection techniques, we conduct a comprehensive empirical study to fill the gap by evaluating and comparing all publicly available TPL detection tools based on four criteria: effectiveness, efficiency, code obfuscation-resilience capability, and ease of use. We reveal their advantages and disadvantages based on a systematic and thorough empirical study. Furthermore, we also conduct a user study to evaluate the usability of each tool. The results show that LibScout outperforms others regarding effectiveness, LibRadar takes less time than others and is also regarded as the most easy-to-use one, and LibPecker performs the best in defending against code obfuscation techniques. We further summarize the lessons learned from different perspectives, including users, tool implementation, and researchers. Besides, we enhance these open-sourced tools by fixing their limitations to improve their detection ability. We also build an extensible framework that integrates all existing available TPL detection tools, providing online service for the research community. We make publicly available the evaluation dataset and enhanced tools. We believe our work provides a clear picture of existing TPL detection techniques and also give a road-map for future directions.},
+booktitle = {Proceedings of the 35th IEEE/ACM International Conference on Automated Software Engineering},
+pages = {919–930},
+numpages = {12},
+keywords = {library detection, third-party library, Android, empirical study},
+location = {Virtual Event, Australia},
+series = {ASE '20}
+},
+
+@misc{LibScout,
+  author = {Erik Derr},
+  title = {LibScout},
+  year = {2019},
+  publisher = {GitHub},
+  journal = {GitHub repository},
+  howpublished = {\url{https://github.com/reddr/LibScout}},
+  commit = {8c0bd2c147e818841fc695eecb1246e38458435f}
+},
+
+@INPROCEEDINGS{CogniCrypt,
+  author={Krüger, Stefan and Nadi, Sarah and Reif, Michael and Ali, Karim and Mezini, Mira and Bodden, Eric and Göpfert, Florian and Günther, Felix and Weinert, Christian and Demmler, Daniel and Kamath, Ram},
+  booktitle={2017 32nd IEEE/ACM International Conference on Automated Software Engineering (ASE)}, 
+  title={CogniCrypt: Supporting developers in using cryptography}, 
+  year={2017},
+  volume={},
+  number={},
+  pages={931-936},
+  abstract={Previous research suggests that developers often struggle using low-level cryptographic APIs and, as a result, produce insecure code. When asked, developers desire, among other things, more tool support to help them use such APIs. In this paper, we present CogniCrypt, a tool that supports developers with the use of cryptographic APIs. CogniCrypt assists the developer in two ways. First, for a number of common cryptographic tasks, CogniCrypt generates code that implements the respective task in a secure manner. Currently, CogniCrypt supports tasks such as data encryption, communication over secure channels, and long-term archiving. Second, CogniCrypt continuously runs static analyses in the background to ensure a secure integration of the generated code into the developer's workspace. This video demo showcases the main features of CogniCrypt: youtube.com/watch?v=JUq5mRHfAWY.},
+  keywords={},
+  doi={10.1109/ASE.2017.8115707},
+  ISSN={},
+  month={Oct},
+  },
+
+@misc{CryptoGuard,
+      title={CryptoGuard: High Precision Detection of Cryptographic Vulnerabilities in Massive-sized Java Projects}, 
+      author={Sazzadur Rahaman and Ya Xiao and Sharmin Afrose and Fahad Shaon and Ke Tian and Miles Frantz and Danfeng and Yao and Murat Kantarcioglu},
+      year={2019},
+      eprint={1806.06881},
+      archivePrefix={arXiv},
+      primaryClass={cs.CR}
+},
+
+
 @article{Biolchini_2005_Systematicreviewin,
   author = {Jorge Biolchini and P. Gomes Mian and A. Candida Cruz Natali and G. Horta Travassos},
   title = {Systematic review in software engineering},
