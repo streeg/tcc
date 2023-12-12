@@ -2,7 +2,7 @@ require 'csv'
 require 'fileutils'
 require 'byebug'
 
-FOLDER = 'cg_csvs_unknown_origin'
+FOLDER = 'cg_csvs_system'
 
 source_folder = "/home/guileb/tcc/CryptoSASTRunner/tccResults/desagroup_cc_cg/cg/cg_csvs/#{FOLDER}"
 destination_folder = "#{source_folder}/#{FOLDER}_summary"
@@ -21,9 +21,8 @@ Dir.glob(File.join(source_folder, '*.csv')).each do |csv_file|
   definitely_external_libraries = 0
 
   begin
-    CSV.foreach(csv_file, headers: true, col_sep: ';', quote_char: quote_chars.shift) do |row|
+    CSV.foreach(csv_file, headers: true, col_sep: ',', quote_char: quote_chars.shift) do |row|
       total_libraries += 1
-
       possible_external_libraries += 1 if row['ExternalLibrary'] == 'false' && row['PossibleExternal'] == 'true'
 
       definitely_external_libraries += 1 if row['ExternalLibrary'] == 'true'

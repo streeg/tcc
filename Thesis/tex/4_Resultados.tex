@@ -67,75 +67,201 @@ Considerando os resultados acima, analisamos a quantidade média de warnings por
 
 Como esperado, a média de warnings é maior no CogniCrypt do que no CryptoGuard. A diferença é ainda maior quando desconsideramos os aplicativos sem warnings. A categoria internet tem a maior média de warnings nas duas ferramentas, com um valor maior no CogniCrypt: 106.5 warnings por aplicativo. Em segundo e terceiro lugares temos as categorias segurança e sms-telefone no CogniCrypt e internet e conectividade, considerando a média de warnings fundados pelo CryptoGuard. \cite{perception_developers}
 
-\subsection{Análise da integração do Cryptoguard e do Cognicrypt com o LibScout}
+\subsection{Análise qualitativa da integração do Cryptoguard e do Cognicrypt com o LibScout}
+
+A fim de facilitar a análise, os aplicativos foram categorizados. Em cada categoria, serão exibidos os resultados relativos ao número de aplicativos com alertas de vulnerabilidade, diferenciando aqueles que são potencialmente externos dos que são definitivamente externos, para cada ferramenta utilizada. As tabelas a seguir apresentam os resultados dessas integrações.
+
+\textbf{CogniCrypt}
+
+\begin{table}[!htbp]
+  \centering
+  \small
+  \begin{tabular}{|c|c|c|c|c|}
+  
+\textbf{CC/Connectivity}   & \textbf{Warnings (a)}   &  \textbf{Possible ext (b)}     &  \textbf{Definite ext (c)} &  \textbf{Native-ext (a-b-c)} \\ 
+Média                      & \num{21.9}              &  \num{2.3}                                         & \num{2.4}                                        & \num{17.1}                                                    \\
+Desvio Padrão              & \num{43.8}              &  \num{10.3}                                         & \num{6.1}                                        & \num{42.8}                                 \\                    
+Variância                  & \num{1919.8}            &  \num{107.8}                                         & \num{38.2}                                       & \num{1831.9}         \\                                           
+\end{tabular}
+    
+  \caption{Resultados da integração do CogniCrypt com o LibScout na categoria Connectivity}
+\label{table: AplicativosComWarningCCC}
+\end{table}
+
+
+\begin{table}[!htbp]
+  \centering
+  \small
+  \begin{tabular}{|c|c|c|c|c|}
+  
+\textbf{CC/Finances}   & \textbf{Warnings (a)}   &  \textbf{Possible ext (b)}     &  \textbf{Definite ext (c)} &  \textbf{Native-ext (a-b-c)} \\ 
+Média                      & \num{46.4}          &  \num{2.8}                                                  & \num{7.5}                                         & \num{35.9}                                                    \\
+Desvio Padrão              & \num{132.06}           &  \num{10.8}                                                 & \num{41.8}                                        & \num{126.07}          \\                                          
+Variância                  & \num{17439.9}       &  \num{118.2}                                                & \num{1747.7}                                      & \num{15895.3}    \\                                                
+\end{tabular}
+    
+  \caption{Resultados da integração do CogniCrypt com o LibScout na categoria Finances}
+\label{table: AplicativosComWarningCCF}
+\end{table}
+
+
+\begin{table}[!htbp]
+  \centering
+  \small
+  \begin{tabular}{|c|c|c|c|c|}
+  
+\textbf{CC/SMS}   & \textbf{Warnings (a)}   &  \textbf{Possible ext (b)}     &  \textbf{Definite ext (c)} &  \textbf{Native-ext (a-b-c)} \\ 
+Média                      & \num{11.7}              &  \num{2.36}                                         & \num{1}                                        & \num{8.3}                                                    \\
+Desvio Padrão              & \num{31.67}              &  \num{7.78}                                         & \num{3.69}                                        & \num{24.1}   \\                                                 
+Variância                  & \num{1003.03}            &  \num{60.54}                                         & \num{12.94}                                       & \num{585.4}             \\                                       
+\end{tabular}
+    
+  \caption{Resultados da integração do CogniCrypt com o LibScout na categoria SMS}
+\label{table: AplicativosComWarningCCSMS}
+\end{table}
+
+
+\begin{table}[!htbp]
+  \centering
+  \small
+  \begin{tabular}{|c|c|c|c|c|}
+  
+\textbf{CC/System}   & \textbf{Warnings (a)}   &  \textbf{Possible ext (b)}     &  \textbf{Definite ext (c)} &  \textbf{Native-ext (a-b-c)} \\ 
+Média                      & \num{10.09}              &  \num{0.93}                                         & \num{0.36}                                        & \num{8.79}                                                    \\
+Desvio Padrão              & \num{33.01}              &  \num{3.74}                                         & \num{1.28}                                        & \num{31.82}  \\                                                  
+Variância                  & \num{1090.2}            &  \num{14.05}                                         & \num{1.66}                                       & \num{1012.5}  \\                                                  
+\end{tabular}
+    
+  \caption{Resultados da integração do CogniCrypt com o LibScout na categoria System}
+\label{table: AplicativosComWarningCCS}
+\end{table}
+
+Os resultados para a tabela de conectividade (\ref{table: AplicativosComWarningCCC}) mostram que em média, por aplicativo, o CogniCrypt encontrou 21.9 warnings de vulnerabilidade. Desses, 2.3 são possivelmente externos e 2.4 são definitivamente externos. A quantidade de warnings nativos é de 17.1.
+Para finanças (\ref{table: AplicativosComWarningCCF}), a média de warnings por aplicativo é de 46.4. Desses, 2.8 são possivelmente externos e 7.5 são definitivamente externos. A quantidade de warnings nativos é de 35.9. 
+Para SMS (\ref{table: AplicativosComWarningCCSMS}), a média de warnings por aplicativo é de 11.7. Desses, 2.36 são possivelmente externos e 1 é definitivamente externo. A quantidade de warnings nativos é de 8.3.
+E para sistema (\ref{table: AplicativosComWarningCCS}), a média de warnings por aplicativo é de 10.09. Desses, 0.93 são possivelmente externos e 0.36 são definitivamente externos. A quantidade de warnings nativos é de 8.79.
+Em todos os exemplos, o desvio padrão e a variância são altos, indicando que os valores estão bem dispersos. Isso é explicado tanto pelas limitações do LibScout quanto pelas limitações do CogniCrypt. \cite{perception_developers} O LibScout pode não ter mapeado a biblioteca com warning como externa \cite{LibScout} e o CogniCrypt pode ter encontrado warnings em bibliotecas que não foram mapeadas pelo LibScout ou ainda não ter encontrado vulnerabilidade no aplicativo selecionado. \cite{perception_developers}
+
+\textbf{CryptoGuard}
+
+\begin{table}[!htbp]
+  \centering
+  \small
+  \begin{tabular}{|c|c|c|c|c|}
+    \hline
+    \textbf{CG/Connectivity} & \textbf{Total Libraries} & \textbf{Possible Ext.} & \textbf{Definite Ext.} & \textbf{Native Libraries} \\
+    \hline
+    Média & \num{15.1} & \num{0.73} & \num{5.21} & \num{9.22} \\
+    Desvio Padrão & \num{25.62} & \num{2.17} & \num{9.91} & \num{18.7} \\
+    Variância & \num{656.6} & \num{4.71} & \num{98.3} & \num{352.4} \\
+    \hline
+  \end{tabular}
+  \caption{Resultados da integração do CryptoGuard com o LibScout na categoria Connectivity}
+  \label{table: AplicativosComWarningCGC}
+\end{table}
+
+
+\begin{table}[!htbp]
+  \centering
+  \small
+  \begin{tabular}{|c|c|c|c|c|}
+    \hline
+    \textbf{CG/Finances} & \textbf{Total Libraries} & \textbf{Possible Ext.} & \textbf{Definite Ext.} & \textbf{Native Libraries} \\
+    \hline
+    Média & \num{10.45} & \num{1.33} & \num{4.68} & \num{4.43} \\
+    Desvio Padrão & \num{20.71} & \num{4.72} & \num{10.03} & \num{10.05} \\
+    Variância & \num{429.13} & \num{22.2} & \num{100.72} & \num{101.1} \\
+    \hline
+  \end{tabular}
+  \caption{Resultados da integração do CryptoGuard com o LibScout na categoria Finances}
+  \label{table: AplicativosComWarningCGF}
+\end{table}
+
+
+\begin{table}[!htbp]
+  \centering
+  \small
+  \begin{tabular}{|c|c|c|c|c|}
+    \hline
+    \textbf{CG/SMS} & \textbf{Total Libraries} & \textbf{Possible Ext.} & \textbf{Definite Ext.} & \textbf{Native Libraries} \\
+    \hline
+    Média & \num{9} & \num{0.78} & \num{2.73} & \num{5.47} \\
+    Desvio Padrão & \num{18.72} & \num{2.09} & \num{5.66} & \num{16.22} \\
+    Variância & \num{350.6} & \num{4.37} & \num{32.08} & \num{263.19} \\
+    \hline
+  \end{tabular}
+  \caption{Resultados da integração do CryptoGuard com o LibScout na categoria SMS}
+  \label{table: AplicativosComWarningCGSMS}
+\end{table}
+
+
+\begin{table}[!htbp]
+  \centering
+  \small
+  \begin{tabular}{|c|c|c|c|c|}
+    \hline
+    \textbf{CG/System} & \textbf{Total Libraries} & \textbf{Possible Ext.} & \textbf{Definite Ext.} & \textbf{Native Libraries} \\
+    \hline
+    Média & \num{7.53} & \num{0.65} & \num{2.67} & \num{4.2} \\
+    Desvio Padrão & \num{16.49} & \num{2.69} & \num{7.07} & \num{12} \\
+    Variância & \num{272.21} & \num{7.27} & \num{50.07} & \num{146.4} \\
+    \hline
+  \end{tabular}
+  \caption{Resultados da integração do CryptoGuard com o LibScout na categoria System}
+  \label{table: AplicativosComWarningCGS}
+\end{table}
+
+Analisando a tabela de conectividade (\ref{table: AplicativosComWarningCGC})  observa-se que o CryptoGuard, em média por aplicativo, detectou 15.1 alertas de vulnerabilidade, dos quais 0.73 são potencialmente externos e 5.21 definitivamente externos, com 9.22 alertas nativos. 
+Na categoria de finanças (\ref{table: AplicativosComWarningCGF}), a média foi de 10.45 alertas por aplicativo, com 1.33 potencialmente externos e 4.68 definitivamente externos, além de 4.43 nativos.
+Para SMS, (\ref{table: AplicativosComWarningCGSMS}), a média foi de 9 alertas, com 0.78 potencialmente externos e 2.73 definitivamente externos, e 5.47 nativos.
+E para sistema (\ref{table: AplicativosComWarningCGS}), a média foi de 7.53 alertas, com 0.65 potencialmente externos e 2.67 definitivamente externos, além de 4.2 nativos. 
+Os altos desvios padrão e variância indicam uma dispersão significativa, influenciada pelas limitações do LibScout e do CryptoGuard. \cite{perception_developers} Novamente o LibScout pode não ter mapeado a biblioteca com warning como externa \cite{LibScout} e o CryptoGuard pode ter encontrado warnings em bibliotecas que não foram mapeadas pelo LibScout ou ainda não ter encontrado vulnerabilidade no aplicativo selecionado. \cite{perception_developers}
+
+\newline
+\textbf {Comparação entre as ferramentas}
+\newline
+
+As figuras subsequentes ilustram uma análise comparativa categorizada entre as ferramentas CogniCrypt e CryptoGuard
+
+
+\begin{figure}[!h]
+  \centering
+  \includegraphics[scale=0.7]{img/plot_cc_x_cg_connectivity.png}
+  \caption{Comparação entre as ferramentas CogniCrypt e CryptoGuard na categoria Connectivity}
+  \label{img: CCvsCG_Connectivity}
+\end{figure}
+
+Na categoria de conectividade (\ref{img: CCvsCG_Connectivity}), a média de alertas emitidos pelas ferramentas indica que o CogniCrypt gera um número maior de alertas por aplicativo, incluindo alertas nativos e potencialmente externos. Contudo, o CryptoGuard excede no número de alertas definitivamente classificados como externos.
+O CogniCrypt apresenta um desvio padrão e uma variância superiores, com exceção da quantidade de alertas de bibliotecas categorizadas como definitivamente externas.
+A eficiência na integração com o LibScout, para a identificação de bibliotecas definitivamente externas, é mais pronunciada no CryptoGuard.
+
+\begin{figure}[!h]
+    \centering
+    \includegraphics[scale=0.7]{img/plot_cc_x_cg_finances.png}
+    \caption{Comparação entre as ferramentas CogniCrypt e CryptoGuard na categoria Finances}
+    \label{img: CCvsCG_Finances}
+\end{figure}
+
+Na categoria financeira  (\ref{img: CCvsCG_Finances}), o CogniCrypt demonstrou superioridade em relação ao CryptoGuard.
+Isso indica que o CryptoGuard tem uma dispersão maior nos valores relativos aos alertas por aplicativo e aos alertas de bibliotecas nativas, em contraste com a maior dispersão do CogniCrypt nos valores de alertas possivelmente de bibliotecas externas e definitivamente externas.
 
 
 
+\begin{figure}[!h]
+    \centering
+    \includegraphics[scale=0.7]{img/plot_cc_x_cg_sms.png}
+    \caption{Comparação entre as ferramentas CogniCrypt e CryptoGuard na categoria SMS}
+    \label{img: CCvsCG_SMS}
+\end{figure}
 
+\begin{figure}[!h]
+    \centering
+    \includegraphics[scale=0.7]{img/plot_cc_x_cg_system.png}
+    \caption{Comparação entre as ferramentas CogniCrypt e CryptoGuard na categoria System}
+    \label{img: CCvsCG_System}
+\end{figure}
 
-% %http://aprender_unb.br/course/view.php?id=25
-% %http://www.cs.berkeley.edu/~jrs/speaking.html
-% Este capítulo oferece sugestões de como fazer a apresentação do trabalho. Uma
-% apresentação é necessária ao final do curso, é nela que se mostra os resultados
-% obtidos de forma resumida e, preferencialmente, simplificada. Embora o ``verdadeiro''
-% resultado seja o texto técnico, que de fato representa a contribuição científica
-% obtida, a apresentação serve para divulgar seus resultados e incentivar outros a
-% se interessarem por seu trabalho.
-
-% \section{Falando em Público}
-% A ideia de uma apresentação não é mostrar todos os detalhes técnicos ou tentar
-% impressionar o público com seu conhecimento. O objetivo é apresentar suas principais
-% ideias de forma intuitiva, de modo que os presentes entendam o que foi feito e
-% se interessem em conhecer as minúcias lendo o texto técnico.
-
-% Vale lembrar que embora você veja seu trabalho como extremamente interessante,
-% geralmente seu público [ainda] não acha, e provavelmente têm coisas melhores para fazer...
-% É preciso atrair e manter a atenção deles, bem como garantir que eles se lembrem
-% do que foi dito (pelo menos da ideia principal).
-
-% Algumas noções importantes:
-% \begin{description}
-% \item[Motivação:] Qual o problema e por que ele merece atenção?
-% \item[Ideia Principal:] Clara e explicitamente especificada.
-% \item[Exemplos:] A melhor forma de passar informações (ilustram motivação,
-% funcionamento, casos extremos, limitações, etc.).
-% \end{description}
-
-% \emph{Slides} são uma excelente ferramenta \textbf{de apoio} ao apresentador, mas
-% muitas vezes tomam vida própria e se tornam o elemento principal. É essencial,
-% embora um pouco difícil,  evitar a ``morte por Powerpoint''\footnote{%
-% \url{http://www.smallbusinesscomputing.com/biztools/article.php/684871/Death-By-Powerpoint.htm}}.
-
-% Existem muitas sugestões para fazer uma boa apresentação\footnote{\url{https://hbr.org/2014/11/how-to-give-a-stellar-presentation}},
-% por exemplo, imitar um bom apresentador\footnote{\url{https://www.youtube.com/watch?v=2-ntLGOyHw4}}, boas práticas na elaboração de slides\footnote{\url{https://www.youtube.com/watch?v=Iwpi1Lm6dFo}}, como organizar o conteúdo de um slide\footnote{\url{https://hbr.org/2012/10/do-your-slides-pass-the-glance-test}} (ou mesmo ``vida após a morte''\footnote{\url{https://www.youtube.com/watch?v=lpvgfmEU2Ck}}). Entretanto, as duas noções mais importantes são: você nunca se prepara demais para fazer uma apresentação, e a única regra de uma apresentação é a
-% de atenção\footnote{\url{http://finiteattentionspan.wordpress.com/2009/11/02/the-only-rule-about-giving-presentations-that-matters-is-the-rule-of-attention}}.
-
-% Olivia Mitchell sugere as seguintes formas de manter a atenção da platéia%
-% \footnote{\url{http://www.speakingaboutpresenting.com/content/7-ways-audience-attention-presentation}}:
-% \begin{enumerate}
-% \item Fale sobre algo que interesse a platéia.
-% \item Diga porque deveriam prestar atenção.
-% \item Não apresente algo muito fácil ou muito difícil.
-% \item ``Mudanças'' prendem a atenção.
-% \item Conte estórias.
-% \item Faça pausas.
-% \item Seja breve.
-% \end{enumerate}
-
-% Demonstrações ao vivo são impressionantes, desde que funcionem corretamente e não
-% evidenciem as limitações do seu trabalho. Lembre-se que eventos importantes são,
-% em sua maioria, regidos pela \emph{\href{http://www.humornaciencia.com.br/miscelanea/murphy.htm}{Lei de Murphy}}.%
-
-% Por fim, lembre-se que é normal ficar nervoso perante uma platéia, e não há uma
-% cura genérica para este problema. Há muitas sugestões de como lidar com isso\footnote{\url{http://www.wikihow.com/Overcome-Stage-Fright}},
-% inclusive uma que diz que o problema é você\footnote{\url{http://seriouspony.com/blog/2013/10/4/presentation-skills-considered-harmful}}.
-% Tente descobrir o que funciona melhor para si (boa sorte!).
-
-% \newcommand{\beamer}{{\sc{BEAMER}}}%
-% \section{\beamer}
-% A classe \beamer, disponível no \acrshort{CTAN}\footnote{\url{http://www.ctan.org/pkg/beamer}},
-% é a recomendada para criar apresentações. Não só possibilita um resultado visualmente
-% interessante, como também aproveita parte do texto escrito em \LaTeX. O manual%
-% \footnote{\url{http://www.ctan.org/tex-archive/macros/latex/contrib/beamer/doc/beameruserguide.pdf}}
-% oferece instruções sobre o uso da classe e, principalmente, diretrizes para criar
-% apresentações (especialmente as Seções 4 e 5 do Capítulo I).
+Nas categorias de SMS (\ref{img: CCvsCG_SMS}) e Sistemas (\ref{img: CCvsCG_System}), observa-se um padrão análogo ao da categoria de conectividade.
+O CogniCrypt gera uma quantidade superior de alertas por aplicativo, incluindo uma maior frequência de alertas nativos e potencialmente externos.
+Em contrapartida, o CryptoGuard excede no número de alertas categorizados como definitivamente externos.
+Esta tendência também se reflete no desvio padrão e na variância, onde o CogniCrypt mostra maior dispersão de dados, à exceção dos alertas definitivamente externos.
