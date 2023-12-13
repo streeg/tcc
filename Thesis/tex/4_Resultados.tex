@@ -58,7 +58,7 @@ Como podemos observar na tabela acima, o CogniCrypt consegue encontrar 4964 warn
 
 Considerando os resultados acima, analisamos a quantidade média de warnings por aplicativo. Os resultados são mostrados no gráfico abaixo.
 
-\begin{figure}[!h]
+\begin{figure}[!ht]
     \centering
     \includegraphics[scale=0.3]{img/averageWarnings.png}
     \caption{Quantidade média de alertas por aplicativo}
@@ -67,7 +67,7 @@ Considerando os resultados acima, analisamos a quantidade média de warnings por
 
 Como esperado, a média de warnings é maior no CogniCrypt do que no CryptoGuard. A diferença é ainda maior quando desconsideramos os aplicativos sem warnings. A categoria internet tem a maior média de warnings nas duas ferramentas, com um valor maior no CogniCrypt: 106.5 warnings por aplicativo. Em segundo e terceiro lugares temos as categorias segurança e sms-telefone no CogniCrypt e internet e conectividade, considerando a média de warnings fundados pelo CryptoGuard. \cite{perception_developers}
 
-\subsection{Análise qualitativa da integração do Cryptoguard e do Cognicrypt com o LibScout}
+\subsection{Análise quantitativa da integração do Cryptoguard e do Cognicrypt com o LibScout}
 
 A fim de facilitar a análise, os aplicativos foram categorizados. Em cada categoria, serão exibidos os resultados relativos ao número de aplicativos com alertas de vulnerabilidade, diferenciando aqueles que são potencialmente externos dos que são definitivamente externos, para cada ferramenta utilizada. As tabelas a seguir apresentam os resultados dessas integrações.
 
@@ -217,14 +217,49 @@ Para SMS, (\ref{table: AplicativosComWarningCGSMS}), a média foi de 9 alertas, 
 E para sistema (\ref{table: AplicativosComWarningCGS}), a média foi de 7.53 alertas, com 0.65 potencialmente externos e 2.67 definitivamente externos, além de 4.2 nativos. 
 Os altos desvios padrão e variância indicam uma dispersão significativa, influenciada pelas limitações do LibScout e do CryptoGuard. \cite{perception_developers} Novamente o LibScout pode não ter mapeado a biblioteca com warning como externa \cite{LibScout} e o CryptoGuard pode ter encontrado warnings em bibliotecas que não foram mapeadas pelo LibScout ou ainda não ter encontrado vulnerabilidade no aplicativo selecionado. \cite{perception_developers}
 
-\newline
-\textbf {Comparação entre as ferramentas}
-\newline
+
+\begin{table}[!htbp]
+  \centering
+  \small
+  \begin{tabular}{|c|c|c|}
+    \hline
+    \textbf{-} & \textbf{CogniCrypt} & \textbf{Cryptoguard} \\
+    \hline
+    Total Aplicativos & \num{246} & \num{253} \\
+    Total Bibliotecas & \num{6798} & \num{2710}  \\
+    Total Bibliotecas Externas & \num{1710} & \num{1149} \\
+    Total Bibliotecas Externas Potenciais & \num{726} & \num{245} \\
+    Total Bibliotecas Nativas & \num{4542} & \num{1316} \\
+    \hline
+  \end{tabular}
+  \caption{Resultados da integração do CryptoGuard com o LibScout na categoria System}
+  \label{table: AplicativosComWarningSummary}
+\end{table}
+
+A tabela \ref{table: AplicativosComWarningSummary} mostra um resumo dos resultados obtidos nas categorias analisadas. O CogniCrypt analisou 246 aplicativos, com 6798 bibliotecas, das quais 1710 são externas, 726 potencialmente externas e 4542 nativas. O CryptoGuard analisou 253 aplicativos, com 2710 bibliotecas, das quais 1149 são externas, 245 potencialmente externas e 1316 nativas.
+
+\begin{figure}[!ht]
+  \centering
+  \includegraphics[scale=0.7]{img/plot_cc_x_cg_summary.png}
+  \caption{Comparação total entre as ferramentas CogniCrypt e CryptoGuard}
+  \label{img: CCvsCG_Summary}
+\end{figure}
+
+\begin{figure}[!ht]
+  \centering
+  \includegraphics[scale=0.7]{img/plot_cc_x_cg_proportion_summary.png}
+  \caption{Comparação proporcional total entre as ferramentas CogniCrypt e CryptoGuard}
+  \label{img: CCvsCG_Summary}
+\end{figure}
+
+Os resultados para a ferramenta CogniCrypt se destacaram em relação aos resultados para o CryptoGuard. 
+
+\subsection{Resultados CogniCrypt x CryptoGuard}
 
 As figuras subsequentes ilustram uma análise comparativa categorizada entre as ferramentas CogniCrypt e CryptoGuard
 
 
-\begin{figure}[!h]
+\begin{figure}[!ht]
   \centering
   \includegraphics[scale=0.7]{img/plot_cc_x_cg_connectivity.png}
   \caption{Comparação entre as ferramentas CogniCrypt e CryptoGuard na categoria Connectivity}
@@ -235,7 +270,7 @@ Na categoria de conectividade (\ref{img: CCvsCG_Connectivity}), a média de aler
 O CogniCrypt apresenta um desvio padrão e uma variância superiores, com exceção da quantidade de alertas de bibliotecas categorizadas como definitivamente externas.
 A eficiência na integração com o LibScout, para a identificação de bibliotecas definitivamente externas, é mais pronunciada no CryptoGuard.
 
-\begin{figure}[!h]
+\begin{figure}[!ht]
     \centering
     \includegraphics[scale=0.7]{img/plot_cc_x_cg_finances.png}
     \caption{Comparação entre as ferramentas CogniCrypt e CryptoGuard na categoria Finances}
@@ -247,14 +282,14 @@ Isso indica que o CryptoGuard tem uma dispersão maior nos valores relativos aos
 
 
 
-\begin{figure}[!h]
+\begin{figure}[!ht]
     \centering
     \includegraphics[scale=0.7]{img/plot_cc_x_cg_sms.png}
     \caption{Comparação entre as ferramentas CogniCrypt e CryptoGuard na categoria SMS}
     \label{img: CCvsCG_SMS}
 \end{figure}
 
-\begin{figure}[!h]
+\begin{figure}[!ht]
     \centering
     \includegraphics[scale=0.7]{img/plot_cc_x_cg_system.png}
     \caption{Comparação entre as ferramentas CogniCrypt e CryptoGuard na categoria System}
