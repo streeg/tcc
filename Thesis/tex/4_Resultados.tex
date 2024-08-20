@@ -1,18 +1,16 @@
 
 
-\section{Percepção dos desenvolvedores em relação as vulnerabilidade em aplicativos open source}
+\section{Percepção dos desenvolvedores em relação às vulnerabilidades em aplicativos open source}
 
-O artigo motivador deste trabalho \cite{perception_developers} aborda a percepção dos desenvolvedores e profissionais de segurança em relação às vulnerabilidades em aplicativos open source. O estudo não se limitou apenas à análise estática das ferramentas utilizadas, mas também incluiu uma investigação sobre aplicativos Android de código aberto, com o objetivo de obter a opinião dos desenvolvedores envolvidos. \cite{perception_developers}
+Este trabalho considera a percepção dos desenvolvedores e profissionais de segurança em relação às vulnerabilidades em aplicativos open source. O estudo não se limitou apenas à análise estática das ferramentas utilizadas, mas também incluiu uma investigação sobre aplicativos Android de código aberto, com o objetivo de obter a opinião dos desenvolvedores envolvidos.
 
-Uma descoberta relevante foi que muitas das questões identificadas pelo CogniCrypt não estavam diretamente relacionadas ao código do aplicativo Android em si, mas sim às bibliotecas de terceiros utilizadas por esses aplicativos. \cite{perception_developers} Dentre os projetos de código aberto analisados, aproximadamente 60\% apresentaram questões levantadas pelo CogniCrypt que se originavam de códigos de terceiros. Os desenvolvedores abordaram essas preocupações de segurança de maneiras diversas. Alguns optaram por atualizar imediatamente as dependências, enquanto outros confiaram implicitamente nas grandes empresas de tecnologia fornecedoras das bibliotecas e não consideraram os problemas como ameaças reais.
+Uma descoberta relevante foi que muitas das questões identificadas pelo CogniCrypt não estavam diretamente relacionadas ao código do aplicativo Android em si, mas sim às bibliotecas de terceiros utilizadas por esses aplicativos. Dentre os projetos de código aberto analisados, aproximadamente 60\% apresentaram questões levantadas pelo CogniCrypt que se originavam de códigos de terceiros. Os desenvolvedores abordaram essas preocupações de segurança de maneiras diversas. Alguns optaram por atualizar imediatamente as dependências, enquanto outros confiaram implicitamente nas grandes empresas de tecnologia fornecedoras das bibliotecas e não consideraram os problemas como ameaças reais.
 
-Surpreendentemente, em alguns casos, os desenvolvedores tiveram dificuldades em compreender completamente as questões apresentadas pelo CogniCrypt. Para eles, não estava claro por que determinados trechos de código eram considerados problemas apenas a partir das explicações fornecidas pela ferramenta. Diante disso, os desenvolvedores expressaram o desejo de receber explicações mais detalhadas sobre os problemas identificados, bem como sugestões diretas sobre como corrigi-los. Além disso, alguns sugeriram a categorização dos problemas levantados pelo CogniCrypt com base na origem, indicando se pertencem ao aplicativo digitalizado ou a uma biblioteca de terceiros. Essa observação proporciona insights valiosos sobre a necessidade de uma comunicação mais eficaz entre as ferramentas de análise e os desenvolvedores, visando uma compreensão mais precisa e eficiente das vulnerabilidades detectadas. \cite{perception_developers}
+Em alguns casos, os desenvolvedores tiveram dificuldades em compreender completamente as questões apresentadas pelo CogniCrypt. Para eles, não estava claro por que determinados trechos de código eram considerados problemas apenas a partir das explicações fornecidas pela ferramenta. Diante disso, os desenvolvedores expressaram o desejo de receber explicações mais detalhadas sobre os problemas identificados, bem como sugestões diretas sobre como corrigi-los. Além disso, alguns sugeriram a categorização dos problemas levantados pelo CogniCrypt com base na origem, indicando se pertencem ao aplicativo digitalizado ou a uma biblioteca de terceiros. Essa observação proporciona insights valiosos sobre a necessidade de uma comunicação mais eficaz entre as ferramentas de análise e os desenvolvedores, visando uma compreensão mais precisa e eficiente das vulnerabilidades detectadas.
 
 \section{Análise quantitativa em aplicativos android}
 
-Foram analisados 307 aplicativos de 6 diferentes categorias do repositório de aplicativos de código aberto F-Droid. \cite{perception_developers}
-A execução do CogniCrypt reportou 195 Warnings de uso indevido de criptografia enquanto o CryptoGuard reportou 298. \cite{perception_developers}
-A tabela abaixo mostra a quantidade de aplicativos analisados por categoria e a quantidade de Warnings reportados por cada ferramenta. \cite{perception_developers}
+Foram analisados 307 aplicativos de 6 diferentes categorias do repositório de aplicativos de código aberto F-Droid. A execução do CogniCrypt reportou 195 \textit{warnings} de uso indevido de criptografia, enquanto o CryptoGuard reportou 298. A tabela abaixo mostra a quantidade de aplicativos analisados por categoria e a quantidade de \textit{warnings} reportados por cada ferramenta.
 
 \begin{table}[!htbp]
   \centering
@@ -32,9 +30,9 @@ System                  & \num{55}                        &   \num{34}          
 \label{AplicativosSemWarning}
 \end{table}
 
-Como visto, o número de aplicativos sem warning no cognicrypt é bem maior do que no cryptoguard. A categoria sistema é a que tem a maior diferença entre eles, \num{34}. As categorias conectividade e finanças também tem um número alto de aplicativos sem warnings, \num{20} e \num{25}, respectivamente. \cite{perception_developers}
+Como visto, o número de aplicativos sem \textit{warnings} no CogniCrypt é bem maior do que no CryptoGuard. A categoria Sistema é a que apresenta a maior diferença entre eles, com \num{34} aplicativos. As categorias Conectividade e Finanças também têm um número elevado de aplicativos sem \textit{warnings}, \num{20} e \num{25}, respectivamente.
 
-Apesar disso, o número de warnings fundados pelo CogniCrypt é maior do que no CryptoGuard, descrito na tabela abaixo.
+Apesar disso, o número de \textit{warnings} encontrados pelo CogniCrypt é maior do que no CryptoGuard, conforme descrito na tabela abaixo.
 
 \begin{table}[!htbp]
   \centering
@@ -54,9 +52,9 @@ System                  &     \num{566} (\num{5.13}\%)     &     \num{513} (\num
 \label{AplicativosComWarning}
 \end{table}
 
-Como podemos observar na tabela acima, o CogniCrypt consegue encontrar 4964 warnings enquanto o Cryptoguard encontrou 11036 warnings. A diferença numérica é de 6072 (ou 122.32\%) de warnings entre as duas ferramentas. A categoria de finanças e internet concentrou 58.8\% (6494) dos warnings do CogniCrypt e as categorias de finanças e conectividade concentram 56.6\% (2811) dos warnings do CryptoGuard. A maior diferença entre os warnings fundados foi notada nas categorias internet (2491) e finanças (1400), representando 64.1\% de diferença.  \cite{perception_developers}
+Como podemos observar na tabela acima, o CogniCrypt conseguiu encontrar \num{4964} \textit{warnings}, enquanto o CryptoGuard encontrou \num{11036} \textit{warnings}. A diferença numérica é de \num{6072} (ou \num{122.32}\%) \textit{warnings} entre as duas ferramentas. As categorias de Finanças e Internet concentraram \num{58.8}\% (\num{6494}) dos \textit{warnings} do CogniCrypt, enquanto as categorias de Finanças e Conectividade concentraram \num{56.6}\% (\num{2811}) dos \textit{warnings} do CryptoGuard. A maior diferença entre os \textit{warnings} encontrados foi notada nas categorias Internet (\num{2491}) e Finanças (\num{1400}), representando \num{64.1}\% de diferença.
 
-Considerando os resultados acima, analisamos a quantidade média de warnings por aplicativo. Os resultados são mostrados no gráfico abaixo.
+Considerando os resultados acima, analisamos a quantidade média de \textit{warnings} por aplicativo. Os resultados são mostrados no gráfico abaixo.
 
 \begin{figure}[!ht]
     \centering
@@ -65,9 +63,9 @@ Considerando os resultados acima, analisamos a quantidade média de warnings por
     \label{averageWarnings}
 \end{figure}
 
-Como esperado, a média de warnings é maior no CogniCrypt do que no CryptoGuard. A diferença é ainda maior quando desconsideramos os aplicativos sem warnings. A categoria internet tem a maior média de warnings nas duas ferramentas, com um valor maior no CogniCrypt: 106.5 warnings por aplicativo. Em segundo e terceiro lugares temos as categorias segurança e sms-telefone no CogniCrypt e internet e conectividade, considerando a média de warnings fundados pelo CryptoGuard. \cite{perception_developers}
+Como esperado, a média de \textit{warnings} é maior no CogniCrypt do que no CryptoGuard. A diferença é ainda maior quando desconsideramos os aplicativos sem \textit{warnings}. A categoria Internet tem a maior média de \textit{warnings} nas duas ferramentas, com um valor maior no CogniCrypt: \num{106.5} \textit{warnings} por aplicativo. Em segundo e terceiro lugares, temos as categorias Segurança e SMS-Telefone no CogniCrypt e Internet e Conectividade, considerando a média de \textit{warnings} encontrados pelo CryptoGuard.
 
-\subsection{Análise quantitativa da integração do Cryptoguard e do Cognicrypt com o LibScout}
+\subsection{Análise quantitativa da integração do CryptoGuard e do CogniCrypt com o LibScout}
 
 A fim de facilitar a análise, os aplicativos foram categorizados. Em cada categoria, serão exibidos os resultados relativos ao número de aplicativos com alertas de vulnerabilidade, diferenciando aqueles que são potencialmente externos dos que são definitivamente externos, para cada ferramenta utilizada. As tabelas a seguir apresentam os resultados dessas integrações.
 
@@ -136,11 +134,11 @@ Variância                  & \num{1090.2}            &  \num{14.05}            
 \label{table: AplicativosComWarningCCS}
 \end{table}
 
-Os resultados para a tabela de conectividade (\ref{table: AplicativosComWarningCCC}) mostram que em média, por aplicativo, o CogniCrypt encontrou 21.9 warnings de vulnerabilidade. Desses, 2.3 são possivelmente externos e 2.4 são definitivamente externos. A quantidade de warnings nativos é de 17.1.
-Para finanças (\ref{table: AplicativosComWarningCCF}), a média de warnings por aplicativo é de 46.4. Desses, 2.8 são possivelmente externos e 7.5 são definitivamente externos. A quantidade de warnings nativos é de 35.9. 
-Para SMS (\ref{table: AplicativosComWarningCCSMS}), a média de warnings por aplicativo é de 11.7. Desses, 2.36 são possivelmente externos e 1 é definitivamente externo. A quantidade de warnings nativos é de 8.3.
-E para sistema (\ref{table: AplicativosComWarningCCS}), a média de warnings por aplicativo é de 10.09. Desses, 0.93 são possivelmente externos e 0.36 são definitivamente externos. A quantidade de warnings nativos é de 8.79.
-Em todos os exemplos, o desvio padrão e a variância são altos, indicando que os valores estão bem dispersos. Isso é explicado tanto pelas limitações do LibScout quanto pelas limitações do CogniCrypt. \cite{perception_developers} O LibScout pode não ter mapeado a biblioteca com warning como externa \cite{LibScout} e o CogniCrypt pode ter encontrado warnings em bibliotecas que não foram mapeadas pelo LibScout ou ainda não ter encontrado vulnerabilidade no aplicativo selecionado. \cite{perception_developers}
+Os resultados para a tabela de conectividade (\ref{table: AplicativosComWarningCCC}) mostram que, em média, por aplicativo, o CogniCrypt encontrou \num{21.9} \textit{warnings} de vulnerabilidade. Desses, \num{2.3} são possivelmente externos e \num{2.4} são definitivamente externos. A quantidade de \textit{warnings} nativos é de \num{17.1}.
+Para finanças (\ref{table: AplicativosComWarningCCF}), a média de \textit{warnings} por aplicativo é de \num{46.4}. Desses, \num{2.8} são possivelmente externos e \num{7.5} são definitivamente externos. A quantidade de \textit{warnings} nativos é de \num{35.9}. 
+Para SMS (\ref{table: AplicativosComWarningCCSMS}), a média de \textit{warnings} por aplicativo é de \num{11.7}. Desses, \num{2.36} são possivelmente externos e \num{1} é definitivamente externo. A quantidade de \textit{warnings} nativos é de \num{8.3}.
+E para sistema (\ref{table: AplicativosComWarningCCS}), a média de \textit{warnings} por aplicativo é de \num{10.09}. Desses, \num{0.93} são possivelmente externos e \num{0.36} são definitivamente externos. A quantidade de \textit{warnings} nativos é de \num{8.79}.
+Em todos os exemplos, o desvio padrão e a variância são altos, indicando que os valores estão bem dispersos. Isso é explicado tanto pelas limitações do LibScout quanto pelas limitações do CogniCrypt. O LibScout pode não ter mapeado a biblioteca com \textit{warning} como externa, e o CogniCrypt pode ter encontrado \textit{warnings} em bibliotecas que não foram mapeadas pelo LibScout ou ainda não ter encontrado vulnerabilidade no aplicativo selecionado.
 
 \textbf{CryptoGuard}
 
@@ -211,11 +209,11 @@ Em todos os exemplos, o desvio padrão e a variância são altos, indicando que 
   \label{table: AplicativosComWarningCGS}
 \end{table}
 
-Analisando a tabela de conectividade (\ref{table: AplicativosComWarningCGC})  observa-se que o CryptoGuard, em média por aplicativo, detectou 15.1 alertas de vulnerabilidade, dos quais 0.73 são potencialmente externos e 5.21 definitivamente externos, com 9.22 alertas nativos. 
-Na categoria de finanças (\ref{table: AplicativosComWarningCGF}), a média foi de 10.45 alertas por aplicativo, com 1.33 potencialmente externos e 4.68 definitivamente externos, além de 4.43 nativos.
-Para SMS, (\ref{table: AplicativosComWarningCGSMS}), a média foi de 9 alertas, com 0.78 potencialmente externos e 2.73 definitivamente externos, e 5.47 nativos.
-E para sistema (\ref{table: AplicativosComWarningCGS}), a média foi de 7.53 alertas, com 0.65 potencialmente externos e 2.67 definitivamente externos, além de 4.2 nativos. 
-Os altos desvios padrão e variância indicam uma dispersão significativa, influenciada pelas limitações do LibScout e do CryptoGuard. \cite{perception_developers} Novamente o LibScout pode não ter mapeado a biblioteca com warning como externa \cite{LibScout} e o CryptoGuard pode ter encontrado warnings em bibliotecas que não foram mapeadas pelo LibScout ou ainda não ter encontrado vulnerabilidade no aplicativo selecionado. \cite{perception_developers}
+Analisando a tabela de conectividade (\ref{table: AplicativosComWarningCGC}), observa-se que o CryptoGuard, em média por aplicativo, detectou \num{15.1} alertas de vulnerabilidade, dos quais \num{0.73} são potencialmente externos e \num{5.21} definitivamente externos, com \num{9.22} alertas nativos. 
+Na categoria de finanças (\ref{table: AplicativosComWarningCGF}), a média foi de \num{10.45} alertas por aplicativo, com \num{1.33} potencialmente externos e \num{4.68} definitivamente externos, além de \num{4.43} nativos.
+Para SMS (\ref{table: AplicativosComWarningCGSMS}), a média foi de \num{9} alertas, com \num{0.78} potencialmente externos e \num{2.73} definitivamente externos, e \num{5.47} nativos.
+E para sistema (\ref{table: AplicativosComWarningCGS}), a média foi de \num{7.53} alertas, com \num{0.65} potencialmente externos e \num{2.67} definitivamente externos, além de \num{4.2} nativos. 
+Os altos desvios padrão e variância indicam uma dispersão significativa, influenciada pelas limitações do LibScout e do CryptoGuard. O LibScout pode não ter mapeado a biblioteca com \textit{warning} como externa, e o CryptoGuard pode ter encontrado \textit{warnings} em bibliotecas que não foram mapeadas pelo LibScout ou ainda não ter encontrado vulnerabilidade no aplicativo selecionado.
 
 
 \begin{table}[!htbp]
