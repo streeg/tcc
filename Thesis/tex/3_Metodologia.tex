@@ -12,54 +12,45 @@ Conforme discutido no Capítulo 1, os objetivos desta pesquisa incluem a identif
 Adaptar ferramentas de análise estática para identificar se os \textit{warnings} são provenientes do código de origem da aplicação ou de bibliotecas externas.
 
 \subsubsection{Questões de Pesquisa}
-Para responder às questões propostas, definimos as seguintes métricas baseadas nos dados coletados:
+Para alcançar esse objetivo, definimos as seguintes perguntas baseadas nos dados coletados:
 
 \begin{itemize}
 \item \textbf{RQ1:} Qual é a quantidade de \textit{warnings} no \textit{dataset} de aplicativos e qual a prevalência de \textit{crypto API misuses} em aplicativos Android?
-\textbf{Resposta:} \\
-A análise incluiu 307 aplicativos Android de seis categorias diferentes do repositório F-Droid. As ferramentas CogniCrypt e CryptoGuard identificaram um total de 11.036 \textit{warnings} de uso indevido de criptografia (\textit{misuses}) no CogniCrypt e 4.964 \textit{warnings} no CryptoGuard. A maior parte dos \textit{warnings} foi encontrada nas categorias de Internet e Finanças. A categoria Internet concentrou 30,87\% dos \textit{warnings} no CogniCrypt, enquanto as categorias Finanças e Conectividade concentraram 56,6\% dos \textit{warnings} no CryptoGuard. Esses resultados indicam que a prevalência de \textit{crypto API misuses} é significativa, especialmente em determinadas categorias de aplicativos.
 
 \item \textbf{RQ2:} Qual a prevalência de \textit{crypto API misuses} específicas de bibliotecas externas?
 
-\textbf{Resposta:} \\
-Após a integração dos resultados do LibScout com os \textit{warnings} identificados pelo CogniCrypt e CryptoGuard, foi possível diferenciar os \textit{warnings} associados a bibliotecas externas daqueles associados a bibliotecas nativas. O estudo revelou que, no CogniCrypt, de um total de 6.798 bibliotecas analisadas, 1.710 eram externas e 726 eram potencialmente externas. No CryptoGuard, de um total de 2.710 bibliotecas, 1.149 eram externas e 245 eram potencialmente externas. Isso demonstra que uma parte considerável dos \textit{warnings} detectados pode ser atribuída a bibliotecas externas, o que sugere a eficácia da integração dessas ferramentas na identificação da origem dos \textit{warnings} e na detecção de vulnerabilidades específicas de bibliotecas externas.
-
 \item \textbf{RQ3:} Como a ofuscação de código afeta a detecção de vulnerabilidades em APIs criptográficas?
 
-\textbf{Resposta:} \\
-Durante o experimento, enfrentamos dificuldades significativas ao tentar identificar bibliotecas em códigos ofuscados. A ofuscação impede que as ferramentas como LibScout reconheçam as bibliotecas externas, resultando em uma falha na identificação correta dessas bibliotecas. Consequentemente, o script que realiza o casamento entre as vulnerabilidades detectadas pelas ferramentas de análise estática (CogniCrypt e CryptoGuard) e os resultados do LibScout frequentemente resultava em resultado negativo. Isso indica que a ofuscação de código afeta diretamente a capacidade de detecção de vulnerabilidades em APIs criptográficas, particularmente na identificação de bibliotecas externas. Esse impacto negativo reforça a necessidade de desenvolver técnicas mais robustas para lidar com código ofuscado, a fim de garantir uma análise de segurança mais precisa e abrangente.
-
-\item \textbf{RQ4:} Qual a diferença na detecção de vulnerabilidades entre bibliotecas nativas e externas?
-
-\textbf{Resposta:} \\
-A análise revelou diferenças notáveis na detecção de vulnerabilidades entre bibliotecas nativas e externas, dependendo da ferramenta utilizada. No CogniCrypt, a maioria das vulnerabilidades foi detectada em bibliotecas nativas: de um total de 6.798 bibliotecas analisadas, 4.542 eram nativas, enquanto 1.710 eram externas e 726 eram potencialmente externas. Isso indica que, para o CogniCrypt, as vulnerabilidades são mais prevalentes em bibliotecas nativas.
-
-Por outro lado, no CryptoGuard, a distribuição entre vulnerabilidades em bibliotecas nativas e externas foi mais equilibrada. De um total de 2.710 bibliotecas analisadas, 1.316 eram nativas, 1.149 eram externas e 245 eram potencialmente externas. Este resultado mostra que, para o CryptoGuard, as vulnerabilidades estão quase igualmente distribuídas entre bibliotecas nativas e externas.
-
-Esses resultados sugerem que, enquanto o CogniCrypt tende a identificar mais vulnerabilidades em bibliotecas nativas, o CryptoGuard detecta uma quantidade quase igual de vulnerabilidades tanto em bibliotecas nativas quanto externas. Isso pode indicar diferenças na abordagem das ferramentas em relação à análise de bibliotecas externas e reforça a necessidade de considerar ambas as fontes de vulnerabilidades ao avaliar a segurança de uma aplicação.
 \end{itemize}
 
 \subsubsection{Métricas}
-Para responder as questões RQ1 e RQ2, as seguintes métricas foram estabelecidas:
+Para responder as questões RQ1, RQ2, RQ3 e RQ4, as seguintes métricas foram estabelecidas:
 
 \begin{itemize}
 \item \textbf{M1: Número total de warnings detectados.} \
 Esta métrica quantifica o total de \textit{warnings} (alertas de vulnerabilidade) identificados pelas ferramentas de análise estática, CogniCrypt e CryptoGuard, nos aplicativos analisados. O estudo identificou 11.036 \textit{warnings} com o CogniCrypt e 4.964 com o CryptoGuard. Essa métrica é essencial para quantificar a presença geral de vulnerabilidades no conjunto de dados de aplicativos Android.
 \subsubsection{Métricas}
-Para responder as questões RQ1 e RQ2, as seguintes métricas foram estabelecidas:
 
-\begin{itemize}
-\item \textbf{M1: Número total de warnings detectados.} \
-Esta métrica quantifica o total de \textit{warnings} (alertas de vulnerabilidade) identificados pelas ferramentas de análise estática, CogniCrypt e CryptoGuard, nos aplicativos analisados. O estudo identificou 11.036 \textit{warnings} com o CogniCrypt e 4.964 com o CryptoGuard. Essa métrica é essencial para quantificar a presença geral de vulnerabilidades no conjunto de dados de aplicativos Android.
+\item \textbf{M2: Número total de bibliotecas externas.} \
+
+Após a integração dos resultados do LibScout com os \textit{warnings} identificados pelo CogniCrypt e CryptoGuard, foi possível diferenciar os \textit{warnings} associados a bibliotecas externas daqueles associados a bibliotecas nativas. O estudo revelou que, no CogniCrypt, de um total de 6.798 bibliotecas analisadas, 1.710 eram externas e 726 eram potencialmente externas. No CryptoGuard, de um total de 2.710 bibliotecas, 1.149 eram externas e 245 eram potencialmente externas. Isso demonstra que uma parte considerável dos \textit{warnings} detectados pode ser atribuída a bibliotecas externas, o que sugere a eficácia da integração dessas ferramentas na identificação da origem dos \textit{warnings} e na detecção de vulnerabilidades específicas de bibliotecas externas.
+
+\item \textbf{M3: Eficácia em aplicativos obfuscados.} \
+
+Durante o experimento, enfrentamos dificuldades significativas ao tentar identificar bibliotecas em códigos ofuscados. A ofuscação impede que as ferramentas como LibScout reconheçam as bibliotecas externas, resultando em uma falha na identificação correta dessas bibliotecas. Consequentemente, o script que realiza o casamento entre as vulnerabilidades detectadas pelas ferramentas de análise estática (CogniCrypt e CryptoGuard) e os resultados do LibScout frequentemente resultava em resultado negativo. Isso indica que a ofuscação de código afeta diretamente a capacidade de detecção de vulnerabilidades em APIs criptográficas, particularmente na identificação de bibliotecas externas. Esse impacto negativo reforça a necessidade de desenvolver técnicas mais robustas para lidar com código ofuscado, a fim de garantir uma análise de segurança mais precisa e abrangente.
 
 \end{itemize}
 
 \subsection{Fases da Pesquisa}
 
-Essa pesquisa foi organizada em várias fases, conforme a Figura Y, para estruturar e direcionar o estudo:
+Para conseguir essas métricas e responder às questões de pesquisa, a pesquisa foi dividida em várias fases, conforme descrito a seguir:
 
 \begin{itemize}
-\item \textbf{Identificação e Seleção das Ferramentas:} Inicialmente, realizamos uma análise da literatura para identificar ferramentas adequadas para a detecção de vulnerabilidades em APIs criptográficas. Consideramos o uso de LibRadar e LibScout, mas optamos por utilizar o LibScout devido à sua maior atualização e capacidade de identificar bibliotecas externas de forma mais precisa.
+\item \textbf{Coleta de Dados:} Inicialmente, coletamos um conjunto de aplicativos Android de código aberto para análise. O conjunto de dados foi obtido do repositório F-Droid, que contém aplicativos de código aberto disponíveis para download. O repositório foi escolhido devido à sua natureza de código aberto e à disponibilidade de aplicativos para download.
+
+\item \textbf{Análise de vulnerabilidades e alerta aos desenvolvedores:} Em seguida, utilizamos as ferramentas CogniCrypt e CryptoGuard para analisar os aplicativos e identificar vulnerabilidades em APIs criptográficas. As ferramentas foram escolhidas devido à sua capacidade de detectar vulnerabilidades em APIs criptográficas e fornecer alertas aos desenvolvedores sobre possíveis problemas de segurança. Nessa etapa, identificamos que vários dos \textit{warnings} detectados pelas ferramentas estavam associados a código que os desenvolvedores não tinham escrito, mas que vinha de bibliotecas externas. 
+
+\item \textbf{Identificação e Seleção das Ferramentas:} Para identificar as bibliotecas externas, fizemos uma análise da literatura e através do estudo realizado por \cite{api_tpl_zhang}, identificamos o LibScout como uma ferramenta eficaz para identificar bibliotecas em aplicativos Android. O LibScout foi escolhido devido à sua capacidade de identificar bibliotecas em aplicativos Android e fornecer informações detalhadas sobre as bibliotecas encontradas. O estudo cita outras ferramentas que poderiam ser utilizadas, como o LibRadar, LibID, libPecker, entre outros. No entanto, cada um deles tem suas limitações, como a falta de atualizações de datasets, tempo exagerado para análise de apenas um aplicativo, baixa confiabilidade nos resultados. Além do Libscout, consideramos também utilizar o LibRadar. O LibRadar no entanto não estava sendo capaz de identificar algumas bibliotecas externas que são obviamente externas. O LibRadar compara os resultados da investigação com um dataset base. Esse dataset não foi atualizado nos últimos 7 anos. 
 
 \item \textbf{Integração das Ferramentas:} Após a seleção, integramos os resultados do LibScout aos contextos das ferramentas CryptoGuard e CogniCrypt. Essa integração permitiu uma análise mais detalhada e contextualizada das vulnerabilidades encontradas, especialmente em bibliotecas externas.
 
