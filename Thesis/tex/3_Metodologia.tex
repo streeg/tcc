@@ -24,11 +24,11 @@ Para alcançar esse objetivo, definimos as seguintes perguntas baseadas nos dado
 \end{itemize}
 
 \subsubsection{Métricas}
-Para responder as questões RQ1, RQ2, RQ3 e RQ4, as seguintes métricas foram estabelecidas:
+Para responder as questões RQ1, RQ2 e RQ3 as seguintes métricas foram estabelecidas:
 
 \begin{itemize}
 \item \textbf{M1: Número total de warnings detectados.} \
-Esta métrica quantifica o total de \textit{warnings} (alertas de vulnerabilidade) identificados pelas ferramentas de análise estática, CogniCrypt e CryptoGuard, nos aplicativos analisados. O estudo identificou 11.036 \textit{warnings} com o CogniCrypt e 4.964 com o CryptoGuard. Essa métrica é essencial para quantificar a presença geral de vulnerabilidades no conjunto de dados de aplicativos Android.
+Esta métrica quantifica o total de \textit{warnings} (alertas de vulnerabilidade) identificados pelas ferramentas de análise estática, CogniCrypt e CryptoGuard, nos 307 aplicativos analisados. O estudo identificou 11.036 \textit{warnings} com o CogniCrypt e 4.964 com o CryptoGuard. Essa métrica é essencial para quantificar a presença geral de vulnerabilidades no conjunto de dados de aplicativos Android.
 \subsubsection{Métricas}
 
 \item \textbf{M2: Número total de bibliotecas externas.} \
@@ -46,11 +46,11 @@ Durante o experimento, enfrentamos dificuldades significativas ao tentar identif
 Para conseguir essas métricas e responder às questões de pesquisa, a pesquisa foi dividida em várias fases, conforme descrito a seguir:
 
 \begin{itemize}
-\item \textbf{Coleta de Dados:} Inicialmente, coletamos um conjunto de aplicativos Android de código aberto para análise. O conjunto de dados foi obtido do repositório F-Droid, que contém aplicativos de código aberto disponíveis para download. O repositório foi escolhido devido à sua natureza de código aberto e à disponibilidade de aplicativos para download.
+\item \textbf{Coleta de Dados:} Inicialmente, foi coletado um conjunto de aplicativos Android de código aberto para análise. O conjunto de dados foi obtido do repositório F-Droid, que contém aplicativos de código aberto disponíveis para download. O repositório foi escolhido devido à sua natureza de código aberto e à disponibilidade de aplicativos para download. Então foi executado o CogniCrypt e o CryptoGuard em cada aplicativo para identificar vulnerabilidades em APIs criptográficas.
 
-\item \textbf{Análise de vulnerabilidades e alerta aos desenvolvedores:} Em seguida, utilizamos as ferramentas CogniCrypt e CryptoGuard para analisar os aplicativos e identificar vulnerabilidades em APIs criptográficas. As ferramentas foram escolhidas devido à sua capacidade de detectar vulnerabilidades em APIs criptográficas e fornecer alertas aos desenvolvedores sobre possíveis problemas de segurança. Nessa etapa, identificamos que vários dos \textit{warnings} detectados pelas ferramentas estavam associados a código que os desenvolvedores não tinham escrito, mas que vinha de bibliotecas externas. 
+\item \textbf{Análise de vulnerabilidades e alerta aos desenvolvedores:} Em seguida, foram utilizadas as ferramentas CogniCrypt e CryptoGuard para analisar os aplicativos e identificar vulnerabilidades em APIs criptográficas. As ferramentas foram escolhidas devido à sua capacidade de detectar vulnerabilidades em APIs criptográficas e fornecer alertas aos desenvolvedores sobre possíveis problemas de segurança. Nessa etapa, identificamos que vários dos \textit{warnings} detectados pelas ferramentas estavam associados a código que os desenvolvedores não tinham escrito e sim a códigos de bibliotecas externas. 
 
-\item \textbf{Identificação e Seleção das Ferramentas:} Para identificar as bibliotecas externas, fizemos uma análise da literatura e através do estudo realizado por \cite{api_tpl_zhang}, identificamos o LibScout como uma ferramenta eficaz para identificar bibliotecas em aplicativos Android. O LibScout foi escolhido devido à sua capacidade de identificar bibliotecas em aplicativos Android e fornecer informações detalhadas sobre as bibliotecas encontradas. O estudo cita outras ferramentas que poderiam ser utilizadas, como o LibRadar, LibID, libPecker, entre outros. No entanto, cada um deles tem suas limitações, como a falta de atualizações de datasets, tempo exagerado para análise de apenas um aplicativo, baixa confiabilidade nos resultados. Além do Libscout, consideramos também utilizar o LibRadar. O LibRadar no entanto não estava sendo capaz de identificar algumas bibliotecas externas que são obviamente externas. O LibRadar compara os resultados da investigação com um dataset base. Esse dataset não foi atualizado nos últimos 7 anos. 
+\item \textbf{Identificação e Seleção das Ferramentas:} Para identificar as bibliotecas externas, fizemos uma análise da literatura e através do estudo realizado por \cite{api_tpl_zhang}, identificamos o LibScout como uma ferramenta eficaz para identificar bibliotecas em aplicativos Android. O LibScout foi escolhido devido à sua capacidade de identificar bibliotecas em aplicativos Android e fornecer informações detalhadas sobre as bibliotecas encontradas. O estudo cita outras ferramentas que poderiam ser utilizadas, como o LibRadar, LibID, libPecker, entre outros. O LibRadar foi um dos aplicativos inicialmente considerados para podermos comparar com os resutlados do LibScout, no entanto, o número de bibliotecas externas encotradas em um subset dos quais já sabiamos os resultados não foi suficiente. O LibRadar compara os resultados da investigação com um dataset base, o qual não foi atualizado nos últimos 7 anos. Cada uma das ferramentas destacadas no paper de Zhang tem suas limitações, como a falta de atualizações de datasets, tempo exagerado para análise de apenas um aplicativo, baixa confiabilidade nos resultados. De todas as métricas descritas no artigo, o LibScout foi a que apresentava resultados mais confiáveis em tempo hábil para análise de um grande número de aplicativos. 
 
 \item \textbf{Integração das Ferramentas:} Após a seleção, integramos os resultados do LibScout aos contextos das ferramentas CryptoGuard e CogniCrypt. Essa integração permitiu uma análise mais detalhada e contextualizada das vulnerabilidades encontradas, especialmente em bibliotecas externas.
 
@@ -58,6 +58,9 @@ Para conseguir essas métricas e responder às questões de pesquisa, a pesquisa
 
 \end{itemize}
 
-\subsection{Diagrama da Integração}
-
-Para uma melhor visualização do processo, o diagrama da Figura Z mostra a integração entre o LibScout e as ferramentas CogniCrypt e CryptoGuard, detalhando como os resultados foram processados e analisados.
+\begin{figure}[!ht]
+  \centering
+  \includegraphics[scale=0.7]{img/research_steps.png}
+  \caption{Fases da pesquisa}
+  \label{img: research_steps}
+\end{figure}
