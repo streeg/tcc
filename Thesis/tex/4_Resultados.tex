@@ -1,14 +1,12 @@
+%\section{Percepção dos desenvolvedores em relação às vulnerabilidades em aplicativos open source}
 
+%Este trabalho considera a percepção dos desenvolvedores e profissionais de segurança em relação às vulnerabilidades em aplicativos open source. O estudo não se limitou apenas à análise estática das ferramentas utilizadas, mas também incluiu uma investigação sobre aplicativos Android de código aberto, com o objetivo de obter a opinião dos desenvolvedores envolvidos.
 
-\section{Percepção dos desenvolvedores em relação às vulnerabilidades em aplicativos open source}
+%Uma descoberta relevante foi que muitas das questões identificadas pelo CogniCrypt não estavam diretamente relacionadas ao código do aplicativo Android em si, mas sim às bibliotecas de terceiros utilizadas por esses aplicativos. Dentre os projetos de código aberto analisados, aproximadamente 60\% apresentaram questões levantadas pelo CogniCrypt que se originavam de códigos de terceiros. Os desenvolvedores abordaram essas preocupações de segurança de maneiras diversas. Alguns optaram por atualizar imediatamente as dependências, enquanto outros confiaram implicitamente nas grandes empresas de tecnologia fornecedoras das bibliotecas e não consideraram os problemas como ameaças reais.
 
-Este trabalho considera a percepção dos desenvolvedores e profissionais de segurança em relação às vulnerabilidades em aplicativos open source. O estudo não se limitou apenas à análise estática das ferramentas utilizadas, mas também incluiu uma investigação sobre aplicativos Android de código aberto, com o objetivo de obter a opinião dos desenvolvedores envolvidos.
+%Em alguns casos, os desenvolvedores tiveram dificuldades em compreender completamente as questões apresentadas pelo CogniCrypt. Para eles, não estava claro por que determinados trechos de código eram considerados problemas apenas a partir das explicações fornecidas pela ferramenta. Diante disso, os desenvolvedores expressaram o desejo de receber explicações mais detalhadas sobre os problemas identificados, bem como sugestões diretas sobre como corrigi-los. Além disso, alguns sugeriram a categorização dos problemas levantados pelo CogniCrypt com base na origem, indicando se pertencem ao aplicativo digitalizado ou a uma biblioteca de terceiros. Essa observação proporciona insights valiosos sobre a necessidade de uma comunicação mais eficaz entre as ferramentas de análise e os desenvolvedores, visando uma compreensão mais precisa e eficiente das vulnerabilidades detectadas.
 
-Uma descoberta relevante foi que muitas das questões identificadas pelo CogniCrypt não estavam diretamente relacionadas ao código do aplicativo Android em si, mas sim às bibliotecas de terceiros utilizadas por esses aplicativos. Dentre os projetos de código aberto analisados, aproximadamente 60\% apresentaram questões levantadas pelo CogniCrypt que se originavam de códigos de terceiros. Os desenvolvedores abordaram essas preocupações de segurança de maneiras diversas. Alguns optaram por atualizar imediatamente as dependências, enquanto outros confiaram implicitamente nas grandes empresas de tecnologia fornecedoras das bibliotecas e não consideraram os problemas como ameaças reais.
-
-Em alguns casos, os desenvolvedores tiveram dificuldades em compreender completamente as questões apresentadas pelo CogniCrypt. Para eles, não estava claro por que determinados trechos de código eram considerados problemas apenas a partir das explicações fornecidas pela ferramenta. Diante disso, os desenvolvedores expressaram o desejo de receber explicações mais detalhadas sobre os problemas identificados, bem como sugestões diretas sobre como corrigi-los. Além disso, alguns sugeriram a categorização dos problemas levantados pelo CogniCrypt com base na origem, indicando se pertencem ao aplicativo digitalizado ou a uma biblioteca de terceiros. Essa observação proporciona insights valiosos sobre a necessidade de uma comunicação mais eficaz entre as ferramentas de análise e os desenvolvedores, visando uma compreensão mais precisa e eficiente das vulnerabilidades detectadas.
-
-\section{Análise quantitativa em aplicativos android}
+\section{RQ1. Quantidade de warnings encontrados pelas ferramentas CogniCrypt e CryptoGuard}
 
 Foram analisados 307 aplicativos de 6 diferentes categorias do repositório de aplicativos de código aberto F-Droid. A execução do CogniCrypt reportou 195 \textit{warnings} de uso indevido de criptografia, enquanto o CryptoGuard reportou 298. A tabela abaixo mostra a quantidade de aplicativos analisados por categoria e a quantidade de \textit{warnings} reportados por cada ferramenta.
 
@@ -54,18 +52,7 @@ System                  &     \num{566} (\num{5.13}\%)     &     \num{513} (\num
 
 Como podemos observar na tabela acima, o CogniCrypt conseguiu encontrar \num{4964} \textit{warnings}, enquanto o CryptoGuard encontrou \num{11036} \textit{warnings}. A diferença numérica é de \num{6072} (ou \num{122.32}\%) \textit{warnings} entre as duas ferramentas. As categorias de Finanças e Internet concentraram \num{58.8}\% (\num{6494}) dos \textit{warnings} do CogniCrypt, enquanto as categorias de Finanças e Conectividade concentraram \num{56.6}\% (\num{2811}) dos \textit{warnings} do CryptoGuard. A maior diferença entre os \textit{warnings} encontrados foi notada nas categorias Internet (\num{2491}) e Finanças (\num{1400}), representando \num{64.1}\% de diferença.
 
-Considerando os resultados acima, analisamos a quantidade média de \textit{warnings} por aplicativo. Os resultados são mostrados no gráfico abaixo.
-
-\begin{figure}[!ht]
-    \centering
-    \includegraphics[scale=0.3]{img/averageWarnings.png}
-    \caption{Quantidade média de alertas por aplicativo}
-    \label{averageWarnings}
-\end{figure}
-
-Como esperado, a média de \textit{warnings} é maior no CogniCrypt do que no CryptoGuard. A diferença é ainda maior quando desconsideramos os aplicativos sem \textit{warnings}. A categoria Internet tem a maior média de \textit{warnings} nas duas ferramentas, com um valor maior no CogniCrypt: \num{106.5} \textit{warnings} por aplicativo. Em segundo e terceiro lugares, temos as categorias Segurança e SMS-Telefone no CogniCrypt e Internet e Conectividade, considerando a média de \textit{warnings} encontrados pelo CryptoGuard.
-
-\subsection{Análise quantitativa da integração do CryptoGuard e do CogniCrypt com o LibScout}
+\subsection{RQ2 e RQ3. Quantidade de warnings de bibliotecas externas e possivelmente externas}
 
 A fim de facilitar a análise, os aplicativos foram categorizados. Em cada categoria, serão exibidos os resultados relativos ao número de aplicativos com alertas de vulnerabilidade, diferenciando aqueles que são potencialmente externos dos que são definitivamente externos, para cada ferramenta utilizada. As tabelas a seguir apresentam os resultados dessas integrações.
 

@@ -75,7 +75,6 @@ lib_files.each do |lib_file_name|
   # p lib_file_data.each { |x| p x['Package'] }
 
   # Open crypto file
-  byebug
   crypto_file = File.open(extract_and_format_name_sarif(lib_file_name), 'r')
   crypto_file_data = JSON.load(crypto_file)
 
