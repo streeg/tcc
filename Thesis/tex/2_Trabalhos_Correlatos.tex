@@ -28,8 +28,6 @@ A criptografia moderna preocupa-se com quatro objetivos principais: confidencial
   \item Autenticação. O remetente e o destinatário devem poder confirmar a identidade de cada um.
 \end{itemize}
 
-Existem diversos algoritmos de criptografia, dentre eles podemos citar o Advanced Encryption Standard (AES), o RSA, o Elliptic Curve Digital Signature Algorithm (ECDSA) e o Digital Signature Algorithm (DSA) \cite{what_is_cryptography}.
-
 Apesar da importância da criptografia para a segurança dos sistemas, muitos desenvolvedores se deparam com desafios significativos ao tentar implementá-la corretamente. Sem o conhecimento especializado em criptografia, é possível utilizar erroneamente algoritmos e técnicas criptográficas inadequadas. \cite{cryptographic_software_fail} \cite{api_misuses_zhang} Isso pode resultar em vulnerabilidades que comprometem a segurança e a privacidade dos dados dos usuários. Portanto, é essencial contar com ferramentas que possam orientar os desenvolvedores na aplicação correta das práticas criptográficas, reduzindo assim os riscos associados à implementação inadequada de medidas de segurança em software.\cite{api_misuses_zhang}
 
 \subsection{Análise dinâmica de APIs criptográficas} %Runtime Verification of Crypto APIs: An Empirical Study
@@ -75,7 +73,7 @@ Nos exemplos citados no artigo temos os desenvolvedores não estarem completamen
 % Página 10: Estudo empírico em projetos Apache
 % Página 13: Análise de ferramentas existentes e vulnerabilidades
 
-O estudo tenta identificar a percepção dos desenvoledores em relação a vulnerabilidades em seus códigos. 
+O estudo tenta identificar a percepção dos desenvolvedores em relação a vulnerabilidades em seus códigos. 
 
 Houveram visões divergentes em relação às ferramentas existentes para detectar usos incorretos de APIs. 
 
@@ -155,7 +153,7 @@ A ferramenta coleta informações detalhadas sobre bibliotecas implantadas, incl
 
 Assim, para o estudo desse artigo, a comparação dos resultados das ferramentas CryptoGuard e CogniCrypt aos resultados gerados pelo LibScout visa solucionar o problema de identificar possíveis vulnerabilidades relacionadas ao uso de bibliotecas de terceiros.
 
-\subsection{Aplicativos obfuscados} %Automatic Detection of Java Cryptographic API Misuses: Are We There Yet?
+\subsubsection{Aplicativos obfuscados} %Automatic Detection of Java Cryptographic API Misuses: Are We There Yet?
 
 Uma dificuldade significativa na localização e extração de informações sobre bibliotecas de terceiros é a análise de aplicativos obfuscados. O uso comum da técnica de ofuscação de código torna a compreensão e análise do código-fonte mais difíceis, tornando a localização de bibliotecas externas ainda mais complicada. \cite{api_tpl_zhang}
 
